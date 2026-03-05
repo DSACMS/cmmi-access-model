@@ -1,0 +1,17 @@
+name: Check for Secrets
+on:
+  pull_request:
+  push:
+
+jobs:
+  scan-for-secrets:
+    name: Run gitleaks
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with: { fetch-depth: 0 }
+
+      - name: Check for GitLeaks
+        uses: gacts/gitleaks@v1
+        with:
+          config-path: .github/.gitleaks.toml
