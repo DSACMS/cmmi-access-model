@@ -11,8 +11,8 @@
   fhir:id [ fhir:v "ESRDConditionExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-condition"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition>
+       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
+       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition>
      ] )
   ] ; # 
   fhir:text [

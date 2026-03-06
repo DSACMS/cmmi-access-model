@@ -1,4 +1,4 @@
-# Alignment Response - Aligned Example - CMS ACCESS Model API v0.7.0
+# Alignment Response - Aligned Example - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)

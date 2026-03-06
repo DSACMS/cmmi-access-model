@@ -1,4 +1,4 @@
-# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.7.0
+# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-unalign-in | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSUnalignmentRequestParameters |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-unalign-in | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSUnalignmentRequestParameters |
 
  
 This is the profile for the `$unalign` operation input parameters. 
@@ -21,7 +21,7 @@ The `conditions` parameter:
 * Is optional (0..* cardinality) in general
 * Becomes **required** (1..* cardinality) when using the `no-longer-clinically-eligible` reason code
 * This requirement is enforced by the `access-unalign-condition-required` invariant
-* Should reference [ACCESSCondition](StructureDefinition-access-condition.md) resources with ICD-10-CM codes
+* Should reference [ACCESSClinicalExclusionCondition](StructureDefinition-access-clinical-exclusion-condition.md) resources with ICD-10-CM codes
 
 For detailed unalignment workflows and examples, see the Unalignment API Guidance section in the Operations Manual.
 
@@ -48,11 +48,11 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
   "resourceType" : "StructureDefinition",
   "id" : "access-unalign-in",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentRequestParameters",
   "title" : "ACCESS Unalignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -97,8 +97,8 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
         "key" : "access-unalign-condition-required",
         "severity" : "error",
         "human" : "When the unalignment reason is 'no-longer-clinically-eligible', at least one condition parameter must be provided to document the disqualifying diagnosis",
-        "expression" : "parameter.where(name = 'reason').value.ofType(CodeableConcept).coding.where(system = 'https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS' and code = 'no-longer-clinically-eligible').exists() implies parameter.where(name = 'conditions').exists()",
-        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"
+        "expression" : "parameter.where(name = 'reason').value.ofType(CodeableConcept).coding.where(system = 'https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS' and code = 'no-longer-clinically-eligible').exists() implies parameter.where(name = 'condition').exists()",
+        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"
       }]
     },
     {
@@ -145,9 +145,14 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)",
         "expression" : "value.matches('^ACCESS\\\\d{4}$')",
-        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"
+        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:participantID.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
     },
     {
       "id" : "Parameters.parameter:payerID",
@@ -178,6 +183,11 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
       "mustSupport" : true
     },
     {
+      "id" : "Parameters.parameter:payerID.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
+    },
+    {
       "id" : "Parameters.parameter:patient",
       "path" : "Parameters.parameter",
       "sliceName" : "patient",
@@ -195,6 +205,11 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
       "path" : "Parameters.parameter.name",
       "fixedString" : "patient",
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:patient.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "max" : "0"
     },
     {
       "id" : "Parameters.parameter:patient.resource",
@@ -235,35 +250,45 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
       }
     },
     {
-      "id" : "Parameters.parameter:conditions",
+      "id" : "Parameters.parameter:track.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
+    },
+    {
+      "id" : "Parameters.parameter:condition",
       "path" : "Parameters.parameter",
-      "sliceName" : "conditions",
+      "sliceName" : "condition",
       "min" : 0,
       "max" : "*",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:conditions.modifierExtension",
+      "id" : "Parameters.parameter:condition.modifierExtension",
       "path" : "Parameters.parameter.modifierExtension",
       "max" : "0"
     },
     {
-      "id" : "Parameters.parameter:conditions.name",
+      "id" : "Parameters.parameter:condition.name",
       "path" : "Parameters.parameter.name",
-      "fixedString" : "conditions",
+      "fixedString" : "condition",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:conditions.resource",
+      "id" : "Parameters.parameter:condition.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "Parameters.parameter:condition.resource",
       "path" : "Parameters.parameter.resource",
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0"]
+        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0"]
       }],
       "mustSupport" : true
     },
@@ -296,8 +321,13 @@ Other representations of profile: [CSV](StructureDefinition-access-unalign-in.cs
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS|0.7.0"
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS|0.9.0"
       }
+    },
+    {
+      "id" : "Parameters.parameter:reason.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
     }]
   }
 }

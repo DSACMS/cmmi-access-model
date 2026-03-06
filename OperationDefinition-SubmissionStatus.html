@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Submission Status - CMS ACCESS Model API v0.7.0</title>
+    <title>Submission Status - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -130,7 +130,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -178,7 +178,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus|0.7.0"/></span>
+      <span class="copy-text">0.9.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus|0.9.0"/></span>
       </td>
     </tr>
 
@@ -194,7 +194,7 @@
         
           Active
           
-            as of 2026-02-26
+            as of 2026-03-06
           
         
       </td>
@@ -228,7 +228,8 @@
   
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="SubmissionStatus"> </a><a name="hcSubmissionStatus"> </a><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESSAlignmentResultVS</a> for $align submissions, and <a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="SubmissionStatus"> </a><a name="hcSubmissionStatus"> </a><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESSAlignmentResultVS</a> for $align submissions, and <a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>
+</div></td></tr><tr><td>OUT</td><td>issues</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>This parameter <strong>MAY</strong> be included to provide more detail about the context of the result code.</p>
 </div></td></tr></table><div><p>The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345</p>
 </div></div>
 
@@ -255,7 +256,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

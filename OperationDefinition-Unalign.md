@@ -1,4 +1,4 @@
-# Unalignment Request - CMS ACCESS Model API v0.7.0
+# Unalignment Request - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/Unalign | *Version*:0.7.0 |
-| Active as of 2026-02-26 | *Computable Name*:Unalign |
+| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/Unalign | *Version*:0.9.0 |
+| Active as of 2026-03-06 | *Computable Name*:Unalign |
 
  
 The **$unalign** operation supports the ability to manually unalign a patient from the participant in a specific ACCESS track. There are a specific set of reasons a patient can be unaligned such as the patient has moved outside of the care radius of the participant or despite good faith efforts, communication with the patient has ceased. When unalignment is successful, the system automatically sends notifications to the participant confirming the unalignment, then all FHIR subscriptions created during the original alignment are cancelled to prevent future erroneous notifications. 
@@ -23,12 +23,12 @@ The **$unalign** operation supports the ability to manually unalign a patient fr
   "resourceType" : "OperationDefinition",
   "id" : "Unalign",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/Unalign",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "Unalign",
   "title" : "Unalignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ The **$unalign** operation supports the ability to manually unalign a patient fr
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0",
+  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -88,11 +88,11 @@ The **$unalign** operation supports the ability to manually unalign a patient fr
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
     }
   },
   {
-    "name" : "conditions",
+    "name" : "condition",
     "use" : "in",
     "min" : 0,
     "max" : "*",

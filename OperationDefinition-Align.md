@@ -1,4 +1,4 @@
-# Alignment Request - CMS ACCESS Model API v0.7.0
+# Alignment Request - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/Align | *Version*:0.7.0 |
-| Active as of 2026-02-26 | *Computable Name*:Align |
+| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/Align | *Version*:0.9.0 |
+| Active as of 2026-03-06 | *Computable Name*:Align |
 
  
 The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track. 
@@ -23,12 +23,12 @@ The **$align** operation determines if the patient can be aligned to a participa
   "resourceType" : "OperationDefinition",
   "id" : "Align",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/Align",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "Align",
   "title" : "Alignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ The **$align** operation determines if the patient can be aligned to a participa
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0",
+  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -88,16 +88,28 @@ The **$align** operation determines if the patient can be aligned to a participa
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
     }
   },
   {
-    "name" : "conditions",
+    "name" : "condition",
     "use" : "in",
     "min" : 1,
     "max" : "*",
     "documentation" : "Patient's conditions.",
     "type" : "Condition"
+  },
+  {
+    "name" : "referralType",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "How the patient was referred to the ACCESS Model.",
+    "type" : "CodeableConcept",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS|0.9.0"
+    }
   },
   {
     "name" : "switchConsentAttestation",

@@ -3,17 +3,18 @@
 <OperationDefinition xmlns="http://hl7.org/fhir">
   <id value="SubmissionStatus"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition SubmissionStatus</b></p><a name="SubmissionStatus"> </a><a name="hcSubmissionStatus"> </a><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESSAlignmentResultVS</a> for $align submissions, and <a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition SubmissionStatus</b></p><a name="SubmissionStatus"> </a><a name="hcSubmissionStatus"> </a><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESSAlignmentResultVS</a> for $align submissions, and <a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>
+</div></td></tr><tr><td>OUT</td><td>issues</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/operationoutcome.html">OperationOutcome</a></td><td/><td><div><p>This parameter <strong>MAY</strong> be included to provide more detail about the context of the result code.</p>
 </div></td></tr></table><div><p>The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345</p>
 </div></div>
   </text>
   <url value="https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus"/>
-  <version value="0.7.0"/>
+  <version value="0.9.0"/>
   <name value="SubmissionStatus"/>
   <title value="Submission Status"/>
   <status value="active"/>
   <kind value="operation"/>
-  <date value="2026-02-26T23:16:42-05:00"/>
+  <date value="2026-03-06T16:03:26-05:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -42,9 +43,17 @@
   <parameter>
     <name value="result"/>
     <use value="out"/>
-    <min value="0"/>
+    <min value="1"/>
     <max value="1"/>
     <documentation value="The result of the asynchronous operation. The specific codes returned depend on the original operation type: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility submissions, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align submissions, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned."/>
     <type value="CodeableConcept"/>
+  </parameter>
+  <parameter>
+    <name value="issues"/>
+    <use value="out"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="This parameter **MAY** be included to provide more detail about the context of the result code."/>
+    <type value="OperationOutcome"/>
   </parameter>
 </OperationDefinition>

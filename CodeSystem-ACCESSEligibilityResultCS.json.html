@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Eligibility Result Codes - JSON Representation - CMS ACCESS Model API v0.7.0</title>
+    <title>ACCESS Eligibility Result Codes - JSON Representation - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -132,7 +132,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -181,7 +181,7 @@
         
           Draft
           
-            as of 2026-02-26
+            as of 2026-03-06
           
         
       </td>
@@ -205,12 +205,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ACCESSEligibilityResultCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ACCESSEligibilityResultCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcACCESSEligibilityResultCS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eligible&lt;a name=\&quot;ACCESSEligibilityResultCS-eligible\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eligible&lt;/td&gt;&lt;td&gt;Patient is eligible for services under the model. This response does not mean the patient has been aligned. It simply means the patient is eligible to be aligned.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eligible-pending-diagnosis&lt;a name=\&quot;ACCESSEligibilityResultCS-eligible-pending-diagnosis\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eligible pending diagnosis&lt;/td&gt;&lt;td&gt;Patient is provisionally eligible for services under the model depending on the diagnosis.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eligible-switch-participants&lt;a name=\&quot;ACCESSEligibilityResultCS-eligible-switch-participants\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Eligible to switch participants.&lt;/td&gt;&lt;td&gt;Patient is eligible to switch participants.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;not-eligible-not-medicare&lt;a name=\&quot;ACCESSEligibilityResultCS-not-eligible-not-medicare\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not eligible - not receiving Medicare&lt;/td&gt;&lt;td&gt;The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;not-eligible-services&lt;a name=\&quot;ACCESSEligibilityResultCS-not-eligible-services\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not eligible - receiving services that prevent eligibility&lt;/td&gt;&lt;td&gt;The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;not-eligible-diagnoses&lt;a name=\&quot;ACCESSEligibilityResultCS-not-eligible-diagnoses\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not eligible - no qualifying diagnosis&lt;/td&gt;&lt;td&gt;The patient does not have a treating diagnosis that qualifies them for services in the track indicated and therefore cannot get services under the ACCESS Model.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;not-eligible-control-group&lt;a name=\&quot;ACCESSEligibilityResultCS-not-eligible-control-group\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not eligible - assigned to Control Group&lt;/td&gt;&lt;td&gt;The patient is technically eligible for the ACCESS Model, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;not-eligible-already-aligned&lt;a name=\&quot;ACCESSEligibilityResultCS-not-eligible-already-aligned\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Not eligible - already aligned to another participant in the track&lt;/td&gt;&lt;td&gt;The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.7.0",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.9.0",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ACCESSEligibilityResultCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "ACCESS Eligibility Result Codes",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-02-26T23:16:42-05:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-03-06T16:03:26-05:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Global Alliant, Inc.",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -309,7 +309,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

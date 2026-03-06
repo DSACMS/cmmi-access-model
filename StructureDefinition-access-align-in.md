@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.7.0
+# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-align-in | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSAlignmentRequestParameters |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-align-in | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSAlignmentRequestParameters |
 
  
 This is the profile for the `$align` operation input parameters. When a patient wishes to switch from one ACCESS participant to another after the 3-month lock-in period, the `switchConsentAttestation` parameter must be set to `true` to indicate that the patient has provided consent to switch providers. 
@@ -56,11 +56,11 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
   "resourceType" : "StructureDefinition",
   "id" : "access-align-in",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentRequestParameters",
   "title" : "ACCESS Alignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
         }],
         "rules" : "closed"
       },
-      "min" : 5,
+      "min" : 6,
       "mustSupport" : true
     },
     {
@@ -146,9 +146,14 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)",
         "expression" : "value.matches('^ACCESS\\\\d{4}$')",
-        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"
+        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:participantID.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
     },
     {
       "id" : "Parameters.parameter:payerID",
@@ -179,6 +184,11 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
       "mustSupport" : true
     },
     {
+      "id" : "Parameters.parameter:payerID.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
+    },
+    {
       "id" : "Parameters.parameter:patient",
       "path" : "Parameters.parameter",
       "sliceName" : "patient",
@@ -196,6 +206,11 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
       "path" : "Parameters.parameter.name",
       "fixedString" : "patient",
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:patient.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "max" : "0"
     },
     {
       "id" : "Parameters.parameter:patient.resource",
@@ -236,37 +251,86 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
       }
     },
     {
-      "id" : "Parameters.parameter:conditions",
+      "id" : "Parameters.parameter:track.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
+    },
+    {
+      "id" : "Parameters.parameter:condition",
       "path" : "Parameters.parameter",
-      "sliceName" : "conditions",
+      "sliceName" : "condition",
       "min" : 1,
       "max" : "*",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:conditions.modifierExtension",
+      "id" : "Parameters.parameter:condition.modifierExtension",
       "path" : "Parameters.parameter.modifierExtension",
       "max" : "0"
     },
     {
-      "id" : "Parameters.parameter:conditions.name",
+      "id" : "Parameters.parameter:condition.name",
       "path" : "Parameters.parameter.name",
-      "fixedString" : "conditions",
+      "fixedString" : "condition",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:conditions.resource",
+      "id" : "Parameters.parameter:condition.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "max" : "0"
+    },
+    {
+      "id" : "Parameters.parameter:condition.resource",
       "path" : "Parameters.parameter.resource",
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0"]
+        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0"]
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:referralType",
+      "path" : "Parameters.parameter",
+      "sliceName" : "referralType",
+      "short" : "Referral Type",
+      "definition" : "Indicates how the patient was referred to the ACCESS Model participant. This information helps track recruitment pathways and evaluate outreach effectiveness.",
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:referralType.modifierExtension",
+      "path" : "Parameters.parameter.modifierExtension",
+      "max" : "0"
+    },
+    {
+      "id" : "Parameters.parameter:referralType.name",
+      "path" : "Parameters.parameter.name",
+      "fixedString" : "referralType",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:referralType.value[x]",
+      "path" : "Parameters.parameter.value[x]",
+      "min" : 1,
+      "type" : [{
+        "code" : "CodeableConcept"
+      }],
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS|0.9.0"
+      }
+    },
+    {
+      "id" : "Parameters.parameter:referralType.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
     },
     {
       "id" : "Parameters.parameter:switchConsentAttestation",
@@ -297,6 +361,11 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
         "code" : "boolean"
       }],
       "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:switchConsentAttestation.resource",
+      "path" : "Parameters.parameter.resource",
+      "max" : "0"
     }]
   }
 }

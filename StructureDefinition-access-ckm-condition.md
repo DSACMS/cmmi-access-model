@@ -1,4 +1,4 @@
-# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.7.0
+# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition | *Version*:0.7.0 |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition | *Version*:0.9.0 |
 | Active as of 2026-02-13 | *Computable Name*:ACCESSCKMCondition |
 
  
@@ -39,7 +39,7 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
   "resourceType" : "StructureDefinition",
   "id" : "access-ckm-condition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCKMCondition",
   "title" : "ACCESS CKM Track Condition Profile",
   "status" : "active",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0",
+  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -109,10 +109,10 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
       "id" : "Condition.code",
       "path" : "Condition.code",
       "short" : "CKM track diagnosis code",
-      "definition" : "Diagnosis code for CKM track conditions. SHOULD be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3), but other ICD-10-CM codes are permitted.",
+      "definition" : "Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS|0.7.0"
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS|0.9.0"
       }
     }]
   }

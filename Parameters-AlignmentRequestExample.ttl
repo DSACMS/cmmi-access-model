@@ -97,7 +97,7 @@
        ] )
      ]
   ] [
-     fhir:name [ fhir:v "conditions" ] ;
+     fhir:name [ fhir:v "condition" ] ;
      fhir:Parameters.parameter.resource ( [
        a fhir:Condition ;
        fhir:id [ fhir:v "ConditionDiabetesExample" ] ;
@@ -157,6 +157,19 @@
          fhir:v "2020-01-15"^^xsd:date
        ]
      ] )
+  ] [
+     fhir:name [ fhir:v "referralType" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS>
+         ] ;
+         fhir:code [ fhir:v "provider-referral" ] ;
+         fhir:display [ fhir:v "Provider referral" ]
+       ] )
+     ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

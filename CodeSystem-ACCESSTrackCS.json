@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSTrackCS</b></p><a name=\"ACCESSTrackCS\"> </a><a name=\"hcACCESSTrackCS\"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">eCKM<a name=\"ACCESSTrackCS-eCKM\"> </a></td><td>Early Cardio-Kidney-Metabolic track</td><td>Early Cardio-kidney-metabolic conditions, including hypertension (high blood pressure), dyslipidemia (high or abnormal lipids, including cholesterol), obesity or overweight with marker of central obesity, and prediabetes.</td></tr><tr><td style=\"white-space:nowrap\">CKM<a name=\"ACCESSTrackCS-CKM\"> </a></td><td>Cardio-Kidney-Metabolic track</td><td>Cardio-kidney-metabolic conditions, including diabetes, chronic kidney disease (3a or 3b), and atherosclerotic cardiovascular disease, including heart disease.</td></tr><tr><td style=\"white-space:nowrap\">MSK<a name=\"ACCESSTrackCS-MSK\"> </a></td><td>Musculoskeletal track</td><td>Musculoskeletal conditions, including chronic musculoskeletal pain.</td></tr><tr><td style=\"white-space:nowrap\">BH<a name=\"ACCESSTrackCS-BH\"> </a></td><td>Behavioral Health track</td><td>Behavioral health conditions, including depression and anxiety.</td></tr></table></div>"
   },
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSTrackCS",
   "title" : "ACCESS Model Tracks",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Event Types - CMS ACCESS Model API v0.7.0</title>
+    <title>ACCESS Event Types - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -130,7 +130,7 @@
           <div class="inner-wrapper">
 
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -177,7 +177,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS|0.7.0"/></span>
+      <span class="copy-text">0.9.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS|0.9.0"/></span>
       </td>
     </tr>
 
@@ -193,7 +193,7 @@
         
           Draft
           
-            as of 2026-02-26
+            as of 2026-03-06
           
         
       </td>
@@ -240,22 +240,22 @@
 <td>The 3-month participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired.</td></tr>
 <tr><td style="white-space:nowrap">control-group-ending<a name="ACCESSEventTypeCS-control-group-ending"> </a></td>
 <td>Control Group Period Ending</td>
-<td>The 12-month control group assignment period is ending soon, allowing the patient to be aligned to a participant.</td></tr>
+<td>The 12-month control group assignment period is ending soon, allowing the patient to be reconsidered for alignment in the ACCESS Model.</td></tr>
 <tr><td style="white-space:nowrap">alignment-renewal<a name="ACCESSEventTypeCS-alignment-renewal"> </a></td>
 <td>Alignment Renewal Due</td>
-<td>The alignment period is ending and renewal action is required to continue services under the ACCESS Model.</td></tr>
+<td>The initial alignment period is ending and renewal action is required to continue services under the ACCESS Model.</td></tr>
 <tr><td style="white-space:nowrap">baseline-reporting-window<a name="ACCESSEventTypeCS-baseline-reporting-window"> </a></td>
 <td>Baseline Reporting Due</td>
-<td>Baseline data must be reported within 60 days of alignment. The baseline data is due soon. Please submit the baseline data for the patient.</td></tr>
+<td>The baseline data report is due soon. If baseline reporting is not received within 60 days of alignment, the patient will be unaligned.</td></tr>
 <tr><td style="white-space:nowrap">quarterly-reporting-window<a name="ACCESSEventTypeCS-quarterly-reporting-window"> </a></td>
 <td>Quarterly Reporting Due</td>
-<td>The quarterly data report is due soon. Please submit the quarterly data for the patient.</td></tr>
+<td>The quarterly data report is due soon. Quarterly reporting must be submitted 70 to 110 days after the prior data submission.</td></tr>
 <tr><td style="white-space:nowrap">eoy-reporting-window<a name="ACCESSEventTypeCS-eoy-reporting-window"> </a></td>
 <td>End-of-Year Reporting Due</td>
-<td>The end-of-year data report is due soon. Please submit the end-of-year data for the patient.</td></tr>
+<td>The end-of-year data report is due soon. End-of-year reporting must be submitted no later than 425 days from the date of alignment (365 days plus an additional 60 days).</td></tr>
 <tr><td style="white-space:nowrap">unalignment<a name="ACCESSEventTypeCS-unalignment"> </a></td>
 <td>Unalignment Notice</td>
-<td>The patient has been unaligned from the ACCESS Model. See the Beneficiary Alignment Report for additional information.</td></tr></table></div>
+<td>The patient has been unaligned from the ACCESS Model due to a change in eligibility status.</td></tr></table></div>
 
   
 
@@ -282,7 +282,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

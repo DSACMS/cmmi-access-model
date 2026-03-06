@@ -1,6 +1,6 @@
 {
   "package": "cms.fhir.us.access",
-  "version": "0.7.0",
+  "version": "0.9.0",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [],
@@ -23,6 +23,10 @@
       {
         "url": "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
         "title": "ACCESS CKM Track Condition Profile"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition",
+        "title": "ACCESS Clinical Exclusion Condition"
       },
       {
         "url": "https://globalalliantinc.com/access/StructureDefinition/access-condition",

@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Unalignment Request - XML Representation - CMS ACCESS Model API v0.7.0</title>
+    <title>Unalignment Request - XML Representation - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,8 +43,8 @@
 	  <script src="assets/js/prism.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.26"}
-    h3,h4,h5,h6{--heading-prefix:"3.26"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.27"}
+    h3,h4,h5,h6{--heading-prefix:"3.27"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -132,7 +132,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 7" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -181,7 +181,7 @@
         
           Active
           
-            as of 2026-02-26
+            as of 2026-03-06
           
         
       </td>
@@ -206,18 +206,18 @@
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;payerID&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Payer ID for the patient.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;patient&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/patient.html&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Patient information.  It &lt;strong&gt;SHOULD&lt;/strong&gt; contain the Medicare Beneficiary Identifier (MBI).&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;track&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;ValueSet-ACCESSTrackVS.html&quot;&gt;ACCESS Model Tracks Value Set&lt;/a&gt; (Required)&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;ACCESS track to unalign the patient from.&lt;/p&gt;
-&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;conditions&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/condition.html&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Patient's conditions.&lt;/p&gt;
+&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;condition&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/condition.html&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Patient's conditions.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;reason&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Reason for the manual unalignment.&lt;/p&gt;
 &lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;<a name="end-xhtml"></a>
   &lt;/<a href="http://hl7.org/fhir/R4/domainresource.html#OperationDefinition.text">text</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">url</a>
        <a href="http://hl7.org/fhir/R4/datatypes.html#uri">value</a>=&quot;https://globalalliantinc.com/access/OperationDefinition/Unalign&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.7.0&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;0.9.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unalign&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">title</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Unalignment Request&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">status</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;active&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">kind</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;operation&quot;/&gt;
-  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-02-26T23:16:42-05:00&quot;/&gt;
+  &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a> <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">value</a>=&quot;2026-03-06T16:03:26-05:00&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">publisher</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Global Alliant, Inc.&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">contact</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;Global Alliant, Inc.&quot;/&gt;
@@ -245,7 +245,7 @@
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">type</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;true&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">instance</a> <a href="http://hl7.org/fhir/R4/datatypes.html#boolean">value</a>=&quot;false&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.inputProfile">inputProfile</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0&quot;/&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;participantID&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in&quot;/&gt;
@@ -282,11 +282,11 @@
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding">binding</a>&gt;
       &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding.strength">strength</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;required&quot;/&gt;
       &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding.valueSet">valueSet</a>
-                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0&quot;/&gt;
+                <a href="http://hl7.org/fhir/R4/datatypes.html#canonical">value</a>=&quot;https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0&quot;/&gt;
     &lt;/<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding">binding</a>&gt;
   &lt;/<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
   &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>&gt;
-    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;conditions&quot;/&gt;
+    &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;condition&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">use</a> <a href="http://hl7.org/fhir/R4/datatypes.html#code">value</a>=&quot;in&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">min</a> <a href="http://hl7.org/fhir/R4/datatypes.html#integer">value</a>=&quot;0&quot;/&gt;
     &lt;<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">max</a> <a href="http://hl7.org/fhir/R4/datatypes.html#string">value</a>=&quot;*&quot;/&gt;
@@ -325,7 +325,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

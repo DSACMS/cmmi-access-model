@@ -1,4 +1,4 @@
-# ACCESS Eligibility Result Codes - CMS ACCESS Model API v0.7.0
+# ACCESS Eligibility Result Codes - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSEligibilityResultCS |
+| *Official URL*:https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSEligibilityResultCS |
 | **Copyright/Legal**: Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS). | |
 
  
@@ -28,12 +28,12 @@ This codesystem defines codes indicating the result of an eligibility check.
   "resourceType" : "CodeSystem",
   "id" : "ACCESSEligibilityResultCS",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEligibilityResultCS",
   "title" : "ACCESS Eligibility Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

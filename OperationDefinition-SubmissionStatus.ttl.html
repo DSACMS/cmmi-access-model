@@ -5,7 +5,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Submission Status - TTL Representation - CMS ACCESS Model API v0.7.0</title>
+    <title>Submission Status - TTL Representation - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -54,7 +54,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -132,7 +132,7 @@
           <div class="inner-wrapper">
 
 <div style="counter-reset: section 9" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -181,7 +181,7 @@
         
           Active
           
-            as of 2026-02-26
+            as of 2026-03-06
           
         
       </td>
@@ -211,18 +211,18 @@
   <a href="http://hl7.org/fhir/R4/resource.html#OperationDefinition.id">fhir:id</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SubmissionStatus&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/domainresource.html#OperationDefinition.text">fhir:text</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;generated&quot; ] ;
-<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition SubmissionStatus&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SubmissionStatus\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSubmissionStatus\&quot;&gt; &lt;/a&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;result&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The result of the asynchronous operation. The specific codes returned depend on the original operation type: &lt;a href=\&quot;ValueSet-ACCESSEligibilityResultVS.html\&quot;&gt;ACCESSEligibilityResultVS&lt;/a&gt; for $check-eligibility submissions, &lt;a href=\&quot;ValueSet-ACCESSAlignmentResultVS.html\&quot;&gt;ACCESSAlignmentResultVS&lt;/a&gt; for $align submissions, and &lt;a href=\&quot;ValueSet-ACCESSUnalignmentResultVS.html\&quot;&gt;ACCESSUnalignmentResultVS&lt;/a&gt; for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div&gt;&lt;p&gt;The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
+<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">fhir:div</a> [ <a href="http://hl7.org/fhir/R4/narrative.html#xhtml">fhir:v</a> &quot;&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition SubmissionStatus&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;SubmissionStatus\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcSubmissionStatus\&quot;&gt; &lt;/a&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;result&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;The result of the asynchronous operation. The specific codes returned depend on the original operation type: &lt;a href=\&quot;ValueSet-ACCESSEligibilityResultVS.html\&quot;&gt;ACCESSEligibilityResultVS&lt;/a&gt; for $check-eligibility submissions, &lt;a href=\&quot;ValueSet-ACCESSAlignmentResultVS.html\&quot;&gt;ACCESSAlignmentResultVS&lt;/a&gt; for $align submissions, and &lt;a href=\&quot;ValueSet-ACCESSUnalignmentResultVS.html\&quot;&gt;ACCESSUnalignmentResultVS&lt;/a&gt; for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;OUT&lt;/td&gt;&lt;td&gt;issues&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/operationoutcome.html\&quot;&gt;OperationOutcome&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;This parameter &lt;strong&gt;MAY&lt;/strong&gt; be included to provide more detail about the context of the result code.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;div&gt;&lt;p&gt;The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345&lt;/p&gt;\n&lt;/div&gt;&lt;/div&gt;&quot;^^rdf:XMLLiteral ]
   ] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">fhir:url</a> [
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:v</a> &quot;https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus&quot;^^xsd:anyURI ;
 <a href="http://hl7.org/fhir/R4/datatypes.html#uri">fhir:l</a> &lt;https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus&gt;
   ] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.7.0&quot;] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">fhir:version</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;0.9.0&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;SubmissionStatus&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">fhir:title</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Submission Status&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">fhir:status</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;active&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">fhir:kind</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;operation&quot;] ; # 
-  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-02-26T23:16:42-05:00&quot;^^xsd:dateTime] ; # 
+  <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">fhir:date</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#dateTime">fhir:v</a> &quot;2026-03-06T16:03:26-05:00&quot;^^xsd:dateTime] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">fhir:publisher</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Global Alliant, Inc.&quot;] ; # 
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">fhir:contact</a> ( [
 <a href="http://hl7.org/fhir/R4/metadatatypes.html#ContactDetail#ContactDetail.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;Global Alliant, Inc.&quot; ] ;
@@ -249,10 +249,17 @@
   <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">fhir:parameter</a> ( [
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;result&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;out&quot; ] ;
-<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 1 ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;The result of the asynchronous operation. The specific codes returned depend on the original operation type: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility submissions, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align submissions, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.&quot; ] ;
 <a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;CodeableConcept&quot; ]
+  ] [
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">fhir:name</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;issues&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.use">fhir:use</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;out&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.min">fhir:min</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#integer">fhir:v</a> 0 ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.max">fhir:max</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;1&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.documentation">fhir:documentation</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#string">fhir:v</a> &quot;This parameter **MAY** be included to provide more detail about the context of the result code.&quot; ] ;
+<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">fhir:type</a> [ <a href="http://hl7.org/fhir/R4/datatypes.html#code">fhir:v</a> &quot;OperationOutcome&quot; ]
   ] ) . # 
 
 </code></pre>
@@ -280,7 +287,7 @@
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

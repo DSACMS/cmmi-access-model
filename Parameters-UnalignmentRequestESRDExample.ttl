@@ -111,14 +111,14 @@
        fhir:text [ fhir:v "Patient has developed end-stage renal disease (ESRD) requiring dialysis, which makes them ineligible for the ACCESS Model." ]
      ]
   ] [
-     fhir:name [ fhir:v "conditions" ] ;
+     fhir:name [ fhir:v "condition" ] ;
      fhir:Parameters.parameter.resource ( [
        a fhir:Condition ;
        fhir:id [ fhir:v "ESRDConditionExample" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-condition"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition>
+           fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition>
          ] )
        ] ;
        fhir:text [

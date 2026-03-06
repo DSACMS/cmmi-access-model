@@ -11,11 +11,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.141"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-category",
@@ -29,11 +30,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.162"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-clinical",
@@ -47,11 +49,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.164"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-severity",
@@ -65,11 +68,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.168"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage",
@@ -83,11 +87,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.170"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-stage-type",
@@ -101,11 +106,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.171"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/condition-ver-status",
@@ -119,11 +125,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.166"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/languages",
@@ -137,18 +144,19 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-access-check-eligibility-out.html" : "ACCESS Check Eligibility Response Parameters",
     "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
     "StructureDefinition-access-submission-status-out.html" : "ACCESS Submission Status Response Parameters",
     "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
-    "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
-    "StructureDefinition-access-check-eligibility-out.html" : "ACCESS Check Eligibility Response Parameters",
-    "StructureDefinition-access-unalign-out.html" : "ACCESS Unalignment Response Parameters",
-    "StructureDefinition-access-align-out.html" : "ACCESS Alignment Response Parameters",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
     "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
-    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters"
+    "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
+    "StructureDefinition-access-align-out.html" : "ACCESS Alignment Response Parameters",
+    "StructureDefinition-access-unalign-out.html" : "ACCESS Unalignment Response Parameters",
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/manifestation-or-symptom",
@@ -162,11 +170,12 @@
     "sources" : ["2.16.840.1.113883.4.642.3.169"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-condition-code",
@@ -180,6 +189,7 @@
     "http://snomed.info/sct"],
     "uses" : {
     },
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile"
   },
   {
@@ -193,11 +203,12 @@
     "http://terminology.hl7.org/CodeSystem/condition-category"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "http://hl7.org/fhir/us/core/ValueSet/us-core-screening-assessment-condition-category",
@@ -209,15 +220,16 @@
     "systems" : ["http://hl7.org/fhir/us/core/CodeSystem/us-core-category"],
     "uses" : {
     },
-    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
-    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile",
     "StructureDefinition-access-bh-condition.html" : "ACCESS BH Condition Profile",
+    "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile",
+    "StructureDefinition-access-clinical-exclusion-condition.html" : "ACCESS Clinical Exclusion Condition",
     "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile"
+    "StructureDefinition-access-ckm-condition.html" : "ACCESS CKM Track Condition Profile",
+    "StructureDefinition-access-eckm-condition.html" : "ACCESS eCKM Track Condition Profile"
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultVS",
     "title" : "ACCESS Alignment Result Value Set",
@@ -229,7 +241,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSBHDiagnosisVS",
     "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
@@ -241,7 +253,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSCKMDiagnosisVS",
     "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
@@ -253,7 +265,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultVS",
     "title" : "ACCESS Eligibility Result Value Set",
@@ -265,7 +277,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEventTypeVS",
     "title" : "ACCESS Event Types Value Set",
@@ -274,7 +286,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSMSKDiagnosisVS",
     "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
@@ -285,8 +297,21 @@
     "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile"
   },
   {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS",
+    "version" : "0.9.0",
+    "status" : "draft",
+    "name" : "ACCESSReferralTypeVS",
+    "title" : "ACCESS Referral Type Value Set",
+    "description" : "This value set includes all codes from the ACCESS Referral Type code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"],
+    "uses" : {
+    },
+    "OperationDefinition-Align.html" : "Alignment Request",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters"
+  },
+  {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSTrackVS",
     "title" : "ACCESS Model Tracks Value Set",
@@ -294,16 +319,16 @@
     "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"],
     "uses" : {
     },
-    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
-    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
-    "OperationDefinition-Align.html" : "Alignment Request",
-    "OperationDefinition-Unalign.html" : "Unalignment Request",
     "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
+    "OperationDefinition-Align.html" : "Alignment Request",
+    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
+    "OperationDefinition-Unalign.html" : "Unalignment Request",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
     "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters"
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonVS",
     "title" : "ACCESS Unalignment Reason Value Set",
@@ -315,7 +340,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultVS",
     "title" : "ACCESS Unalignment Result Value Set",
@@ -327,7 +352,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSeCKMDiagnosisVS",
     "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",

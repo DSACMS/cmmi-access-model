@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"/>
-  <version value="0.7.0"/>
+  <version value="0.9.0"/>
   <name value="CMSAccessAPI"/>
   <title value="CMS ACCESS Model API"/>
   <status value="draft"/>
-  <date value="2026-02-26T23:16:42-05:00"/>
+  <date value="2026-03-06T16:03:26-05:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -662,6 +662,18 @@
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
+        <reference value="StructureDefinition/access-clinical-exclusion-condition"/>
+      </reference>
+      <name value="ACCESS Clinical Exclusion Condition"/>
+      <description value="The ACCESS Clinical Exclusion Condition profile is used for representing disqualifying conditions that would prevent a patient from being eligible for the ACCESS Model."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource:abstract"/>
+      </extension>
+      <reference>
         <reference value="StructureDefinition/access-condition"/>
       </reference>
       <name value="ACCESS Condition Profile"/>
@@ -798,13 +810,35 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSReferralTypeCS"/>
+      </reference>
+      <name value="ACCESS Referral Type"/>
+      <description value="This codesystem defines codes that indicate how the patient was referred to the ACCESS Model."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSReferralTypeVS"/>
+      </reference>
+      <name value="ACCESS Referral Type Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Referral Type code system."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
         <reference value="StructureDefinition/access-submission-status-out"/>
       </reference>
       <name value="ACCESS Submission Status Response Parameters"/>
-      <description value="This is the profile for the $submission-status operation output parameters (generic for all APIs)."/>
+      <description value="This is the profile for the $submission-status operation output parameters (generic for all APIs). When the result indicates a validation error, the optional 'issues' parameter MAY contain an OperationOutcome resource with detailed validation error information to help implementers understand and correct the submission."/>
       <exampleBoolean value="false"/>
       <groupingId value="SharedResources"/>
     </resource>
@@ -912,7 +946,7 @@
       </reference>
       <name value="Alignment Request Example"/>
       <description value="Example of parameters for aligning a patient to the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -923,7 +957,7 @@
       </reference>
       <name value="Alignment Request with Switch Consent Example"/>
       <description value="Example of parameters for aligning a patient with switch consent attestation"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -934,7 +968,7 @@
       </reference>
       <name value="Alignment Response - Aligned Example"/>
       <description value="Example response indicating successful patient alignment"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -945,7 +979,7 @@
       </reference>
       <name value="Alignment Response - Switch Approved Example"/>
       <description value="Example response indicating successful provider switch"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -968,7 +1002,7 @@
       </reference>
       <name value="Check Eligibility Request Example"/>
       <description value="Example of parameters for checking patient eligibility for the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -979,7 +1013,7 @@
       </reference>
       <name value="Check Eligibility Response - Eligible Example"/>
       <description value="Example response indicating patient is eligible for the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -990,7 +1024,7 @@
       </reference>
       <name value="Condition Example - Essential Hypertension"/>
       <description value="Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1001,7 +1035,7 @@
       </reference>
       <name value="Condition Example - Major Depressive Disorder"/>
       <description value="Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1012,7 +1046,7 @@
       </reference>
       <name value="Condition Example - Osteoarthritis"/>
       <description value="Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1023,7 +1057,7 @@
       </reference>
       <name value="Condition Example - Type 2 Diabetes"/>
       <description value="Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1034,7 +1068,7 @@
       </reference>
       <name value="End Stage Renal Disease Condition Example"/>
       <description value="Active ESRD diagnosis that disqualifies patient from ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1103,7 +1137,7 @@
       </reference>
       <name value="Submission Status Response Example"/>
       <description value="Example response for submission status check"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.9.0"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1126,7 +1160,7 @@
       </reference>
       <name value="Unalignment Request - ESRD Example"/>
       <description value="Example of unalignment request for patient who developed ESRD (no longer clinically eligible)"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1138,7 +1172,7 @@
       </reference>
       <name value="Unalignment Request Example"/>
       <description value="Example of parameters for unaligning a patient from the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1150,7 +1184,7 @@
       </reference>
       <name value="Unalignment Response - Unaligned Example"/>
       <description value="Example response indicating successful patient unalignment"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.7.0"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.9.0"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <page>

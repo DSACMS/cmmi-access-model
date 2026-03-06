@@ -9,14 +9,14 @@
     "oids" : ["2.16.840.1.113883.6.90"],
     "uses" : {
     },
-    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
     "ValueSet-ACCESSCKMDiagnosisVS.html" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
     "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSMSKDiagnosisVS.html" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses"
   },
   {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultCS",
     "title" : "ACCESS Alignment Request Result Codes",
@@ -27,7 +27,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultCS",
     "title" : "ACCESS Eligibility Result Codes",
@@ -38,7 +38,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEventTypeCS",
     "title" : "ACCESS Event Types",
@@ -48,8 +48,19 @@
     "ValueSet-ACCESSEventTypeVS.html" : "ACCESS Event Types Value Set"
   },
   {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
+    "version" : "0.9.0",
+    "status" : "draft",
+    "name" : "ACCESSReferralTypeCS",
+    "title" : "ACCESS Referral Type",
+    "description" : "This codesystem defines codes that indicate how the patient was referred to the ACCESS Model.",
+    "uses" : {
+    },
+    "ValueSet-ACCESSReferralTypeVS.html" : "ACCESS Referral Type Value Set"
+  },
+  {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSTrackCS",
     "title" : "ACCESS Model Tracks",
@@ -60,7 +71,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonCS",
     "title" : "ACCESS Unalignment Reason Codes",
@@ -71,7 +82,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultCS",
     "title" : "ACCESS Unalignment Request Result Codes",

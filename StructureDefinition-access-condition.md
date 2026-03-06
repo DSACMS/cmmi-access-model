@@ -1,14 +1,14 @@
-# ACCESS Condition Profile - CMS ACCESS Model API v0.7.0
+# ACCESS Condition Profile - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
 * **ACCESS Condition Profile**
 
-## Resource Profile: ACCESS Condition Profile 
+## Resource Profile: ACCESS Condition Profile ( Abstract ) 
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-condition | *Version*:0.7.0 |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-condition | *Version*:0.9.0 |
 | Active as of 2026-02-05 | *Computable Name*:ACCESSCondition |
 
  
@@ -23,9 +23,8 @@ For more information on value set binding strengths, see the [Conformance page](
 
 **Usages:**
 
-* Derived from this Profile: [ACCESS BH Condition Profile](StructureDefinition-access-bh-condition.md), [ACCESS CKM Track Condition Profile](StructureDefinition-access-ckm-condition.md), [ACCESS eCKM Track Condition Profile](StructureDefinition-access-eckm-condition.md) and [ACCESS MSK Track Condition Profile](StructureDefinition-access-msk-condition.md)
-* Use this Profile: [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md), [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md) and [ACCESS Unalignment Request Parameters](StructureDefinition-access-unalign-in.md)
-* Examples for this Profile: [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md)
+* Derived from this Profile: [ACCESS BH Condition Profile](StructureDefinition-access-bh-condition.md), [ACCESS CKM Track Condition Profile](StructureDefinition-access-ckm-condition.md), [ACCESS Clinical Exclusion Condition](StructureDefinition-access-clinical-exclusion-condition.md), [ACCESS eCKM Track Condition Profile](StructureDefinition-access-eckm-condition.md) and [ACCESS MSK Track Condition Profile](StructureDefinition-access-msk-condition.md)
+* Use this Profile: [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) and [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.access|current/StructureDefinition/access-condition)
 
@@ -46,7 +45,7 @@ Other representations of profile: [CSV](StructureDefinition-access-condition.csv
   "resourceType" : "StructureDefinition",
   "id" : "access-condition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCondition",
   "title" : "ACCESS Condition Profile",
   "status" : "active",
@@ -103,7 +102,7 @@ Other representations of profile: [CSV](StructureDefinition-access-condition.csv
     "name" : "SNOMED CT Attribute Binding"
   }],
   "kind" : "resource",
-  "abstract" : false,
+  "abstract" : true,
   "type" : "Condition",
   "baseDefinition" : "http://hl7.org/fhir/us/core/StructureDefinition/us-core-condition-problems-health-concerns|6.1.0",
   "derivation" : "constraint",

@@ -1,4 +1,4 @@
-# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.7.0
+# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-align-out | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSAlignmentResponseParameters |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-align-out | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSAlignmentResponseParameters |
 
  
 This is the profile for the `$align` operation output parameters, which provide the results of the alignment request. 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-access-align-out.csv
   "resourceType" : "StructureDefinition",
   "id" : "access-align-out",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-align-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentResponseParameters",
   "title" : "ACCESS Alignment Response Parameters",
   "status" : "draft",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-access-align-out.csv
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS|0.7.0"
+        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS|0.9.0"
       }
     }]
   }

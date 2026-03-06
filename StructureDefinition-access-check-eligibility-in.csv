@@ -59,7 +59,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 access-participant-id-pattern:ACCESS Participant ID must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234) {value.matches('^ACCESS\\d{4}$')}"
-"Parameters.parameter:participantID.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
+"Parameters.parameter:participantID.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
 ","If parameter is a whole resource","If the parameter is a whole resource.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"inv-1
 ",""
 "Parameters.parameter:participantID.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
@@ -84,7 +84,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:payerID.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
+"Parameters.parameter:payerID.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
 ","If parameter is a whole resource","If the parameter is a whole resource.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"inv-1
 ",""
 "Parameters.parameter:payerID.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
@@ -105,7 +105,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "Parameters.parameter:patient.name","Parameters.parameter.name","","","",1,1,"Y","","Y","string {[]} {[]}
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""patient""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:patient.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","base64Binary {[]} {[]}
+"Parameters.parameter:patient.value[x]","Parameters.parameter.value[x]","","","",0,0,"","","Y","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -131,36 +131,36 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
+"Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
 ","If parameter is a whole resource","If the parameter is a whole resource.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"inv-1
 ",""
 "Parameters.parameter:track.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:conditions","Parameters.parameter","conditions","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
+"Parameters.parameter:condition","Parameters.parameter","condition","","",0,*,"Y","","Y","BackboneElement {[]} {[]}
 ","Operation Parameter","A parameter passed to or received from the operation.","","","","","","","","","",,,,,"",,,,"Parameters.parameter",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 inv-1:A parameter must have one and only one of (value, resource, part) {(part.exists() and value.empty() and resource.empty()) or (part.empty() and (value.exists() xor resource.exists()))}"
-"Parameters.parameter:conditions.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
+"Parameters.parameter:condition.id","Parameters.parameter.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"","","n/a"
-"Parameters.parameter:conditions.extension","Parameters.parameter.extension","","extensions
+"Parameters.parameter:condition.extension","Parameters.parameter.extension","","extensions
 user content","",0,*,"","","","Extension {[]} {[]}
 ","Additional content defined by implementations","May be used to represent additional information that is not part of the basic definition of the element. To make the use of extensions safe and manageable, there is a strict set of governance  applied to the definition and use of extensions. Though any implementer can define an extension, there is a set of requirements that SHALL be met as part of the definition of the extension.","There can be no stigma associated with the use of extensions by any application, project, or standard - regardless of the institution or jurisdiction that uses or defines the extensions.  The use of extensions is what allows the FHIR specification to retain a core level of simplicity for everyone.","","","","","","","","",,,,,"",,,,"Element.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}","n/a"
-"Parameters.parameter:conditions.modifierExtension","Parameters.parameter.modifierExtension","","","",0,0,"","Y","Y","Extension {[]} {[]}
+"Parameters.parameter:condition.modifierExtension","Parameters.parameter.modifierExtension","","","",0,0,"","Y","Y","Extension {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"",,,,"BackboneElement.modifierExtension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Parameters.parameter:conditions.name","Parameters.parameter.name","","","",1,1,"Y","","Y","string {[]} {[]}
-","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""conditions""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+"Parameters.parameter:condition.name","Parameters.parameter.name","","","",1,1,"Y","","Y","string {[]} {[]}
+","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""condition""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:conditions.value[x]","Parameters.parameter.value[x]","","","",0,1,"","","Y","base64Binary {[]} {[]}
+"Parameters.parameter:condition.value[x]","Parameters.parameter.value[x]","","","",0,0,"","","Y","base64Binary {[]} {[]}
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:conditions.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0]]} {[]}
+"Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0]]} {[]}
 ","Detailed information about conditions, problems or diagnoses","\-","\-","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"","","PPR message","Entity. Role, or Act","Observation[classCode=OBS, moodCode=EVN, code=ASSERTION, value<Diagnosis]"
-"Parameters.parameter:conditions.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
+"Parameters.parameter:condition.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

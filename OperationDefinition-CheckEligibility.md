@@ -1,4 +1,4 @@
-# Check Eligibility Request - CMS ACCESS Model API v0.7.0
+# Check Eligibility Request - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/CheckEligibility | *Version*:0.7.0 |
-| Active as of 2026-02-26 | *Computable Name*:CheckEligibility |
+| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/CheckEligibility | *Version*:0.9.0 |
+| Active as of 2026-03-06 | *Computable Name*:CheckEligibility |
 
  
 The **$check-eligibility** operation allows a participant to submit basic information on a patient who they believe will be a good candidate for the ACCESS model and who wants to be part of the ACCESS Model. The participant can use this API to do a quick check on which patients may be eligible before officially submitting the patient's information for consideration and inclusion in the ACCESS Model. 
@@ -23,12 +23,12 @@ The **$check-eligibility** operation allows a participant to submit basic inform
   "resourceType" : "OperationDefinition",
   "id" : "CheckEligibility",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "CheckEligibility",
   "title" : "Check Eligibility Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ The **$check-eligibility** operation allows a participant to submit basic inform
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.7.0",
+  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -88,11 +88,11 @@ The **$check-eligibility** operation allows a participant to submit basic inform
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
     }
   },
   {
-    "name" : "conditions",
+    "name" : "condition",
     "use" : "in",
     "min" : 0,
     "max" : "*",

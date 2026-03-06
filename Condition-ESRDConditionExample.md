@@ -1,4 +1,4 @@
-# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.7.0
+# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -17,7 +17,7 @@ End stage renal disease (ESRD)
   "resourceType" : "Condition",
   "id" : "ESRDConditionExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition"]
+    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"]
   },
   "clinicalStatus" : {
     "coding" : [{

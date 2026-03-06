@@ -1,4 +1,4 @@
-# Artifacts - CMS ACCESS Model API v0.7.0
+# Artifacts - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * **Artifacts**
@@ -31,14 +31,21 @@ These are the custom operations that can be supported by and/or invoked by syste
 | :--- | :--- |
 | [SubmissionStatus](OperationDefinition-SubmissionStatus.md) | Check the status of asynchronous operation requests |
 
+#### Abstract Profiles
+
+These profiles define base structure and terminologies common across other profiles. Abstract profiles cannot themselves be instantiated.
+
+| | |
+| :--- | :--- |
+| [ACCESS Condition Profile](StructureDefinition-access-condition.md) | Base abstract condition profile requiring ICD-10-CM codes for diagnoses across all ACCESS APIs. Provides the basis for other Condition-based profiles for the ACCESS Model. |
+
 #### Profiles
 
 These define constraints on FHIR resources for use across multiple ACCESS APIs.
 
 | | |
 | :--- | :--- |
-| [Submission Status Response Parameters](StructureDefinition-access-submission-status-out.md) | Output parameters for the $submission-status operation |
-| [ACCESS Condition Profile](StructureDefinition-access-condition.md) | Base condition profile requiring ICD-10-CM codes for diagnoses across all ACCESS APIs |
+| [ACCESS Submission Status Response Parameters](StructureDefinition-access-submission-status-out.md) | Output parameters for the $submission-status operation |
 | [ACCESS eCKM Track Condition Profile](StructureDefinition-access-eckm-condition.md) | Condition profile for Early Cardio-Kidney-Metabolic (eCKM) track with extensible binding to eCKM diagnosis codes |
 | [ACCESS CKM Track Condition Profile](StructureDefinition-access-ckm-condition.md) | Condition profile for Cardio-Kidney-Metabolic (CKM) track with extensible binding to CKM diagnosis codes |
 | [ACCESS MSK Track Condition Profile](StructureDefinition-access-msk-condition.md) | Condition profile for Musculoskeletal (MSK) track with extensible binding to MSK diagnosis codes |
@@ -96,8 +103,8 @@ These define constraints on FHIR resources for systems conforming to the ACCESS 
 
 | | |
 | :--- | :--- |
-| [Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md) | Input parameters for the $check-eligibility operation |
-| [Check Eligibility Response Parameters](StructureDefinition-access-check-eligibility-out.md) | Output parameters for the $check-eligibility operation |
+| [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md) | Input parameters for the $check-eligibility operation |
+| [ACCESS Check Eligibility Response Parameters](StructureDefinition-access-check-eligibility-out.md) | Output parameters for the $check-eligibility operation |
 
 #### Value Sets
 
@@ -105,7 +112,7 @@ These define sets of codes used by systems conforming to the ACCESS Eligibility 
 
 | | |
 | :--- | :--- |
-| [Eligibility Result Value Set](ValueSet-ACCESSEligibilityResultVS.md) | Value set including all eligibility result codes |
+| [ACCESS Eligibility Result Value Set](ValueSet-ACCESSEligibilityResultVS.md) | Value set including all eligibility result codes |
 
 #### Code Systems
 
@@ -113,7 +120,7 @@ These define new code systems used by systems conforming to the ACCESS Eligibili
 
 | | |
 | :--- | :--- |
-| [Eligibility Result Code System](CodeSystem-ACCESSEligibilityResultCS.md) | Codes indicating the result of an eligibility check |
+| [ACCESS Eligibility Result Code System](CodeSystem-ACCESSEligibilityResultCS.md) | Codes indicating the result of an eligibility check |
 
 #### Examples
 
@@ -142,8 +149,8 @@ These define constraints on FHIR resources for systems conforming to the ACCESS 
 
 | | |
 | :--- | :--- |
-| [Alignment Request Parameters](StructureDefinition-access-align-in.md) | Input parameters for the $align operation |
-| [Alignment Response Parameters](StructureDefinition-access-align-out.md) | Output parameters for the $align operation |
+| [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) | Input parameters for the $align operation |
+| [ACCESS Alignment Response Parameters](StructureDefinition-access-align-out.md) | Output parameters for the $align operation |
 
 #### Value Sets
 
@@ -151,8 +158,9 @@ These define sets of codes used by systems conforming to the ACCESS Alignment AP
 
 | | |
 | :--- | :--- |
-| [Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
-| [Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
+| [ACCESS Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
+| [ACCESS Referral Type Value Set](ValueSet-ACCESSReferralTypeVS.md) | Value set including all referral type codes indicating how patients were referred to the ACCESS Model |
+| [ACCESS Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
 
 #### Code Systems
 
@@ -160,8 +168,9 @@ These define new code systems used by systems conforming to the ACCESS Alignment
 
 | | |
 | :--- | :--- |
-| [Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
-| [Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
+| [ACCESS Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
+| [ACCESS Referral Type Code System](CodeSystem-ACCESSReferralTypeCS.md) | Codes indicating how a patient was referred to the ACCESS Model |
+| [ACCESS Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
 
 #### Examples
 
@@ -192,8 +201,9 @@ These define constraints on FHIR resources for systems conforming to the ACCESS 
 
 | | |
 | :--- | :--- |
-| [Unalignment Request Parameters](StructureDefinition-access-unalign-in.md) | Input parameters for the $unalign operation |
-| [Unalignment Response Parameters](StructureDefinition-access-unalign-out.md) | Output parameters for the $unalign operation |
+| [ACCESS Unalignment Request Parameters](StructureDefinition-access-unalign-in.md) | Input parameters for the $unalign operation |
+| [ACCESS Unalignment Response Parameters](StructureDefinition-access-unalign-out.md) | Output parameters for the $unalign operation |
+| [ACCESS Clinical Exclusion Condition](StructureDefinition-access-clinical-exclusion-condition.md) | ICD-10-CM diagnosis codes that disqualify a patient from the ACCESS Model |
 
 #### Value Sets
 
@@ -201,8 +211,8 @@ These define sets of codes used by systems conforming to the ACCESS Unalignment 
 
 | | |
 | :--- | :--- |
-| [Unalignment Result Value Set](ValueSet-ACCESSUnalignmentResultVS.md) | Value set including all unalignment result codes |
-| [Unalignment Reason Value Set](ValueSet-ACCESSUnalignmentReasonVS.md) | Value set including all unalignment reason codes |
+| [ACCESS Unalignment Result Value Set](ValueSet-ACCESSUnalignmentResultVS.md) | Value set including all unalignment result codes |
+| [ACCESS Unalignment Reason Value Set](ValueSet-ACCESSUnalignmentReasonVS.md) | Value set including all unalignment reason codes |
 
 #### Code Systems
 
@@ -210,8 +220,8 @@ These define new code systems used by systems conforming to the ACCESS Unalignme
 
 | | |
 | :--- | :--- |
-| [Unalignment Result Code System](CodeSystem-ACCESSUnalignmentResultCS.md) | Codes indicating the result of an unalignment request |
-| [Unalignment Reason Code System](CodeSystem-ACCESSUnalignmentReasonCS.md) | Codes indicating the reason for an unalignment request |
+| [ACCESS Unalignment Result Code System](CodeSystem-ACCESSUnalignmentResultCS.md) | Codes indicating the result of an unalignment request |
+| [ACCESS Unalignment Reason Code System](CodeSystem-ACCESSUnalignmentReasonCS.md) | Codes indicating the reason for an unalignment request |
 
 #### Examples
 

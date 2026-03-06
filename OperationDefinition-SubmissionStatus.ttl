@@ -11,18 +11,18 @@
   fhir:id [ fhir:v "SubmissionStatus"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition SubmissionStatus</b></p><a name=\"SubmissionStatus\"> </a><a name=\"hcSubmissionStatus\"> </a><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href=\"ValueSet-ACCESSEligibilityResultVS.html\">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href=\"ValueSet-ACCESSAlignmentResultVS.html\">ACCESSAlignmentResultVS</a> for $align submissions, and <a href=\"ValueSet-ACCESSUnalignmentResultVS.html\">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>\n</div></td></tr></table><div><p>The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345</p>\n</div></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition SubmissionStatus</b></p><a name=\"SubmissionStatus\"> </a><a name=\"hcSubmissionStatus\"> </a><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href=\"ValueSet-ACCESSEligibilityResultVS.html\">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href=\"ValueSet-ACCESSAlignmentResultVS.html\">ACCESSAlignmentResultVS</a> for $align submissions, and <a href=\"ValueSet-ACCESSUnalignmentResultVS.html\">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>\n</div></td></tr><tr><td>OUT</td><td>issues</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/operationoutcome.html\">OperationOutcome</a></td><td/><td><div><p>This parameter <strong>MAY</strong> be included to provide more detail about the context of the result code.</p>\n</div></td></tr></table><div><p>The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus"^^xsd:anyURI ;
      fhir:l <https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus>
   ] ; # 
-  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
   fhir:name [ fhir:v "SubmissionStatus"] ; # 
   fhir:title [ fhir:v "Submission Status"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-06T16:03:26-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Global Alliant, Inc." ] ;
@@ -53,10 +53,17 @@
   fhir:parameter ( [
      fhir:name [ fhir:v "result" ] ;
      fhir:use [ fhir:v "out" ] ;
-     fhir:min [ fhir:v 0 ] ;
+     fhir:min [ fhir:v 1 ] ;
      fhir:max [ fhir:v "1" ] ;
      fhir:documentation [ fhir:v "The result of the asynchronous operation. The specific codes returned depend on the original operation type: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility submissions, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align submissions, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned." ] ;
      fhir:type [ fhir:v "CodeableConcept" ]
+  ] [
+     fhir:name [ fhir:v "issues" ] ;
+     fhir:use [ fhir:v "out" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "This parameter **MAY** be included to provide more detail about the context of the result code." ] ;
+     fhir:type [ fhir:v "OperationOutcome" ]
   ] ) . # 
 
 # -------------------------------------------------------------------------------------

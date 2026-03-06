@@ -3,15 +3,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
   <id value="ACCESSEventTypeCS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSEventTypeCS</b></p><a name="ACCESSEventTypeCS"> </a><a name="hcACCESSEventTypeCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">participant-lock-ending<a name="ACCESSEventTypeCS-participant-lock-ending"> </a></td><td>Participant Lock-In Period Ending</td><td>The 3-month participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired.</td></tr><tr><td style="white-space:nowrap">control-group-ending<a name="ACCESSEventTypeCS-control-group-ending"> </a></td><td>Control Group Period Ending</td><td>The 12-month control group assignment period is ending soon, allowing the patient to be aligned to a participant.</td></tr><tr><td style="white-space:nowrap">alignment-renewal<a name="ACCESSEventTypeCS-alignment-renewal"> </a></td><td>Alignment Renewal Due</td><td>The alignment period is ending and renewal action is required to continue services under the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">baseline-reporting-window<a name="ACCESSEventTypeCS-baseline-reporting-window"> </a></td><td>Baseline Reporting Due</td><td>Baseline data must be reported within 60 days of alignment. The baseline data is due soon. Please submit the baseline data for the patient.</td></tr><tr><td style="white-space:nowrap">quarterly-reporting-window<a name="ACCESSEventTypeCS-quarterly-reporting-window"> </a></td><td>Quarterly Reporting Due</td><td>The quarterly data report is due soon. Please submit the quarterly data for the patient.</td></tr><tr><td style="white-space:nowrap">eoy-reporting-window<a name="ACCESSEventTypeCS-eoy-reporting-window"> </a></td><td>End-of-Year Reporting Due</td><td>The end-of-year data report is due soon. Please submit the end-of-year data for the patient.</td></tr><tr><td style="white-space:nowrap">unalignment<a name="ACCESSEventTypeCS-unalignment"> </a></td><td>Unalignment Notice</td><td>The patient has been unaligned from the ACCESS Model. See the Beneficiary Alignment Report for additional information.</td></tr></table></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSEventTypeCS</b></p><a name="ACCESSEventTypeCS"> </a><a name="hcACCESSEventTypeCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">participant-lock-ending<a name="ACCESSEventTypeCS-participant-lock-ending"> </a></td><td>Participant Lock-In Period Ending</td><td>The 3-month participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired.</td></tr><tr><td style="white-space:nowrap">control-group-ending<a name="ACCESSEventTypeCS-control-group-ending"> </a></td><td>Control Group Period Ending</td><td>The 12-month control group assignment period is ending soon, allowing the patient to be reconsidered for alignment in the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">alignment-renewal<a name="ACCESSEventTypeCS-alignment-renewal"> </a></td><td>Alignment Renewal Due</td><td>The initial alignment period is ending and renewal action is required to continue services under the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">baseline-reporting-window<a name="ACCESSEventTypeCS-baseline-reporting-window"> </a></td><td>Baseline Reporting Due</td><td>The baseline data report is due soon. If baseline reporting is not received within 60 days of alignment, the patient will be unaligned.</td></tr><tr><td style="white-space:nowrap">quarterly-reporting-window<a name="ACCESSEventTypeCS-quarterly-reporting-window"> </a></td><td>Quarterly Reporting Due</td><td>The quarterly data report is due soon. Quarterly reporting must be submitted 70 to 110 days after the prior data submission.</td></tr><tr><td style="white-space:nowrap">eoy-reporting-window<a name="ACCESSEventTypeCS-eoy-reporting-window"> </a></td><td>End-of-Year Reporting Due</td><td>The end-of-year data report is due soon. End-of-year reporting must be submitted no later than 425 days from the date of alignment (365 days plus an additional 60 days).</td></tr><tr><td style="white-space:nowrap">unalignment<a name="ACCESSEventTypeCS-unalignment"> </a></td><td>Unalignment Notice</td><td>The patient has been unaligned from the ACCESS Model due to a change in eligibility status.</td></tr></table></div>
   </text>
   <url value="https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS"/>
-  <version value="0.7.0"/>
+  <version value="0.9.0"/>
   <name value="ACCESSEventTypeCS"/>
   <title value="ACCESS Event Types"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-02-26T23:16:42-05:00"/>
+  <date value="2026-03-06T16:03:26-05:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -44,31 +44,31 @@
   <concept>
     <code value="control-group-ending"/>
     <display value="Control Group Period Ending"/>
-    <definition value="The 12-month control group assignment period is ending soon, allowing the patient to be aligned to a participant."/>
+    <definition value="The 12-month control group assignment period is ending soon, allowing the patient to be reconsidered for alignment in the ACCESS Model."/>
   </concept>
   <concept>
     <code value="alignment-renewal"/>
     <display value="Alignment Renewal Due"/>
-    <definition value="The alignment period is ending and renewal action is required to continue services under the ACCESS Model."/>
+    <definition value="The initial alignment period is ending and renewal action is required to continue services under the ACCESS Model."/>
   </concept>
   <concept>
     <code value="baseline-reporting-window"/>
     <display value="Baseline Reporting Due"/>
-    <definition value="Baseline data must be reported within 60 days of alignment. The baseline data is due soon. Please submit the baseline data for the patient."/>
+    <definition value="The baseline data report is due soon. If baseline reporting is not received within 60 days of alignment, the patient will be unaligned."/>
   </concept>
   <concept>
     <code value="quarterly-reporting-window"/>
     <display value="Quarterly Reporting Due"/>
-    <definition value="The quarterly data report is due soon. Please submit the quarterly data for the patient."/>
+    <definition value="The quarterly data report is due soon. Quarterly reporting must be submitted 70 to 110 days after the prior data submission."/>
   </concept>
   <concept>
     <code value="eoy-reporting-window"/>
     <display value="End-of-Year Reporting Due"/>
-    <definition value="The end-of-year data report is due soon. Please submit the end-of-year data for the patient."/>
+    <definition value="The end-of-year data report is due soon. End-of-year reporting must be submitted no later than 425 days from the date of alignment (365 days plus an additional 60 days)."/>
   </concept>
   <concept>
     <code value="unalignment"/>
     <display value="Unalignment Notice"/>
-    <definition value="The patient has been unaligned from the ACCESS Model. See the Beneficiary Alignment Report for additional information."/>
+    <definition value="The patient has been unaligned from the ACCESS Model due to a change in eligibility status."/>
   </concept>
 </CodeSystem>

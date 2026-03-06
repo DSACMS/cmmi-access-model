@@ -67,7 +67,7 @@
     </valueCodeableConcept>
   </parameter>
   <parameter>
-    <name value="conditions"/>
+    <name value="condition"/>
     <resource>
       <Condition>
         <id value="ConditionDiabetesExample"/>
@@ -108,5 +108,15 @@
         <onsetDateTime value="2020-01-15"/>
       </Condition>
     </resource>
+  </parameter>
+  <parameter>
+    <name value="referralType"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"/>
+        <code value="provider-referral"/>
+        <display value="Provider referral"/>
+      </coding>
+    </valueCodeableConcept>
   </parameter>
 </Parameters>

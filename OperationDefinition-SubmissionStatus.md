@@ -1,4 +1,4 @@
-# Submission Status - CMS ACCESS Model API v0.7.0
+# Submission Status - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus | *Version*:0.7.0 |
-| Active as of 2026-02-26 | *Computable Name*:SubmissionStatus |
+| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus | *Version*:0.9.0 |
+| Active as of 2026-03-06 | *Computable Name*:SubmissionStatus |
 
  
 The **$submission-status** operation allows the client to check the status of any asynchronous ACCESS operation submission. This is a shared operation used by all ACCESS APIs. The specific result codes returned depend on which operation created the submission: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.md) for $check-eligibility, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.md) for $align, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.md) for $unalign. 
@@ -23,12 +23,12 @@ The **$submission-status** operation allows the client to check the status of an
   "resourceType" : "OperationDefinition",
   "id" : "SubmissionStatus",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "SubmissionStatus",
   "title" : "Submission Status",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -57,10 +57,18 @@ The **$submission-status** operation allows the client to check the status of an
   "parameter" : [{
     "name" : "result",
     "use" : "out",
-    "min" : 0,
+    "min" : 1,
     "max" : "1",
     "documentation" : "The result of the asynchronous operation. The specific codes returned depend on the original operation type: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility submissions, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align submissions, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.",
     "type" : "CodeableConcept"
+  },
+  {
+    "name" : "issues",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "This parameter **MAY** be included to provide more detail about the context of the result code.",
+    "type" : "OperationOutcome"
   }]
 }
 

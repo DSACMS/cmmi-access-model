@@ -77,12 +77,12 @@
     }
   },
   {
-    "name" : "conditions",
+    "name" : "condition",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "ESRDConditionExample",
       "meta" : {
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition"]
+        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"]
       },
       "text" : {
         "status" : "generated",

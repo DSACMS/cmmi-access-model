@@ -1,4 +1,4 @@
-# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.7.0
+# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,11 +8,11 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSSubmissionStatusResponseParameters |
+| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSSubmissionStatusResponseParameters |
 
  
-This is the profile for the $submission-status operation output parameters (generic for all APIs). 
+This is the profile for the $submission-status operation output parameters (generic for all APIs). When the result indicates a validation error, the optional 'issues' parameter MAY contain an OperationOutcome resource with detailed validation error information to help implementers understand and correct the submission. 
 
 **Usages:**
 
@@ -37,11 +37,11 @@ Other representations of profile: [CSV](StructureDefinition-access-submission-st
   "resourceType" : "StructureDefinition",
   "id" : "access-submission-status-out",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSSubmissionStatusResponseParameters",
   "title" : "ACCESS Submission Status Response Parameters",
   "status" : "draft",
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ Other representations of profile: [CSV](StructureDefinition-access-submission-st
       "value" : "david.h@globalalliantinc.org"
     }]
   }],
-  "description" : "This is the profile for the $submission-status operation output parameters (generic for all APIs).",
+  "description" : "This is the profile for the $submission-status operation output parameters (generic for all APIs). When the result indicates a validation error, the optional 'issues' parameter MAY contain an OperationOutcome resource with detailed validation error information to help implementers understand and correct the submission.",
   "jurisdiction" : [{
     "coding" : [{
       "system" : "urn:iso:std:iso:3166",
@@ -116,6 +116,31 @@ Other representations of profile: [CSV](StructureDefinition-access-submission-st
       "min" : 1,
       "type" : [{
         "code" : "CodeableConcept"
+      }],
+      "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:issues",
+      "path" : "Parameters.parameter",
+      "sliceName" : "issues",
+      "short" : "Provides more result context",
+      "definition" : "When present, contains an OperationOutcome resource with detailed information about submission errors, warnings, or informational messages. This parameter is typically included when the result code indicates a validation error to provide structured, parseable details about what validation checks failed and how to correct the submission.",
+      "min" : 0,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:issues.name",
+      "path" : "Parameters.parameter.name",
+      "fixedString" : "issues",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Parameters.parameter:issues.resource",
+      "path" : "Parameters.parameter.resource",
+      "min" : 1,
+      "type" : [{
+        "code" : "OperationOutcome"
       }],
       "mustSupport" : true
     }]

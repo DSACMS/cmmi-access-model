@@ -1,4 +1,4 @@
-# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.7.0
+# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement | *Version*:0.7.0 |
+| *Official URL*:https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement | *Version*:0.9.0 |
 | Active as of 2026-01-23 | *Computable Name*:ACCESSEligibilityAPICapabilityStatement |
 
  
@@ -25,7 +25,7 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
   "resourceType" : "CapabilityStatement",
   "id" : "ACCESSEligibilityAPICapabilityStatement",
   "url" : "https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEligibilityAPICapabilityStatement",
   "title" : "ACCESS Eligibility API Capability Statement",
   "status" : "active",
@@ -67,12 +67,12 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
       "documentation" : "Patient resource for ACCESS eligibility operations",
       "operation" : [{
         "name" : "check-eligibility",
-        "definition" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility|0.7.0",
+        "definition" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility|0.9.0",
         "documentation" : "Check if a patient is eligible for the ACCESS Model. Returns eligibility status from ACCESSEligibilityResultVS: eligible, not-eligible-not-medicare, not-eligible-services, not-eligible-diagnoses, not-eligible-control-group, or not-eligible-already-aligned. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."
       },
       {
         "name" : "submission-status",
-        "definition" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus|0.7.0",
+        "definition" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus|0.9.0",
         "documentation" : "Poll the status of a previously submitted eligibility check request. Returns HTTP 202 while processing or HTTP 200 with result when complete."
       }]
     }]

@@ -1,4 +1,4 @@
-# ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.7.0
+# ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS | *Version*:0.7.0 |
-| Active as of 2026-02-26 | *Computable Name*:ACCESSBHDiagnosisVS |
+| *Official URL*:https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS | *Version*:0.9.0 |
+| Active as of 2026-03-06 | *Computable Name*:ACCESSBHDiagnosisVS |
 | **Copyright/Legal**: This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain. | |
 
  
@@ -47,12 +47,12 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
   "resourceType" : "ValueSet",
   "id" : "ACCESSBHDiagnosisVS",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSBHDiagnosisVS",
   "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

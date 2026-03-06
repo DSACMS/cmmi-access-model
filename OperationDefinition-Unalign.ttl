@@ -11,18 +11,18 @@
   fhir:id [ fhir:v "Unalign"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Unalign</b></p><a name=\"Unalign\"> </a><a name=\"hcUnalign\"> </a><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-unalign-in.html\">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>\n</div></td></tr><tr><td>IN</td><td>conditions</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Unalign</b></p><a name=\"Unalign\"> </a><a name=\"hcUnalign\"> </a><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-unalign-in.html\">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>\n</div></td></tr><tr><td>IN</td><td>condition</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
      fhir:v "https://globalalliantinc.com/access/OperationDefinition/Unalign"^^xsd:anyURI ;
      fhir:l <https://globalalliantinc.com/access/OperationDefinition/Unalign>
   ] ; # 
-  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
   fhir:name [ fhir:v "Unalign"] ; # 
   fhir:title [ fhir:v "Unalignment Request"] ; # 
   fhir:status [ fhir:v "active"] ; # 
   fhir:kind [ fhir:v "operation"] ; # 
-  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-06T16:03:26-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Global Alliant, Inc." ] ;
@@ -51,8 +51,8 @@
   fhir:type [ fhir:v true] ; # 
   fhir:instance [ fhir:v false] ; # 
   fhir:inputProfile [
-     fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"^^xsd:anyURI ;
-     fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.7.0>
+     fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.9.0>
   ] ; # 
   fhir:parameter ( [
      fhir:name [ fhir:v "participantID" ] ;
@@ -85,12 +85,12 @@
      fhir:binding [
        fhir:strength [ fhir:v "required" ] ;
        fhir:valueSet [
-         fhir:v "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS?version=0.9.0>
        ]
      ]
   ] [
-     fhir:name [ fhir:v "conditions" ] ;
+     fhir:name [ fhir:v "condition" ] ;
      fhir:use [ fhir:v "in" ] ;
      fhir:min [ fhir:v 0 ] ;
      fhir:max [ fhir:v "*" ] ;

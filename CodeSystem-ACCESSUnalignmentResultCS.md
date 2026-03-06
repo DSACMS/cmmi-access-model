@@ -1,4 +1,4 @@
-# ACCESS Unalignment Request Result Codes - CMS ACCESS Model API v0.7.0
+# ACCESS Unalignment Request Result Codes - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS | *Version*:0.7.0 |
-| Draft as of 2026-02-26 | *Computable Name*:ACCESSUnalignmentResultCS |
+| *Official URL*:https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS | *Version*:0.9.0 |
+| Draft as of 2026-03-06 | *Computable Name*:ACCESSUnalignmentResultCS |
 | **Copyright/Legal**: Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS). | |
 
  
@@ -28,12 +28,12 @@ This codesystem defines the codes indicating the result of a requested unalignme
   "resourceType" : "CodeSystem",
   "id" : "ACCESSUnalignmentResultCS",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentResultCS",
   "title" : "ACCESS Unalignment Request Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-02-26T23:16:42-05:00",
+  "date" : "2026-03-06T16:03:26-05:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -57,7 +57,7 @@ This codesystem defines the codes indicating the result of a requested unalignme
   "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 2,
+  "count" : 3,
   "concept" : [{
     "code" : "unaligned",
     "display" : "Unaligned",
@@ -67,6 +67,11 @@ This codesystem defines the codes indicating the result of a requested unalignme
     "code" : "unalignment-pending",
     "display" : "Unalignment pending further review",
     "definition" : "Additional review is needed and you will receive further information once the manual review of the unalignment request is complete."
+  },
+  {
+    "code" : "patient-not-aligned",
+    "display" : "Patient not aligned",
+    "definition" : "Patient is not currently aligned to this participant in the specified track and therefore cannot be unaligned."
   }]
 }
 

@@ -63,7 +63,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 ","< 272141005 |Severities|","PRB-26 / ABS-3","Can be pre/post-coordinated into value.  Or ./inboundRelationship[typeCode=SUBJ].source[classCode=OBS, moodCode=EVN, code=""severity""].value","FiveWs.grade","246112005"
 "Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","BH track diagnosis code","Diagnosis code for BH track conditions. SHOULD be from ACCESSBHDiagnosisVS (depression, anxiety disorders), but other ICD-10-CM codes are permitted.","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS|0.7.0","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","BH track diagnosis code","Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS|0.9.0","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","code 246090004 |Associated finding| (< 404684003 |Clinical finding| MINUS
 << 420134006 |Propensity to adverse reactions| MINUS 
 << 473010000 |Hypersensitivity condition| MINUS 

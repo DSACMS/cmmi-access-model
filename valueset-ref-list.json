@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultVS",
     "title" : "ACCESS Alignment Result Value Set",
@@ -13,7 +13,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSBHDiagnosisVS",
     "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
@@ -25,7 +25,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSCKMDiagnosisVS",
     "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
@@ -37,7 +37,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultVS",
     "title" : "ACCESS Eligibility Result Value Set",
@@ -49,7 +49,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSEventTypeVS",
     "title" : "ACCESS Event Types Value Set",
@@ -58,7 +58,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSMSKDiagnosisVS",
     "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
@@ -69,8 +69,21 @@
     "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile"
   },
   {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS",
+    "version" : "0.9.0",
+    "status" : "draft",
+    "name" : "ACCESSReferralTypeVS",
+    "title" : "ACCESS Referral Type Value Set",
+    "description" : "This value set includes all codes from the ACCESS Referral Type code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"],
+    "uses" : {
+    },
+    "OperationDefinition-Align.html" : "Alignment Request",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters"
+  },
+  {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSTrackVS",
     "title" : "ACCESS Model Tracks Value Set",
@@ -78,16 +91,16 @@
     "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"],
     "uses" : {
     },
-    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
-    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
-    "OperationDefinition-Align.html" : "Alignment Request",
-    "OperationDefinition-Unalign.html" : "Unalignment Request",
     "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
+    "OperationDefinition-Align.html" : "Alignment Request",
+    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
+    "OperationDefinition-Unalign.html" : "Unalignment Request",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
     "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters"
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonVS",
     "title" : "ACCESS Unalignment Reason Value Set",
@@ -99,7 +112,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultVS",
     "title" : "ACCESS Unalignment Result Value Set",
@@ -111,7 +124,7 @@
   },
   {
     "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS",
-    "version" : "0.7.0",
+    "version" : "0.9.0",
     "status" : "active",
     "name" : "ACCESSeCKMDiagnosisVS",
     "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",

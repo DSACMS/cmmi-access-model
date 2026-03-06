@@ -11,6 +11,7 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSAlignmentResultCS : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSEligibilityResultCS : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSEventTypeCS : 0 / 0 / 1
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSReferralTypeCS : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSTrackCS : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSUnalignmentReasonCS : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/CodeSystem-ACCESSUnalignmentResultCS : 0 / 0 / 1
@@ -20,13 +21,13 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Condition-ConditionOsteoarthritisExample : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Condition-ESRDConditionExample : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ImplementationGuide-cms.fhir.us.access : 0 / 1 / 16
- /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/OperationDefinition-Align : 0 / 0 / 3
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/OperationDefinition-Align : 0 / 0 / 4
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/OperationDefinition-CheckEligibility : 0 / 0 / 3
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/OperationDefinition-SubmissionStatus : 0 / 0 / 1
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/OperationDefinition-Unalign : 0 / 0 / 3
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Organization-OrganizationExample : 0 / 1 / 3
- /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentRequestExample : 0 / 1 / 8
- /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentRequestWithSwitchConsentExample : 0 / 1 / 8
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentRequestExample : 0 / 1 / 9
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentRequestWithSwitchConsentExample : 0 / 1 / 9
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentResponseAlignedExample : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-AlignmentResponseSwitchApprovedExample : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Parameters-CheckEligibilityRequestExample : 0 / 1 / 5
@@ -38,16 +39,17 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Patient-PatientESRDExample : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Patient-PatientExample : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/Practitioner-PractitionerExample : 0 / 0 / 2
- /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-align-in : 0 / 0 / 78
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-align-in : 0 / 0 / 89
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-align-out : 0 / 0 / 26
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-bh-condition : 0 / 0 / 96
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-check-eligibility-in : 0 / 0 / 68
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-check-eligibility-out : 0 / 0 / 26
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-ckm-condition : 0 / 0 / 96
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-clinical-exclusion-condition : 0 / 0 / 95
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-condition : 0 / 0 / 94
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-eckm-condition : 0 / 0 / 5
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-msk-condition : 0 / 0 / 5
- /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-submission-status-out : 0 / 0 / 24
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-submission-status-out : 0 / 0 / 33
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-unalign-in : 0 / 0 / 81
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/StructureDefinition-access-unalign-out : 0 / 0 / 26
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSAlignmentResultVS : 0 / 0 / 2
@@ -56,6 +58,7 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSEligibilityResultVS : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSEventTypeVS : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSMSKDiagnosisVS : 0 / 0 / 1
+ /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSReferralTypeVS : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSTrackVS : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSUnalignmentReasonVS : 0 / 0 / 2
  /Users/davehill/Documents/projects/access/access-api/fsh-generated/resources/ValueSet-ACCESSUnalignmentResultVS : 0 / 0 / 2
@@ -68,6 +71,7 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
 == fsh-generated/resources/CodeSystem-ACCESSAlignmentResultCS.json ==
 == fsh-generated/resources/CodeSystem-ACCESSEligibilityResultCS.json ==
 == fsh-generated/resources/CodeSystem-ACCESSEventTypeCS.json ==
+== fsh-generated/resources/CodeSystem-ACCESSReferralTypeCS.json ==
 == fsh-generated/resources/CodeSystem-ACCESSTrackCS.json ==
 == fsh-generated/resources/CodeSystem-ACCESSUnalignmentReasonCS.json ==
 == fsh-generated/resources/CodeSystem-ACCESSUnalignmentResultCS.json ==
@@ -101,6 +105,7 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
 == fsh-generated/resources/StructureDefinition-access-check-eligibility-in.json ==
 == fsh-generated/resources/StructureDefinition-access-check-eligibility-out.json ==
 == fsh-generated/resources/StructureDefinition-access-ckm-condition.json ==
+== fsh-generated/resources/StructureDefinition-access-clinical-exclusion-condition.json ==
 == fsh-generated/resources/StructureDefinition-access-condition.json ==
 == fsh-generated/resources/StructureDefinition-access-eckm-condition.json ==
 == fsh-generated/resources/StructureDefinition-access-msk-condition.json ==
@@ -113,6 +118,7 @@ Generated $--. FHIR version $-- for cms.fhir.us.access#$-- (canonical = https://
 == fsh-generated/resources/ValueSet-ACCESSEligibilityResultVS.json ==
 == fsh-generated/resources/ValueSet-ACCESSEventTypeVS.json ==
 == fsh-generated/resources/ValueSet-ACCESSMSKDiagnosisVS.json ==
+== fsh-generated/resources/ValueSet-ACCESSReferralTypeVS.json ==
 == fsh-generated/resources/ValueSet-ACCESSTrackVS.json ==
 == fsh-generated/resources/ValueSet-ACCESSUnalignmentReasonVS.json ==
 == fsh-generated/resources/ValueSet-ACCESSUnalignmentResultVS.json ==

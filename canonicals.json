@@ -2,251 +2,272 @@
   "id" : "ACCESSAlignmentAPICapabilityStatement",
   "type" : "CapabilityStatement",
   "url" : "https://globalalliantinc.com/access/CapabilityStatement/ACCESSAlignmentAPICapabilityStatement",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentAPICapabilityStatement"
 },
 {
   "id" : "ACCESSEligibilityAPICapabilityStatement",
   "type" : "CapabilityStatement",
   "url" : "https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEligibilityAPICapabilityStatement"
 },
 {
   "id" : "ACCESSUnalignmentAPICapabilityStatement",
   "type" : "CapabilityStatement",
   "url" : "https://globalalliantinc.com/access/CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentAPICapabilityStatement"
 },
 {
   "id" : "ACCESSAlignmentResultCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentResultCS"
 },
 {
   "id" : "ACCESSEligibilityResultCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEligibilityResultCS"
 },
 {
   "id" : "ACCESSEventTypeCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEventTypeCS"
+},
+{
+  "id" : "ACCESSReferralTypeCS",
+  "type" : "CodeSystem",
+  "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
+  "version" : "0.9.0",
+  "name" : "ACCESSReferralTypeCS"
 },
 {
   "id" : "ACCESSTrackCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSTrackCS"
 },
 {
   "id" : "ACCESSUnalignmentReasonCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentReasonCS"
 },
 {
   "id" : "ACCESSUnalignmentResultCS",
   "type" : "CodeSystem",
   "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentResultCS"
 },
 {
   "id" : "cms.fhir.us.access",
   "type" : "ImplementationGuide",
   "url" : "https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "CMSAccessAPI"
 },
 {
   "id" : "Align",
   "type" : "OperationDefinition",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/Align",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "Align"
 },
 {
   "id" : "CheckEligibility",
   "type" : "OperationDefinition",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "CheckEligibility"
 },
 {
   "id" : "SubmissionStatus",
   "type" : "OperationDefinition",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "SubmissionStatus"
 },
 {
   "id" : "Unalign",
   "type" : "OperationDefinition",
   "url" : "https://globalalliantinc.com/access/OperationDefinition/Unalign",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "Unalign"
 },
 {
   "id" : "access-align-in",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentRequestParameters"
 },
 {
   "id" : "access-align-out",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-align-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentResponseParameters"
 },
 {
   "id" : "access-bh-condition",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSBHCondition"
 },
 {
   "id" : "access-check-eligibility-in",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCheckEligibilityRequestParameters"
 },
 {
   "id" : "access-check-eligibility-out",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCheckEligibilityResponseParameters"
 },
 {
   "id" : "access-ckm-condition",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCKMCondition"
+},
+{
+  "id" : "access-clinical-exclusion-condition",
+  "type" : "StructureDefinition",
+  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition",
+  "version" : "0.9.0",
+  "name" : "ACCESSClinicalExclusionCondition"
 },
 {
   "id" : "access-condition",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCondition"
 },
 {
   "id" : "access-eckm-condition",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSeCKMCondition"
 },
 {
   "id" : "access-msk-condition",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSMSKCondition"
 },
 {
   "id" : "access-submission-status-out",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSSubmissionStatusResponseParameters"
 },
 {
   "id" : "access-unalign-in",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentRequestParameters"
 },
 {
   "id" : "access-unalign-out",
   "type" : "StructureDefinition",
   "url" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentResponseParameters"
 },
 {
   "id" : "ACCESSAlignmentResultVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSAlignmentResultVS"
 },
 {
   "id" : "ACCESSBHDiagnosisVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSBHDiagnosisVS"
 },
 {
   "id" : "ACCESSCKMDiagnosisVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSCKMDiagnosisVS"
 },
 {
   "id" : "ACCESSEligibilityResultVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEligibilityResultVS"
 },
 {
   "id" : "ACCESSEventTypeVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSEventTypeVS"
 },
 {
   "id" : "ACCESSMSKDiagnosisVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSMSKDiagnosisVS"
+},
+{
+  "id" : "ACCESSReferralTypeVS",
+  "type" : "ValueSet",
+  "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS",
+  "version" : "0.9.0",
+  "name" : "ACCESSReferralTypeVS"
 },
 {
   "id" : "ACCESSTrackVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSTrackVS"
 },
 {
   "id" : "ACCESSUnalignmentReasonVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentReasonVS"
 },
 {
   "id" : "ACCESSUnalignmentResultVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSUnalignmentResultVS"
 },
 {
   "id" : "ACCESSeCKMDiagnosisVS",
   "type" : "ValueSet",
   "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS",
-  "version" : "0.7.0",
+  "version" : "0.9.0",
   "name" : "ACCESSeCKMDiagnosisVS"
 }]

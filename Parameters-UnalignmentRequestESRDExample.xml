@@ -78,12 +78,12 @@
     </valueCodeableConcept>
   </parameter>
   <parameter>
-    <name value="conditions"/>
+    <name value="condition"/>
     <resource>
       <Condition>
         <id value="ESRDConditionExample"/>
         <meta>
-          <profile value="https://globalalliantinc.com/access/StructureDefinition/access-condition"/>
+          <profile value="https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">End stage renal disease (ESRD)</div>

@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ACCESSReferralTypeVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSReferralTypeVS</b></p><a name=\"ACCESSReferralTypeVS\"> </a><a name=\"hcACCESSReferralTypeVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ACCESSReferralTypeCS.html\"><code>https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS</code></a><span title=\"Version is explicitly stated to be 0.9.0\"> version &#x1F4CD;0.9.0</span></li></ul></div>"
+  },
+  "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS",
+  "version" : "0.9.0",
+  "name" : "ACCESSReferralTypeVS",
+  "title" : "ACCESS Referral Type Value Set",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-03-06T16:03:26-05:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "This value set includes all codes from the ACCESS Referral Type code system.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
+  "compose" : {
+    "include" : [{
+      "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
+      "version" : "0.9.0"
+    }]
+  }
+}

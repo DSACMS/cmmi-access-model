@@ -3,7 +3,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts - CMS ACCESS Model API v0.7.0</title>
+    <title>Artifacts - CMS ACCESS Model API v0.9.0</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -52,7 +52,7 @@
         <div id="ig-status">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.7.0 - ci-build
+            <span style="display:inline-block;">0.9.0 - ci-build
 
 
 
@@ -137,7 +137,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
 
@@ -207,6 +207,19 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
+<h4 id="abstract-profiles">Abstract Profiles</h4>
+
+<p>These profiles define base structure and terminologies common across other profiles. Abstract profiles cannot themselves be instantiated.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-condition.html">ACCESS Condition Profile</a></td>
+      <td>Base abstract condition profile requiring ICD-10-CM codes for diagnoses across all ACCESS APIs.  Provides the basis for other Condition-based profiles for the ACCESS Model.</td>
+    </tr>
+  </tbody>
+</table>
+
 <h4 id="profiles">Profiles</h4>
 
 <p>These define constraints on FHIR resources for use across multiple ACCESS APIs.</p>
@@ -214,12 +227,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-submission-status-out.html">Submission Status Response Parameters</a></td>
+      <td><a href="StructureDefinition-access-submission-status-out.html">ACCESS Submission Status Response Parameters</a></td>
       <td>Output parameters for the $submission-status operation</td>
-    </tr>
-    <tr>
-      <td><a href="StructureDefinition-access-condition.html">ACCESS Condition Profile</a></td>
-      <td>Base condition profile requiring ICD-10-CM codes for diagnoses across all ACCESS APIs</td>
     </tr>
     <tr>
       <td><a href="StructureDefinition-access-eckm-condition.html">ACCESS eCKM Track Condition Profile</a></td>
@@ -343,11 +352,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-check-eligibility-in.html">Check Eligibility Request Parameters</a></td>
+      <td><a href="StructureDefinition-access-check-eligibility-in.html">ACCESS Check Eligibility Request Parameters</a></td>
       <td>Input parameters for the $check-eligibility operation</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-access-check-eligibility-out.html">Check Eligibility Response Parameters</a></td>
+      <td><a href="StructureDefinition-access-check-eligibility-out.html">ACCESS Check Eligibility Response Parameters</a></td>
       <td>Output parameters for the $check-eligibility operation</td>
     </tr>
   </tbody>
@@ -360,7 +369,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="ValueSet-ACCESSEligibilityResultVS.html">Eligibility Result Value Set</a></td>
+      <td><a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESS Eligibility Result Value Set</a></td>
       <td>Value set including all eligibility result codes</td>
     </tr>
   </tbody>
@@ -373,7 +382,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="CodeSystem-ACCESSEligibilityResultCS.html">Eligibility Result Code System</a></td>
+      <td><a href="CodeSystem-ACCESSEligibilityResultCS.html">ACCESS Eligibility Result Code System</a></td>
       <td>Codes indicating the result of an eligibility check</td>
     </tr>
   </tbody>
@@ -420,11 +429,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-align-in.html">Alignment Request Parameters</a></td>
+      <td><a href="StructureDefinition-access-align-in.html">ACCESS Alignment Request Parameters</a></td>
       <td>Input parameters for the $align operation</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-access-align-out.html">Alignment Response Parameters</a></td>
+      <td><a href="StructureDefinition-access-align-out.html">ACCESS Alignment Response Parameters</a></td>
       <td>Output parameters for the $align operation</td>
     </tr>
   </tbody>
@@ -437,11 +446,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="ValueSet-ACCESSAlignmentResultVS.html">Alignment Result Value Set</a></td>
+      <td><a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESS Alignment Result Value Set</a></td>
       <td>Value set including all alignment result codes</td>
     </tr>
     <tr>
-      <td><a href="ValueSet-ACCESSEventTypeVS.html">Event Type Value Set</a></td>
+      <td><a href="ValueSet-ACCESSReferralTypeVS.html">ACCESS Referral Type Value Set</a></td>
+      <td>Value set including all referral type codes indicating how patients were referred to the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSEventTypeVS.html">ACCESS Event Type Value Set</a></td>
       <td>Value set including all event notification type codes</td>
     </tr>
   </tbody>
@@ -454,11 +467,15 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="CodeSystem-ACCESSAlignmentResultCS.html">Alignment Result Code System</a></td>
+      <td><a href="CodeSystem-ACCESSAlignmentResultCS.html">ACCESS Alignment Result Code System</a></td>
       <td>Codes indicating the result of an alignment request</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-ACCESSEventTypeCS.html">Event Type Code System</a></td>
+      <td><a href="CodeSystem-ACCESSReferralTypeCS.html">ACCESS Referral Type Code System</a></td>
+      <td>Codes indicating how a patient was referred to the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSEventTypeCS.html">ACCESS Event Type Code System</a></td>
       <td>Codes for types of notification events that trigger subscription notifications</td>
     </tr>
   </tbody>
@@ -513,12 +530,16 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-unalign-in.html">Unalignment Request Parameters</a></td>
+      <td><a href="StructureDefinition-access-unalign-in.html">ACCESS Unalignment Request Parameters</a></td>
       <td>Input parameters for the $unalign operation</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-access-unalign-out.html">Unalignment Response Parameters</a></td>
+      <td><a href="StructureDefinition-access-unalign-out.html">ACCESS Unalignment Response Parameters</a></td>
       <td>Output parameters for the $unalign operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-clinical-exclusion-condition.html">ACCESS Clinical Exclusion Condition</a></td>
+      <td>ICD-10-CM diagnosis codes that disqualify a patient from the ACCESS Model</td>
     </tr>
   </tbody>
 </table>
@@ -530,11 +551,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="ValueSet-ACCESSUnalignmentResultVS.html">Unalignment Result Value Set</a></td>
+      <td><a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESS Unalignment Result Value Set</a></td>
       <td>Value set including all unalignment result codes</td>
     </tr>
     <tr>
-      <td><a href="ValueSet-ACCESSUnalignmentReasonVS.html">Unalignment Reason Value Set</a></td>
+      <td><a href="ValueSet-ACCESSUnalignmentReasonVS.html">ACCESS Unalignment Reason Value Set</a></td>
       <td>Value set including all unalignment reason codes</td>
     </tr>
   </tbody>
@@ -547,11 +568,11 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="CodeSystem-ACCESSUnalignmentResultCS.html">Unalignment Result Code System</a></td>
+      <td><a href="CodeSystem-ACCESSUnalignmentResultCS.html">ACCESS Unalignment Result Code System</a></td>
       <td>Codes indicating the result of an unalignment request</td>
     </tr>
     <tr>
-      <td><a href="CodeSystem-ACCESSUnalignmentReasonCS.html">Unalignment Reason Code System</a></td>
+      <td><a href="CodeSystem-ACCESSUnalignmentReasonCS.html">ACCESS Unalignment Reason Code System</a></td>
       <td>Codes indicating the reason for an unalignment request</td>
     </tr>
   </tbody>
@@ -605,7 +626,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
       <div class="inner-wrapper">
         <p>
-          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.9.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Fri, Mar 6, 2026 16:03-0500">2026-03-06</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
                       Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |

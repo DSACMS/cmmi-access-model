@@ -18,11 +18,11 @@
      fhir:v "https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"^^xsd:anyURI ;
      fhir:l <https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access>
   ] ; # 
-  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:version [ fhir:v "0.9.0"] ; # 
   fhir:name [ fhir:v "CMSAccessAPI"] ; # 
   fhir:title [ fhir:v "CMS ACCESS Model API"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-06T16:03:26-05:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Global Alliant, Inc." ] ;
@@ -1722,6 +1722,28 @@
          ]
        ] ) ;
        fhir:reference [
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition> ;
+         fhir:reference [ fhir:v "StructureDefinition/access-clinical-exclusion-condition" ]
+       ] ;
+       fhir:name [ fhir:v "ACCESS Clinical Exclusion Condition" ] ;
+       fhir:description [ fhir:v "The ACCESS Clinical Exclusion Condition profile is used for representing disqualifying conditions that would prevent a patient from being eligible for the ACCESS Model." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ] ;
+       fhir:groupingId [ fhir:v "UnalignmentAPI" ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "StructureDefinition:resource:abstract"
+         ]
+       ] ) ;
+       fhir:reference [
          fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-condition" ]
        ] ;
@@ -1977,6 +1999,48 @@
          ] ;
          fhir:value [
            a fhir:String ;
+           fhir:v "CodeSystem"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS> ;
+         fhir:reference [ fhir:v "CodeSystem/ACCESSReferralTypeCS" ]
+       ] ;
+       fhir:name [ fhir:v "ACCESS Referral Type" ] ;
+       fhir:description [ fhir:v "This codesystem defines codes that indicate how the patient was referred to the ACCESS Model." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
+           fhir:v "ValueSet"
+         ]
+       ] ) ;
+       fhir:reference [
+         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS> ;
+         fhir:reference [ fhir:v "ValueSet/ACCESSReferralTypeVS" ]
+       ] ;
+       fhir:name [ fhir:v "ACCESS Referral Type Value Set" ] ;
+       fhir:description [ fhir:v "This value set includes all codes from the ACCESS Referral Type code system." ] ;
+       fhir:example [
+         a fhir:Boolean ;
+         fhir:v false
+       ]
+     ] [
+       fhir:extension ( [
+         fhir:url [
+           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
+         ] ;
+         fhir:value [
+           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
@@ -1985,7 +2049,7 @@
          fhir:reference [ fhir:v "StructureDefinition/access-submission-status-out" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Submission Status Response Parameters" ] ;
-       fhir:description [ fhir:v "This is the profile for the $submission-status operation output parameters (generic for all APIs)." ] ;
+       fhir:description [ fhir:v "This is the profile for the $submission-status operation output parameters (generic for all APIs). When the result indicates a validation error, the optional 'issues' parameter MAY contain an OperationOutcome resource with detailed validation error information to help implementers understand and correct the submission." ] ;
        fhir:example [
          a fhir:Boolean ;
          fhir:v false
@@ -2185,8 +2249,8 @@
        fhir:description [ fhir:v "Example of parameters for aligning a patient to the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2207,8 +2271,8 @@
        fhir:description [ fhir:v "Example of parameters for aligning a patient with switch consent attestation" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2229,8 +2293,8 @@
        fhir:description [ fhir:v "Example response indicating successful patient alignment" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2251,8 +2315,8 @@
        fhir:description [ fhir:v "Example response indicating successful provider switch" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2295,8 +2359,8 @@
        fhir:description [ fhir:v "Example of parameters for checking patient eligibility for the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2317,8 +2381,8 @@
        fhir:description [ fhir:v "Example response indicating patient is eligible for the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2339,8 +2403,8 @@
        fhir:description [ fhir:v "Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2361,8 +2425,8 @@
        fhir:description [ fhir:v "Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-bh-condition?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-bh-condition?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2383,8 +2447,8 @@
        fhir:description [ fhir:v "Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-msk-condition?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-msk-condition?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2405,8 +2469,8 @@
        fhir:description [ fhir:v "Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2427,8 +2491,8 @@
        fhir:description [ fhir:v "Active ESRD diagnosis that disqualifies patient from ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition?version=0.9.0>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2557,8 +2621,8 @@
        fhir:description [ fhir:v "Example response for submission status check" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out?version=0.9.0>
        ]
      ] [
        fhir:extension ( [
@@ -2601,8 +2665,8 @@
        fhir:description [ fhir:v "Example of unalignment request for patient who developed ESRD (no longer clinically eligible)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.9.0>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2624,8 +2688,8 @@
        fhir:description [ fhir:v "Example of parameters for unaligning a patient from the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.9.0>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2647,8 +2711,8 @@
        fhir:description [ fhir:v "Example response indicating successful patient unalignment" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.7.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out?version=0.7.0>
+         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.9.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out?version=0.9.0>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] ) ;

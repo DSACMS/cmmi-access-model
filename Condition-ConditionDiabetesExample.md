@@ -1,4 +1,4 @@
-# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.7.0
+# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)

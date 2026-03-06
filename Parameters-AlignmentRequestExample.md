@@ -1,4 +1,4 @@
-# Alignment Request Example - CMS ACCESS Model API v0.7.0
+# Alignment Request Example - CMS ACCESS Model API v0.9.0
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -79,7 +79,7 @@
     }
   },
   {
-    "name" : "conditions",
+    "name" : "condition",
     "resource" : {
       "resourceType" : "Condition",
       "id" : "ConditionDiabetesExample",
@@ -119,6 +119,16 @@
         "reference" : "Patient/PatientExample"
       },
       "onsetDateTime" : "2020-01-15"
+    }
+  },
+  {
+    "name" : "referralType",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
+        "code" : "provider-referral",
+        "display" : "Provider referral"
+      }]
     }
   }]
 }
