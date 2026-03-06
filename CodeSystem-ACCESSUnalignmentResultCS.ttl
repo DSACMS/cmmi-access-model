@@ -1,0 +1,63 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSUnalignmentResultCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSUnalignmentResultCS</b></p><a name=\"ACCESSUnalignmentResultCS\"> </a><a name=\"hcACCESSUnalignmentResultCS\"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unaligned<a name=\"ACCESSUnalignmentResultCS-unaligned\"> </a></td><td>Unaligned</td><td>The request to unalign the patient has been accepted and the patient has been successfully unaligned.</td></tr><tr><td style=\"white-space:nowrap\">unalignment-pending<a name=\"ACCESSUnalignmentResultCS-unalignment-pending\"> </a></td><td>Unalignment pending further review</td><td>Additional review is needed and you will receive further information once the manual review of the unalignment request is complete.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSUnalignmentResultCS"] ; # 
+  fhir:title [ fhir:v "ACCESS Unalignment Request Result Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This codesystem defines the codes indicating the result of a requested unalignment."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "2"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "unaligned" ] ;
+     fhir:display [ fhir:v "Unaligned" ] ;
+     fhir:definition [ fhir:v "The request to unalign the patient has been accepted and the patient has been successfully unaligned." ]
+  ] [
+     fhir:code [ fhir:v "unalignment-pending" ] ;
+     fhir:display [ fhir:v "Unalignment pending further review" ] ;
+     fhir:definition [ fhir:v "Additional review is needed and you will receive further information once the manual review of the unalignment request is complete." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

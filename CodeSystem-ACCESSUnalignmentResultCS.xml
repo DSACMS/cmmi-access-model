@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSUnalignmentResultCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSUnalignmentResultCS</b></p><a name="ACCESSUnalignmentResultCS"> </a><a name="hcACCESSUnalignmentResultCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">unaligned<a name="ACCESSUnalignmentResultCS-unaligned"> </a></td><td>Unaligned</td><td>The request to unalign the patient has been accepted and the patient has been successfully unaligned.</td></tr><tr><td style="white-space:nowrap">unalignment-pending<a name="ACCESSUnalignmentResultCS-unalignment-pending"> </a></td><td>Unalignment pending further review</td><td>Additional review is needed and you will receive further information once the manual review of the unalignment request is complete.</td></tr></table></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"/>
+  <version value="0.7.0"/>
+  <name value="ACCESSUnalignmentResultCS"/>
+  <title value="ACCESS Unalignment Request Result Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines the codes indicating the result of a requested unalignment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="2"/>
+  <concept>
+    <code value="unaligned"/>
+    <display value="Unaligned"/>
+    <definition value="The request to unalign the patient has been accepted and the patient has been successfully unaligned."/>
+  </concept>
+  <concept>
+    <code value="unalignment-pending"/>
+    <display value="Unalignment pending further review"/>
+    <definition value="Additional review is needed and you will receive further information once the manual review of the unalignment request is complete."/>
+  </concept>
+</CodeSystem>

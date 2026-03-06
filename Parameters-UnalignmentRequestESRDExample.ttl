@@ -1,0 +1,180 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/Parameters/UnalignmentRequestESRDExample> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "UnalignmentRequestESRDExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in"^^xsd:anyURI ;
+       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "participantID" ] ;
+     fhir:value [
+       a fhir:Identifier ;
+       fhir:system [
+         fhir:v "https://globalalliantinc.com/access/participant-id"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/participant-id>
+       ] ;
+       fhir:value [ fhir:v "ACCESS1234" ]
+     ]
+  ] [
+     fhir:name [ fhir:v "payerID" ] ;
+     fhir:value [
+       a fhir:Identifier ;
+       fhir:type [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType>
+           ] ;
+           fhir:code [ fhir:v "payerid" ] ;
+           fhir:display [ fhir:v "Payer ID" ]
+         ] )
+       ] ;
+       fhir:system [
+         fhir:v "urn:oid:2.16.840.1.113883.3.221.5"^^xsd:anyURI ;
+         fhir:l <urn:oid:2.16.840.1.113883.3.221.5>
+       ] ;
+       fhir:value [ fhir:v "12345" ]
+     ]
+  ] [
+     fhir:name [ fhir:v "patient" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Patient ;
+       fhir:id [ fhir:v "PatientESRDExample" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"^^xsd:anyURI ;
+           fhir:l <http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient?version=6.1.0>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">Patient Jane Smith, female, born 1955-06-15, Medicare ID: 9876543210B</div>"^^rdf:XMLLiteral ]
+       ] ;
+       fhir:identifier ( [
+         fhir:type [
+           fhir:coding ( [
+             fhir:system [
+               fhir:v "http://terminology.hl7.org/CodeSystem/v2-0203"^^xsd:anyURI ;
+               fhir:l <http://terminology.hl7.org/CodeSystem/v2-0203>
+             ] ;
+             fhir:code [ fhir:v "MC" ]
+           ] )
+         ] ;
+         fhir:system [
+           fhir:v "http://terminology.hl7.org/NamingSystem/cmsMBI"^^xsd:anyURI ;
+           fhir:l <http://terminology.hl7.org/NamingSystem/cmsMBI>
+         ] ;
+         fhir:value [ fhir:v "9876543210B" ]
+       ] ) ;
+       fhir:name ( [
+         fhir:family [ fhir:v "Smith" ] ;
+         fhir:given ( [ fhir:v "Jane" ] )
+       ] ) ;
+       fhir:gender [ fhir:v "female" ] ;
+       fhir:birthDate [ fhir:v "1955-06-15"^^xsd:date ]
+     ] )
+  ] [
+     fhir:name [ fhir:v "track" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS>
+         ] ;
+         fhir:code [ fhir:v "CKM" ] ;
+         fhir:display [ fhir:v "Cardio-kidney-metabolic track" ]
+       ] )
+     ]
+  ] [
+     fhir:name [ fhir:v "reason" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS>
+         ] ;
+         fhir:code [ fhir:v "no-longer-clinically-eligible" ] ;
+         fhir:display [ fhir:v "No longer clinically eligible" ]
+       ] ) ;
+       fhir:text [ fhir:v "Patient has developed end-stage renal disease (ESRD) requiring dialysis, which makes them ineligible for the ACCESS Model." ]
+     ]
+  ] [
+     fhir:name [ fhir:v "conditions" ] ;
+     fhir:Parameters.parameter.resource ( [
+       a fhir:Condition ;
+       fhir:id [ fhir:v "ESRDConditionExample" ] ;
+       fhir:meta [
+         fhir:profile ( [
+           fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-condition"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition>
+         ] )
+       ] ;
+       fhir:text [
+         fhir:status [ fhir:v "generated" ] ;
+         fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\">End stage renal disease (ESRD)</div>"^^rdf:XMLLiteral ]
+       ] ;
+       fhir:clinicalStatus [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/condition-clinical"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/condition-clinical>
+           ] ;
+           fhir:code [ fhir:v "active" ] ;
+           fhir:display [ fhir:v "Active" ]
+         ] )
+       ] ;
+       fhir:verificationStatus [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/condition-ver-status"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/condition-ver-status>
+           ] ;
+           fhir:code [ fhir:v "confirmed" ] ;
+           fhir:display [ fhir:v "Confirmed" ]
+         ] )
+       ] ;
+       fhir:category ( [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://terminology.hl7.org/CodeSystem/condition-category"^^xsd:anyURI ;
+             fhir:l <http://terminology.hl7.org/CodeSystem/condition-category>
+           ] ;
+           fhir:code [ fhir:v "problem-list-item" ] ;
+           fhir:display [ fhir:v "Problem List Item" ]
+         ] )
+       ] ) ;
+       fhir:code [
+         fhir:coding ( [
+           fhir:system [
+             fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+             fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+           ] ;
+           fhir:code [ fhir:v "N18.6" ] ;
+           fhir:display [ fhir:v "End stage renal disease" ]
+         ] )
+       ] ;
+       fhir:subject [
+         fhir:l <https://globalalliantinc.com/access/Patient/PatientESRDExample> ;
+         fhir:reference [ fhir:v "Patient/PatientESRDExample" ]
+       ] ;
+       fhir:onset [
+         a fhir:DateTime ;
+         fhir:v "2026-01-15"^^xsd:date
+       ]
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

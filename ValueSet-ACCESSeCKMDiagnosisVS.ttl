@@ -1,0 +1,162 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSeCKMDiagnosisVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSeCKMDiagnosisVS</b></p><a name=\"ACCESSeCKMDiagnosisVS\"> </a><a name=\"hcACCESSeCKMDiagnosisVS\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>I10</td><td>Essential (primary) hypertension</td></tr><tr><td>I11.0</td><td>Hypertensive heart disease with heart failure</td></tr><tr><td>I11.9</td><td>Hypertensive heart disease without heart failure</td></tr><tr><td>I12.9</td><td>Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.0</td><td>Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.10</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.11</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td>I15.0</td><td>Renovascular hypertension</td></tr><tr><td>I15.1</td><td>Hypertension secondary to other renal disorders</td></tr><tr><td>I15.2</td><td>Hypertension secondary to endocrine disorders</td></tr><tr><td>I15.8</td><td>Other secondary hypertension</td></tr><tr><td>I15.9</td><td>Secondary hypertension, unspecified</td></tr><tr><td>I1A.0</td><td>Resistant hypertension</td></tr><tr><td>I67.4</td><td>Hypertensive encephalopathy</td></tr><tr><td>E78.0</td><td>Pure hypercholesterolemia</td></tr><tr><td>E78.00</td><td>Pure hypercholesterolemia, unspecified</td></tr><tr><td>E78.01</td><td>Familial hypercholesterolemia</td></tr><tr><td>E78.1</td><td>Pure hyperglyceridemia</td></tr><tr><td>E78.2</td><td>Mixed hyperlipidemia</td></tr><tr><td>E78.3</td><td>Hyperchylomicronemia</td></tr><tr><td>E78.4</td><td>Other hyperlipidemia</td></tr><tr><td>E78.41</td><td>Elevated lipoprotein(a)</td></tr><tr><td>E78.49</td><td>Other hyperlipidemia</td></tr><tr><td>E78.5</td><td>Hyperlipidemia, unspecified</td></tr><tr><td>E78.6</td><td>Lipoprotein deficiency</td></tr><tr><td>E78.7</td><td>Disorders of bile acid and cholesterol metabolism</td></tr><tr><td>R73.03</td><td>Prediabetes</td></tr><tr><td>E66.01</td><td>Morbid (severe) obesity due to excess calories</td></tr><tr><td>E66.09</td><td>Other obesity due to excess calories</td></tr><tr><td>E66.1</td><td>Drug-induced obesity</td></tr><tr><td>E66.2</td><td>Morbid (severe) obesity with alveolar hypoventilation</td></tr><tr><td>E66.3</td><td>Overweight</td></tr><tr><td>E66.8</td><td>Other obesity</td></tr><tr><td>E66.9</td><td>Obesity, unspecified</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSeCKMDiagnosisVS"] ; # 
+  fhir:title [ fhir:v "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Early Cardio-Kidney-Metabolic (eCKM) track. Includes hypertension, dyslipidemia, prediabetes, and obesity diagnoses."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "I10" ] ;
+         fhir:display [ fhir:v "Essential (primary) hypertension" ]
+       ] [
+         fhir:code [ fhir:v "I11.0" ] ;
+         fhir:display [ fhir:v "Hypertensive heart disease with heart failure" ]
+       ] [
+         fhir:code [ fhir:v "I11.9" ] ;
+         fhir:display [ fhir:v "Hypertensive heart disease without heart failure" ]
+       ] [
+         fhir:code [ fhir:v "I12.9" ] ;
+         fhir:display [ fhir:v "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease" ]
+       ] [
+         fhir:code [ fhir:v "I13.0" ] ;
+         fhir:display [ fhir:v "Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease" ]
+       ] [
+         fhir:code [ fhir:v "I13.10" ] ;
+         fhir:display [ fhir:v "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease" ]
+       ] [
+         fhir:code [ fhir:v "I13.11" ] ;
+         fhir:display [ fhir:v "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease" ]
+       ] [
+         fhir:code [ fhir:v "I15.0" ] ;
+         fhir:display [ fhir:v "Renovascular hypertension" ]
+       ] [
+         fhir:code [ fhir:v "I15.1" ] ;
+         fhir:display [ fhir:v "Hypertension secondary to other renal disorders" ]
+       ] [
+         fhir:code [ fhir:v "I15.2" ] ;
+         fhir:display [ fhir:v "Hypertension secondary to endocrine disorders" ]
+       ] [
+         fhir:code [ fhir:v "I15.8" ] ;
+         fhir:display [ fhir:v "Other secondary hypertension" ]
+       ] [
+         fhir:code [ fhir:v "I15.9" ] ;
+         fhir:display [ fhir:v "Secondary hypertension, unspecified" ]
+       ] [
+         fhir:code [ fhir:v "I1A.0" ] ;
+         fhir:display [ fhir:v "Resistant hypertension" ]
+       ] [
+         fhir:code [ fhir:v "I67.4" ] ;
+         fhir:display [ fhir:v "Hypertensive encephalopathy" ]
+       ] [
+         fhir:code [ fhir:v "E78.0" ] ;
+         fhir:display [ fhir:v "Pure hypercholesterolemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.00" ] ;
+         fhir:display [ fhir:v "Pure hypercholesterolemia, unspecified" ]
+       ] [
+         fhir:code [ fhir:v "E78.01" ] ;
+         fhir:display [ fhir:v "Familial hypercholesterolemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.1" ] ;
+         fhir:display [ fhir:v "Pure hyperglyceridemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.2" ] ;
+         fhir:display [ fhir:v "Mixed hyperlipidemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.3" ] ;
+         fhir:display [ fhir:v "Hyperchylomicronemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.4" ] ;
+         fhir:display [ fhir:v "Other hyperlipidemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.41" ] ;
+         fhir:display [ fhir:v "Elevated lipoprotein(a)" ]
+       ] [
+         fhir:code [ fhir:v "E78.49" ] ;
+         fhir:display [ fhir:v "Other hyperlipidemia" ]
+       ] [
+         fhir:code [ fhir:v "E78.5" ] ;
+         fhir:display [ fhir:v "Hyperlipidemia, unspecified" ]
+       ] [
+         fhir:code [ fhir:v "E78.6" ] ;
+         fhir:display [ fhir:v "Lipoprotein deficiency" ]
+       ] [
+         fhir:code [ fhir:v "E78.7" ] ;
+         fhir:display [ fhir:v "Disorders of bile acid and cholesterol metabolism" ]
+       ] [
+         fhir:code [ fhir:v "R73.03" ] ;
+         fhir:display [ fhir:v "Prediabetes" ]
+       ] [
+         fhir:code [ fhir:v "E66.01" ] ;
+         fhir:display [ fhir:v "Morbid (severe) obesity due to excess calories" ]
+       ] [
+         fhir:code [ fhir:v "E66.09" ] ;
+         fhir:display [ fhir:v "Other obesity due to excess calories" ]
+       ] [
+         fhir:code [ fhir:v "E66.1" ] ;
+         fhir:display [ fhir:v "Drug-induced obesity" ]
+       ] [
+         fhir:code [ fhir:v "E66.2" ] ;
+         fhir:display [ fhir:v "Morbid (severe) obesity with alveolar hypoventilation" ]
+       ] [
+         fhir:code [ fhir:v "E66.3" ] ;
+         fhir:display [ fhir:v "Overweight" ]
+       ] [
+         fhir:code [ fhir:v "E66.8" ] ;
+         fhir:display [ fhir:v "Other obesity" ]
+       ] [
+         fhir:code [ fhir:v "E66.9" ] ;
+         fhir:display [ fhir:v "Obesity, unspecified" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

@@ -1,0 +1,1257 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ImplementationGuide xmlns="http://hl7.org/fhir">
+  <id value="cms.fhir.us.access"/>
+  <language value="en-US"/>
+  <text>
+    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name="cms.fhir.us.access"> </a><a name="hccms.fhir.us.access"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>
+</div></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"/>
+  <version value="0.7.0"/>
+  <name value="CMSAccessAPI"/>
+  <title value="CMS ACCESS Model API"/>
+  <status value="draft"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting"/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <packageId value="cms.fhir.us.access"/>
+  <license value="CC0-1.0"/>
+  <fhirVersion value="4.0.1"/>
+  <dependsOn id="hl7tx">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on HL7 Terminology"/>
+    </extension>
+    <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
+    <packageId value="hl7.terminology.r4"/>
+    <version value="7.0.1"/>
+  </dependsOn>
+  <dependsOn id="hl7ext">
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
+      <valueMarkdown value="Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"/>
+    </extension>
+    <uri value="http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions"/>
+    <packageId value="hl7.fhir.uv.extensions.r4"/>
+    <version value="5.2.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_core">
+    <uri value="http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core"/>
+    <packageId value="hl7.fhir.us.core"/>
+    <version value="6.1.0"/>
+  </dependsOn>
+  <dependsOn id="hl7_fhir_us_carin_bb">
+    <uri value="http://hl7.org/fhir/us/carin-bb/ImplementationGuide/hl7.fhir.us.carin-bb"/>
+    <packageId value="hl7.fhir.us.carin-bb"/>
+    <version value="2.1.0"/>
+  </dependsOn>
+  <definition>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="debug"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://globalalliantinc.com/access/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueString value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency">
+      <valueCode value="hl7.fhir.uv.tools.r4#0.9.0"/>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="copyrightyear"/>
+      </extension>
+      <extension url="value">
+        <valueString value="2025+"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="releaselabel"/>
+      </extension>
+      <extension url="value">
+        <valueString value="ci-build"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludettl"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="logging"/>
+      </extension>
+      <extension url="value">
+        <valueString value="debug"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="pin-canonicals"/>
+      </extension>
+      <extension url="value">
+        <valueString value="pin-all"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="autoload-resources"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-liquid"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/liquid"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-qa"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/qa"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-temp"/>
+      </extension>
+      <extension url="value">
+        <valueString value="temp/pages"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-output"/>
+      </extension>
+      <extension url="value">
+        <valueString value="output"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-suppressed-warnings"/>
+      </extension>
+      <extension url="value">
+        <valueString value="input/ignoreWarnings.txt"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="path-history"/>
+      </extension>
+      <extension url="value">
+        <valueString value="https://globalalliantinc.com/access/history.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-html"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="template-md"/>
+      </extension>
+      <extension url="value">
+        <valueString value="template-page-md.html"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-contact"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-context"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-copyright"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-jurisdiction"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-license"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-publisher"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-version"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="apply-wg"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="active-tables"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="fmm-definition"/>
+      </extension>
+      <extension url="value">
+        <valueString value="http://hl7.org/fhir/versions.html#maturity"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="propagate-status"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="excludelogbinaryformat"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
+      <extension url="code">
+        <valueCode value="tabbed-snapshots"/>
+      </extension>
+      <extension url="value">
+        <valueString value="true"/>
+      </extension>
+    </extension>
+    <grouping id="SharedResources">
+      <name value="Shared Resources"/>
+      <description value="Resources used across multiple ACCESS APIs"/>
+    </grouping>
+    <grouping id="EligibilityAPI">
+      <name value="Eligibility API Resources"/>
+      <description value="Resources specific to the ACCESS Eligibility API"/>
+    </grouping>
+    <grouping id="AlignmentAPI">
+      <name value="Alignment API Resources"/>
+      <description value="Resources specific to the ACCESS Alignment API"/>
+    </grouping>
+    <grouping id="UnalignmentAPI">
+      <name value="Unalignment API Resources"/>
+      <description value="Resources specific to the ACCESS Unalignment API"/>
+    </grouping>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ACCESSAlignmentAPICapabilityStatement"/>
+      </reference>
+      <name value="ACCESS Alignment API Capability Statement"/>
+      <description value="Describes the expected capabilities of systems implementing the ACCESS Alignment API for aligning patients to ACCESS participants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-align-in"/>
+      </reference>
+      <name value="ACCESS Alignment Request Parameters"/>
+      <description value="This is the profile for the `$align` operation input parameters. When a patient wishes to switch from one ACCESS participant to another after the 3-month lock-in period, the `switchConsentAttestation` parameter must be set to `true` to indicate that the patient has provided consent to switch providers."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSAlignmentResultCS"/>
+      </reference>
+      <name value="ACCESS Alignment Request Result Codes"/>
+      <description value="This codesystem defines codes indicating the result of a requested alignment."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-align-out"/>
+      </reference>
+      <name value="ACCESS Alignment Response Parameters"/>
+      <description value="This is the profile for the `$align` operation output parameters, which provide the results of the alignment request."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSAlignmentResultVS"/>
+      </reference>
+      <name value="ACCESS Alignment Result Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Alignment Result code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSBHDiagnosisVS"/>
+      </reference>
+      <name value="ACCESS Behavioral Health (BH) Track Qualifying Diagnoses"/>
+      <description value="This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Behavioral Health (BH) track. Includes depression and anxiety disorder diagnoses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-bh-condition"/>
+      </reference>
+      <name value="ACCESS BH Condition Profile"/>
+      <description value="The ACCESS BH Track Condition Profile is used for representing qualifying diagnoses for the Behavioral Health (BH) track. It constrains the [ACCESS Condition Profile](StructureDefinition-access-condition.html) to add a required binding to [ACCESSBHDiagnosisVS](ValueSet-ACCESSBHDiagnosisVS.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSCKMDiagnosisVS"/>
+      </reference>
+      <name value="ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses"/>
+      <description value="This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Cardio-Kidney-Metabolic (CKM) track. Includes diabetes mellitus (all types), atherosclerotic cardiovascular disease (ASCVD), and chronic kidney disease (CKD stage 3) diagnoses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-check-eligibility-in"/>
+      </reference>
+      <name value="ACCESS Check Eligibility Request Parameters"/>
+      <description value="This profile defines the input parameters for the `$check-eligibility` operation, which is used to determine if a patient is eligible for a specific ACCESS Model track."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EligibilityAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-check-eligibility-out"/>
+      </reference>
+      <name value="ACCESS Check Eligibility Response Parameters"/>
+      <description value="This is the profile for the `$check-eligibility` operation output parameters, which provide the results of the eligibility check."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EligibilityAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-ckm-condition"/>
+      </reference>
+      <name value="ACCESS CKM Track Condition Profile"/>
+      <description value="The ACCESS CKM Track Condition Profile is used for representing qualifying diagnoses for the Cardio-Kidney-Metabolic (CKM) track. It constrains the [ACCESS Condition Profile](StructureDefinition-access-condition.html) to add a required binding to [ACCESSCKMDiagnosisVS](ValueSet-ACCESSCKMDiagnosisVS.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-condition"/>
+      </reference>
+      <name value="ACCESS Condition Profile"/>
+      <description value="This profile constrains the US Core Condition Problems and Health Concerns Profile to require ICD-10-CM codes for the ACCESS Model. This ensures consistent diagnosis coding across all ACCESS APIs.  This profile also serves as the foundation for track-specific condition profiles:"/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SharedResources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSeCKMDiagnosisVS"/>
+      </reference>
+      <name value="ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses"/>
+      <description value="This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Early Cardio-Kidney-Metabolic (eCKM) track. Includes hypertension, dyslipidemia, prediabetes, and obesity diagnoses."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-eckm-condition"/>
+      </reference>
+      <name value="ACCESS eCKM Track Condition Profile"/>
+      <description value="The ACCESS eCKM Track Condition Profile is used for representing qualifying diagnoses for the Early Cardio-Kidney-Metabolic (eCKM) track. It constrains the [ACCESS Condition Profile](StructureDefinition-access-condition.html) to add a required binding to [ACCESSeCKMDiagnosisVS](ValueSet-ACCESSeCKMDiagnosisVS.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ACCESSEligibilityAPICapabilityStatement"/>
+      </reference>
+      <name value="ACCESS Eligibility API Capability Statement"/>
+      <description value="Describes the expected capabilities of systems implementing the ACCESS Eligibility API for checking patient eligibility for the ACCESS Model."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSEligibilityResultCS"/>
+      </reference>
+      <name value="ACCESS Eligibility Result Codes"/>
+      <description value="This codesystem defines codes indicating the result of an eligibility check."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EligibilityAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSEligibilityResultVS"/>
+      </reference>
+      <name value="ACCESS Eligibility Result Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Eligibility Result code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EligibilityAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSEventTypeCS"/>
+      </reference>
+      <name value="ACCESS Event Types"/>
+      <description value="This codesystem defines codes for the types of events that trigger subscription notifications in the ACCESS Model."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSEventTypeVS"/>
+      </reference>
+      <name value="ACCESS Event Types Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Event Types code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSTrackCS"/>
+      </reference>
+      <name value="ACCESS Model Tracks"/>
+      <description value="This codesystem defines codes for each of the ACCESS Model tracks."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SharedResources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSTrackVS"/>
+      </reference>
+      <name value="ACCESS Model Tracks Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Model Tracks code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SharedResources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-msk-condition"/>
+      </reference>
+      <name value="ACCESS MSK Track Condition Profile"/>
+      <description value="The ACCESS MSK Track Condition Profile is used for representing qualifying diagnoses for the Musculoskeletal (MSK) track. It constrains the [ACCESS Condition Profile](StructureDefinition-access-condition.html) to add a required binding to [ACCESSMSKDiagnosisVS](ValueSet-ACCESSMSKDiagnosisVS.html)."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSMSKDiagnosisVS"/>
+      </reference>
+      <name value="ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses"/>
+      <description value="This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Musculoskeletal (MSK) track. Includes osteoarthritis, other arthropathies and joint disorders, spine and structural disorders, degenerative spine disease, back pain and radiculopathy, soft tissue/tendon/bursa disorders, and peripheral nerve and plexus disorders."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-submission-status-out"/>
+      </reference>
+      <name value="ACCESS Submission Status Response Parameters"/>
+      <description value="This is the profile for the $submission-status operation output parameters (generic for all APIs)."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SharedResources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CapabilityStatement"/>
+      </extension>
+      <reference>
+        <reference value="CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement"/>
+      </reference>
+      <name value="ACCESS Unalignment API Capability Statement"/>
+      <description value="Describes the expected capabilities of systems implementing the ACCESS Unalignment API for removing patient alignments from ACCESS participants."/>
+      <exampleBoolean value="false"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSUnalignmentReasonCS"/>
+      </reference>
+      <name value="ACCESS Unalignment Reason Codes"/>
+      <description value="This codesystem defines the codes indicating the reason for the requested unalignment."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSUnalignmentReasonVS"/>
+      </reference>
+      <name value="ACCESS Unalignment Reason Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Unalignment Reason code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-unalign-in"/>
+      </reference>
+      <name value="ACCESS Unalignment Request Parameters"/>
+      <description value="This is the profile for the `$unalign` operation input parameters."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="CodeSystem"/>
+      </extension>
+      <reference>
+        <reference value="CodeSystem/ACCESSUnalignmentResultCS"/>
+      </reference>
+      <name value="ACCESS Unalignment Request Result Codes"/>
+      <description value="This codesystem defines the codes indicating the result of a requested unalignment."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="StructureDefinition:resource"/>
+      </extension>
+      <reference>
+        <reference value="StructureDefinition/access-unalign-out"/>
+      </reference>
+      <name value="ACCESS Unalignment Response Parameters"/>
+      <description value="This is the profile for the `$unalign` operation output parameters, which provide the results of the unalignment request."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="ValueSet"/>
+      </extension>
+      <reference>
+        <reference value="ValueSet/ACCESSUnalignmentResultVS"/>
+      </reference>
+      <name value="ACCESS Unalignment Result Value Set"/>
+      <description value="This value set includes all codes from the ACCESS Unalignment Result code system."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Align"/>
+      </reference>
+      <name value="Alignment Request"/>
+      <description value="The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="AlignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/AlignmentRequestExample"/>
+      </reference>
+      <name value="Alignment Request Example"/>
+      <description value="Example of parameters for aligning a patient to the ACCESS Model"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/AlignmentRequestWithSwitchConsentExample"/>
+      </reference>
+      <name value="Alignment Request with Switch Consent Example"/>
+      <description value="Example of parameters for aligning a patient with switch consent attestation"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/AlignmentResponseAlignedExample"/>
+      </reference>
+      <name value="Alignment Response - Aligned Example"/>
+      <description value="Example response indicating successful patient alignment"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/AlignmentResponseSwitchApprovedExample"/>
+      </reference>
+      <name value="Alignment Response - Switch Approved Example"/>
+      <description value="Example response indicating successful provider switch"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/CheckEligibility"/>
+      </reference>
+      <name value="Check Eligibility Request"/>
+      <description value="The **$check-eligibility** operation allows a participant to submit basic information on a patient who they believe will be a good candidate for the ACCESS model and who wants to be part of the ACCESS Model. The participant can use this API to do a quick check on which patients may be eligible before officially submitting the patient's information for consideration and inclusion in the ACCESS Model."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="EligibilityAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/CheckEligibilityRequestExample"/>
+      </reference>
+      <name value="Check Eligibility Request Example"/>
+      <description value="Example of parameters for checking patient eligibility for the ACCESS Model"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/CheckEligibilityResponseEligibleExample"/>
+      </reference>
+      <name value="Check Eligibility Response - Eligible Example"/>
+      <description value="Example response indicating patient is eligible for the ACCESS Model"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionHypertensionExample"/>
+      </reference>
+      <name value="Condition Example - Essential Hypertension"/>
+      <description value="Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionDepressionExample"/>
+      </reference>
+      <name value="Condition Example - Major Depressive Disorder"/>
+      <description value="Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionOsteoarthritisExample"/>
+      </reference>
+      <name value="Condition Example - Osteoarthritis"/>
+      <description value="Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ConditionDiabetesExample"/>
+      </reference>
+      <name value="Condition Example - Type 2 Diabetes"/>
+      <description value="Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Condition"/>
+      </extension>
+      <reference>
+        <reference value="Condition/ESRDConditionExample"/>
+      </reference>
+      <name value="End Stage Renal Disease Condition Example"/>
+      <description value="Active ESRD diagnosis that disqualifies patient from ACCESS Model"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-condition|0.7.0"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Organization"/>
+      </extension>
+      <reference>
+        <reference value="Organization/OrganizationExample"/>
+      </reference>
+      <name value="Organization Example"/>
+      <description value="Example organization for ACCESS Model examples"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientExample"/>
+      </reference>
+      <name value="Patient Example"/>
+      <description value="Example patient for ACCESS Model examples"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Patient"/>
+      </extension>
+      <reference>
+        <reference value="Patient/PatientESRDExample"/>
+      </reference>
+      <name value="Patient with ESRD - Unalignment Example"/>
+      <description value="Patient Jane Smith who has developed ESRD making her ineligible for ACCESS Model"/>
+      <exampleBoolean value="true"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Practitioner"/>
+      </extension>
+      <reference>
+        <reference value="Practitioner/PractitionerExample"/>
+      </reference>
+      <name value="Practitioner Example"/>
+      <description value="Example practitioner for ACCESS Model examples"/>
+      <exampleBoolean value="true"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/SubmissionStatus"/>
+      </reference>
+      <name value="Submission Status"/>
+      <description value="The **$submission-status** operation allows the client to check the status of any asynchronous ACCESS operation submission. This is a shared operation used by all ACCESS APIs. The specific result codes returned depend on which operation created the submission: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="SharedResources"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/SubmissionStatusResponseExample"/>
+      </reference>
+      <name value="Submission Status Response Example"/>
+      <description value="Example response for submission status check"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.7.0"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="OperationDefinition"/>
+      </extension>
+      <reference>
+        <reference value="OperationDefinition/Unalign"/>
+      </reference>
+      <name value="Unalignment Request"/>
+      <description value="The **$unalign** operation supports the ability to manually unalign a patient from the participant in a specific ACCESS track. There are a specific set of reasons a patient can be unaligned such as the patient has moved outside of the care radius of the participant or despite good faith efforts, communication with the patient has ceased. When unalignment is successful, the system automatically sends notifications to the participant confirming the unalignment, then all FHIR subscriptions created during the original alignment are cancelled to prevent future erroneous notifications."/>
+      <exampleBoolean value="false"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/UnalignmentRequestESRDExample"/>
+      </reference>
+      <name value="Unalignment Request - ESRD Example"/>
+      <description value="Example of unalignment request for patient who developed ESRD (no longer clinically eligible)"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/UnalignmentRequestExample"/>
+      </reference>
+      <name value="Unalignment Request Example"/>
+      <description value="Example of parameters for unaligning a patient from the ACCESS Model"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <resource>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
+        <valueString value="Parameters"/>
+      </extension>
+      <reference>
+        <reference value="Parameters/UnalignmentResponseUnalignedExample"/>
+      </reference>
+      <name value="Unalignment Response - Unaligned Example"/>
+      <description value="Example response indicating successful patient unalignment"/>
+      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.7.0"/>
+      <groupingId value="UnalignmentAPI"/>
+    </resource>
+    <page>
+      <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+        <valueUrl value="toc.html"/>
+      </extension>
+      <nameUrl value="toc.html"/>
+      <title value="Table of Contents"/>
+      <generation value="html"/>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="index.html"/>
+        </extension>
+        <nameUrl value="index.html"/>
+        <title value="Home"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="conformance.html"/>
+        </extension>
+        <nameUrl value="conformance.html"/>
+        <title value="Conformance Expectations"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="artifacts.html"/>
+        </extension>
+        <nameUrl value="artifacts.html"/>
+        <title value="Artifacts"/>
+        <generation value="markdown"/>
+      </page>
+      <page>
+        <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-page-name">
+          <valueUrl value="downloads.html"/>
+        </extension>
+        <nameUrl value="downloads.html"/>
+        <title value="Downloads"/>
+        <generation value="markdown"/>
+      </page>
+    </page>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/capabilities"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/examples"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/extensions"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/models"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/operations"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/profiles"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/vocabulary"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/maps"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/testing"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="input/history"/>
+    </parameter>
+    <parameter>
+      <code value="path-resource"/>
+      <value value="fsh-generated/resources"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="template/config"/>
+    </parameter>
+    <parameter>
+      <code value="path-pages"/>
+      <value value="input/images"/>
+    </parameter>
+    <parameter>
+      <code value="path-tx-cache"/>
+      <value value="input-cache/txcache"/>
+    </parameter>
+  </definition>
+</ImplementationGuide>

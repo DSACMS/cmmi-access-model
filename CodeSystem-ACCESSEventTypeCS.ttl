@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSEventTypeCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSEventTypeCS</b></p><a name=\"ACCESSEventTypeCS\"> </a><a name=\"hcACCESSEventTypeCS\"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">participant-lock-ending<a name=\"ACCESSEventTypeCS-participant-lock-ending\"> </a></td><td>Participant Lock-In Period Ending</td><td>The 3-month participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired.</td></tr><tr><td style=\"white-space:nowrap\">control-group-ending<a name=\"ACCESSEventTypeCS-control-group-ending\"> </a></td><td>Control Group Period Ending</td><td>The 12-month control group assignment period is ending soon, allowing the patient to be aligned to a participant.</td></tr><tr><td style=\"white-space:nowrap\">alignment-renewal<a name=\"ACCESSEventTypeCS-alignment-renewal\"> </a></td><td>Alignment Renewal Due</td><td>The alignment period is ending and renewal action is required to continue services under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">baseline-reporting-window<a name=\"ACCESSEventTypeCS-baseline-reporting-window\"> </a></td><td>Baseline Reporting Due</td><td>Baseline data must be reported within 60 days of alignment. The baseline data is due soon. Please submit the baseline data for the patient.</td></tr><tr><td style=\"white-space:nowrap\">quarterly-reporting-window<a name=\"ACCESSEventTypeCS-quarterly-reporting-window\"> </a></td><td>Quarterly Reporting Due</td><td>The quarterly data report is due soon. Please submit the quarterly data for the patient.</td></tr><tr><td style=\"white-space:nowrap\">eoy-reporting-window<a name=\"ACCESSEventTypeCS-eoy-reporting-window\"> </a></td><td>End-of-Year Reporting Due</td><td>The end-of-year data report is due soon. Please submit the end-of-year data for the patient.</td></tr><tr><td style=\"white-space:nowrap\">unalignment<a name=\"ACCESSEventTypeCS-unalignment\"> </a></td><td>Unalignment Notice</td><td>The patient has been unaligned from the ACCESS Model. See the Beneficiary Alignment Report for additional information.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSEventTypeCS"] ; # 
+  fhir:title [ fhir:v "ACCESS Event Types"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This codesystem defines codes for the types of events that trigger subscription notifications in the ACCESS Model."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "participant-lock-ending" ] ;
+     fhir:display [ fhir:v "Participant Lock-In Period Ending" ] ;
+     fhir:definition [ fhir:v "The 3-month participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired." ]
+  ] [
+     fhir:code [ fhir:v "control-group-ending" ] ;
+     fhir:display [ fhir:v "Control Group Period Ending" ] ;
+     fhir:definition [ fhir:v "The 12-month control group assignment period is ending soon, allowing the patient to be aligned to a participant." ]
+  ] [
+     fhir:code [ fhir:v "alignment-renewal" ] ;
+     fhir:display [ fhir:v "Alignment Renewal Due" ] ;
+     fhir:definition [ fhir:v "The alignment period is ending and renewal action is required to continue services under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "baseline-reporting-window" ] ;
+     fhir:display [ fhir:v "Baseline Reporting Due" ] ;
+     fhir:definition [ fhir:v "Baseline data must be reported within 60 days of alignment. The baseline data is due soon. Please submit the baseline data for the patient." ]
+  ] [
+     fhir:code [ fhir:v "quarterly-reporting-window" ] ;
+     fhir:display [ fhir:v "Quarterly Reporting Due" ] ;
+     fhir:definition [ fhir:v "The quarterly data report is due soon. Please submit the quarterly data for the patient." ]
+  ] [
+     fhir:code [ fhir:v "eoy-reporting-window" ] ;
+     fhir:display [ fhir:v "End-of-Year Reporting Due" ] ;
+     fhir:definition [ fhir:v "The end-of-year data report is due soon. Please submit the end-of-year data for the patient." ]
+  ] [
+     fhir:code [ fhir:v "unalignment" ] ;
+     fhir:display [ fhir:v "Unalignment Notice" ] ;
+     fhir:definition [ fhir:v "The patient has been unaligned from the ACCESS Model. See the Beneficiary Alignment Report for additional information." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

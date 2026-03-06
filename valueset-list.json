@@ -1,0 +1,92 @@
+{
+  "codeSystems" : [{
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSAlignmentResultVS",
+    "title" : "ACCESS Alignment Result Value Set",
+    "description" : "This value set includes all codes from the ACCESS Alignment Result code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
+    "version" : "0.7.0",
+    "status" : "active",
+    "name" : "ACCESSBHDiagnosisVS",
+    "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
+    "description" : "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Behavioral Health (BH) track. Includes depression and anxiety disorder diagnoses.",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS",
+    "version" : "0.7.0",
+    "status" : "active",
+    "name" : "ACCESSCKMDiagnosisVS",
+    "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
+    "description" : "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Cardio-Kidney-Metabolic (CKM) track. Includes diabetes mellitus (all types), atherosclerotic cardiovascular disease (ASCVD), and chronic kidney disease (CKD stage 3) diagnoses.",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSEligibilityResultVS",
+    "title" : "ACCESS Eligibility Result Value Set",
+    "description" : "This value set includes all codes from the ACCESS Eligibility Result code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSEventTypeVS",
+    "title" : "ACCESS Event Types Value Set",
+    "description" : "This value set includes all codes from the ACCESS Event Types code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
+    "version" : "0.7.0",
+    "status" : "active",
+    "name" : "ACCESSMSKDiagnosisVS",
+    "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
+    "description" : "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Musculoskeletal (MSK) track. Includes osteoarthritis, other arthropathies and joint disorders, spine and structural disorders, degenerative spine disease, back pain and radiculopathy, soft tissue/tendon/bursa disorders, and peripheral nerve and plexus disorders.",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSTrackVS",
+    "title" : "ACCESS Model Tracks Value Set",
+    "description" : "This value set includes all codes from the ACCESS Model Tracks code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSUnalignmentReasonVS",
+    "title" : "ACCESS Unalignment Reason Value Set",
+    "description" : "This value set includes all codes from the ACCESS Unalignment Reason code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSUnalignmentResultVS",
+    "title" : "ACCESS Unalignment Result Value Set",
+    "description" : "This value set includes all codes from the ACCESS Unalignment Result code system.",
+    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"]
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS",
+    "version" : "0.7.0",
+    "status" : "active",
+    "name" : "ACCESSeCKMDiagnosisVS",
+    "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
+    "description" : "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Early Cardio-Kidney-Metabolic (eCKM) track. Includes hypertension, dyslipidemia, prediabetes, and obesity diagnoses.",
+    "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
+  }]
+}

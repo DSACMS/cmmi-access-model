@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSTrackCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSTrackCS</b></p><a name="ACCESSTrackCS"> </a><a name="hcACCESSTrackCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">eCKM<a name="ACCESSTrackCS-eCKM"> </a></td><td>Early Cardio-Kidney-Metabolic track</td><td>Early Cardio-kidney-metabolic conditions, including hypertension (high blood pressure), dyslipidemia (high or abnormal lipids, including cholesterol), obesity or overweight with marker of central obesity, and prediabetes.</td></tr><tr><td style="white-space:nowrap">CKM<a name="ACCESSTrackCS-CKM"> </a></td><td>Cardio-Kidney-Metabolic track</td><td>Cardio-kidney-metabolic conditions, including diabetes, chronic kidney disease (3a or 3b), and atherosclerotic cardiovascular disease, including heart disease.</td></tr><tr><td style="white-space:nowrap">MSK<a name="ACCESSTrackCS-MSK"> </a></td><td>Musculoskeletal track</td><td>Musculoskeletal conditions, including chronic musculoskeletal pain.</td></tr><tr><td style="white-space:nowrap">BH<a name="ACCESSTrackCS-BH"> </a></td><td>Behavioral Health track</td><td>Behavioral health conditions, including depression and anxiety.</td></tr></table></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+  <version value="0.7.0"/>
+  <name value="ACCESSTrackCS"/>
+  <title value="ACCESS Model Tracks"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines codes for each of the ACCESS Model tracks."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="eCKM"/>
+    <display value="Early Cardio-Kidney-Metabolic track"/>
+    <definition value="Early Cardio-kidney-metabolic conditions, including hypertension (high blood pressure), dyslipidemia (high or abnormal lipids, including cholesterol), obesity or overweight with marker of central obesity, and prediabetes."/>
+  </concept>
+  <concept>
+    <code value="CKM"/>
+    <display value="Cardio-Kidney-Metabolic track"/>
+    <definition value="Cardio-kidney-metabolic conditions, including diabetes, chronic kidney disease (3a or 3b), and atherosclerotic cardiovascular disease, including heart disease."/>
+  </concept>
+  <concept>
+    <code value="MSK"/>
+    <display value="Musculoskeletal track"/>
+    <definition value="Musculoskeletal conditions, including chronic musculoskeletal pain."/>
+  </concept>
+  <concept>
+    <code value="BH"/>
+    <display value="Behavioral Health track"/>
+    <definition value="Behavioral health conditions, including depression and anxiety."/>
+  </concept>
+</CodeSystem>

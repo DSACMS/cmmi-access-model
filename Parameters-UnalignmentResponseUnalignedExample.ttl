@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/Parameters/UnalignmentResponseUnalignedExample> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "UnalignmentResponseUnalignedExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"^^xsd:anyURI ;
+       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "result" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS>
+         ] ;
+         fhir:code [ fhir:v "unaligned" ] ;
+         fhir:display [ fhir:v "Unaligned" ]
+       ] ) ;
+       fhir:text [ fhir:v "The request to manually unalign the patient has been successfully accepted and the patient has been successfully unaligned." ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

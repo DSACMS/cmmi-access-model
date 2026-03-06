@@ -1,0 +1,89 @@
+{
+  "package": "cms.fhir.us.access",
+  "version": "0.7.0",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "US",
+  "extensions": [],
+  "profiles": {
+    "Parameters": [
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out",
+        "title": "ACCESS Submission Status Response Parameters"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in",
+        "title": "ACCESS Unalignment Request Parameters"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out",
+        "title": "ACCESS Unalignment Response Parameters"
+      }
+    ],
+    "Condition": [
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
+        "title": "ACCESS CKM Track Condition Profile"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-condition",
+        "title": "ACCESS Condition Profile"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition",
+        "title": "ACCESS eCKM Track Condition Profile"
+      },
+      {
+        "url": "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition",
+        "title": "ACCESS MSK Track Condition Profile"
+      }
+    ]
+  },
+  "usage": {
+    "http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0": [
+      "Condition"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-type-must-support": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment": [
+      "ImplementationGuide.dependsOn"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ],
+    "http://hl7.org/fhir/us/core/StructureDefinition/uscdi-requirement": [
+      "StructureDefinition.snapshot.element"
+    ]
+  }
+}

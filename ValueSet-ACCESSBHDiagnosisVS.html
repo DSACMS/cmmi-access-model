@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.7.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="apple-touch-icon-precomposed" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="apple-touch-icon-precomposed" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.37"}
+    h3,h4,h5,h6{--heading-prefix:"3.37"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.7.0 - ci-build
+
+
+
+  <img alt="United States of America flag" src="assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.7.0) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://globalalliantinc.com/access/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="ValueSet-ACCESSBHDiagnosisVS.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="ValueSet-ACCESSBHDiagnosisVS.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+  <a name="root"> </a>
+  <h2 id="root">ValueSet: ACCESS Behavioral Health (BH) Track Qualifying Diagnoses
+
+  </h2>
+  <table class="colsi">
+
+    <tr>
+      <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS"/></span>
+      </td>
+      <td><i>Version</i>:
+      <span class="copy-text">0.7.0<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS|0.7.0"/></span>
+      </td>
+    </tr>
+
+    <tr>
+
+
+
+
+
+
+
+      <td colspan="4">
+        
+          Active
+          
+            as of 2026-02-26
+          
+        
+      </td>
+
+
+
+      <td><i>Computable Name</i>: <span style="font-family: monospace;">ACCESSBHDiagnosisVS</span></td>
+    </tr>
+
+
+
+
+    <tr>
+      <td colspan="5"><p><em>Copyright/Legal</em>: This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain.</p>
+</td>
+    </tr>
+
+  </table>
+
+<p>
+<p>This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Behavioral Health (BH) track. Includes depression and anxiety disorder diagnoses.</p>
+
+</p>
+
+
+  <p>
+    <b>References</b>
+  </p>
+  
+<ul>
+ <li><a href="StructureDefinition-access-bh-condition.html">ACCESS BH Condition Profile</a></li>
+</ul>
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <a name="definition"> </a>
+
+<!-- Content Logical Definition heading in the fragment -->
+  <h3>Logical Definition (CLD)</h3>
+<div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ACCESSBHDiagnosisVS"> </a><a name="hcACCESSBHDiagnosisVS"> </a>
+<ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td></tr><tr><td>F06.32</td><td>Mood disorder due to known physiological condition with major depressive-like episode</td></tr><tr><td>F32.0</td><td>Major depressive disorder, single episode, mild</td></tr><tr><td>F32.1</td><td>Major depressive disorder, single episode, moderate</td></tr><tr><td>F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td></tr><tr><td>F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td></tr><tr><td>F32.4</td><td>Major depressive disorder, single episode, in partial remission</td></tr><tr><td>F32.5</td><td>Major depressive disorder, single episode, in full remission</td></tr><tr><td>F32.81</td><td>Premenstrual dysphoric disorder</td></tr><tr><td>F32.89</td><td>Other specified depressive episodes</td></tr><tr><td>F32.9</td><td>Major depressive disorder, single episode, unspecified</td></tr><tr><td>F32.A</td><td>Depression, unspecified</td></tr><tr><td>F33.0</td><td>Major depressive disorder, recurrent, mild</td></tr><tr><td>F33.1</td><td>Major depressive disorder, recurrent, moderate</td></tr><tr><td>F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td></tr><tr><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td></tr><tr><td>F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td></tr><tr><td>F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td></tr><tr><td>F33.42</td><td>Major depressive disorder, recurrent, in full remission</td></tr><tr><td>F33.8</td><td>Other recurrent depressive disorders</td></tr><tr><td>F33.9</td><td>Major depressive disorder, recurrent, unspecified</td></tr><tr><td>F34.0</td><td>Cyclothymic disorder</td></tr><tr><td>F34.1</td><td>Dysthymic disorder</td></tr><tr><td>F43.20</td><td>Adjustment disorder, unspecified</td></tr><tr><td>F43.21</td><td>Adjustment disorder with depressed mood</td></tr><tr><td>F43.22</td><td>Adjustment disorder with anxiety</td></tr><tr><td>F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td>F40.00</td><td>Agoraphobia, unspecified</td></tr><tr><td>F40.01</td><td>Agoraphobia with panic disorder</td></tr><tr><td>F40.02</td><td>Agoraphobia without panic disorder</td></tr><tr><td>F40.10</td><td>Social phobia, unspecified</td></tr><tr><td>F40.11</td><td>Social phobia, generalized</td></tr><tr><td>F40.9</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td>F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td>F41.1</td><td>Generalized anxiety disorder</td></tr><tr><td>F41.3</td><td>Other mixed anxiety disorders</td></tr><tr><td>F41.8</td><td>Other specified anxiety disorders</td></tr><tr><td>F41.9</td><td>Anxiety disorder, unspecified</td></tr></table></li></ul></div>
+
+  <p>&#160;</p>
+  <a name="expansion"> </a>
+  <h3 id="expansion">Expansion</h3>
+
+  <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"/><p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion from tx.fhir.org based on codesystem International Classification of Diseases, 10th Revision, Clinical Modification (ICD-10-CM) version 2024<span class="copy-text-inline"><button data-clipboard-text="http://hl7.org/fhir/sid/icd-10-cm|2024" title="Click to Copy URL" class="btn-copy"> </button></span></p><p>This value set contains 38 concepts</p><table class="codes" data-fhir="generated"><tr><td><b>System</b></td><td style="white-space:nowrap"><b>Code</b></td><td><b>Display (en)</b></td><td><b>JSON</b></td><td><b>XML</b></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F06.31"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F06.31&quot;, &quot;display&quot;: &quot;Mood disorder due to known physiological condition with depressive features&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F06.31&quot;&gt;&lt;display value=&quot;Mood disorder due to known physiological condition with depressive features&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F06.32"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F06.32</td><td>Mood disorder due to known physiological condition with major depressive-like episode</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F06.32&quot;, &quot;display&quot;: &quot;Mood disorder due to known physiological condition with major depressive-like episode&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F06.32&quot;&gt;&lt;display value=&quot;Mood disorder due to known physiological condition with major depressive-like episode&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.0"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.0</td><td>Major depressive disorder, single episode, mild</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.0&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, mild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.0&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, mild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.1"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.1</td><td>Major depressive disorder, single episode, moderate</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.1&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, moderate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.1&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, moderate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.2"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.2&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, severe without psychotic features&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.2&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, severe without psychotic features&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.3"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.3&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, severe with psychotic features&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.3&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, severe with psychotic features&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.4"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.4</td><td>Major depressive disorder, single episode, in partial remission</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.4&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, in partial remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.4&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, in partial remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.5"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.5</td><td>Major depressive disorder, single episode, in full remission</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.5&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, in full remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.5&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, in full remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.81"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.81</td><td>Premenstrual dysphoric disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.81&quot;, &quot;display&quot;: &quot;Premenstrual dysphoric disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.81&quot;&gt;&lt;display value=&quot;Premenstrual dysphoric disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.89"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.89</td><td>Other specified depressive episodes</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.89&quot;, &quot;display&quot;: &quot;Other specified depressive episodes&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.89&quot;&gt;&lt;display value=&quot;Other specified depressive episodes&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.9"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.9</td><td>Major depressive disorder, single episode, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.9&quot;, &quot;display&quot;: &quot;Major depressive disorder, single episode, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.9&quot;&gt;&lt;display value=&quot;Major depressive disorder, single episode, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F32.A"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F32.A</td><td>Depression, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F32.A&quot;, &quot;display&quot;: &quot;Depression, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F32.A&quot;&gt;&lt;display value=&quot;Depression, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.0"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.0</td><td>Major depressive disorder, recurrent, mild</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.0&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, mild&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.0&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, mild&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.1"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.1</td><td>Major depressive disorder, recurrent, moderate</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.1&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, moderate&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.1&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, moderate&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.2"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.2&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent severe without psychotic features&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.2&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent severe without psychotic features&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.3"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.3&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, severe with psychotic symptoms&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.3&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, severe with psychotic symptoms&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.40"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.40&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, in remission, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.40&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, in remission, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.41"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.41&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, in partial remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.41&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, in partial remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.42"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.42</td><td>Major depressive disorder, recurrent, in full remission</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.42&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, in full remission&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.42&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, in full remission&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.8"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.8</td><td>Other recurrent depressive disorders</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.8&quot;, &quot;display&quot;: &quot;Other recurrent depressive disorders&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.8&quot;&gt;&lt;display value=&quot;Other recurrent depressive disorders&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F33.9"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F33.9</td><td>Major depressive disorder, recurrent, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F33.9&quot;, &quot;display&quot;: &quot;Major depressive disorder, recurrent, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F33.9&quot;&gt;&lt;display value=&quot;Major depressive disorder, recurrent, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F34.0"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F34.0</td><td>Cyclothymic disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F34.0&quot;, &quot;display&quot;: &quot;Cyclothymic disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F34.0&quot;&gt;&lt;display value=&quot;Cyclothymic disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F34.1"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F34.1</td><td>Dysthymic disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F34.1&quot;, &quot;display&quot;: &quot;Dysthymic disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F34.1&quot;&gt;&lt;display value=&quot;Dysthymic disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F43.20"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F43.20</td><td>Adjustment disorder, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F43.20&quot;, &quot;display&quot;: &quot;Adjustment disorder, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F43.20&quot;&gt;&lt;display value=&quot;Adjustment disorder, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F43.21"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F43.21</td><td>Adjustment disorder with depressed mood</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F43.21&quot;, &quot;display&quot;: &quot;Adjustment disorder with depressed mood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F43.21&quot;&gt;&lt;display value=&quot;Adjustment disorder with depressed mood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F43.22"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F43.22</td><td>Adjustment disorder with anxiety</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F43.22&quot;, &quot;display&quot;: &quot;Adjustment disorder with anxiety&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F43.22&quot;&gt;&lt;display value=&quot;Adjustment disorder with anxiety&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F43.23"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F43.23&quot;, &quot;display&quot;: &quot;Adjustment disorder with mixed anxiety and depressed mood&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F43.23&quot;&gt;&lt;display value=&quot;Adjustment disorder with mixed anxiety and depressed mood&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.00"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.00</td><td>Agoraphobia, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.00&quot;, &quot;display&quot;: &quot;Agoraphobia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.00&quot;&gt;&lt;display value=&quot;Agoraphobia, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.01"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.01</td><td>Agoraphobia with panic disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.01&quot;, &quot;display&quot;: &quot;Agoraphobia with panic disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.01&quot;&gt;&lt;display value=&quot;Agoraphobia with panic disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.02"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.02</td><td>Agoraphobia without panic disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.02&quot;, &quot;display&quot;: &quot;Agoraphobia without panic disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.02&quot;&gt;&lt;display value=&quot;Agoraphobia without panic disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.10"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.10</td><td>Social phobia, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.10&quot;, &quot;display&quot;: &quot;Social phobia, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.10&quot;&gt;&lt;display value=&quot;Social phobia, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.11"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.11</td><td>Social phobia, generalized</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.11&quot;, &quot;display&quot;: &quot;Social phobia, generalized&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.11&quot;&gt;&lt;display value=&quot;Social phobia, generalized&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F40.9"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F40.9</td><td>Phobic anxiety disorder, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F40.9&quot;, &quot;display&quot;: &quot;Phobic anxiety disorder, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F40.9&quot;&gt;&lt;display value=&quot;Phobic anxiety disorder, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F41.0"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F41.0&quot;, &quot;display&quot;: &quot;Panic disorder [episodic paroxysmal anxiety]&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F41.0&quot;&gt;&lt;display value=&quot;Panic disorder [episodic paroxysmal anxiety]&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F41.1"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F41.1</td><td>Generalized anxiety disorder</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F41.1&quot;, &quot;display&quot;: &quot;Generalized anxiety disorder&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F41.1&quot;&gt;&lt;display value=&quot;Generalized anxiety disorder&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F41.3"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F41.3</td><td>Other mixed anxiety disorders</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F41.3&quot;, &quot;display&quot;: &quot;Other mixed anxiety disorders&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F41.3&quot;&gt;&lt;display value=&quot;Other mixed anxiety disorders&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F41.8"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F41.8</td><td>Other specified anxiety disorders</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F41.8&quot;, &quot;display&quot;: &quot;Other specified anxiety disorders&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F41.8&quot;&gt;&lt;display value=&quot;Other specified anxiety disorders&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr><tr><td><a name="x-http://hl7.org/fhir/sid/icd-10-cm-F41.9"> </a><code>http://hl7.org/fhir/sid/icd-10-cm</code></td><td style="white-space:nowrap">  F41.9</td><td>Anxiety disorder, unspecified</td><td><span class="copy-text-inline"><button data-clipboard-text="{&quot;system&quot;: &quot;http://hl7.org/fhir/sid/icd-10-cm&quot;, &quot;version&quot;: &quot;2024&quot;, &quot;code&quot;: &quot;F41.9&quot;, &quot;display&quot;: &quot;Anxiety disorder, unspecified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button></span></td><td><span class="copy-text-inline"><button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://hl7.org/fhir/sid/icd-10-cm&quot;&gt;&lt;version value=&quot;2024&quot;&gt;&lt;code value=&quot;F41.9&quot;&gt;&lt;display value=&quot;Anxiety disorder, unspecified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button></span></td></tr></table></div>
+
+  <hr/>
+  <p>
+    Explanation of the columns that may appear on this page:
+  </p>
+  <table class="grid">
+    <tr>
+      <td>Level</td>
+      <td>A few code lists that FHIR defines are hierarchical - each code is assigned a level.
+          In this scheme, some codes are under other codes, and imply that the code they are under also applies</td>
+    </tr>
+    <tr>
+      <td>System</td>
+      <td>The source of the definition of the code (when the value set draws in codes defined elsewhere)</td>
+    </tr>
+    <tr>
+      <td>Code</td>
+      <td>The code (used as the code in the resource instance)</td>
+    </tr>
+    <tr>
+      <td>Display</td>
+      <td>The display (used in the <i>display</i> element of a <a href="http://hl7.org/fhir/R4/datatypes.html#Coding">Coding</a>). If there is no display, implementers should not simply display the code, but map the concept into their application</td>
+    </tr>
+    <tr>
+      <td>Definition</td>
+      <td>An explanation of the meaning of the concept</td>
+    </tr>
+    <tr>
+      <td>Comments</td>
+      <td>Additional notes about how to use the code</td>
+    </tr>
+  </table>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+  
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+          IG &#169; 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  Package cms.fhir.us.access#0.7.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>. Generated <span title="Thu, Feb 26, 2026 23:16-0500">2026-02-26</span>
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

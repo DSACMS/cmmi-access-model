@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "CheckEligibilityResponseEligibleExample",
+  "meta" : {
+    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out"]
+  },
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
+        "code" : "eligible",
+        "display" : "Eligible"
+      }],
+      "text" : "Patient is eligible for the ACCESS Model."
+    }
+  }]
+}

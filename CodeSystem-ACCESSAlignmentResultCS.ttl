@@ -1,0 +1,83 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSAlignmentResultCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSAlignmentResultCS</b></p><a name=\"ACCESSAlignmentResultCS\"> </a><a name=\"hcACCESSAlignmentResultCS\"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">aligned<a name=\"ACCESSAlignmentResultCS-aligned\"> </a></td><td>Aligned</td><td>Patient is eligible and has been aligned so the participant can now begin providing services to the patient under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-aligned-control-group<a name=\"ACCESSAlignmentResultCS-not-aligned-control-group\"> </a></td><td>Not aligned - assigned to Control Group</td><td>The patient is technically eligible, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months.</td></tr><tr><td style=\"white-space:nowrap\">not-aligned-already-aligned<a name=\"ACCESSAlignmentResultCS-not-aligned-already-aligned\"> </a></td><td>Not aligned - already aligned to another participant in the track</td><td>The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track. If a switch consent attestation is submitted, but the patient is still within the 3-month lock-in period, this response will be received.</td></tr><tr><td style=\"white-space:nowrap\">not-aligned-not-medicare<a name=\"ACCESSAlignmentResultCS-not-aligned-not-medicare\"> </a></td><td>Not aligned - not receiving Medicare</td><td>The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-aligned-services<a name=\"ACCESSAlignmentResultCS-not-aligned-services\"> </a></td><td>Not aligned - receiving services that prevent eligibility</td><td>The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-aligned-diagnoses<a name=\"ACCESSAlignmentResultCS-not-aligned-diagnoses\"> </a></td><td>Not aligned - no qualifying diagnosis</td><td>The patient does not have a treating diagnosis that qualifies them for service in the track indicated and therefore cannot get services under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">aligned-switch-approved<a name=\"ACCESSAlignmentResultCS-aligned-switch-approved\"> </a></td><td>Aligned and switch approved</td><td>The request to switch the patient's alignment from a different participant after the 3-month lock in period is accepted and the patient is considered switched and now re-aligned.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSAlignmentResultCS"] ; # 
+  fhir:title [ fhir:v "ACCESS Alignment Request Result Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This codesystem defines codes indicating the result of a requested alignment."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "7"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "aligned" ] ;
+     fhir:display [ fhir:v "Aligned" ] ;
+     fhir:definition [ fhir:v "Patient is eligible and has been aligned so the participant can now begin providing services to the patient under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-aligned-control-group" ] ;
+     fhir:display [ fhir:v "Not aligned - assigned to Control Group" ] ;
+     fhir:definition [ fhir:v "The patient is technically eligible, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months." ]
+  ] [
+     fhir:code [ fhir:v "not-aligned-already-aligned" ] ;
+     fhir:display [ fhir:v "Not aligned - already aligned to another participant in the track" ] ;
+     fhir:definition [ fhir:v "The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track. If a switch consent attestation is submitted, but the patient is still within the 3-month lock-in period, this response will be received." ]
+  ] [
+     fhir:code [ fhir:v "not-aligned-not-medicare" ] ;
+     fhir:display [ fhir:v "Not aligned - not receiving Medicare" ] ;
+     fhir:definition [ fhir:v "The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-aligned-services" ] ;
+     fhir:display [ fhir:v "Not aligned - receiving services that prevent eligibility" ] ;
+     fhir:definition [ fhir:v "The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-aligned-diagnoses" ] ;
+     fhir:display [ fhir:v "Not aligned - no qualifying diagnosis" ] ;
+     fhir:definition [ fhir:v "The patient does not have a treating diagnosis that qualifies them for service in the track indicated and therefore cannot get services under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "aligned-switch-approved" ] ;
+     fhir:display [ fhir:v "Aligned and switch approved" ] ;
+     fhir:definition [ fhir:v "The request to switch the patient's alignment from a different participant after the 3-month lock in period is accepted and the patient is considered switched and now re-aligned." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

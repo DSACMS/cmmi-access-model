@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSUnalignmentReasonCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSUnalignmentReasonCS</b></p><a name="ACCESSUnalignmentReasonCS"> </a><a name="hcACCESSUnalignmentReasonCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">geographic-relocated<a name="ACCESSUnalignmentReasonCS-geographic-relocated"> </a></td><td>Geographic relocated</td><td>Patient has relocated outside of the geographic area in which the aligned participant is licensed to provide services.</td></tr><tr><td style="white-space:nowrap">loss-of-contact<a name="ACCESSUnalignmentReasonCS-loss-of-contact"> </a></td><td>Loss of contact</td><td>Despite good faith efforts, defined as making three or more outreach attempts over 30 or more days, contact with the patient has been lost and therefore no longer able to engage with them.</td></tr><tr><td style="white-space:nowrap">no-longer-clinically-eligible<a name="ACCESSUnalignmentReasonCS-no-longer-clinically-eligible"> </a></td><td>No longer clinically eligible</td><td>Patient's conditions have changed such that they are no longer eligible for the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">patient-initiated<a name="ACCESSUnalignmentReasonCS-patient-initiated"> </a></td><td>Patient no longer wants to participate in the ACCESS Model after the initial 90-day lock-in period.</td><td/></tr></table></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"/>
+  <version value="0.7.0"/>
+  <name value="ACCESSUnalignmentReasonCS"/>
+  <title value="ACCESS Unalignment Reason Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines the codes indicating the reason for the requested unalignment."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="geographic-relocated"/>
+    <display value="Geographic relocated"/>
+    <definition value="Patient has relocated outside of the geographic area in which the aligned participant is licensed to provide services."/>
+  </concept>
+  <concept>
+    <code value="loss-of-contact"/>
+    <display value="Loss of contact"/>
+    <definition value="Despite good faith efforts, defined as making three or more outreach attempts over 30 or more days, contact with the patient has been lost and therefore no longer able to engage with them."/>
+  </concept>
+  <concept>
+    <code value="no-longer-clinically-eligible"/>
+    <display value="No longer clinically eligible"/>
+    <definition value="Patient's conditions have changed such that they are no longer eligible for the ACCESS Model."/>
+  </concept>
+  <concept>
+    <code value="patient-initiated"/>
+    <display value="Patient no longer wants to participate in the ACCESS Model after the initial 90-day lock-in period."/>
+  </concept>
+</CodeSystem>

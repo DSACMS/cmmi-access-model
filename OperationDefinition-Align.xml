@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="Align"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition Align</b></p><a name="Align"> </a><a name="hcAlign"> </a><p>URL: [base]/Patient/$align</p><p>Input parameters Profile:<a href="StructureDefinition-access-align-in.html">ACCESS Alignment Request Parameters</a></p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).</p>
+</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>
+</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>
+</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-ACCESSTrackVS.html">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS Track to align the patient to.</p>
+</div></td></tr><tr><td>IN</td><td>conditions</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td><td/><td><div><p>Patient's conditions.</p>
+</div></td></tr><tr><td>IN</td><td>switchConsentAttestation</td><td/><td>0..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#boolean">boolean</a></td><td/><td><div><p>Switch consent attestation, if applicable.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/OperationDefinition/Align"/>
+  <version value="0.7.0"/>
+  <name value="Align"/>
+  <title value="Alignment Request"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <code value="align"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="false"/>
+  <inputProfile value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0"/>
+  <parameter>
+    <name value="participantID"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="payerID"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Payer ID for the patient."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="patient"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Patient information.  It **SHOULD** contain the Medicare Beneficiary Identifier (MBI)."/>
+    <type value="Patient"/>
+  </parameter>
+  <parameter>
+    <name value="track"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="ACCESS Track to align the patient to."/>
+    <type value="CodeableConcept"/>
+    <binding>
+      <strength value="required"/>
+      <valueSet value="https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"/>
+    </binding>
+  </parameter>
+  <parameter>
+    <name value="conditions"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Patient's conditions."/>
+    <type value="Condition"/>
+  </parameter>
+  <parameter>
+    <name value="switchConsentAttestation"/>
+    <use value="in"/>
+    <min value="0"/>
+    <max value="1"/>
+    <documentation value="Switch consent attestation, if applicable."/>
+    <type value="boolean"/>
+  </parameter>
+</OperationDefinition>

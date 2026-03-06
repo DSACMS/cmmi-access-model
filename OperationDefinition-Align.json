@@ -1,0 +1,93 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "Align",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Align</b></p><a name=\"Align\"> </a><a name=\"hcAlign\"> </a><p>URL: [base]/Patient/$align</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-align-in.html\">ACCESS Alignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS Track to align the patient to.</p>\n</div></td></tr><tr><td>IN</td><td>conditions</td><td/><td>1..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>switchConsentAttestation</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#boolean\">boolean</a></td><td/><td><div><p>Switch consent attestation, if applicable.</p>\n</div></td></tr></table></div>"
+  },
+  "url" : "https://globalalliantinc.com/access/OperationDefinition/Align",
+  "version" : "0.7.0",
+  "name" : "Align",
+  "title" : "Alignment Request",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2026-02-26T23:16:42-05:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "code" : "align",
+  "resource" : ["Patient"],
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.7.0",
+  "parameter" : [{
+    "name" : "participantID",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "payerID",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Payer ID for the patient.",
+    "type" : "Identifier"
+  },
+  {
+    "name" : "patient",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "Patient information.  It **SHOULD** contain the Medicare Beneficiary Identifier (MBI).",
+    "type" : "Patient"
+  },
+  {
+    "name" : "track",
+    "use" : "in",
+    "min" : 1,
+    "max" : "1",
+    "documentation" : "ACCESS Track to align the patient to.",
+    "type" : "CodeableConcept",
+    "binding" : {
+      "strength" : "required",
+      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"
+    }
+  },
+  {
+    "name" : "conditions",
+    "use" : "in",
+    "min" : 1,
+    "max" : "*",
+    "documentation" : "Patient's conditions.",
+    "type" : "Condition"
+  },
+  {
+    "name" : "switchConsentAttestation",
+    "use" : "in",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "Switch consent attestation, if applicable.",
+    "type" : "boolean"
+  }]
+}

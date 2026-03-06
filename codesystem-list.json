@@ -1,0 +1,50 @@
+{
+  "codeSystems" : [{
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSAlignmentResultCS",
+    "title" : "ACCESS Alignment Request Result Codes",
+    "description" : "This codesystem defines codes indicating the result of a requested alignment."
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSEligibilityResultCS",
+    "title" : "ACCESS Eligibility Result Codes",
+    "description" : "This codesystem defines codes indicating the result of an eligibility check."
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSEventTypeCS",
+    "title" : "ACCESS Event Types",
+    "description" : "This codesystem defines codes for the types of events that trigger subscription notifications in the ACCESS Model."
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSTrackCS",
+    "title" : "ACCESS Model Tracks",
+    "description" : "This codesystem defines codes for each of the ACCESS Model tracks."
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSUnalignmentReasonCS",
+    "title" : "ACCESS Unalignment Reason Codes",
+    "description" : "This codesystem defines the codes indicating the reason for the requested unalignment."
+  },
+  {
+    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
+    "version" : "0.7.0",
+    "status" : "draft",
+    "name" : "ACCESSUnalignmentResultCS",
+    "title" : "ACCESS Unalignment Request Result Codes",
+    "description" : "This codesystem defines the codes indicating the result of a requested unalignment."
+  }]
+}

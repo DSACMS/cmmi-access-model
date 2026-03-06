@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="AlignmentResponseAlignedExample"/>
+  <meta>
+    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-align-out"/>
+  </meta>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"/>
+        <code value="aligned"/>
+        <display value="Aligned"/>
+      </coding>
+      <text value="Patient is eligible and has been aligned so the ACCESS participant can now begin providing services to the patient under the model."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

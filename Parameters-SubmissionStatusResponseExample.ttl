@@ -1,0 +1,35 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/Parameters/SubmissionStatusResponseExample> a fhir:Parameters ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "SubmissionStatusResponseExample"] ; # 
+  fhir:meta [
+     fhir:profile ( [
+       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out"^^xsd:anyURI ;
+       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out>
+     ] )
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "result" ] ;
+     fhir:value [
+       a fhir:CodeableConcept ;
+       fhir:coding ( [
+         fhir:system [
+           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"^^xsd:anyURI ;
+           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS>
+         ] ;
+         fhir:code [ fhir:v "eligible" ] ;
+         fhir:display [ fhir:v "Eligible" ]
+       ] ) ;
+       fhir:text [ fhir:v "Patient is eligible for the ACCESS Model." ]
+     ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

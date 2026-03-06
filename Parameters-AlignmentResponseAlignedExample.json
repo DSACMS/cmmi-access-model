@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "AlignmentResponseAlignedExample",
+  "meta" : {
+    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-align-out"]
+  },
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
+        "code" : "aligned",
+        "display" : "Aligned"
+      }],
+      "text" : "Patient is eligible and has been aligned so the ACCESS participant can now begin providing services to the patient under the model."
+    }
+  }]
+}

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="OrganizationExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Example Healthcare Organization, ACCESS Participant ID: ACCESS1234</div>
+  </text>
+  <identifier>
+    <system value="https://globalalliantinc.com/access/participant-id"/>
+    <value value="ACCESS1234"/>
+  </identifier>
+  <active value="true"/>
+  <name value="Example Healthcare Organization"/>
+</Organization>

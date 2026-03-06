@@ -1,0 +1,109 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/OperationDefinition/Unalign> a fhir:OperationDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "Unalign"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Unalign</b></p><a name=\"Unalign\"> </a><a name=\"hcUnalign\"> </a><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-unalign-in.html\">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>\n</div></td></tr><tr><td>IN</td><td>conditions</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>\n</div></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/OperationDefinition/Unalign"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/OperationDefinition/Unalign>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "Unalign"] ; # 
+  fhir:title [ fhir:v "Unalignment Request"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:kind [ fhir:v "operation"] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "The **$unalign** operation supports the ability to manually unalign a patient from the participant in a specific ACCESS track. There are a specific set of reasons a patient can be unaligned such as the patient has moved outside of the care radius of the participant or despite good faith efforts, communication with the patient has ceased. When unalignment is successful, the system automatically sends notifications to the participant confirming the unalignment, then all FHIR subscriptions created during the original alignment are cancelled to prevent future erroneous notifications."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:code [ fhir:v "unalign"] ; # 
+  fhir:resource ( [ fhir:v "Patient"] ) ; # 
+  fhir:system [ fhir:v false] ; # 
+  fhir:type [ fhir:v true] ; # 
+  fhir:instance [ fhir:v false] ; # 
+  fhir:inputProfile [
+     fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.7.0"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.7.0>
+  ] ; # 
+  fhir:parameter ( [
+     fhir:name [ fhir:v "participantID" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "ACCESS participant identifier. Must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)." ] ;
+     fhir:type [ fhir:v "Identifier" ]
+  ] [
+     fhir:name [ fhir:v "payerID" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Payer ID for the patient." ] ;
+     fhir:type [ fhir:v "Identifier" ]
+  ] [
+     fhir:name [ fhir:v "patient" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Patient information.  It **SHOULD** contain the Medicare Beneficiary Identifier (MBI)." ] ;
+     fhir:type [ fhir:v "Patient" ]
+  ] [
+     fhir:name [ fhir:v "track" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "ACCESS track to unalign the patient from." ] ;
+     fhir:type [ fhir:v "CodeableConcept" ] ;
+     fhir:binding [
+       fhir:strength [ fhir:v "required" ] ;
+       fhir:valueSet [
+         fhir:v "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.7.0"^^xsd:anyURI ;
+         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS?version=0.7.0>
+       ]
+     ]
+  ] [
+     fhir:name [ fhir:v "conditions" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 0 ] ;
+     fhir:max [ fhir:v "*" ] ;
+     fhir:documentation [ fhir:v "Patient's conditions." ] ;
+     fhir:type [ fhir:v "Condition" ]
+  ] [
+     fhir:name [ fhir:v "reason" ] ;
+     fhir:use [ fhir:v "in" ] ;
+     fhir:min [ fhir:v 1 ] ;
+     fhir:max [ fhir:v "1" ] ;
+     fhir:documentation [ fhir:v "Reason for the manual unalignment." ] ;
+     fhir:type [ fhir:v "CodeableConcept" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

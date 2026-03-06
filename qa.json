@@ -1,0 +1,19 @@
+{
+  "url" : "https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access",
+  "name" : "CMSAccessAPI",
+  "title" : "CMS ACCESS Model API",
+  "description" : "Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting",
+  "status" : "draft",
+  "package-id" : "cms.fhir.us.access",
+  "ig-ver" : "0.7.0",
+  "date" : "Thu, 26 Feb, 2026 23:16:42 -0500",
+  "dateISO8601" : "2026-02-26T23:16:42-05:00",
+  "errs" : 0,
+  "warnings" : 0,
+  "hints" : 0,
+  "suppressed-hints" : 659,
+  "suppressed-warnings" : 7,
+  "version" : "4.0.1",
+  "tool" : "5.0.0 (3)",
+  "maxMemory" : 1434685056
+}

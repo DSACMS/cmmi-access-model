@@ -1,0 +1,457 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS> a fhir:ValueSet ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSCKMDiagnosisVS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSCKMDiagnosisVS</b></p><a name=\"ACCESSCKMDiagnosisVS\"> </a><a name=\"hcACCESSCKMDiagnosisVS\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a E08 (Diabetes mellitus due to underlying condition)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a E09 (Drug or chemical induced diabetes mellitus)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a E11 (Type 2 diabetes mellitus)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a E13 (Other specified diabetes mellitus)</li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>I20.0</td><td>Unstable angina</td></tr><tr><td>I20.1</td><td>Angina pectoris with documented spasm</td></tr><tr><td>I20.2</td><td>Refractory angina pectoris</td></tr><tr><td>I20.8</td><td>Other forms of angina pectoris</td></tr><tr><td>I20.81</td><td>Angina pectoris with coronary microvascular dysfunction</td></tr><tr><td>I20.89</td><td>Other forms of angina pectoris</td></tr><tr><td>I24.0</td><td>Acute coronary thrombosis not resulting in myocardial infarction</td></tr><tr><td>I24.8</td><td>Other forms of acute ischemic heart disease</td></tr><tr><td>I24.81</td><td>Acute coronary microvascular dysfunction</td></tr><tr><td>I24.89</td><td>Other forms of acute ischemic heart disease</td></tr><tr><td>I25.10</td><td>Atherosclerotic heart disease of native coronary artery without angina pectoris</td></tr><tr><td>I25.110</td><td>Atherosclerotic heart disease of native coronary artery with unstable angina pectoris</td></tr><tr><td>I25.111</td><td>Atherosclerotic heart disease of native coronary artery with angina pectoris with documented spasm</td></tr><tr><td>I25.112</td><td>Atherosclerotic heart disease of native coronary artery with refractory angina pectoris</td></tr><tr><td>I25.118</td><td>Atherosclerotic heart disease of native coronary artery with other forms of angina pectoris</td></tr><tr><td>I25.119</td><td>Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris</td></tr><tr><td>I25.3</td><td>Aneurysm of heart</td></tr><tr><td>I25.41</td><td>Coronary artery aneurysm</td></tr><tr><td>I25.42</td><td>Coronary artery dissection</td></tr><tr><td>I25.5</td><td>Ischemic cardiomyopathy</td></tr><tr><td>I25.6</td><td>Silent myocardial ischemia</td></tr><tr><td>I63.0</td><td>Cerebral infarction due to thrombosis of precerebral arteries</td></tr><tr><td>I63.1</td><td>Cerebral infarction due to embolism of precerebral arteries</td></tr><tr><td>I63.2</td><td>Cerebral infarction due to unspecified occlusion or stenosis of precerebral arteries</td></tr><tr><td>I63.3</td><td>Cerebral infarction due to thrombosis of cerebral arteries</td></tr><tr><td>I63.4</td><td>Cerebral infarction due to embolism of cerebral arteries</td></tr><tr><td>I63.5</td><td>Cerebral infarction due to unspecified occlusion or stenosis of cerebral arteries</td></tr><tr><td>I63.6</td><td>Cerebral infarction due to cerebral venous thrombosis, nonpyogenic</td></tr><tr><td>I63.8</td><td>Other cerebral infarction</td></tr><tr><td>I63.9</td><td>Cerebral infarction, unspecified</td></tr><tr><td>I69.30</td><td>Unspecified sequelae of cerebral infarction</td></tr><tr><td>I69.31</td><td>Cognitive deficits following cerebral infarction</td></tr><tr><td>I69.32</td><td>Speech and language deficits following cerebral infarction</td></tr><tr><td>I69.33</td><td>Monoplegia of upper limb following cerebral infarction</td></tr><tr><td>I69.34</td><td>Monoplegia of lower limb following cerebral infarction</td></tr><tr><td>I69.35</td><td>Hemiplegia and hemiparesis following cerebral infarction</td></tr><tr><td>I70.0</td><td>Atherosclerosis of aorta</td></tr><tr><td>I70.20</td><td>Unspecified atherosclerosis of native arteries of extremities</td></tr><tr><td>I70.21</td><td>Atherosclerosis of native arteries of extremities with intermittent claudication</td></tr><tr><td>I70.22</td><td>Atherosclerosis of native arteries of extremities with rest pain</td></tr><tr><td>I70.23</td><td>Atherosclerosis of native arteries of right leg with ulceration</td></tr><tr><td>I70.24</td><td>Atherosclerosis of native arteries of left leg with ulceration</td></tr><tr><td>I70.30</td><td>Unspecified atherosclerosis of unspecified type of bypass graft(s) of the extremities</td></tr><tr><td>I70.40</td><td>Unspecified atherosclerosis of autologous vein bypass graft(s) of the extremities</td></tr><tr><td>I70.50</td><td>Unspecified atherosclerosis of nonautologous biological bypass graft(s) of the extremities</td></tr><tr><td>I73.8</td><td>Other specified peripheral vascular diseases</td></tr><tr><td>I73.9</td><td>Peripheral vascular disease, unspecified</td></tr><tr><td>N18.30</td><td>Chronic kidney disease, stage 3 unspecified</td></tr><tr><td>N18.31</td><td>Chronic kidney disease, stage 3a</td></tr><tr><td>N18.32</td><td>Chronic kidney disease, stage 3b</td></tr></table></li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a I25.7 (Athscl CABG and cor art of transplanted heart w ang pctrs)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a G45 (Transient cerebral ischemic attacks and related syndromes)</li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>E08</td><td style=\"color: #cccccc\">Diabetes mellitus due to underlying condition</td></tr><tr><td>E09</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus</td></tr><tr><td>E09.0</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with hyperosmolarity</td></tr><tr><td>E09.1</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with ketoacidosis</td></tr><tr><td>E09.2</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with kidney complications</td></tr><tr><td>E09.3</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with ophthalmic complications</td></tr><tr><td>E09.31</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with unspecified diabetic retinopathy</td></tr><tr><td>E09.32</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with mild nonproliferative diabetic retinopathy</td></tr><tr><td>E09.33</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with moderate nonproliferative diabetic retinopathy</td></tr><tr><td>E09.34</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with severe nonproliferative diabetic retinopathy</td></tr><tr><td>E09.35</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy</td></tr><tr><td>E09.352</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula</td></tr><tr><td>E09.353</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula</td></tr><tr><td>E09.354</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment</td></tr><tr><td>E09.355</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with stable proliferative diabetic retinopathy</td></tr><tr><td>E09.37</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with diabetic macular edema, resolved following treatment</td></tr><tr><td>E09.4</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with neurological complications</td></tr><tr><td>E09.5</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with circulatory complications</td></tr><tr><td>E09.6</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with other specified complications</td></tr><tr><td>E09.61</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with diabetic arthropathy</td></tr><tr><td>E09.62</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with skin complications</td></tr><tr><td>E09.63</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with oral complications</td></tr><tr><td>E09.64</td><td style=\"color: #cccccc\">Drug or chemical induced diabetes mellitus with hypoglycemia</td></tr><tr><td>E11</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus</td></tr><tr><td>E11.0</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with hyperosmolarity</td></tr><tr><td>E11.1</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with ketoacidosis</td></tr><tr><td>E11.2</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with kidney complications</td></tr><tr><td>E11.3</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with ophthalmic complications</td></tr><tr><td>E11.31</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with unspecified diabetic retinopathy</td></tr><tr><td>E11.32</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with mild nonproliferative diabetic retinopathy</td></tr><tr><td>E11.33</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with moderate nonproliferative diabetic retinopathy</td></tr><tr><td>E11.34</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with severe nonproliferative diabetic retinopathy</td></tr><tr><td>E11.35</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with proliferative diabetic retinopathy</td></tr><tr><td>E11.352</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula</td></tr><tr><td>E11.353</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula</td></tr><tr><td>E11.354</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment</td></tr><tr><td>E11.355</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with stable proliferative diabetic retinopathy</td></tr><tr><td>E11.37</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with diabetic macular edema, resolved following treatment</td></tr><tr><td>E11.4</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with neurological complications</td></tr><tr><td>E11.5</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with circulatory complications</td></tr><tr><td>E11.6</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with other specified complications</td></tr><tr><td>E11.61</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with diabetic arthropathy</td></tr><tr><td>E11.62</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with skin complications</td></tr><tr><td>E11.63</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with oral complications</td></tr><tr><td>E11.64</td><td style=\"color: #cccccc\">Type 2 diabetes mellitus with hypoglycemia</td></tr><tr><td>E13</td><td style=\"color: #cccccc\">Other specified diabetes mellitus</td></tr><tr><td>E13.0</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with hyperosmolarity</td></tr><tr><td>E13.1</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with ketoacidosis</td></tr><tr><td>E13.2</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with kidney complications</td></tr><tr><td>E13.3</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with ophthalmic complications</td></tr><tr><td>E13.31</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with unspecified diabetic retinopathy</td></tr><tr><td>E13.32</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with mild nonproliferative diabetic retinopathy</td></tr><tr><td>E13.33</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with moderate nonproliferative diabetic retinopathy</td></tr><tr><td>E13.34</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with severe nonproliferative diabetic retinopathy</td></tr><tr><td>E13.35</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with proliferative diabetic retinopathy</td></tr><tr><td>E13.352</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment involving the macula</td></tr><tr><td>E13.353</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with proliferative diabetic retinopathy with traction retinal detachment not involving the macula</td></tr><tr><td>E13.354</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with proliferative diabetic retinopathy with combined traction retinal detachment and rhegmatogenous retinal detachment</td></tr><tr><td>E13.355</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with stable proliferative diabetic retinopathy</td></tr><tr><td>E13.37</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic macular edema, resolved following treatment</td></tr><tr><td>E13.37X1</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, right eye</td></tr><tr><td>E13.37X2</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, left eye</td></tr><tr><td>E13.37X3</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, bilateral</td></tr><tr><td>E13.37X9</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic macular edema, resolved following treatment, unspecified eye</td></tr><tr><td>E13.4</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with neurological complications</td></tr><tr><td>E13.5</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with circulatory complications</td></tr><tr><td>E13.6</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with other specified complications</td></tr><tr><td>E13.61</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with diabetic arthropathy</td></tr><tr><td>E13.62</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with skin complications</td></tr><tr><td>E13.63</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with oral complications</td></tr><tr><td>E13.64</td><td style=\"color: #cccccc\">Other specified diabetes mellitus with hypoglycemia</td></tr><tr><td>I25.7</td><td style=\"color: #cccccc\">Atherosclerosis of coronary artery bypass graft(s) and coronary artery of transplanted heart with angina pectoris</td></tr><tr><td>I25.70</td><td style=\"color: #cccccc\">Atherosclerosis of coronary artery bypass graft(s), unspecified, with angina pectoris</td></tr><tr><td>I25.71</td><td style=\"color: #cccccc\">Atherosclerosis of autologous vein coronary artery bypass graft(s) with angina pectoris</td></tr><tr><td>I25.72</td><td style=\"color: #cccccc\">Atherosclerosis of autologous artery coronary artery bypass graft(s) with angina pectoris</td></tr><tr><td>I25.73</td><td style=\"color: #cccccc\">Atherosclerosis of nonautologous biological coronary artery bypass graft(s) with angina pectoris</td></tr><tr><td>I25.75</td><td style=\"color: #cccccc\">Atherosclerosis of native coronary artery of transplanted heart with angina pectoris</td></tr><tr><td>I25.759</td><td style=\"color: #cccccc\">Atherosclerosis of native coronary artery of transplanted heart with unspecified angina pectoris</td></tr><tr><td>I25.76</td><td style=\"color: #cccccc\">Atherosclerosis of bypass graft of coronary artery of transplanted heart with angina pectoris</td></tr><tr><td>I25.761</td><td style=\"color: #cccccc\">Atherosclerosis of bypass graft of coronary artery of transplanted heart with angina pectoris with documented spasm</td></tr><tr><td>I25.762</td><td style=\"color: #cccccc\">Atherosclerosis of bypass graft of coronary artery of transplanted heart with refractory angina pectoris</td></tr><tr><td>I25.768</td><td style=\"color: #cccccc\">Atherosclerosis of bypass graft of coronary artery of transplanted heart with other forms of angina pectoris</td></tr><tr><td>I25.769</td><td style=\"color: #cccccc\">Atherosclerosis of bypass graft of coronary artery of transplanted heart with unspecified angina pectoris</td></tr><tr><td>I25.79</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with angina pectoris</td></tr><tr><td>I25.790</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with unstable angina pectoris</td></tr><tr><td>I25.791</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with angina pectoris with documented spasm</td></tr><tr><td>I25.792</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with refractory angina pectoris</td></tr><tr><td>I25.798</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with other forms of angina pectoris</td></tr><tr><td>I25.799</td><td style=\"color: #cccccc\">Atherosclerosis of other coronary artery bypass graft(s) with unspecified angina pectoris</td></tr><tr><td>G45.4</td><td style=\"color: #cccccc\">Transient global amnesia</td></tr></table></li></ul></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSCKMDiagnosisVS"] ; # 
+  fhir:title [ fhir:v "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Cardio-Kidney-Metabolic (CKM) track. Includes diabetes mellitus (all types), atherosclerotic cardiovascular disease (ASCVD), and chronic kidney disease (CKD stage 3) diagnoses."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain."] ; # 
+  fhir:compose [
+     fhir:include ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "E08" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "E09" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "E11" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "E13" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "I20.0" ] ;
+         fhir:display [ fhir:v "Unstable angina" ]
+       ] [
+         fhir:code [ fhir:v "I20.1" ] ;
+         fhir:display [ fhir:v "Angina pectoris with documented spasm" ]
+       ] [
+         fhir:code [ fhir:v "I20.2" ] ;
+         fhir:display [ fhir:v "Refractory angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I20.8" ] ;
+         fhir:display [ fhir:v "Other forms of angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I20.81" ] ;
+         fhir:display [ fhir:v "Angina pectoris with coronary microvascular dysfunction" ]
+       ] [
+         fhir:code [ fhir:v "I20.89" ] ;
+         fhir:display [ fhir:v "Other forms of angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I24.0" ] ;
+         fhir:display [ fhir:v "Acute coronary thrombosis not resulting in myocardial infarction" ]
+       ] [
+         fhir:code [ fhir:v "I24.8" ] ;
+         fhir:display [ fhir:v "Other forms of acute ischemic heart disease" ]
+       ] [
+         fhir:code [ fhir:v "I24.81" ] ;
+         fhir:display [ fhir:v "Acute coronary microvascular dysfunction" ]
+       ] [
+         fhir:code [ fhir:v "I24.89" ] ;
+         fhir:display [ fhir:v "Other forms of acute ischemic heart disease" ]
+       ] [
+         fhir:code [ fhir:v "I25.10" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery without angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I25.110" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery with unstable angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I25.111" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery with angina pectoris with documented spasm" ]
+       ] [
+         fhir:code [ fhir:v "I25.112" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery with refractory angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I25.118" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery with other forms of angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I25.119" ] ;
+         fhir:display [ fhir:v "Atherosclerotic heart disease of native coronary artery with unspecified angina pectoris" ]
+       ] [
+         fhir:code [ fhir:v "I25.3" ] ;
+         fhir:display [ fhir:v "Aneurysm of heart" ]
+       ] [
+         fhir:code [ fhir:v "I25.41" ] ;
+         fhir:display [ fhir:v "Coronary artery aneurysm" ]
+       ] [
+         fhir:code [ fhir:v "I25.42" ] ;
+         fhir:display [ fhir:v "Coronary artery dissection" ]
+       ] [
+         fhir:code [ fhir:v "I25.5" ] ;
+         fhir:display [ fhir:v "Ischemic cardiomyopathy" ]
+       ] [
+         fhir:code [ fhir:v "I25.6" ] ;
+         fhir:display [ fhir:v "Silent myocardial ischemia" ]
+       ] [
+         fhir:code [ fhir:v "I63.0" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to thrombosis of precerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.1" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to embolism of precerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.2" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to unspecified occlusion or stenosis of precerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.3" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to thrombosis of cerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.4" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to embolism of cerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.5" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to unspecified occlusion or stenosis of cerebral arteries" ]
+       ] [
+         fhir:code [ fhir:v "I63.6" ] ;
+         fhir:display [ fhir:v "Cerebral infarction due to cerebral venous thrombosis, nonpyogenic" ]
+       ] [
+         fhir:code [ fhir:v "I63.8" ] ;
+         fhir:display [ fhir:v "Other cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I63.9" ] ;
+         fhir:display [ fhir:v "Cerebral infarction, unspecified" ]
+       ] [
+         fhir:code [ fhir:v "I69.30" ] ;
+         fhir:display [ fhir:v "Unspecified sequelae of cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I69.31" ] ;
+         fhir:display [ fhir:v "Cognitive deficits following cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I69.32" ] ;
+         fhir:display [ fhir:v "Speech and language deficits following cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I69.33" ] ;
+         fhir:display [ fhir:v "Monoplegia of upper limb following cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I69.34" ] ;
+         fhir:display [ fhir:v "Monoplegia of lower limb following cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I69.35" ] ;
+         fhir:display [ fhir:v "Hemiplegia and hemiparesis following cerebral infarction" ]
+       ] [
+         fhir:code [ fhir:v "I70.0" ] ;
+         fhir:display [ fhir:v "Atherosclerosis of aorta" ]
+       ] [
+         fhir:code [ fhir:v "I70.20" ] ;
+         fhir:display [ fhir:v "Unspecified atherosclerosis of native arteries of extremities" ]
+       ] [
+         fhir:code [ fhir:v "I70.21" ] ;
+         fhir:display [ fhir:v "Atherosclerosis of native arteries of extremities with intermittent claudication" ]
+       ] [
+         fhir:code [ fhir:v "I70.22" ] ;
+         fhir:display [ fhir:v "Atherosclerosis of native arteries of extremities with rest pain" ]
+       ] [
+         fhir:code [ fhir:v "I70.23" ] ;
+         fhir:display [ fhir:v "Atherosclerosis of native arteries of right leg with ulceration" ]
+       ] [
+         fhir:code [ fhir:v "I70.24" ] ;
+         fhir:display [ fhir:v "Atherosclerosis of native arteries of left leg with ulceration" ]
+       ] [
+         fhir:code [ fhir:v "I70.30" ] ;
+         fhir:display [ fhir:v "Unspecified atherosclerosis of unspecified type of bypass graft(s) of the extremities" ]
+       ] [
+         fhir:code [ fhir:v "I70.40" ] ;
+         fhir:display [ fhir:v "Unspecified atherosclerosis of autologous vein bypass graft(s) of the extremities" ]
+       ] [
+         fhir:code [ fhir:v "I70.50" ] ;
+         fhir:display [ fhir:v "Unspecified atherosclerosis of nonautologous biological bypass graft(s) of the extremities" ]
+       ] [
+         fhir:code [ fhir:v "I73.8" ] ;
+         fhir:display [ fhir:v "Other specified peripheral vascular diseases" ]
+       ] [
+         fhir:code [ fhir:v "I73.9" ] ;
+         fhir:display [ fhir:v "Peripheral vascular disease, unspecified" ]
+       ] [
+         fhir:code [ fhir:v "N18.30" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease, stage 3 unspecified" ]
+       ] [
+         fhir:code [ fhir:v "N18.31" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease, stage 3a" ]
+       ] [
+         fhir:code [ fhir:v "N18.32" ] ;
+         fhir:display [ fhir:v "Chronic kidney disease, stage 3b" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "I25.7" ]
+       ] )
+     ] [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:filter ( [
+         fhir:property [ fhir:v "concept" ] ;
+         fhir:op [ fhir:v "is-a" ] ;
+         fhir:value [ fhir:v "G45" ]
+       ] )
+     ] ) ;
+     fhir:exclude ( [
+       fhir:system [
+         fhir:v "http://hl7.org/fhir/sid/icd-10-cm"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/sid/icd-10-cm>
+       ] ;
+       fhir:concept ( [
+         fhir:code [ fhir:v "E08" ]
+       ] [
+         fhir:code [ fhir:v "E09" ]
+       ] [
+         fhir:code [ fhir:v "E09.0" ]
+       ] [
+         fhir:code [ fhir:v "E09.1" ]
+       ] [
+         fhir:code [ fhir:v "E09.2" ]
+       ] [
+         fhir:code [ fhir:v "E09.3" ]
+       ] [
+         fhir:code [ fhir:v "E09.31" ]
+       ] [
+         fhir:code [ fhir:v "E09.32" ]
+       ] [
+         fhir:code [ fhir:v "E09.33" ]
+       ] [
+         fhir:code [ fhir:v "E09.34" ]
+       ] [
+         fhir:code [ fhir:v "E09.35" ]
+       ] [
+         fhir:code [ fhir:v "E09.352" ]
+       ] [
+         fhir:code [ fhir:v "E09.353" ]
+       ] [
+         fhir:code [ fhir:v "E09.354" ]
+       ] [
+         fhir:code [ fhir:v "E09.355" ]
+       ] [
+         fhir:code [ fhir:v "E09.37" ]
+       ] [
+         fhir:code [ fhir:v "E09.4" ]
+       ] [
+         fhir:code [ fhir:v "E09.5" ]
+       ] [
+         fhir:code [ fhir:v "E09.6" ]
+       ] [
+         fhir:code [ fhir:v "E09.61" ]
+       ] [
+         fhir:code [ fhir:v "E09.62" ]
+       ] [
+         fhir:code [ fhir:v "E09.63" ]
+       ] [
+         fhir:code [ fhir:v "E09.64" ]
+       ] [
+         fhir:code [ fhir:v "E11" ]
+       ] [
+         fhir:code [ fhir:v "E11.0" ]
+       ] [
+         fhir:code [ fhir:v "E11.1" ]
+       ] [
+         fhir:code [ fhir:v "E11.2" ]
+       ] [
+         fhir:code [ fhir:v "E11.3" ]
+       ] [
+         fhir:code [ fhir:v "E11.31" ]
+       ] [
+         fhir:code [ fhir:v "E11.32" ]
+       ] [
+         fhir:code [ fhir:v "E11.33" ]
+       ] [
+         fhir:code [ fhir:v "E11.34" ]
+       ] [
+         fhir:code [ fhir:v "E11.35" ]
+       ] [
+         fhir:code [ fhir:v "E11.352" ]
+       ] [
+         fhir:code [ fhir:v "E11.353" ]
+       ] [
+         fhir:code [ fhir:v "E11.354" ]
+       ] [
+         fhir:code [ fhir:v "E11.355" ]
+       ] [
+         fhir:code [ fhir:v "E11.37" ]
+       ] [
+         fhir:code [ fhir:v "E11.4" ]
+       ] [
+         fhir:code [ fhir:v "E11.5" ]
+       ] [
+         fhir:code [ fhir:v "E11.6" ]
+       ] [
+         fhir:code [ fhir:v "E11.61" ]
+       ] [
+         fhir:code [ fhir:v "E11.62" ]
+       ] [
+         fhir:code [ fhir:v "E11.63" ]
+       ] [
+         fhir:code [ fhir:v "E11.64" ]
+       ] [
+         fhir:code [ fhir:v "E13" ]
+       ] [
+         fhir:code [ fhir:v "E13.0" ]
+       ] [
+         fhir:code [ fhir:v "E13.1" ]
+       ] [
+         fhir:code [ fhir:v "E13.2" ]
+       ] [
+         fhir:code [ fhir:v "E13.3" ]
+       ] [
+         fhir:code [ fhir:v "E13.31" ]
+       ] [
+         fhir:code [ fhir:v "E13.32" ]
+       ] [
+         fhir:code [ fhir:v "E13.33" ]
+       ] [
+         fhir:code [ fhir:v "E13.34" ]
+       ] [
+         fhir:code [ fhir:v "E13.35" ]
+       ] [
+         fhir:code [ fhir:v "E13.352" ]
+       ] [
+         fhir:code [ fhir:v "E13.353" ]
+       ] [
+         fhir:code [ fhir:v "E13.354" ]
+       ] [
+         fhir:code [ fhir:v "E13.355" ]
+       ] [
+         fhir:code [ fhir:v "E13.37" ]
+       ] [
+         fhir:code [ fhir:v "E13.37X1" ]
+       ] [
+         fhir:code [ fhir:v "E13.37X2" ]
+       ] [
+         fhir:code [ fhir:v "E13.37X3" ]
+       ] [
+         fhir:code [ fhir:v "E13.37X9" ]
+       ] [
+         fhir:code [ fhir:v "E13.4" ]
+       ] [
+         fhir:code [ fhir:v "E13.5" ]
+       ] [
+         fhir:code [ fhir:v "E13.6" ]
+       ] [
+         fhir:code [ fhir:v "E13.61" ]
+       ] [
+         fhir:code [ fhir:v "E13.62" ]
+       ] [
+         fhir:code [ fhir:v "E13.63" ]
+       ] [
+         fhir:code [ fhir:v "E13.64" ]
+       ] [
+         fhir:code [ fhir:v "I25.7" ]
+       ] [
+         fhir:code [ fhir:v "I25.70" ]
+       ] [
+         fhir:code [ fhir:v "I25.71" ]
+       ] [
+         fhir:code [ fhir:v "I25.72" ]
+       ] [
+         fhir:code [ fhir:v "I25.73" ]
+       ] [
+         fhir:code [ fhir:v "I25.75" ]
+       ] [
+         fhir:code [ fhir:v "I25.759" ]
+       ] [
+         fhir:code [ fhir:v "I25.76" ]
+       ] [
+         fhir:code [ fhir:v "I25.761" ]
+       ] [
+         fhir:code [ fhir:v "I25.762" ]
+       ] [
+         fhir:code [ fhir:v "I25.768" ]
+       ] [
+         fhir:code [ fhir:v "I25.769" ]
+       ] [
+         fhir:code [ fhir:v "I25.79" ]
+       ] [
+         fhir:code [ fhir:v "I25.790" ]
+       ] [
+         fhir:code [ fhir:v "I25.791" ]
+       ] [
+         fhir:code [ fhir:v "I25.792" ]
+       ] [
+         fhir:code [ fhir:v "I25.798" ]
+       ] [
+         fhir:code [ fhir:v "I25.799" ]
+       ] [
+         fhir:code [ fhir:v "G45.4" ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

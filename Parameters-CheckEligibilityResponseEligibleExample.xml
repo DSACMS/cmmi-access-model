@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="CheckEligibilityResponseEligibleExample"/>
+  <meta>
+    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out"/>
+  </meta>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"/>
+        <code value="eligible"/>
+        <display value="Eligible"/>
+      </coding>
+      <text value="Patient is eligible for the ACCESS Model."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

@@ -1,0 +1,1580 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ACCESSMSKDiagnosisVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSMSKDiagnosisVS</b></p><a name=\"ACCESSMSKDiagnosisVS\"> </a><a name=\"hcACCESSMSKDiagnosisVS\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M15 (Polyosteoarthritis)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M16 (Osteoarthritis of hip)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M17 (Osteoarthritis of knee)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M18 (Osteoarthritis of first carpometacarpal joint)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M19 (Other and unspecified osteoarthritis)</li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M12.011</td><td>Chronic postrheumatic arthropathy [Jaccoud], right shoulder</td></tr><tr><td>M12.012</td><td>Chronic postrheumatic arthropathy [Jaccoud], left shoulder</td></tr><tr><td>M12.019</td><td>Chronic postrheumatic arthropathy [Jaccoud], unspecified shoulder</td></tr><tr><td>M12.051</td><td>Chronic postrheumatic arthropathy [Jaccoud], right hip</td></tr><tr><td>M12.052</td><td>Chronic postrheumatic arthropathy [Jaccoud], left hip</td></tr><tr><td>M12.059</td><td>Chronic postrheumatic arthropathy [Jaccoud], unspecified hip</td></tr><tr><td>M12.061</td><td>Chronic postrheumatic arthropathy [Jaccoud], right knee</td></tr><tr><td>M12.062</td><td>Chronic postrheumatic arthropathy [Jaccoud], left knee</td></tr><tr><td>M12.069</td><td>Chronic postrheumatic arthropathy [Jaccoud], unspecified knee</td></tr><tr><td>M12.111</td><td>Kaschin-Beck disease, right shoulder</td></tr><tr><td>M12.112</td><td>Kaschin-Beck disease, left shoulder</td></tr><tr><td>M12.119</td><td>Kaschin-Beck disease, unspecified shoulder</td></tr><tr><td>M12.151</td><td>Kaschin-Beck disease, right hip</td></tr><tr><td>M12.152</td><td>Kaschin-Beck disease, left hip</td></tr><tr><td>M12.159</td><td>Kaschin-Beck disease, unspecified hip</td></tr><tr><td>M12.161</td><td>Kaschin-Beck disease, right knee</td></tr><tr><td>M12.162</td><td>Kaschin-Beck disease, left knee</td></tr><tr><td>M12.169</td><td>Kaschin-Beck disease, unspecified knee</td></tr><tr><td>M12.211</td><td>Villonodular synovitis (pigmented), right shoulder</td></tr><tr><td>M12.212</td><td>Villonodular synovitis (pigmented), left shoulder</td></tr><tr><td>M12.219</td><td>Villonodular synovitis (pigmented), unspecified shoulder</td></tr><tr><td>M12.251</td><td>Villonodular synovitis (pigmented), right hip</td></tr><tr><td>M12.252</td><td>Villonodular synovitis (pigmented), left hip</td></tr><tr><td>M12.259</td><td>Villonodular synovitis (pigmented), unspecified hip</td></tr><tr><td>M12.261</td><td>Villonodular synovitis (pigmented), right knee</td></tr><tr><td>M12.262</td><td>Villonodular synovitis (pigmented), left knee</td></tr><tr><td>M12.269</td><td>Villonodular synovitis (pigmented), unspecified knee</td></tr><tr><td>M12.811</td><td>Other specific arthropathies, not elsewhere classified, right shoulder</td></tr><tr><td>M12.812</td><td>Other specific arthropathies, not elsewhere classified, left shoulder</td></tr><tr><td>M12.819</td><td>Other specific arthropathies, not elsewhere classified, unspecified shoulder</td></tr><tr><td>M12.851</td><td>Other specific arthropathies, not elsewhere classified, right hip</td></tr><tr><td>M12.852</td><td>Other specific arthropathies, not elsewhere classified, left hip</td></tr><tr><td>M12.859</td><td>Other specific arthropathies, not elsewhere classified, unspecified hip</td></tr><tr><td>M12.861</td><td>Other specific arthropathies, not elsewhere classified, right knee</td></tr><tr><td>M12.862</td><td>Other specific arthropathies, not elsewhere classified, left knee</td></tr><tr><td>M12.869</td><td>Other specific arthropathies, not elsewhere classified, unspecified knee</td></tr><tr><td>M13.111</td><td>Monoarthritis, not elsewhere classified, right shoulder</td></tr><tr><td>M13.112</td><td>Monoarthritis, not elsewhere classified, left shoulder</td></tr><tr><td>M13.119</td><td>Monoarthritis, not elsewhere classified, unspecified shoulder</td></tr><tr><td>M13.151</td><td>Monoarthritis, not elsewhere classified, right hip</td></tr><tr><td>M13.152</td><td>Monoarthritis, not elsewhere classified, left hip</td></tr><tr><td>M13.159</td><td>Monoarthritis, not elsewhere classified, unspecified hip</td></tr><tr><td>M13.161</td><td>Monoarthritis, not elsewhere classified, right knee</td></tr><tr><td>M13.162</td><td>Monoarthritis, not elsewhere classified, left knee</td></tr><tr><td>M13.169</td><td>Monoarthritis, not elsewhere classified, unspecified knee</td></tr><tr><td>M13.811</td><td>Other specified arthritis, right shoulder</td></tr><tr><td>M13.812</td><td>Other specified arthritis, left shoulder</td></tr><tr><td>M13.819</td><td>Other specified arthritis, unspecified shoulder</td></tr><tr><td>M13.851</td><td>Other specified arthritis, right hip</td></tr><tr><td>M13.852</td><td>Other specified arthritis, left hip</td></tr><tr><td>M13.859</td><td>Other specified arthritis, unspecified hip</td></tr><tr><td>M13.861</td><td>Other specified arthritis, right knee</td></tr><tr><td>M13.862</td><td>Other specified arthritis, left knee</td></tr><tr><td>M13.869</td><td>Other specified arthritis, unspecified knee</td></tr><tr><td>M14.611</td><td>Charcot's joint, right shoulder</td></tr><tr><td>M14.612</td><td>Charcot's joint, left shoulder</td></tr><tr><td>M14.619</td><td>Charcot's joint, unspecified shoulder</td></tr><tr><td>M14.651</td><td>Charcot's joint, right hip</td></tr><tr><td>M14.652</td><td>Charcot's joint, left hip</td></tr><tr><td>M14.659</td><td>Charcot's joint, unspecified hip</td></tr><tr><td>M14.661</td><td>Charcot's joint, right knee</td></tr><tr><td>M14.662</td><td>Charcot's joint, left knee</td></tr><tr><td>M14.669</td><td>Charcot's joint, unspecified knee</td></tr><tr><td>M14.811</td><td>Arthropathies in other specified diseases classified elsewhere, right shoulder</td></tr><tr><td>M14.812</td><td>Arthropathies in other specified diseases classified elsewhere, left shoulder</td></tr><tr><td>M14.819</td><td>Arthropathies in other specified diseases classified elsewhere, unspecified shoulder</td></tr><tr><td>M14.851</td><td>Arthropathies in other specified diseases classified elsewhere, right hip</td></tr><tr><td>M14.852</td><td>Arthropathies in other specified diseases classified elsewhere, left hip</td></tr><tr><td>M14.859</td><td>Arthropathies in other specified diseases classified elsewhere, unspecified hip</td></tr><tr><td>M14.861</td><td>Arthropathies in other specified diseases classified elsewhere, right knee</td></tr><tr><td>M14.862</td><td>Arthropathies in other specified diseases classified elsewhere, left knee</td></tr><tr><td>M14.869</td><td>Arthropathies in other specified diseases classified elsewhere, unspecified knee</td></tr><tr><td>M14.8</td><td>Arthropathies in other specified diseases classified elsewhere</td></tr><tr><td>M24.011</td><td>Loose body in right shoulder</td></tr><tr><td>M24.012</td><td>Loose body in left shoulder</td></tr><tr><td>M24.019</td><td>Loose body in unspecified shoulder</td></tr><tr><td>M24.111</td><td>Other articular cartilage disorders, right shoulder</td></tr><tr><td>M24.112</td><td>Other articular cartilage disorders, left shoulder</td></tr><tr><td>M24.119</td><td>Other articular cartilage disorders, unspecified shoulder</td></tr><tr><td>M24.811</td><td>Other specific joint derangements of right shoulder, not elsewhere classified</td></tr><tr><td>M24.812</td><td>Other specific joint derangements of left shoulder, not elsewhere classified</td></tr><tr><td>M24.819</td><td>Other specific joint derangements of unspecified shoulder, not elsewhere classified</td></tr><tr><td>M25.50</td><td>Pain in unspecified joint</td></tr><tr><td>M25.511</td><td>Pain in right shoulder</td></tr><tr><td>M25.512</td><td>Pain in left shoulder</td></tr><tr><td>M25.519</td><td>Pain in unspecified shoulder</td></tr><tr><td>M25.521</td><td>Pain in right elbow</td></tr><tr><td>M25.522</td><td>Pain in left elbow</td></tr><tr><td>M25.529</td><td>Pain in unspecified elbow</td></tr><tr><td>M25.531</td><td>Pain in right wrist</td></tr><tr><td>M25.532</td><td>Pain in left wrist</td></tr><tr><td>M25.539</td><td>Pain in unspecified wrist</td></tr><tr><td>M25.561</td><td>Pain in right knee</td></tr><tr><td>M25.562</td><td>Pain in left knee</td></tr><tr><td>M25.569</td><td>Pain in unspecified knee</td></tr><tr><td>M25.60</td><td>Stiffness of unspecified joint, not elsewhere classified</td></tr><tr><td>M25.611</td><td>Stiffness of right shoulder, not elsewhere classified</td></tr><tr><td>M25.612</td><td>Stiffness of left shoulder, not elsewhere classified</td></tr><tr><td>M25.619</td><td>Stiffness of unspecified shoulder, not elsewhere classified</td></tr><tr><td>M25.40</td><td>Effusion, unspecified joint</td></tr><tr><td>M40.00</td><td>Postural kyphosis, site unspecified</td></tr><tr><td>M40.03</td><td>Postural kyphosis, cervicothoracic region</td></tr><tr><td>M40.04</td><td>Postural kyphosis, thoracic region</td></tr><tr><td>M40.05</td><td>Postural kyphosis, thoracolumbar region</td></tr><tr><td>M40.10</td><td>Other secondary kyphosis, site unspecified</td></tr><tr><td>M40.12</td><td>Other secondary kyphosis, cervical region</td></tr><tr><td>M40.13</td><td>Other secondary kyphosis, cervicothoracic region</td></tr><tr><td>M40.14</td><td>Other secondary kyphosis, thoracic region</td></tr><tr><td>M40.15</td><td>Other secondary kyphosis, thoracolumbar region</td></tr><tr><td>M40.20</td><td>Unspecified kyphosis</td></tr><tr><td>M40.30</td><td>Flatback syndrome, site unspecified</td></tr><tr><td>M40.35</td><td>Flatback syndrome, thoracolumbar region</td></tr><tr><td>M40.40</td><td>Postural lordosis, site unspecified</td></tr><tr><td>M40.45</td><td>Postural lordosis, thoracolumbar region</td></tr><tr><td>M41.20</td><td>Other idiopathic scoliosis, site unspecified</td></tr><tr><td>M41.22</td><td>Other idiopathic scoliosis, cervical region</td></tr><tr><td>M41.23</td><td>Other idiopathic scoliosis, cervicothoracic region</td></tr><tr><td>M41.24</td><td>Other idiopathic scoliosis, thoracic region</td></tr><tr><td>M41.25</td><td>Other idiopathic scoliosis, thoracolumbar region</td></tr><tr><td>M41.30</td><td>Thoracogenic scoliosis, site unspecified</td></tr><tr><td>M41.34</td><td>Thoracogenic scoliosis, thoracic region</td></tr><tr><td>M41.35</td><td>Thoracogenic scoliosis, thoracolumbar region</td></tr><tr><td>M41.40</td><td>Neuromuscular scoliosis, site unspecified</td></tr><tr><td>M41.42</td><td>Neuromuscular scoliosis, cervical region</td></tr><tr><td>M41.43</td><td>Neuromuscular scoliosis, cervicothoracic region</td></tr><tr><td>M41.44</td><td>Neuromuscular scoliosis, thoracic region</td></tr><tr><td>M41.45</td><td>Neuromuscular scoliosis, thoracolumbar region</td></tr><tr><td>M41.50</td><td>Other secondary scoliosis, site unspecified</td></tr><tr><td>M41.52</td><td>Other secondary scoliosis, cervical region</td></tr><tr><td>M41.53</td><td>Other secondary scoliosis, cervicothoracic region</td></tr><tr><td>M41.54</td><td>Other secondary scoliosis, thoracic region</td></tr><tr><td>M41.55</td><td>Other secondary scoliosis, thoracolumbar region</td></tr><tr><td>M41.80</td><td>Other forms of scoliosis, site unspecified</td></tr><tr><td>M41.82</td><td>Other forms of scoliosis, cervical region</td></tr><tr><td>M41.83</td><td>Other forms of scoliosis, cervicothoracic region</td></tr><tr><td>M41.84</td><td>Other forms of scoliosis, thoracic region</td></tr><tr><td>M41.85</td><td>Other forms of scoliosis, thoracolumbar region</td></tr><tr><td>M41.9</td><td>Scoliosis, unspecified</td></tr><tr><td>M42.10</td><td>Adult osteochondrosis of spine, site unspecified</td></tr><tr><td>M42.12</td><td>Adult osteochondrosis of spine, cervical region</td></tr><tr><td>M42.13</td><td>Adult osteochondrosis of spine, cervicothoracic region</td></tr><tr><td>M42.14</td><td>Adult osteochondrosis of spine, thoracic region</td></tr><tr><td>M42.15</td><td>Adult osteochondrosis of spine, thoracolumbar region</td></tr><tr><td>M43.00</td><td>Spondylolysis, site unspecified</td></tr><tr><td>M43.02</td><td>Spondylolysis, cervical region</td></tr><tr><td>M43.03</td><td>Spondylolysis, cervicothoracic region</td></tr><tr><td>M43.04</td><td>Spondylolysis, thoracic region</td></tr><tr><td>M43.05</td><td>Spondylolysis, thoracolumbar region</td></tr><tr><td>M43.10</td><td>Spondylolisthesis, site unspecified</td></tr><tr><td>M43.12</td><td>Spondylolisthesis, cervical region</td></tr><tr><td>M43.13</td><td>Spondylolisthesis, cervicothoracic region</td></tr><tr><td>M43.14</td><td>Spondylolisthesis, thoracic region</td></tr><tr><td>M43.15</td><td>Spondylolisthesis, thoracolumbar region</td></tr><tr><td>M43.20</td><td>Fusion of spine, site unspecified</td></tr><tr><td>M43.22</td><td>Fusion of spine, cervical region</td></tr><tr><td>M43.23</td><td>Fusion of spine, cervicothoracic region</td></tr><tr><td>M43.24</td><td>Fusion of spine, thoracic region</td></tr><tr><td>M43.25</td><td>Fusion of spine, thoracolumbar region</td></tr><tr><td>M43.8</td><td>Other specified deforming dorsopathies</td></tr><tr><td>M43.9</td><td>Deforming dorsopathy, unspecified</td></tr><tr><td>M47.812</td><td>Spondylosis without myelopathy or radiculopathy, cervical region</td></tr><tr><td>M47.813</td><td>Spondylosis without myelopathy or radiculopathy, cervicothoracic region</td></tr><tr><td>M47.814</td><td>Spondylosis without myelopathy or radiculopathy, thoracic region</td></tr><tr><td>M47.815</td><td>Spondylosis without myelopathy or radiculopathy, thoracolumbar region</td></tr><tr><td>M47.816</td><td>Spondylosis without myelopathy or radiculopathy, lumbar region</td></tr><tr><td>M47.817</td><td>Spondylosis without myelopathy or radiculopathy, lumbosacral region</td></tr><tr><td>M47.22</td><td>Other spondylosis with radiculopathy, cervical region</td></tr><tr><td>M47.23</td><td>Other spondylosis with radiculopathy, cervicothoracic region</td></tr><tr><td>M47.24</td><td>Other spondylosis with radiculopathy, thoracic region</td></tr><tr><td>M47.25</td><td>Other spondylosis with radiculopathy, thoracolumbar region</td></tr><tr><td>M47.26</td><td>Other spondylosis with radiculopathy, lumbar region</td></tr><tr><td>M47.27</td><td>Other spondylosis with radiculopathy, lumbosacral region</td></tr><tr><td>M47.12</td><td>Other spondylosis with myelopathy, cervical region</td></tr><tr><td>M47.13</td><td>Other spondylosis with myelopathy, cervicothoracic region</td></tr><tr><td>M47.14</td><td>Other spondylosis with myelopathy, thoracic region</td></tr><tr><td>M47.15</td><td>Other spondylosis with myelopathy, thoracolumbar region</td></tr><tr><td>M48.02</td><td>Spinal stenosis, cervical region</td></tr><tr><td>M48.03</td><td>Spinal stenosis, cervicothoracic region</td></tr><tr><td>M48.04</td><td>Spinal stenosis, thoracic region</td></tr><tr><td>M48.05</td><td>Spinal stenosis, thoracolumbar region</td></tr><tr><td>M48.06</td><td>Spinal stenosis, lumbar region</td></tr><tr><td>M48.07</td><td>Spinal stenosis, lumbosacral region</td></tr><tr><td>M48.8X2</td><td>Other specified spondylopathies, cervical region</td></tr><tr><td>M48.8X3</td><td>Other specified spondylopathies, cervicothoracic region</td></tr><tr><td>M48.8X4</td><td>Other specified spondylopathies, thoracic region</td></tr><tr><td>M48.8X5</td><td>Other specified spondylopathies, thoracolumbar region</td></tr><tr><td>M48.8X6</td><td>Other specified spondylopathies, lumbar region</td></tr><tr><td>M48.8X7</td><td>Other specified spondylopathies, lumbosacral region</td></tr><tr><td>M48.9</td><td>Spondylopathy, unspecified</td></tr><tr><td>M50.00</td><td>Cervical disc disorder with myelopathy, unspecified cervical region</td></tr><tr><td>M50.01</td><td>Cervical disc disorder with myelopathy, high cervical region</td></tr><tr><td>M50.02</td><td>Cervical disc disorder with myelopathy, mid-cervical region</td></tr><tr><td>M50.03</td><td>Cervical disc disorder with myelopathy, cervicothoracic region</td></tr><tr><td>M50.20</td><td>Other cervical disc displacement, unspecified cervical region</td></tr><tr><td>M50.21</td><td>Other cervical disc displacement, high cervical region</td></tr><tr><td>M50.22</td><td>Other cervical disc displacement, mid-cervical region</td></tr><tr><td>M50.23</td><td>Other cervical disc displacement, cervicothoracic region</td></tr><tr><td>M50.30</td><td>Other cervical disc degeneration, unspecified cervical region</td></tr><tr><td>M50.31</td><td>Other cervical disc degeneration, high cervical region</td></tr><tr><td>M50.32</td><td>Other cervical disc degeneration, mid-cervical region</td></tr><tr><td>M50.33</td><td>Other cervical disc degeneration, cervicothoracic region</td></tr><tr><td>M51.04</td><td>Intervertebral disc disorders with myelopathy, thoracic region</td></tr><tr><td>M51.05</td><td>Intervertebral disc disorders with myelopathy, thoracolumbar region</td></tr><tr><td>M51.06</td><td>Intervertebral disc disorders with myelopathy, lumbar region</td></tr><tr><td>M51.14</td><td>Intervertebral disc disorders with radiculopathy, thoracic region</td></tr><tr><td>M51.15</td><td>Intervertebral disc disorders with radiculopathy, thoracolumbar region</td></tr><tr><td>M51.16</td><td>Intervertebral disc disorders with radiculopathy, lumbar region</td></tr><tr><td>M51.17</td><td>Intervertebral disc disorders with radiculopathy, lumbosacral region</td></tr><tr><td>M51.24</td><td>Other intervertebral disc displacement, thoracic region</td></tr><tr><td>M51.25</td><td>Other intervertebral disc displacement, thoracolumbar region</td></tr><tr><td>M51.26</td><td>Other intervertebral disc displacement, lumbar region</td></tr><tr><td>M51.27</td><td>Other intervertebral disc displacement, lumbosacral region</td></tr><tr><td>M51.34</td><td>Other intervertebral disc degeneration, thoracic region</td></tr><tr><td>M51.35</td><td>Other intervertebral disc degeneration, thoracolumbar region</td></tr><tr><td>M51.36</td><td>Other intervertebral disc degeneration, lumbar region</td></tr><tr><td>M51.37</td><td>Other intervertebral disc degeneration, lumbosacral region</td></tr><tr><td>M51.9</td><td>Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder</td></tr><tr><td>M53.0</td><td>Cervicocranial syndrome</td></tr><tr><td>M53.1</td><td>Cervicobrachial syndrome</td></tr><tr><td>M53.2</td><td>Spinal instabilities</td></tr><tr><td>M53.3</td><td>Sacrococcygeal disorders, not elsewhere classified</td></tr><tr><td>M53.80</td><td>Other specified dorsopathies, site unspecified</td></tr><tr><td>M53.81</td><td>Other specified dorsopathies, occipito-atlanto-axial region</td></tr><tr><td>M53.82</td><td>Other specified dorsopathies, cervical region</td></tr><tr><td>M53.83</td><td>Other specified dorsopathies, cervicothoracic region</td></tr><tr><td>M53.84</td><td>Other specified dorsopathies, thoracic region</td></tr><tr><td>M53.85</td><td>Other specified dorsopathies, thoracolumbar region</td></tr><tr><td>M53.86</td><td>Other specified dorsopathies, lumbar region</td></tr><tr><td>M53.9</td><td>Dorsopathy, unspecified</td></tr><tr><td>M54.2</td><td>Cervicalgia</td></tr><tr><td>M54.5</td><td>Low back pain</td></tr><tr><td>M54.6</td><td>Pain in thoracic spine</td></tr><tr><td>M54.8</td><td>Other dorsalgia</td></tr><tr><td>M54.9</td><td>Dorsalgia, unspecified</td></tr><tr><td>M54.10</td><td>Radiculopathy, site unspecified</td></tr><tr><td>M54.11</td><td>Radiculopathy, occipito-atlanto-axial region</td></tr><tr><td>M54.12</td><td>Radiculopathy, cervical region</td></tr><tr><td>M54.13</td><td>Radiculopathy, cervicothoracic region</td></tr><tr><td>M54.14</td><td>Radiculopathy, thoracic region</td></tr><tr><td>M54.15</td><td>Radiculopathy, thoracolumbar region</td></tr><tr><td>M54.16</td><td>Radiculopathy, lumbar region</td></tr><tr><td>M54.30</td><td>Sciatica, unspecified side</td></tr><tr><td>M54.31</td><td>Sciatica, right side</td></tr><tr><td>M54.32</td><td>Sciatica, left side</td></tr><tr><td>M54.40</td><td>Lumbago with sciatica, unspecified side</td></tr><tr><td>M54.41</td><td>Lumbago with sciatica, right side</td></tr><tr><td>M54.42</td><td>Lumbago with sciatica, left side</td></tr><tr><td>M54.0</td><td>Panniculitis affecting regions of neck and back</td></tr><tr><td>M54.89</td><td>Other dorsalgia</td></tr><tr><td>R52</td><td>Pain, unspecified</td></tr><tr><td>M79.10</td><td>Myalgia, unspecified site</td></tr><tr><td>M79.11</td><td>Myalgia of mastication muscle</td></tr><tr><td>M79.12</td><td>Myalgia of auxiliary muscles, head and neck</td></tr><tr><td>M79.18</td><td>Myalgia, other site</td></tr><tr><td>M60.811</td><td>Other myositis, right shoulder</td></tr><tr><td>M60.812</td><td>Other myositis, left shoulder</td></tr><tr><td>M60.819</td><td>Other myositis, unspecified shoulder</td></tr><tr><td>M60.851</td><td>Other myositis, right thigh</td></tr><tr><td>M60.852</td><td>Other myositis, left thigh</td></tr><tr><td>M60.859</td><td>Other myositis, unspecified thigh</td></tr><tr><td>M60.861</td><td>Other myositis, right lower leg</td></tr><tr><td>M60.862</td><td>Other myositis, left lower leg</td></tr><tr><td>M60.869</td><td>Other myositis, unspecified lower leg</td></tr><tr><td>M65.11</td><td>Other infective (teno)synovitis, shoulder</td></tr><tr><td>M65.12</td><td>Other infective (teno)synovitis, elbow</td></tr><tr><td>M65.19</td><td>Other infective (teno)synovitis, multiple sites</td></tr><tr><td>M65.22</td><td>Calcific tendinitis, upper arm</td></tr><tr><td>M65.29</td><td>Calcific tendinitis, multiple sites</td></tr><tr><td>M65.31</td><td>Trigger thumb</td></tr><tr><td>M65.32</td><td>Trigger finger, index finger</td></tr><tr><td>M65.811</td><td>Other synovitis and tenosynovitis, right shoulder</td></tr><tr><td>M65.812</td><td>Other synovitis and tenosynovitis, left shoulder</td></tr><tr><td>M65.819</td><td>Other synovitis and tenosynovitis, unspecified shoulder</td></tr><tr><td>M70.21</td><td>Olecranon bursitis, right elbow</td></tr><tr><td>M70.22</td><td>Olecranon bursitis, left elbow</td></tr><tr><td>M70.31</td><td>Other bursitis of elbow, right elbow</td></tr><tr><td>M70.32</td><td>Other bursitis of elbow, left elbow</td></tr><tr><td>M70.41</td><td>Prepatellar bursitis, right knee</td></tr><tr><td>M70.42</td><td>Prepatellar bursitis, left knee</td></tr><tr><td>M70.51</td><td>Other bursitis of knee, right knee</td></tr><tr><td>M70.52</td><td>Other bursitis of knee, left knee</td></tr><tr><td>M70.71</td><td>Other bursitis of hip, right hip</td></tr><tr><td>M70.72</td><td>Other bursitis of hip, left hip</td></tr><tr><td>M76.01</td><td>Gluteal tendinitis, right hip</td></tr><tr><td>M76.02</td><td>Gluteal tendinitis, left hip</td></tr><tr><td>M76.11</td><td>Psoas tendinitis, right hip</td></tr><tr><td>M76.12</td><td>Psoas tendinitis, left hip</td></tr><tr><td>M76.31</td><td>Iliotibial band syndrome, right leg</td></tr><tr><td>M76.32</td><td>Iliotibial band syndrome, left leg</td></tr><tr><td>M76.51</td><td>Patellar tendinitis, right knee</td></tr><tr><td>M76.52</td><td>Patellar tendinitis, left knee</td></tr><tr><td>M75.00</td><td>Adhesive capsulitis of unspecified shoulder</td></tr><tr><td>M75.01</td><td>Adhesive capsulitis of right shoulder</td></tr><tr><td>M75.02</td><td>Adhesive capsulitis of left shoulder</td></tr><tr><td>M75.100</td><td>Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic</td></tr><tr><td>M75.101</td><td>Unspecified rotator cuff tear or rupture of right shoulder, not specified as traumatic</td></tr><tr><td>M75.102</td><td>Unspecified rotator cuff tear or rupture of left shoulder, not specified as traumatic</td></tr><tr><td>M75.40</td><td>Impingement syndrome of unspecified shoulder</td></tr><tr><td>M75.41</td><td>Impingement syndrome of right shoulder</td></tr><tr><td>M75.42</td><td>Impingement syndrome of left shoulder</td></tr><tr><td>M79.7</td><td>Fibromyalgia</td></tr><tr><td>M77</td><td>Other enthesopathies</td></tr><tr><td>M77.0</td><td>Medial epicondylitis</td></tr><tr><td>M77.1</td><td>Lateral epicondylitis</td></tr><tr><td>M77.2</td><td>Periarthritis of wrist</td></tr><tr><td>M77.3</td><td>Calcaneal spur</td></tr><tr><td>M77.4</td><td>Metatarsalgia</td></tr><tr><td>M77.5</td><td>Other enthesopathy of foot and ankle</td></tr><tr><td>M77.8</td><td>Other enthesopathies, not elsewhere classified</td></tr><tr><td>M77.9</td><td>Enthesopathy, unspecified</td></tr><tr><td>M72.2</td><td>Plantar fascial fibromatosis</td></tr><tr><td>M76.60</td><td>Achilles tendinitis, unspecified leg</td></tr><tr><td>M76.61</td><td>Achilles tendinitis, right leg</td></tr><tr><td>M76.62</td><td>Achilles tendinitis, left leg</td></tr><tr><td>M70.60</td><td>Trochanteric bursitis, unspecified hip</td></tr><tr><td>M70.61</td><td>Trochanteric bursitis, right hip</td></tr><tr><td>M70.62</td><td>Trochanteric bursitis, left hip</td></tr><tr><td>M65.4</td><td>Radial styloid tenosynovitis [de Quervain]</td></tr><tr><td>M79.A1</td><td>Nontraumatic compartment syndrome of upper extremity</td></tr><tr><td>M79.A2</td><td>Nontraumatic compartment syndrome of lower extremity</td></tr><tr><td>M79.A3</td><td>Nontraumatic compartment syndrome of abdomen</td></tr><tr><td>M79.A9</td><td>Nontraumatic compartment syndrome of other sites</td></tr><tr><td>G54.0</td><td>Brachial plexus disorders</td></tr><tr><td>G54.1</td><td>Lumbosacral plexus disorders</td></tr><tr><td>G54.2</td><td>Cervical root disorders, not elsewhere classified</td></tr><tr><td>G54.3</td><td>Thoracic root disorders, not elsewhere classified</td></tr><tr><td>G54.4</td><td>Lumbosacral root disorders, not elsewhere classified</td></tr><tr><td>G54.5</td><td>Neuralgic amyotrophy</td></tr><tr><td>G54.6</td><td>Phantom limb syndrome with pain</td></tr><tr><td>G54.7</td><td>Phantom limb syndrome without pain</td></tr><tr><td>G54.8</td><td>Other nerve root and plexus disorders</td></tr><tr><td>G54.9</td><td>Nerve root and plexus disorder, unspecified</td></tr><tr><td>G56.00</td><td>Carpal tunnel syndrome, unspecified upper limb</td></tr><tr><td>G56.01</td><td>Carpal tunnel syndrome, right upper limb</td></tr><tr><td>G56.02</td><td>Carpal tunnel syndrome, left upper limb</td></tr><tr><td>G56.20</td><td>Lesion of ulnar nerve, unspecified upper limb</td></tr><tr><td>G56.21</td><td>Lesion of ulnar nerve, right upper limb</td></tr><tr><td>G56.22</td><td>Lesion of ulnar nerve, left upper limb</td></tr><tr><td>G56.30</td><td>Lesion of radial nerve, unspecified upper limb</td></tr><tr><td>G56.31</td><td>Lesion of radial nerve, right upper limb</td></tr><tr><td>G56.32</td><td>Lesion of radial nerve, left upper limb</td></tr><tr><td>G57.00</td><td>Lesion of sciatic nerve, unspecified lower limb</td></tr><tr><td>G57.01</td><td>Lesion of sciatic nerve, right lower limb</td></tr><tr><td>G57.02</td><td>Lesion of sciatic nerve, left lower limb</td></tr><tr><td>G57.10</td><td>Meralgia paresthetica, unspecified lower limb</td></tr><tr><td>G57.11</td><td>Meralgia paresthetica, right lower limb</td></tr><tr><td>G57.12</td><td>Meralgia paresthetica, left lower limb</td></tr><tr><td>G57.40</td><td>Lesion of medial popliteal nerve, unspecified lower limb</td></tr><tr><td>G57.41</td><td>Lesion of medial popliteal nerve, right lower limb</td></tr><tr><td>G57.42</td><td>Lesion of medial popliteal nerve, left lower limb</td></tr></table></li></ul><p>This value set excludes codes based on the following rules:</p><ul><li>Exclude these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>M15</td><td style=\"color: #cccccc\">Polyosteoarthritis</td></tr><tr><td>M16</td><td style=\"color: #cccccc\">Osteoarthritis of hip</td></tr><tr><td>M16.1</td><td style=\"color: #cccccc\">Unilateral primary osteoarthritis of hip</td></tr><tr><td>M16.3</td><td style=\"color: #cccccc\">Unilateral osteoarthritis resulting from hip dysplasia</td></tr><tr><td>M16.5</td><td style=\"color: #cccccc\">Unilateral post-traumatic osteoarthritis of hip</td></tr><tr><td>M17</td><td style=\"color: #cccccc\">Osteoarthritis of knee</td></tr><tr><td>M17.1</td><td style=\"color: #cccccc\">Unilateral primary osteoarthritis of knee</td></tr><tr><td>M17.3</td><td style=\"color: #cccccc\">Unilateral post-traumatic osteoarthritis of knee</td></tr><tr><td>M18</td><td style=\"color: #cccccc\">Osteoarthritis of first carpometacarpal joint</td></tr><tr><td>M18.1</td><td style=\"color: #cccccc\">Unilateral primary osteoarthritis of first carpometacarpal joint</td></tr><tr><td>M18.3</td><td style=\"color: #cccccc\">Unilateral post-traumatic osteoarthritis of first carpometacarpal joint</td></tr><tr><td>M18.5</td><td style=\"color: #cccccc\">Other unilateral secondary osteoarthritis of first carpometacarpal joint</td></tr><tr><td>M19</td><td style=\"color: #cccccc\">Other and unspecified osteoarthritis</td></tr><tr><td>M19.0</td><td style=\"color: #cccccc\">Primary osteoarthritis of other joints</td></tr><tr><td>M19.01</td><td style=\"color: #cccccc\">Primary osteoarthritis, shoulder</td></tr><tr><td>M19.02</td><td style=\"color: #cccccc\">Primary osteoarthritis, elbow</td></tr><tr><td>M19.03</td><td style=\"color: #cccccc\">Primary osteoarthritis, wrist</td></tr><tr><td>M19.04</td><td style=\"color: #cccccc\">Primary osteoarthritis, hand</td></tr><tr><td>M19.07</td><td style=\"color: #cccccc\">Primary osteoarthritis ankle and foot</td></tr><tr><td>M19.1</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis of other joints</td></tr><tr><td>M19.11</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis, shoulder</td></tr><tr><td>M19.12</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis, elbow</td></tr><tr><td>M19.13</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis, wrist</td></tr><tr><td>M19.14</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis, hand</td></tr><tr><td>M19.17</td><td style=\"color: #cccccc\">Post-traumatic osteoarthritis, ankle and foot</td></tr><tr><td>M19.2</td><td style=\"color: #cccccc\">Secondary osteoarthritis of other joints</td></tr><tr><td>M19.21</td><td style=\"color: #cccccc\">Secondary osteoarthritis, shoulder</td></tr><tr><td>M19.22</td><td style=\"color: #cccccc\">Secondary osteoarthritis, elbow</td></tr><tr><td>M19.23</td><td style=\"color: #cccccc\">Secondary osteoarthritis, wrist</td></tr><tr><td>M19.24</td><td style=\"color: #cccccc\">Secondary osteoarthritis, hand</td></tr><tr><td>M19.27</td><td style=\"color: #cccccc\">Secondary osteoarthritis, ankle and foot</td></tr><tr><td>M19.9</td><td style=\"color: #cccccc\">Osteoarthritis, unspecified site</td></tr></table></li></ul></div>"
+  },
+  "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
+  "version" : "0.7.0",
+  "name" : "ACCESSMSKDiagnosisVS",
+  "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-02-26T23:16:42-05:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "This value set contains ICD-10-CM diagnosis codes that qualify a patient for the ACCESS Model Musculoskeletal (MSK) track. Includes osteoarthritis, other arthropathies and joint disorders, spine and structural disorders, degenerative spine disease, back pain and radiculopathy, soft tissue/tendon/bursa disorders, and peripheral nerve and plexus disorders.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M15"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M16"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M17"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M18"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M19"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept" : [{
+        "code" : "M12.011",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], right shoulder"
+      },
+      {
+        "code" : "M12.012",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], left shoulder"
+      },
+      {
+        "code" : "M12.019",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], unspecified shoulder"
+      },
+      {
+        "code" : "M12.051",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], right hip"
+      },
+      {
+        "code" : "M12.052",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], left hip"
+      },
+      {
+        "code" : "M12.059",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], unspecified hip"
+      },
+      {
+        "code" : "M12.061",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], right knee"
+      },
+      {
+        "code" : "M12.062",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], left knee"
+      },
+      {
+        "code" : "M12.069",
+        "display" : "Chronic postrheumatic arthropathy [Jaccoud], unspecified knee"
+      },
+      {
+        "code" : "M12.111",
+        "display" : "Kaschin-Beck disease, right shoulder"
+      },
+      {
+        "code" : "M12.112",
+        "display" : "Kaschin-Beck disease, left shoulder"
+      },
+      {
+        "code" : "M12.119",
+        "display" : "Kaschin-Beck disease, unspecified shoulder"
+      },
+      {
+        "code" : "M12.151",
+        "display" : "Kaschin-Beck disease, right hip"
+      },
+      {
+        "code" : "M12.152",
+        "display" : "Kaschin-Beck disease, left hip"
+      },
+      {
+        "code" : "M12.159",
+        "display" : "Kaschin-Beck disease, unspecified hip"
+      },
+      {
+        "code" : "M12.161",
+        "display" : "Kaschin-Beck disease, right knee"
+      },
+      {
+        "code" : "M12.162",
+        "display" : "Kaschin-Beck disease, left knee"
+      },
+      {
+        "code" : "M12.169",
+        "display" : "Kaschin-Beck disease, unspecified knee"
+      },
+      {
+        "code" : "M12.211",
+        "display" : "Villonodular synovitis (pigmented), right shoulder"
+      },
+      {
+        "code" : "M12.212",
+        "display" : "Villonodular synovitis (pigmented), left shoulder"
+      },
+      {
+        "code" : "M12.219",
+        "display" : "Villonodular synovitis (pigmented), unspecified shoulder"
+      },
+      {
+        "code" : "M12.251",
+        "display" : "Villonodular synovitis (pigmented), right hip"
+      },
+      {
+        "code" : "M12.252",
+        "display" : "Villonodular synovitis (pigmented), left hip"
+      },
+      {
+        "code" : "M12.259",
+        "display" : "Villonodular synovitis (pigmented), unspecified hip"
+      },
+      {
+        "code" : "M12.261",
+        "display" : "Villonodular synovitis (pigmented), right knee"
+      },
+      {
+        "code" : "M12.262",
+        "display" : "Villonodular synovitis (pigmented), left knee"
+      },
+      {
+        "code" : "M12.269",
+        "display" : "Villonodular synovitis (pigmented), unspecified knee"
+      },
+      {
+        "code" : "M12.811",
+        "display" : "Other specific arthropathies, not elsewhere classified, right shoulder"
+      },
+      {
+        "code" : "M12.812",
+        "display" : "Other specific arthropathies, not elsewhere classified, left shoulder"
+      },
+      {
+        "code" : "M12.819",
+        "display" : "Other specific arthropathies, not elsewhere classified, unspecified shoulder"
+      },
+      {
+        "code" : "M12.851",
+        "display" : "Other specific arthropathies, not elsewhere classified, right hip"
+      },
+      {
+        "code" : "M12.852",
+        "display" : "Other specific arthropathies, not elsewhere classified, left hip"
+      },
+      {
+        "code" : "M12.859",
+        "display" : "Other specific arthropathies, not elsewhere classified, unspecified hip"
+      },
+      {
+        "code" : "M12.861",
+        "display" : "Other specific arthropathies, not elsewhere classified, right knee"
+      },
+      {
+        "code" : "M12.862",
+        "display" : "Other specific arthropathies, not elsewhere classified, left knee"
+      },
+      {
+        "code" : "M12.869",
+        "display" : "Other specific arthropathies, not elsewhere classified, unspecified knee"
+      },
+      {
+        "code" : "M13.111",
+        "display" : "Monoarthritis, not elsewhere classified, right shoulder"
+      },
+      {
+        "code" : "M13.112",
+        "display" : "Monoarthritis, not elsewhere classified, left shoulder"
+      },
+      {
+        "code" : "M13.119",
+        "display" : "Monoarthritis, not elsewhere classified, unspecified shoulder"
+      },
+      {
+        "code" : "M13.151",
+        "display" : "Monoarthritis, not elsewhere classified, right hip"
+      },
+      {
+        "code" : "M13.152",
+        "display" : "Monoarthritis, not elsewhere classified, left hip"
+      },
+      {
+        "code" : "M13.159",
+        "display" : "Monoarthritis, not elsewhere classified, unspecified hip"
+      },
+      {
+        "code" : "M13.161",
+        "display" : "Monoarthritis, not elsewhere classified, right knee"
+      },
+      {
+        "code" : "M13.162",
+        "display" : "Monoarthritis, not elsewhere classified, left knee"
+      },
+      {
+        "code" : "M13.169",
+        "display" : "Monoarthritis, not elsewhere classified, unspecified knee"
+      },
+      {
+        "code" : "M13.811",
+        "display" : "Other specified arthritis, right shoulder"
+      },
+      {
+        "code" : "M13.812",
+        "display" : "Other specified arthritis, left shoulder"
+      },
+      {
+        "code" : "M13.819",
+        "display" : "Other specified arthritis, unspecified shoulder"
+      },
+      {
+        "code" : "M13.851",
+        "display" : "Other specified arthritis, right hip"
+      },
+      {
+        "code" : "M13.852",
+        "display" : "Other specified arthritis, left hip"
+      },
+      {
+        "code" : "M13.859",
+        "display" : "Other specified arthritis, unspecified hip"
+      },
+      {
+        "code" : "M13.861",
+        "display" : "Other specified arthritis, right knee"
+      },
+      {
+        "code" : "M13.862",
+        "display" : "Other specified arthritis, left knee"
+      },
+      {
+        "code" : "M13.869",
+        "display" : "Other specified arthritis, unspecified knee"
+      },
+      {
+        "code" : "M14.611",
+        "display" : "Charcot's joint, right shoulder"
+      },
+      {
+        "code" : "M14.612",
+        "display" : "Charcot's joint, left shoulder"
+      },
+      {
+        "code" : "M14.619",
+        "display" : "Charcot's joint, unspecified shoulder"
+      },
+      {
+        "code" : "M14.651",
+        "display" : "Charcot's joint, right hip"
+      },
+      {
+        "code" : "M14.652",
+        "display" : "Charcot's joint, left hip"
+      },
+      {
+        "code" : "M14.659",
+        "display" : "Charcot's joint, unspecified hip"
+      },
+      {
+        "code" : "M14.661",
+        "display" : "Charcot's joint, right knee"
+      },
+      {
+        "code" : "M14.662",
+        "display" : "Charcot's joint, left knee"
+      },
+      {
+        "code" : "M14.669",
+        "display" : "Charcot's joint, unspecified knee"
+      },
+      {
+        "code" : "M14.811",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, right shoulder"
+      },
+      {
+        "code" : "M14.812",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, left shoulder"
+      },
+      {
+        "code" : "M14.819",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, unspecified shoulder"
+      },
+      {
+        "code" : "M14.851",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, right hip"
+      },
+      {
+        "code" : "M14.852",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, left hip"
+      },
+      {
+        "code" : "M14.859",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, unspecified hip"
+      },
+      {
+        "code" : "M14.861",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, right knee"
+      },
+      {
+        "code" : "M14.862",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, left knee"
+      },
+      {
+        "code" : "M14.869",
+        "display" : "Arthropathies in other specified diseases classified elsewhere, unspecified knee"
+      },
+      {
+        "code" : "M14.8",
+        "display" : "Arthropathies in other specified diseases classified elsewhere"
+      },
+      {
+        "code" : "M24.011",
+        "display" : "Loose body in right shoulder"
+      },
+      {
+        "code" : "M24.012",
+        "display" : "Loose body in left shoulder"
+      },
+      {
+        "code" : "M24.019",
+        "display" : "Loose body in unspecified shoulder"
+      },
+      {
+        "code" : "M24.111",
+        "display" : "Other articular cartilage disorders, right shoulder"
+      },
+      {
+        "code" : "M24.112",
+        "display" : "Other articular cartilage disorders, left shoulder"
+      },
+      {
+        "code" : "M24.119",
+        "display" : "Other articular cartilage disorders, unspecified shoulder"
+      },
+      {
+        "code" : "M24.811",
+        "display" : "Other specific joint derangements of right shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M24.812",
+        "display" : "Other specific joint derangements of left shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M24.819",
+        "display" : "Other specific joint derangements of unspecified shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M25.50",
+        "display" : "Pain in unspecified joint"
+      },
+      {
+        "code" : "M25.511",
+        "display" : "Pain in right shoulder"
+      },
+      {
+        "code" : "M25.512",
+        "display" : "Pain in left shoulder"
+      },
+      {
+        "code" : "M25.519",
+        "display" : "Pain in unspecified shoulder"
+      },
+      {
+        "code" : "M25.521",
+        "display" : "Pain in right elbow"
+      },
+      {
+        "code" : "M25.522",
+        "display" : "Pain in left elbow"
+      },
+      {
+        "code" : "M25.529",
+        "display" : "Pain in unspecified elbow"
+      },
+      {
+        "code" : "M25.531",
+        "display" : "Pain in right wrist"
+      },
+      {
+        "code" : "M25.532",
+        "display" : "Pain in left wrist"
+      },
+      {
+        "code" : "M25.539",
+        "display" : "Pain in unspecified wrist"
+      },
+      {
+        "code" : "M25.561",
+        "display" : "Pain in right knee"
+      },
+      {
+        "code" : "M25.562",
+        "display" : "Pain in left knee"
+      },
+      {
+        "code" : "M25.569",
+        "display" : "Pain in unspecified knee"
+      },
+      {
+        "code" : "M25.60",
+        "display" : "Stiffness of unspecified joint, not elsewhere classified"
+      },
+      {
+        "code" : "M25.611",
+        "display" : "Stiffness of right shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M25.612",
+        "display" : "Stiffness of left shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M25.619",
+        "display" : "Stiffness of unspecified shoulder, not elsewhere classified"
+      },
+      {
+        "code" : "M25.40",
+        "display" : "Effusion, unspecified joint"
+      },
+      {
+        "code" : "M40.00",
+        "display" : "Postural kyphosis, site unspecified"
+      },
+      {
+        "code" : "M40.03",
+        "display" : "Postural kyphosis, cervicothoracic region"
+      },
+      {
+        "code" : "M40.04",
+        "display" : "Postural kyphosis, thoracic region"
+      },
+      {
+        "code" : "M40.05",
+        "display" : "Postural kyphosis, thoracolumbar region"
+      },
+      {
+        "code" : "M40.10",
+        "display" : "Other secondary kyphosis, site unspecified"
+      },
+      {
+        "code" : "M40.12",
+        "display" : "Other secondary kyphosis, cervical region"
+      },
+      {
+        "code" : "M40.13",
+        "display" : "Other secondary kyphosis, cervicothoracic region"
+      },
+      {
+        "code" : "M40.14",
+        "display" : "Other secondary kyphosis, thoracic region"
+      },
+      {
+        "code" : "M40.15",
+        "display" : "Other secondary kyphosis, thoracolumbar region"
+      },
+      {
+        "code" : "M40.20",
+        "display" : "Unspecified kyphosis"
+      },
+      {
+        "code" : "M40.30",
+        "display" : "Flatback syndrome, site unspecified"
+      },
+      {
+        "code" : "M40.35",
+        "display" : "Flatback syndrome, thoracolumbar region"
+      },
+      {
+        "code" : "M40.40",
+        "display" : "Postural lordosis, site unspecified"
+      },
+      {
+        "code" : "M40.45",
+        "display" : "Postural lordosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.20",
+        "display" : "Other idiopathic scoliosis, site unspecified"
+      },
+      {
+        "code" : "M41.22",
+        "display" : "Other idiopathic scoliosis, cervical region"
+      },
+      {
+        "code" : "M41.23",
+        "display" : "Other idiopathic scoliosis, cervicothoracic region"
+      },
+      {
+        "code" : "M41.24",
+        "display" : "Other idiopathic scoliosis, thoracic region"
+      },
+      {
+        "code" : "M41.25",
+        "display" : "Other idiopathic scoliosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.30",
+        "display" : "Thoracogenic scoliosis, site unspecified"
+      },
+      {
+        "code" : "M41.34",
+        "display" : "Thoracogenic scoliosis, thoracic region"
+      },
+      {
+        "code" : "M41.35",
+        "display" : "Thoracogenic scoliosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.40",
+        "display" : "Neuromuscular scoliosis, site unspecified"
+      },
+      {
+        "code" : "M41.42",
+        "display" : "Neuromuscular scoliosis, cervical region"
+      },
+      {
+        "code" : "M41.43",
+        "display" : "Neuromuscular scoliosis, cervicothoracic region"
+      },
+      {
+        "code" : "M41.44",
+        "display" : "Neuromuscular scoliosis, thoracic region"
+      },
+      {
+        "code" : "M41.45",
+        "display" : "Neuromuscular scoliosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.50",
+        "display" : "Other secondary scoliosis, site unspecified"
+      },
+      {
+        "code" : "M41.52",
+        "display" : "Other secondary scoliosis, cervical region"
+      },
+      {
+        "code" : "M41.53",
+        "display" : "Other secondary scoliosis, cervicothoracic region"
+      },
+      {
+        "code" : "M41.54",
+        "display" : "Other secondary scoliosis, thoracic region"
+      },
+      {
+        "code" : "M41.55",
+        "display" : "Other secondary scoliosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.80",
+        "display" : "Other forms of scoliosis, site unspecified"
+      },
+      {
+        "code" : "M41.82",
+        "display" : "Other forms of scoliosis, cervical region"
+      },
+      {
+        "code" : "M41.83",
+        "display" : "Other forms of scoliosis, cervicothoracic region"
+      },
+      {
+        "code" : "M41.84",
+        "display" : "Other forms of scoliosis, thoracic region"
+      },
+      {
+        "code" : "M41.85",
+        "display" : "Other forms of scoliosis, thoracolumbar region"
+      },
+      {
+        "code" : "M41.9",
+        "display" : "Scoliosis, unspecified"
+      },
+      {
+        "code" : "M42.10",
+        "display" : "Adult osteochondrosis of spine, site unspecified"
+      },
+      {
+        "code" : "M42.12",
+        "display" : "Adult osteochondrosis of spine, cervical region"
+      },
+      {
+        "code" : "M42.13",
+        "display" : "Adult osteochondrosis of spine, cervicothoracic region"
+      },
+      {
+        "code" : "M42.14",
+        "display" : "Adult osteochondrosis of spine, thoracic region"
+      },
+      {
+        "code" : "M42.15",
+        "display" : "Adult osteochondrosis of spine, thoracolumbar region"
+      },
+      {
+        "code" : "M43.00",
+        "display" : "Spondylolysis, site unspecified"
+      },
+      {
+        "code" : "M43.02",
+        "display" : "Spondylolysis, cervical region"
+      },
+      {
+        "code" : "M43.03",
+        "display" : "Spondylolysis, cervicothoracic region"
+      },
+      {
+        "code" : "M43.04",
+        "display" : "Spondylolysis, thoracic region"
+      },
+      {
+        "code" : "M43.05",
+        "display" : "Spondylolysis, thoracolumbar region"
+      },
+      {
+        "code" : "M43.10",
+        "display" : "Spondylolisthesis, site unspecified"
+      },
+      {
+        "code" : "M43.12",
+        "display" : "Spondylolisthesis, cervical region"
+      },
+      {
+        "code" : "M43.13",
+        "display" : "Spondylolisthesis, cervicothoracic region"
+      },
+      {
+        "code" : "M43.14",
+        "display" : "Spondylolisthesis, thoracic region"
+      },
+      {
+        "code" : "M43.15",
+        "display" : "Spondylolisthesis, thoracolumbar region"
+      },
+      {
+        "code" : "M43.20",
+        "display" : "Fusion of spine, site unspecified"
+      },
+      {
+        "code" : "M43.22",
+        "display" : "Fusion of spine, cervical region"
+      },
+      {
+        "code" : "M43.23",
+        "display" : "Fusion of spine, cervicothoracic region"
+      },
+      {
+        "code" : "M43.24",
+        "display" : "Fusion of spine, thoracic region"
+      },
+      {
+        "code" : "M43.25",
+        "display" : "Fusion of spine, thoracolumbar region"
+      },
+      {
+        "code" : "M43.8",
+        "display" : "Other specified deforming dorsopathies"
+      },
+      {
+        "code" : "M43.9",
+        "display" : "Deforming dorsopathy, unspecified"
+      },
+      {
+        "code" : "M47.812",
+        "display" : "Spondylosis without myelopathy or radiculopathy, cervical region"
+      },
+      {
+        "code" : "M47.813",
+        "display" : "Spondylosis without myelopathy or radiculopathy, cervicothoracic region"
+      },
+      {
+        "code" : "M47.814",
+        "display" : "Spondylosis without myelopathy or radiculopathy, thoracic region"
+      },
+      {
+        "code" : "M47.815",
+        "display" : "Spondylosis without myelopathy or radiculopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M47.816",
+        "display" : "Spondylosis without myelopathy or radiculopathy, lumbar region"
+      },
+      {
+        "code" : "M47.817",
+        "display" : "Spondylosis without myelopathy or radiculopathy, lumbosacral region"
+      },
+      {
+        "code" : "M47.22",
+        "display" : "Other spondylosis with radiculopathy, cervical region"
+      },
+      {
+        "code" : "M47.23",
+        "display" : "Other spondylosis with radiculopathy, cervicothoracic region"
+      },
+      {
+        "code" : "M47.24",
+        "display" : "Other spondylosis with radiculopathy, thoracic region"
+      },
+      {
+        "code" : "M47.25",
+        "display" : "Other spondylosis with radiculopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M47.26",
+        "display" : "Other spondylosis with radiculopathy, lumbar region"
+      },
+      {
+        "code" : "M47.27",
+        "display" : "Other spondylosis with radiculopathy, lumbosacral region"
+      },
+      {
+        "code" : "M47.12",
+        "display" : "Other spondylosis with myelopathy, cervical region"
+      },
+      {
+        "code" : "M47.13",
+        "display" : "Other spondylosis with myelopathy, cervicothoracic region"
+      },
+      {
+        "code" : "M47.14",
+        "display" : "Other spondylosis with myelopathy, thoracic region"
+      },
+      {
+        "code" : "M47.15",
+        "display" : "Other spondylosis with myelopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M48.02",
+        "display" : "Spinal stenosis, cervical region"
+      },
+      {
+        "code" : "M48.03",
+        "display" : "Spinal stenosis, cervicothoracic region"
+      },
+      {
+        "code" : "M48.04",
+        "display" : "Spinal stenosis, thoracic region"
+      },
+      {
+        "code" : "M48.05",
+        "display" : "Spinal stenosis, thoracolumbar region"
+      },
+      {
+        "code" : "M48.06",
+        "display" : "Spinal stenosis, lumbar region"
+      },
+      {
+        "code" : "M48.07",
+        "display" : "Spinal stenosis, lumbosacral region"
+      },
+      {
+        "code" : "M48.8X2",
+        "display" : "Other specified spondylopathies, cervical region"
+      },
+      {
+        "code" : "M48.8X3",
+        "display" : "Other specified spondylopathies, cervicothoracic region"
+      },
+      {
+        "code" : "M48.8X4",
+        "display" : "Other specified spondylopathies, thoracic region"
+      },
+      {
+        "code" : "M48.8X5",
+        "display" : "Other specified spondylopathies, thoracolumbar region"
+      },
+      {
+        "code" : "M48.8X6",
+        "display" : "Other specified spondylopathies, lumbar region"
+      },
+      {
+        "code" : "M48.8X7",
+        "display" : "Other specified spondylopathies, lumbosacral region"
+      },
+      {
+        "code" : "M48.9",
+        "display" : "Spondylopathy, unspecified"
+      },
+      {
+        "code" : "M50.00",
+        "display" : "Cervical disc disorder with myelopathy, unspecified cervical region"
+      },
+      {
+        "code" : "M50.01",
+        "display" : "Cervical disc disorder with myelopathy, high cervical region"
+      },
+      {
+        "code" : "M50.02",
+        "display" : "Cervical disc disorder with myelopathy, mid-cervical region"
+      },
+      {
+        "code" : "M50.03",
+        "display" : "Cervical disc disorder with myelopathy, cervicothoracic region"
+      },
+      {
+        "code" : "M50.20",
+        "display" : "Other cervical disc displacement, unspecified cervical region"
+      },
+      {
+        "code" : "M50.21",
+        "display" : "Other cervical disc displacement, high cervical region"
+      },
+      {
+        "code" : "M50.22",
+        "display" : "Other cervical disc displacement, mid-cervical region"
+      },
+      {
+        "code" : "M50.23",
+        "display" : "Other cervical disc displacement, cervicothoracic region"
+      },
+      {
+        "code" : "M50.30",
+        "display" : "Other cervical disc degeneration, unspecified cervical region"
+      },
+      {
+        "code" : "M50.31",
+        "display" : "Other cervical disc degeneration, high cervical region"
+      },
+      {
+        "code" : "M50.32",
+        "display" : "Other cervical disc degeneration, mid-cervical region"
+      },
+      {
+        "code" : "M50.33",
+        "display" : "Other cervical disc degeneration, cervicothoracic region"
+      },
+      {
+        "code" : "M51.04",
+        "display" : "Intervertebral disc disorders with myelopathy, thoracic region"
+      },
+      {
+        "code" : "M51.05",
+        "display" : "Intervertebral disc disorders with myelopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M51.06",
+        "display" : "Intervertebral disc disorders with myelopathy, lumbar region"
+      },
+      {
+        "code" : "M51.14",
+        "display" : "Intervertebral disc disorders with radiculopathy, thoracic region"
+      },
+      {
+        "code" : "M51.15",
+        "display" : "Intervertebral disc disorders with radiculopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M51.16",
+        "display" : "Intervertebral disc disorders with radiculopathy, lumbar region"
+      },
+      {
+        "code" : "M51.17",
+        "display" : "Intervertebral disc disorders with radiculopathy, lumbosacral region"
+      },
+      {
+        "code" : "M51.24",
+        "display" : "Other intervertebral disc displacement, thoracic region"
+      },
+      {
+        "code" : "M51.25",
+        "display" : "Other intervertebral disc displacement, thoracolumbar region"
+      },
+      {
+        "code" : "M51.26",
+        "display" : "Other intervertebral disc displacement, lumbar region"
+      },
+      {
+        "code" : "M51.27",
+        "display" : "Other intervertebral disc displacement, lumbosacral region"
+      },
+      {
+        "code" : "M51.34",
+        "display" : "Other intervertebral disc degeneration, thoracic region"
+      },
+      {
+        "code" : "M51.35",
+        "display" : "Other intervertebral disc degeneration, thoracolumbar region"
+      },
+      {
+        "code" : "M51.36",
+        "display" : "Other intervertebral disc degeneration, lumbar region"
+      },
+      {
+        "code" : "M51.37",
+        "display" : "Other intervertebral disc degeneration, lumbosacral region"
+      },
+      {
+        "code" : "M51.9",
+        "display" : "Unspecified thoracic, thoracolumbar and lumbosacral intervertebral disc disorder"
+      },
+      {
+        "code" : "M53.0",
+        "display" : "Cervicocranial syndrome"
+      },
+      {
+        "code" : "M53.1",
+        "display" : "Cervicobrachial syndrome"
+      },
+      {
+        "code" : "M53.2",
+        "display" : "Spinal instabilities"
+      },
+      {
+        "code" : "M53.3",
+        "display" : "Sacrococcygeal disorders, not elsewhere classified"
+      },
+      {
+        "code" : "M53.80",
+        "display" : "Other specified dorsopathies, site unspecified"
+      },
+      {
+        "code" : "M53.81",
+        "display" : "Other specified dorsopathies, occipito-atlanto-axial region"
+      },
+      {
+        "code" : "M53.82",
+        "display" : "Other specified dorsopathies, cervical region"
+      },
+      {
+        "code" : "M53.83",
+        "display" : "Other specified dorsopathies, cervicothoracic region"
+      },
+      {
+        "code" : "M53.84",
+        "display" : "Other specified dorsopathies, thoracic region"
+      },
+      {
+        "code" : "M53.85",
+        "display" : "Other specified dorsopathies, thoracolumbar region"
+      },
+      {
+        "code" : "M53.86",
+        "display" : "Other specified dorsopathies, lumbar region"
+      },
+      {
+        "code" : "M53.9",
+        "display" : "Dorsopathy, unspecified"
+      },
+      {
+        "code" : "M54.2",
+        "display" : "Cervicalgia"
+      },
+      {
+        "code" : "M54.5",
+        "display" : "Low back pain"
+      },
+      {
+        "code" : "M54.6",
+        "display" : "Pain in thoracic spine"
+      },
+      {
+        "code" : "M54.8",
+        "display" : "Other dorsalgia"
+      },
+      {
+        "code" : "M54.9",
+        "display" : "Dorsalgia, unspecified"
+      },
+      {
+        "code" : "M54.10",
+        "display" : "Radiculopathy, site unspecified"
+      },
+      {
+        "code" : "M54.11",
+        "display" : "Radiculopathy, occipito-atlanto-axial region"
+      },
+      {
+        "code" : "M54.12",
+        "display" : "Radiculopathy, cervical region"
+      },
+      {
+        "code" : "M54.13",
+        "display" : "Radiculopathy, cervicothoracic region"
+      },
+      {
+        "code" : "M54.14",
+        "display" : "Radiculopathy, thoracic region"
+      },
+      {
+        "code" : "M54.15",
+        "display" : "Radiculopathy, thoracolumbar region"
+      },
+      {
+        "code" : "M54.16",
+        "display" : "Radiculopathy, lumbar region"
+      },
+      {
+        "code" : "M54.30",
+        "display" : "Sciatica, unspecified side"
+      },
+      {
+        "code" : "M54.31",
+        "display" : "Sciatica, right side"
+      },
+      {
+        "code" : "M54.32",
+        "display" : "Sciatica, left side"
+      },
+      {
+        "code" : "M54.40",
+        "display" : "Lumbago with sciatica, unspecified side"
+      },
+      {
+        "code" : "M54.41",
+        "display" : "Lumbago with sciatica, right side"
+      },
+      {
+        "code" : "M54.42",
+        "display" : "Lumbago with sciatica, left side"
+      },
+      {
+        "code" : "M54.0",
+        "display" : "Panniculitis affecting regions of neck and back"
+      },
+      {
+        "code" : "M54.89",
+        "display" : "Other dorsalgia"
+      },
+      {
+        "code" : "R52",
+        "display" : "Pain, unspecified"
+      },
+      {
+        "code" : "M79.10",
+        "display" : "Myalgia, unspecified site"
+      },
+      {
+        "code" : "M79.11",
+        "display" : "Myalgia of mastication muscle"
+      },
+      {
+        "code" : "M79.12",
+        "display" : "Myalgia of auxiliary muscles, head and neck"
+      },
+      {
+        "code" : "M79.18",
+        "display" : "Myalgia, other site"
+      },
+      {
+        "code" : "M60.811",
+        "display" : "Other myositis, right shoulder"
+      },
+      {
+        "code" : "M60.812",
+        "display" : "Other myositis, left shoulder"
+      },
+      {
+        "code" : "M60.819",
+        "display" : "Other myositis, unspecified shoulder"
+      },
+      {
+        "code" : "M60.851",
+        "display" : "Other myositis, right thigh"
+      },
+      {
+        "code" : "M60.852",
+        "display" : "Other myositis, left thigh"
+      },
+      {
+        "code" : "M60.859",
+        "display" : "Other myositis, unspecified thigh"
+      },
+      {
+        "code" : "M60.861",
+        "display" : "Other myositis, right lower leg"
+      },
+      {
+        "code" : "M60.862",
+        "display" : "Other myositis, left lower leg"
+      },
+      {
+        "code" : "M60.869",
+        "display" : "Other myositis, unspecified lower leg"
+      },
+      {
+        "code" : "M65.11",
+        "display" : "Other infective (teno)synovitis, shoulder"
+      },
+      {
+        "code" : "M65.12",
+        "display" : "Other infective (teno)synovitis, elbow"
+      },
+      {
+        "code" : "M65.19",
+        "display" : "Other infective (teno)synovitis, multiple sites"
+      },
+      {
+        "code" : "M65.22",
+        "display" : "Calcific tendinitis, upper arm"
+      },
+      {
+        "code" : "M65.29",
+        "display" : "Calcific tendinitis, multiple sites"
+      },
+      {
+        "code" : "M65.31",
+        "display" : "Trigger thumb"
+      },
+      {
+        "code" : "M65.32",
+        "display" : "Trigger finger, index finger"
+      },
+      {
+        "code" : "M65.811",
+        "display" : "Other synovitis and tenosynovitis, right shoulder"
+      },
+      {
+        "code" : "M65.812",
+        "display" : "Other synovitis and tenosynovitis, left shoulder"
+      },
+      {
+        "code" : "M65.819",
+        "display" : "Other synovitis and tenosynovitis, unspecified shoulder"
+      },
+      {
+        "code" : "M70.21",
+        "display" : "Olecranon bursitis, right elbow"
+      },
+      {
+        "code" : "M70.22",
+        "display" : "Olecranon bursitis, left elbow"
+      },
+      {
+        "code" : "M70.31",
+        "display" : "Other bursitis of elbow, right elbow"
+      },
+      {
+        "code" : "M70.32",
+        "display" : "Other bursitis of elbow, left elbow"
+      },
+      {
+        "code" : "M70.41",
+        "display" : "Prepatellar bursitis, right knee"
+      },
+      {
+        "code" : "M70.42",
+        "display" : "Prepatellar bursitis, left knee"
+      },
+      {
+        "code" : "M70.51",
+        "display" : "Other bursitis of knee, right knee"
+      },
+      {
+        "code" : "M70.52",
+        "display" : "Other bursitis of knee, left knee"
+      },
+      {
+        "code" : "M70.71",
+        "display" : "Other bursitis of hip, right hip"
+      },
+      {
+        "code" : "M70.72",
+        "display" : "Other bursitis of hip, left hip"
+      },
+      {
+        "code" : "M76.01",
+        "display" : "Gluteal tendinitis, right hip"
+      },
+      {
+        "code" : "M76.02",
+        "display" : "Gluteal tendinitis, left hip"
+      },
+      {
+        "code" : "M76.11",
+        "display" : "Psoas tendinitis, right hip"
+      },
+      {
+        "code" : "M76.12",
+        "display" : "Psoas tendinitis, left hip"
+      },
+      {
+        "code" : "M76.31",
+        "display" : "Iliotibial band syndrome, right leg"
+      },
+      {
+        "code" : "M76.32",
+        "display" : "Iliotibial band syndrome, left leg"
+      },
+      {
+        "code" : "M76.51",
+        "display" : "Patellar tendinitis, right knee"
+      },
+      {
+        "code" : "M76.52",
+        "display" : "Patellar tendinitis, left knee"
+      },
+      {
+        "code" : "M75.00",
+        "display" : "Adhesive capsulitis of unspecified shoulder"
+      },
+      {
+        "code" : "M75.01",
+        "display" : "Adhesive capsulitis of right shoulder"
+      },
+      {
+        "code" : "M75.02",
+        "display" : "Adhesive capsulitis of left shoulder"
+      },
+      {
+        "code" : "M75.100",
+        "display" : "Unspecified rotator cuff tear or rupture of unspecified shoulder, not specified as traumatic"
+      },
+      {
+        "code" : "M75.101",
+        "display" : "Unspecified rotator cuff tear or rupture of right shoulder, not specified as traumatic"
+      },
+      {
+        "code" : "M75.102",
+        "display" : "Unspecified rotator cuff tear or rupture of left shoulder, not specified as traumatic"
+      },
+      {
+        "code" : "M75.40",
+        "display" : "Impingement syndrome of unspecified shoulder"
+      },
+      {
+        "code" : "M75.41",
+        "display" : "Impingement syndrome of right shoulder"
+      },
+      {
+        "code" : "M75.42",
+        "display" : "Impingement syndrome of left shoulder"
+      },
+      {
+        "code" : "M79.7",
+        "display" : "Fibromyalgia"
+      },
+      {
+        "code" : "M77",
+        "display" : "Other enthesopathies"
+      },
+      {
+        "code" : "M77.0",
+        "display" : "Medial epicondylitis"
+      },
+      {
+        "code" : "M77.1",
+        "display" : "Lateral epicondylitis"
+      },
+      {
+        "code" : "M77.2",
+        "display" : "Periarthritis of wrist"
+      },
+      {
+        "code" : "M77.3",
+        "display" : "Calcaneal spur"
+      },
+      {
+        "code" : "M77.4",
+        "display" : "Metatarsalgia"
+      },
+      {
+        "code" : "M77.5",
+        "display" : "Other enthesopathy of foot and ankle"
+      },
+      {
+        "code" : "M77.8",
+        "display" : "Other enthesopathies, not elsewhere classified"
+      },
+      {
+        "code" : "M77.9",
+        "display" : "Enthesopathy, unspecified"
+      },
+      {
+        "code" : "M72.2",
+        "display" : "Plantar fascial fibromatosis"
+      },
+      {
+        "code" : "M76.60",
+        "display" : "Achilles tendinitis, unspecified leg"
+      },
+      {
+        "code" : "M76.61",
+        "display" : "Achilles tendinitis, right leg"
+      },
+      {
+        "code" : "M76.62",
+        "display" : "Achilles tendinitis, left leg"
+      },
+      {
+        "code" : "M70.60",
+        "display" : "Trochanteric bursitis, unspecified hip"
+      },
+      {
+        "code" : "M70.61",
+        "display" : "Trochanteric bursitis, right hip"
+      },
+      {
+        "code" : "M70.62",
+        "display" : "Trochanteric bursitis, left hip"
+      },
+      {
+        "code" : "M65.4",
+        "display" : "Radial styloid tenosynovitis [de Quervain]"
+      },
+      {
+        "code" : "M79.A1",
+        "display" : "Nontraumatic compartment syndrome of upper extremity"
+      },
+      {
+        "code" : "M79.A2",
+        "display" : "Nontraumatic compartment syndrome of lower extremity"
+      },
+      {
+        "code" : "M79.A3",
+        "display" : "Nontraumatic compartment syndrome of abdomen"
+      },
+      {
+        "code" : "M79.A9",
+        "display" : "Nontraumatic compartment syndrome of other sites"
+      },
+      {
+        "code" : "G54.0",
+        "display" : "Brachial plexus disorders"
+      },
+      {
+        "code" : "G54.1",
+        "display" : "Lumbosacral plexus disorders"
+      },
+      {
+        "code" : "G54.2",
+        "display" : "Cervical root disorders, not elsewhere classified"
+      },
+      {
+        "code" : "G54.3",
+        "display" : "Thoracic root disorders, not elsewhere classified"
+      },
+      {
+        "code" : "G54.4",
+        "display" : "Lumbosacral root disorders, not elsewhere classified"
+      },
+      {
+        "code" : "G54.5",
+        "display" : "Neuralgic amyotrophy"
+      },
+      {
+        "code" : "G54.6",
+        "display" : "Phantom limb syndrome with pain"
+      },
+      {
+        "code" : "G54.7",
+        "display" : "Phantom limb syndrome without pain"
+      },
+      {
+        "code" : "G54.8",
+        "display" : "Other nerve root and plexus disorders"
+      },
+      {
+        "code" : "G54.9",
+        "display" : "Nerve root and plexus disorder, unspecified"
+      },
+      {
+        "code" : "G56.00",
+        "display" : "Carpal tunnel syndrome, unspecified upper limb"
+      },
+      {
+        "code" : "G56.01",
+        "display" : "Carpal tunnel syndrome, right upper limb"
+      },
+      {
+        "code" : "G56.02",
+        "display" : "Carpal tunnel syndrome, left upper limb"
+      },
+      {
+        "code" : "G56.20",
+        "display" : "Lesion of ulnar nerve, unspecified upper limb"
+      },
+      {
+        "code" : "G56.21",
+        "display" : "Lesion of ulnar nerve, right upper limb"
+      },
+      {
+        "code" : "G56.22",
+        "display" : "Lesion of ulnar nerve, left upper limb"
+      },
+      {
+        "code" : "G56.30",
+        "display" : "Lesion of radial nerve, unspecified upper limb"
+      },
+      {
+        "code" : "G56.31",
+        "display" : "Lesion of radial nerve, right upper limb"
+      },
+      {
+        "code" : "G56.32",
+        "display" : "Lesion of radial nerve, left upper limb"
+      },
+      {
+        "code" : "G57.00",
+        "display" : "Lesion of sciatic nerve, unspecified lower limb"
+      },
+      {
+        "code" : "G57.01",
+        "display" : "Lesion of sciatic nerve, right lower limb"
+      },
+      {
+        "code" : "G57.02",
+        "display" : "Lesion of sciatic nerve, left lower limb"
+      },
+      {
+        "code" : "G57.10",
+        "display" : "Meralgia paresthetica, unspecified lower limb"
+      },
+      {
+        "code" : "G57.11",
+        "display" : "Meralgia paresthetica, right lower limb"
+      },
+      {
+        "code" : "G57.12",
+        "display" : "Meralgia paresthetica, left lower limb"
+      },
+      {
+        "code" : "G57.40",
+        "display" : "Lesion of medial popliteal nerve, unspecified lower limb"
+      },
+      {
+        "code" : "G57.41",
+        "display" : "Lesion of medial popliteal nerve, right lower limb"
+      },
+      {
+        "code" : "G57.42",
+        "display" : "Lesion of medial popliteal nerve, left lower limb"
+      }]
+    }],
+    "exclude" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept" : [{
+        "code" : "M15"
+      },
+      {
+        "code" : "M16"
+      },
+      {
+        "code" : "M16.1"
+      },
+      {
+        "code" : "M16.3"
+      },
+      {
+        "code" : "M16.5"
+      },
+      {
+        "code" : "M17"
+      },
+      {
+        "code" : "M17.1"
+      },
+      {
+        "code" : "M17.3"
+      },
+      {
+        "code" : "M18"
+      },
+      {
+        "code" : "M18.1"
+      },
+      {
+        "code" : "M18.3"
+      },
+      {
+        "code" : "M18.5"
+      },
+      {
+        "code" : "M19"
+      },
+      {
+        "code" : "M19.0"
+      },
+      {
+        "code" : "M19.01"
+      },
+      {
+        "code" : "M19.02"
+      },
+      {
+        "code" : "M19.03"
+      },
+      {
+        "code" : "M19.04"
+      },
+      {
+        "code" : "M19.07"
+      },
+      {
+        "code" : "M19.1"
+      },
+      {
+        "code" : "M19.11"
+      },
+      {
+        "code" : "M19.12"
+      },
+      {
+        "code" : "M19.13"
+      },
+      {
+        "code" : "M19.14"
+      },
+      {
+        "code" : "M19.17"
+      },
+      {
+        "code" : "M19.2"
+      },
+      {
+        "code" : "M19.21"
+      },
+      {
+        "code" : "M19.22"
+      },
+      {
+        "code" : "M19.23"
+      },
+      {
+        "code" : "M19.24"
+      },
+      {
+        "code" : "M19.27"
+      },
+      {
+        "code" : "M19.9"
+      }]
+    }]
+  }
+}

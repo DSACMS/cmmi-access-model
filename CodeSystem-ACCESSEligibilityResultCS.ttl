@@ -1,0 +1,87 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "ACCESSEligibilityResultCS"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSEligibilityResultCS</b></p><a name=\"ACCESSEligibilityResultCS\"> </a><a name=\"hcACCESSEligibilityResultCS\"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">eligible<a name=\"ACCESSEligibilityResultCS-eligible\"> </a></td><td>Eligible</td><td>Patient is eligible for services under the model. This response does not mean the patient has been aligned. It simply means the patient is eligible to be aligned.</td></tr><tr><td style=\"white-space:nowrap\">eligible-pending-diagnosis<a name=\"ACCESSEligibilityResultCS-eligible-pending-diagnosis\"> </a></td><td>Eligible pending diagnosis</td><td>Patient is provisionally eligible for services under the model depending on the diagnosis.</td></tr><tr><td style=\"white-space:nowrap\">eligible-switch-participants<a name=\"ACCESSEligibilityResultCS-eligible-switch-participants\"> </a></td><td>Eligible to switch participants.</td><td>Patient is eligible to switch participants.</td></tr><tr><td style=\"white-space:nowrap\">not-eligible-not-medicare<a name=\"ACCESSEligibilityResultCS-not-eligible-not-medicare\"> </a></td><td>Not eligible - not receiving Medicare</td><td>The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-eligible-services<a name=\"ACCESSEligibilityResultCS-not-eligible-services\"> </a></td><td>Not eligible - receiving services that prevent eligibility</td><td>The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-eligible-diagnoses<a name=\"ACCESSEligibilityResultCS-not-eligible-diagnoses\"> </a></td><td>Not eligible - no qualifying diagnosis</td><td>The patient does not have a treating diagnosis that qualifies them for services in the track indicated and therefore cannot get services under the ACCESS Model.</td></tr><tr><td style=\"white-space:nowrap\">not-eligible-control-group<a name=\"ACCESSEligibilityResultCS-not-eligible-control-group\"> </a></td><td>Not eligible - assigned to Control Group</td><td>The patient is technically eligible for the ACCESS Model, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months.</td></tr><tr><td style=\"white-space:nowrap\">not-eligible-already-aligned<a name=\"ACCESSEligibilityResultCS-not-eligible-already-aligned\"> </a></td><td>Not eligible - already aligned to another participant in the track</td><td>The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track.</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"^^xsd:anyURI ;
+     fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS>
+  ] ; # 
+  fhir:version [ fhir:v "0.7.0"] ; # 
+  fhir:name [ fhir:v "ACCESSEligibilityResultCS"] ; # 
+  fhir:title [ fhir:v "ACCESS Eligibility Result Codes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v false] ; # 
+  fhir:date [ fhir:v "2026-02-26T23:16:42-05:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "Global Alliant, Inc." ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "https://globalalliantinc.com" ]
+     ] [
+       fhir:system [ fhir:v "email" ] ;
+       fhir:value [ fhir:v "david.h@globalalliantinc.org" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "This codesystem defines codes indicating the result of an eligibility check."] ; # 
+  fhir:jurisdiction ( [
+     fhir:coding ( [
+       fhir:system [
+         fhir:v "urn:iso:std:iso:3166"^^xsd:anyURI ;
+         fhir:l <urn:iso:std:iso:3166>
+       ] ;
+       fhir:code [ fhir:v "US" ] ;
+       fhir:display [ fhir:v "United States of America" ]
+     ] )
+  ] ) ; # 
+  fhir:copyright [ fhir:v "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "8"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "eligible" ] ;
+     fhir:display [ fhir:v "Eligible" ] ;
+     fhir:definition [ fhir:v "Patient is eligible for services under the model. This response does not mean the patient has been aligned. It simply means the patient is eligible to be aligned." ]
+  ] [
+     fhir:code [ fhir:v "eligible-pending-diagnosis" ] ;
+     fhir:display [ fhir:v "Eligible pending diagnosis" ] ;
+     fhir:definition [ fhir:v "Patient is provisionally eligible for services under the model depending on the diagnosis." ]
+  ] [
+     fhir:code [ fhir:v "eligible-switch-participants" ] ;
+     fhir:display [ fhir:v "Eligible to switch participants." ] ;
+     fhir:definition [ fhir:v "Patient is eligible to switch participants." ]
+  ] [
+     fhir:code [ fhir:v "not-eligible-not-medicare" ] ;
+     fhir:display [ fhir:v "Not eligible - not receiving Medicare" ] ;
+     fhir:definition [ fhir:v "The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-eligible-services" ] ;
+     fhir:display [ fhir:v "Not eligible - receiving services that prevent eligibility" ] ;
+     fhir:definition [ fhir:v "The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-eligible-diagnoses" ] ;
+     fhir:display [ fhir:v "Not eligible - no qualifying diagnosis" ] ;
+     fhir:definition [ fhir:v "The patient does not have a treating diagnosis that qualifies them for services in the track indicated and therefore cannot get services under the ACCESS Model." ]
+  ] [
+     fhir:code [ fhir:v "not-eligible-control-group" ] ;
+     fhir:display [ fhir:v "Not eligible - assigned to Control Group" ] ;
+     fhir:definition [ fhir:v "The patient is technically eligible for the ACCESS Model, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months." ]
+  ] [
+     fhir:code [ fhir:v "not-eligible-already-aligned" ] ;
+     fhir:display [ fhir:v "Not eligible - already aligned to another participant in the track" ] ;
+     fhir:definition [ fhir:v "The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track." ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

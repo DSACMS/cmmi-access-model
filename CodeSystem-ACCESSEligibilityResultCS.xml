@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSEligibilityResultCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSEligibilityResultCS</b></p><a name="ACCESSEligibilityResultCS"> </a><a name="hcACCESSEligibilityResultCS"> </a><p>This case-sensitive code system <code>https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">eligible<a name="ACCESSEligibilityResultCS-eligible"> </a></td><td>Eligible</td><td>Patient is eligible for services under the model. This response does not mean the patient has been aligned. It simply means the patient is eligible to be aligned.</td></tr><tr><td style="white-space:nowrap">eligible-pending-diagnosis<a name="ACCESSEligibilityResultCS-eligible-pending-diagnosis"> </a></td><td>Eligible pending diagnosis</td><td>Patient is provisionally eligible for services under the model depending on the diagnosis.</td></tr><tr><td style="white-space:nowrap">eligible-switch-participants<a name="ACCESSEligibilityResultCS-eligible-switch-participants"> </a></td><td>Eligible to switch participants.</td><td>Patient is eligible to switch participants.</td></tr><tr><td style="white-space:nowrap">not-eligible-not-medicare<a name="ACCESSEligibilityResultCS-not-eligible-not-medicare"> </a></td><td>Not eligible - not receiving Medicare</td><td>The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">not-eligible-services<a name="ACCESSEligibilityResultCS-not-eligible-services"> </a></td><td>Not eligible - receiving services that prevent eligibility</td><td>The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">not-eligible-diagnoses<a name="ACCESSEligibilityResultCS-not-eligible-diagnoses"> </a></td><td>Not eligible - no qualifying diagnosis</td><td>The patient does not have a treating diagnosis that qualifies them for services in the track indicated and therefore cannot get services under the ACCESS Model.</td></tr><tr><td style="white-space:nowrap">not-eligible-control-group<a name="ACCESSEligibilityResultCS-not-eligible-control-group"> </a></td><td>Not eligible - assigned to Control Group</td><td>The patient is technically eligible for the ACCESS Model, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months.</td></tr><tr><td style="white-space:nowrap">not-eligible-already-aligned<a name="ACCESSEligibilityResultCS-not-eligible-already-aligned"> </a></td><td>Not eligible - already aligned to another participant in the track</td><td>The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track.</td></tr></table></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"/>
+  <version value="0.7.0"/>
+  <name value="ACCESSEligibilityResultCS"/>
+  <title value="ACCESS Eligibility Result Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines codes indicating the result of an eligibility check."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="8"/>
+  <concept>
+    <code value="eligible"/>
+    <display value="Eligible"/>
+    <definition value="Patient is eligible for services under the model. This response does not mean the patient has been aligned. It simply means the patient is eligible to be aligned."/>
+  </concept>
+  <concept>
+    <code value="eligible-pending-diagnosis"/>
+    <display value="Eligible pending diagnosis"/>
+    <definition value="Patient is provisionally eligible for services under the model depending on the diagnosis."/>
+  </concept>
+  <concept>
+    <code value="eligible-switch-participants"/>
+    <display value="Eligible to switch participants."/>
+    <definition value="Patient is eligible to switch participants."/>
+  </concept>
+  <concept>
+    <code value="not-eligible-not-medicare"/>
+    <display value="Not eligible - not receiving Medicare"/>
+    <definition value="The patient either is not enrolled in Medicare Part A and Part B or dual eligible for Medicare and Medicaid, or they do not have Medicare as their primary insurance, so they are not eligible for services under the ACCESS Model."/>
+  </concept>
+  <concept>
+    <code value="not-eligible-services"/>
+    <display value="Not eligible - receiving services that prevent eligibility"/>
+    <definition value="The patient is receiving services (such as hospice, end stage renal disease (ESRD), etc.) making them ineligible to be part of the ACCESS Model."/>
+  </concept>
+  <concept>
+    <code value="not-eligible-diagnoses"/>
+    <display value="Not eligible - no qualifying diagnosis"/>
+    <definition value="The patient does not have a treating diagnosis that qualifies them for services in the track indicated and therefore cannot get services under the ACCESS Model."/>
+  </concept>
+  <concept>
+    <code value="not-eligible-control-group"/>
+    <display value="Not eligible - assigned to Control Group"/>
+    <definition value="The patient is technically eligible for the ACCESS Model, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months."/>
+  </concept>
+  <concept>
+    <code value="not-eligible-already-aligned"/>
+    <display value="Not eligible - already aligned to another participant in the track"/>
+    <definition value="The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track."/>
+  </concept>
+</CodeSystem>

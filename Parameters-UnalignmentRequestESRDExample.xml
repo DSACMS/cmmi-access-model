@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="UnalignmentRequestESRDExample"/>
+  <meta>
+    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in"/>
+  </meta>
+  <parameter>
+    <name value="participantID"/>
+    <valueIdentifier>
+      <system value="https://globalalliantinc.com/access/participant-id"/>
+      <value value="ACCESS1234"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="payerID"/>
+    <valueIdentifier>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+          <code value="payerid"/>
+          <display value="Payer ID"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.840.1.113883.3.221.5"/>
+      <value value="12345"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="patient"/>
+    <resource>
+      <Patient>
+        <id value="PatientESRDExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient Jane Smith, female, born 1955-06-15, Medicare ID: 9876543210B</div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MC"/>
+            </coding>
+          </type>
+          <system value="http://terminology.hl7.org/NamingSystem/cmsMBI"/>
+          <value value="9876543210B"/>
+        </identifier>
+        <name>
+          <family value="Smith"/>
+          <given value="Jane"/>
+        </name>
+        <gender value="female"/>
+        <birthDate value="1955-06-15"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="track"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+        <code value="CKM"/>
+        <display value="Cardio-kidney-metabolic track"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="reason"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"/>
+        <code value="no-longer-clinically-eligible"/>
+        <display value="No longer clinically eligible"/>
+      </coding>
+      <text value="Patient has developed end-stage renal disease (ESRD) requiring dialysis, which makes them ineligible for the ACCESS Model."/>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="conditions"/>
+    <resource>
+      <Condition>
+        <id value="ESRDConditionExample"/>
+        <meta>
+          <profile value="https://globalalliantinc.com/access/StructureDefinition/access-condition"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">End stage renal disease (ESRD)</div>
+        </text>
+        <clinicalStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-clinical"/>
+            <code value="active"/>
+            <display value="Active"/>
+          </coding>
+        </clinicalStatus>
+        <verificationStatus>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-ver-status"/>
+            <code value="confirmed"/>
+            <display value="Confirmed"/>
+          </coding>
+        </verificationStatus>
+        <category>
+          <coding>
+            <system value="http://terminology.hl7.org/CodeSystem/condition-category"/>
+            <code value="problem-list-item"/>
+            <display value="Problem List Item"/>
+          </coding>
+        </category>
+        <code>
+          <coding>
+            <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+            <code value="N18.6"/>
+            <display value="End stage renal disease"/>
+          </coding>
+        </code>
+        <subject>
+          <reference value="Patient/PatientESRDExample"/>
+        </subject>
+        <onsetDateTime value="2026-01-15"/>
+      </Condition>
+    </resource>
+  </parameter>
+</Parameters>

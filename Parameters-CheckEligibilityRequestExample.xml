@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="CheckEligibilityRequestExample"/>
+  <meta>
+    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in"/>
+  </meta>
+  <parameter>
+    <name value="participantID"/>
+    <valueIdentifier>
+      <system value="https://globalalliantinc.com/access/participant-id"/>
+      <value value="ACCESS1234"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="payerID"/>
+    <valueIdentifier>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+          <code value="payerid"/>
+          <display value="Payer ID"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.840.1.113883.3.221.5"/>
+      <value value="12345"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="patient"/>
+    <resource>
+      <Patient>
+        <id value="PatientExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"/>
+        </meta>
+        <text>
+          <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MC"/>
+            </coding>
+          </type>
+          <system value="http://terminology.hl7.org/NamingSystem/cmsMBI"/>
+          <value value="1EG4TE5MK73"/>
+        </identifier>
+        <name>
+          <family value="Doe"/>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1950-01-01"/>
+      </Patient>
+    </resource>
+  </parameter>
+  <parameter>
+    <name value="track"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+        <code value="CKM"/>
+        <display value="Cardio-kidney-metabolic track"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

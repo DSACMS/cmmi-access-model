@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ACCESSAlignmentResultVS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSAlignmentResultVS</b></p><a name="ACCESSAlignmentResultVS"> </a><a name="hcACCESSAlignmentResultVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSAlignmentResultCS.html"><code>https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS</code></a><span title="Version is explicitly stated to be 0.7.0"> version &#x1F4CD;0.7.0</span></li></ul></div>
+  </text>
+  <url value="https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS"/>
+  <version value="0.7.0"/>
+  <name value="ACCESSAlignmentResultVS"/>
+  <title value="ACCESS Alignment Result Value Set"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-02-26T23:16:42-05:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set includes all codes from the ACCESS Alignment Result code system."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <compose>
+    <include>
+      <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"/>
+      <version value="0.7.0"/>
+    </include>
+  </compose>
+</ValueSet>

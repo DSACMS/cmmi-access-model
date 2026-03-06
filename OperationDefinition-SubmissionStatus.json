@@ -1,0 +1,48 @@
+{
+  "resourceType" : "OperationDefinition",
+  "id" : "SubmissionStatus",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition SubmissionStatus</b></p><a name=\"SubmissionStatus\"> </a><a name=\"hcSubmissionStatus\"> </a><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>OUT</td><td>result</td><td/><td>0..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>The result of the asynchronous operation. The specific codes returned depend on the original operation type: <a href=\"ValueSet-ACCESSEligibilityResultVS.html\">ACCESSEligibilityResultVS</a> for $check-eligibility submissions, <a href=\"ValueSet-ACCESSAlignmentResultVS.html\">ACCESSAlignmentResultVS</a> for $align submissions, and <a href=\"ValueSet-ACCESSUnalignmentResultVS.html\">ACCESSUnalignmentResultVS</a> for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.</p>\n</div></td></tr></table><div><p>The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345</p>\n</div></div>"
+  },
+  "url" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus",
+  "version" : "0.7.0",
+  "name" : "SubmissionStatus",
+  "title" : "Submission Status",
+  "status" : "active",
+  "kind" : "operation",
+  "date" : "2026-02-26T23:16:42-05:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "The **$submission-status** operation allows the client to check the status of any asynchronous ACCESS operation submission. This is a shared operation used by all ACCESS APIs. The specific result codes returned depend on which operation created the submission: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "code" : "submission-status",
+  "comment" : "The submissionID of the original request is provided in the $submission-status URL: GET https://[base]/access/Patient/$submission-status/sub-12345",
+  "system" : false,
+  "type" : true,
+  "instance" : false,
+  "parameter" : [{
+    "name" : "result",
+    "use" : "out",
+    "min" : 0,
+    "max" : "1",
+    "documentation" : "The result of the asynchronous operation. The specific codes returned depend on the original operation type: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility submissions, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align submissions, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign submissions. When processing is complete (HTTP 200), this parameter contains the result code and descriptive text. When still processing (HTTP 202), no body is returned.",
+    "type" : "CodeableConcept"
+  }]
+}

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="UnalignmentResponseUnalignedExample"/>
+  <meta>
+    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"/>
+  </meta>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"/>
+        <code value="unaligned"/>
+        <display value="Unaligned"/>
+      </coding>
+      <text value="The request to manually unalign the patient has been successfully accepted and the patient has been successfully unaligned."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "UnalignmentResponseUnalignedExample",
+  "meta" : {
+    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"]
+  },
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
+        "code" : "unaligned",
+        "display" : "Unaligned"
+      }],
+      "text" : "The request to manually unalign the patient has been successfully accepted and the patient has been successfully unaligned."
+    }
+  }]
+}
