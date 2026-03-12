@@ -54,7 +54,7 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
-  "implementationGuide" : ["https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"],
+  "implementationGuide" : ["https://dsacms.github.io/cmmi-access-model/"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "The ACCESS Eligibility API supports checking patient eligibility for the ACCESS Model.",

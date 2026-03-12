@@ -54,7 +54,7 @@ Describes the expected capabilities of systems implementing the ACCESS Unalignme
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
-  "implementationGuide" : ["https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"],
+  "implementationGuide" : ["https://dsacms.github.io/cmmi-access-model/"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "The ACCESS Unalignment API supports the voluntary removal of patient alignments from ACCESS participants and tracks.",
