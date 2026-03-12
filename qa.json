@@ -1,5 +1,5 @@
 {
-  "url" : "https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access",
+  "url" : "https://dsacms.github.io/cmmi-access-model/",
   "name" : "CMSAccessAPI",
   "title" : "CMS ACCESS Model API",
   "description" : "Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting",

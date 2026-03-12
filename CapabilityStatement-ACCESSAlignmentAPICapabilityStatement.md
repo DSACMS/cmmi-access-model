@@ -54,7 +54,7 @@ Describes the expected capabilities of systems implementing the ACCESS Alignment
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
-  "implementationGuide" : ["https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"],
+  "implementationGuide" : ["https://dsacms.github.io/cmmi-access-model/"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "The ACCESS Alignment API supports aligning patients to ACCESS participants for specific tracks (eCKM, CKM, MSK, BH).",

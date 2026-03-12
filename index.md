@@ -7,7 +7,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/ | *Version*:0.9.0 |
 | Draft as of 2026-03-06 | *Computable Name*:CMSAccessAPI |
 
 ### Overview
@@ -232,7 +232,7 @@ This publication includes IP covered under the following statements.
   "resourceType" : "ImplementationGuide",
   "id" : "cms.fhir.us.access",
   "language" : "en-US",
-  "url" : "https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access",
+  "url" : "https://dsacms.github.io/cmmi-access-model/",
   "version" : "0.9.0",
   "name" : "CMSAccessAPI",
   "title" : "CMS ACCESS Model API",

@@ -4,10 +4,10 @@
   <id value="cms.fhir.us.access"/>
   <language value="en-US"/>
   <text>
-    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name="cms.fhir.us.access"> </a><a name="hccms.fhir.us.access"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>
+    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name="cms.fhir.us.access"> </a><a name="hccms.fhir.us.access"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://dsacms.github.io/cmmi-access-model/</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>
 </div></div>
   </text>
-  <url value="https://globalalliantinc.com/access/ImplementationGuide/cms.fhir.us.access"/>
+  <url value="https://dsacms.github.io/cmmi-access-model/"/>
   <version value="0.9.0"/>
   <name value="CMSAccessAPI"/>
   <title value="CMS ACCESS Model API"/>
