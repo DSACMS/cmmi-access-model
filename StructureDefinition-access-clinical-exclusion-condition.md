@@ -1,4 +1,4 @@
-# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.0
+# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition | *Version*:0.9.1 |
 | Active as of 2026-02-13 | *Computable Name*:ACCESSClinicalExclusionCondition |
 
  
@@ -37,8 +37,8 @@ Other representations of profile: [CSV](StructureDefinition-access-clinical-excl
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-clinical-exclusion-condition",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition",
+  "version" : "0.9.1",
   "name" : "ACCESSClinicalExclusionCondition",
   "title" : "ACCESS Clinical Exclusion Condition",
   "status" : "active",
@@ -97,7 +97,7 @@ Other representations of profile: [CSV](StructureDefinition-access-clinical-excl
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

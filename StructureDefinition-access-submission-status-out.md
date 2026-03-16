@@ -1,4 +1,4 @@
-# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.0
+# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSSubmissionStatusResponseParameters |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSSubmissionStatusResponseParameters |
 
  
 This is the profile for the $submission-status operation output parameters (generic for all APIs). When the result indicates a validation error, the optional 'issues' parameter MAY contain an OperationOutcome resource with detailed validation error information to help implementers understand and correct the submission. 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-access-submission-st
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-submission-status-out",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out",
+  "version" : "0.9.1",
   "name" : "ACCESSSubmissionStatusResponseParameters",
   "title" : "ACCESS Submission Status Response Parameters",
   "status" : "draft",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

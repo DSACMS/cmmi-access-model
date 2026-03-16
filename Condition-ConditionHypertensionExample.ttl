@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Condition/ConditionHypertensionExample> a fhir:Condition ;
+<https://dsacms.github.io/cmmi-access-model/Condition/ConditionHypertensionExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ConditionHypertensionExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition>
      ] )
   ] ; # 
   fhir:text [
@@ -57,7 +57,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://globalalliantinc.com/access/Patient/PatientExample> ;
+     fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientExample> ;
      fhir:reference [ fhir:v "Patient/PatientExample" ]
   ] ; # 
   fhir:onset [

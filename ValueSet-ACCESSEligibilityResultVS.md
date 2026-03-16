@@ -1,4 +1,4 @@
-# ACCESS Eligibility Result Value Set - CMS ACCESS Model API v0.9.0
+# ACCESS Eligibility Result Value Set - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSEligibilityResultVS |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSEligibilityResultVS |
 | **Copyright/Legal**: Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS). | |
 
  
@@ -46,13 +46,13 @@ This value set includes all codes from the ACCESS Eligibility Result code system
 {
   "resourceType" : "ValueSet",
   "id" : "ACCESSEligibilityResultVS",
-  "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS",
+  "version" : "0.9.1",
   "name" : "ACCESSEligibilityResultVS",
   "title" : "ACCESS Eligibility Result Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -76,8 +76,8 @@ This value set includes all codes from the ACCESS Eligibility Result code system
   "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
   "compose" : {
     "include" : [{
-      "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-      "version" : "0.9.0"
+      "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
+      "version" : "0.9.1"
     }]
   }
 }

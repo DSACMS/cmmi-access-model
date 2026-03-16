@@ -1,4 +1,4 @@
-# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.0
+# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -15,12 +15,12 @@
   "resourceType" : "Parameters",
   "id" : "AlignmentRequestWithSwitchConsentExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-align-in"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"]
   },
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {
-      "system" : "https://globalalliantinc.com/access/participant-id",
+      "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
       "value" : "ACCESS1234"
     }
   },
@@ -72,7 +72,7 @@
     "name" : "track",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
         "code" : "CKM",
         "display" : "Cardio-kidney-metabolic track"
       }]
@@ -84,7 +84,7 @@
       "resourceType" : "Condition",
       "id" : "ConditionDiabetesExample",
       "meta" : {
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"]
       },
       "text" : {
         "status" : "generated",
@@ -122,14 +122,8 @@
     }
   },
   {
-    "name" : "referralType",
-    "valueCodeableConcept" : {
-      "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
-        "code" : "patient-self-referral",
-        "display" : "Patient self-referral"
-      }]
-    }
+    "name" : "isProviderReferral",
+    "valueBoolean" : false
   },
   {
     "name" : "switchConsentAttestation",

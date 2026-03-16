@@ -4,15 +4,15 @@
   <id value="cms.fhir.us.access"/>
   <language value="en-US"/>
   <text>
-    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name="cms.fhir.us.access"> </a><a name="hccms.fhir.us.access"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://dsacms.github.io/cmmi-access-model/</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>
+    <status value="generated"/><div xml:lang="en-US" xmlns="http://www.w3.org/1999/xhtml" lang="en-US"><p class="res-header-id"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name="cms.fhir.us.access"> </a><a name="hccms.fhir.us.access"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>
 </div></div>
   </text>
-  <url value="https://dsacms.github.io/cmmi-access-model/"/>
-  <version value="0.9.0"/>
+  <url value="https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access"/>
+  <version value="0.9.1"/>
   <name value="CMSAccessAPI"/>
   <title value="CMS ACCESS Model API"/>
   <status value="draft"/>
-  <date value="2026-03-06T16:03:26-05:00"/>
+  <date value="2026-03-12T23:55:37-07:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -42,7 +42,7 @@
     </extension>
     <uri value="http://terminology.hl7.org/ImplementationGuide/hl7.terminology"/>
     <packageId value="hl7.terminology.r4"/>
-    <version value="7.0.1"/>
+    <version value="7.1.0"/>
   </dependsOn>
   <dependsOn id="hl7ext">
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment">
@@ -164,7 +164,7 @@
         <valueString value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://globalalliantinc.com/access/history.html"/>
+        <valueString value="https://dsacms.github.io/cmmi-access-model/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -391,7 +391,7 @@
         <valueCode value="path-history"/>
       </extension>
       <extension url="value">
-        <valueString value="https://globalalliantinc.com/access/history.html"/>
+        <valueString value="https://dsacms.github.io/cmmi-access-model/history.html"/>
       </extension>
     </extension>
     <extension url="http://hl7.org/fhir/tools/StructureDefinition/ig-parameter">
@@ -810,28 +810,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="CodeSystem"/>
-      </extension>
-      <reference>
-        <reference value="CodeSystem/ACCESSReferralTypeCS"/>
-      </reference>
-      <name value="ACCESS Referral Type"/>
-      <description value="This codesystem defines codes that indicate how the patient was referred to the ACCESS Model."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ValueSet"/>
-      </extension>
-      <reference>
-        <reference value="ValueSet/ACCESSReferralTypeVS"/>
-      </reference>
-      <name value="ACCESS Referral Type Value Set"/>
-      <description value="This value set includes all codes from the ACCESS Referral Type code system."/>
-      <exampleBoolean value="false"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="StructureDefinition:resource"/>
       </extension>
       <reference>
@@ -946,7 +924,7 @@
       </reference>
       <name value="Alignment Request Example"/>
       <description value="Example of parameters for aligning a patient to the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -957,7 +935,7 @@
       </reference>
       <name value="Alignment Request with Switch Consent Example"/>
       <description value="Example of parameters for aligning a patient with switch consent attestation"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -968,7 +946,7 @@
       </reference>
       <name value="Alignment Response - Aligned Example"/>
       <description value="Example response indicating successful patient alignment"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -979,7 +957,7 @@
       </reference>
       <name value="Alignment Response - Switch Approved Example"/>
       <description value="Example response indicating successful provider switch"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1002,7 +980,7 @@
       </reference>
       <name value="Check Eligibility Request Example"/>
       <description value="Example of parameters for checking patient eligibility for the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1013,7 +991,7 @@
       </reference>
       <name value="Check Eligibility Response - Eligible Example"/>
       <description value="Example response indicating patient is eligible for the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1024,7 +1002,7 @@
       </reference>
       <name value="Condition Example - Essential Hypertension"/>
       <description value="Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1035,7 +1013,7 @@
       </reference>
       <name value="Condition Example - Major Depressive Disorder"/>
       <description value="Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1046,7 +1024,7 @@
       </reference>
       <name value="Condition Example - Osteoarthritis"/>
       <description value="Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1057,7 +1035,7 @@
       </reference>
       <name value="Condition Example - Type 2 Diabetes"/>
       <description value="Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1068,7 +1046,7 @@
       </reference>
       <name value="End Stage Renal Disease Condition Example"/>
       <description value="Active ESRD diagnosis that disqualifies patient from ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.1"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1137,7 +1115,7 @@
       </reference>
       <name value="Submission Status Response Example"/>
       <description value="Example response for submission status check"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.1"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1160,7 +1138,7 @@
       </reference>
       <name value="Unalignment Request - ESRD Example"/>
       <description value="Example of unalignment request for patient who developed ESRD (no longer clinically eligible)"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1172,7 +1150,7 @@
       </reference>
       <name value="Unalignment Request Example"/>
       <description value="Example of parameters for unaligning a patient from the ACCESS Model"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1184,7 +1162,7 @@
       </reference>
       <name value="Unalignment Response - Unaligned Example"/>
       <description value="Example response indicating successful patient unalignment"/>
-      <exampleCanonical value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.9.0"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.1"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <page>

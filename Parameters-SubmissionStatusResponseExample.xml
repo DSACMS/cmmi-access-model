@@ -3,13 +3,13 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="SubmissionStatusResponseExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out"/>
   </meta>
   <parameter>
     <name value="result"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS"/>
         <code value="eligible"/>
         <display value="Eligible"/>
       </coding>

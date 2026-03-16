@@ -1,4 +1,4 @@
-# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.0
+# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -15,13 +15,13 @@
   "resourceType" : "Parameters",
   "id" : "AlignmentResponseSwitchApprovedExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-align-out"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"]
   },
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
         "code" : "aligned-switch-approved",
         "display" : "Aligned and switch approved"
       }],

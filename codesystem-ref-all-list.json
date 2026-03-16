@@ -9,10 +9,10 @@
     "oids" : ["2.16.840.1.113883.6.90"],
     "uses" : {
     },
-    "ValueSet-ACCESSCKMDiagnosisVS.html" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
     "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
     "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSCKMDiagnosisVS.html" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSMSKDiagnosisVS.html" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses"
   },
   {
@@ -60,11 +60,11 @@
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
-    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
+    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
     "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+    "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
     "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
-    "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures"
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -104,8 +104,8 @@
     "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultCS",
     "title" : "ACCESS Alignment Request Result Codes",
@@ -115,8 +115,8 @@
     "ValueSet-ACCESSAlignmentResultVS.html" : "ACCESS Alignment Result Value Set"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultCS",
     "title" : "ACCESS Eligibility Result Codes",
@@ -126,8 +126,8 @@
     "ValueSet-ACCESSEligibilityResultVS.html" : "ACCESS Eligibility Result Value Set"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSEventTypeCS",
     "title" : "ACCESS Event Types",
@@ -137,19 +137,8 @@
     "ValueSet-ACCESSEventTypeVS.html" : "ACCESS Event Types Value Set"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS",
-    "version" : "0.9.0",
-    "status" : "draft",
-    "name" : "ACCESSReferralTypeCS",
-    "title" : "ACCESS Referral Type",
-    "description" : "This codesystem defines codes that indicate how the patient was referred to the ACCESS Model.",
-    "uses" : {
-    },
-    "ValueSet-ACCESSReferralTypeVS.html" : "ACCESS Referral Type Value Set"
-  },
-  {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSTrackCS",
     "title" : "ACCESS Model Tracks",
@@ -159,8 +148,8 @@
     "ValueSet-ACCESSTrackVS.html" : "ACCESS Model Tracks Value Set"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonCS",
     "title" : "ACCESS Unalignment Reason Codes",
@@ -170,8 +159,8 @@
     "ValueSet-ACCESSUnalignmentReasonVS.html" : "ACCESS Unalignment Reason Value Set"
   },
   {
-    "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultCS",
     "title" : "ACCESS Unalignment Request Result Codes",

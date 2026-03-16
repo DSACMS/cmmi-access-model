@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/CheckEligibilityRequestExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/CheckEligibilityRequestExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CheckEligibilityRequestExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -20,8 +20,8 @@
      fhir:value [
        a fhir:Identifier ;
        fhir:system [
-         fhir:v "https://globalalliantinc.com/access/participant-id"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/participant-id>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/participant-id"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/participant-id>
        ] ;
        fhir:value [ fhir:v "ACCESS1234" ]
      ]
@@ -89,8 +89,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS>
          ] ;
          fhir:code [ fhir:v "CKM" ] ;
          fhir:display [ fhir:v "Cardio-kidney-metabolic track" ]

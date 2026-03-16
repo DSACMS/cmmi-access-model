@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/UnalignmentRequestESRDExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/UnalignmentRequestESRDExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "UnalignmentRequestESRDExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -20,8 +20,8 @@
      fhir:value [
        a fhir:Identifier ;
        fhir:system [
-         fhir:v "https://globalalliantinc.com/access/participant-id"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/participant-id>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/participant-id"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/participant-id>
        ] ;
        fhir:value [ fhir:v "ACCESS1234" ]
      ]
@@ -89,8 +89,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS>
          ] ;
          fhir:code [ fhir:v "CKM" ] ;
          fhir:display [ fhir:v "Cardio-kidney-metabolic track" ]
@@ -102,8 +102,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS>
          ] ;
          fhir:code [ fhir:v "no-longer-clinically-eligible" ] ;
          fhir:display [ fhir:v "No longer clinically eligible" ]
@@ -117,8 +117,8 @@
        fhir:id [ fhir:v "ESRDConditionExample" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition>
          ] )
        ] ;
        fhir:text [
@@ -166,7 +166,7 @@
          ] )
        ] ;
        fhir:subject [
-         fhir:l <https://globalalliantinc.com/access/Patient/PatientESRDExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientESRDExample> ;
          fhir:reference [ fhir:v "Patient/PatientESRDExample" ]
        ] ;
        fhir:onset [

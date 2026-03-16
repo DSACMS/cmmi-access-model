@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Condition/ConditionOsteoarthritisExample> a fhir:Condition ;
+<https://dsacms.github.io/cmmi-access-model/Condition/ConditionOsteoarthritisExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ConditionOsteoarthritisExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-msk-condition>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition>
      ] )
   ] ; # 
   fhir:text [
@@ -57,7 +57,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://globalalliantinc.com/access/Patient/PatientExample> ;
+     fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientExample> ;
      fhir:reference [ fhir:v "Patient/PatientExample" ]
   ] ; # 
   fhir:onset [

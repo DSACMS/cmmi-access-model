@@ -1,4 +1,4 @@
-# Condition Example - Osteoarthritis - CMS ACCESS Model API v0.9.0
+# Condition Example - Osteoarthritis - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -17,7 +17,7 @@ Unspecified osteoarthritis, unspecified site
   "resourceType" : "Condition",
   "id" : "ConditionOsteoarthritisExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-msk-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition"]
   },
   "clinicalStatus" : {
     "coding" : [{

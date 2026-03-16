@@ -1,4 +1,4 @@
-# Condition Example - Essential Hypertension - CMS ACCESS Model API v0.9.0
+# Condition Example - Essential Hypertension - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -17,7 +17,7 @@ Essential (primary) hypertension
   "resourceType" : "Condition",
   "id" : "ConditionHypertensionExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition"]
   },
   "clinicalStatus" : {
     "coding" : [{

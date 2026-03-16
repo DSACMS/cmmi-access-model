@@ -3,13 +3,13 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="UnalignmentResponseUnalignedExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out"/>
   </meta>
   <parameter>
     <name value="result"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS"/>
         <code value="unaligned"/>
         <display value="Unaligned"/>
       </coding>

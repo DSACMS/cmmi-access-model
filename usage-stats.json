@@ -1,43 +1,43 @@
 {
   "package": "cms.fhir.us.access",
-  "version": "0.9.0",
+  "version": "0.9.1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [],
   "profiles": {
     "Parameters": [
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out",
         "title": "ACCESS Submission Status Response Parameters"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in",
         "title": "ACCESS Unalignment Request Parameters"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out",
         "title": "ACCESS Unalignment Response Parameters"
       }
     ],
     "Condition": [
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition",
         "title": "ACCESS CKM Track Condition Profile"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition",
         "title": "ACCESS Clinical Exclusion Condition"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-condition",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition",
         "title": "ACCESS Condition Profile"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition",
         "title": "ACCESS eCKM Track Condition Profile"
       },
       {
-        "url": "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition",
+        "url": "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition",
         "title": "ACCESS MSK Track Condition Profile"
       }
     ]

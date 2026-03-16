@@ -1,4 +1,4 @@
-# Check Eligibility Request - CMS ACCESS Model API v0.9.0
+# Check Eligibility Request - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/CheckEligibility | *Version*:0.9.0 |
-| Active as of 2026-03-06 | *Computable Name*:CheckEligibility |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility | *Version*:0.9.1 |
+| Active as of 2026-03-12 | *Computable Name*:CheckEligibility |
 
  
 The **$check-eligibility** operation allows a participant to submit basic information on a patient who they believe will be a good candidate for the ACCESS model and who wants to be part of the ACCESS Model. The participant can use this API to do a quick check on which patients may be eligible before officially submitting the patient's information for consideration and inclusion in the ACCESS Model. 
@@ -22,13 +22,13 @@ The **$check-eligibility** operation allows a participant to submit basic inform
 {
   "resourceType" : "OperationDefinition",
   "id" : "CheckEligibility",
-  "url" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility",
+  "version" : "0.9.1",
   "name" : "CheckEligibility",
   "title" : "Check Eligibility Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ The **$check-eligibility** operation allows a participant to submit basic inform
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.1",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -88,7 +88,7 @@ The **$check-eligibility** operation allows a participant to submit basic inform
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.1"
     }
   },
   {

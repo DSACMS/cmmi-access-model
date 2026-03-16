@@ -3,12 +3,12 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="UnalignmentRequestESRDExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-unalign-in"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"/>
   </meta>
   <parameter>
     <name value="participantID"/>
     <valueIdentifier>
-      <system value="https://globalalliantinc.com/access/participant-id"/>
+      <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
       <value value="ACCESS1234"/>
     </valueIdentifier>
   </parameter>
@@ -60,7 +60,7 @@
     <name value="track"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
         <code value="CKM"/>
         <display value="Cardio-kidney-metabolic track"/>
       </coding>
@@ -70,7 +70,7 @@
     <name value="reason"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS"/>
         <code value="no-longer-clinically-eligible"/>
         <display value="No longer clinically eligible"/>
       </coding>
@@ -83,7 +83,7 @@
       <Condition>
         <id value="ESRDConditionExample"/>
         <meta>
-          <profile value="https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"/>
+          <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">End stage renal disease (ESRD)</div>

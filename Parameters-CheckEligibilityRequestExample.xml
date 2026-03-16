@@ -3,12 +3,12 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="CheckEligibilityRequestExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in"/>
   </meta>
   <parameter>
     <name value="participantID"/>
     <valueIdentifier>
-      <system value="https://globalalliantinc.com/access/participant-id"/>
+      <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
       <value value="ACCESS1234"/>
     </valueIdentifier>
   </parameter>
@@ -60,7 +60,7 @@
     <name value="track"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
         <code value="CKM"/>
         <display value="Cardio-kidney-metabolic track"/>
       </coding>

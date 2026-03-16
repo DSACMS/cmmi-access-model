@@ -3,13 +3,13 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="AlignmentResponseAlignedExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-align-out"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"/>
   </meta>
   <parameter>
     <name value="result"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"/>
         <code value="aligned"/>
         <display value="Aligned"/>
       </coding>

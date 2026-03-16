@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/CheckEligibilityResponseEligibleExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/CheckEligibilityResponseEligibleExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "CheckEligibilityResponseEligibleExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -21,8 +21,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS>
          ] ;
          fhir:code [ fhir:v "eligible" ] ;
          fhir:display [ fhir:v "Eligible" ]

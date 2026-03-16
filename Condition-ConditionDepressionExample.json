@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "ConditionDepressionExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-bh-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition"]
   },
   "text" : {
     "status" : "generated",

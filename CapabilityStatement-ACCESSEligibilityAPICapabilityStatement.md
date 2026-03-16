@@ -1,4 +1,4 @@
-# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.9.0
+# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement | *Version*:0.9.1 |
 | Active as of 2026-01-23 | *Computable Name*:ACCESSEligibilityAPICapabilityStatement |
 
  
@@ -24,8 +24,8 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
 {
   "resourceType" : "CapabilityStatement",
   "id" : "ACCESSEligibilityAPICapabilityStatement",
-  "url" : "https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement",
+  "version" : "0.9.1",
   "name" : "ACCESSEligibilityAPICapabilityStatement",
   "title" : "ACCESS Eligibility API Capability Statement",
   "status" : "active",
@@ -54,7 +54,7 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
   "kind" : "requirements",
   "fhirVersion" : "4.0.1",
   "format" : ["json", "xml"],
-  "implementationGuide" : ["https://dsacms.github.io/cmmi-access-model/"],
+  "implementationGuide" : ["https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access"],
   "rest" : [{
     "mode" : "server",
     "documentation" : "The ACCESS Eligibility API supports checking patient eligibility for the ACCESS Model.",
@@ -67,12 +67,12 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
       "documentation" : "Patient resource for ACCESS eligibility operations",
       "operation" : [{
         "name" : "check-eligibility",
-        "definition" : "https://globalalliantinc.com/access/OperationDefinition/CheckEligibility|0.9.0",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility|0.9.1",
         "documentation" : "Check if a patient is eligible for the ACCESS Model. Returns eligibility status from ACCESSEligibilityResultVS: eligible, not-eligible-not-medicare, not-eligible-services, not-eligible-diagnoses, not-eligible-control-group, or not-eligible-already-aligned. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."
       },
       {
         "name" : "submission-status",
-        "definition" : "https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus|0.9.0",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.1",
         "documentation" : "Poll the status of a previously submitted eligibility check request. Returns HTTP 202 while processing or HTTP 200 with result when complete."
       }]
     }]

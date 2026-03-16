@@ -1,4 +1,4 @@
-# Artifacts - CMS ACCESS Model API v0.9.0
+# Artifacts - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * **Artifacts**
@@ -159,7 +159,6 @@ These define sets of codes used by systems conforming to the ACCESS Alignment AP
 | | |
 | :--- | :--- |
 | [ACCESS Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
-| [ACCESS Referral Type Value Set](ValueSet-ACCESSReferralTypeVS.md) | Value set including all referral type codes indicating how patients were referred to the ACCESS Model |
 | [ACCESS Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
 
 #### Code Systems
@@ -169,7 +168,6 @@ These define new code systems used by systems conforming to the ACCESS Alignment
 | | |
 | :--- | :--- |
 | [ACCESS Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
-| [ACCESS Referral Type Code System](CodeSystem-ACCESSReferralTypeCS.md) | Codes indicating how a patient was referred to the ACCESS Model |
 | [ACCESS Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
 
 #### Examples

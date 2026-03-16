@@ -1,4 +1,4 @@
-# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.0
+# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSCheckEligibilityResponseParameters |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSCheckEligibilityResponseParameters |
 
  
 This is the profile for the `$check-eligibility` operation output parameters, which provide the results of the eligibility check. 
@@ -36,12 +36,12 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-check-eligibility-out",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out",
+  "version" : "0.9.1",
   "name" : "ACCESSCheckEligibilityResponseParameters",
   "title" : "ACCESS Check Eligibility Response Parameters",
   "status" : "draft",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -120,7 +120,7 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.1"
       }
     }]
   }

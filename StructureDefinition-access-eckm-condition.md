@@ -1,4 +1,4 @@
-# ACCESS eCKM Track Condition Profile - CMS ACCESS Model API v0.9.0
+# ACCESS eCKM Track Condition Profile - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition | *Version*:0.9.1 |
 | Active as of 2026-02-13 | *Computable Name*:ACCESSeCKMCondition |
 
  
@@ -38,8 +38,8 @@ Other representations of profile: [CSV](StructureDefinition-access-eckm-conditio
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-eckm-condition",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition",
+  "version" : "0.9.1",
   "name" : "ACCESSeCKMCondition",
   "title" : "ACCESS eCKM Track Condition Profile",
   "status" : "active",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-access-eckm-conditio
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-access-eckm-conditio
       "definition" : "Diagnosis code for eCKM track conditions. Values SHALL be from ACCESSeCKMDiagnosisVS (hypertension, dyslipidemia, prediabetes, obesity).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS|0.9.1"
       }
     }]
   }

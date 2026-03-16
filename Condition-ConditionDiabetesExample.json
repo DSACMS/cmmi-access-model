@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "ConditionDiabetesExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"]
   },
   "text" : {
     "status" : "generated",

@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/AlignmentResponseAlignedExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentResponseAlignedExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "AlignmentResponseAlignedExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -21,8 +21,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS>
          ] ;
          fhir:code [ fhir:v "aligned" ] ;
          fhir:display [ fhir:v "Aligned" ]

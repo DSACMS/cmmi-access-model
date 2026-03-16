@@ -1,4 +1,4 @@
-# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.9.0
+# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -17,7 +17,7 @@ Type 2 diabetes mellitus without complications
   "resourceType" : "Condition",
   "id" : "ConditionDiabetesExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"]
   },
   "clinicalStatus" : {
     "coding" : [{

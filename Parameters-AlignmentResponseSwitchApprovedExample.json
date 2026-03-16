@@ -2,13 +2,13 @@
   "resourceType" : "Parameters",
   "id" : "AlignmentResponseSwitchApprovedExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-align-out"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"]
   },
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
         "code" : "aligned-switch-approved",
         "display" : "Aligned and switch approved"
       }],

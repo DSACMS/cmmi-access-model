@@ -1,4 +1,4 @@
-# ACCESS Check Eligibility Request Parameters - CMS ACCESS Model API v0.9.0
+# ACCESS Check Eligibility Request Parameters - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSCheckEligibilityRequestParameters |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSCheckEligibilityRequestParameters |
 
  
 This profile defines the input parameters for the `$check-eligibility` operation, which is used to determine if a patient is eligible for a specific ACCESS Model track. 
@@ -44,12 +44,12 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-check-eligibility-in",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in",
+  "version" : "0.9.1",
   "name" : "ACCESSCheckEligibilityRequestParameters",
   "title" : "ACCESS Check Eligibility Request Parameters",
   "status" : "draft",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -135,7 +135,7 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)",
         "expression" : "value.matches('^ACCESS\\\\d{4}$')",
-        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.1"
       }],
       "mustSupport" : true
     },
@@ -240,7 +240,7 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.1"
       }
     },
     {
@@ -278,7 +278,7 @@ Other representations of profile: [CSV](StructureDefinition-access-check-eligibi
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1"]
       }],
       "mustSupport" : true
     }]

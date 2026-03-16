@@ -1,4 +1,4 @@
-# Unalignment Response - Unaligned Example - CMS ACCESS Model API v0.9.0
+# Unalignment Response - Unaligned Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -15,13 +15,13 @@
   "resourceType" : "Parameters",
   "id" : "UnalignmentResponseUnalignedExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out"]
   },
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS",
         "code" : "unaligned",
         "display" : "Unaligned"
       }],

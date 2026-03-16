@@ -1,4 +1,4 @@
-# Check Eligibility Request Example - CMS ACCESS Model API v0.9.0
+# Check Eligibility Request Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -15,12 +15,12 @@
   "resourceType" : "Parameters",
   "id" : "CheckEligibilityRequestExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in"]
   },
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {
-      "system" : "https://globalalliantinc.com/access/participant-id",
+      "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
       "value" : "ACCESS1234"
     }
   },
@@ -72,7 +72,7 @@
     "name" : "track",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
         "code" : "CKM",
         "display" : "Cardio-kidney-metabolic track"
       }]

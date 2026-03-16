@@ -6,23 +6,23 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://dsacms.github.io/cmmi-access-model/> a fhir:ImplementationGuide ;
+<https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access> a fhir:ImplementationGuide ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "cms.fhir.us.access"] ; # 
   fhir:language [ fhir:v "en-US"] ; # 
   fhir:text [
      fhir:status [ fhir:v "generated" ] ;
-     fhir:div [ fhir:v "<div xml:lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en-US\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name=\"cms.fhir.us.access\"> </a><a name=\"hccms.fhir.us.access\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://dsacms.github.io/cmmi-access-model/</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>\n</div></div>"^^rdf:XMLLiteral ]
+     fhir:div [ fhir:v "<div xml:lang=\"en-US\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en-US\"><p class=\"res-header-id\"><b>Generated Narrative: ImplementationGuide cms.fhir.us.access</b></p><a name=\"cms.fhir.us.access\"> </a><a name=\"hccms.fhir.us.access\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: en-US</p></div><h2>CMSAccessAPI</h2><p>The official URL for this implementation guide is: </p><pre>https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access</pre><div><p>Comprehensive Implementation Guide for all CMS ACCESS Model APIs including Eligibility, Alignment, Unalignment, and Data Reporting</p>\n</div></div>"^^rdf:XMLLiteral ]
   ] ; # 
   fhir:url [
-     fhir:v "https://dsacms.github.io/cmmi-access-model/"^^xsd:anyURI ;
-     fhir:l <https://dsacms.github.io/cmmi-access-model/>
+     fhir:v "https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access"^^xsd:anyURI ;
+     fhir:l <https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access>
   ] ; # 
-  fhir:version [ fhir:v "0.9.0"] ; # 
+  fhir:version [ fhir:v "0.9.1"] ; # 
   fhir:name [ fhir:v "CMSAccessAPI"] ; # 
   fhir:title [ fhir:v "CMS ACCESS Model API"] ; # 
   fhir:status [ fhir:v "draft"] ; # 
-  fhir:date [ fhir:v "2026-03-06T16:03:26-05:00"^^xsd:dateTime] ; # 
+  fhir:date [ fhir:v "2026-03-12T23:55:37-07:00"^^xsd:dateTime] ; # 
   fhir:publisher [ fhir:v "Global Alliant, Inc."] ; # 
   fhir:contact ( [
      fhir:name [ fhir:v "Global Alliant, Inc." ] ;
@@ -65,7 +65,7 @@
        fhir:l <http://terminology.hl7.org/ImplementationGuide/hl7.terminology>
      ] ;
      fhir:packageId [ fhir:v "hl7.terminology.r4" ] ;
-     fhir:version [ fhir:v "7.0.1" ]
+     fhir:version [ fhir:v "7.1.0" ]
   ] [
      fhir:id [ fhir:v "hl7ext" ] ;
      fhir:extension ( [
@@ -407,7 +407,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "https://globalalliantinc.com/access/history.html"
+           fhir:v "https://dsacms.github.io/cmmi-access-model/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -1088,7 +1088,7 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "https://globalalliantinc.com/access/history.html"
+           fhir:v "https://dsacms.github.io/cmmi-access-model/history.html"
          ]
        ] ) ;
        fhir:url [
@@ -1485,7 +1485,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CapabilityStatement/ACCESSAlignmentAPICapabilityStatement> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSAlignmentAPICapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/ACCESSAlignmentAPICapabilityStatement" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Alignment API Capability Statement" ] ;
@@ -1506,7 +1506,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in> ;
          fhir:reference [ fhir:v "StructureDefinition/access-align-in" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Alignment Request Parameters" ] ;
@@ -1528,7 +1528,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSAlignmentResultCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Alignment Request Result Codes" ] ;
@@ -1550,7 +1550,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out> ;
          fhir:reference [ fhir:v "StructureDefinition/access-align-out" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Alignment Response Parameters" ] ;
@@ -1572,7 +1572,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSAlignmentResultVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Alignment Result Value Set" ] ;
@@ -1594,7 +1594,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSBHDiagnosisVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses" ] ;
@@ -1615,7 +1615,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-bh-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-bh-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS BH Condition Profile" ] ;
@@ -1636,7 +1636,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSCKMDiagnosisVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses" ] ;
@@ -1657,7 +1657,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in> ;
          fhir:reference [ fhir:v "StructureDefinition/access-check-eligibility-in" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Check Eligibility Request Parameters" ] ;
@@ -1679,7 +1679,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out> ;
          fhir:reference [ fhir:v "StructureDefinition/access-check-eligibility-out" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Check Eligibility Response Parameters" ] ;
@@ -1701,7 +1701,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-ckm-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS CKM Track Condition Profile" ] ;
@@ -1722,7 +1722,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-clinical-exclusion-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Clinical Exclusion Condition" ] ;
@@ -1744,7 +1744,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Condition Profile" ] ;
@@ -1766,7 +1766,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSeCKMDiagnosisVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses" ] ;
@@ -1787,7 +1787,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-eckm-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS eCKM Track Condition Profile" ] ;
@@ -1808,7 +1808,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/ACCESSEligibilityAPICapabilityStatement" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Eligibility API Capability Statement" ] ;
@@ -1829,7 +1829,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSEligibilityResultCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Eligibility Result Codes" ] ;
@@ -1851,7 +1851,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSEligibilityResultVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Eligibility Result Value Set" ] ;
@@ -1873,7 +1873,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSEventTypeCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Event Types" ] ;
@@ -1895,7 +1895,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEventTypeVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSEventTypeVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Event Types Value Set" ] ;
@@ -1917,7 +1917,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSTrackCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Model Tracks" ] ;
@@ -1939,7 +1939,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSTrackVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Model Tracks Value Set" ] ;
@@ -1961,7 +1961,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-msk-condition> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition> ;
          fhir:reference [ fhir:v "StructureDefinition/access-msk-condition" ]
        ] ;
        fhir:name [ fhir:v "ACCESS MSK Track Condition Profile" ] ;
@@ -1982,7 +1982,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSMSKDiagnosisVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses" ] ;
@@ -1999,53 +1999,11 @@
          ] ;
          fhir:value [
            a fhir:String ;
-           fhir:v "CodeSystem"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS> ;
-         fhir:reference [ fhir:v "CodeSystem/ACCESSReferralTypeCS" ]
-       ] ;
-       fhir:name [ fhir:v "ACCESS Referral Type" ] ;
-       fhir:description [ fhir:v "This codesystem defines codes that indicate how the patient was referred to the ACCESS Model." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
-           fhir:v "ValueSet"
-         ]
-       ] ) ;
-       fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS> ;
-         fhir:reference [ fhir:v "ValueSet/ACCESSReferralTypeVS" ]
-       ] ;
-       fhir:name [ fhir:v "ACCESS Referral Type Value Set" ] ;
-       fhir:description [ fhir:v "This value set includes all codes from the ACCESS Referral Type code system." ] ;
-       fhir:example [
-         a fhir:Boolean ;
-         fhir:v false
-       ]
-     ] [
-       fhir:extension ( [
-         fhir:url [
-           fhir:v "http://hl7.org/fhir/tools/StructureDefinition/resource-information"^^xsd:anyURI ;
-           fhir:l <http://hl7.org/fhir/tools/StructureDefinition/resource-information>
-         ] ;
-         fhir:value [
-           a fhir:String ;
            fhir:v "StructureDefinition:resource"
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out> ;
          fhir:reference [ fhir:v "StructureDefinition/access-submission-status-out" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Submission Status Response Parameters" ] ;
@@ -2067,7 +2025,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement> ;
          fhir:reference [ fhir:v "CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment API Capability Statement" ] ;
@@ -2088,7 +2046,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSUnalignmentReasonCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Reason Codes" ] ;
@@ -2110,7 +2068,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSUnalignmentReasonVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Reason Value Set" ] ;
@@ -2132,7 +2090,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in> ;
          fhir:reference [ fhir:v "StructureDefinition/access-unalign-in" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Request Parameters" ] ;
@@ -2154,7 +2112,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS> ;
          fhir:reference [ fhir:v "CodeSystem/ACCESSUnalignmentResultCS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Request Result Codes" ] ;
@@ -2176,7 +2134,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out> ;
          fhir:reference [ fhir:v "StructureDefinition/access-unalign-out" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Response Parameters" ] ;
@@ -2198,7 +2156,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS> ;
          fhir:reference [ fhir:v "ValueSet/ACCESSUnalignmentResultVS" ]
        ] ;
        fhir:name [ fhir:v "ACCESS Unalignment Result Value Set" ] ;
@@ -2220,7 +2178,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/OperationDefinition/Align> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/OperationDefinition/Align> ;
          fhir:reference [ fhir:v "OperationDefinition/Align" ]
        ] ;
        fhir:name [ fhir:v "Alignment Request" ] ;
@@ -2242,15 +2200,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/AlignmentRequestExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentRequestExample> ;
          fhir:reference [ fhir:v "Parameters/AlignmentRequestExample" ]
        ] ;
        fhir:name [ fhir:v "Alignment Request Example" ] ;
        fhir:description [ fhir:v "Example of parameters for aligning a patient to the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2264,15 +2222,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/AlignmentRequestWithSwitchConsentExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentRequestWithSwitchConsentExample> ;
          fhir:reference [ fhir:v "Parameters/AlignmentRequestWithSwitchConsentExample" ]
        ] ;
        fhir:name [ fhir:v "Alignment Request with Switch Consent Example" ] ;
        fhir:description [ fhir:v "Example of parameters for aligning a patient with switch consent attestation" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2286,15 +2244,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/AlignmentResponseAlignedExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentResponseAlignedExample> ;
          fhir:reference [ fhir:v "Parameters/AlignmentResponseAlignedExample" ]
        ] ;
        fhir:name [ fhir:v "Alignment Response - Aligned Example" ] ;
        fhir:description [ fhir:v "Example response indicating successful patient alignment" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2308,15 +2266,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/AlignmentResponseSwitchApprovedExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentResponseSwitchApprovedExample> ;
          fhir:reference [ fhir:v "Parameters/AlignmentResponseSwitchApprovedExample" ]
        ] ;
        fhir:name [ fhir:v "Alignment Response - Switch Approved Example" ] ;
        fhir:description [ fhir:v "Example response indicating successful provider switch" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-out?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2330,7 +2288,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/OperationDefinition/CheckEligibility> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility> ;
          fhir:reference [ fhir:v "OperationDefinition/CheckEligibility" ]
        ] ;
        fhir:name [ fhir:v "Check Eligibility Request" ] ;
@@ -2352,15 +2310,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/CheckEligibilityRequestExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/CheckEligibilityRequestExample> ;
          fhir:reference [ fhir:v "Parameters/CheckEligibilityRequestExample" ]
        ] ;
        fhir:name [ fhir:v "Check Eligibility Request Example" ] ;
        fhir:description [ fhir:v "Example of parameters for checking patient eligibility for the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2374,15 +2332,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/CheckEligibilityResponseEligibleExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/CheckEligibilityResponseEligibleExample> ;
          fhir:reference [ fhir:v "Parameters/CheckEligibilityResponseEligibleExample" ]
        ] ;
        fhir:name [ fhir:v "Check Eligibility Response - Eligible Example" ] ;
        fhir:description [ fhir:v "Example response indicating patient is eligible for the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2396,15 +2354,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Condition/ConditionHypertensionExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Condition/ConditionHypertensionExample> ;
          fhir:reference [ fhir:v "Condition/ConditionHypertensionExample" ]
        ] ;
        fhir:name [ fhir:v "Condition Example - Essential Hypertension" ] ;
        fhir:description [ fhir:v "Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2418,15 +2376,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Condition/ConditionDepressionExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Condition/ConditionDepressionExample> ;
          fhir:reference [ fhir:v "Condition/ConditionDepressionExample" ]
        ] ;
        fhir:name [ fhir:v "Condition Example - Major Depressive Disorder" ] ;
        fhir:description [ fhir:v "Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-bh-condition?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2440,15 +2398,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Condition/ConditionOsteoarthritisExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Condition/ConditionOsteoarthritisExample> ;
          fhir:reference [ fhir:v "Condition/ConditionOsteoarthritisExample" ]
        ] ;
        fhir:name [ fhir:v "Condition Example - Osteoarthritis" ] ;
        fhir:description [ fhir:v "Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-msk-condition?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2462,15 +2420,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Condition/ConditionDiabetesExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Condition/ConditionDiabetesExample> ;
          fhir:reference [ fhir:v "Condition/ConditionDiabetesExample" ]
        ] ;
        fhir:name [ fhir:v "Condition Example - Type 2 Diabetes" ] ;
        fhir:description [ fhir:v "Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2484,15 +2442,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Condition/ESRDConditionExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Condition/ESRDConditionExample> ;
          fhir:reference [ fhir:v "Condition/ESRDConditionExample" ]
        ] ;
        fhir:name [ fhir:v "End Stage Renal Disease Condition Example" ] ;
        fhir:description [ fhir:v "Active ESRD diagnosis that disqualifies patient from ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition?version=0.9.1>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2507,7 +2465,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Organization/OrganizationExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Organization/OrganizationExample> ;
          fhir:reference [ fhir:v "Organization/OrganizationExample" ]
        ] ;
        fhir:name [ fhir:v "Organization Example" ] ;
@@ -2528,7 +2486,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Patient/PatientExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientExample> ;
          fhir:reference [ fhir:v "Patient/PatientExample" ]
        ] ;
        fhir:name [ fhir:v "Patient Example" ] ;
@@ -2549,7 +2507,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Patient/PatientESRDExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientESRDExample> ;
          fhir:reference [ fhir:v "Patient/PatientESRDExample" ]
        ] ;
        fhir:name [ fhir:v "Patient with ESRD - Unalignment Example" ] ;
@@ -2571,7 +2529,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Practitioner/PractitionerExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Practitioner/PractitionerExample> ;
          fhir:reference [ fhir:v "Practitioner/PractitionerExample" ]
        ] ;
        fhir:name [ fhir:v "Practitioner Example" ] ;
@@ -2592,7 +2550,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/OperationDefinition/SubmissionStatus> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus> ;
          fhir:reference [ fhir:v "OperationDefinition/SubmissionStatus" ]
        ] ;
        fhir:name [ fhir:v "Submission Status" ] ;
@@ -2614,15 +2572,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/SubmissionStatusResponseExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/SubmissionStatusResponseExample> ;
          fhir:reference [ fhir:v "Parameters/SubmissionStatusResponseExample" ]
        ] ;
        fhir:name [ fhir:v "Submission Status Response Example" ] ;
        fhir:description [ fhir:v "Example response for submission status check" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out?version=0.9.1>
        ]
      ] [
        fhir:extension ( [
@@ -2636,7 +2594,7 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/OperationDefinition/Unalign> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign> ;
          fhir:reference [ fhir:v "OperationDefinition/Unalign" ]
        ] ;
        fhir:name [ fhir:v "Unalignment Request" ] ;
@@ -2658,15 +2616,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/UnalignmentRequestESRDExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/UnalignmentRequestESRDExample> ;
          fhir:reference [ fhir:v "Parameters/UnalignmentRequestESRDExample" ]
        ] ;
        fhir:name [ fhir:v "Unalignment Request - ESRD Example" ] ;
        fhir:description [ fhir:v "Example of unalignment request for patient who developed ESRD (no longer clinically eligible)" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in?version=0.9.1>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2681,15 +2639,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/UnalignmentRequestExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/UnalignmentRequestExample> ;
          fhir:reference [ fhir:v "Parameters/UnalignmentRequestExample" ]
        ] ;
        fhir:name [ fhir:v "Unalignment Request Example" ] ;
        fhir:description [ fhir:v "Example of parameters for unaligning a patient from the ACCESS Model" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-in?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in?version=0.9.1>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] [
@@ -2704,15 +2662,15 @@
          ]
        ] ) ;
        fhir:reference [
-         fhir:l <https://globalalliantinc.com/access/Parameters/UnalignmentResponseUnalignedExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Parameters/UnalignmentResponseUnalignedExample> ;
          fhir:reference [ fhir:v "Parameters/UnalignmentResponseUnalignedExample" ]
        ] ;
        fhir:name [ fhir:v "Unalignment Response - Unaligned Example" ] ;
        fhir:description [ fhir:v "Example response indicating successful patient unalignment" ] ;
        fhir:example [
          a fhir:Canonical ;
-         fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.9.0"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out?version=0.9.0>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.1"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out?version=0.9.1>
        ] ;
        fhir:groupingId [ fhir:v "UnalignmentAPI" ]
      ] ) ;

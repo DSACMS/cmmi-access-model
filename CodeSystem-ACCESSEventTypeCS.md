@@ -1,4 +1,4 @@
-# ACCESS Event Types - CMS ACCESS Model API v0.9.0
+# ACCESS Event Types - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSEventTypeCS |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSEventTypeCS |
 | **Copyright/Legal**: Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS). | |
 
  
@@ -27,13 +27,13 @@ This codesystem defines codes for the types of events that trigger subscription 
 {
   "resourceType" : "CodeSystem",
   "id" : "ACCESSEventTypeCS",
-  "url" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
+  "version" : "0.9.1",
   "name" : "ACCESSEventTypeCS",
   "title" : "ACCESS Event Types",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

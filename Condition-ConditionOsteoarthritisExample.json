@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "ConditionOsteoarthritisExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-msk-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition"]
   },
   "text" : {
     "status" : "generated",

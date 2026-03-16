@@ -2,7 +2,7 @@
   "resourceType" : "Condition",
   "id" : "ConditionHypertensionExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition"]
   },
   "text" : {
     "status" : "generated",

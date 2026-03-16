@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/UnalignmentResponseUnalignedExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/UnalignmentResponseUnalignedExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "UnalignmentResponseUnalignedExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-unalign-out>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -21,8 +21,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS>
          ] ;
          fhir:code [ fhir:v "unaligned" ] ;
          fhir:display [ fhir:v "Unaligned" ]

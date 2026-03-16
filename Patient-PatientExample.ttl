@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Patient/PatientExample> a fhir:Patient ;
+<https://dsacms.github.io/cmmi-access-model/Patient/PatientExample> a fhir:Patient ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PatientExample"] ; # 
   fhir:meta [

@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Parameters/AlignmentRequestExample> a fhir:Parameters ;
+<https://dsacms.github.io/cmmi-access-model/Parameters/AlignmentRequestExample> a fhir:Parameters ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "AlignmentRequestExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-align-in"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-align-in>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in>
      ] )
   ] ; # 
   fhir:parameter ( [
@@ -20,8 +20,8 @@
      fhir:value [
        a fhir:Identifier ;
        fhir:system [
-         fhir:v "https://globalalliantinc.com/access/participant-id"^^xsd:anyURI ;
-         fhir:l <https://globalalliantinc.com/access/participant-id>
+         fhir:v "https://dsacms.github.io/cmmi-access-model/participant-id"^^xsd:anyURI ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/participant-id>
        ] ;
        fhir:value [ fhir:v "ACCESS1234" ]
      ]
@@ -89,8 +89,8 @@
        a fhir:CodeableConcept ;
        fhir:coding ( [
          fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS>
          ] ;
          fhir:code [ fhir:v "CKM" ] ;
          fhir:display [ fhir:v "Cardio-kidney-metabolic track" ]
@@ -103,8 +103,8 @@
        fhir:id [ fhir:v "ConditionDiabetesExample" ] ;
        fhir:meta [
          fhir:profile ( [
-           fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition>
+           fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"^^xsd:anyURI ;
+           fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition>
          ] )
        ] ;
        fhir:text [
@@ -149,7 +149,7 @@
          ] )
        ] ;
        fhir:subject [
-         fhir:l <https://globalalliantinc.com/access/Patient/PatientExample> ;
+         fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientExample> ;
          fhir:reference [ fhir:v "Patient/PatientExample" ]
        ] ;
        fhir:onset [
@@ -158,17 +158,10 @@
        ]
      ] )
   ] [
-     fhir:name [ fhir:v "referralType" ] ;
+     fhir:name [ fhir:v "isProviderReferral" ] ;
      fhir:value [
-       a fhir:CodeableConcept ;
-       fhir:coding ( [
-         fhir:system [
-           fhir:v "https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"^^xsd:anyURI ;
-           fhir:l <https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS>
-         ] ;
-         fhir:code [ fhir:v "provider-referral" ] ;
-         fhir:display [ fhir:v "Provider referral" ]
-       ] )
+       a fhir:Boolean ;
+       fhir:v true
      ]
   ] ) . # 
 

@@ -1,4 +1,4 @@
-# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.0
+# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition | *Version*:0.9.1 |
 | Active as of 2026-02-13 | *Computable Name*:ACCESSCKMCondition |
 
  
@@ -38,8 +38,8 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-ckm-condition",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition",
+  "version" : "0.9.1",
   "name" : "ACCESSCKMCondition",
   "title" : "ACCESS CKM Track Condition Profile",
   "status" : "active",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-access-ckm-condition
       "definition" : "Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.1"
       }
     }]
   }

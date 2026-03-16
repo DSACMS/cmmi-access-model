@@ -6,13 +6,13 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Condition/ESRDConditionExample> a fhir:Condition ;
+<https://dsacms.github.io/cmmi-access-model/Condition/ESRDConditionExample> a fhir:Condition ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "ESRDConditionExample"] ; # 
   fhir:meta [
      fhir:profile ( [
-       fhir:v "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition>
      ] )
   ] ; # 
   fhir:text [
@@ -60,7 +60,7 @@
      ] )
   ] ; # 
   fhir:subject [
-     fhir:l <https://globalalliantinc.com/access/Patient/PatientESRDExample> ;
+     fhir:l <https://dsacms.github.io/cmmi-access-model/Patient/PatientESRDExample> ;
      fhir:reference [ fhir:v "Patient/PatientESRDExample" ]
   ] ; # 
   fhir:onset [

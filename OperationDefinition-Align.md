@@ -1,4 +1,4 @@
-# Alignment Request - CMS ACCESS Model API v0.9.0
+# Alignment Request - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/OperationDefinition/Align | *Version*:0.9.0 |
-| Active as of 2026-03-06 | *Computable Name*:Align |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/OperationDefinition/Align | *Version*:0.9.1 |
+| Active as of 2026-03-12 | *Computable Name*:Align |
 
  
 The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track. 
@@ -22,13 +22,13 @@ The **$align** operation determines if the patient can be aligned to a participa
 {
   "resourceType" : "OperationDefinition",
   "id" : "Align",
-  "url" : "https://globalalliantinc.com/access/OperationDefinition/Align",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Align",
+  "version" : "0.9.1",
   "name" : "Align",
   "title" : "Alignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -54,7 +54,7 @@ The **$align** operation determines if the patient can be aligned to a participa
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -88,7 +88,7 @@ The **$align** operation determines if the patient can be aligned to a participa
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.1"
     }
   },
   {
@@ -100,16 +100,12 @@ The **$align** operation determines if the patient can be aligned to a participa
     "type" : "Condition"
   },
   {
-    "name" : "referralType",
+    "name" : "isProviderReferral",
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "How the patient was referred to the ACCESS Model.",
-    "type" : "CodeableConcept",
-    "binding" : {
-      "strength" : "required",
-      "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS|0.9.0"
-    }
+    "documentation" : "Was the patient referred to the ACCESS Model by a provider?",
+    "type" : "boolean"
   },
   {
     "name" : "switchConsentAttestation",

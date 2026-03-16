@@ -1,4 +1,4 @@
-# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.0
+# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -15,13 +15,13 @@
   "resourceType" : "Parameters",
   "id" : "CheckEligibilityResponseEligibleExample",
   "meta" : {
-    "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out"]
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out"]
   },
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {
       "coding" : [{
-        "system" : "https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS",
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
         "code" : "eligible",
         "display" : "Eligible"
       }],

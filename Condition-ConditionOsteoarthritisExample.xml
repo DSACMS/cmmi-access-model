@@ -3,7 +3,7 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="ConditionOsteoarthritisExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-msk-condition"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Unspecified osteoarthritis, unspecified site</div>

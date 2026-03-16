@@ -1,4 +1,4 @@
-# Organization Example - CMS ACCESS Model API v0.9.0
+# Organization Example - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -20,7 +20,7 @@ Example Healthcare Organization, ACCESS Participant ID: ACCESS1234
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"]
   },
   "identifier" : [{
-    "system" : "https://globalalliantinc.com/access/participant-id",
+    "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
     "value" : "ACCESS1234"
   }],
   "active" : true,

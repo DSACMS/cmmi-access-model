@@ -1,4 +1,4 @@
-# Home - CMS ACCESS Model API v0.9.0
+# Home - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * **Home**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://dsacms.github.io/cmmi-access-model/ | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:CMSAccessAPI |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:CMSAccessAPI |
 
 ### Overview
 
@@ -199,7 +199,6 @@ This publication includes IP covered under the following statements.
 * [ACCESS Alignment Request Result Codes](CodeSystem-ACCESSAlignmentResultCS.md): [ACCESSAlignmentResponseParameters](StructureDefinition-access-align-out.md), [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.md), [Parameters/AlignmentResponseAlignedExample](Parameters-AlignmentResponseAlignedExample.md) and [Parameters/AlignmentResponseSwitchApprovedExample](Parameters-AlignmentResponseSwitchApprovedExample.md)
 * [ACCESS Eligibility Result Codes](CodeSystem-ACCESSEligibilityResultCS.md): [ACCESSCheckEligibilityResponseParameters](StructureDefinition-access-check-eligibility-out.md), [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.md), [Parameters/CheckEligibilityResponseEligibleExample](Parameters-CheckEligibilityResponseEligibleExample.md) and [Parameters/SubmissionStatusResponseExample](Parameters-SubmissionStatusResponseExample.md)
 * [ACCESS Event Types](CodeSystem-ACCESSEventTypeCS.md): [ACCESSEventTypeVS](ValueSet-ACCESSEventTypeVS.md)
-* [ACCESS Referral Type](CodeSystem-ACCESSReferralTypeCS.md): [ACCESSAlignmentRequestParameters](StructureDefinition-access-align-in.md), [ACCESSReferralTypeVS](ValueSet-ACCESSReferralTypeVS.md), [Align](OperationDefinition-Align.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md) and [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md)
 * [ACCESS Model Tracks](CodeSystem-ACCESSTrackCS.md): [ACCESSAlignmentRequestParameters](StructureDefinition-access-align-in.md), [ACCESSCheckEligibilityRequestParameters](StructureDefinition-access-check-eligibility-in.md)... Show 10 more, [ACCESSTrackVS](ValueSet-ACCESSTrackVS.md), [ACCESSUnalignmentRequestParameters](StructureDefinition-access-unalign-in.md), [Align](OperationDefinition-Align.md), [CheckEligibility](OperationDefinition-CheckEligibility.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md), [Parameters/CheckEligibilityRequestExample](Parameters-CheckEligibilityRequestExample.md), [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md), [Parameters/UnalignmentRequestExample](Parameters-UnalignmentRequestExample.md) and [Unalign](OperationDefinition-Unalign.md)
 * [ACCESS Unalignment Reason Codes](CodeSystem-ACCESSUnalignmentReasonCS.md): [ACCESSUnalignmentReasonVS](ValueSet-ACCESSUnalignmentReasonVS.md), [ACCESSUnalignmentRequestParameters](StructureDefinition-access-unalign-in.md), [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md) and [Parameters/UnalignmentRequestExample](Parameters-UnalignmentRequestExample.md)
 * [ACCESS Unalignment Request Result Codes](CodeSystem-ACCESSUnalignmentResultCS.md): [ACCESSUnalignmentResponseParameters](StructureDefinition-access-unalign-out.md), [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.md) and [Parameters/UnalignmentResponseUnalignedExample](Parameters-UnalignmentResponseUnalignedExample.md)
@@ -207,7 +206,7 @@ This publication includes IP covered under the following statements.
 
 * ISO maintains the copyright on the country codes, and controls its use carefully. For further details see the ISO 3166 web page: [https://www.iso.org/iso-3166-country-codes.html](https://www.iso.org/iso-3166-country-codes.html)
 
-* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html): [ACCESSAlignmentAPICapabilityStatement](CapabilityStatement-ACCESSAlignmentAPICapabilityStatement.md), [ACCESSAlignmentRequestParameters](StructureDefinition-access-align-in.md)... Show 37 more, [ACCESSAlignmentResponseParameters](StructureDefinition-access-align-out.md), [ACCESSAlignmentResultCS](CodeSystem-ACCESSAlignmentResultCS.md), [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.md), [ACCESSBHCondition](StructureDefinition-access-bh-condition.md), [ACCESSBHDiagnosisVS](ValueSet-ACCESSBHDiagnosisVS.md), [ACCESSCKMCondition](StructureDefinition-access-ckm-condition.md), [ACCESSCKMDiagnosisVS](ValueSet-ACCESSCKMDiagnosisVS.md), [ACCESSCheckEligibilityRequestParameters](StructureDefinition-access-check-eligibility-in.md), [ACCESSCheckEligibilityResponseParameters](StructureDefinition-access-check-eligibility-out.md), [ACCESSClinicalExclusionCondition](StructureDefinition-access-clinical-exclusion-condition.md), [ACCESSCondition](StructureDefinition-access-condition.md), [ACCESSEligibilityAPICapabilityStatement](CapabilityStatement-ACCESSEligibilityAPICapabilityStatement.md), [ACCESSEligibilityResultCS](CodeSystem-ACCESSEligibilityResultCS.md), [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.md), [ACCESSEventTypeCS](CodeSystem-ACCESSEventTypeCS.md), [ACCESSEventTypeVS](ValueSet-ACCESSEventTypeVS.md), [ACCESSMSKCondition](StructureDefinition-access-msk-condition.md), [ACCESSMSKDiagnosisVS](ValueSet-ACCESSMSKDiagnosisVS.md), [ACCESSReferralTypeCS](CodeSystem-ACCESSReferralTypeCS.md), [ACCESSReferralTypeVS](ValueSet-ACCESSReferralTypeVS.md), [ACCESSSubmissionStatusResponseParameters](StructureDefinition-access-submission-status-out.md), [ACCESSTrackCS](CodeSystem-ACCESSTrackCS.md), [ACCESSTrackVS](ValueSet-ACCESSTrackVS.md), [ACCESSUnalignmentAPICapabilityStatement](CapabilityStatement-ACCESSUnalignmentAPICapabilityStatement.md), [ACCESSUnalignmentReasonCS](CodeSystem-ACCESSUnalignmentReasonCS.md), [ACCESSUnalignmentReasonVS](ValueSet-ACCESSUnalignmentReasonVS.md), [ACCESSUnalignmentRequestParameters](StructureDefinition-access-unalign-in.md), [ACCESSUnalignmentResponseParameters](StructureDefinition-access-unalign-out.md), [ACCESSUnalignmentResultCS](CodeSystem-ACCESSUnalignmentResultCS.md), [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.md), [ACCESSeCKMCondition](StructureDefinition-access-eckm-condition.md), [ACCESSeCKMDiagnosisVS](ValueSet-ACCESSeCKMDiagnosisVS.md), [Align](OperationDefinition-Align.md), [CMSAccessAPI](index.md), [CheckEligibility](OperationDefinition-CheckEligibility.md), [SubmissionStatus](OperationDefinition-SubmissionStatus.md) and [Unalign](OperationDefinition-Unalign.md)
+* [ISO 3166-1 Codes for the representation of names of countries and their subdivisions — Part 1: Country code](http://terminology.hl7.org/6.2.0/CodeSystem-ISO3166Part1.html): [ACCESSAlignmentAPICapabilityStatement](CapabilityStatement-ACCESSAlignmentAPICapabilityStatement.md), [ACCESSAlignmentRequestParameters](StructureDefinition-access-align-in.md)... Show 35 more, [ACCESSAlignmentResponseParameters](StructureDefinition-access-align-out.md), [ACCESSAlignmentResultCS](CodeSystem-ACCESSAlignmentResultCS.md), [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.md), [ACCESSBHCondition](StructureDefinition-access-bh-condition.md), [ACCESSBHDiagnosisVS](ValueSet-ACCESSBHDiagnosisVS.md), [ACCESSCKMCondition](StructureDefinition-access-ckm-condition.md), [ACCESSCKMDiagnosisVS](ValueSet-ACCESSCKMDiagnosisVS.md), [ACCESSCheckEligibilityRequestParameters](StructureDefinition-access-check-eligibility-in.md), [ACCESSCheckEligibilityResponseParameters](StructureDefinition-access-check-eligibility-out.md), [ACCESSClinicalExclusionCondition](StructureDefinition-access-clinical-exclusion-condition.md), [ACCESSCondition](StructureDefinition-access-condition.md), [ACCESSEligibilityAPICapabilityStatement](CapabilityStatement-ACCESSEligibilityAPICapabilityStatement.md), [ACCESSEligibilityResultCS](CodeSystem-ACCESSEligibilityResultCS.md), [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.md), [ACCESSEventTypeCS](CodeSystem-ACCESSEventTypeCS.md), [ACCESSEventTypeVS](ValueSet-ACCESSEventTypeVS.md), [ACCESSMSKCondition](StructureDefinition-access-msk-condition.md), [ACCESSMSKDiagnosisVS](ValueSet-ACCESSMSKDiagnosisVS.md), [ACCESSSubmissionStatusResponseParameters](StructureDefinition-access-submission-status-out.md), [ACCESSTrackCS](CodeSystem-ACCESSTrackCS.md), [ACCESSTrackVS](ValueSet-ACCESSTrackVS.md), [ACCESSUnalignmentAPICapabilityStatement](CapabilityStatement-ACCESSUnalignmentAPICapabilityStatement.md), [ACCESSUnalignmentReasonCS](CodeSystem-ACCESSUnalignmentReasonCS.md), [ACCESSUnalignmentReasonVS](ValueSet-ACCESSUnalignmentReasonVS.md), [ACCESSUnalignmentRequestParameters](StructureDefinition-access-unalign-in.md), [ACCESSUnalignmentResponseParameters](StructureDefinition-access-unalign-out.md), [ACCESSUnalignmentResultCS](CodeSystem-ACCESSUnalignmentResultCS.md), [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.md), [ACCESSeCKMCondition](StructureDefinition-access-eckm-condition.md), [ACCESSeCKMDiagnosisVS](ValueSet-ACCESSeCKMDiagnosisVS.md), [Align](OperationDefinition-Align.md), [CMSAccessAPI](index.md), [CheckEligibility](OperationDefinition-CheckEligibility.md), [SubmissionStatus](OperationDefinition-SubmissionStatus.md) and [Unalign](OperationDefinition-Unalign.md)
 
 
 * This CodeSystem is not copyrighted.
@@ -217,10 +216,10 @@ This publication includes IP covered under the following statements.
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
-* [Condition Category Codes](http://terminology.hl7.org/7.0.1/CodeSystem-condition-category.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
-* [Condition Clinical Status Codes](http://terminology.hl7.org/7.0.1/CodeSystem-condition-clinical.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
-* [ConditionVerificationStatus](http://terminology.hl7.org/7.0.1/CodeSystem-condition-ver-status.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
-* [identifierType](http://terminology.hl7.org/7.0.1/CodeSystem-v2-0203.html): [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md)... Show 5 more, [Parameters/CheckEligibilityRequestExample](Parameters-CheckEligibilityRequestExample.md), [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md), [Parameters/UnalignmentRequestExample](Parameters-UnalignmentRequestExample.md), [Patient/PatientESRDExample](Patient-PatientESRDExample.md) and [Patient/PatientExample](Patient-PatientExample.md)
+* [Condition Category Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-category.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
+* [Condition Clinical Status Codes](http://terminology.hl7.org/7.1.0/CodeSystem-condition-clinical.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
+* [ConditionVerificationStatus](http://terminology.hl7.org/7.1.0/CodeSystem-condition-ver-status.html): [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md), [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)... Show 6 more, [Condition/ConditionHypertensionExample](Condition-ConditionHypertensionExample.md), [Condition/ConditionOsteoarthritisExample](Condition-ConditionOsteoarthritisExample.md), [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md), [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md) and [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md)
+* [identifierType](http://terminology.hl7.org/7.1.0/CodeSystem-v2-0203.html): [Parameters/AlignmentRequestExample](Parameters-AlignmentRequestExample.md), [Parameters/AlignmentRequestWithSwitchConsentExample](Parameters-AlignmentRequestWithSwitchConsentExample.md)... Show 5 more, [Parameters/CheckEligibilityRequestExample](Parameters-CheckEligibilityRequestExample.md), [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md), [Parameters/UnalignmentRequestExample](Parameters-UnalignmentRequestExample.md), [Patient/PatientESRDExample](Patient-PatientESRDExample.md) and [Patient/PatientExample](Patient-PatientExample.md)
 
 
 
@@ -232,12 +231,12 @@ This publication includes IP covered under the following statements.
   "resourceType" : "ImplementationGuide",
   "id" : "cms.fhir.us.access",
   "language" : "en-US",
-  "url" : "https://dsacms.github.io/cmmi-access-model/",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.access",
+  "version" : "0.9.1",
   "name" : "CMSAccessAPI",
   "title" : "CMS ACCESS Model API",
   "status" : "draft",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -269,7 +268,7 @@ This publication includes IP covered under the following statements.
     }],
     "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
     "packageId" : "hl7.terminology.r4",
-    "version" : "7.0.1"
+    "version" : "7.1.0"
   },
   {
     "id" : "hl7ext",
@@ -433,7 +432,7 @@ This publication includes IP covered under the following statements.
       },
       {
         "url" : "value",
-        "valueString" : "https://globalalliantinc.com/access/history.html"
+        "valueString" : "https://dsacms.github.io/cmmi-access-model/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -745,7 +744,7 @@ This publication includes IP covered under the following statements.
       },
       {
         "url" : "value",
-        "valueString" : "https://globalalliantinc.com/access/history.html"
+        "valueString" : "https://dsacms.github.io/cmmi-access-model/history.html"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -1239,30 +1238,6 @@ This publication includes IP covered under the following statements.
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "CodeSystem"
-      }],
-      "reference" : {
-        "reference" : "CodeSystem/ACCESSReferralTypeCS"
-      },
-      "name" : "ACCESS Referral Type",
-      "description" : "This codesystem defines codes that indicate how the patient was referred to the ACCESS Model.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ValueSet"
-      }],
-      "reference" : {
-        "reference" : "ValueSet/ACCESSReferralTypeVS"
-      },
-      "name" : "ACCESS Referral Type Value Set",
-      "description" : "This value set includes all codes from the ACCESS Referral Type code system.",
-      "exampleBoolean" : false
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
@@ -1386,7 +1361,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Alignment Request Example",
       "description" : "Example of parameters for aligning a patient to the ACCESS Model",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"
     },
     {
       "extension" : [{
@@ -1398,7 +1373,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Alignment Request with Switch Consent Example",
       "description" : "Example of parameters for aligning a patient with switch consent attestation",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"
     },
     {
       "extension" : [{
@@ -1410,7 +1385,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Alignment Response - Aligned Example",
       "description" : "Example response indicating successful patient alignment",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"
     },
     {
       "extension" : [{
@@ -1422,7 +1397,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Alignment Response - Switch Approved Example",
       "description" : "Example response indicating successful provider switch",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-align-out|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.1"
     },
     {
       "extension" : [{
@@ -1447,7 +1422,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Check Eligibility Request Example",
       "description" : "Example of parameters for checking patient eligibility for the ACCESS Model",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-in|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.1"
     },
     {
       "extension" : [{
@@ -1459,7 +1434,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Check Eligibility Response - Eligible Example",
       "description" : "Example response indicating patient is eligible for the ACCESS Model",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-check-eligibility-out|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.1"
     },
     {
       "extension" : [{
@@ -1471,7 +1446,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Condition Example - Essential Hypertension",
       "description" : "Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-eckm-condition|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.1"
     },
     {
       "extension" : [{
@@ -1483,7 +1458,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Condition Example - Major Depressive Disorder",
       "description" : "Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.1"
     },
     {
       "extension" : [{
@@ -1495,7 +1470,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Condition Example - Osteoarthritis",
       "description" : "Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-msk-condition|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.1"
     },
     {
       "extension" : [{
@@ -1507,7 +1482,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Condition Example - Type 2 Diabetes",
       "description" : "Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.1"
     },
     {
       "extension" : [{
@@ -1519,7 +1494,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "End Stage Renal Disease Condition Example",
       "description" : "Active ESRD diagnosis that disqualifies patient from ACCESS Model",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-clinical-exclusion-condition|0.9.0",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.1",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -1594,7 +1569,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Submission Status Response Example",
       "description" : "Example response for submission status check",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-submission-status-out|0.9.0"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.1"
     },
     {
       "extension" : [{
@@ -1619,7 +1594,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Unalignment Request - ESRD Example",
       "description" : "Example of unalignment request for patient who developed ESRD (no longer clinically eligible)",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -1632,7 +1607,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Unalignment Request Example",
       "description" : "Example of parameters for unaligning a patient from the ACCESS Model",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-in|0.9.0",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.1",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -1645,7 +1620,7 @@ This publication includes IP covered under the following statements.
       },
       "name" : "Unalignment Response - Unaligned Example",
       "description" : "Example response indicating successful patient unalignment",
-      "exampleCanonical" : "https://globalalliantinc.com/access/StructureDefinition/access-unalign-out|0.9.0",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.1",
       "groupingId" : "UnalignmentAPI"
     }],
     "page" : {

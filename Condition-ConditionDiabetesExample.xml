@@ -3,7 +3,7 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="ConditionDiabetesExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Type 2 diabetes mellitus without complications</div>

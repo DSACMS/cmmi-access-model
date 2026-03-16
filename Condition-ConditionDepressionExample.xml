@@ -3,7 +3,7 @@
 <Condition xmlns="http://hl7.org/fhir">
   <id value="ConditionDepressionExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-bh-condition"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition"/>
   </meta>
   <text>
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Major depressive disorder, single episode, unspecified</div>

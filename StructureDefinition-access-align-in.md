@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.0
+# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,8 +8,8 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-align-in | *Version*:0.9.0 |
-| Draft as of 2026-03-06 | *Computable Name*:ACCESSAlignmentRequestParameters |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in | *Version*:0.9.1 |
+| Draft as of 2026-03-12 | *Computable Name*:ACCESSAlignmentRequestParameters |
 
  
 This is the profile for the `$align` operation input parameters. When a patient wishes to switch from one ACCESS participant to another after the 3-month lock-in period, the `switchConsentAttestation` parameter must be set to `true` to indicate that the patient has provided consent to switch providers. 
@@ -55,12 +55,12 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-align-in",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in",
+  "version" : "0.9.1",
   "name" : "ACCESSAlignmentRequestParameters",
   "title" : "ACCESS Alignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-03-06T16:03:26-05:00",
+  "date" : "2026-03-12T23:55:37-07:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -146,7 +146,7 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCESS#### where #### represents exactly 4 digits (e.g., ACCESS0001, ACCESS1234)",
         "expression" : "value.matches('^ACCESS\\\\d{4}$')",
-        "source" : "https://globalalliantinc.com/access/StructureDefinition/access-align-in|0.9.0"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.1"
       }],
       "mustSupport" : true
     },
@@ -251,7 +251,7 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.1"
       }
     },
     {
@@ -289,46 +289,42 @@ Other representations of profile: [CSV](StructureDefinition-access-align-in.csv)
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1"]
       }],
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:referralType",
+      "id" : "Parameters.parameter:isProviderReferral",
       "path" : "Parameters.parameter",
-      "sliceName" : "referralType",
-      "short" : "Referral Type",
-      "definition" : "Indicates how the patient was referred to the ACCESS Model participant. This information helps track recruitment pathways and evaluate outreach effectiveness.",
+      "sliceName" : "isProviderReferral",
+      "short" : "Provider referred?",
+      "definition" : "Indicates whether the patient was referred to the ACCESS Model participant by a provider. This information helps track recruitment pathways and evaluate outreach effectiveness.",
       "min" : 1,
       "max" : "1",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:referralType.modifierExtension",
+      "id" : "Parameters.parameter:isProviderReferral.modifierExtension",
       "path" : "Parameters.parameter.modifierExtension",
       "max" : "0"
     },
     {
-      "id" : "Parameters.parameter:referralType.name",
+      "id" : "Parameters.parameter:isProviderReferral.name",
       "path" : "Parameters.parameter.name",
-      "fixedString" : "referralType",
+      "fixedString" : "isProviderReferral",
       "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:referralType.value[x]",
+      "id" : "Parameters.parameter:isProviderReferral.value[x]",
       "path" : "Parameters.parameter.value[x]",
       "min" : 1,
       "type" : [{
-        "code" : "CodeableConcept"
+        "code" : "boolean"
       }],
-      "mustSupport" : true,
-      "binding" : {
-        "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS|0.9.0"
-      }
+      "mustSupport" : true
     },
     {
-      "id" : "Parameters.parameter:referralType.resource",
+      "id" : "Parameters.parameter:isProviderReferral.resource",
       "path" : "Parameters.parameter.resource",
       "max" : "0"
     },

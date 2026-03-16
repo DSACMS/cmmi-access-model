@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Practitioner/PractitionerExample> a fhir:Practitioner ;
+<https://dsacms.github.io/cmmi-access-model/Practitioner/PractitionerExample> a fhir:Practitioner ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "PractitionerExample"] ; # 
   fhir:meta [

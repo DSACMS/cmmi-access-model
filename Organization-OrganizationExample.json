@@ -9,7 +9,7 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">Example Healthcare Organization, ACCESS Participant ID: ACCESS1234</div>"
   },
   "identifier" : [{
-    "system" : "https://globalalliantinc.com/access/participant-id",
+    "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
     "value" : "ACCESS1234"
   }],
   "active" : true,

@@ -6,7 +6,7 @@
 
 # - resource -------------------------------------------------------------------
 
-<https://globalalliantinc.com/access/Organization/OrganizationExample> a fhir:Organization ;
+<https://dsacms.github.io/cmmi-access-model/Organization/OrganizationExample> a fhir:Organization ;
   fhir:nodeRole fhir:treeRoot ;
   fhir:id [ fhir:v "OrganizationExample"] ; # 
   fhir:meta [
@@ -21,8 +21,8 @@
   ] ; # 
   fhir:identifier ( [
      fhir:system [
-       fhir:v "https://globalalliantinc.com/access/participant-id"^^xsd:anyURI ;
-       fhir:l <https://globalalliantinc.com/access/participant-id>
+       fhir:v "https://dsacms.github.io/cmmi-access-model/participant-id"^^xsd:anyURI ;
+       fhir:l <https://dsacms.github.io/cmmi-access-model/participant-id>
      ] ;
      fhir:value [ fhir:v "ACCESS1234" ]
   ] ) ; # 

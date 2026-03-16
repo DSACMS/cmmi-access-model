@@ -3,12 +3,12 @@
 <Parameters xmlns="http://hl7.org/fhir">
   <id value="AlignmentRequestWithSwitchConsentExample"/>
   <meta>
-    <profile value="https://globalalliantinc.com/access/StructureDefinition/access-align-in"/>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"/>
   </meta>
   <parameter>
     <name value="participantID"/>
     <valueIdentifier>
-      <system value="https://globalalliantinc.com/access/participant-id"/>
+      <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
       <value value="ACCESS1234"/>
     </valueIdentifier>
   </parameter>
@@ -60,7 +60,7 @@
     <name value="track"/>
     <valueCodeableConcept>
       <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"/>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
         <code value="CKM"/>
         <display value="Cardio-kidney-metabolic track"/>
       </coding>
@@ -72,7 +72,7 @@
       <Condition>
         <id value="ConditionDiabetesExample"/>
         <meta>
-          <profile value="https://globalalliantinc.com/access/StructureDefinition/access-ckm-condition"/>
+          <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"/>
         </meta>
         <text>
           <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml">Type 2 diabetes mellitus without complications</div>
@@ -110,14 +110,8 @@
     </resource>
   </parameter>
   <parameter>
-    <name value="referralType"/>
-    <valueCodeableConcept>
-      <coding>
-        <system value="https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"/>
-        <code value="patient-self-referral"/>
-        <display value="Patient self-referral"/>
-      </coding>
-    </valueCodeableConcept>
+    <name value="isProviderReferral"/>
+    <valueBoolean value="false"/>
   </parameter>
   <parameter>
     <name value="switchConsentAttestation"/>

@@ -1,4 +1,4 @@
-# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.0
+# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-bh-condition | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition | *Version*:0.9.1 |
 | Active as of 2026-02-13 | *Computable Name*:ACCESSBHCondition |
 
  
@@ -38,8 +38,8 @@ Other representations of profile: [CSV](StructureDefinition-access-bh-condition.
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-bh-condition",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-bh-condition",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition",
+  "version" : "0.9.1",
   "name" : "ACCESSBHCondition",
   "title" : "ACCESS BH Condition Profile",
   "status" : "active",
@@ -98,7 +98,7 @@ Other representations of profile: [CSV](StructureDefinition-access-bh-condition.
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://globalalliantinc.com/access/StructureDefinition/access-condition|0.9.0",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.1",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -112,7 +112,7 @@ Other representations of profile: [CSV](StructureDefinition-access-bh-condition.
       "definition" : "Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS|0.9.0"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.1"
       }
     }]
   }

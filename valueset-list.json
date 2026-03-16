@@ -1,16 +1,16 @@
 {
   "codeSystems" : [{
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSAlignmentResultVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultVS",
     "title" : "ACCESS Alignment Result Value Set",
     "description" : "This value set includes all codes from the ACCESS Alignment Result code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSAlignmentResultCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSBHDiagnosisVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS",
+    "version" : "0.9.1",
     "status" : "active",
     "name" : "ACCESSBHDiagnosisVS",
     "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
@@ -18,8 +18,8 @@
     "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSCKMDiagnosisVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS",
+    "version" : "0.9.1",
     "status" : "active",
     "name" : "ACCESSCKMDiagnosisVS",
     "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
@@ -27,26 +27,26 @@
     "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEligibilityResultVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultVS",
     "title" : "ACCESS Eligibility Result Value Set",
     "description" : "This value set includes all codes from the ACCESS Eligibility Result code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSEligibilityResultCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSEventTypeVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEventTypeVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSEventTypeVS",
     "title" : "ACCESS Event Types Value Set",
     "description" : "This value set includes all codes from the ACCESS Event Types code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSEventTypeCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSMSKDiagnosisVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS",
+    "version" : "0.9.1",
     "status" : "active",
     "name" : "ACCESSMSKDiagnosisVS",
     "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
@@ -54,44 +54,35 @@
     "systems" : ["http://hl7.org/fhir/sid/icd-10-cm"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSReferralTypeVS",
-    "version" : "0.9.0",
-    "status" : "draft",
-    "name" : "ACCESSReferralTypeVS",
-    "title" : "ACCESS Referral Type Value Set",
-    "description" : "This value set includes all codes from the ACCESS Referral Type code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSReferralTypeCS"]
-  },
-  {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSTrackVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSTrackVS",
     "title" : "ACCESS Model Tracks Value Set",
     "description" : "This value set includes all codes from the ACCESS Model Tracks code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSTrackCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentReasonVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonVS",
     "title" : "ACCESS Unalignment Reason Value Set",
     "description" : "This value set includes all codes from the ACCESS Unalignment Reason code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentReasonCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSUnalignmentResultVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS",
+    "version" : "0.9.1",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultVS",
     "title" : "ACCESS Unalignment Result Value Set",
     "description" : "This value set includes all codes from the ACCESS Unalignment Result code system.",
-    "systems" : ["https://globalalliantinc.com/access/CodeSystem/ACCESSUnalignmentResultCS"]
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS"]
   },
   {
-    "url" : "https://globalalliantinc.com/access/ValueSet/ACCESSeCKMDiagnosisVS",
-    "version" : "0.9.0",
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS",
+    "version" : "0.9.1",
     "status" : "active",
     "name" : "ACCESSeCKMDiagnosisVS",
     "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",

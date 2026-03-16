@@ -1,4 +1,4 @@
-# ACCESS Condition Profile - CMS ACCESS Model API v0.9.0
+# ACCESS Condition Profile - CMS ACCESS Model API v0.9.1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://globalalliantinc.com/access/StructureDefinition/access-condition | *Version*:0.9.0 |
+| *Official URL*:https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition | *Version*:0.9.1 |
 | Active as of 2026-02-05 | *Computable Name*:ACCESSCondition |
 
  
@@ -44,8 +44,8 @@ Other representations of profile: [CSV](StructureDefinition-access-condition.csv
 {
   "resourceType" : "StructureDefinition",
   "id" : "access-condition",
-  "url" : "https://globalalliantinc.com/access/StructureDefinition/access-condition",
-  "version" : "0.9.0",
+  "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition",
+  "version" : "0.9.1",
   "name" : "ACCESSCondition",
   "title" : "ACCESS Condition Profile",
   "status" : "active",
