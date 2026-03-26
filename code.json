@@ -1,0 +1,54 @@
+{
+  "name": "cmmi-access-model",
+  "version": "'0.9.0'",
+  "description": "This comprehensive guide covers all APIs for the CMS ACCESS (Advancing Chronic Care with Effective, Scalable Solutions) Model.",
+  "status": "Development",
+  "permissions": {
+    "licenses": [
+      {
+        "name": "CC0-1.0",
+        "URL": "https://github.com/DSACMS/cmmi-access-model/blob/main/LICENSE"
+      }
+    ],
+    "usageType": [
+      "openSource",
+      "governmentWideReuse"
+    ]
+  },
+  "organization": "Centers for Medicare & Medicaid Services",
+  "repositoryURL": "https://github.com/DSACMS/cmmi-access-model",
+  "repositoryVisibility": "public",
+  "homepageURL": "https://dsacms.github.io/cmmi-access-model/",
+  "vcs": "git",
+  "laborHours": 25696,
+  "reuseFrequency": {
+    "forks": 0
+  },
+  "languages": [
+    "HTML",
+    "CSS",
+    "JavaScript"
+  ],
+  "maintenance": "internal",
+  "contractNumber": [
+    "0"
+  ],
+  "SBOM": "https://github.com/DSACMS/cmmi-access-model/network/dependencies",
+  "date": {
+    "created": "2026-03-05T20:07:34Z",
+    "lastModified": "2026-03-09T15:29:13Z",
+    "metadataLastUpdated": "2026-03-10T18:26:46.678Z"
+  },
+  "tags": [
+    "cmmi",
+    "open-source",
+    "FHIR",
+    "API"
+  ],
+  "contact": {
+    "email": "opensource@cms.hhs.gov",
+    "name": "CMS Open Source Program Office"
+  },
+  "feedbackMechanism": "https://github.com/DSACMS/cmmi-access-model/issues",
+  "AIUseCaseID": "0"
+}
