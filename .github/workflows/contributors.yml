@@ -21,9 +21,7 @@ jobs:
       - name: Check if update needed
         id: check_changes
         env:
-          {% raw %}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          {% endraw %}
         run: |
           OWNER=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
           REPO=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
@@ -53,9 +51,7 @@ jobs:
         id: update_contributors
         uses: akhilmhdh/contributors-readme-action@v2.3.10
         env:
-          {% raw %}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          {% endraw %}
         with:
           readme_path: COMMUNITY.md
           commit_message: "updating contributors list"
@@ -66,13 +62,9 @@ jobs:
       - name: Update PR
         if: steps.check_changes.outputs.has_changes == 'true' && steps.update_contributors.outputs.pr_id != ''
         env:
-          {% raw %}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          {% endraw %}
         run: |
-          {% raw %}
           PR_NUMBER="${{ steps.update_contributors.outputs.pr_id }}"
-          {% endraw %}
           
           gh pr edit $PR_NUMBER \
             --body "New contributors detected! This PR updates the contributors list in COMMUNITY.md." \

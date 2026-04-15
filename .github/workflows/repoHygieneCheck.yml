@@ -10,9 +10,7 @@ jobs:
     name: Check For First Run
     runs-on: ubuntu-latest
     outputs:
-      {% raw %}
       should_run: ${{ steps.check.outputs.should_run }}
-      {% endraw %}
     permissions:
       contents: read
       pull-requests: write
@@ -39,16 +37,12 @@ jobs:
             echo "should_run=false" >> $GITHUB_OUTPUT
           fi
         env:
-          {% raw %}
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          {% endraw %}
 
   resolve-repolinter-json:
     name: Get Repolinter Config
     needs: check-first-run
-    {% raw %}
     if: needs.check-first-run.outputs.should_run == 'true'
-    {% endraw %}
     uses: DSACMS/repo-scaffolder/.github/workflows/extendJSONFile.yml@main
     with: 
       url_to_json: 'https://raw.githubusercontent.com/DSACMS/repo-scaffolder/main/tier2/%7B%7Bcookiecutter.project_slug%7D%7D/repolinter.json'
@@ -56,17 +50,13 @@ jobs:
   repolinter-checks:
     name: Tier 2 Checks
     needs: [check-first-run, resolve-repolinter-json]
-    {% raw %}
     if: needs.check-first-run.outputs.should_run == 'true'
-    {% endraw %}
     runs-on: ubuntu-latest
     permissions:
       contents: write
       pull-requests: write
     env:
-      {% raw %}
       RAW_JSON: ${{ needs.resolve-repolinter-json.outputs.raw-json }}
-      {% endraw %}
     steps:
       - uses: actions/checkout@v4
       - run: echo $RAW_JSON > repolinter.json
@@ -75,6 +65,4 @@ jobs:
           config_file: 'repolinter.json'
           output_type: 'pull-request'
           pull_request_labels: 'repolinter-initialized, cms-oss, cms-gov'
-          {% raw %}
           token: ${{ secrets.REPOLINTER_AUTO_TOKEN }}
-          {% endraw %}
