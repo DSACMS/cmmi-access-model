@@ -63,6 +63,40 @@ TODO: A list of CONTRIBUTORS is generated below using contributors.yml located i
 ![](https://img.shields.io/github/contributors/DSACMS/cmmi-access-model?style=flat-square&label=Contributor%20Count(incl.%20bots)) 
 
 <!-- readme: contributors -start -->
+<table>
+	<tbody>
+		<tr>
+            <td align="center">
+                <a href="https://github.com/decause-gov">
+                    <img src="https://avatars.githubusercontent.com/u/107957201?v=4" width="100;" alt="decause-gov"/>
+                    <br />
+                    <sub><b>decause-gov</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/DinneK">
+                    <img src="https://avatars.githubusercontent.com/u/63877492?v=4" width="100;" alt="DinneK"/>
+                    <br />
+                    <sub><b>Dinne Kopelevich</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/dhill">
+                    <img src="https://avatars.githubusercontent.com/u/11868?v=4" width="100;" alt="dhill"/>
+                    <br />
+                    <sub><b>Dave Hill</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/Nora-at-CMS">
+                    <img src="https://avatars.githubusercontent.com/u/265867789?v=4" width="100;" alt="Nora-at-CMS"/>
+                    <br />
+                    <sub><b>Nora Connor</b></sub>
+                </a>
+            </td>
+		</tr>
+	<tbody>
+</table>
 <!-- readme: contributors -end -->
 
 <!--
