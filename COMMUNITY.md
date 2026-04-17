@@ -67,13 +67,6 @@ TODO: A list of CONTRIBUTORS is generated below using contributors.yml located i
 	<tbody>
 		<tr>
             <td align="center">
-                <a href="https://github.com/decause-gov">
-                    <img src="https://avatars.githubusercontent.com/u/107957201?v=4" width="100;" alt="decause-gov"/>
-                    <br />
-                    <sub><b>decause-gov</b></sub>
-                </a>
-            </td>
-            <td align="center">
                 <a href="https://github.com/DinneK">
                     <img src="https://avatars.githubusercontent.com/u/63877492?v=4" width="100;" alt="DinneK"/>
                     <br />
@@ -81,10 +74,24 @@ TODO: A list of CONTRIBUTORS is generated below using contributors.yml located i
                 </a>
             </td>
             <td align="center">
+                <a href="https://github.com/decause-gov">
+                    <img src="https://avatars.githubusercontent.com/u/107957201?v=4" width="100;" alt="decause-gov"/>
+                    <br />
+                    <sub><b>decause-gov</b></sub>
+                </a>
+            </td>
+            <td align="center">
                 <a href="https://github.com/dhill">
                     <img src="https://avatars.githubusercontent.com/u/11868?v=4" width="100;" alt="dhill"/>
                     <br />
                     <sub><b>Dave Hill</b></sub>
+                </a>
+            </td>
+            <td align="center">
+                <a href="https://github.com/IsaacMilarky">
+                    <img src="https://avatars.githubusercontent.com/u/24639268?v=4" width="100;" alt="IsaacMilarky"/>
+                    <br />
+                    <sub><b>Isaac Milarsky</b></sub>
                 </a>
             </td>
             <td align="center">
