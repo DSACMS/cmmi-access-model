@@ -1,0 +1,37 @@
+{
+  "resourceType" : "Observation",
+  "id" : "HDLCholesterolExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">HDL Cholesterol: 42 mg/dL measured on 2026-01-15</div>"
+  },
+  "status" : "final",
+  "category" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/observation-category",
+      "code" : "laboratory",
+      "display" : "Laboratory"
+    }]
+  }],
+  "code" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "2085-9",
+      "display" : "Cholesterol in HDL [Mass/volume] in Serum or Plasma"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "effectiveDateTime" : "2026-01-15T10:30:00Z",
+  "valueQuantity" : {
+    "value" : 42,
+    "unit" : "mg/dL",
+    "system" : "http://unitsofmeasure.org",
+    "code" : "mg/dL"
+  }
+}

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationDefinition xmlns="http://hl7.org/fhir">
+  <id value="ReportData"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: OperationDefinition ReportData</b></p><a name="ReportData"> </a><a name="hcReportData"> </a><p>URL: [base]/Patient/$report-data</p><p>Input parameters Profile:<a href="StructureDefinition-access-report-data-in.html">ACCESS Report Data Parameters</a></p><h3>Parameters</h3><table class="grid"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345).</p>
+</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>
+</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-ACCESSTrackVS.html">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track for the data submission.</p>
+</div></td></tr><tr><td>IN</td><td>reportType</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-ACCESSReportTypeVS.html">ACCESS Report Type Value Set</a> (Required)</td><td><div><p>Type of data report.</p>
+</div></td></tr><tr><td>IN</td><td>dataBundle</td><td/><td>1..*</td><td><a href="http://hl7.org/fhir/R4/bundle.html">Bundle</a></td><td/><td><div><p>Data bundle to report.</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData"/>
+  <version value="0.9.6"/>
+  <name value="ReportData"/>
+  <title value="Submit Data Report"/>
+  <status value="active"/>
+  <kind value="operation"/>
+  <date value="2026-04-24T13:45:33-04:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="The **$report-data** operation allows a participant to submit data reporting information for the ACCESS model."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <code value="report-data"/>
+  <resource value="Patient"/>
+  <system value="false"/>
+  <type value="true"/>
+  <instance value="false"/>
+  <inputProfile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"/>
+  <parameter>
+    <name value="participantID"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="payerID"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Payer ID for the patient."/>
+    <type value="Identifier"/>
+  </parameter>
+  <parameter>
+    <name value="track"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="ACCESS track for the data submission."/>
+    <type value="CodeableConcept"/>
+    <binding>
+      <strength value="required"/>
+      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"/>
+    </binding>
+  </parameter>
+  <parameter>
+    <name value="reportType"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="1"/>
+    <documentation value="Type of data report."/>
+    <type value="CodeableConcept"/>
+    <binding>
+      <strength value="required"/>
+      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.6"/>
+    </binding>
+  </parameter>
+  <parameter>
+    <name value="dataBundle"/>
+    <use value="in"/>
+    <min value="1"/>
+    <max value="*"/>
+    <documentation value="Data bundle to report."/>
+    <type value="Bundle"/>
+  </parameter>
+</OperationDefinition>

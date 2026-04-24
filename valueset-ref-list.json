@@ -1,7 +1,32 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/ValueSet/languages",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "CommonLanguages",
+    "title" : "Common Languages",
+    "description" : "This value set includes common codes from BCP-47 (http://tools.ietf.org/html/bcp47)",
+    "systems" : ["urn:ietf:bcp:47"],
+    "oids" : ["2.16.840.1.113883.4.642.3.20"],
+    "sources" : ["2.16.840.1.113883.4.642.3.20"],
+    "uses" : {
+    },
+    "StructureDefinition-access-data-reporting-bundle.html" : "ACCESS Data Reporting Bundle",
+    "StructureDefinition-access-data-reporting-composition.html" : "ACCESS Data Reporting Composition",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
+    "StructureDefinition-access-align-out.html" : "ACCESS Alignment Response Parameters",
+    "StructureDefinition-access-check-eligibility-out.html" : "ACCESS Check Eligibility Response Parameters",
+    "StructureDefinition-access-unalign-out.html" : "ACCESS Unalignment Response Parameters",
+    "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
+    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
+    "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters",
+    "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
+    "StructureDefinition-access-report-data-out.html" : "ACCESS Report Data Response Parameters",
+    "StructureDefinition-access-submission-status-out.html" : "ACCESS Submission Status Response Parameters"
+  },
+  {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultVS",
     "title" : "ACCESS Alignment Result Value Set",
@@ -13,7 +38,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "active",
     "name" : "ACCESSBHDiagnosisVS",
     "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
@@ -25,7 +50,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "active",
     "name" : "ACCESSCKMDiagnosisVS",
     "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
@@ -37,7 +62,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultVS",
     "title" : "ACCESS Eligibility Result Value Set",
@@ -49,7 +74,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEventTypeVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSEventTypeVS",
     "title" : "ACCESS Event Types Value Set",
@@ -58,7 +83,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "active",
     "name" : "ACCESSMSKDiagnosisVS",
     "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
@@ -69,8 +94,33 @@
     "StructureDefinition-access-msk-condition.html" : "ACCESS MSK Track Condition Profile"
   },
   {
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS",
+    "version" : "0.9.6",
+    "status" : "draft",
+    "name" : "ACCESSReportDataResultVS",
+    "title" : "ACCESS Report Data Result Value Set",
+    "description" : "This value set includes all codes from the ACCESS Report Data Result code system.",
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS"],
+    "uses" : {
+    },
+    "StructureDefinition-access-report-data-out.html" : "ACCESS Report Data Response Parameters"
+  },
+  {
+    "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS",
+    "version" : "0.9.6",
+    "status" : "draft",
+    "name" : "ACCESSReportTypeVS",
+    "title" : "ACCESS Report Type Value Set",
+    "description" : "This value set includes all codes from the ACCESS Report Type code system.",
+    "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS"],
+    "uses" : {
+    },
+    "OperationDefinition-ReportData.html" : "Submit Data Report",
+    "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters"
+  },
+  {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSTrackVS",
     "title" : "ACCESS Model Tracks Value Set",
@@ -78,16 +128,18 @@
     "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"],
     "uses" : {
     },
-    "OperationDefinition-Align.html" : "Alignment Request",
-    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
-    "OperationDefinition-Unalign.html" : "Unalignment Request",
+    "OperationDefinition-ReportData.html" : "Submit Data Report",
     "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
+    "OperationDefinition-Align.html" : "Alignment Request",
     "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
-    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters"
+    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
+    "OperationDefinition-Unalign.html" : "Unalignment Request",
+    "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters",
+    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request"
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonVS",
     "title" : "ACCESS Unalignment Reason Value Set",
@@ -99,7 +151,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultVS",
     "title" : "ACCESS Unalignment Result Value Set",
@@ -111,7 +163,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "active",
     "name" : "ACCESSeCKMDiagnosisVS",
     "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",

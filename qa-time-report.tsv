@@ -1,77 +1,133 @@
-Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
-/fsh-generated/resources/ImplementationGuide-cms.fhir.us.access.json	26691	-	0	0	0	0	0	0	6	37	0	0	0	0	0	0	0	0	0	0	61	75	0	0	0	3	0	1
-fsh-generated/resources/CapabilityStatement-ACCESSAlignmentAPICapabilityStatement.json	2629	1	0	0	1	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	16	64	0	0	0	0	0	0
-fsh-generated/resources/CapabilityStatement-ACCESSEligibilityAPICapabilityStatement.json	2388	1	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	13	14	0	0	0	0	0	0
-fsh-generated/resources/CapabilityStatement-ACCESSUnalignmentAPICapabilityStatement.json	2503	0	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	13	30	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-ACCESSAlignmentResultCS.json	2890	1	0	0	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	12	248	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-ACCESSEligibilityResultCS.json	2908	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	10	30	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-ACCESSEventTypeCS.json	2291	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	10	27	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-ACCESSTrackCS.json	1434	1	0	0	0	0	0	0	1	6	0	0	0	0	0	0	0	0	0	0	7	47	0	0	0	1	0	0
-fsh-generated/resources/CodeSystem-ACCESSUnalignmentReasonCS.json	1532	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	8	20	0	0	0	0	0	0
-fsh-generated/resources/CodeSystem-ACCESSUnalignmentResultCS.json	1253	0	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	7	22	0	0	0	0	0	0
-fsh-generated/resources/Condition-ConditionDepressionExample.json	1213	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	9	0	0	0	0	0	0
-fsh-generated/resources/Condition-ConditionDiabetesExample.json	1196	1	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	3	6	0	0	0	0	0	0
-fsh-generated/resources/Condition-ConditionHypertensionExample.json	1171	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	6	0	0	0	0	0	0
-fsh-generated/resources/Condition-ConditionOsteoarthritisExample.json	1199	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	6	0	0	0	0	0	0
-fsh-generated/resources/Condition-ESRDConditionExample.json	1275	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	4	0	0	0	0	0	0
-fsh-generated/resources/OperationDefinition-Align.json	2467	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	9	28	0	0	0	0	0	0
-fsh-generated/resources/OperationDefinition-CheckEligibility.json	2257	1	0	0	0	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	8	19	0	0	0	0	0	0
-fsh-generated/resources/OperationDefinition-SubmissionStatus.json	2117	0	0	0	6	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	9	12	0	0	0	0	0	0
-fsh-generated/resources/OperationDefinition-Unalign.json	2560	1	0	0	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	8	7	0	0	0	1	0	0
-fsh-generated/resources/Organization-OrganizationExample.json	568	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	5	0	0	0	0	0	0
-fsh-generated/resources/Parameters-AlignmentRequestExample.json	3816	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	10	0	0	0	0	0	0
-fsh-generated/resources/Parameters-AlignmentRequestWithSwitchConsentExample.json	3916	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	6	0	0	0	0	0	0
-fsh-generated/resources/Parameters-AlignmentResponseAlignedExample.json	676	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	3	0	0	0	0	0	0
-fsh-generated/resources/Parameters-AlignmentResponseSwitchApprovedExample.json	763	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	3	0	0	0	0	0	0
-fsh-generated/resources/Parameters-CheckEligibilityRequestExample.json	2199	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	3	0	0	0	0	0	0
-fsh-generated/resources/Parameters-CheckEligibilityResponseEligibleExample.json	610	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	3	0	0	0	0	0	0
-fsh-generated/resources/Parameters-SubmissionStatusResponseExample.json	602	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	4	0	0	0	0	0	0
-fsh-generated/resources/Parameters-UnalignmentRequestESRDExample.json	4343	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	5	0	0	0	0	0	0
-fsh-generated/resources/Parameters-UnalignmentRequestExample.json	2510	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	4	0	0	0	0	0	0
-fsh-generated/resources/Parameters-UnalignmentResponseUnalignedExample.json	680	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	3	0	0	0	0	0	0
-fsh-generated/resources/Patient-PatientESRDExample.json	807	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	2	0	0	0	0	0	0
-fsh-generated/resources/Patient-PatientExample.json	795	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	3	0	0	0	0	0	0
-fsh-generated/resources/Practitioner-PractitionerExample.json	546	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	3	3	0	0	0	0	0	0
-fsh-generated/resources/StructureDefinition-access-align-in.json	9374	1	0	20	0	0	0	0	0	22	0	0	0	0	0	0	0	1	0	0	176	772	0	0	0	9	1	1
-fsh-generated/resources/StructureDefinition-access-align-out.json	1791	1	0	10	0	0	0	0	0	10	0	0	1	0	0	0	0	0	0	0	56	110	0	1	0	2	0	0
-fsh-generated/resources/StructureDefinition-access-bh-condition.json	1327	1	0	32	3	0	0	0	0	9	0	0	0	0	0	0	0	1	0	0	92	150	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-access-check-eligibility-in.json	6645	1	0	17	0	0	0	0	0	8	0	0	0	0	0	0	0	0	0	0	153	181	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-access-check-eligibility-out.json	1844	0	0	11	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	84	77	0	0	0	1	0	1
-fsh-generated/resources/StructureDefinition-access-ckm-condition.json	1359	1	0	14	4	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	99	135	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-access-clinical-exclusion-condition.json	899	1	0	17	0	0	0	0	0	5	0	0	0	0	0	0	0	1	0	0	91	181	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-access-condition.json	2178	0	0	1	0	0	0	0	0	9	0	0	0	0	0	0	0	0	0	0	103	132	0	0	0	3	0	1
-fsh-generated/resources/StructureDefinition-access-eckm-condition.json	1388	1	0	13	3	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	88	141	0	0	0	3	0	0
-fsh-generated/resources/StructureDefinition-access-msk-condition.json	1366	1	0	16	3	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	88	137	0	0	0	4	0	0
-fsh-generated/resources/StructureDefinition-access-submission-status-out.json	2910	1	0	26	0	0	0	0	0	4	0	0	0	0	0	0	0	0	0	0	60	161	0	0	0	2	0	0
-fsh-generated/resources/StructureDefinition-access-unalign-in.json	8421	1	0	15	0	0	0	0	0	8	0	0	0	0	0	0	0	1	0	0	139	221	0	0	0	4	0	1
-fsh-generated/resources/StructureDefinition-access-unalign-out.json	1805	0	0	10	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	85	71	0	0	0	2	0	0
-fsh-generated/resources/ValueSet-ACCESSAlignmentResultVS.json	631	1	0	0	0	0	0	0	0	29	0	0	0	0	0	0	0	0	0	0	10	80	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSBHDiagnosisVS.json	5570	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	13	27	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSCKMDiagnosisVS.json	13884	1	0	0	0	0	0	0	1	5	0	0	0	0	0	0	0	0	0	0	42	46	0	0	0	1	0	0
-fsh-generated/resources/ValueSet-ACCESSEligibilityResultVS.json	643	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	10	21	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSEventTypeVS.json	597	1	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	11	21	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSMSKDiagnosisVS.json	47358	1	0	0	0	0	0	0	1	10	0	0	0	0	0	0	0	0	0	0	71	52	0	0	0	3	0	0
-fsh-generated/resources/ValueSet-ACCESSTrackVS.json	583	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	22	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSUnalignmentReasonVS.json	643	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	5	19	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSUnalignmentResultVS.json	643	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	4	20	0	0	0	0	0	0
-fsh-generated/resources/ValueSet-ACCESSeCKMDiagnosisVS.json	5047	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	10	20	0	0	0	0	0	0
-/input/includes/operations-manual-notice.html	484	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/includes/data-reporting-future-notice.html	426	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/fsh-generated/includes/fsh-link-references.md	3987	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/fsh-generated/includes/menu.xml	1435	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/conformance.md	7177	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-ckm-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-align-in-intro.md	966	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/changelog.md	32378	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-msk-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-condition-intro.md	631	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/artifacts.md	13026	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-eckm-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/index.md	8945	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-bh-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-check-eligibility-in-intro.md	441	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/input/pagecontent/downloads.md	801	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/input/pagecontent/StructureDefinition-access-unalign-in-intro.md	663	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
-/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
-/temp/pages/_includes/artifacts.xml	31045	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	0	0	0	0	0	0	0
+Source File	Size	loadResources	load	generateSnapshots	load-configure	scan	loadDepInfo	loadInfo	checkR4R4B	generateNarratives	validate	loadLists	checkConformanceResources	checkConformanceResources2	checkConformanceResources3	generateLogicalMaps	validateExpressions	scanForUsageStats	checkURLsUnique	processProvenanceDetails	translate	generate1	generate2	generateLogicals	makeDependencies	generateExampleZip	generateValidationPack	scanProfilesForR5	scanExamplesForR5
+/fsh-generated/resources/ImplementationGuide-cms.fhir.us.cmmi-access-model.json	46310	-	0	0	0	0	0	0	5	40	0	0	0	0	0	0	0	1	0	0	0	120	524	0	0	0	3	0	1
+fsh-generated/resources/Bundle-BHReportDataBundleExample.json	26940	4	11	0	2	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	32	56	0	0	0	0	0	1
+fsh-generated/resources/Bundle-CKMReportDataBundleExample.json	20969	3	3	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	24	36	0	0	0	0	0	0
+fsh-generated/resources/Bundle-MSKReportDataBundleExample.json	58792	3	3	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	70	50	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ACCESSAlignmentAPICapabilityStatement.json	2774	1	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	20	21	0	0	0	1	0	0
+fsh-generated/resources/CapabilityStatement-ACCESSDataReportingAPICapabilityStatement.json	4400	0	0	0	0	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	24	12	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ACCESSEligibilityAPICapabilityStatement.json	2534	1	0	0	0	0	0	0	1	2	0	0	0	0	0	0	0	0	0	0	0	17	10	0	0	0	0	0	0
+fsh-generated/resources/CapabilityStatement-ACCESSUnalignmentAPICapabilityStatement.json	2649	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	19	8	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-ACCESSAlignmentResultCS.json	2888	1	0	0	0	0	0	0	0	3	0	0	1	0	0	0	0	0	0	0	0	15	49	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSEligibilityResultCS.json	2908	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	16	32	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSEventTypeCS.json	2290	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	14	28	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSReportDataCompositionSectionCS.json	1636	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	24	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSReportDataResultCS.json	1980	0	0	0	0	0	0	0	0	2	0	0	0	0	0	0	0	0	0	0	0	12	30	0	0	0	1	0	0
+fsh-generated/resources/CodeSystem-ACCESSReportTypeCS.json	1560	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	16	23	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSTrackCS.json	1434	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	22	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSUnalignmentReasonCS.json	1532	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	24	0	0	0	0	0	0
+fsh-generated/resources/CodeSystem-ACCESSUnalignmentResultCS.json	1454	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	21	0	0	0	0	0	0
+fsh-generated/resources/Composition-BHReportDataCompositionExample.json	3228	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	16	0	0	0	0	0	0
+fsh-generated/resources/Composition-CKMReportDataCompositionExample.json	4444	1	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	19	0	0	0	0	0	0
+fsh-generated/resources/Composition-MSKReportDataCompositionExample.json	5929	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	21	0	0	0	0	0	0
+fsh-generated/resources/Condition-ConditionDepressionExample.json	1241	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	13	0	0	0	0	0	0
+fsh-generated/resources/Condition-ConditionDiabetesExample.json	1224	1	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	0	0	0
+fsh-generated/resources/Condition-ConditionHypertensionExample.json	1199	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/Condition-ConditionOsteoarthritisExample.json	1227	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/Condition-ESRDConditionExample.json	1303	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/DiagnosticReport-LDLDiagnosticReportExample.json	1185	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	15	0	0	0	0	0	0
+fsh-generated/resources/DiagnosticReport-LipidPanelDiagnosticReportExample.json	1375	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	12	0	0	0	0	0	0
+fsh-generated/resources/Observation-BMIExample.json	1005	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	41	0	0	0	0	0	0
+fsh-generated/resources/Observation-BloodPressureExample.json	1712	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	10	0	0	0	0	0	0
+fsh-generated/resources/Observation-BodyWeightExample.json	997	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-HDLCholesterolExample.json	1067	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-HbA1cExample.json	1035	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-LDLCholesterolExample.json	1086	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-TotalCholesterolExample.json	1066	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-TriglyceridesExample.json	1060	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	11	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-WaistCircumferenceExample.json	1056	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	0	0	0
+fsh-generated/resources/Observation-eGFRExample.json	1148	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	9	0	0	0	0	0	0
+fsh-generated/resources/Observation-uACRExample.json	1064	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	8	0	0	0	0	0	0
+fsh-generated/resources/OperationDefinition-Align.json	2468	1	0	0	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	11	12	0	0	0	0	0	0
+fsh-generated/resources/OperationDefinition-CheckEligibility.json	2258	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	11	9	0	0	0	0	0	0
+fsh-generated/resources/OperationDefinition-ReportData.json	2011	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	10	8	0	0	0	1	0	0
+fsh-generated/resources/OperationDefinition-SubmissionStatus.json	2299	0	0	0	7	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	13	9	0	0	0	0	0	0
+fsh-generated/resources/OperationDefinition-Unalign.json	2561	0	0	0	0	0	0	0	1	1	0	0	0	0	0	0	0	0	0	0	0	11	11	0	0	0	0	0	0
+fsh-generated/resources/OperationOutcome-SubmissionStatusOperationOutcomeExample.json	850	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/Organization-OrganizationExample.json	596	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	6	0	0	0	0	0	0
+fsh-generated/resources/Parameters-AlignmentRequestExample.json	3872	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	12	0	0	0	0	0	0
+fsh-generated/resources/Parameters-AlignmentRequestWithSwitchConsentExample.json	3972	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	11	0	0	0	0	0	0
+fsh-generated/resources/Parameters-AlignmentResponseAlignedExample.json	676	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-AlignmentResponseSwitchApprovedExample.json	762	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-BHReportDataRequestExample.json	33531	2	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	25	37	0	0	0	0	0	1
+fsh-generated/resources/Parameters-CKMReportDataRequestExample.json	26680	2	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	1	0	0	0	22	32	0	0	0	0	0	0
+fsh-generated/resources/Parameters-CheckEligibilityRequestExample.json	2227	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-CheckEligibilityResponseEligibleExample.json	610	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-MSKReportDataRequestExample.json	71397	3	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	64	53	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataRequestExample.json	26677	2	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	24	32	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponseDuplicateExample.json	660	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponseIncompleteDataExample.json	665	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponseIncorrectTrackExample.json	646	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	4	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponsePatientNotAlignedExample.json	698	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	8	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponseReportingPeriodClosedExample.json	685	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-ReportDataResponseSuccessExample.json	596	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-SubmissionStatusResponseExample.json	602	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	5	0	0	0	0	0	0
+fsh-generated/resources/Parameters-UnalignmentRequestESRDExample.json	4399	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	31	0	0	0	0	0	0
+fsh-generated/resources/Parameters-UnalignmentRequestExample.json	2538	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	7	0	0	0	0	0	0
+fsh-generated/resources/Parameters-UnalignmentResponseUnalignedExample.json	680	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	7	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientESRDExample.json	835	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	6	0	0	0	0	0	0
+fsh-generated/resources/Patient-PatientExample.json	823	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	5	0	0	0	0	0	0
+fsh-generated/resources/Practitioner-PractitionerExample.json	574	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	6	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-AnxietyGAD7Example.json	4531	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	12	10	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-BHPGICExample.json	959	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-BHWHODASExample.json	3855	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-DepressionPHQ9Example.json	6316	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	0	9	11	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-HOOSJRExample.json	3894	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-KOOSJRExample.json	4422	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	13	10	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-MSKPGICExample.json	935	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	5	11	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-NeckDisabilityIndexExample.json	6200	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	11	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-OswestryDisabilityIndexExample.json	2607	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	8	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-PROMISCATExample.json	3282	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-PROMISNRSExample.json	911	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	8	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-PROMISPainInterferenceCATExample.json	3299	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-PROMISPainInterferenceSFExample.json	4817	1	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	8	9	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-PROMISPhysicalFunctionExample.json	4764	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	9	10	0	0	0	0	0	0
+fsh-generated/resources/QuestionnaireResponse-QuickDASHExample.json	3014	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	10	9	0	0	0	0	0	0
+fsh-generated/resources/StructureDefinition-access-align-in.json	9594	2	0	17	0	0	0	0	0	19	0	0	0	0	0	0	0	0	0	0	0	203	871	0	1	0	5	1	1
+fsh-generated/resources/StructureDefinition-access-align-out.json	2013	0	0	7	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	56	164	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-access-bh-condition.json	1712	0	0	20	2	0	0	0	0	7	0	0	1	0	0	0	0	1	0	0	0	124	620	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-access-check-eligibility-in.json	6867	1	0	14	0	0	0	0	0	10	0	0	0	0	0	0	0	0	0	0	0	145	215	0	0	0	4	0	1
+fsh-generated/resources/StructureDefinition-access-check-eligibility-out.json	2066	0	0	6	0	0	0	0	1	6	0	0	0	0	0	0	0	0	0	0	0	58	149	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-access-ckm-condition.json	1744	0	0	11	2	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	131	2000	0	0	0	5	0	0
+fsh-generated/resources/StructureDefinition-access-clinical-exclusion-condition.json	899	1	0	8	0	0	0	0	0	4	0	0	0	0	0	0	0	1	0	0	0	118	2187	0	0	0	2	0	1
+fsh-generated/resources/StructureDefinition-access-condition.json	2398	0	0	1	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	119	213	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-access-data-reporting-bundle.json	2707	0	0	39	1	0	0	0	0	15	0	0	0	0	0	0	0	1	0	0	0	195	335	0	0	0	5	0	1
+fsh-generated/resources/StructureDefinition-access-data-reporting-composition.json	41561	3	0	51	0	0	0	0	0	84	0	0	2	0	0	0	0	5	0	0	0	1544	1150	0	0	0	27	1	3
+fsh-generated/resources/StructureDefinition-access-eckm-condition.json	1773	1	0	8	2	0	0	0	0	6	0	0	0	0	0	0	0	0	0	0	0	115	328	0	0	0	6	0	0
+fsh-generated/resources/StructureDefinition-access-msk-condition.json	1751	0	0	6	3	0	0	0	0	5	0	0	0	0	0	0	0	0	0	0	0	108	1717	0	0	0	3	0	1
+fsh-generated/resources/StructureDefinition-access-report-data-in.json	7507	1	0	7	0	0	0	0	0	7	0	0	0	0	0	0	0	1	0	0	0	136	155	0	0	0	2	0	0
+fsh-generated/resources/StructureDefinition-access-report-data-out.json	2032	0	0	4	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	57	113	0	0	0	1	0	0
+fsh-generated/resources/StructureDefinition-access-submission-status-out.json	3132	0	0	5	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	73	153	0	0	0	1	0	1
+fsh-generated/resources/StructureDefinition-access-unalign-in.json	8643	1	0	8	0	0	0	0	0	7	0	0	0	0	0	0	0	0	0	0	0	174	219	0	0	0	4	0	0
+fsh-generated/resources/StructureDefinition-access-unalign-out.json	2027	0	0	3	0	0	0	0	0	3	0	0	0	0	0	0	0	0	0	0	0	60	111	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ACCESSAlignmentResultVS.json	631	1	0	0	0	0	0	0	0	222	0	0	0	0	0	0	0	0	0	0	0	7	166	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSBHDiagnosisVS.json	5570	0	0	0	0	0	0	0	0	258	0	0	0	0	0	0	0	0	0	0	0	15	42	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ACCESSCKMDiagnosisVS.json	13884	1	0	0	0	0	0	0	0	1554	0	0	0	0	0	0	0	0	0	0	0	36	73	0	0	0	3	0	0
+fsh-generated/resources/ValueSet-ACCESSEligibilityResultVS.json	643	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	30	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSEventTypeVS.json	597	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	31	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSMSKDiagnosisVS.json	47358	2	0	0	0	0	0	0	1	1496	0	0	0	0	0	0	0	0	0	0	0	80	84	0	0	0	5	0	1
+fsh-generated/resources/ValueSet-ACCESSReportDataResultVS.json	639	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	30	0	0	0	1	0	0
+fsh-generated/resources/ValueSet-ACCESSReportTypeVS.json	601	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	7	28	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSTrackVS.json	583	1	0	0	0	0	0	0	0	1	0	0	0	0	0	0	0	0	0	0	0	7	28	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSUnalignmentReasonVS.json	643	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	28	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSUnalignmentResultVS.json	643	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	6	33	0	0	0	0	0	0
+fsh-generated/resources/ValueSet-ACCESSeCKMDiagnosisVS.json	5047	0	0	0	0	0	0	0	0	133	0	0	0	0	0	0	0	0	0	0	0	12	32	0	0	0	1	0	0
+/fsh-generated/includes/fsh-link-references.md	8160	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/fsh-generated/includes/menu.xml	1494	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/conformance.md	7132	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-ckm-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-align-in-intro.md	957	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/changelog.md	1750	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-msk-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-condition-intro.md	631	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/artifacts.md	22797	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-eckm-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/index.md	9118	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-bh-condition-intro.md	141	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-check-eligibility-in-intro.md	430	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/downloads.md	1030	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-data-reporting-composition-intro.md	1904	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-data-reporting-bundle-intro.md	901	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/input/pagecontent/StructureDefinition-access-unalign-in-intro.md	654	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	1	0	0	0	0	0	0
+/template/config	0	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/template/config/_config.yml	140	-	-	-	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0	0
+/temp/pages/_includes/artifacts.xml	75027	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	-	2	0	0	0	0	0	0

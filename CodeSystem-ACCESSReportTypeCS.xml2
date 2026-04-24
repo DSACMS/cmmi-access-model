@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSReportTypeCS"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSReportTypeCS</b></p><a name="ACCESSReportTypeCS"> </a><a name="hcACCESSReportTypeCS"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">baseline<a name="ACCESSReportTypeCS-baseline"> </a></td><td>Baseline Data Report</td><td><div><p>Reports the baseline Outcome-Aligned Payment (OAP) data for the patient. Valid baseline OAP Measures must be submitted within 60 days of alignment.</p>
+</div></td></tr><tr><td style="white-space:nowrap">quarterly<a name="ACCESSReportTypeCS-quarterly"> </a></td><td>Quarterly Data Report</td><td><div><p>Reports quarterly Outcome-Aligned Payment (OAP) data for the patient. Valid quarterly OAP Measures must be submitted 70 to 110 days after the prior OAP
+submission</p>
+</div></td></tr><tr><td style="white-space:nowrap">end-of-period<a name="ACCESSReportTypeCS-end-of-period"> </a></td><td>End of Period Data Report</td><td><div><p>Reports end of period Outcome-Aligned Payment (OAP) data for the patient. Valid end-of-period measures must be submitted no later than 425 days from the date of alignment
+(365 days plus an additional 60 days) and may be submitted up to 90 days prior to Day 365 for the
+eCKM and CKM tracks or up to 180 days prior to Day 365 for the BH and MSK tracks (“early success reporting”).</p>
+</div></td></tr></table></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS"/>
+  <version value="0.9.6"/>
+  <name value="ACCESSReportTypeCS"/>
+  <title value="ACCESS Report Type Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T13:45:33-04:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines the codes indicating the type of the data report submission."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="baseline"/>
+    <display value="Baseline Data Report"/>
+    <definition value="Reports the baseline Outcome-Aligned Payment (OAP) data for the patient. Valid baseline OAP Measures must be submitted within 60 days of alignment."/>
+  </concept>
+  <concept>
+    <code value="quarterly"/>
+    <display value="Quarterly Data Report"/>
+    <definition value="Reports quarterly Outcome-Aligned Payment (OAP) data for the patient. Valid quarterly OAP Measures must be submitted 70 to 110 days after the prior OAP &#xA;submission"/>
+  </concept>
+  <concept>
+    <code value="end-of-period"/>
+    <display value="End of Period Data Report"/>
+    <definition value="Reports end of period Outcome-Aligned Payment (OAP) data for the patient. Valid end-of-period measures must be submitted no later than 425 days from the date of alignment &#xA;(365 days plus an additional 60 days) and may be submitted up to 90 days prior to Day 365 for the &#xA;eCKM and CKM tracks or up to 180 days prior to Day 365 for the BH and MSK tracks (“early success reporting”)."/>
+  </concept>
+</CodeSystem>

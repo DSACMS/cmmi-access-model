@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ReportDataResponseIncorrectTrackExample"/>
+  <meta>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"/>
+  </meta>
+  <language value="en"/>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS"/>
+        <code value="incorrect-track"/>
+        <display value="Incorrect Track"/>
+      </coding>
+      <text value="The submitted data does not match the track the patient is aligned to."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

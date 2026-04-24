@@ -1,0 +1,907 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2></h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#common-patterns" id="markdown-toc-common-patterns">Common Patterns</a></li>
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a></li>
+  <li><a href="#standards-alignment" id="markdown-toc-standards-alignment">Standards Alignment</a></li>
+  <li><a href="#implementation-notes-and-edge-cases" id="markdown-toc-implementation-notes-and-edge-cases">Implementation Notes and Edge Cases</a></li>
+  <li><a href="#next-steps-and-support" id="markdown-toc-next-steps-and-support">Next Steps and support</a></li>
+</ul>
+
+</div>
+<p>This Operations Manual provides general implementation guidance applicable to all ACCESS Model APIs.</p>
+
+<h3 id="common-patterns">Common Patterns</h3>
+
+<p>All ACCESS Model APIs follow consistent asynchronous processing and parameter patterns for ease of implementation. The Alignment API uses an asynchronous request-response pattern to accommodate the processing time required for backend logic. This pattern allows clients to submit requests and subsequently poll for results without maintaining a persistent connection. The pattern uses two sets of operations to support a submit-and-poll workflow:</p>
+
+<ol>
+  <li><strong>$check-eligibility, $align, $unalign, $report-data</strong>: Submits a request to the API</li>
+  <li><strong>$submission-status</strong>: Polls for the status of a submitted request</li>
+</ol>
+
+<h5 id="why-asynchronous">Why Asynchronous?</h5>
+
+<p>ACCESS operations can take some time to complete making a synchronous request-response pattern impractical for real-world implementations.</p>
+
+<p>Processing these operations may require:</p>
+<ul>
+  <li>Conducting additional data validation specific to the ACCESS Model</li>
+  <li>Processing complex composition structures with nested sections</li>
+  <li>Integrating with multiple backend systems to evaluate ACCESS Model requirements</li>
+  <li>Applying control group randomization algorithms</li>
+</ul>
+
+<h4 id="workflow-overview">Workflow Overview</h4>
+
+<p>The typical workflow consists of the following steps:</p>
+
+<ol>
+  <li><strong>Submission</strong>: The client submits a <code class="language-plaintext highlighter-rouge">$check-eligibility</code>, <code class="language-plaintext highlighter-rouge">$align</code>, <code class="language-plaintext highlighter-rouge">$unalign</code>, <code class="language-plaintext highlighter-rouge">$report-data</code> operation</li>
+  <li><strong>Acknowledgment</strong>: The server returns <code class="language-plaintext highlighter-rouge">HTTP 202 Accepted</code> with a <code class="language-plaintext highlighter-rouge">Content-Location</code> header containing the URL for retrieving submission status</li>
+  <li><strong>Polling</strong>: The client periodically polls using the <code class="language-plaintext highlighter-rouge">$submission-status</code> operation through the submission status URL provided</li>
+  <li><strong>Completion</strong>: When processing completes, the submission status returns <code class="language-plaintext highlighter-rouge">HTTP 200 OK</code> with the final result</li>
+</ol>
+
+<p><strong>Interaction Pattern:</strong></p>
+
+<p>The following sequence diagram illustrates the general asynchronous pattern used by all ACCESS APIs:</p>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    participant Client as ACCESS Participant System
+    participant API as ACCESS API
+    participant Backend as Backend Processing
+
+    Client-&gt;&gt;API: POST [base]/access/Patient/$operation
+    Note over Client,API: Submit request with required parameters
+    
+    API-&gt;&gt;Backend: Queue request for processing
+    Backend--&gt;&gt;API: Request queued
+    
+    alt Still Processing
+        API--&gt;&gt;Client: 202 Accepted
+        Note over API,Client: Content-Location header with status URL&lt;br/&gt;(no response body)
+    else Processing Complete - Error
+        API--&gt;&gt;Client: 4xx or 5xx
+        Note over API,Client: OperationOutcome&lt;br/&gt;with error details
+    end       
+    
+    loop Status Polling
+        Client-&gt;&gt;API: GET [base]/access/Patient/$submission-status/&lt;submissionID&gt;
+        
+        alt Still Processing
+            API--&gt;&gt;Client: 202 Accepted
+            Note over API,Client: No response body&lt;br/&gt;Continue polling
+            Note over Client: Wait 5-30 seconds
+        else Processing Complete - Success
+            API-&gt;&gt;Backend: Retrieve result
+            Backend--&gt;&gt;API: Operation result
+            API--&gt;&gt;Client: 200 OK
+            Note over API,Client: Parameters resource&lt;br/&gt;with result code
+            Note over API,Client: optional OperationOutcome&lt;br/&gt;with issue details
+        else Processing Complete - Error
+            API--&gt;&gt;Client: 4xx or 5xx
+            Note over API,Client: OperationOutcome&lt;br/&gt;with error details
+        end
+    end
+</code></pre>
+
+<h4 id="required-query-parameters">Required Query Parameters</h4>
+
+<p>All primary operations ($check-eligibility, $align, $unalign, $report-data) require an <code class="language-plaintext highlighter-rouge">entityId</code> query parameter:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">entityId</code> (required): ACCESS participant identifier. Must follow the pattern <code class="language-plaintext highlighter-rouge">ACCES#####</code>.</li>
+</ul>
+
+<h4 id="required-operation-parameters">Required Operation Parameters</h4>
+
+<p>All primary operations ($check-eligibility, $align, $unalign, $report-data) require these common parameters:</p>
+
+<ul>
+  <li><strong>participantID</strong> - ACCESS participant identifier. This identifier is supplied to the ACCESS participant during the Request for Application (RFA) process and takes the form of “ACCES&lt;5-digit number&gt;” (ACCES00001, ACCES12345).</li>
+  <li><strong>payerID</strong> - The payer ID for the patient. Uses the X12 EDI Payer ID standard (<code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.221.5</code>) with <a href="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType">CARIN Blue Button identifier typing</a>. EDI Payer IDs are 5-character alphanumeric codes widely used in healthcare transactions (e.g., eligibility checks, claims, remittance).</li>
+  <li><strong>patientID, name, gender</strong> - Patient ID, name, and gender. This information with the US Core Patient Profile.</li>
+  <li><strong>track</strong> - One of the ACCESS Model tracks (eCKM, CKM, MSK, BH).</li>
+</ul>
+
+<p>Some operations may require additional parameters.  Please consult the documentation in this guide for information about each specific API.</p>
+
+<h5 id="submission-status-operation">$submission-status Operation</h5>
+
+<p>The <code class="language-plaintext highlighter-rouge">$submission-status</code> operation retrieves the current status of a previously submitted request. This is a <strong>read-only operation</strong> that uses the HTTP GET method.  The URL used to retrieve the submission status is returned by the primary operation (extracted from the <code class="language-plaintext highlighter-rouge">Content-Location</code> URL).</p>
+
+<p><strong>Submission Status URL</strong>: <code class="language-plaintext highlighter-rouge">GET &lt;submission status URL&gt;</code></p>
+
+<p><strong>Output Parameters</strong> (when complete):</p>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">result</code> (CodeableConcept, required): Result code with descriptive text indicating the status.  Actual values depend on the API in use.</li>
+  <li><code class="language-plaintext highlighter-rouge">issues</code> (OperationOutcome, optional): This parameter <strong>MAY</strong> be included to provide more detail about the context of the result code.</li>
+</ul>
+
+<p><strong>Example Response from a Primary Operation</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 202 Accepted
+Content-Location: https://[base]/access/Patient/$submission-status/sub-123456
+</code></pre></div></div>
+
+<p>(No response body - processing asynchronously)</p>
+
+<h3 id="implementation-guidance">Implementation Guidance</h3>
+
+<h4 id="base-url">Base URL</h4>
+
+<p>All primary operations are invoked at the resource level:</p>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://[base]/access/[resource]/[$operation]?entityId=[participantID]
+</code></pre></div></div>
+
+<p>Where <code class="language-plaintext highlighter-rouge">[base]</code> is the FHIR server base URL provided during participant registration
+Where <code class="language-plaintext highlighter-rouge">[resource]</code> is Patient
+Where <code class="language-plaintext highlighter-rouge">[$operation]</code> is the primary dollar sign operation (e.g., $check-eligibility, $align, $unalign, $report-data)
+Where <code class="language-plaintext highlighter-rouge">[entityId]</code> is the participant ID (e.g., of the form <code class="language-plaintext highlighter-rouge">ACCES#####</code>)</p>
+
+<h4 id="content-types">Content Types</h4>
+
+<ul>
+  <li><strong>Request:</strong> <code class="language-plaintext highlighter-rouge">application/fhir+json</code></li>
+  <li><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">application/fhir+json</code></li>
+</ul>
+
+<h4 id="patient-identification">Patient Identification</h4>
+
+<h5 id="medicare-beneficiary-identifier-mbi">Medicare Beneficiary Identifier (MBI)</h5>
+
+<p>All APIs require a <code class="language-plaintext highlighter-rouge">patientID</code>.  Each API requires the patient's member ID (e.g., for CMS's ACCESS Model, the patient's MBI) in the Patient resource, whether it is a separate parameter or part of the Data Reporting bundle. FOR CMS's ACCESS Model only, a patient must be a Medicare beneficiary to be eligible and align to a CMS ACCESS participant:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"identifier"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"type"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/CodeSystem/v2-0203"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"MC"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">]</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"http://terminology.hl7.org/NamingSystem/cmsMBI"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"value"</span><span class="p">:</span><span class="w"> </span><span class="s2">"1EG4TE5MK73"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+  </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"family"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Doe"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"given"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="s2">"John"</span><span class="p">]</span><span class="w">
+    </span><span class="p">},</span><span class="w">
+    </span><span class="s2">"gender"</span><span class="w"> </span><span class="err">:</span><span class="w"> </span><span class="s2">"male"</span><span class="w">
+  </span><span class="p">],</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>NOTE: The IG will accept any patient identifier and payer identifier so that this IG can be used by other payers looking to align with the ACCESS Model.</p>
+
+<h5 id="using-the-content-location-http-header">Using the Content-Location HTTP Header</h5>
+
+<p>ACCESS operations return a <code class="language-plaintext highlighter-rouge">Content-Location</code> HTTP header containing the URL to check the status of the submission. Clients should:</p>
+
+<ol>
+  <li>Extract the <code class="language-plaintext highlighter-rouge">Content-Location</code> header value from the HTTP response</li>
+  <li>Use this URL for subsequent <code class="language-plaintext highlighter-rouge">$submission-status</code> calls</li>
+</ol>
+
+<p><strong>Example</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Content-Location: https://[base]/access/Patient/$submission-status/sub-123456
+</code></pre></div></div>
+
+<h5 id="polling-strategy">Polling Strategy</h5>
+
+<p>Clients should implement an appropriate polling strategy to balance responsiveness with server load:</p>
+
+<ul>
+  <li><strong>Initial Poll</strong>: Wait 5-10 seconds after submission before the first status check</li>
+  <li><strong>Subsequent Polls</strong>: Poll every 10-30 seconds while receiving HTTP 202 Accepted</li>
+  <li><strong>Maximum Duration</strong>: Implement a timeout (recommended: 5 minutes) after which the client should stop polling and notify the user; the actual timeout duration should be configured based on operational requirements.</li>
+  <li><strong>Exponential Backoff</strong>: Consider implementing exponential backoff to reduce server load for long-running requests</li>
+</ul>
+
+<p><strong>Polling Logic</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Initiate the ACCESS operation (POST $&lt;operation&gt; with required parameters)
+2. Receive HTTP 202 with Content-Location
+3. Wait initial delay (5-10 seconds)
+4. While (timeout not exceeded):
+   a. Poll status (GET $submission-status)
+   b. If HTTP 202: wait and continue loop
+   c. If HTTP 200: process result and exit
+   d. If HTTP 4xx/5xx: handle error and exit
+5. If timeout exceeded: handle as error
+</code></pre></div></div>
+
+<h5 id="interpreting-responses">Interpreting Responses</h5>
+
+<p><strong>HTTP 202 Accepted</strong>: The request is being processed. No result is available yet. Continue polling.</p>
+
+<p><strong>HTTP 200 OK</strong>: Processing is complete. The response body contains a Parameters resource with the result.  For example, here is a sample response from a successful request:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+    </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"result"</span><span class="p">,</span><span class="w">
+    </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[{</span><span class="w">
+        </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aligned"</span><span class="p">,</span><span class="w">
+        </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aligned"</span><span class="w">
+      </span><span class="p">}],</span><span class="w">
+      </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Patient is eligible and has been aligned so the ACCESS participant can now begin providing services to the patient under the model."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">}]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>Clients should:</p>
+<ol>
+  <li>Extract <code class="language-plaintext highlighter-rouge">parameter[0].valueCodeableConcept</code> from the Parameters resource</li>
+  <li>Check <code class="language-plaintext highlighter-rouge">coding[0].code</code> against known alignment result codes</li>
+  <li>Display <code class="language-plaintext highlighter-rouge">text</code> element for user-friendly messaging</li>
+  <li>Take appropriate action based on the result code for the particular API.  These actions are covered in the documentation for each API.</li>
+</ol>
+
+<h4 id="error-handling">Error Handling</h4>
+
+<p>Clients should be prepared to handle the following conditions:</p>
+
+<p><strong>HTTP Status Code Errors</strong>:</p>
+<ul>
+  <li><strong>400 Bad Request</strong>: Malformed request - check Parameters structure and required fields</li>
+  <li><strong>404 Not Found</strong>: Submission ID not found - verify the submission ID is correct</li>
+  <li><strong>500 Internal Server Error</strong>: Server processing error - retry after delay or contact support</li>
+  <li><strong>503 Service Unavailable</strong>: Service temporarily unavailable - implement retry logic</li>
+</ul>
+
+<p><strong>Client-Side Errors</strong>:</p>
+<ul>
+  <li><strong>Timeout</strong>: No response received after maximum polling duration - log and notify user</li>
+  <li><strong>Network Error</strong>: Connection failure - implement retry logic with exponential backoff</li>
+</ul>
+
+<p><strong>Best Practice</strong>: Always check HTTP status codes before attempting to parse the response body. Only <code class="language-plaintext highlighter-rouge">HTTP 200</code> responses contain the result from the original request.</p>
+
+<h5 id="security-considerations">Security Considerations</h5>
+
+<ul>
+  <li>All API interactions <strong>SHALL</strong> use TLS 1.3</li>
+  <li>Clients <strong>SHALL</strong> authenticate using approved OAuth 2.0</li>
+  <li>Submission identifiers should be treated as sensitive information and protected accordingly</li>
+  <li>Clients should implement appropriate audit logging for all requests</li>
+  <li>The <code class="language-plaintext highlighter-rouge">Content-Location</code> HTTP header URL may contain sensitive identifiers and should be handled securely</li>
+</ul>
+
+<h5 id="best-practices">Best Practices</h5>
+
+<ol>
+  <li><strong>Idempotency</strong>: Avoid submitting duplicate requests for the same patient</li>
+  <li><strong>Resource Validation</strong>: Validate input resources against FHIR profiles before submission</li>
+  <li><strong>MBI Handling</strong>: Ensure Medicare Beneficiary Identifiers (MBIs) are handled according to CMS data sharing policies</li>
+  <li><strong>Result Code Handling</strong>: Implement robust parsing for all possible result codes</li>
+  <li><strong>Submission ID Management</strong>: Store submission IDs securely and maintain their association with original requests</li>
+</ol>
+
+<h5 id="operationoutcome">OperationOutcome</h5>
+
+<p>Errors are returned using FHIR OperationOutcome resources:</p>
+
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missing required parameter: participantID"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h5 id="error-handling-flow-diagram">Error Handling Flow Diagram</h5>
+
+<p>The following diagram illustrates the complete error handling flow for ACCESS API interactions:</p>
+
+<pre><code class="language-mermaid">flowchart TD
+    Start([Submit Request]) --&gt; Auth{Valid&lt;br/&gt;Token?}
+    Auth --&gt;|No| Err401[Return 401 Unauthorized]
+    Auth --&gt;|Yes| Validate{Valid&lt;br/&gt;Parameters?}
+    
+    Validate --&gt;|No| CheckError{Error Type?}
+    CheckError --&gt;|Missing Parameter| Err400A[Return 400 Bad Request&lt;br/&gt;Missing required parameter]
+    CheckError --&gt;|Invalid Format| Err400B[Return 400 Bad Request&lt;br/&gt;Invalid format]
+    CheckError --&gt;|Invalid Value| Err400C[Return 400 Bad Request&lt;br/&gt;Invalid value]
+    
+    Validate --&gt;|Yes| Queue[Queue for Processing]
+    Queue --&gt; Return202[Return 202 Accepted&lt;br/&gt;with Content-Location]
+    
+    Return202 --&gt; Poll([Client Polls Status])
+    Poll --&gt; CheckStatus{Processing&lt;br/&gt;Status?}
+    
+    CheckStatus --&gt;|Still Processing| Return202Poll[Return 202 Accepted&lt;br/&gt;No body]
+    Return202Poll --&gt; Wait[Client Waits]
+    Wait --&gt; Poll
+    
+    CheckStatus --&gt;|Complete - Success| Return200[Return 200 OK&lt;br/&gt;with result]
+    CheckStatus --&gt;|Complete - Business Logic Error| Return200Error[Return 200 OK&lt;br/&gt;with error result code]
+    
+    CheckStatus --&gt;|System Error| Err500[Return 500 Internal Error]
+    CheckStatus --&gt;|Not Found| Err404[Return 404 Not Found]
+</code></pre>
+
+<p><strong>Key Decision Points</strong>:</p>
+
+<ol>
+  <li><strong>Authentication</strong>: First check validates the OAuth token</li>
+  <li><strong>Parameter Validation</strong>: Validates required parameters and their formats</li>
+  <li><strong>Asynchronous Processing</strong>: Valid requests are queued and return HTTP 202 (Accepted)</li>
+  <li><strong>Status Polling</strong>: Client repeatedly checks status until completion (returns something other than HTTP 202)</li>
+  <li><strong>Result Interpretation</strong>:
+    <ul>
+      <li>HTTP 200 with success result code = operation succeeded</li>
+      <li>HTTP 200 with issue result code = business logic prevented operation (e.g., not-eligible, already-aligned)</li>
+      <li>HTTP 4xx/5xx = technical error occurred</li>
+    </ul>
+  </li>
+</ol>
+
+<h5 id="common-error-scenarios">Common Error Scenarios</h5>
+
+<h6 id="submission-errors-400-bad-request">Submission Errors (400 Bad Request)</h6>
+
+<p><strong>Missing Required Parameter:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://[base]/access/Patient/$check-eligibility?entityId=ACCES12345
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"required"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Missing required parameter: patient"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Invalid MBI Format:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid Medicare Beneficiary Identifier (MBI) format"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Invalid Track Code:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"code-invalid"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid track code. Must be one of: eCKM, CKM, MSK, BH"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Malformed Parameters Resource:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"structure"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters resource structure is invalid"</span><span class="w">
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"diagnostics"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Expected Parameters.parameter array but received malformed JSON"</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Invalid Participant ID (400):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Participant ID is not valid"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>FHIR Validation Failure:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> 
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"FHIR validation failed: Patient.identifier.system is required when Patient.identifier.value is present"</span><span class="w"> 
+      </span><span class="p">},</span><span class="w">
+      </span><span class="nl">"diagnostics"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The Patient resource does not conform to the US Core Patient profile. MBI identifier must include both 'system' (http://terminology.hl7.org/NamingSystem/cmsMBI) and 'value' elements."</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h6 id="status-check-errors">Status Check Errors</h6>
+
+<p><strong>Submission ID Not Found (404):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://[base]/access/Patient/$submission-status/invalid-sub-id
+</code></pre></div></div>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 404 Not Found
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"not-found"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Submission ID 'invalid-sub-id' not found"</span><span class="w"> </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h6 id="authentication-and-authorization-errors">Authentication and Authorization Errors</h6>
+
+<p><strong>Missing or Invalid Token (401):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 401 Unauthorized
+WWW-Authenticate: Bearer error="invalid_token"
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"security"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Invalid or expired access token"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Insufficient Scope (403):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 403 Forbidden
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forbidden"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Insufficient scope for requested operation."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<h6 id="server-errors">Server Errors</h6>
+
+<p><strong>Service Temporarily Unavailable (503):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 503 Service Unavailable
+Retry-After: 60
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"transient"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Service temporarily unavailable. Please retry after 60 seconds."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Internal Server Error (500):</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 500 Internal Server Error
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"exception"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"An unexpected error occurred processing your request. Please contact support with submission ID if this persists."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Example Status Check Request (Processing Complete - Aligned and Switch Approved)</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://[base]/access/Patient/$submission-status/sub-123456
+</code></pre></div></div>
+
+<p><strong>Response:</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
+Content-Type: application/fhir+json
+</code></pre></div></div>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"parameter"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"name"</span><span class="p">:</span><span class="w"> </span><span class="s2">"result"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"valueCodeableConcept"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"coding"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+          </span><span class="p">{</span><span class="w">
+            </span><span class="nl">"system"</span><span class="p">:</span><span class="w"> </span><span class="s2">"https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"aligned-switch-approved"</span><span class="p">,</span><span class="w">
+            </span><span class="nl">"display"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Aligned and switch approved"</span><span class="w">
+          </span><span class="p">}</span><span class="w">
+        </span><span class="p">],</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"The request to switch the patient's alignment from a different participant after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned."</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>There are other types of errors specific to each API that may be returned.  Please see the API Guidance menu in this manual to get more information and examples for those errors.</p>
+
+<h3 id="standards-alignment">Standards Alignment</h3>
+
+<p>This asynchronous pattern aligns with:</p>
+<ul>
+  <li><strong>FHIR Asynchronous Request Pattern</strong>: Follows FHIR's general guidance for asynchronous operations using HTTP 202 Accepted</li>
+  <li><strong>HTTP Standards</strong>: Uses appropriate HTTP status codes (202 Accepted, 200 OK, 4xx/5xx for errors)</li>
+  <li><strong>FHIR Parameters Resource</strong>: Uses standardized Parameters resources for operation input and output</li>
+  <li><strong>FHIR Operations Framework</strong>: Implements custom operations with proper input/output handling</li>
+  <li><strong>FHIR OperationOutcome</strong>: Uses OperationOutcome for error responses following FHIR conventions</li>
+  <li><strong>US Core Profiles</strong>: Aligns with US Core Patient and Condition profiles for patient data</li>
+</ul>
+
+<p>For additional information about FHIR patterns, see:</p>
+<ul>
+  <li><a href="https://hl7.org/fhir/R4/async.html">FHIR Asynchronous Request Pattern</a></li>
+  <li><a href="https://hl7.org/fhir/R4/parameters.html">FHIR Parameters Resource</a></li>
+  <li><a href="https://hl7.org/fhir/R4/operations.html">FHIR Operations Framework</a></li>
+  <li><a href="https://hl7.org/fhir/R4/operationoutcome.html">FHIR OperationOutcome</a></li>
+  <li><a href="https://hl7.org/fhir/us/core/STU6.1/">US Core Implementation Guide</a></li>
+</ul>
+
+<h3 id="implementation-notes-and-edge-cases">Implementation Notes and Edge Cases</h3>
+
+<h4 id="handling-network-interruptions">Handling Network Interruptions</h4>
+
+<p><strong>Scenario</strong>: Network failure occurs during polling</p>
+
+<p><strong>Implementation Guidance</strong>:</p>
+<ul>
+  <li>Store submission IDs and associated request context before starting to poll</li>
+  <li>Implement resume logic that can continue polling after network restoration</li>
+  <li>Use exponential backoff when reconnecting after network failure</li>
+  <li>Set reasonable timeout limits (5 minutes recommended) to avoid infinite polling loops</li>
+</ul>
+
+<h4 id="duplicate-submission-prevention">Duplicate Submission Prevention</h4>
+
+<p><strong>Scenario</strong>: User clicks submit button multiple times or system retries unnecessarily</p>
+
+<p><strong>Implementation Guidance</strong>:</p>
+<ul>
+  <li>Implement client-side button disabling after first click</li>
+  <li>Store submission IDs locally to detect duplicates</li>
+  <li>Check if a recent submission exists for the same patient/operation before submitting again</li>
+  <li>Use idempotency tokens if retrying after uncertain failures</li>
+</ul>
+
+<h4 id="token-expiration-during-long-operations">Token Expiration During Long Operations</h4>
+
+<p><strong>Scenario</strong>: OAuth token expires while waiting for async operation to complete</p>
+
+<p><strong>Implementation Guidance</strong>:</p>
+<ul>
+  <li>Refresh tokens proactively before expiration (5 minutes before recommended)</li>
+  <li>Store token expiration time and check before each status poll</li>
+  <li>Implement automatic token refresh in polling loop</li>
+  <li>Handle HTTP 401 responses by refreshing token and retrying once</li>
+</ul>
+
+<h4 id="multiple-diagnoses-across-tracks">Multiple Diagnoses Across Tracks</h4>
+
+<p><strong>Scenario</strong>: Patient has conditions qualifying for multiple tracks</p>
+
+<p><strong>Implementation Guidance</strong>:</p>
+<ul>
+  <li>Patient can be aligned to multiple tracks simultaneously*</li>
+  <li>Each track requires a separate alignment request</li>
+  <li>Track alignments are independent - success/failure in one does not affect others</li>
+  <li>Data reporting is track-specific - submit separate bundles for each track</li>
+  <li>
+    <p>Patient can be aligned to different participants or the same participant in different tracks</p>
+  </li>
+  <li><strong>The one exception</strong> to this rule applies to the eCKM and CKM tracks. Patients cannot be enrolled in both tracks at the same time. If a patient is already aligned to the eCKM track and elects to enroll in the CKM track, or vice versa, they can change tracks immediately. In this case the 90-day lock-in period does not apply.</li>
+</ul>
+
+<h3 id="next-steps-and-support">Next Steps and support</h3>
+
+<ul>
+  <li>Review the <a href="authentication.html">Authentication</a> guidance</li>
+  <li>Consult API-specific guidance pages under the API Guidance menu</li>
+  <li>Reference the <a href="artifacts.html">Artifacts</a> in the ACCESS FHIR IG for technical specifications</li>
+  <li>Contact the ACCESS Model support team if you have any questions (<a href="mailto:ACCESSModelTeam@cms.hhs.gov">ACCESSModelTeam@cms.hhs.gov</a>)</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

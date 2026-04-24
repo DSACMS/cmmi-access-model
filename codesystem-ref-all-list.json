@@ -1,5 +1,82 @@
 {
   "codeSystems" : [{
+    "url" : "http://hl7.org/fhir/bundle-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "BundleType",
+    "title" : "Bundle Type",
+    "description" : "Indicates the purpose of a bundle - how it is intended to be used.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-bundle-type.html" : "BundleType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-attestation-mode",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CompositionAttestationMode",
+    "title" : "Composition Attestation Mode",
+    "description" : "The way in which a person authenticated a composition.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-attestation-mode.html" : "CompositionAttestationMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/composition-status",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "CompositionStatus",
+    "title" : "Composition Status",
+    "description" : "The workflow/clinical status of the composition.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-composition-status.html" : "CompositionStatus"
+  },
+  {
+    "url" : "http://hl7.org/fhir/document-relationship-type",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "DocumentRelationshipType",
+    "title" : "Document Relationship Type",
+    "description" : "The type of relationship between documents.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-document-relationship-type.html" : "DocumentRelationshipType"
+  },
+  {
+    "url" : "http://hl7.org/fhir/http-verb",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "HTTPVerb",
+    "title" : "H T T P Verb",
+    "description" : "HTTP verbs (in the HTTP command line). See [HTTP rfc](https://tools.ietf.org/html/rfc7231) for details.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-http-verb.html" : "HTTPVerb"
+  },
+  {
+    "url" : "http://hl7.org/fhir/list-mode",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "ListMode",
+    "title" : "List Mode",
+    "description" : "The processing mode that applies to this list.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-mode.html" : "ListMode"
+  },
+  {
+    "url" : "http://hl7.org/fhir/search-entry-mode",
+    "version" : "5.0.0",
+    "status" : "active",
+    "name" : "SearchEntryMode",
+    "title" : "Search Entry Mode",
+    "description" : "Why an entry is in the result set - whether it's included as a match or because of an _include requirement, or to convey information or warning information about the search process.",
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-search-entry-mode.html" : "SearchEntryMode"
+  },
+  {
     "url" : "http://hl7.org/fhir/sid/icd-10-cm",
     "version" : "2.0.1",
     "status" : "active",
@@ -10,8 +87,8 @@
     "uses" : {
     },
     "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
-    "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSCKMDiagnosisVS.html" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSMSKDiagnosisVS.html" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses"
   },
@@ -50,6 +127,20 @@
     "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-screening-assessment-condition-category.html" : "US Core Screening Assessment Condition Category"
   },
   {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-doc-section-codes.html" : "Document Section Codes",
+    "http://hl7.org/fhir/R4/valueset-document-classcodes.html" : "Document Class Value Set",
+    "http://hl7.org/fhir/R4/valueset-doc-typecodes.html" : "FHIR Document Type Codes"
+  },
+  {
     "url" : "http://snomed.info/sct",
     "version" : null,
     "status" : "active",
@@ -59,12 +150,12 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
     "http://hl7.org/fhir/R4/valueset-body-site.html" : "SNOMED CT Body Structures",
-    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
     "http://hl7.org/fhir/R4/valueset-manifestation-or-symptom.html" : "Manifestation and Symptom Codes",
-    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity",
-    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type"
+    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-condition-code.html" : "US Core Condition Codes",
+    "http://hl7.org/fhir/R4/valueset-condition-stage.html" : "Condition Stage",
+    "http://hl7.org/fhir/R4/valueset-condition-stage-type.html" : "Condition Stage Type",
+    "http://hl7.org/fhir/R4/valueset-condition-severity.html" : "Condition/Diagnosis Severity"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-category",
@@ -76,8 +167,8 @@
     "oids" : ["2.16.840.1.113883.4.642.1.1073"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes",
-    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-problem-or-health-concern.html" : "US Core Problem or Health Concern"
+    "http://hl7.org/fhir/us/core/STU6.1/ValueSet-us-core-problem-or-health-concern.html" : "US Core Problem or Health Concern",
+    "http://hl7.org/fhir/R4/valueset-condition-category.html" : "Condition Category Codes"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
@@ -104,8 +195,56 @@
     "http://hl7.org/fhir/R4/valueset-condition-ver-status.html" : "ConditionVerificationStatus"
   },
   {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-empty-reason",
+    "version" : "1.0.1",
+    "status" : "active",
+    "name" : "ListEmptyReasons",
+    "title" : "List Empty Reasons",
+    "description" : "General reasons for a list to be empty. Reasons are either related to a summary list (i.e. problem or medication list) or to a workflow related list (i.e. consultation list).",
+    "oids" : ["2.16.840.1.113883.4.642.1.1106"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-empty-reason.html" : "List Empty Reasons"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/list-order",
+    "version" : "2.0.0",
+    "status" : "active",
+    "name" : "ListOrderCodes",
+    "title" : "List Order Codes",
+    "description" : "Base values for the order of item lists in resources.",
+    "oids" : ["2.16.840.1.113883.4.642.1.1107"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/valueset-list-order.html" : "List Order Codes"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-ActCode",
+    "version" : "10.0.0",
+    "status" : "active",
+    "name" : "ActCode",
+    "title" : "ActCode",
+    "description" : "A code specifying the particular kind of Act that the Act-instance represents within its class.\r\n\r\n*Constraints:* The kind of Act (e.g. physical examination, serum potassium, inpatient encounter, charge financial transaction, etc.) is specified with a code from one of several, typically external, coding systems. The coding system will depend on the class of Act, such as LOINC for observations, etc.\r\n\r\nConceptually, the Act.code must be a specialization of the Act.classCode. This is why the structure of ActClass domain should be reflected in the superstructure of the ActCode domain and then individual codes or externally referenced vocabularies subordinated under these domains that reflect the ActClass structure.\r\n\r\nAct.classCode and Act.code are not modifiers of each other but the Act.code concept should really imply the Act.classCode concept. For a negative example, it is not appropriate to use an Act.code \"potassium\" together with and Act.classCode for \"laboratory observation\" to somehow mean \"potassium laboratory observation\" and then use the same Act.code for \"potassium\" together with Act.classCode for \"medication\" to mean \"substitution of potassium\". This mutually modifying use of Act.code and Act.classCode is not permitted.",
+    "oids" : ["2.16.840.1.113883.5.4"],
+    "uses" : {
+    },
+    "http://terminology.hl7.org/7.1.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
+  },
+  {
+    "url" : "http://terminology.hl7.org/CodeSystem/v3-Confidentiality",
+    "version" : "4.0.0",
+    "status" : "active",
+    "name" : "Confidentiality",
+    "title" : "Confidentiality",
+    "description" : "A set of codes specifying the security classification of acts and roles in accordance with the definition for concept domain \"Confidentiality\".",
+    "oids" : ["2.16.840.1.113883.5.25"],
+    "uses" : {
+    },
+    "http://hl7.org/fhir/R4/v3/ConfidentialityClassification/vs.html" : "V3 Value SetConfidentialityClassification"
+  },
+  {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultCS",
     "title" : "ACCESS Alignment Request Result Codes",
@@ -116,7 +255,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultCS",
     "title" : "ACCESS Eligibility Result Codes",
@@ -127,7 +266,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSEventTypeCS",
     "title" : "ACCESS Event Types",
@@ -137,8 +276,30 @@
     "ValueSet-ACCESSEventTypeVS.html" : "ACCESS Event Types Value Set"
   },
   {
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
+    "version" : "0.9.6",
+    "status" : "draft",
+    "name" : "ACCESSReportDataResultCS",
+    "title" : "ACCESS Report Data Result Codes",
+    "description" : "This codesystem defines the codes indicating the result of a data reporting submission.",
+    "uses" : {
+    },
+    "ValueSet-ACCESSReportDataResultVS.html" : "ACCESS Report Data Result Value Set"
+  },
+  {
+    "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS",
+    "version" : "0.9.6",
+    "status" : "draft",
+    "name" : "ACCESSReportTypeCS",
+    "title" : "ACCESS Report Type Codes",
+    "description" : "This codesystem defines the codes indicating the type of the data report submission.",
+    "uses" : {
+    },
+    "ValueSet-ACCESSReportTypeVS.html" : "ACCESS Report Type Value Set"
+  },
+  {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSTrackCS",
     "title" : "ACCESS Model Tracks",
@@ -149,7 +310,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonCS",
     "title" : "ACCESS Unalignment Reason Codes",
@@ -160,7 +321,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS",
-    "version" : "0.9.1",
+    "version" : "0.9.6",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultCS",
     "title" : "ACCESS Unalignment Request Result Codes",
@@ -176,7 +337,6 @@
     "name" : "Ietf3066",
     "title" : "Tags for the Identification of Languages",
     "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
-    "oids" : ["2.16.840.1.113883.6.121"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"

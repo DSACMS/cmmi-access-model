@@ -1,0 +1,430 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2></h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#overview" id="markdown-toc-overview">Overview</a></li>
+  <li><a href="#event-types" id="markdown-toc-event-types">Event Types</a></li>
+  <li><a href="#email-notification-enrollment" id="markdown-toc-email-notification-enrollment">Email Notification Enrollment</a></li>
+  <li><a href="#email-notification-content" id="markdown-toc-email-notification-content">Email Notification Content</a></li>
+  <li><a href="#notification-lifecycle" id="markdown-toc-notification-lifecycle">Notification Lifecycle</a></li>
+  <li><a href="#implementation-guidance" id="markdown-toc-implementation-guidance">Implementation Guidance</a></li>
+  <li><a href="#related-artifacts" id="markdown-toc-related-artifacts">Related Artifacts</a></li>
+</ul>
+
+</div>
+<p>The ACCESS Model provides automatic email notifications for important events during the patient ACCESS Model lifecycle.</p>
+
+<h3 id="overview">Overview</h3>
+
+<p>Upon successful patient alignment, participants are automatically enrolled to receive email notifications about upcoming deadlines and events that require action or awareness. These email notifications are automatically stopped when a patient is unaligned, either manually or through the ACCESS Model system.</p>
+
+<h3 id="event-types">Event Types</h3>
+
+<p>The following event types trigger email notifications to ACCESS participants:</p>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Event Name</th>
+      <th>Event Code</th>
+      <th>Description</th>
+      <th>When Triggered</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Provider Lock-In Period Ending</td>
+      <td><code>provider-lock-ending</code></td>
+      <td>The 90-day provider lock-in period is ending soon, allowing the patient to switch to a different provider if desired</td>
+      <td>Before the lock-in period ends</td>
+    </tr>
+    <tr>
+      <td>Control Group Period Ending</td>
+      <td><code>control-group-ending</code></td>
+      <td>The 12-month control group assignment period is ending soon, allowing the patient to be reconsidered for alignment in the ACCESS Model</td>
+      <td>Before control group period ends</td>
+    </tr>
+    <tr>
+      <td>Alignment Renewal Due</td>
+      <td><code>alignment-renewal</code></td>
+      <td>The initial alignment period is ending and renewal action is required to continue services under the ACCESS Model</td>
+      <td>Before initial alignment period expires</td>
+    </tr>
+    <tr>
+      <td>Baseline Reporting Due</td>
+      <td><code>baseline-reporting-window</code></td>
+      <td>The baseline data report is due soon. If baseline reporting is not received within 60 days of alignment, the patient will be unaligned. </td>
+      <td>When baseline reporting deadline is approaching</td>
+    </tr>
+    <tr>
+      <td>Quarterly Reporting Due</td>
+      <td><code>quarterly-reporting-window</code></td>
+      <td>The quarterly data report is due soon. Quarterly reporting must be submitted 70 to 110 days after the prior data submission.</td>
+      <td>When quarterly reporting window opens</td>
+    </tr>
+    <tr>
+      <td>End-of-Year Reporting Due</td>
+      <td><code>eoy-reporting-window</code></td>
+      <td>The end-of-year data report is due soon. End-of-year reporting must be submitted no later than 425 days from the date of alignment (365 days plus an additional 60 days).</td>
+      <td>When end-of-year reporting window opens</td>
+    </tr>
+    <tr>
+      <td>Unalignment Notice</td>
+      <td><code>unalignment</code></td>
+      <td>The patient has been unaligned from the ACCESS Model due to a change in eligibility status.</td>
+      <td>When patient is unaligned by the ACCESS Model system</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="email-notification-enrollment">Email Notification Enrollment</h3>
+
+<p>Email notifications are automatically configured during the participant onboarding process. The email addresses registered during onboarding will receive notifications for all relevant events related to aligned patients.</p>
+
+<p><strong>Key Points:</strong></p>
+
+<ul>
+  <li>Email addresses are configured during participant onboarding</li>
+  <li>Notifications are sent automatically for all events</li>
+  <li>No additional configuration needed during alignment</li>
+</ul>
+
+<p><strong>What Happens After Alignment:</strong></p>
+
+<p>Upon successful alignment (<code class="language-plaintext highlighter-rouge">HTTP 200</code> with result code <code class="language-plaintext highlighter-rouge">aligned</code> or <code class="language-plaintext highlighter-rouge">aligned-switch-approved</code>), the system automatically:</p>
+
+<ol>
+  <li>Begins monitoring for upcoming events that require notification</li>
+  <li>Sends email notifications to registered addresses when events occur</li>
+  <li>Continues notifications throughout the alignment period</li>
+  <li>Stops notifications when the patient is unaligned</li>
+</ol>
+
+<p>You do not need to manually configure or manage these notifications — they are handled automatically by the system based on your registered email addresses.</p>
+
+<h3 id="email-notification-content">Email Notification Content</h3>
+
+<p>Email notifications include:</p>
+
+<ul>
+  <li><strong>Event Type</strong>: Clear description of what is happening (e.g., "Participant Lock-In Period Ending")</li>
+  <li><strong>Submission ID</strong>: Submission ID from the successful alignment for the patient, provided in the Beneficiary Alignment Report</li>
+  <li><strong>Participant ID</strong>: Your ACCESS participant identifier</li>
+  <li><strong>Deadline Date</strong>: When action is required or event occurs</li>
+  <li><strong>Action Required</strong>: Specific steps you need to take</li>
+  <li><strong>Additional Information</strong>: Relevant details and guidance</li>
+</ul>
+
+<h4 id="example-email-notifications">Example Email Notifications</h4>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Subject: ACCESS Model Notification - Participant Lock-In Period Ending
+
+Dear ACCESS Participant,
+
+Event: Participant Lock-In Period Ending
+Submission ID: sub-123456
+Participant ID: ACCES12345
+Deadline Date: October 1, 2026
+
+Action Required:
+The 90-day participant lock-in period for this patient ends on October 1, 2026. 
+After this date, the patient may switch to another ACCESS participant 
+if they choose.
+
+Additional Information:
+Please contact the patient to discuss their care options and ensure they are 
+aware of this upcoming change.
+
+If you have questions, please contact ACCESS Model support at 
+ACCESSModelTeam@cms.hhs.gov.
+</code></pre></div></div>
+
+<h3 id="notification-lifecycle">Notification Lifecycle</h3>
+
+<h4 id="enrollment">Enrollment</h4>
+<ul>
+  <li>Automatic upon successful alignment</li>
+  <li>Uses email addresses from participant onboarding</li>
+  <li>Notifications sent for all relevant events</li>
+</ul>
+
+<h4 id="active-period">Active Period</h4>
+<ul>
+  <li>Remains active for duration of alignment</li>
+  <li>Triggers email notifications at appropriate times</li>
+</ul>
+
+<h4 id="cancellation">Cancellation</h4>
+<ul>
+  <li>Automatic upon successful unalignment</li>
+  <li>No further notifications sent for that patient</li>
+  <li>Participant continues to receive notifications for other aligned patients</li>
+</ul>
+
+<h3 id="implementation-guidance">Implementation Guidance</h3>
+
+<h4 id="receiving-notifications">Receiving Notifications</h4>
+
+<p>Your email system should:</p>
+<ul>
+  <li>Accept emails from ACCESS Model notification service</li>
+  <li>Configure spam filters to allow ACCESS emails</li>
+  <li>Set up forwarding rules if needed for team distribution</li>
+  <li>Monitor inbox regularly for time-sensitive notifications</li>
+</ul>
+
+<h4 id="processing-notifications">Processing Notifications</h4>
+
+<p>When you receive a notification email:</p>
+
+<ol>
+  <li><strong>Review Event Details</strong> - Understand what is happening</li>
+  <li><strong>Check Deadline</strong> - Note when action is required</li>
+  <li><strong>Update Internal Systems</strong> - Record event in your system</li>
+  <li><strong>Take Appropriate Action</strong> - Follow up with patient if needed</li>
+  <li><strong>Complete Required Actions</strong> - Perform required tasks before deadline</li>
+</ol>
+
+<h4 id="security-considerations">Security Considerations</h4>
+
+<ul>
+  <li>Notification emails do not contain any Personally Identifiable Information (PII) and/or Protected Health Information (PHI) in emails</li>
+  <li>Follow your organization's email security policies</li>
+  <li>Do not forward notification emails outside your organization</li>
+</ul>
+
+<h3 id="related-artifacts">Related Artifacts</h3>
+
+<ul>
+  <li><a href="CodeSystem-ACCESSEventTypeCS.html">ACCESSEventTypeCS CodeSystem</a></li>
+  <li><a href="ValueSet-ACCESSEventTypeVS.html">ACCESSEventTypeVS ValueSet</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

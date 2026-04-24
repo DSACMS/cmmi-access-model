@@ -1,0 +1,92 @@
+{
+  "resourceType" : "Composition",
+  "id" : "BHReportDataCompositionExample",
+  "meta" : {
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><h3>ACCESS BH Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p></div>"
+  },
+  "status" : "final",
+  "type" : {
+    "coding" : [{
+      "system" : "http://loinc.org",
+      "code" : "74465-6",
+      "display" : "Questionnaire response Document"
+    }]
+  },
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "date" : "2026-01-26T12:00:00Z",
+  "author" : [{
+    "reference" : "Practitioner/PractitionerExample"
+  }],
+  "title" : "ACCESS BH Track Data Report",
+  "custodian" : {
+    "reference" : "Organization/OrganizationExample"
+  },
+  "section" : [{
+    "title" : "Data reporting for BH track",
+    "code" : {
+      "coding" : [{
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+        "code" : "BH"
+      }]
+    },
+    "text" : {
+      "status" : "generated",
+      "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>Behavioral Health Track Data Reporting including depression and anxiety assessments and patient-reported outcomes.</p></div>"
+    },
+    "section" : [{
+      "title" : "Depression (PHQ-9)",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "44249-1"
+        }]
+      },
+      "entry" : [{
+        "reference" : "QuestionnaireResponse/DepressionPHQ9Example"
+      }]
+    },
+    {
+      "title" : "Anxiety (GAD-7)",
+      "code" : {
+        "coding" : [{
+          "system" : "http://loinc.org",
+          "code" : "69737-5"
+        }]
+      },
+      "entry" : [{
+        "reference" : "QuestionnaireResponse/AnxietyGAD7Example"
+      }]
+    },
+    {
+      "title" : "Overall Function (WHODAS 2.0)",
+      "code" : {
+        "coding" : [{
+          "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS",
+          "code" : "WHODAS"
+        }]
+      },
+      "entry" : [{
+        "reference" : "QuestionnaireResponse/BHWHODASExample"
+      }]
+    },
+    {
+      "title" : "Patient's Global Impression of Change",
+      "code" : {
+        "coding" : [{
+          "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS",
+          "code" : "PGIC"
+        }]
+      },
+      "entry" : [{
+        "reference" : "QuestionnaireResponse/BHPGICExample"
+      }]
+    }]
+  }]
+}

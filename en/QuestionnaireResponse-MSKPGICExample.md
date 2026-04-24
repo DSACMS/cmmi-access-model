@@ -1,0 +1,37 @@
+# MSK PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+
+## Example QuestionnaireResponse: MSK PGIC QuestionnaireResponse Example
+
+PGIC QuestionnaireResponse for John Doe. Response: Very much improved.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "MSKPGICExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
+  },
+  "language" : "en",
+  "questionnaire" : "http://example.org/Questionnaire/MSKPGICQuestionnaire",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "authored" : "2026-01-15T10:30:00Z",
+  "author" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "item" : [{
+    "linkId" : "pgic-1",
+    "text" : "Since beginning treatment, how would you describe your overall change in pain, function, and quality of life?",
+    "answer" : [{
+      "valueDecimal" : 1
+    }]
+  }]
+}
+
+```

@@ -1,0 +1,30 @@
+# Report Data Response - Duplicate Example - CMS ACCESS Model API v0.9.6
+
+## Example Parameters: Report Data Response - Duplicate Example
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "ReportDataResponseDuplicateExample",
+  "meta" : {
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"]
+  },
+  "language" : "en",
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
+        "code" : "duplicate",
+        "display" : "Duplicate Submission"
+      }],
+      "text" : "Data submission is a duplicate of a previously submitted report for this reporting period."
+    }
+  }]
+}
+
+```

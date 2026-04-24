@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<OperationOutcome xmlns="http://hl7.org/fhir">
+  <id value="SubmissionStatusOperationOutcomeExample"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><h3>Incomplete Submission</h3><p>The data submission did not contain the following required information:</p><ul><li><strong>Error:</strong> Missing required observation: Hemoglobin A1c (HbA1c) is required for CKM track quarterly reporting</li></ul></div>
+  </text>
+  <issue>
+    <severity value="warning"/>
+    <code value="required"/>
+    <details>
+      <text value="Missing required observation: Hemoglobin A1c (HbA1c) is required for CKM track quarterly reporting"/>
+    </details>
+    <expression value="Bundle.entry[2].resource.section.where(code.coding.code='CKM').section.where(code.coding.code='4548-4')"/>
+  </issue>
+</OperationOutcome>

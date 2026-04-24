@@ -1,0 +1,149 @@
+# KOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+
+## Example QuestionnaireResponse: KOOS JR QuestionnaireResponse Example
+
+KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "KOOSJRExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
+  },
+  "language" : "en",
+  "questionnaire" : "http://example.org/Questionnaire/KOOSJRQuestionnaire",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "authored" : "2026-01-15T10:30:00Z",
+  "author" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "item" : [{
+    "linkId" : "koosjr-1",
+    "text" : "How severe is your knee stiffness after first wakening in the morning?",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-2",
+    "text" : "Twisting/pivoting on your knee",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-3",
+    "text" : "Straightening knee fully",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-4",
+    "text" : "Going up or down stairs",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 3
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-5",
+    "text" : "Standing upright",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-6",
+    "text" : "Rising from sitting",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "koosjr-7",
+    "text" : "Bending to floor/picking up an object",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 3
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }
+    }]
+  },
+  {
+    "linkId" : "total-interval-score",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 50.012
+        }],
+        "system" : "http://loinc.org",
+        "code" : "82332-8",
+        "display" : "Total interval score [KOOSJR]"
+      }
+    }]
+  }]
+}
+
+```

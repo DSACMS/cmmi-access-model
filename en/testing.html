@@ -1,0 +1,508 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2></h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#testing-checklist" id="markdown-toc-testing-checklist">Testing Checklist</a></li>
+  <li><a href="#test-scenarios-by-api" id="markdown-toc-test-scenarios-by-api">Test Scenarios by API</a></li>
+  <li><a href="#integration-testing-patterns" id="markdown-toc-integration-testing-patterns">Integration Testing Patterns</a></li>
+  <li><a href="#validation-tools-and-resources" id="markdown-toc-validation-tools-and-resources">Validation Tools and Resources</a></li>
+</ul>
+
+</div>
+<p>This page provides detailed testing guidance to ensure implementations conform to ACCESS Model requirements before production deployment.</p>
+
+<h3 id="testing-checklist">Testing Checklist</h3>
+
+<p>Before deploying to production, implementers should complete the following validation steps:</p>
+
+<p><strong>FHIR Conformance Validation:</strong></p>
+<ul>
+  <li>All resource instances validate against their declared profiles</li>
+  <li>All Must Support elements are properly populated when data is available</li>
+  <li>All required elements are present in submissions</li>
+  <li>Value set bindings use codes from the correct code systems</li>
+  <li>Patient resources include valid MBI in correct format</li>
+</ul>
+
+<p><strong>Operation Testing:</strong></p>
+<ul>
+  <li>All four operations (<code class="language-plaintext highlighter-rouge">$check-eligibility</code>, <code class="language-plaintext highlighter-rouge">$align</code>, <code class="language-plaintext highlighter-rouge">$unalign</code>, <code class="language-plaintext highlighter-rouge">$report-data</code>) successfully submit requests</li>
+  <li><code class="language-plaintext highlighter-rouge">Content-Location</code> header is correctly parsed and used for polling</li>
+  <li><code class="language-plaintext highlighter-rouge">$submission-status</code> correctly returns HTTP 202 Accepted while processing</li>
+  <li><code class="language-plaintext highlighter-rouge">$submission-status</code> correctly returns HTTP 200 OK with result when complete</li>
+  <li>All result codes are correctly handled</li>
+</ul>
+
+<p><strong>Authentication &amp; Security:</strong></p>
+<ul>
+  <li>OAuth 2.0 token acquisition succeeds</li>
+  <li>Token is correctly included in Authorization header</li>
+  <li>Token refresh works before expiration</li>
+  <li>TLS 1.3 is enforced</li>
+  <li>MBI and PII/PHI are encrypted in transit and storage</li>
+</ul>
+
+<p><strong>Error Handling:</strong></p>
+<ul>
+  <li>400 errors are handled without retry</li>
+  <li>401 errors trigger token refresh</li>
+  <li>500/503 errors implement exponential backoff retry</li>
+  <li>Network errors implement retry logic</li>
+  <li>Timeout scenarios are handled gracefully</li>
+</ul>
+
+<p><strong>Asynchronous Pattern:</strong></p>
+<ul>
+  <li>Polling implements appropriate wait intervals (5-30 seconds)</li>
+  <li>Polling includes timeout mechanism</li>
+  <li>Submission IDs are stored and associated with original requests</li>
+  <li>Polling continues after network interruption</li>
+</ul>
+
+<h3 id="test-scenarios-by-api">Test Scenarios by API</h3>
+
+<h4 id="eligibility-api-test-scenarios">Eligibility API Test Scenarios</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Input</th>
+      <th>Expected Result</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Eligible Patient</td>
+      <td>Valid patient with qualifying diagnosis</td>
+      <td>HTTP 200, result "eligible"</td>
+      <td>Can proceed to alignment</td>
+    </tr>
+    <tr>
+      <td>Control Group</td>
+      <td>Patient randomized to control</td>
+      <td>HTTP 200, result "not-eligible-control-group"</td>
+      <td>12-month wait documented</td>
+    </tr>
+    <tr>
+      <td>Already Aligned</td>
+      <td>Patient aligned to another provider</td>
+      <td>HTTP 200, result "not-eligible-already-aligned"</td>
+      <td>Cannot align</td>
+    </tr>
+    <tr>
+      <td>Missing Parameter</td>
+      <td>Request without patient</td>
+      <td>HTTP 400, OperationOutcome</td>
+      <td>Error identifies missing parameter</td>
+    </tr>
+    <tr>
+      <td>Invalid Track</td>
+      <td>Track code not in value set</td>
+      <td>HTTP 400, OperationOutcome</td>
+      <td>Error identifies invalid track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="alignment-api-test-scenarios">Alignment API Test Scenarios</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Input</th>
+      <th>Expected Result</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Successful Alignment</td>
+      <td>Eligible patient with conditions</td>
+      <td>HTTP 200, result "aligned"</td>
+      <td>Subscriptions created</td>
+    </tr>
+    <tr>
+      <td>Provider Switch</td>
+      <td>Alignment with switch consent after 90 days</td>
+      <td>HTTP 200, result "aligned-switch-approved"</td>
+      <td>Previous subscriptions cancelled</td>
+    </tr>
+    <tr>
+      <td>Lock-In Active</td>
+      <td>Switch attempt within 90 days</td>
+      <td>HTTP 200, result "not-aligned-already-aligned"</td>
+      <td>Switch rejected</td>
+    </tr>
+    <tr>
+      <td>Missing Conditions</td>
+      <td>Alignment without conditions</td>
+      <td>HTTP 400, OperationOutcome</td>
+      <td>Error identifies missing conditions</td>
+    </tr>
+    <tr>
+      <td>No Qualifying Diagnosis</td>
+      <td>Conditions don't match track</td>
+      <td>HTTP 200, result "not-aligned-diagnoses"</td>
+      <td>Specific requirements noted</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="unalignment-api-test-scenarios">Unalignment API Test Scenarios</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Input</th>
+      <th>Expected Result</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Successful Unalignment</td>
+      <td>Valid reason (geographic-relocated)</td>
+      <td>HTTP 200, result "unaligned"</td>
+      <td>Subscriptions cancelled</td>
+    </tr>
+    <tr>
+      <td>Manual Review</td>
+      <td>Unalignment requiring review</td>
+      <td>HTTP 200, result "unalignment-pending"</td>
+      <td>Subscriptions remain active</td>
+    </tr>
+    <tr>
+      <td>Not Aligned</td>
+      <td>Patient not currently aligned</td>
+      <td>HTTP 200, result "not-unaligned-not-aligned"</td>
+      <td>Cannot unalign</td>
+    </tr>
+    <tr>
+      <td>Missing Reason</td>
+      <td>Unalignment without reason</td>
+      <td>HTTP 400, OperationOutcome</td>
+      <td>Error identifies missing reason</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="data-reporting-api-test-scenarios">Data Reporting API Test Scenarios</h4>
+
+<table class="grid">
+  <thead>
+    <tr>
+      <th>Scenario</th>
+      <th>Input</th>
+      <th>Expected Result</th>
+      <th>Validation</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Successful CKM Submission</td>
+      <td>Complete CKM bundle</td>
+      <td>HTTP 200, result "success"</td>
+      <td>All observations recorded</td>
+    </tr>
+    <tr>
+      <td>Validation Error</td>
+      <td>Bundle missing required sections</td>
+      <td>HTTP 200, result "validation-error"</td>
+      <td>Specific errors identified</td>
+    </tr>
+    <tr>
+      <td>Patient Not Aligned</td>
+      <td>Data for unaligned patient</td>
+      <td>HTTP 200, result "patient-not-aligned"</td>
+      <td>Submission rejected</td>
+    </tr>
+    <tr>
+      <td>Duplicate</td>
+      <td>Same data submitted twice</td>
+      <td>HTTP 200, result "duplicate"</td>
+      <td>Original submission referenced</td>
+    </tr>
+    <tr>
+      <td>Incorrect Track</td>
+      <td>MSK data for CKM patient</td>
+      <td>HTTP 200, result "incorrect-track"</td>
+      <td>Track mismatch identified</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="integration-testing-patterns">Integration Testing Patterns</h3>
+
+<p><strong>Pattern 1: End-to-End Workflow</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Check eligibility → "eligible"
+2. Align patient → "aligned"  
+3. Submit baseline data → "success"
+4. Submit quarterly data → "success"
+5. Unalign patient → "unaligned"
+</code></pre></div></div>
+<p>Validates: Complete patient lifecycle through all ACCESS Model operations</p>
+
+<p><strong>Pattern 2: Error Recovery</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Submit operation with network error
+2. Implement retry with exponential backoff
+3. Resume polling after reconnection
+4. Verify operation completes successfully
+</code></pre></div></div>
+<p>Validates: Network interruption handling and recovery mechanisms</p>
+
+<p><strong>Pattern 3: Token Refresh During Polling</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Submit long-running operation
+2. Token expires during polling
+3. Refresh token automatically
+4. Continue polling with new token
+5. Verify operation completes
+</code></pre></div></div>
+<p>Validates: Token management during asynchronous operations</p>
+
+<p><strong>Pattern 4: Concurrent Operations</strong></p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>1. Check eligibility for multiple patients in parallel
+2. Align multiple patients simultaneously
+3. Submit data for multiple patients concurrently
+4. Verify all operations complete correctly
+</code></pre></div></div>
+<p>Validates: Parallel processing capability and resource management</p>
+
+<h3 id="validation-tools-and-resources">Validation Tools and Resources</h3>
+
+<p><strong>FHIR Validation:</strong></p>
+<ul>
+  <li>Online validator: <a href="https://validator.fhir.org/">https://validator.fhir.org/</a></li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

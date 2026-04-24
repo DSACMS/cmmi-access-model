@@ -1,0 +1,113 @@
+# QuickDASH QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+
+## Example QuestionnaireResponse: QuickDASH QuestionnaireResponse Example
+
+QuickDASH QuestionnaireResponse for John Doe. Score: 50.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "QuickDASHExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
+  },
+  "language" : "en",
+  "questionnaire" : "http://example.org/Questionnaire/QuickDASHQuestionnaire",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "authored" : "2026-01-15T10:30:00Z",
+  "author" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "item" : [{
+    "linkId" : "qd-1",
+    "text" : "Open a tight or new jar.",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "qd-2",
+    "text" : "Do heavy household chores (e.g., wash walls, wash floors).",
+    "answer" : [{
+      "valueDecimal" : 4
+    }]
+  },
+  {
+    "linkId" : "qd-3",
+    "text" : "Carry a shopping bag or briefcase.",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "qd-4",
+    "text" : "Wash your back.",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "qd-5",
+    "text" : "Use a knife to cut food.",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "qd-6",
+    "text" : "Recreational activities in which you take some force or impact through your arm, shoulder, or hand (e.g., golf, hammering, tennis, etc.).",
+    "answer" : [{
+      "valueDecimal" : 4
+    }]
+  },
+  {
+    "linkId" : "qd-7",
+    "text" : "During the past week, to what extent has your arm, shoulder, or hand problem interfered with your normal social activities with family, friends, neighbors, or groups?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "qd-8",
+    "text" : "During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder, or hand problem?",
+    "answer" : [{
+      "valueDecimal" : 4
+    }]
+  },
+  {
+    "linkId" : "qd-9",
+    "text" : "Arm, shoulder, or hand pain",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "qd-10",
+    "text" : "Tingling (pins and needles) in your arm, shoulder, or hand",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "qd-11",
+    "text" : "During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder, or hand?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "score",
+    "answer" : [{
+      "valueDecimal" : 50
+    }]
+  }]
+}
+
+```

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DiagnosticReport xmlns="http://hl7.org/fhir">
+  <id value="LDLDiagnosticReportExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><h3>Lipid Panel Report</h3><p>Patient: John Doe</p><p>Date: 2026-01-15</p><p>Results: Total Cholesterol 219 mg/dL, LDL 140 mg/dL, HDL 42 mg/dL, Triglycerides 185 mg/dL</p></div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/v2-0074"/>
+      <code value="LAB"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="18262-6"/>
+      <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+  <issued value="2026-01-15T10:30:00Z"/>
+  <result>
+    <reference value="Observation/LDLCholesterolExample"/>
+  </result>
+</DiagnosticReport>

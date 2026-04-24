@@ -1,0 +1,963 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>Artifacts - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3"}
+    h3,h4,h5,h6{--heading-prefix:"3.0"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><b>Artifacts</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2>Artifacts</h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#capability-statements" id="markdown-toc-capability-statements">Capability Statements</a></li>
+  <li><a href="#shared-resources" id="markdown-toc-shared-resources">Shared Resources</a></li>
+  <li><a href="#eligibility-api" id="markdown-toc-eligibility-api">Eligibility API</a></li>
+  <li><a href="#alignment-api" id="markdown-toc-alignment-api">Alignment API</a></li>
+  <li><a href="#unalignment-api" id="markdown-toc-unalignment-api">Unalignment API</a></li>
+  <li><a href="#data-reporting-api" id="markdown-toc-data-reporting-api">Data Reporting API</a></li>
+</ul>
+
+</div>
+<p>This page lists all FHIR artifacts defined in the ACCESS Model API Implementation Guide, organized by API.</p>
+
+<h3 id="capability-statements">Capability Statements</h3>
+
+<p>These statements define the expected capabilities of systems implementing the ACCESS Model APIs. Each capability statement describes the operations, resources, and interactions that must be supported.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CapabilityStatement-ACCESSEligibilityAPICapabilityStatement.html">ACCESS Eligibility API Capability Statement</a></td>
+      <td>Capabilities for systems implementing the Eligibility API</td>
+    </tr>
+    <tr>
+      <td><a href="CapabilityStatement-ACCESSAlignmentAPICapabilityStatement.html">ACCESS Alignment API Capability Statement</a></td>
+      <td>Capabilities for systems implementing the Alignment API</td>
+    </tr>
+    <tr>
+      <td><a href="CapabilityStatement-ACCESSUnalignmentAPICapabilityStatement.html">ACCESS Unalignment API Capability Statement</a></td>
+      <td>Capabilities for systems implementing the Unalignment API</td>
+    </tr>
+    <tr>
+      <td><a href="CapabilityStatement-ACCESSDataReportingAPICapabilityStatement.html">ACCESS Data Reporting API Capability Statement</a></td>
+      <td>Capabilities for systems implementing the Data Reporting API</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="shared-resources">Shared Resources</h3>
+
+<p>This section defines the operations, code systems, and value sets that are used across multiple ACCESS APIs.</p>
+
+<h4 id="operations">Operations</h4>
+
+<p>These are the custom operations that can be supported by and/or invoked by systems conforming to the ACCESS Model APIs.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="OperationDefinition-SubmissionStatus.html">SubmissionStatus</a></td>
+      <td>Check the status of asynchronous operation requests</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="abstract-profiles">Abstract Profiles</h4>
+
+<p>These profiles define base structure and terminologies common across other profiles. Abstract profiles cannot themselves be instantiated.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-condition.html">ACCESS Condition Profile</a></td>
+      <td>Base abstract condition profile requiring ICD-10-CM codes for diagnoses across all ACCESS APIs.  Provides the basis for other Condition-based profiles for the ACCESS Model.</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="profiles">Profiles</h4>
+
+<p>These define constraints on FHIR resources for use across multiple ACCESS APIs.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-submission-status-out.html">ACCESS Submission Status Response Parameters</a></td>
+      <td>Output parameters for the $submission-status operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-eckm-condition.html">ACCESS eCKM Track Condition Profile</a></td>
+      <td>Condition profile for Early Cardio-Kidney-Metabolic (eCKM) track with extensible binding to eCKM diagnosis codes</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-ckm-condition.html">ACCESS CKM Track Condition Profile</a></td>
+      <td>Condition profile for Cardio-Kidney-Metabolic (CKM) track with extensible binding to CKM diagnosis codes</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-msk-condition.html">ACCESS MSK Track Condition Profile</a></td>
+      <td>Condition profile for Musculoskeletal (MSK) track with extensible binding to MSK diagnosis codes</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-bh-condition.html">ACCESS BH Track Condition Profile</a></td>
+      <td>Condition profile for Behavioral Health (BH) track with extensible binding to BH diagnosis codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Model APIs.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSTrackVS.html">ACCESS Track Value Set</a></td>
+      <td>Value set including all ACCESS Model track codes</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSeCKMDiagnosisVS.html">ACCESS eCKM Track Qualifying Diagnoses</a></td>
+      <td>ICD-10-CM diagnosis codes that qualify a patient for the Early Cardio-Kidney-Metabolic (eCKM) track</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSCKMDiagnosisVS.html">ACCESS CKM Track Qualifying Diagnoses</a></td>
+      <td>ICD-10-CM diagnosis codes that qualify a patient for the Cardio-Kidney-Metabolic (CKM) track</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSMSKDiagnosisVS.html">ACCESS MSK Track Qualifying Diagnoses</a></td>
+      <td>ICD-10-CM diagnosis codes that qualify a patient for the Musculoskeletal (MSK) track</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSBHDiagnosisVS.html">ACCESS BH Track Qualifying Diagnoses</a></td>
+      <td>ICD-10-CM diagnosis codes that qualify a patient for the Behavioral Health (BH) track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Model APIs.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSTrackCS.html">ACCESS Track Code System</a></td>
+      <td>Codes for each of the ACCESS Model tracks (eCKM, CKM, MSK, BH)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="supporting-examples">Supporting Examples</h4>
+
+<p>These are example instances that are referenced by multiple API examples across the implementation guide.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Patient-PatientExample.html">Patient Example</a></td>
+      <td>Example US Core patient with Medicare Beneficiary Identifier (MBI) used across multiple API examples</td>
+    </tr>
+    <tr>
+      <td><a href="Practitioner-PractitionerExample.html">Practitioner Example</a></td>
+      <td>Example US Core practitioner with NPI used in data reporting examples</td>
+    </tr>
+    <tr>
+      <td><a href="Organization-OrganizationExample.html">Organization Example</a></td>
+      <td>Example US Core organization representing an ACCESS participant</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ConditionDiabetesExample.html">Condition - Type 2 Diabetes Example</a></td>
+      <td>Example ACCESS CKM Track condition for Type 2 Diabetes Mellitus (ICD-10-CM E11.9)</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ConditionHypertensionExample.html">Condition - Essential Hypertension Example</a></td>
+      <td>Example ACCESS eCKM Track condition for Essential Hypertension (ICD-10-CM I10)</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ConditionDepressionExample.html">Condition - Major Depressive Disorder Example</a></td>
+      <td>Example ACCESS BH Track condition for Major Depressive Disorder (ICD-10-CM F32.9)</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ConditionOsteoarthritisExample.html">Condition - Osteoarthritis Example</a></td>
+      <td>Example ACCESS MSK Track condition for Osteoarthritis (ICD-10-CM M19.90)</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="eligibility-api">Eligibility API</h3>
+
+<p>This section defines the operations, profiles, code systems, and value sets that are specific to the ACCESS Eligibility API, which allows participants to check if patients are eligible for the ACCESS model.</p>
+
+<h4 id="operations-1">Operations</h4>
+
+<p>These are the custom operations that can be supported by and/or invoked by systems conforming to the ACCESS Eligibility API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="OperationDefinition-CheckEligibility.html">CheckEligibility</a></td>
+      <td>Submit basic patient information to check eligibility for the ACCESS model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="profiles-1">Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-check-eligibility-in.html">ACCESS Check Eligibility Request Parameters</a></td>
+      <td>Input parameters for the $check-eligibility operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-check-eligibility-out.html">ACCESS Check Eligibility Response Parameters</a></td>
+      <td>Output parameters for the $check-eligibility operation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets-1">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Eligibility API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESS Eligibility Result Value Set</a></td>
+      <td>Value set including all eligibility result codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems-1">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Eligibility API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSEligibilityResultCS.html">ACCESS Eligibility Result Code System</a></td>
+      <td>Codes indicating the result of an eligibility check</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Eligibility API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-CheckEligibilityRequestExample.html">Check Eligibility Request Example</a></td>
+      <td>Example request for checking patient eligibility including participant ID, payer ID, patient details, and track</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-CheckEligibilityResponseEligibleExample.html">Check Eligibility Response - Eligible</a></td>
+      <td>Example successful response indicating patient is eligible for the ACCESS Model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="alignment-api">Alignment API</h3>
+
+<p>This section defines the operations, profiles, code systems, and value sets that are specific to the ACCESS Alignment API, which aligns eligible patients to participants for care under the ACCESS Model.</p>
+
+<h4 id="operations-2">Operations</h4>
+
+<p>These are the custom operations that can be supported by and/or invoked by systems conforming to the ACCESS Alignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="OperationDefinition-Align.html">Align</a></td>
+      <td>Align a patient to a participant and ACCESS track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="profiles-2">Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-align-in.html">ACCESS Alignment Request Parameters</a></td>
+      <td>Input parameters for the $align operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-align-out.html">ACCESS Alignment Response Parameters</a></td>
+      <td>Output parameters for the $align operation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets-2">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Alignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESS Alignment Result Value Set</a></td>
+      <td>Value set including all alignment result codes</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSEventTypeVS.html">ACCESS Event Type Value Set</a></td>
+      <td>Value set including all event notification type codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems-2">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Alignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSAlignmentResultCS.html">ACCESS Alignment Result Code System</a></td>
+      <td>Codes indicating the result of an alignment request</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSEventTypeCS.html">ACCESS Event Type Code System</a></td>
+      <td>Codes for types of notification events that trigger subscription notifications</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples-1">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Alignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-AlignmentRequestExample.html">Alignment Request Example</a></td>
+      <td>Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-AlignmentRequestWithSwitchConsentExample.html">Alignment Request with Switch Consent Example</a></td>
+      <td>Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-AlignmentResponseAlignedExample.html">Alignment Response - Aligned</a></td>
+      <td>Example successful response indicating patient has been aligned to the ACCESS participant</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-AlignmentResponseSwitchApprovedExample.html">Alignment Response - Switch Approved</a></td>
+      <td>Example successful response indicating patient provider switch has been approved and patient is re-aligned</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="unalignment-api">Unalignment API</h3>
+
+<p>This section defines the operations, profiles, code systems, and value sets that are specific to the ACCESS Unalignment API, which allows manual unalignment of patients from participants.</p>
+
+<h4 id="operations-3">Operations</h4>
+
+<p>These are the custom operations that can be supported by and/or invoked by systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="OperationDefinition-Unalign.html">Unalign</a></td>
+      <td>Manually unalign a patient from a participant and ACCESS track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="profiles-3">Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-unalign-in.html">ACCESS Unalignment Request Parameters</a></td>
+      <td>Input parameters for the $unalign operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-unalign-out.html">ACCESS Unalignment Response Parameters</a></td>
+      <td>Output parameters for the $unalign operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-clinical-exclusion-condition.html">ACCESS Clinical Exclusion Condition</a></td>
+      <td>ICD-10-CM diagnosis codes that disqualify a patient from the ACCESS Model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets-3">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESS Unalignment Result Value Set</a></td>
+      <td>Value set including all unalignment result codes</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSUnalignmentReasonVS.html">ACCESS Unalignment Reason Value Set</a></td>
+      <td>Value set including all unalignment reason codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems-3">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSUnalignmentResultCS.html">ACCESS Unalignment Result Code System</a></td>
+      <td>Codes indicating the result of an unalignment request</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSUnalignmentReasonCS.html">ACCESS Unalignment Reason Code System</a></td>
+      <td>Codes indicating the reason for an unalignment request</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples-2">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-UnalignmentRequestExample.html">Unalignment Request Example</a></td>
+      <td>Example request for unaligning a patient including participant ID, payer ID, patient details, track, and reason for unalignment (geographic relocation)</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-UnalignmentRequestESRDExample.html">Unalignment Request - ESRD Example</a></td>
+      <td>Example unalignment request for patient who developed end-stage renal disease (ESRD), demonstrating the no-longer-clinically-eligible reason code</td>
+    </tr>
+    <tr>
+      <td><a href="Patient-PatientESRDExample.html">Patient with ESRD - Unalignment Example</a></td>
+      <td>Example patient Jane Smith who has developed ESRD making her ineligible for the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ESRDConditionExample.html">End Stage Renal Disease Condition Example</a></td>
+      <td>Example active ESRD diagnosis (ICD-10-CM N18.6) that disqualifies patient from ACCESS Model participation</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-UnalignmentResponseUnalignedExample.html">Unalignment Response - Unaligned</a></td>
+      <td>Example successful response indicating patient has been manually unaligned from the ACCESS Model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h3 id="data-reporting-api">Data Reporting API</h3>
+
+<p>This section defines the operations, profiles, code systems, and value sets that are specific to the ACCESS Data Reporting API, which allows participants to submit data reporting information.</p>
+
+<h4 id="operations-4">Operations</h4>
+
+<p>These are the custom operations that can be supported by and/or invoked by systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="OperationDefinition-ReportData.html">ReportData</a></td>
+      <td>Submit data reporting information for the ACCESS model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="profiles-4">Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></td>
+      <td>Contains the resources need to report patient data to the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-data-reporting-composition.html">ACCESS Data Reporting Composition</a></td>
+      <td>Defines constraints that represent common clinical concepts for ACCESS Model Data Reporting submissions. Includes optional additional-information section for supplementary resources</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-report-data-in.html">ACCESS Report Data Request Parameters</a></td>
+      <td>Input parameters for the $report-data operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-report-data-out.html">ACCESS Report Data Response Parameters</a></td>
+      <td>Output parameters for the $report-data operation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets-4">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSReportTypeVS.html">ACCESS Report Type Value Set</a></td>
+      <td>Value set including all report type codes (e.g., baseline, end-of-quarter)</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSReportDataResultVS.html">ACCESS Report Data Result Value Set</a></td>
+      <td>Value set including all data reporting submission result codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems-4">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportTypeCS.html">ACCESS Report Type Code System</a></td>
+      <td>Codes indicating the type of report (e.g., baseline, end-of-quarter)</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportDataResultCS.html">ACCESS Report Data Result Code System</a></td>
+      <td>Codes indicating the result of a data reporting submission</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportDataCompositionSectionCS.html">ACCESS Report Data Composition Section Code System</a></td>
+      <td>Additional codes for composition sections used in ACCESS Model data reporting when LOINC codes are not available</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples-3">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-ReportDataRequestExample.html">Report Data Request Example</a></td>
+      <td>Example request for submitting data report including participant ID, track, and complete data bundle</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseSuccessExample.html">Report Data Response - Success</a></td>
+      <td>Example successful response indicating data submission was processed and recorded</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseDuplicateExample.html">Report Data Response - Duplicate</a></td>
+      <td>Example response indicating data submission is a duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponsePatientNotAlignedExample.html">Report Data Response - Patient Not Aligned</a></td>
+      <td>Example response indicating patient is not currently aligned</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseReportingPeriodClosedExample.html">Report Data Response - Reporting Period Closed</a></td>
+      <td>Example response indicating the reporting period has closed</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseIncompleteDataExample.html">Report Data Response - Incomplete Data</a></td>
+      <td>Example response indicating data submission is missing required elements</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseIncorrectTrackExample.html">Report Data Response - Incorrect Track</a></td>
+      <td>Example response indicating data doesn't match patient's aligned track</td>
+    </tr>
+    <tr>
+      <td><a href="OperationOutcome-SubmissionStatusOperationOutcomeExample.html">Submission Status OperationOutcome Example</a></td>
+      <td>Example OperationOutcome showing detailed information about an incomplete data submission with severity, code, details text, and FHIRPath expressions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="early-cardio-kidney-metabolic-ckmeckm-tracks">(Early) Cardio-Kidney-Metabolic (CKM/eCKM) Tracks</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-CKMReportDataRequestExample.html">CKM Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a CKM track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-CKMReportDataBundleExample.html">CKM Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and clinical observations for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-CKMReportDataCompositionExample.html">CKM Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the CKM/eCKM track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample.html">Blood Pressure Example</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BodyWeightExample.html">Body Weight Example</a></td>
+      <td>Example body weight vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BMIExample.html">BMI Example</a></td>
+      <td>Example body mass index vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-WaistCircumferenceExample.html">Waist Circumference Example</a></td>
+      <td>Example waist circumference vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-HbA1cExample.html">HbA1c Example</a></td>
+      <td>Example hemoglobin A1c laboratory observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-eGFRExample.html">eGFR Example</a></td>
+      <td>Example estimated glomerular filtration rate laboratory observation for the CKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-uACRExample.html">uACR Example</a></td>
+      <td>Example urine albumin-creatinine ratio laboratory observation for the CKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-LDLCholesterolExample.html">LDL-C Cholesterol Example</a></td>
+      <td>Example LDL-C observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-HDLCholesterolExample.html">HDL Cholesterol Example</a></td>
+      <td>Example HDL observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-TotalCholesterolExample.html">Total Cholesterol Example</a></td>
+      <td>Example total cholesterol observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-TriglyceridesExample.html">Triglycerides Example</a></td>
+      <td>Example triglycerides observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="DiagnosticReport-LipidPanelDiagnosticReportExample.html">Lipid Panel DiagnosticReport Example</a></td>
+      <td>Example lipid panel diagnostic report including total cholesterol, LDL, HDL, and triglycerides for the CKM/eCKM track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="musculoskeletal-msk-track">Musculoskeletal (MSK) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-MSKReportDataRequestExample.html">MSK Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a MSK track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-MSKReportDataBundleExample.html">MSK Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and patient-reported outcomes for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-MSKReportDataCompositionExample.html">MSK Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the MSK track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPhysicalFunctionExample.html">PROMIS Physical Function Short Form 6b QuestionnaireResponse Example</a></td>
+      <td>Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISCATExample.html">PROMIS Physical Function CAT QuestionnaireResponse Example</a></td>
+      <td>Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceSFExample.html">PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example</a></td>
+      <td>Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceCATExample.html">PROMIS Pain Interference CAT QuestionnaireResponse Example</a></td>
+      <td>Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-OswestryDisabilityIndexExample.html">Oswestry Disability Index QuestionnaireResponse Example</a></td>
+      <td>Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NeckDisabilityIndexExample.html">Neck Disability Index QuestionnaireResponse Example</a></td>
+      <td>Example Neck Disability Index (NDI) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-QuickDASHExample.html">QuickDASH QuestionnaireResponse Example</a></td>
+      <td>Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-MSKPGICExample.html">MSK PGIC QuestionnaireResponse Example</a></td>
+      <td>Example Patient Global Impression of Change QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-KOOSJRExample.html">KOOS JR QuestionnaireResponse Example</a></td>
+      <td>Example KOOS JR QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-HOOSJRExample.html">HOOS JR QuestionnaireResponse Example</a></td>
+      <td>Example HOOS JR QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISNRSExample.html">PROMIS Pain Intensity NRS QuestionnaireResponse Example</a></td>
+      <td>Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="behaviorial-health-bh-track">Behaviorial Health (BH) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-BHReportDataRequestExample.html">BH Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a BH track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-BHReportDataBundleExample.html">BH Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and behavioral health assessments for BH track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-BHReportDataCompositionExample.html">BH Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for BH track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-DepressionPHQ9Example.html">PHQ-9 QuestionnaireResponse Example</a></td>
+      <td>Example PHQ-9 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-AnxietyGAD7Example.html">GAD-7 QuestionnaireResponse Example</a></td>
+      <td>Example GAD-7 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-BHWHODASExample.html">WHODAS 2.0 QuestionnaireResponse Example</a></td>
+      <td>Example WHODAS 2.0 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-BHPGICExample.html">BH PGIC QuestionnaireResponse Example</a></td>
+      <td>Example Behavioral Health PGIC QuestionnaireResponse for the BH track</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

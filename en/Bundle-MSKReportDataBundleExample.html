@@ -1,0 +1,270 @@
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>MSK Data Reporting Bundle Example - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:"3.83"}
+    h3,h4,h5,h6{--heading-prefix:"3.83"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='artifacts.html'><b>Artifacts</b></a></li><li><b>MSK Data Reporting Bundle Example</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<!-- layouts\layout-instance-base -->
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+
+
+  
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li class="active">
+    <a href="#">Narrative Content</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="Bundle-MSKReportDataBundleExample.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="Bundle-MSKReportDataBundleExample.json.html">JSON</a>
+    </li>
+  
+
+
+
+
+</ul>
+
+
+
+  <a name="root"> </a>
+
+
+
+  <h2 id="root">Example Bundle: MSK Data Reporting Bundle Example</h2>
+
+
+
+
+  <!-- insert intro if present -->
+  
+
+
+
+  <div data-fhir="generated"><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="MSKReportDataBundleExample"> </a><a name="hcMSKReportDataBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></p><p>Final Document at 2026-01-26 12:00:00+0000 by <a href="Practitioner-PractitionerExample.html">Practitioner Jane Smith </a> for <a href="Patient-PatientExample.html">John Doe  Male, DoB: 1950-01-01 ( Patient's Medicare number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>ACCESS MSK Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p><hr/><div><h2>Data reporting for MSK track</h2></div><p>Musculoskeletal Track Data Reporting including pain assessments and patient-reported outcomes.</p><div><h3>PROMIS Physical Function Short Form 6b</h3></div><div><h3>PROMIS Physical Function CAT</h3></div><div><h3>PROMIS Pain Interference Short Form 6a</h3></div><div><h3>PROMIS Pain Interference CAT</h3></div><div><h3>Oswestry Disability Index</h3></div><div><h3>Neck Disability Index</h3></div><div><h3>QuickDASH</h3></div><div><h3>Patient's Global Impression of Change</h3></div><div><h3>KOOS JR</h3></div><div><h3>HOOS JR</h3></div><div><h3>PROMIS Pain Intensity NRS</h3></div></div><hr/><h2>Additional Resources Included in Document</h2><a name="http-//example.org/Patient/PatientExample"> </a><a name="Patient_PatientExample"> </a><a name="hcPatient_PatientExample"> </a><hr/><p>Entry 2 - fullUrl = http://example.org/Patient/PatientExample</p><p>Resource Patient:</p><blockquote>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</blockquote><a name="http-//example.org/Practitioner/PractitionerExample"> </a><a name="Practitioner_PractitionerExample"> </a><a name="hcPractitioner_PractitionerExample"> </a><hr/><p>Entry 3 - fullUrl = http://example.org/Practitioner/PractitionerExample</p><p>Resource Practitioner:</p><blockquote>Practitioner Jane Smith, NPI: 1234567893</blockquote><a name="http-//example.org/Organization/OrganizationExample"> </a><a name="Organization_OrganizationExample"> </a><a name="hcOrganization_OrganizationExample"> </a><hr/><p>Entry 4 - fullUrl = http://example.org/Organization/OrganizationExample</p><p>Resource Organization:</p><blockquote>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</blockquote><a name="http-//example.org/QuestionnaireResponse/PROMISPhysicalFunctionExample"> </a><a name="QuestionnaireResponse_PROMISPhysicalFunctionExample"> </a><a name="hcQuestionnaireResponse_PROMISPhysicalFunctionExample"> </a><hr/><p>Entry 5 - fullUrl = http://example.org/QuestionnaireResponse/PROMISPhysicalFunctionExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-score: 36.8.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/PROMISCATExample"> </a><a name="QuestionnaireResponse_PROMISCATExample"> </a><a name="hcQuestionnaireResponse_PROMISCATExample"> </a><hr/><p>Entry 6 - fullUrl = http://example.org/QuestionnaireResponse/PROMISCATExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PROMIS Physical Function (CAT) QuestionnaireResponse for John Doe. T-score: 38.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/PROMISPainInterferenceSFExample"> </a><a name="QuestionnaireResponse_PROMISPainInterferenceSFExample"> </a><a name="hcQuestionnaireResponse_PROMISPainInterferenceSFExample"> </a><hr/><p>Entry 7 - fullUrl = http://example.org/QuestionnaireResponse/PROMISPainInterferenceSFExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-score: 58.6.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/PROMISPainInterferenceCATExample"> </a><a name="QuestionnaireResponse_PROMISPainInterferenceCATExample"> </a><a name="hcQuestionnaireResponse_PROMISPainInterferenceCATExample"> </a><hr/><p>Entry 8 - fullUrl = http://example.org/QuestionnaireResponse/PROMISPainInterferenceCATExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/OswestryDisabilityIndexExample"> </a><a name="QuestionnaireResponse_OswestryDisabilityIndexExample"> </a><a name="hcQuestionnaireResponse_OswestryDisabilityIndexExample"> </a><hr/><p>Entry 9 - fullUrl = http://example.org/QuestionnaireResponse/OswestryDisabilityIndexExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/NeckDisabilityIndexExample"> </a><a name="QuestionnaireResponse_NeckDisabilityIndexExample"> </a><a name="hcQuestionnaireResponse_NeckDisabilityIndexExample"> </a><hr/><p>Entry 10 - fullUrl = http://example.org/QuestionnaireResponse/NeckDisabilityIndexExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/QuickDASHExample"> </a><a name="QuestionnaireResponse_QuickDASHExample"> </a><a name="hcQuestionnaireResponse_QuickDASHExample"> </a><hr/><p>Entry 11 - fullUrl = http://example.org/QuestionnaireResponse/QuickDASHExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>QuickDASH QuestionnaireResponse for John Doe. Score: 50.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/MSKPGICExample"> </a><a name="QuestionnaireResponse_MSKPGICExample"> </a><a name="hcQuestionnaireResponse_MSKPGICExample"> </a><hr/><p>Entry 12 - fullUrl = http://example.org/QuestionnaireResponse/MSKPGICExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PGIC QuestionnaireResponse for John Doe. Response: Very much improved.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/KOOSJRExample"> </a><a name="QuestionnaireResponse_KOOSJRExample"> </a><a name="hcQuestionnaireResponse_KOOSJRExample"> </a><hr/><p>Entry 13 - fullUrl = http://example.org/QuestionnaireResponse/KOOSJRExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/HOOSJRExample"> </a><a name="QuestionnaireResponse_HOOSJRExample"> </a><a name="hcQuestionnaireResponse_HOOSJRExample"> </a><hr/><p>Entry 14 - fullUrl = http://example.org/QuestionnaireResponse/HOOSJRExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>HOOS JR QuestionnaireResponse for John Doe. Total interval score: 55.985.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/PROMISNRSExample"> </a><a name="QuestionnaireResponse_PROMISNRSExample"> </a><a name="hcQuestionnaireResponse_PROMISNRSExample"> </a><hr/><p>Entry 15 - fullUrl = http://example.org/QuestionnaireResponse/PROMISNRSExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PROMIS Pain Intensity NRS QuestionnaireResponse for John Doe. Average pain (0-10): 6.</p></blockquote></div>
+
+  
+
+  <!-- insert notes if present -->
+  
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

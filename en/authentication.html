@@ -1,0 +1,463 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+
+
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title> - CMS ACCESS Model API v0.9.6</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <link href="assets/css/project.css" rel="stylesheet"/>
+  	<link href="assets/css/cqf.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+    <script type="text/javascript" src="assets/js/direction-management.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid.js"></script>
+    <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
+    <style type="text/css">h2{--heading-prefix:""}
+    h3,h4,h5,h6{--heading-prefix:""}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+      <div class="container">  <!-- container -->
+
+        <!-- Placeholder for child template header declarations -->
+
+
+        <div id="ig-status" data-fhir="generated">
+          <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
+            <br/>
+            <span style="display:inline-block;">0.9.6 - draft
+
+
+
+  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+    <div id="segment-navbar" class="segment" data-fhir="generated">  <!-- segment-navbar -->
+      <div id="stripe"> </div>
+      <div class="container">  <!-- container -->
+        <!-- HEADER CONTENT -->
+
+        <nav class="navbar navbar-inverse">
+          <!--status-bar-->
+          <div class="container">
+
+            <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+              <span class="icon-bar"> </span>
+            </button>
+            <a class="navbar-brand hidden" href="http://hl7.org/fhir/R4/index.html">FHIR</a>
+            <div class="nav-collapse collapse navbar-inverse-collapse">
+              <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li>
+    <a href="index.html">Home</a>
+  </li>
+  <li>
+    <a href="toc.html">Table of Contents</a>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Specification
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="conformance.html">Conformance Expectations</a>
+      </li>
+    </ul>
+  </li>
+  <li>
+    <a href="artifacts.html">Artifacts</a>
+  </li>
+  <li>
+    <a href="downloads.html">Downloads</a>
+  </li>
+  <li>
+    <a href="changelog.html">Change Log</a>
+  </li>
+</ul>
+            </div>  <!-- /.nav-collapse -->
+
+              
+
+          </div>  <!-- /.container -->
+        </nav>  <!-- /.navbar -->
+      <!-- /HEADER CONTENT -->
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-navbar -->
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment" data-fhir="generated">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<style type="text/css">
+h2:before{color:silver;counter-increment:section;content:var(--heading-prefix) " ";}
+h3:before{color:silver;counter-increment:sub-section;content:var(--heading-prefix) "." counter(sub-section) " ";}
+h4:before{color:silver;counter-increment:composite;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) " ";}
+h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) " ";}
+h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
+</style>
+<div class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <h2></h2>
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <p><!-- white space is critical inside of capture --></p>
+<div>
+<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+</div>
+<h3 id="authentication-process-for-access-apis">Authentication Process for ACCESS APIs</h3>
+
+<p>This section describes the authentication and authorization process required to access all ACCESS Model API endpoints.</p>
+
+<h4 id="overview">Overview</h4>
+
+<p>The ACCESS APIs use OAuth 2.0 for authentication and authorization. All ACCESS participants must complete a registration process and obtain appropriate credentials before accessing any API.</p>
+
+<h4 id="oauth-20-client-credentials-flow">OAuth 2.0 Client Credentials Flow</h4>
+
+<p>The ACCESS APIs use the OAuth 2.0 Client Credentials grant type, which is appropriate for server-to-server authentication where the client (ACCESS participant system) is acting on its own behalf.</p>
+
+<h5 id="authentication-flow">Authentication Flow</h5>
+
+<pre><code class="language-mermaid">sequenceDiagram
+    participant Client as ACCESS Participant System
+    participant AuthServer as CMS Authorization Server
+    participant API as ACCESS API
+
+    Client-&gt;&gt;AuthServer: POST {URL received during registration}&lt;br/&gt;grant_type=client_credentials&lt;br/&gt;client_id={received during registration}&lt;br/&gt;client_secret={received during registration}&lt;br/&gt;scope={received during registration}
+    AuthServer-&gt;&gt;AuthServer: Validate credentials
+    AuthServer--&gt;&gt;Client: 200 OK&lt;br/&gt;access_token, expires_in
+    
+    Client-&gt;&gt;API: POST /access/Patient/$operation&lt;br/&gt;Authorization: Bearer {access_token}
+    API-&gt;&gt;API: Validate token
+    API--&gt;&gt;Client: 202 Accepted&lt;br/&gt;Response with submission ID
+</code></pre>
+
+<h5 id="step-1-obtain-access-token">Step 1: Obtain Access Token</h5>
+
+<p><strong>Token Endpoint</strong>: <code class="language-plaintext highlighter-rouge">POST {URL received during registration}</code></p>
+
+<p><strong>Request Headers</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Content-Type: application/x-www-form-urlencoded
+</code></pre></div></div>
+
+<p><strong>Request Body</strong> (form-encoded):</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>grant_type=client_credentials
+client_id={received during registration}
+client_secret={received during registration}
+scope={received during registration}
+</code></pre></div></div>
+
+<p><strong>Example cURL Request</strong>:</p>
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code>curl <span class="nt">-X</span> POST <span class="o">{</span>URL received during registration<span class="o">}</span> <span class="se">\</span>
+  <span class="nt">-H</span> <span class="s2">"Content-Type: application/x-www-form-urlencoded"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"grant_type=client_credentials"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_id={received during registration}"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"client_secret={received during registration}"</span> <span class="se">\</span>
+  <span class="nt">-d</span> <span class="s2">"scope={received during registration}"</span>
+</code></pre></div></div>
+
+<p><strong>Successful Response</strong>:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"access_token"</span><span class="p">:</span><span class="w"> </span><span class="s2">"eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9..."</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"token_type"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Bearer"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"expires_in"</span><span class="p">:</span><span class="w"> </span><span class="mi">300</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"scope"</span><span class="p">:</span><span class="w"> </span><span class="s2">"{allowed scope}"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p>It is <strong>strongly</strong> recommended to get a new access token for each new request.</p>
+
+<h5 id="step-2-use-access-token-in-api-requests">Step 2: Use Access Token in API Requests</h5>
+
+<p>Include the access token in the Authorization header of all API requests:</p>
+
+<p><strong>Request Headers</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>Authorization: Bearer {access_token}
+Content-Type: application/fhir+json
+</code></pre></div></div>
+
+<p><strong>Example Request</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://[base]/access/Patient/$check-eligibility?entityId=[participantID]
+Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
+Content-Type: application/fhir+json
+
+{
+  "resourceType": "Parameters",
+  "parameter": [...]
+}
+</code></pre></div></div>
+
+<h4 id="token-management">Token Management</h4>
+
+<h5 id="token-expiration">Token Expiration</h5>
+
+<p>Access tokens have a limited lifetime (typically 5 minutes). Clients must:</p>
+
+<ol>
+  <li><strong>Monitor token expiration</strong> - Track the <code class="language-plaintext highlighter-rouge">expires_in</code> value from the token response</li>
+  <li><strong>Refresh before expiration</strong> - Request a new token before the current one expires</li>
+  <li><strong>Handle <code class="language-plaintext highlighter-rouge">HTTP 401</code> responses</strong> - If a token expires mid-use, obtain a new token and retry the request</li>
+</ol>
+
+<h5 id="token-caching-best-practices">Token Caching Best Practices</h5>
+
+<ul>
+  <li>Cache tokens to avoid unnecessary authentication requests</li>
+  <li>Request a new token for each request</li>
+  <li>Implement thread-safe token management in multi-threaded applications</li>
+  <li>Store credentials and tokens securely (never in source code or logs)</li>
+</ul>
+
+<h5 id="example-token-management-pseudocode">Example Token Management (Pseudocode)</h5>
+
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>class TokenManager:
+    token = null
+    expires_at = null
+    
+    function getValidToken():
+        if token is null or currentTime() &gt;= expires_at - 5 minutes:
+            response = requestNewToken()
+            token = response.access_token
+            expires_at = currentTime() + response.expires_in
+        return token
+    
+    function requestNewToken():
+        return POST to auth_server with client_credentials
+</code></pre></div></div>
+
+<h4 id="required-scopes">Required Scopes</h4>
+
+<p>The ACCESS APIs require the OAuth 2.0 scopes provided during the client registration process. Scopes may vary based on which APIs your organization has been approved to access.</p>
+
+<h4 id="error-handling">Error Handling</h4>
+
+<h5 id="authentication-errors">Authentication Errors</h5>
+
+<p><strong>Invalid Credentials (401 Unauthorized)</strong>:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"error"</span><span class="p">:</span><span class="w"> </span><span class="s2">"invalid_client"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"error_description"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Client authentication failed"</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Action</strong>: Verify your <code class="language-plaintext highlighter-rouge">client_id</code> and <code class="language-plaintext highlighter-rouge">client_secret</code> are correct.</p>
+
+<p><strong>Invalid Token (401 Unauthorized)</strong>:</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 401 Unauthorized
+WWW-Authenticate: Bearer error="invalid_token", error_description="Token has expired"
+</code></pre></div></div>
+
+<p><strong>Action</strong>: Request a new access token.</p>
+
+<p><strong>Insufficient Scope (403 Forbidden)</strong>:</p>
+<div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
+  </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
+  </span><span class="nl">"issue"</span><span class="p">:</span><span class="w"> </span><span class="p">[</span><span class="w">
+    </span><span class="p">{</span><span class="w">
+      </span><span class="nl">"severity"</span><span class="p">:</span><span class="w"> </span><span class="s2">"error"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"code"</span><span class="p">:</span><span class="w"> </span><span class="s2">"forbidden"</span><span class="p">,</span><span class="w">
+      </span><span class="nl">"details"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span><span class="w">
+        </span><span class="nl">"text"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Insufficient scope for requested operation"</span><span class="w">
+      </span><span class="p">}</span><span class="w">
+    </span><span class="p">}</span><span class="w">
+  </span><span class="p">]</span><span class="w">
+</span><span class="p">}</span><span class="w">
+</span></code></pre></div></div>
+
+<p><strong>Action</strong>: Ensure your token includes all required scopes for the API operation you are attempting to access.</p>
+
+<h4 id="security-requirements">Security Requirements</h4>
+
+<h5 id="transport-security">Transport Security</h5>
+
+<ul>
+  <li><strong>TLS 1.3 Required</strong>: All communication must use TLS 1.3</li>
+  <li><strong>Certificate Validation</strong>: Clients must validate server certificates</li>
+  <li><strong>No Insecure Protocols</strong>: HTTP, TLS 1.0, TLS 1.1, TLS 1.2, and SSL are not permitted</li>
+</ul>
+
+<h5 id="credential-security">Credential Security</h5>
+
+<ul>
+  <li><strong>Secure Storage</strong>: Store client credentials in secure key management systems or vaults</li>
+  <li><strong>No Code Storage</strong>: Never store credentials in source code, configuration files, or version control</li>
+  <li><strong>Environment Variables</strong>: Use environment variables or secure configuration management</li>
+  <li><strong>Rotation</strong>: Implement credential rotation policies (recommended: every 90 days)</li>
+  <li><strong>Audit Logging</strong>: Log all authentication attempts (excluding sensitive credential data)</li>
+</ul>
+
+<h5 id="token-security">Token Security</h5>
+
+<ul>
+  <li><strong>Secure Transmission</strong>: Only transmit tokens over TLS connections</li>
+  <li><strong>Limited Lifetime</strong>: Accept token expiration and request new tokens as needed</li>
+  <li><strong>No Sharing</strong>: Never share tokens between different applications or environments</li>
+  <li><strong>Secure Storage</strong>: If caching tokens, use encrypted storage</li>
+  <li><strong>Logging</strong>: Never log tokens in application logs or monitoring systems</li>
+</ul>
+
+<h4 id="multi-api-access">Multi-API Access</h4>
+
+<p>A single set of credentials may provide access to multiple ACCESS APIs. The OAuth scopes in your access token will determine which operations you can perform.</p>
+
+<h4 id="troubleshooting">Troubleshooting</h4>
+
+<h5 id="common-issues">Common Issues</h5>
+
+<p><strong>Token Repeatedly Expires Mid-Request</strong></p>
+<ul>
+  <li>Check system clock synchronization</li>
+  <li>Implement proactive token refresh (5 minutes before expiration)</li>
+  <li>Verify network latency is not causing delays</li>
+</ul>
+
+<p><strong>Authentication Works in Test but Fails in Production</strong></p>
+<ul>
+  <li>Verify you are using production credentials (not test credentials)</li>
+  <li>Check that production endpoint URLs are correct</li>
+  <li>Confirm your organization has been approved for production access</li>
+</ul>
+
+<p><strong><code class="language-plaintext highlighter-rouge">HTTP 403 Forbidden</code> Despite Valid Token</strong></p>
+<ul>
+  <li>Verify your scope includes the operation you are attempting</li>
+  <li>Check that your participant ID is active</li>
+  <li>Ensure you are using the correct API endpoints</li>
+</ul>
+
+<h4 id="additional-resources">Additional Resources</h4>
+
+<ul>
+  <li><a href="https://tools.ietf.org/html/rfc6749">OAuth 2.0 RFC 6749</a> - OAuth 2.0 specification</li>
+  <li><a href="https://tools.ietf.org/html/rfc6749#section-4.4">OAuth 2.0 Client Credentials</a> - Client credentials grant flow</li>
+  <li><a href="https://tools.ietf.org/html/rfc7519">JWT RFC 7519</a> - JSON Web Token specification</li>
+  <li><a href="https://datatracker.ietf.org/doc/html/draft-ietf-oauth-security-topics">OAuth 2.0 Security Best Practices</a> - Security considerations</li>
+</ul>
+
+
+
+
+</div>
+        </div>  <!-- /inner-wrapper -->
+      </div>  <!-- /row -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-content -->
+
+  <script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+  <script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+  <script type="text/javascript" src="assets/js/flags.js"> </script>
+
+  <script type="text/javascript" src="assets/js/window-hash.js"> </script>
+  <script type="text/javascript" src="assets/js/togglechanges.js"> </script>
+  <script type="text/javascript" src="assets/js/requirements-table.js"> </script>
+  <a name="bottom"> </a>
+  <div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+    <div class="container" data-fhir="generated">  <!-- container -->
+
+      <div class="inner-wrapper">
+        <p>
+
+
+
+          IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
+          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Generated 
+  <span title="2026-04-24 13:45:00 -0400">
+    2026-04-24
+  </span>
+
+          <br/>
+          <span style="color: var(--footer-highlight-text-color)">
+                      Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="../qa.html">QA Report</a>
+                 
+                
+          </span>
+        </p>
+      </div>  <!-- /inner-wrapper -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-footer -->
+  
+  <div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+    <div class="container">  <!-- container -->
+    </div>  <!-- /container -->
+  </div>  <!-- /segment-post-footer -->
+
+  <!-- JS and analytics only. -->
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+  <script type="text/javascript" src="assets/js/respond.min.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+  <script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+  <script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+  <!-- Analytics Below
+  ================================================== -->
+  </body>
+</html>
+

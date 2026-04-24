@@ -1,6 +1,5 @@
 {
-  "version" : "0.9.1",
-  "date" : "20260312235537",
-  "notForPublication" : true,
-  "name" : "cms.fhir.us.access.r4b"
+  "version" : "0.9.6",
+  "date" : "20260424134533",
+  "name" : "cms.fhir.us.cmmi-access-model.r4b"
 }

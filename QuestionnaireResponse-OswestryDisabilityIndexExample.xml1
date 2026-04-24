@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="OswestryDisabilityIndexExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.</p></div>
+  </text>
+  <questionnaire value="http://example.org/Questionnaire/OswestryDisabilityIndexQuestionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <authored value="2026-01-15T10:30:00Z"/>
+  <author>
+    <reference value="Patient/PatientExample"/>
+  </author>
+  <item>
+    <linkId value="odi-1"/>
+    <text value="Pain intensity"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-2"/>
+    <text value="Personal care (washing, dressing, etc.)"/>
+    <answer>
+      <valueDecimal value="1"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-3"/>
+    <text value="Lifting"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-4"/>
+    <text value="Walking"/>
+    <answer>
+      <valueDecimal value="1"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-5"/>
+    <text value="Sitting"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-6"/>
+    <text value="Standing"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-7"/>
+    <text value="Sleeping"/>
+    <answer>
+      <valueDecimal value="1"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-8"/>
+    <text value="Sex life (if applicable)"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-9"/>
+    <text value="Social life"/>
+    <answer>
+      <valueDecimal value="3"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="odi-10"/>
+    <text value="Traveling"/>
+    <answer>
+      <valueDecimal value="2"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="score"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+          <valueDecimal value="36"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="97909-6"/>
+        <display value="Oswestry disability index score ODI"/>
+      </valueCoding>
+    </answer>
+  </item>
+</QuestionnaireResponse>

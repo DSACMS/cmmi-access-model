@@ -1,0 +1,141 @@
+# BH WHODAS 2.0 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+
+## Example QuestionnaireResponse: BH WHODAS 2.0 QuestionnaireResponse Example
+
+WHODAS 2.0 (12-item) QuestionnaireResponse for John Doe. Total score: 26.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "BHWHODASExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
+  },
+  "language" : "en",
+  "questionnaire" : "http://example.org/Questionnaire/WHODASQuestionnaire",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "authored" : "2026-01-15T10:30:00Z",
+  "author" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "item" : [{
+    "linkId" : "whodas-s1",
+    "text" : "Standing for long periods such as 30 minutes",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s2",
+    "text" : "Taking care of household responsibilities",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-s3",
+    "text" : "Learning a new task, for example learning how to get to a new place",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s4",
+    "text" : "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s5",
+    "text" : "How much of a problem did you have with being emotionally affected by your health problems?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-s6",
+    "text" : "Concentrating on doing something for ten minutes?",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s7",
+    "text" : "Walking a long distance such as a kilometer [or equivalent]?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-s8",
+    "text" : "Washing your whole body?",
+    "answer" : [{
+      "valueDecimal" : 1
+    }]
+  },
+  {
+    "linkId" : "whodas-s9",
+    "text" : "Getting dressed?",
+    "answer" : [{
+      "valueDecimal" : 1
+    }]
+  },
+  {
+    "linkId" : "whodas-s10",
+    "text" : "Dealing with people you do not know",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s11",
+    "text" : "Maintaining a friendship",
+    "answer" : [{
+      "valueDecimal" : 2
+    }]
+  },
+  {
+    "linkId" : "whodas-s12",
+    "text" : "Your day-to-day work",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-h1",
+    "text" : "Overall, in the past 30 days, how many days were these difficulties present?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-h2",
+    "text" : "In the past 30 days, for how many days were you totally unable to carry out your usual activities or work because of any health condition?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "whodas-h3",
+    "text" : "In the past 30 days, not counting the days that you were totally unable, for how many days did you cut back or reduce your usual activities or work because of any health condition?",
+    "answer" : [{
+      "valueDecimal" : 3
+    }]
+  },
+  {
+    "linkId" : "total-score",
+    "answer" : [{
+      "valueDecimal" : 26
+    }]
+  }]
+}
+
+```

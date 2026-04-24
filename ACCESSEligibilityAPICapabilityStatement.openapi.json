@@ -7,7 +7,7 @@
       "name": "Creative Commons Zero v1.0 Universal",
       "url": "http://spdx.org/licenses/CC0-1.0.html"
     },
-    "version": "0.9.1",
+    "version": "0.9.6",
     "contact": {
       "name": "Global Alliant, Inc.",
       "email": "david.h@globalalliantinc.org",
@@ -119,7 +119,7 @@
       "description": "Operation $submission-status on type Patient",
       "get": {
         "summary": "$submission-status on type Patient",
-        "description": "The **$submission-status** operation allows the client to check the status of any asynchronous ACCESS operation submission. This is a shared operation used by all ACCESS APIs. The specific result codes returned depend on which operation created the submission: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align, and [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign.",
+        "description": "The **$submission-status** operation allows the client to check the status of any asynchronous ACCESS operation submission. This is a shared operation used by all ACCESS APIs. The specific result codes returned depend on which operation created the submission: [ACCESSEligibilityResultVS](ValueSet-ACCESSEligibilityResultVS.html) for $check-eligibility, [ACCESSAlignmentResultVS](ValueSet-ACCESSAlignmentResultVS.html) for $align, [ACCESSUnalignmentResultVS](ValueSet-ACCESSUnalignmentResultVS.html) for $unalign, and [ACCESSReportDataResultVS](ValueSet-ACCESSReportDataResultVS.html) for $report-data.",
         "operationId": "op-submission-status-Patient",
         "responses": {
           "default": {

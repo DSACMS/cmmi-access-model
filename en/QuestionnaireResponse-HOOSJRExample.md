@@ -1,0 +1,134 @@
+# HOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+
+## Example QuestionnaireResponse: HOOS JR QuestionnaireResponse Example
+
+HOOS JR QuestionnaireResponse for John Doe. Total interval score: 55.985.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "QuestionnaireResponse",
+  "id" : "HOOSJRExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
+  },
+  "language" : "en",
+  "questionnaire" : "http://example.org/Questionnaire/HOOSJRQuestionnaire",
+  "status" : "completed",
+  "subject" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "authored" : "2026-01-15T10:30:00Z",
+  "author" : {
+    "reference" : "Patient/PatientExample"
+  },
+  "item" : [{
+    "linkId" : "hoosjr-1",
+    "text" : "Going up or down stairs",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "hoosjr-2",
+    "text" : "Walking on an uneven surface",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "hoosjr-3",
+    "text" : "Rising from sitting",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 2
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6751-7",
+        "display" : "Moderate"
+      }
+    }]
+  },
+  {
+    "linkId" : "hoosjr-4",
+    "text" : "Bending to the floor/picking up an object",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 3
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6750-9",
+        "display" : "Severe"
+      }
+    }]
+  },
+  {
+    "linkId" : "hoosjr-5",
+    "text" : "Lying in bed",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      }
+    }]
+  },
+  {
+    "linkId" : "hoosjr-6",
+    "text" : "Sitting",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 1
+        }],
+        "system" : "http://loinc.org",
+        "code" : "LA6752-5",
+        "display" : "Mild"
+      }
+    }]
+  },
+  {
+    "linkId" : "total-interval-score",
+    "answer" : [{
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "valueDecimal" : 55.985
+        }],
+        "system" : "http://loinc.org",
+        "code" : "82323-7",
+        "display" : "Total interval score [HOOSJR]"
+      }
+    }]
+  }]
+}
+
+```

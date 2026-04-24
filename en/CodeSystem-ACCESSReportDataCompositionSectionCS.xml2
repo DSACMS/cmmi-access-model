@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="ACCESSReportDataCompositionSectionCS"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSReportDataCompositionSectionCS</b></p><a name="ACCESSReportDataCompositionSectionCS"> </a><a name="hcACCESSReportDataCompositionSectionCS"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">QuickDASH<a name="ACCESSReportDataCompositionSectionCS-QuickDASH"> </a></td><td>Quick Disabilities of the Arm, Shoulder and Hand [QuickDASH]</td><td>Assesses physical function and symptoms in people with upper limb musculoskeletal disorders</td></tr><tr><td style="white-space:nowrap">WHODAS<a name="ACCESSReportDataCompositionSectionCS-WHODAS"> </a></td><td>World Health Organization Disability Assessment Schedule [WHODAS] 2.0</td><td>Assesses functioning and disability across six life domains: cognition, mobility, self-care, getting along, life activities, and participation.</td></tr><tr><td style="white-space:nowrap">PGIC<a name="ACCESSReportDataCompositionSectionCS-PGIC"> </a></td><td>Patient Global Impression of Change [PGIC]</td><td>Assesses patient's perception of improvement or decline.</td></tr><tr><td style="white-space:nowrap">additional-information<a name="ACCESSReportDataCompositionSectionCS-additional-information"> </a></td><td>Additional Information</td><td>Section containing references to supplementary resources that provide additional context or detail beyond required track-specific data elements</td></tr></table></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS"/>
+  <version value="0.9.6"/>
+  <name value="ACCESSReportDataCompositionSectionCS"/>
+  <title value="ACCESS Report Data Composition Section Codes"/>
+  <status value="draft"/>
+  <experimental value="false"/>
+  <date value="2026-04-24T13:45:33-04:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This codesystem defines additional codes for composition sections used in ACCESS Model data reporting when LOINC codes are not available."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS)."/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="QuickDASH"/>
+    <display value="Quick Disabilities of the Arm, Shoulder and Hand [QuickDASH]"/>
+    <definition value="Assesses physical function and symptoms in people with upper limb musculoskeletal disorders"/>
+  </concept>
+  <concept>
+    <code value="WHODAS"/>
+    <display value="World Health Organization Disability Assessment Schedule [WHODAS] 2.0"/>
+    <definition value="Assesses functioning and disability across six life domains: cognition, mobility, self-care, getting along, life activities, and participation."/>
+  </concept>
+  <concept>
+    <code value="PGIC"/>
+    <display value="Patient Global Impression of Change [PGIC]"/>
+    <definition value="Assesses patient's perception of improvement or decline."/>
+  </concept>
+  <concept>
+    <code value="additional-information"/>
+    <display value="Additional Information"/>
+    <definition value="Section containing references to supplementary resources that provide additional context or detail beyond required track-specific data elements"/>
+  </concept>
+</CodeSystem>
