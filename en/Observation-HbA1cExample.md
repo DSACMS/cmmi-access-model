@@ -1,4 +1,4 @@
-# HbA1c Example - CMS ACCESS Model API v0.9.6
+# HbA1c Example - CMS ACCESS Model API v0.9.8
 
 ## Example Observation: HbA1c Example
 

@@ -1,4 +1,4 @@
-# PROMIS Physical Function Short Form 6b QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# PROMIS Physical Function Short Form 6b QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: PROMIS Physical Function Short Form 6b QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 4
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 4
         }],
         "system" : "http://loinc.org",
@@ -91,12 +91,12 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
-        "code" : "LA13912-3",
-        "display" : "Unable to do"
+        "code" : "LA13868-7",
+        "display" : "Cannot do"
       }
     }]
   },
@@ -106,41 +106,25 @@ PROMIS Physical Function (Short Form 6b) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
-        "code" : "LA13919-8",
-        "display" : "With much difficulty"
+        "code" : "LA11911-7",
+        "display" : "Quite a lot"
       }
     }]
   },
   {
     "linkId" : "raw_score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 17
-        }],
-        "system" : "http://loinc.org",
-        "code" : "77797-9",
-        "display" : "PROMIS short form - physical function 6b - version 1.2 raw score"
-      }
+      "valueDecimal" : 17
     }]
   },
   {
     "linkId" : "tscore",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 36.8
-        }],
-        "system" : "http://loinc.org",
-        "code" : "77866-2",
-        "display" : "PROMIS physical function - version 1.0 Tscore"
-      }
+      "valueDecimal" : 36.8
     }]
   }]
 }

@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/DiagnosticReport-LipidPanelDiagnosticReportExample.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/DiagnosticReport-LipidPanelDiagnosticReportExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

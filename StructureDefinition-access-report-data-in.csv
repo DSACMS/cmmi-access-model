@@ -107,7 +107,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -132,7 +132,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""reportType""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Parameters.parameter:reportType.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "Parameters.parameter:reportType.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -160,7 +160,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"Parameters.parameter:dataBundle.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Bundle {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6]]} {[]}
+"Parameters.parameter:dataBundle.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Bundle {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8]]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"","","N/A","Entity. Role, or Act","N/A"
 "Parameters.parameter:dataBundle.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "

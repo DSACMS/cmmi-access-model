@@ -1,4 +1,4 @@
-# ACCESS Eligibility Result Codes - CMS ACCESS Model API v0.9.6
+# ACCESS Eligibility Result Codes - CMS ACCESS Model API v0.9.8
 
 ## CodeSystem: ACCESS Eligibility Result Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSEligibilityResultCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSEligibilityResultCS",
   "title" : "ACCESS Eligibility Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -51,7 +51,7 @@ This Code system is referenced in the definition of the following value sets:
   "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 8,
+  "count" : 10,
   "concept" : [{
     "code" : "eligible",
     "display" : "Eligible",
@@ -91,6 +91,16 @@ This Code system is referenced in the definition of the following value sets:
     "code" : "not-eligible-already-aligned",
     "display" : "Not eligible - already aligned to another participant in the track",
     "definition" : "The patient is technically eligible, but is already aligned to another participant and receiving services under the ACCESS Model in the same track. A patient can only be aligned to one participant in each track."
+  },
+  {
+    "code" : "not-eligible-clinical-exclusion",
+    "display" : "Not eligible - clinical exclusion",
+    "definition" : "The patient has a clinical exclusion that prevents them from receiving services under the ACCESS Model."
+  },
+  {
+    "code" : "not-eligible-mismatch",
+    "display" : "Not eligible - mismatch",
+    "definition" : "The patient information provided does not match the patient information on record."
   }]
 }
 

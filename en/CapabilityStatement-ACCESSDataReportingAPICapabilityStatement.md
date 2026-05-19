@@ -1,4 +1,4 @@
-# ACCESS Data Reporting API Capability Statement - CMS ACCESS Model API v0.9.6
+# ACCESS Data Reporting API Capability Statement - CMS ACCESS Model API v0.9.8
 
 ## CapabilityStatement: ACCESS Data Reporting API Capability Statement 
 
@@ -16,7 +16,7 @@ Describes the expected capabilities of systems implementing the ACCESS Data Repo
   "resourceType" : "CapabilityStatement",
   "id" : "ACCESSDataReportingAPICapabilityStatement",
   "url" : "https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSDataReportingAPICapabilityStatement",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSDataReportingAPICapabilityStatement",
   "title" : "ACCESS Data Reporting API Capability Statement",
   "status" : "active",
@@ -58,12 +58,12 @@ Describes the expected capabilities of systems implementing the ACCESS Data Repo
       "documentation" : "Patient resource for ACCESS data reporting operations",
       "operation" : [{
         "name" : "report-data",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData|0.9.6",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData|0.9.8",
         "documentation" : "Report clinical data for an aligned patient. This operation requires the `entityId` query parameter (participant identifier) and a Parameters body including other required inputs. Requires document bundle conforming to ACCESSDataReportingBundle profile with Composition as first entry and all referenced resources included. Validates track-specific data requirements. Supports multiple submissions per reporting period. Returns submission status from ACCESSReportDataResultVS: success, validation-error, duplicate, patient-not-aligned, reporting-period-closed, incomplete-data, or incorrect-track. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."
       },
       {
         "name" : "submission-status",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.6",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.8",
         "documentation" : "Poll the status of a previously submitted data report. Returns HTTP 202 while processing or HTTP 200 with result when complete. May include OperationOutcome with validation errors if submission failed."
       }]
     }]

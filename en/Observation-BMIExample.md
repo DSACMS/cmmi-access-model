@@ -1,4 +1,4 @@
-# BMI Example - CMS ACCESS Model API v0.9.6
+# BMI Example - CMS ACCESS Model API v0.9.8
 
 ## Example Observation: BMI Example
 

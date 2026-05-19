@@ -1,4 +1,4 @@
-# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Unalignment Request Parameters 
 
@@ -14,7 +14,7 @@ The `conditions` parameter:
 * This requirement is enforced by the `access-unalign-condition-required` invariant
 * Should reference [ACCESSClinicalExclusionCondition](StructureDefinition-access-clinical-exclusion-condition.md) resources with ICD-10-CM codes
 
-For detailed unalignment workflows and examples, see the Unalignment API section in the Operations Manual.
+For detailed unalignment workflows and examples, see the Unalignment API section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 
 **Usages:**
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
   "resourceType" : "StructureDefinition",
   "id" : "access-unalign-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSUnalignmentRequestParameters",
   "title" : "ACCESS Unalignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
         "severity" : "error",
         "human" : "When the unalignment reason is 'no-longer-clinically-eligible', at least one condition parameter must be provided to document the disqualifying diagnosis",
         "expression" : "parameter.where(name = 'reason').value.ofType(CodeableConcept).coding.where(system = 'https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS' and code = 'no-longer-clinically-eligible').exists() implies parameter.where(name = 'condition').exists()",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8"
       }]
     },
     {
@@ -144,7 +144,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8"
       }],
       "mustSupport" : true
     },
@@ -249,7 +249,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
       }
     },
     {
@@ -287,7 +287,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.6"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.8"]
       }],
       "mustSupport" : true
     },
@@ -320,7 +320,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.8"
       }
     },
     {

@@ -1,4 +1,4 @@
-# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.6
+# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS BH Condition Profile 
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
   "resourceType" : "StructureDefinition",
   "id" : "access-bh-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSBHCondition",
   "title" : "ACCESS BH Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
       "definition" : "Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.8"
       }
     }]
   }

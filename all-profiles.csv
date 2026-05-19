@@ -131,7 +131,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-align-in","Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-align-in","Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -159,7 +159,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"access-align-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6]]} {[]}
+"access-align-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8]]} {[]}
 ","Detailed information about conditions, problems or diagnoses","\-","\-","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "access-align-in","Parameters.parameter:condition.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -274,7 +274,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""result""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-align-out","Parameters.parameter:result.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-align-out","Parameters.parameter:result.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
@@ -308,7 +308,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-bh-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-bh-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -350,7 +350,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 "
 "access-bh-condition","Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","BH track diagnosis code","Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.6","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","BH track diagnosis code","Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.8","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-bh-condition","Condition.code.id","Condition.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -601,7 +601,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-check-eligibility-in","Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-check-eligibility-in","Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -629,7 +629,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"access-check-eligibility-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6]]} {[]}
+"access-check-eligibility-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8]]} {[]}
 ","Detailed information about conditions, problems or diagnoses","\-","\-","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "access-check-eligibility-in","Parameters.parameter:condition.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -694,7 +694,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""result""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-check-eligibility-out","Parameters.parameter:result.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-check-eligibility-out","Parameters.parameter:result.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
@@ -728,7 +728,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-ckm-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-ckm-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -770,7 +770,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 "
 "access-ckm-condition","Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","CKM track diagnosis code","Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.6","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","CKM track diagnosis code","Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.8","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-ckm-condition","Condition.code.id","Condition.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -914,7 +914,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-clinical-exclusion-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-clinical-exclusion-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1095,7 +1095,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -1253,7 +1253,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 "
 "access-data-reporting-bundle","Bundle","Bundle","","","",0,*,"","","","null {[]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","","","","","","","","","",,,,,"",,,,"Bundle",0,*,"","bdl-1:total only when a search or history {total.empty() or (type = 'searchset') or (type = 'history')}
-bdl-2:entry.search only when a search {entry.search.empty() or (type = 'searchset')}bdl-3:entry.request mandatory for batch/transaction/history, otherwise prohibited {entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))}bdl-4:entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited {entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))}bdl-7:FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles) {(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct()}bdl-9:A document must have an identifier with a system and a value {type = 'document' implies (identifier.system.exists() and identifier.value.exists())}bdl-10:A document must have a date {type = 'document' implies (timestamp.hasValue())}bdl-11:A document must have a Composition as the first resource {type = 'document' implies entry.first().resource.is(Composition)}bdl-12:A message must have a MessageHeader as the first resource {type = 'message' implies entry.first().resource.is(MessageHeader)}"
+bdl-2:entry.search only when a search {entry.search.empty() or (type = 'searchset')}bdl-3:entry.request mandatory for batch/transaction/history, otherwise prohibited {entry.all(request.exists() = (%resource.type = 'batch' or %resource.type = 'transaction' or %resource.type = 'history'))}bdl-4:entry.response mandatory for batch-response/transaction-response/history, otherwise prohibited {entry.all(response.exists() = (%resource.type = 'batch-response' or %resource.type = 'transaction-response' or %resource.type = 'history'))}bdl-7:FullUrl must be unique in a bundle, or else entries with the same fullUrl must have different meta.versionId (except in history bundles) {(type = 'history') or entry.where(fullUrl.exists()).select(fullUrl&resource.meta.versionId).isDistinct()}bdl-9:A document must have an identifier with a system and a value {type = 'document' implies (identifier.system.exists() and identifier.value.exists())}bdl-10:A document must have a date {type = 'document' implies (timestamp.hasValue())}bdl-11:A document must have a Composition as the first resource {type = 'document' implies entry.first().resource.is(Composition)}bdl-12:A message must have a MessageHeader as the first resource {type = 'message' implies entry.first().resource.is(MessageHeader)}access-data-reporting-bundle-composition-refs-in-bundle:All resources referenced from the data reporting Composition must be included in the enclosing data reporting Bundle. {entry.resource.ofType(Composition).descendants().ofType(Reference).all(resolve() in %resource.entry.resource)}"
 "access-data-reporting-bundle","Bundle.id","Bundle.id","","","",0,1,"","","Y","id {[]} {[]}
 ","Logical id of this artifact","The logical id of the resource, as used in the URL for the resource. Once assigned, this value never changes.","The only time that a resource does not have an id is when it is being submitted to the server using a create operation.","","","","","","","","",,,,,"",,,,"Resource.id",0,1,"",""
 "access-data-reporting-bundle","Bundle.meta","Bundle.meta","","","",0,1,"","","Y","Meta {[]} {[]}
@@ -1574,7 +1574,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 
 Note that the fullUrl is not the same as the canonical URL - it's an absolute url for an endpoint serving the resource (these will happen to have the same value on the canonical server for the resource with the canonical URL).","","","","","","","","",,,,,"",,,,"Bundle.entry.fullUrl",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"access-data-reporting-bundle","Bundle.entry:access-data-reporting-composition.resource","Bundle.entry.resource","","","",1,1,"Y","","","Composition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6]]} {[]}
+"access-data-reporting-bundle","Bundle.entry:access-data-reporting-composition.resource","Bundle.entry.resource","","","",1,1,"Y","","","Composition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8]]} {[]}
 ","A set of resources composed into a single coherent clinical statement with clinical attestation","A set of healthcare-related information that is assembled together into a single logical package that provides a single coherent statement of meaning, establishes its own context and that has clinical attestation with regard to who is making the statement. A Composition defines the structure and narrative content necessary for a document. However, a Composition alone does not constitute a document. Rather, the Composition must be the first entry in a Bundle where Bundle.type=document, and any other resources referenced from Composition must be included as subsequent entries in the Bundle (for example Patient, Practitioner, Encounter, etc.).","While the focus of this specification is on patient-specific clinical statements, this resource can also apply to other healthcare-related statements such as study protocol designs, healthcare invoices and other activities that are not necessarily patient-specific or clinical.","","","","","","","","",,,,,"",,,,"Bundle.entry.resource",0,1,"",""
 "access-data-reporting-bundle","Bundle.entry:access-data-reporting-composition.search","Bundle.entry.search","","","",0,1,"","","Y","BackboneElement {[]} {[]}
 ","Search related information","Information about the search process that lead to the creation of this entry.","","","","","","","","","",,,,,"",,,,"Bundle.entry.search",0,1,"bdl-2
@@ -2617,7 +2617,7 @@ labelcaption","",0,1,"","","","string {[]} {[]}
 If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.","Provides computable standardized labels to topics within the document.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""57698-3""/>
+    <code value=""18262-6""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Classification of a section of a composition/document.","http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1","",,,,"Composition.section.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4045,7 +4045,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-eckm-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-eckm-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4087,7 +4087,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 "
 "access-eckm-condition","Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","eCKM track diagnosis code","Diagnosis code for eCKM track conditions. Values SHALL be from ACCESSeCKMDiagnosisVS (hypertension, dyslipidemia, prediabetes, obesity).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS|0.9.6","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","eCKM track diagnosis code","Diagnosis code for eCKM track conditions. Values SHALL be from ACCESSeCKMDiagnosisVS (hypertension, dyslipidemia, prediabetes, obesity).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS|0.9.8","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-eckm-condition","Condition.code.id","Condition.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -4231,7 +4231,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"access-msk-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"access-msk-condition","Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
@@ -4273,7 +4273,7 @@ con-5","ele-1:All FHIR elements must have a @value or children {hasValue() or (c
 "
 "access-msk-condition","Condition.code","Condition.code","","type
 ","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","MSK track diagnosis code","Diagnosis code for MSK track conditions. Values SHALL be from ACCESSMSKDiagnosisVS (osteoarthritis, arthropathies, spine disorders, etc.).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS|0.9.6","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","MSK track diagnosis code","Diagnosis code for MSK track conditions. Values SHALL be from ACCESSMSKDiagnosisVS (osteoarthritis, arthropathies, spine disorders, etc.).","","0..1 to account for primarily narrative only resources.","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS|0.9.8","",,,,"Condition.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-msk-condition","Condition.code.id","Condition.code.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -4500,7 +4500,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-in","Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-in","Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -4525,7 +4525,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""reportType""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-in","Parameters.parameter:reportType.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-in","Parameters.parameter:reportType.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -4553,7 +4553,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"access-report-data-in","Parameters.parameter:dataBundle.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Bundle {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6]]} {[]}
+"access-report-data-in","Parameters.parameter:dataBundle.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Bundle {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8]]} {[]}
 ","Contains a collection of resources","A container for a collection of resources.","When resolving references in resources, the operation definition may specify how references may be resolved between parameters. If a reference cannot be resolved between the parameters, the application should fall back to it's general resource resolution methods.","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "access-report-data-in","Parameters.parameter:dataBundle.part","Parameters.parameter.part","","","",0,*,"","","Y","","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
@@ -4617,7 +4617,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""result""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-out","Parameters.parameter:result.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-report-data-out","Parameters.parameter:result.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}
@@ -4856,7 +4856,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""track""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-in","Parameters.parameter:track.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-in","Parameters.parameter:track.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -4884,7 +4884,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 boolean {[]} {[]}canonical {[]} {[]}code {[]} {[]}date {[]} {[]}dateTime {[]} {[]}decimal {[]} {[]}id {[]} {[]}instant {[]} {[]}integer {[]} {[]}markdown {[]} {[]}oid {[]} {[]}positiveInt {[]} {[]}string {[]} {[]}time {[]} {[]}unsignedInt {[]} {[]}uri {[]} {[]}url {[]} {[]}uuid {[]} {[]}Address {[]} {[]}Age {[]} {[]}Annotation {[]} {[]}Attachment {[]} {[]}CodeableConcept {[]} {[]}Coding {[]} {[]}ContactPoint {[]} {[]}Count {[]} {[]}Distance {[]} {[]}Duration {[]} {[]}HumanName {[]} {[]}Identifier {[]} {[]}Money {[]} {[]}Period {[]} {[]}Quantity {[]} {[]}Range {[]} {[]}Ratio {[]} {[]}Reference {[]} {[]}SampledData {[]} {[]}Signature {[]} {[]}Timing {[]} {[]}ContactDetail {[]} {[]}Contributor {[]} {[]}DataRequirement {[]} {[]}Expression {[]} {[]}ParameterDefinition {[]} {[]}RelatedArtifact {[]} {[]}TriggerDefinition {[]} {[]}UsageContext {[]} {[]}Dosage {[]} {[]}Meta {[]} {[]}","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,,,,"",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
-"access-unalign-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.6]]} {[]}
+"access-unalign-in","Parameters.parameter:condition.resource","Parameters.parameter.resource","","","",1,1,"Y","","","Condition {[CanonicalType[https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.8]]} {[]}
 ","Detailed information about conditions, problems or diagnoses","\-","\-","","","","","","","","",,,,,"",,,,"Parameters.parameter.resource",0,1,"",""
 "access-unalign-in","Parameters.parameter:condition.part","Parameters.parameter.part","","","",0,*,"","","Y","null {[]} {[]}
 ","Named part of a multi-part parameter","A named part of a multi-part parameter.","Only one level of nested parameters is allowed.","","","","","","","","",,,,,"",,,,"Parameters.parameter.part",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
@@ -4905,7 +4905,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""reason""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-in","Parameters.parameter:reason.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-in","Parameters.parameter:reason.resource","Parameters.parameter.resource","","","",0,0,"","","Y","Resource {[]} {[]}
@@ -4974,7 +4974,7 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Name from the definition","The name of the parameter (reference to the operation definition).","","","","","<valueString xmlns=""http://hl7.org/fhir"" value=""result""/>","","","","",,,,,"",,,,"Parameters.parameter.name",1,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-out","Parameters.parameter:result.value[x]","Parameters.parameter.value[x]","","","",1,1,"Y","","Y","CodeableConcept {[]} {[]}
-","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS|0.9.6","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
+","If parameter is a data type","If the parameter is a data type.","","","","","","","","","",,"required","","https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS|0.9.8","",,,,"Parameters.parameter.value[x]",0,1,"inv-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 "
 "access-unalign-out","Parameters.parameter:result.resource","Parameters.parameter.resource","","","",0,1,"","","Y","Resource {[]} {[]}

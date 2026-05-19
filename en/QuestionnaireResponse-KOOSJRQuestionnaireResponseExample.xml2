@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="KOOSJRQuestionnaireResponseExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.</p></div>
+  </text>
+  <questionnaire value="http://example.org/Questionnaire/KOOSJRQuestionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <authored value="2026-01-15T10:30:00Z"/>
+  <author>
+    <reference value="Patient/PatientExample"/>
+  </author>
+  <item>
+    <linkId value="koosjr-1"/>
+    <text value="How severe is your knee stiffness after first wakening in the morning?"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-2"/>
+    <text value="Twisting/pivoting on your knee"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-3"/>
+    <text value="Straightening knee fully"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6752-5"/>
+        <display value="Mild"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-4"/>
+    <text value="Going up or down stairs"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6750-9"/>
+        <display value="Severe"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-5"/>
+    <text value="Standing upright"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-6"/>
+    <text value="Rising from sitting"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="koosjr-7"/>
+    <text value="Bending to floor/picking up an object"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6750-9"/>
+        <display value="Severe"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="total-interval-score"/>
+    <answer>
+      <valueDecimal value="50.012"/>
+    </answer>
+  </item>
+</QuestionnaireResponse>

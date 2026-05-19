@@ -24,7 +24,7 @@ anonymous resourcescontained resources","",0,*,"","","","Resource {[]} {[]}
 ","Extension","An Extension","","","","","","","","","",,,,,"","value:url}
 ","",,"open","DomainResource.extension",0,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"
-"Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.3.0-ballot-tc1]]} {[]}
+"Condition.extension:assertedDate","Condition.extension","assertedDate","","",0,1,"Y","","","Extension {[CanonicalType[http://hl7.org/fhir/StructureDefinition/condition-assertedDate|5.2.0]]} {[]}
 ","(USCDI) Date the condition was first asserted","The date on which the existence of the Condition was first asserted or acknowledged.","The assertedDate is in the context of the recording practitioner and might not be the same as the recordedDate.","","","","","","","","",,,,,"",,,,"DomainResource.extension",0,*,"ele-1
 ","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ext-1:Must have either extensions or value[x], not both {extension.exists() != value.exists()}"

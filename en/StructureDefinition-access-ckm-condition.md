@@ -1,4 +1,4 @@
-# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.6
+# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS CKM Track Condition Profile 
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
   "resourceType" : "StructureDefinition",
   "id" : "access-ckm-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSCKMCondition",
   "title" : "ACCESS CKM Track Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
       "definition" : "Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.8"
       }
     }]
   }

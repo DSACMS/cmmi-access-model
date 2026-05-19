@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSReportTypeCS</b></p><a name=\"ACCESSReportTypeCS\"> </a><a name=\"hcACCESSReportTypeCS\"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">baseline<a name=\"ACCESSReportTypeCS-baseline\"> </a></td><td>Baseline Data Report</td><td><div><p>Reports the baseline Outcome-Aligned Payment (OAP) data for the patient. Valid baseline OAP Measures must be submitted within 60 days of alignment.</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">quarterly<a name=\"ACCESSReportTypeCS-quarterly\"> </a></td><td>Quarterly Data Report</td><td><div><p>Reports quarterly Outcome-Aligned Payment (OAP) data for the patient. Valid quarterly OAP Measures must be submitted 70 to 110 days after the prior OAP\nsubmission</p>\n</div></td></tr><tr><td style=\"white-space:nowrap\">end-of-period<a name=\"ACCESSReportTypeCS-end-of-period\"> </a></td><td>End of Period Data Report</td><td><div><p>Reports end of period Outcome-Aligned Payment (OAP) data for the patient. Valid end-of-period measures must be submitted no later than 425 days from the date of alignment\n(365 days plus an additional 60 days) and may be submitted up to 90 days prior to Day 365 for the\neCKM and CKM tracks or up to 180 days prior to Day 365 for the BH and MSK tracks (“early success reporting”).</p>\n</div></td></tr></table></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSReportTypeCS",
   "title" : "ACCESS Report Type Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -1,7 +1,7 @@
 {
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260424134533",
+  "date" : "20260518155944",
   "name" : "cms.fhir.us.cmmi-access-model",
   "jurisdiction" : "urn:iso:std:iso:3166#US"
 }

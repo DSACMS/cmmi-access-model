@@ -3,15 +3,15 @@
   "id" : "ACCESSEligibilityResultVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSEligibilityResultVS</b></p><a name=\"ACCESSEligibilityResultVS\"> </a><a name=\"hcACCESSEligibilityResultVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ACCESSEligibilityResultCS.html\"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS</code></a><span title=\"Version is explicitly stated to be 0.9.6\"> version &#x1F4CD;0.9.6</span></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSEligibilityResultVS</b></p><a name=\"ACCESSEligibilityResultVS\"> </a><a name=\"hcACCESSEligibilityResultVS\"> </a><ul><li>Include all codes defined in <a href=\"CodeSystem-ACCESSEligibilityResultCS.html\"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS</code></a><span title=\"Version is explicitly stated to be 0.9.8\"> version &#x1F4CD;0.9.8</span></li></ul></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSEligibilityResultVS",
   "title" : "ACCESS Eligibility Result Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -36,7 +36,7 @@
   "compose" : {
     "include" : [{
       "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
-      "version" : "0.9.6"
+      "version" : "0.9.8"
     }]
   }
 }

@@ -1,4 +1,4 @@
-# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: GAD-7 QuestionnaireResponse Example
 
@@ -27,11 +27,11 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
   },
   "item" : [{
     "linkId" : "gad7-1",
-    "text" : "Feeling nervous, anxious or on edge",
+    "text" : "Feeling nervous, anxious, or on edge",
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -42,11 +42,11 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
   },
   {
     "linkId" : "gad7-2",
-    "text" : "Over the past 2 weeks have you not been able to stop or control worrying",
+    "text" : "Not being able to stop or control worrying",
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -91,7 +91,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 0
         }],
         "system" : "http://loinc.org",
@@ -106,7 +106,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -121,7 +121,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -133,15 +133,7 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
   {
     "linkId" : "total-score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 6
-        }],
-        "system" : "http://loinc.org",
-        "code" : "70274-6",
-        "display" : "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
-      }
+      "valueDecimal" : 6
     }]
   }]
 }

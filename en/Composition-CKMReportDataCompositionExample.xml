@@ -50,6 +50,12 @@
       <entry>
         <reference value="Observation/BloodPressureExample"/>
       </entry>
+      <entry>
+        <reference value="Observation/BloodPressureExample2"/>
+      </entry>
+      <entry>
+        <reference value="Observation/BloodPressureExample3"/>
+      </entry>
     </section>
     <section>
       <title value="Weight"/>

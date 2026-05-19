@@ -1,4 +1,4 @@
-# BH Report Data Composition Example - CMS ACCESS Model API v0.9.6
+# BH Report Data Composition Example - CMS ACCESS Model API v0.9.8
 
 ## Example Composition: BH Report Data Composition Example
 
@@ -86,7 +86,7 @@ Author: Jane Smith
         }]
       },
       "entry" : [{
-        "reference" : "QuestionnaireResponse/BHWHODASExample"
+        "reference" : "QuestionnaireResponse/WHODASExample"
       }]
     },
     {

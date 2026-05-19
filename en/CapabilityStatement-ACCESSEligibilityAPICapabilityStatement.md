@@ -1,4 +1,4 @@
-# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.9.6
+# ACCESS Eligibility API Capability Statement - CMS ACCESS Model API v0.9.8
 
 ## CapabilityStatement: ACCESS Eligibility API Capability Statement 
 
@@ -16,7 +16,7 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
   "resourceType" : "CapabilityStatement",
   "id" : "ACCESSEligibilityAPICapabilityStatement",
   "url" : "https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSEligibilityAPICapabilityStatement",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSEligibilityAPICapabilityStatement",
   "title" : "ACCESS Eligibility API Capability Statement",
   "status" : "active",
@@ -58,12 +58,12 @@ Describes the expected capabilities of systems implementing the ACCESS Eligibili
       "documentation" : "Patient resource for ACCESS eligibility operations",
       "operation" : [{
         "name" : "check-eligibility",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility|0.9.6",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility|0.9.8",
         "documentation" : "Check if a patient is eligible for the ACCESS Model. This operation requires the `entityId` query parameter (participant identifier) and a Parameters body including other required inputs. Returns eligibility status from ACCESSEligibilityResultVS: eligible, not-eligible-not-medicare, not-eligible-services, not-eligible-diagnoses, not-eligible-control-group, or not-eligible-already-aligned. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."
       },
       {
         "name" : "submission-status",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.6",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.8",
         "documentation" : "Poll the status of a previously submitted eligibility check request. Returns HTTP 202 while processing or HTTP 200 with result when complete."
       }]
     }]

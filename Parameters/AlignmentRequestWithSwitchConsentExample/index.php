@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/Parameters-AlignmentRequestWithSwitchConsentExample.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/Parameters-AlignmentRequestWithSwitchConsentExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

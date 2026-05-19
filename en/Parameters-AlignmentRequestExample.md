@@ -1,4 +1,4 @@
-# Alignment Request Example - CMS ACCESS Model API v0.9.6
+# Alignment Request Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: Alignment Request Example
 

@@ -2,10 +2,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Change Log - CMS ACCESS Model API v0.9.6</title>
+    <title>Change Log - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +42,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"5"}
@@ -55,11 +58,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -147,7 +150,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Change Log</h2>
   
 
@@ -164,18 +167,89 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
     <p><!-- white space is critical inside of capture --></p>
-<div>
-<!-- do not remove - needed to prevent Jekyll from adding a p tag to any non block level element in the markdown.-->
+<div class="markdown-toc">
+<ul id="markdown-toc">
+  <li><a href="#version-098---draft" id="markdown-toc-version-098---draft">Version 0.9.8 - DRAFT</a></li>
+  <li><a href="#version-096---draft" id="markdown-toc-version-096---draft">Version 0.9.6 - DRAFT</a></li>
+</ul>
+
 </div>
 <p>This page documents the changes between versions of the CMS ACCESS Model API Implementation Guide.</p>
 
 <hr />
 
+<h3 id="version-098---draft">Version 0.9.8 - DRAFT</h3>
+
+<p><strong>Release Date</strong>: May 18, 2026</p>
+
+<h4 id="major-changes">Major Changes</h4>
+
+<h5 id="addressed-feedback-from-first-external-testing-window">Addressed feedback from first external testing window</h5>
+<ul>
+  <li><strong>Fixed questionnaire responses that are uncoded</strong> so that they have both the text (display) and numerical values for scoring
+    <ul>
+      <li>Now use valueCoding with decimal extension instead of valueString</li>
+      <li>More consistent with the coded questionnaire responses</li>
+    </ul>
+  </li>
+  <li>
+    <p><strong>Added example questionnaires</strong> to provide further guidance on how to package questionnaire response data</p>
+  </li>
+  <li>
+    <p><strong>Added more documentation</strong> for each of the ACCESS Model API operations to make them easier to implement</p>
+  </li>
+  <li><strong>Added new result codes</strong> for the <code class="language-plaintext highlighter-rouge">$check-eligibility</code> operation
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">not-eligible-clinical-exclusion</code> - The patient has a clinical exclusion that prevents them from receiving services under the ACCESS Model.</li>
+      <li><code class="language-plaintext highlighter-rouge">not-eligible-mismatch</code> - The patient information provided does not match the patient information on record.</li>
+    </ul>
+  </li>
+  <li><strong>Added new result codes</strong> for the <code class="language-plaintext highlighter-rouge">$align</code> operation
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">not-aligned-clinical-exclusion</code> - The patient has a clinical exclusion that prevents them from receiving services under the ACCESS Model.</li>
+      <li><code class="language-plaintext highlighter-rouge">not-aligned-mismatch</code> - The patient information provided does not match the patient information on record.</li>
+      <li><code class="language-plaintext highlighter-rouge">not-aligned-no-switch-attestation</code> - Participant switch request did not include switch consent attestation.</li>
+    </ul>
+  </li>
+  <li><strong>Fixed LOINC code usage bug</strong> for lipids
+    <ul>
+      <li>All 57698-3 LOINC codes were replaced by 18262-6 LOINC codes</li>
+    </ul>
+  </li>
+  <li><strong>Replaced <code class="language-plaintext highlighter-rouge">itemWeight</code> references</strong> with <code class="language-plaintext highlighter-rouge">ordinalValue</code>
+    <ul>
+      <li>Some servers do not support <code class="language-plaintext highlighter-rouge">itemWeight</code></li>
+    </ul>
+  </li>
+  <li><strong>Added invariant to <code class="language-plaintext highlighter-rouge">dataBundle</code></strong>
+    <ul>
+      <li>Items reference in the ACCESSDataReportingComposition must be in the ACCESSDataReportingBundle</li>
+    </ul>
+  </li>
+  <li><strong>Updated Getting Started section</strong> of the IG home page</li>
+</ul>
+
+<h5 id="changed-structured-data-capture-ig-dependency">Changed Structured Data Capture IG dependency</h5>
+<ul>
+  <li><strong>Changed</strong> from using version 4.0.0 (STU4) to version 3.0.0 (STU3)</li>
+  <li><strong>Better aligns</strong> with <code class="language-plaintext highlighter-rouge">USCoreQuestionnaireResponse</code> version 6.1.0</li>
+</ul>
+
+<h5 id="more-blood-pressure-examples">More blood pressure examples</h5>
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">dataBundle</code> examples now include three individual blood pressure observations</li>
+</ul>
+
+<h4 id="technical-updates">Technical Updates</h4>
+<ul>
+  <li>Version bump from 0.9.6 to 0.9.8</li>
+</ul>
+
 <h3 id="version-096---draft">Version 0.9.6 - DRAFT</h3>
 
 <p><strong>Release Date</strong>: April 24, 2026</p>
 
-<h4 id="major-changes">Major Changes</h4>
+<h4 id="major-changes-1">Major Changes</h4>
 
 <h5 id="accessdatareportingcomposition-tweaks">ACCESSDataReportingComposition tweaks</h5>
 
@@ -222,7 +296,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>References to 3-months</strong> changed to 90 days</li>
 </ul>
 
-<h4 id="technical-updates">Technical Updates</h4>
+<h4 id="technical-updates-1">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.1 to 0.9.6</li>
 </ul>
@@ -253,10 +327,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

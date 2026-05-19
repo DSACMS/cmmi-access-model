@@ -22,84 +22,84 @@
     <linkId value="whodas-s1"/>
     <text value="Standing for long periods such as 30 minutes"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s2"/>
     <text value="Taking care of household responsibilities"/>
     <answer>
-      <valueDecimal value="3"/>
+      <valueString value="Moderate"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s3"/>
     <text value="Learning a new task, for example learning how to get to a new place"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s4"/>
     <text value="How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s5"/>
     <text value="How much of a problem did you have with being emotionally affected by your health problems?"/>
     <answer>
-      <valueDecimal value="3"/>
+      <valueString value="Moderate"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s6"/>
     <text value="Concentrating on doing something for ten minutes?"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s7"/>
     <text value="Walking a long distance such as a kilometer [or equivalent]?"/>
     <answer>
-      <valueDecimal value="3"/>
+      <valueString value="Moderate"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s8"/>
     <text value="Washing your whole body?"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueString value="None"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s9"/>
     <text value="Getting dressed?"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueString value="None"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s10"/>
     <text value="Dealing with people you do not know"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s11"/>
     <text value="Maintaining a friendship"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueString value="Mild"/>
     </answer>
   </item>
   <item>
     <linkId value="whodas-s12"/>
     <text value="Your day-to-day work"/>
     <answer>
-      <valueDecimal value="3"/>
+      <valueString value="Moderate"/>
     </answer>
   </item>
   <item>

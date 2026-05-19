@@ -1,4 +1,4 @@
-# Lipid Panel DiagnosticReport Example - CMS ACCESS Model API v0.9.6
+# Lipid Panel DiagnosticReport Example - CMS ACCESS Model API v0.9.8
 
 ## Example DiagnosticReport: Lipid Panel DiagnosticReport Example
 
@@ -33,8 +33,8 @@ Results: Total Cholesterol 219 mg/dL, LDL 140 mg/dL, HDL 42 mg/dL, Triglycerides
   "code" : {
     "coding" : [{
       "system" : "http://loinc.org",
-      "code" : "57698-3",
-      "display" : "Lipid panel with direct LDL - Serum or Plasma"
+      "code" : "18262-6",
+      "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
     }]
   },
   "subject" : {

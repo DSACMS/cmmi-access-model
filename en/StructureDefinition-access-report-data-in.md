@@ -1,4 +1,4 @@
-# ACCESS Report Data Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Report Data Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Report Data Parameters 
 
@@ -7,7 +7,7 @@ This is the profile for the `$report-data` operation input parameters.
 
 **Usages:**
 
-* Examples for this Profile: [Parameters/BHReportDataRequestExample](Parameters-BHReportDataRequestExample.md), [Parameters/CKMReportDataRequestExample](Parameters-CKMReportDataRequestExample.md), [Parameters/MSKReportDataRequestExample](Parameters-MSKReportDataRequestExample.md) and [Parameters/ReportDataRequestExample](Parameters-ReportDataRequestExample.md)
+* Examples for this Profile: [Parameters/BHReportDataRequestExample](Parameters-BHReportDataRequestExample.md), [Parameters/CKMReportDataRequestExample](Parameters-CKMReportDataRequestExample.md), [Parameters/MSKReportDataRequestExample](Parameters-MSKReportDataRequestExample.md), [Parameters/ReportDataRequestExample](Parameters-ReportDataRequestExample.md) and [Parameters/eCKMReportDataRequestExample](Parameters-eCKMReportDataRequestExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-report-data-in)
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
   "resourceType" : "StructureDefinition",
   "id" : "access-report-data-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSReportDataRequestParameters",
   "title" : "ACCESS Report Data Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -78,7 +78,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
         "severity" : "error",
         "human" : "The first section in the report-data Bundle must match the track parameter in the $report-data operation.",
         "expression" : "parameter.where(name = 'dataBundle').resource.ofType(Bundle).entry.resource.ofType(Composition).section.first().code.coding.code = parameter.where(name = 'track').value.coding.code",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
       }]
     },
     {
@@ -133,7 +133,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
       }],
       "mustSupport" : true
     },
@@ -204,7 +204,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
       }
     },
     {
@@ -241,7 +241,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.8"
       }
     },
     {
@@ -279,7 +279,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
       "min" : 1,
       "type" : [{
         "code" : "Bundle",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"]
       }],
       "mustSupport" : true
     }]

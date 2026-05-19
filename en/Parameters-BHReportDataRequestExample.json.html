@@ -6,10 +6,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>BH Report Data Request Example - JSON Representation - CMS ACCESS Model API v0.9.6</title>
+    <title>BH Report Data Request Example - JSON Representation - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,11 +46,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.60"}
-    h3,h4,h5,h6{--heading-prefix:"3.60"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.61"}
+    h3,h4,h5,h6{--heading-prefix:"3.61"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,11 +62,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -145,7 +148,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -371,7 +374,7 @@
                       },
                       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
                         {
-                          <a href="QuestionnaireResponse-BHWHODASExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/BHWHODASExample"
+                          <a href="QuestionnaireResponse-WHODASExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "QuestionnaireResponse/WHODASExample"
                         }
                       ]
                     },
@@ -526,7 +529,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -545,7 +548,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -564,7 +567,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
                           }
                         ],
@@ -583,7 +586,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -602,7 +605,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                           }
                         ],
@@ -621,7 +624,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -640,7 +643,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -659,7 +662,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                           }
                         ],
@@ -678,7 +681,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                           }
                         ],
@@ -691,19 +694,19 @@
                 },
                 {
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "phq9-10",
-                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "How difficult have these made it for you to do your work, take care of things at home, or get along with other people?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA6569-3",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Several days"
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "LA6573-5",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Somewhat difficult"
                       }
                     }
                   ]
@@ -712,17 +715,7 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "total-score",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
-                          {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 7
-                          }
-                        ],
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "44261-6",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-                      }
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 7
                     }
                   ]
                 }
@@ -756,13 +749,13 @@
               "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item">item</a>" : [
                 {
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "gad7-1",
-                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Feeling nervous, anxious or on edge",
+                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Feeling nervous, anxious, or on edge",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -775,13 +768,13 @@
                 },
                 {
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "gad7-2",
-                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Over the past 2 weeks have you not been able to stop or control worrying",
+                  "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Not being able to stop or control worrying",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -800,7 +793,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -819,7 +812,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -838,7 +831,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 0
                           }
                         ],
@@ -857,7 +850,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -876,7 +869,7 @@
                       "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
                         "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
                           {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                             "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
                           }
                         ],
@@ -891,17 +884,7 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.linkId">linkId</a>" : "total-score",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
-                          {
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 6
-                          }
-                        ],
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "70274-6",
-                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
-                      }
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 6
                     }
                   ]
                 }
@@ -909,10 +892,10 @@
             }
           },
           {
-            "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/QuestionnaireResponse/BHWHODASExample",
+            "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/QuestionnaireResponse/WHODASExample",
             "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse">resource</a>" : {
               "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html">resourceType</a>" : "QuestionnaireResponse",
-              "<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.id">id</a>" : "BHWHODASExample",
+              "<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.id">id</a>" : "WHODASExample",
               "<a href="http://hl7.org/fhir/R4/resource.html#QuestionnaireResponse.meta">meta</a>" : {
                 "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
                   <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-questionnaireresponse.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"
@@ -938,7 +921,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Standing for long periods such as 30 minutes",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -947,7 +938,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Taking care of household responsibilities",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 3
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Moderate"
+                      }
                     }
                   ]
                 },
@@ -956,7 +955,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Learning a new task, for example learning how to get to a new place",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -965,7 +972,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -974,7 +989,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "How much of a problem did you have with being emotionally affected by your health problems?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 3
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Moderate"
+                      }
                     }
                   ]
                 },
@@ -983,7 +1006,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Concentrating on doing something for ten minutes?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -992,7 +1023,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Walking a long distance such as a kilometer [or equivalent]?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 3
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Moderate"
+                      }
                     }
                   ]
                 },
@@ -1001,7 +1040,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Washing your whole body?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 1
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "None"
+                      }
                     }
                   ]
                 },
@@ -1010,7 +1057,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Getting dressed?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 1
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "None"
+                      }
                     }
                   ]
                 },
@@ -1019,7 +1074,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Dealing with people you do not know",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -1028,7 +1091,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Maintaining a friendship",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 2
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 2
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Mild"
+                      }
                     }
                   ]
                 },
@@ -1037,7 +1108,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Your day-to-day work",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 3
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 3
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Moderate"
+                      }
                     }
                   ]
                 },
@@ -1109,7 +1188,15 @@
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.text">text</a>" : "Since beginning treatment, how would you describe your overall change in activity limitations, symptoms, emotions, and quality of life?",
                   "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer">answer</a>" : [
                     {
-                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueDecimal</a>" : 1
+                      "<a href="http://hl7.org/fhir/R4/questionnaireresponse.html#QuestionnaireResponse.item.answer.value_x_">valueCoding</a>" : {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Element#Coding.extension">extension</a>" : [
+                          {
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.url">url</a>" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                            "<a href="http://hl7.org/fhir/R4/extensibility.html#Extension#Extension.value_x_">valueDecimal</a>" : 1
+                          }
+                        ],
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Very much improved"
+                      }
                     }
                   ]
                 }
@@ -1151,10 +1238,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

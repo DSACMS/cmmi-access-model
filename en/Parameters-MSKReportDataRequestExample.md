@@ -1,4 +1,4 @@
-# MSK Report Data Request Example - CMS ACCESS Model API v0.9.6
+# MSK Report Data Request Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: MSK Report Data Request Example
 
@@ -133,7 +133,7 @@
                 }]
               },
               "entry" : [{
-                "reference" : "QuestionnaireResponse/PROMISCATExample"
+                "reference" : "QuestionnaireResponse/PROMISPhysicalFunctionCATExample"
               }]
             },
             {
@@ -346,7 +346,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 4
                 }],
                 "system" : "http://loinc.org",
@@ -361,7 +361,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -376,7 +376,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -391,7 +391,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 4
                 }],
                 "system" : "http://loinc.org",
@@ -406,12 +406,12 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
-                "code" : "LA13912-3",
-                "display" : "Unable to do"
+                "code" : "LA13868-7",
+                "display" : "Cannot do"
               }
             }]
           },
@@ -421,50 +421,34 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
-                "code" : "LA13919-8",
-                "display" : "With much difficulty"
+                "code" : "LA11911-7",
+                "display" : "Quite a lot"
               }
             }]
           },
           {
             "linkId" : "raw_score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 17
-                }],
-                "system" : "http://loinc.org",
-                "code" : "77797-9",
-                "display" : "PROMIS short form - physical function 6b - version 1.2 raw score"
-              }
+              "valueDecimal" : 17
             }]
           },
           {
             "linkId" : "tscore",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 36.8
-                }],
-                "system" : "http://loinc.org",
-                "code" : "77866-2",
-                "display" : "PROMIS physical function - version 1.0 Tscore"
-              }
+              "valueDecimal" : 36.8
             }]
           }]
         }
       },
       {
-        "fullUrl" : "http://example.org/QuestionnaireResponse/PROMISCATExample",
+        "fullUrl" : "http://example.org/QuestionnaireResponse/PROMISPhysicalFunctionCATExample",
         "resource" : {
           "resourceType" : "QuestionnaireResponse",
-          "id" : "PROMISCATExample",
+          "id" : "PROMISPhysicalFunctionCATExample",
           "meta" : {
             "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
           },
@@ -487,7 +471,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -502,7 +486,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -517,7 +501,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -532,7 +516,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -544,15 +528,7 @@
           {
             "linkId" : "tscore",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 38
-                }],
-                "system" : "http://loinc.org",
-                "code" : "91721-1",
-                "display" : "PROMIS physical function - version 2.0 T-score"
-              }
+              "valueDecimal" : 38
             }]
           }]
         }
@@ -584,7 +560,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -599,7 +575,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -614,7 +590,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -629,7 +605,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -644,7 +620,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -659,7 +635,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -671,29 +647,13 @@
           {
             "linkId" : "raw_score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 15
-                }],
-                "system" : "http://loinc.org",
-                "code" : "90974-7",
-                "display" : "PROMIS short form - pain interference 6a - version 1.0 raw score"
-              }
+              "valueDecimal" : 15
             }]
           },
           {
             "linkId" : "tscore",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 58.6
-                }],
-                "system" : "http://loinc.org",
-                "code" : "77865-4",
-                "display" : "PROMIS pain interference - version 1.0 Tscore"
-              }
+              "valueDecimal" : 58.6
             }]
           }]
         }
@@ -725,7 +685,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 4
                 }],
                 "system" : "http://loinc.org",
@@ -740,7 +700,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 5
                 }],
                 "system" : "http://loinc.org",
@@ -755,7 +715,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 4
                 }],
                 "system" : "http://loinc.org",
@@ -770,7 +730,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 5
                 }],
                 "system" : "http://loinc.org",
@@ -782,15 +742,7 @@
           {
             "linkId" : "tscore",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 70
-                }],
-                "system" : "http://loinc.org",
-                "code" : "89924-5",
-                "display" : "PROMIS pain interference - version 1.1 Tscore"
-              }
+              "valueDecimal" : 70
             }]
           }]
         }
@@ -820,84 +772,136 @@
             "linkId" : "odi-1",
             "text" : "Pain intensity",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "The pain is moderate at the moment."
+              }
             }]
           },
           {
             "linkId" : "odi-2",
             "text" : "Personal care (washing, dressing, etc.)",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "I can look after myself normally but it is very painful."
+              }
             }]
           },
           {
             "linkId" : "odi-3",
             "text" : "Lifting",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Pain prevents me lifting heavy weights off the floor, but I can manage if they are conveniently placed e.g. on a table."
+              }
             }]
           },
           {
             "linkId" : "odi-4",
             "text" : "Walking",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "Pain prevents me from walking more than one mile."
+              }
             }]
           },
           {
             "linkId" : "odi-5",
             "text" : "Sitting",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Pain prevents me from sitting for more than one hour."
+              }
             }]
           },
           {
             "linkId" : "odi-6",
             "text" : "Standing",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Pain prevents me from standing for more than 1 hour."
+              }
             }]
           },
           {
             "linkId" : "odi-7",
             "text" : "Sleeping",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "My sleep is occasionally interrupted by pain."
+              }
             }]
           },
           {
             "linkId" : "odi-8",
             "text" : "Sex life (if applicable)",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "My sex life is nearly normal but is very painful."
+              }
             }]
           },
           {
             "linkId" : "odi-9",
             "text" : "Social life",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Pain has restricted my social life and I do not go out as often."
+              }
             }]
           },
           {
             "linkId" : "odi-10",
             "text" : "Traveling",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Pain is bad but I am able to manage trips over two hours."
+              }
             }]
           },
           {
             "linkId" : "score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 36
-                }],
-                "system" : "http://loinc.org",
-                "code" : "97909-6",
-                "display" : "Oswestry disability index score ODI"
-              }
+              "valueDecimal" : 36
             }]
           }]
         }
@@ -929,7 +933,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -944,7 +948,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -959,7 +963,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -974,7 +978,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -989,7 +993,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -1004,7 +1008,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1019,7 +1023,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1034,7 +1038,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1049,7 +1053,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1064,7 +1068,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1076,15 +1080,7 @@
           {
             "linkId" : "total-score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 40
-                }],
-                "system" : "http://loinc.org",
-                "code" : "82237-9",
-                "display" : "Total score [NDI]"
-              }
+              "valueDecimal" : 40
             }]
           }]
         }
@@ -1114,77 +1110,143 @@
             "linkId" : "qd-1",
             "text" : "Open a tight or new jar.",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-2",
             "text" : "Do heavy household chores (e.g., wash walls, wash floors).",
             "answer" : [{
-              "valueDecimal" : 4
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 4
+                }],
+                "display" : "Severe difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-3",
             "text" : "Carry a shopping bag or briefcase.",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-4",
             "text" : "Wash your back.",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-5",
             "text" : "Use a knife to cut food.",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-6",
             "text" : "Recreational activities in which you take some force or impact through your arm, shoulder, or hand (e.g., golf, hammering, tennis, etc.).",
             "answer" : [{
-              "valueDecimal" : 4
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 4
+                }],
+                "display" : "Severe difficulty"
+              }
             }]
           },
           {
             "linkId" : "qd-7",
             "text" : "During the past week, to what extent has your arm, shoulder, or hand problem interfered with your normal social activities with family, friends, neighbors, or groups?",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderately"
+              }
             }]
           },
           {
             "linkId" : "qd-8",
             "text" : "During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder, or hand problem?",
             "answer" : [{
-              "valueDecimal" : 4
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 4
+                }],
+                "display" : "Very limited"
+              }
             }]
           },
           {
             "linkId" : "qd-9",
             "text" : "Arm, shoulder, or hand pain",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate"
+              }
             }]
           },
           {
             "linkId" : "qd-10",
             "text" : "Tingling (pins and needles) in your arm, shoulder, or hand",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "qd-11",
             "text" : "During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder, or hand?",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate difficulty"
+              }
             }]
           },
           {
@@ -1220,7 +1282,13 @@
             "linkId" : "pgic-1",
             "text" : "Since beginning treatment, how would you describe your overall change in pain, function, and quality of life?",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "Very much improved"
+              }
             }]
           }]
         }
@@ -1252,7 +1320,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1267,7 +1335,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1282,7 +1350,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -1297,7 +1365,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -1312,7 +1380,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1327,7 +1395,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1342,7 +1410,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -1354,15 +1422,7 @@
           {
             "linkId" : "total-interval-score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 50.012
-                }],
-                "system" : "http://loinc.org",
-                "code" : "82332-8",
-                "display" : "Total interval score [KOOSJR]"
-              }
+              "valueDecimal" : 50.012
             }]
           }]
         }
@@ -1394,7 +1454,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1409,7 +1469,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1424,7 +1484,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -1439,7 +1499,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 3
                 }],
                 "system" : "http://loinc.org",
@@ -1454,7 +1514,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -1469,7 +1529,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -1481,15 +1541,7 @@
           {
             "linkId" : "total-interval-score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 55.985
-                }],
-                "system" : "http://loinc.org",
-                "code" : "82323-7",
-                "display" : "Total interval score [HOOSJR]"
-              }
+              "valueDecimal" : 55.985
             }]
           }]
         }

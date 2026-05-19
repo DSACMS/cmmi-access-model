@@ -1,4 +1,4 @@
-# Submission Status - CMS ACCESS Model API v0.9.6
+# Submission Status - CMS ACCESS Model API v0.9.8
 
 ## OperationDefinition: Submission Status 
 
@@ -14,12 +14,12 @@ The **$submission-status** operation allows the client to check the status of an
   "resourceType" : "OperationDefinition",
   "id" : "SubmissionStatus",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "SubmissionStatus",
   "title" : "Submission Status",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

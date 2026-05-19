@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.6
+# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Data Reporting Composition 
 
@@ -11,7 +11,7 @@ The ACCESS Data Reporting Composition organizes clinical data submissions using 
 
 Each ACCESS track (eCKM, CKM, MSK, BH) has its own top-level section containing subsections for specific measurements. Only one track section should be present in a composition, corresponding to the patient's aligned track.
 
-For detailed data collection requirements by track, see the Data Reporting API section in the Operations Manual.
+For detailed data collection requirements by track, see the Data Reporting API section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 
 ### Additional Information Section
 
@@ -42,7 +42,7 @@ The profile includes an optional **additional-information** section that allows 
 **Usages:**
 
 * Use this Profile: [ACCESS Data Reporting Bundle](StructureDefinition-access-data-reporting-bundle.md)
-* Examples for this Profile: [Composition/BHReportDataCompositionExample](Composition-BHReportDataCompositionExample.md), [Composition/CKMReportDataCompositionExample](Composition-CKMReportDataCompositionExample.md) and [Composition/MSKReportDataCompositionExample](Composition-MSKReportDataCompositionExample.md)
+* Examples for this Profile: [Composition/BHReportDataCompositionExample](Composition-BHReportDataCompositionExample.md), [Composition/CKMReportDataCompositionExample](Composition-CKMReportDataCompositionExample.md), [Composition/MSKReportDataCompositionExample](Composition-MSKReportDataCompositionExample.md) and [Composition/eCKMReportDataCompositionExample](Composition-eCKMReportDataCompositionExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-data-reporting-composition)
 
@@ -63,11 +63,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-composition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSDataReportingComposition",
   "title" : "ACCESS Data Reporting Composition",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
         "severity" : "error",
         "human" : "The data reporting composition can include at most one track-based section (eCKM, CKM, MSK, BH).",
         "expression" : "section.where(code.coding.where(system = 'https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS' and (code = 'eCKM' or code = 'CKM' or code = 'MSK' or code = 'BH')).exists()).count() <= 1",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
       }]
     },
     {
@@ -575,7 +575,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
-          "code" : "57698-3"
+          "code" : "18262-6"
         }]
       }
     },

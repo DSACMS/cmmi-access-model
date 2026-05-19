@@ -23,7 +23,7 @@
     <text value="In the past 7 days: How much did pain interfere with your day to day activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -37,7 +37,7 @@
     <text value="In the past 7 days: How much did pain interfere with work around the home?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -51,7 +51,7 @@
     <text value="In the past 7 days: How much did pain interfere with your ability to participate in social activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -65,7 +65,7 @@
     <text value="In the past 7 days: How much did pain interfere with your household chores?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -79,7 +79,7 @@
     <text value="In the past 7 days: How much did pain interfere with the things you usually do for fun?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -93,7 +93,7 @@
     <text value="In the past 7 days: How much did pain interfere with your enjoyment of social activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -105,27 +105,13 @@
   <item>
     <linkId value="raw_score"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="15"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="90974-7"/>
-        <display value="PROMIS short form - pain interference 6a - version 1.0 raw score"/>
-      </valueCoding>
+      <valueDecimal value="15"/>
     </answer>
   </item>
   <item>
     <linkId value="tscore"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="58.6"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="77865-4"/>
-        <display value="PROMIS pain interference - version 1.0 Tscore"/>
-      </valueCoding>
+      <valueDecimal value="58.6"/>
     </answer>
   </item>
 </QuestionnaireResponse>

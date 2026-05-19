@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.6</title>
+    <title>ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,7 +44,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.12"}
@@ -57,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -143,7 +146,7 @@
 
 <!-- layouts\layout-codesystem -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -193,7 +196,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.6<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS|0.9.6"/></span>
+      <span class="copy-text">0.9.8<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS|0.9.8"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -218,7 +221,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -263,6 +266,9 @@
 <tr><td style="white-space:nowrap">aligned<a name="ACCESSAlignmentResultCS-aligned"> </a></td>
 <td>Aligned</td>
 <td>Patient is eligible and has been aligned so the participant can now begin providing services to the patient under the ACCESS Model.</td></tr>
+<tr><td style="white-space:nowrap">aligned-switch-approved<a name="ACCESSAlignmentResultCS-aligned-switch-approved"> </a></td>
+<td>Aligned and switch approved</td>
+<td>The request to switch the patient's alignment from a different participant after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned.</td></tr>
 <tr><td style="white-space:nowrap">not-aligned-control-group<a name="ACCESSAlignmentResultCS-not-aligned-control-group"> </a></td>
 <td>Not aligned - assigned to Control Group</td>
 <td>The patient is technically eligible, but based on the randomized control group algorithm, the patient has been placed in the control group for 12 months and therefore cannot be aligned for 12 months.</td></tr>
@@ -278,9 +284,15 @@
 <tr><td style="white-space:nowrap">not-aligned-diagnoses<a name="ACCESSAlignmentResultCS-not-aligned-diagnoses"> </a></td>
 <td>Not aligned - no qualifying diagnosis</td>
 <td>The patient does not have a treating diagnosis that qualifies them for service in the track indicated and therefore cannot get services under the ACCESS Model.</td></tr>
-<tr><td style="white-space:nowrap">aligned-switch-approved<a name="ACCESSAlignmentResultCS-aligned-switch-approved"> </a></td>
-<td>Aligned and switch approved</td>
-<td>The request to switch the patient's alignment from a different participant after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned.</td></tr></table></div>
+<tr><td style="white-space:nowrap">not-aligned-clinical-exclusion<a name="ACCESSAlignmentResultCS-not-aligned-clinical-exclusion"> </a></td>
+<td>Not aligned - clinical exclusion</td>
+<td>The patient has a clinical exclusion that prevents them from receiving services under the ACCESS Model.</td></tr>
+<tr><td style="white-space:nowrap">not-aligned-mismatch<a name="ACCESSAlignmentResultCS-not-aligned-mismatch"> </a></td>
+<td>Not aligned - mismatch</td>
+<td>The patient information provided does not match the patient information on record.</td></tr>
+<tr><td style="white-space:nowrap">not-aligned-no-switch-attestation<a name="ACCESSAlignmentResultCS-not-aligned-no-switch-attestation"> </a></td>
+<td>Not aligned - no switch attestation</td>
+<td>Participant switch request did not include switch consent attestation.</td></tr></table></div>
 
   <hr/>
   <p>
@@ -318,10 +330,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

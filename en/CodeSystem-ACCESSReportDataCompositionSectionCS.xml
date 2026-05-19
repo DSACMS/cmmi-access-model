@@ -7,12 +7,12 @@
     <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem ACCESSReportDataCompositionSectionCS</b></p><a name="ACCESSReportDataCompositionSectionCS"> </a><a name="hcACCESSReportDataCompositionSectionCS"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style="white-space:nowrap">QuickDASH<a name="ACCESSReportDataCompositionSectionCS-QuickDASH"> </a></td><td>Quick Disabilities of the Arm, Shoulder and Hand [QuickDASH]</td><td>Assesses physical function and symptoms in people with upper limb musculoskeletal disorders</td></tr><tr><td style="white-space:nowrap">WHODAS<a name="ACCESSReportDataCompositionSectionCS-WHODAS"> </a></td><td>World Health Organization Disability Assessment Schedule [WHODAS] 2.0</td><td>Assesses functioning and disability across six life domains: cognition, mobility, self-care, getting along, life activities, and participation.</td></tr><tr><td style="white-space:nowrap">PGIC<a name="ACCESSReportDataCompositionSectionCS-PGIC"> </a></td><td>Patient Global Impression of Change [PGIC]</td><td>Assesses patient's perception of improvement or decline.</td></tr><tr><td style="white-space:nowrap">additional-information<a name="ACCESSReportDataCompositionSectionCS-additional-information"> </a></td><td>Additional Information</td><td>Section containing references to supplementary resources that provide additional context or detail beyond required track-specific data elements</td></tr></table></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS"/>
-  <version value="0.9.6"/>
+  <version value="0.9.8"/>
   <name value="ACCESSReportDataCompositionSectionCS"/>
   <title value="ACCESS Report Data Composition Section Codes"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-04-24T13:45:33-04:00"/>
+  <date value="2026-05-18T15:59:44-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>

@@ -1,4 +1,4 @@
-# Neck Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# Neck Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: Neck Disability Index QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -91,7 +91,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -106,7 +106,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -121,7 +121,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -136,7 +136,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -151,7 +151,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -166,7 +166,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -178,15 +178,7 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
   {
     "linkId" : "total-score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 40
-        }],
-        "system" : "http://loinc.org",
-        "code" : "82237-9",
-        "display" : "Total score [NDI]"
-      }
+      "valueDecimal" : 40
     }]
   }]
 }

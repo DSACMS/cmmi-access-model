@@ -1,4 +1,4 @@
-# Conformance Expectations - CMS ACCESS Model API v0.9.6
+# Conformance Expectations - CMS ACCESS Model API v0.9.8
 
 ## Conformance Expectations
 
@@ -163,5 +163,5 @@ ACCESS API clients (participant systems) **SHALL**:
 
 ### Testing and Validation
 
-For testing guidance including test scenarios, checklists, and integration patterns, see the Testing Guide section in the Operations Manual.
+For testing guidance including test scenarios, checklists, and integration patterns, see the Testing Guide section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 

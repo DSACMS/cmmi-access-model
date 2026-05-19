@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/ValueSet-ACCESSReportTypeVS.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/ValueSet-ACCESSReportTypeVS.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

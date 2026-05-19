@@ -1,4 +1,4 @@
-# Artifacts - CMS ACCESS Model API v0.9.6
+# Artifacts - CMS ACCESS Model API v0.9.8
 
 ## Artifacts
 
@@ -93,7 +93,7 @@ These are the custom operations that can be supported by and/or invoked by syste
 | :--- | :--- |
 | [CheckEligibility](OperationDefinition-CheckEligibility.md) | Submit basic patient information to check eligibility for the ACCESS model |
 
-#### Profiles
+#### Operation Profiles
 
 These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.
 
@@ -139,43 +139,39 @@ These are the custom operations that can be supported by and/or invoked by syste
 | :--- | :--- |
 | [Align](OperationDefinition-Align.md) | Align a patient to a participant and ACCESS track |
 
-#### Profiles
+#### Operation Profiles
 
-These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.
+These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) | Input parameters for the $align operation |
-| [ACCESS Alignment Response Parameters](StructureDefinition-access-align-out.md) | Output parameters for the $align operation |
+| [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md) | Input parameters for the $check-eligibility operation |
+| [ACCESS Check Eligibility Response Parameters](StructureDefinition-access-check-eligibility-out.md) | Output parameters for the $check-eligibility operation |
 
 #### Value Sets
 
-These define sets of codes used by systems conforming to the ACCESS Alignment API.
+These define sets of codes used by systems conforming to the ACCESS Eligibility API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
-| [ACCESS Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
+| [ACCESS Eligibility Result Value Set](ValueSet-ACCESSEligibilityResultVS.md) | Value set including all eligibility result codes |
 
 #### Code Systems
 
-These define new code systems used by systems conforming to the ACCESS Alignment API.
+These define new code systems used by systems conforming to the ACCESS Eligibility API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
-| [ACCESS Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
+| [ACCESS Eligibility Result Code System](CodeSystem-ACCESSEligibilityResultCS.md) | Codes indicating the result of an eligibility check |
 
 #### Examples
 
-These are example instances demonstrating the use of the Alignment API.
+These are example instances demonstrating the use of the Eligibility API.
 
 | | |
 | :--- | :--- |
-| [Alignment Request Example](Parameters-AlignmentRequestExample.md) | Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint |
-| [Alignment Request with Switch Consent Example](Parameters-AlignmentRequestWithSwitchConsentExample.md) | Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period |
-| [Alignment Response - Aligned](Parameters-AlignmentResponseAlignedExample.md) | Example successful response indicating patient has been aligned to the ACCESS participant |
-| [Alignment Response - Switch Approved](Parameters-AlignmentResponseSwitchApprovedExample.md) | Example successful response indicating patient provider switch has been approved and patient is re-aligned |
+| [Check Eligibility Request Example](Parameters-CheckEligibilityRequestExample.md) | Example request for checking patient eligibility including participant ID, payer ID, patient details, and track |
+| [Check Eligibility Response - Eligible](Parameters-CheckEligibilityResponseEligibleExample.md) | Example successful response indicating patient is eligible for the ACCESS Model |
 
 ### Unalignment API
 
@@ -189,7 +185,7 @@ These are the custom operations that can be supported by and/or invoked by syste
 | :--- | :--- |
 | [Unalign](OperationDefinition-Unalign.md) | Manually unalign a patient from a participant and ACCESS track |
 
-#### Profiles
+#### Operation Profiles
 
 These define constraints on FHIR resources for systems conforming to the ACCESS Unalignment API.
 
@@ -241,7 +237,7 @@ These are the custom operations that can be supported by and/or invoked by syste
 | :--- | :--- |
 | [ReportData](OperationDefinition-ReportData.md) | Submit data reporting information for the ACCESS model |
 
-#### Profiles
+#### Operation Profiles
 
 These define constraints on FHIR resources for systems conforming to the ACCESS Data Reporting API.
 
@@ -290,10 +286,15 @@ These are example instances demonstrating the use of the Data Reporting API.
 
 | | |
 | :--- | :--- |
+| [eCKM Report Data Request Example](Parameters-eCKMReportDataRequestExample.md) | Example request Parameters for submitting a eCKM track data report |
+| [eCKM Report Data Bundle Example](Bundle-eCKMReportDataBundleExample.md) | Example document bundle containing composition, patient, and clinical observations for the eCKM track |
+| [eCKM Report Data Composition Example](Composition-eCKMReportDataCompositionExample.md) | Example composition organizing clinical data for the eCKM track reporting |
 | [CKM Report Data Request Example](Parameters-CKMReportDataRequestExample.md) | Example request Parameters for submitting a CKM track data report |
-| [CKM Report Data Bundle Example](Bundle-CKMReportDataBundleExample.md) | Example document bundle containing composition, patient, and clinical observations for the CKM/eCKM track |
-| [CKM Report Data Composition Example](Composition-CKMReportDataCompositionExample.md) | Example composition organizing clinical data for the CKM/eCKM track reporting |
+| [CKM Report Data Bundle Example](Bundle-CKMReportDataBundleExample.md) | Example document bundle containing composition, patient, and clinical observations for the CKM track |
+| [CKM Report Data Composition Example](Composition-CKMReportDataCompositionExample.md) | Example composition organizing clinical data for the CKM track reporting |
 | [Blood Pressure Example](Observation-BloodPressureExample.md) | Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track |
+| [Blood Pressure Example 2](Observation-BloodPressureExample2.md) | Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track |
+| [Blood Pressure Example 3](Observation-BloodPressureExample3.md) | Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track |
 | [Body Weight Example](Observation-BodyWeightExample.md) | Example body weight vital sign observation for the CKM/eCKM track |
 | [BMI Example](Observation-BMIExample.md) | Example body mass index vital sign observation for the CKM/eCKM track |
 | [Waist Circumference Example](Observation-WaistCircumferenceExample.md) | Example waist circumference vital sign observation for the CKM/eCKM track |
@@ -313,17 +314,17 @@ These are example instances demonstrating the use of the Data Reporting API.
 | [MSK Report Data Request Example](Parameters-MSKReportDataRequestExample.md) | Example request Parameters for submitting a MSK track data report |
 | [MSK Report Data Bundle Example](Bundle-MSKReportDataBundleExample.md) | Example document bundle containing composition, patient, and patient-reported outcomes for the MSK track |
 | [MSK Report Data Composition Example](Composition-MSKReportDataCompositionExample.md) | Example composition organizing clinical data for the MSK track reporting |
-| [PROMIS Physical Function Short Form 6b QuestionnaireResponse Example](QuestionnaireResponse-PROMISPhysicalFunctionExample.md) | Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track |
-| [PROMIS Physical Function CAT QuestionnaireResponse Example](QuestionnaireResponse-PROMISCATExample.md) | Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track |
-| [PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example](QuestionnaireResponse-PROMISPainInterferenceSFExample.md) | Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track |
-| [PROMIS Pain Interference CAT QuestionnaireResponse Example](QuestionnaireResponse-PROMISPainInterferenceCATExample.md) | Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track |
-| [Oswestry Disability Index QuestionnaireResponse Example](QuestionnaireResponse-OswestryDisabilityIndexExample.md) | Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track |
-| [Neck Disability Index QuestionnaireResponse Example](QuestionnaireResponse-NeckDisabilityIndexExample.md) | Example Neck Disability Index (NDI) QuestionnaireResponse for the MSK track |
-| [QuickDASH QuestionnaireResponse Example](QuestionnaireResponse-QuickDASHExample.md) | Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) QuestionnaireResponse for the MSK track |
-| [MSK PGIC QuestionnaireResponse Example](QuestionnaireResponse-MSKPGICExample.md) | Example Patient Global Impression of Change QuestionnaireResponse for the MSK track |
-| [KOOS JR QuestionnaireResponse Example](QuestionnaireResponse-KOOSJRExample.md) | Example KOOS JR QuestionnaireResponse for the MSK track |
-| [HOOS JR QuestionnaireResponse Example](QuestionnaireResponse-HOOSJRExample.md) | Example HOOS JR QuestionnaireResponse for the MSK track |
-| [PROMIS Pain Intensity NRS QuestionnaireResponse Example](QuestionnaireResponse-PROMISNRSExample.md) | Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track |
+| [PROMIS Physical Function Short Form 6b Example](QuestionnaireResponse-PROMISPhysicalFunctionExample.md) | Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track |
+| [PROMIS Physical Function CAT Example](QuestionnaireResponse-PROMISCATExample.md) | Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track |
+| [PROMIS Pain Interference Short Form 6a Example](QuestionnaireResponse-PROMISPainInterferenceSFExample.md) | Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track |
+| [PROMIS Pain Interference CAT Example](QuestionnaireResponse-PROMISPainInterferenceCATExample.md) | Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track |
+| [Oswestry Disability Index Example](QuestionnaireResponse-OswestryDisabilityIndexExample.md) | Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track |
+| [Neck Disability Index Example](QuestionnaireResponse-NeckDisabilityIndexExample.md) | Example Neck Disability Index (NDI) QuestionnaireResponse for the MSK track |
+| [QuickDASH Example](QuestionnaireResponse-QuickDASHExample.md) | Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) QuestionnaireResponse for the MSK track |
+| [Musculoskeletal PGIC Example](QuestionnaireResponse-MSKPGICExample.md) | Example Patient Global Impression of Change QuestionnaireResponse for the MSK track |
+| [KOOS JR Example](QuestionnaireResponse-KOOSJRExample.md) | Example KOOS JR QuestionnaireResponse for the MSK track |
+| [HOOS JR Example](QuestionnaireResponse-HOOSJRExample.md) | Example HOOS JR QuestionnaireResponse for the MSK track |
+| [PROMIS Pain Intensity NRS Example](QuestionnaireResponse-PROMISNRSExample.md) | Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track |
 
 ##### Behaviorial Health (BH) Track
 
@@ -332,8 +333,41 @@ These are example instances demonstrating the use of the Data Reporting API.
 | [BH Report Data Request Example](Parameters-BHReportDataRequestExample.md) | Example request Parameters for submitting a BH track data report |
 | [BH Report Data Bundle Example](Bundle-BHReportDataBundleExample.md) | Example document bundle containing composition, patient, and behavioral health assessments for BH track |
 | [BH Report Data Composition Example](Composition-BHReportDataCompositionExample.md) | Example composition organizing clinical data for BH track reporting |
-| [PHQ-9 QuestionnaireResponse Example](QuestionnaireResponse-DepressionPHQ9Example.md) | Example PHQ-9 QuestionnaireResponse for the BH track |
-| [GAD-7 QuestionnaireResponse Example](QuestionnaireResponse-AnxietyGAD7Example.md) | Example GAD-7 QuestionnaireResponse for the BH track |
-| [WHODAS 2.0 QuestionnaireResponse Example](QuestionnaireResponse-BHWHODASExample.md) | Example WHODAS 2.0 QuestionnaireResponse for the BH track |
-| [BH PGIC QuestionnaireResponse Example](QuestionnaireResponse-BHPGICExample.md) | Example Behavioral Health PGIC QuestionnaireResponse for the BH track |
+| [Depression PHQ-9 Example](QuestionnaireResponse-DepressionPHQ9Example.md) | Example PHQ-9 QuestionnaireResponse for the BH track |
+| [Anxiety GAD-7 Example](QuestionnaireResponse-AnxietyGAD7Example.md) | Example GAD-7 QuestionnaireResponse for the BH track |
+| [WHODAS 2.0 Example](QuestionnaireResponse-WHODASExample.md) | Example WHODAS 2.0 QuestionnaireResponse for the BH track |
+| [Behavioral Health PGIC Example](QuestionnaireResponse-BHPGICExample.md) | Example Behavioral Health PGIC QuestionnaireResponse for the BH track |
+
+#### Example Questionnaires
+
+These questionnaire examples provide additional information to implementers and a better understanding of how the QuestionnaireResponse profiles interact with their associated questionnaires, particularly linkIds between the questionnaire items and the corresponding individual responses.
+
+The Data Reporting API leverages USCoreQuestionnaireResponse profile, which requires a canonical URL for the underlying questionnaire associated with the questionnaire response. If the FHIR questionnaire is publicly available, it can be referenced through its canonical URL from the questionnaire response.
+
+Otherwise, the questionnaire should be included in the ACCESS Data Reporting Bundle and referenced from the matching questionnaire response.
+
+##### Musculoskeletal (MSK) Track
+
+| | |
+| :--- | :--- |
+| [PROMIS Physical Function Short Form 6b Questionnaire Example](Questionnaire-PROMISPhysicalFunctionQuestionnaireExample.md) | Example PROMIS Physical Function (PF) Short Form 6b Questionnaire |
+| [PROMIS Physical Function CAT Questionnaire Example](Questionnaire-PROMISPhysicalFunctionCATQuestionnaireExample.md) | Example PROMIS Physical Function CAT Questionnaire |
+| [PROMIS Pain Interference Short Form 6a Questionnaire Example](Questionnaire-PROMISPainInterferenceSFQuestionnaireExample.md) | Example PROMIS Pain Interference (PI) Short Form 6a Questionnaire |
+| [PROMIS Pain Interference CAT Questionnaire Example](Questionnaire-PROMISPainInterferenceCATQuestionnaireExample.md) | Example PROMIS Pain Interference CAT Questionnaire |
+| [Oswestry Disability Index Questionnaire Example](Questionnaire-OswestryDisabilityIndexQuestionnaireExample.md) | Example Oswestry Disability Index (ODI) Questionnaire |
+| [Neck Disability Index Questionnaire Example](Questionnaire-NeckDisabilityIndexQuestionnaireExample.md) | Example Neck Disability Index (NDI) Questionnaire |
+| [QuickDASH Questionnaire Example](Questionnaire-QuickDASHQuestionnaireExample.md) | Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) Questionnaire |
+| [MSK PGIC Questionnaire Example](Questionnaire-MSKPGICQuestionnaireExample.md) | Example Patient Global Impression of Change Questionnaire |
+| [KOOS JR Questionnaire Example](Questionnaire-KOOSJRQuestionnaireExample.md) | Example KOOS JR Questionnaire |
+| [HOOS JR Questionnaire Example](Questionnaire-HOOSJRQuestionnaireExample.md) | Example HOOS JR Questionnaire |
+| [PROMIS Pain Intensity NRS Questionnaire Example](Questionnaire-PROMISNRSQuestionnaireExample.md) | Example PROMIS Pain Intensity NRS Questionnaire |
+
+##### Behaviorial Health (BH) Track
+
+| | |
+| :--- | :--- |
+| [PHQ-9 Questionnaire Example](Questionnaire-PHQ9QuestionnaireExample.md) | Example PHQ-9 Questionnaire |
+| [GAD-7 Questionnaire Example](Questionnaire-GAD7QuestionnaireExample.md) | Example GAD-7 Questionnaire |
+| [WHODAS 2.0 Questionnaire Example](Questionnaire-WHODASQuestionnaireExample.md) | Example WHODAS 2.0 Questionnaire |
+| [BH PGIC Questionnaire Example](Questionnaire-BHPGICQuestionnaireExample.md) | Example Behavioral Health PGIC Questionnaire |
 

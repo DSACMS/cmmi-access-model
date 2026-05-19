@@ -1,4 +1,4 @@
-# ACCESS Report Data Result Value Set - CMS ACCESS Model API v0.9.6
+# ACCESS Report Data Result Value Set - CMS ACCESS Model API v0.9.8
 
 ## ValueSet: ACCESS Report Data Result Value Set 
 
@@ -28,12 +28,12 @@ This value set includes all codes from the ACCESS Report Data Result code system
   "resourceType" : "ValueSet",
   "id" : "ACCESSReportDataResultVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSReportDataResultVS",
   "title" : "ACCESS Report Data Result Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -58,7 +58,7 @@ This value set includes all codes from the ACCESS Report Data Result code system
   "compose" : {
     "include" : [{
       "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
-      "version" : "0.9.6"
+      "version" : "0.9.8"
     }]
   }
 }

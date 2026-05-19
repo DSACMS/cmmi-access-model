@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.6
+# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Data Reporting Bundle 
 
@@ -19,12 +19,12 @@ The ACCESS Data Reporting Bundle Profile defines the structure for packaging cli
 
 All resources referenced in the Composition **SHALL** be included in the Bundle.
 
-For examples and submission workflows, see the Data Reporting API section in the Operations Manual.
+For examples and submission workflows, see the Data Reporting API section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 
 **Usages:**
 
 * Use this Profile: [ACCESS Report Data Parameters](StructureDefinition-access-report-data-in.md)
-* Examples for this Profile: [Bundle/BHReportDataBundleExample](Bundle-BHReportDataBundleExample.md), [Bundle/CKMReportDataBundleExample](Bundle-CKMReportDataBundleExample.md) and [Bundle/MSKReportDataBundleExample](Bundle-MSKReportDataBundleExample.md)
+* Examples for this Profile: [Bundle/BHReportDataBundleExample](Bundle-BHReportDataBundleExample.md), [Bundle/CKMReportDataBundleExample](Bundle-CKMReportDataBundleExample.md), [Bundle/MSKReportDataBundleExample](Bundle-MSKReportDataBundleExample.md) and [Bundle/eCKMReportDataBundleExample](Bundle-eCKMReportDataBundleExample.md)
 
 You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-data-reporting-bundle)
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-bundle",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSDataReportingBundle",
   "title" : "ACCESS Data Reporting Bundle",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -99,7 +99,14 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "differential" : {
     "element" : [{
       "id" : "Bundle",
-      "path" : "Bundle"
+      "path" : "Bundle",
+      "constraint" : [{
+        "key" : "access-data-reporting-bundle-composition-refs-in-bundle",
+        "severity" : "error",
+        "human" : "All resources referenced from the data reporting Composition must be included in the enclosing data reporting Bundle.",
+        "expression" : "entry.resource.ofType(Composition).descendants().ofType(Reference).all(resolve() in %resource.entry.resource)",
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
+      }]
     },
     {
       "id" : "Bundle.language",
@@ -159,7 +166,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
       "min" : 1,
       "type" : [{
         "code" : "Composition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"]
       }],
       "mustSupport" : true
     }]

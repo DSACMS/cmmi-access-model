@@ -1,4 +1,4 @@
-# ACCESS Condition Profile - CMS ACCESS Model API v0.9.6
+# ACCESS Condition Profile - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Condition Profile ( Abstract ) 
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-condition.
   "resourceType" : "StructureDefinition",
   "id" : "access-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSCondition",
   "title" : "ACCESS Condition Profile",
   "status" : "active",

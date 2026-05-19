@@ -22,7 +22,13 @@
     "linkId" : "pgic-1",
     "text" : "Since beginning treatment, how would you describe your overall change in pain, function, and quality of life?",
     "answer" : [{
-      "valueDecimal" : 1
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "display" : "Very much improved"
+      }
     }]
   }]
 }

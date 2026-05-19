@@ -1,4 +1,4 @@
-# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.9.6
+# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.9.8
 
 ## Example Condition: End Stage Renal Disease Condition Example
 

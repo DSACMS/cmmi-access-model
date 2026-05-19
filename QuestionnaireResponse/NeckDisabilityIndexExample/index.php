@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.6/QuestionnaireResponse-NeckDisabilityIndexExample.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.8/QuestionnaireResponse-NeckDisabilityIndexExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

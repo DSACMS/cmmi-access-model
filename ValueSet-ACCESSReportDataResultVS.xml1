@@ -3,15 +3,15 @@
 <ValueSet xmlns="http://hl7.org/fhir">
   <id value="ACCESSReportDataResultVS"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSReportDataResultVS</b></p><a name="ACCESSReportDataResultVS"> </a><a name="hcACCESSReportDataResultVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSReportDataResultCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS</code></a><span title="Version is explicitly stated to be 0.9.6"> version &#x1F4CD;0.9.6</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSReportDataResultVS</b></p><a name="ACCESSReportDataResultVS"> </a><a name="hcACCESSReportDataResultVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSReportDataResultCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS</code></a><span title="Version is explicitly stated to be 0.9.8"> version &#x1F4CD;0.9.8</span></li></ul></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS"/>
-  <version value="0.9.6"/>
+  <version value="0.9.8"/>
   <name value="ACCESSReportDataResultVS"/>
   <title value="ACCESS Report Data Result Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-04-24T13:45:33-04:00"/>
+  <date value="2026-05-18T15:59:44-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -36,7 +36,7 @@
   <compose>
     <include>
       <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS"/>
-      <version value="0.9.6"/>
+      <version value="0.9.8"/>
     </include>
   </compose>
 </ValueSet>

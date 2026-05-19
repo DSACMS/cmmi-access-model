@@ -6,10 +6,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - JSON Representation - CMS ACCESS Model API v0.9.6</title>
+    <title>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - JSON Representation - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,7 +46,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.46"}
@@ -59,11 +62,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -145,7 +148,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -199,7 +202,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -222,15 +225,15 @@
   "<a href="http://hl7.org/fhir/R4/resource.html#ValueSet.language">language</a>" : "en",
   "<a href="http://hl7.org/fhir/R4/domainresource.html#ValueSet.text">text</a>" : {
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
-    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet ACCESSBHDiagnosisVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ACCESSBHDiagnosisVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcACCESSBHDiagnosisVS\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/6.5.0/CodeSystem-icd10CM.html\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/sid/icd-10-cm&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F06.31&lt;/td&gt;&lt;td&gt;Mood disorder due to known physiological condition with depressive features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F06.32&lt;/td&gt;&lt;td&gt;Mood disorder due to known physiological condition with major depressive-like episode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.0&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.1&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.2&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, severe without psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.3&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, severe with psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.4&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, in partial remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.5&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, in full remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.81&lt;/td&gt;&lt;td&gt;Premenstrual dysphoric disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.89&lt;/td&gt;&lt;td&gt;Other specified depressive episodes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.9&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.A&lt;/td&gt;&lt;td&gt;Depression, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.0&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.1&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.2&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent severe without psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.3&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, severe with psychotic symptoms&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.40&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in remission, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.41&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in partial remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.42&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in full remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.8&lt;/td&gt;&lt;td&gt;Other recurrent depressive disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.9&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F34.0&lt;/td&gt;&lt;td&gt;Cyclothymic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F34.1&lt;/td&gt;&lt;td&gt;Dysthymic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.20&lt;/td&gt;&lt;td&gt;Adjustment disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.21&lt;/td&gt;&lt;td&gt;Adjustment disorder with depressed mood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.22&lt;/td&gt;&lt;td&gt;Adjustment disorder with anxiety&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.23&lt;/td&gt;&lt;td&gt;Adjustment disorder with mixed anxiety and depressed mood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.00&lt;/td&gt;&lt;td&gt;Agoraphobia, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.01&lt;/td&gt;&lt;td&gt;Agoraphobia with panic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.02&lt;/td&gt;&lt;td&gt;Agoraphobia without panic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.10&lt;/td&gt;&lt;td&gt;Social phobia, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.11&lt;/td&gt;&lt;td&gt;Social phobia, generalized&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.9&lt;/td&gt;&lt;td&gt;Phobic anxiety disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.0&lt;/td&gt;&lt;td&gt;Panic disorder [episodic paroxysmal anxiety]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.1&lt;/td&gt;&lt;td&gt;Generalized anxiety disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.3&lt;/td&gt;&lt;td&gt;Other mixed anxiety disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.8&lt;/td&gt;&lt;td&gt;Other specified anxiety disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.9&lt;/td&gt;&lt;td&gt;Anxiety disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
+    "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: ValueSet ACCESSBHDiagnosisVS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ACCESSBHDiagnosisVS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcACCESSBHDiagnosisVS\&quot;&gt; &lt;/a&gt;&lt;ul&gt;&lt;li&gt;Include these codes as defined in &lt;a href=\&quot;http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\&quot;&gt;&lt;code&gt;http://hl7.org/fhir/sid/icd-10-cm&lt;/code&gt;&lt;/a&gt;&lt;span title=\&quot;Version is not explicitly stated. No matching Code System found\&quot;&gt; version Not Stated (use latest from terminology server)&lt;/span&gt;&lt;table class=\&quot;none\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F06.31&lt;/td&gt;&lt;td&gt;Mood disorder due to known physiological condition with depressive features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F06.32&lt;/td&gt;&lt;td&gt;Mood disorder due to known physiological condition with major depressive-like episode&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.0&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.1&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.2&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, severe without psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.3&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, severe with psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.4&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, in partial remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.5&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, in full remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.81&lt;/td&gt;&lt;td&gt;Premenstrual dysphoric disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.89&lt;/td&gt;&lt;td&gt;Other specified depressive episodes&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.9&lt;/td&gt;&lt;td&gt;Major depressive disorder, single episode, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F32.A&lt;/td&gt;&lt;td&gt;Depression, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.0&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, mild&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.1&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, moderate&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.2&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent severe without psychotic features&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.3&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, severe with psychotic symptoms&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.40&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in remission, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.41&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in partial remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.42&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, in full remission&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.8&lt;/td&gt;&lt;td&gt;Other recurrent depressive disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F33.9&lt;/td&gt;&lt;td&gt;Major depressive disorder, recurrent, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F34.0&lt;/td&gt;&lt;td&gt;Cyclothymic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F34.1&lt;/td&gt;&lt;td&gt;Dysthymic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.20&lt;/td&gt;&lt;td&gt;Adjustment disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.21&lt;/td&gt;&lt;td&gt;Adjustment disorder with depressed mood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.22&lt;/td&gt;&lt;td&gt;Adjustment disorder with anxiety&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F43.23&lt;/td&gt;&lt;td&gt;Adjustment disorder with mixed anxiety and depressed mood&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.00&lt;/td&gt;&lt;td&gt;Agoraphobia, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.01&lt;/td&gt;&lt;td&gt;Agoraphobia with panic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.02&lt;/td&gt;&lt;td&gt;Agoraphobia without panic disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.10&lt;/td&gt;&lt;td&gt;Social phobia, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.11&lt;/td&gt;&lt;td&gt;Social phobia, generalized&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F40.9&lt;/td&gt;&lt;td&gt;Phobic anxiety disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.0&lt;/td&gt;&lt;td&gt;Panic disorder [episodic paroxysmal anxiety]&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.1&lt;/td&gt;&lt;td&gt;Generalized anxiety disorder&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.3&lt;/td&gt;&lt;td&gt;Other mixed anxiety disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.8&lt;/td&gt;&lt;td&gt;Other specified anxiety disorders&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;F41.9&lt;/td&gt;&lt;td&gt;Anxiety disorder, unspecified&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/li&gt;&lt;/ul&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.url">url</a>" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS",
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.9.6",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.version">version</a>" : "0.9.8",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.name">name</a>" : "ACCESSBHDiagnosisVS",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.title">title</a>" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-04-24T13:45:33-04:00",
+  "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.date">date</a>" : "2026-05-18T15:59:44-04:00",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.publisher">publisher</a>" : "Global Alliant, Inc.",
   "<a href="http://hl7.org/fhir/R4/valueset.html#ValueSet.contact">contact</a>" : [
     {
@@ -452,10 +455,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

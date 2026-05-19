@@ -10,11 +10,11 @@
   "id" : "cms.fhir.us.cmmi-access-model",
   "language" : "en",
   "url" : "https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.cmmi-access-model",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "CMSAccessAPI",
   "title" : "CMS ACCESS Model API",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -49,16 +49,6 @@
     "version" : "7.1.0"
   },
   {
-    "id" : "hl7ext",
-    "extension" : [{
-      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
-      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
-    }],
-    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
-    "packageId" : "hl7.fhir.uv.extensions.r4",
-    "version" : "5.2.0"
-  },
-  {
     "id" : "hl7_fhir_us_core",
     "uri" : "http://hl7.org/fhir/us/core/ImplementationGuide/hl7.fhir.us.core",
     "packageId" : "hl7.fhir.us.core",
@@ -74,7 +64,13 @@
     "id" : "hl7_fhir_uv_sdc",
     "uri" : "http://hl7.org/fhir/uv/sdc/ImplementationGuide/hl7.fhir.uv.sdc",
     "packageId" : "hl7.fhir.uv.sdc",
-    "version" : "4.0.0"
+    "version" : "3.0.0"
+  },
+  {
+    "id" : "hl7_fhir_uv_extensions_r4",
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r4",
+    "version" : "5.2.0"
   }],
   "definition" : {
     "extension" : [{
@@ -1340,7 +1336,7 @@
       },
       "name" : "Alignment Request Example",
       "description" : "Example of parameters for aligning a patient to the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1352,7 +1348,7 @@
       },
       "name" : "Alignment Request with Switch Consent Example",
       "description" : "Example of parameters for aligning a patient with switch consent attestation",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1364,7 +1360,7 @@
       },
       "name" : "Alignment Response - Aligned Example",
       "description" : "Example response indicating successful patient alignment",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1376,7 +1372,19 @@
       },
       "name" : "Alignment Response - Switch Approved Example",
       "description" : "Example response indicating successful provider switch",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/BHPGICQuestionnaireExample"
+      },
+      "name" : "BH PGIC Questionnaire",
+      "description" : "Behavioral Health Patient Global Impression of Change",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1400,7 +1408,7 @@
       },
       "name" : "BH Report Data Bundle Example",
       "description" : "Example of a complete report data bundle for the BH track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
     },
     {
       "extension" : [{
@@ -1412,7 +1420,7 @@
       },
       "name" : "BH Report Data Composition Example",
       "description" : "Example composition for reporting data for the BH track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
     },
     {
       "extension" : [{
@@ -1424,7 +1432,7 @@
       },
       "name" : "BH Report Data Request Example",
       "description" : "Example of parameters for submitting a BH track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1432,7 +1440,7 @@
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/BHWHODASExample"
+        "reference" : "QuestionnaireResponse/WHODASExample"
       },
       "name" : "BH WHODAS 2.0 QuestionnaireResponse Example",
       "description" : "Example WHODAS 2.0 (12-item) QuestionnaireResponse for the BH track",
@@ -1448,6 +1456,30 @@
       },
       "name" : "Blood Pressure Example",
       "description" : "Example of blood pressure observation for the CKM/eCKM track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/BloodPressureExample2"
+      },
+      "name" : "Blood Pressure Example 2",
+      "description" : "Second example of blood pressure observation for the CKM/eCKM track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Observation"
+      }],
+      "reference" : {
+        "reference" : "Observation/BloodPressureExample3"
+      },
+      "name" : "Blood Pressure Example 3",
+      "description" : "Third example of blood pressure observation for the CKM/eCKM track",
       "exampleBoolean" : true
     },
     {
@@ -1497,7 +1529,7 @@
       },
       "name" : "Check Eligibility Request Example",
       "description" : "Example of parameters for checking patient eligibility for the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1509,7 +1541,7 @@
       },
       "name" : "Check Eligibility Response - Eligible Example",
       "description" : "Example response indicating patient is eligible for the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1521,7 +1553,7 @@
       },
       "name" : "CKM Report Data Bundle Example",
       "description" : "Example of a complete report data bundle for the CKM/eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
     },
     {
       "extension" : [{
@@ -1533,7 +1565,7 @@
       },
       "name" : "CKM Report Data Composition Example",
       "description" : "Example composition for reporting data for the CKM/eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
     },
     {
       "extension" : [{
@@ -1545,7 +1577,7 @@
       },
       "name" : "CKM Report Data Request Example",
       "description" : "Example of parameters for submitting a CKM track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1557,7 +1589,7 @@
       },
       "name" : "Condition Example - Essential Hypertension",
       "description" : "Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.8"
     },
     {
       "extension" : [{
@@ -1569,7 +1601,7 @@
       },
       "name" : "Condition Example - Major Depressive Disorder",
       "description" : "Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.8"
     },
     {
       "extension" : [{
@@ -1581,7 +1613,7 @@
       },
       "name" : "Condition Example - Osteoarthritis",
       "description" : "Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.8"
     },
     {
       "extension" : [{
@@ -1593,7 +1625,43 @@
       },
       "name" : "Condition Example - Type 2 Diabetes",
       "description" : "Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Bundle"
+      }],
+      "reference" : {
+        "reference" : "Bundle/eCKMReportDataBundleExample"
+      },
+      "name" : "eCKM Report Data Bundle Example",
+      "description" : "Example of a complete report data bundle for the eCKM track",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Composition"
+      }],
+      "reference" : {
+        "reference" : "Composition/eCKMReportDataCompositionExample"
+      },
+      "name" : "eCKM Report Data Composition Example",
+      "description" : "Example composition for reporting data for the eCKM track",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Parameters"
+      }],
+      "reference" : {
+        "reference" : "Parameters/eCKMReportDataRequestExample"
+      },
+      "name" : "eCKM Report Data Request Example",
+      "description" : "Example of parameters for submitting an eCKM track data report",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1617,8 +1685,20 @@
       },
       "name" : "End Stage Renal Disease Condition Example",
       "description" : "Active ESRD diagnosis that disqualifies patient from ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.6",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.8",
       "groupingId" : "UnalignmentAPI"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/GAD7QuestionnaireExample"
+      },
+      "name" : "GAD-7 Questionnaire",
+      "description" : "Generalized Anxiety Disorder-7 assessment",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1659,6 +1739,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/HOOSJRQuestionnaireExample"
+      },
+      "name" : "HOOS JR Questionnaire",
+      "description" : "Questionnaire for HOOS JR score reporting",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
@@ -1666,6 +1758,18 @@
       },
       "name" : "HOOS JR QuestionnaireResponse Example",
       "description" : "Example Hip Dysfunction and Osteoarthritis Outcome Score for Joint Replacement (HOOS JR) QuestionnaireResponse for the MSK track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/KOOSJRQuestionnaireExample"
+      },
+      "name" : "KOOS JR Questionnaire",
+      "description" : "Questionnaire for KOOS JR score reporting",
       "exampleBoolean" : true
     },
     {
@@ -1726,7 +1830,7 @@
       },
       "name" : "MSK Data Reporting Bundle Example",
       "description" : "Example of a complete report data bundle for the MSK track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
     },
     {
       "extension" : [{
@@ -1738,7 +1842,19 @@
       },
       "name" : "MSK Data Reporting Composition Example",
       "description" : "Example composition for reporting data for the MSK track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/MSKPGICQuestionnaireExample"
+      },
+      "name" : "MSK PGIC Questionnaire",
+      "description" : "Questionnaire for MSK Patient Global Impression of Change (PGIC) reporting",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1762,7 +1878,19 @@
       },
       "name" : "MSK Report Data Request Example",
       "description" : "Example of parameters for submitting a MSK track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/NeckDisabilityIndexQuestionnaireExample"
+      },
+      "name" : "Neck Disability Index Questionnaire",
+      "description" : "Questionnaire for Neck Disability Index (NDI) score reporting",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
@@ -1786,6 +1914,18 @@
       },
       "name" : "Organization Example",
       "description" : "Example organization for ACCESS Model examples",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/OswestryDisabilityIndexQuestionnaireExample"
+      },
+      "name" : "Oswestry Disability Index Questionnaire",
+      "description" : "Questionnaire for Oswestry Disability Index (ODI) score reporting",
       "exampleBoolean" : true
     },
     {
@@ -1828,6 +1968,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PHQ9QuestionnaireExample"
+      },
+      "name" : "PHQ-9 Questionnaire",
+      "description" : "Patient Health Questionnaire-9 for depression screening",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
@@ -1852,6 +2004,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PROMISNRSQuestionnaireExample"
+      },
+      "name" : "PROMIS Pain Intensity NRS Questionnaire",
+      "description" : "Questionnaire for PROMIS Pain Intensity NRS v1.0 score reporting",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
@@ -1859,6 +2023,18 @@
       },
       "name" : "PROMIS Pain Intensity NRS QuestionnaireResponse Example",
       "description" : "Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PROMISPainInterferenceCATQuestionnaireExample"
+      },
+      "name" : "PROMIS Pain Interference CAT Questionnaire",
+      "description" : "Questionnaire for PROMIS Pain Interference CAT score reporting",
       "exampleBoolean" : true
     },
     {
@@ -1876,6 +2052,18 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PROMISPainInterferenceSFQuestionnaireExample"
+      },
+      "name" : "PROMIS Pain Interference Short Form 6a Questionnaire",
+      "description" : "Questionnaire for PROMIS Pain Interference Short Form 6a score reporting",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
@@ -1888,13 +2076,37 @@
     {
       "extension" : [{
         "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PROMISPhysicalFunctionCATQuestionnaireExample"
+      },
+      "name" : "PROMIS Physical Function CAT Questionnaire",
+      "description" : "Questionnaire for PROMIS Physical Function CAT score reporting",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
         "valueString" : "QuestionnaireResponse"
       }],
       "reference" : {
-        "reference" : "QuestionnaireResponse/PROMISCATExample"
+        "reference" : "QuestionnaireResponse/PROMISPhysicalFunctionCATExample"
       },
       "name" : "PROMIS Physical Function CAT QuestionnaireResponse Example",
       "description" : "Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/PROMISPhysicalFunctionQuestionnaireExample"
+      },
+      "name" : "PROMIS Physical Function Short Form 6b Questionnaire",
+      "description" : "Questionnaire for PROMIS Physical Function Short Form 6b score reporting",
       "exampleBoolean" : true
     },
     {
@@ -1907,6 +2119,18 @@
       },
       "name" : "PROMIS Physical Function Short Form 6b QuestionnaireResponse Example",
       "description" : "Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/QuickDASHQuestionnaireExample"
+      },
+      "name" : "QuickDASH Questionnaire",
+      "description" : "Questionnaire for QuickDASH score reporting",
       "exampleBoolean" : true
     },
     {
@@ -1931,7 +2155,7 @@
       },
       "name" : "Report Data Request Example",
       "description" : "Example of parameters for submitting data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.8"
     },
     {
       "extension" : [{
@@ -1943,7 +2167,7 @@
       },
       "name" : "Report Data Response - Duplicate Example",
       "description" : "Example response indicating data submission is a duplicate",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1955,7 +2179,7 @@
       },
       "name" : "Report Data Response - Incomplete Data Example",
       "description" : "Example response indicating data submission is missing required elements",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1967,7 +2191,7 @@
       },
       "name" : "Report Data Response - Incorrect Track Example",
       "description" : "Example response indicating data doesn't match patient's aligned track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1979,7 +2203,7 @@
       },
       "name" : "Report Data Response - Patient Not Aligned Example",
       "description" : "Example response indicating patient is not aligned",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -1991,7 +2215,7 @@
       },
       "name" : "Report Data Response - Reporting Period Closed Example",
       "description" : "Example response indicating the reporting period has closed",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -2003,7 +2227,7 @@
       },
       "name" : "Report Data Response - Success Example",
       "description" : "Example response indicating successful report data submission",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.8"
     },
     {
       "extension" : [{
@@ -2040,7 +2264,7 @@
       },
       "name" : "Submission Status Response Example",
       "description" : "Example response for submission status check",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.6"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.8"
     },
     {
       "extension" : [{
@@ -2114,7 +2338,7 @@
       },
       "name" : "Unalignment Request - ESRD Example",
       "description" : "Example of unalignment request for patient who developed ESRD (no longer clinically eligible)",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.6",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -2127,7 +2351,7 @@
       },
       "name" : "Unalignment Request Example",
       "description" : "Example of parameters for unaligning a patient from the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.6",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -2140,7 +2364,7 @@
       },
       "name" : "Unalignment Response - Unaligned Example",
       "description" : "Example response indicating successful patient unalignment",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.6",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.8",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -2153,6 +2377,18 @@
       },
       "name" : "Waist Circumference Example",
       "description" : "Example waist circumference observation for the CKM/eCKM track",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Questionnaire"
+      }],
+      "reference" : {
+        "reference" : "Questionnaire/WHODASQuestionnaireExample"
+      },
+      "name" : "WHODAS 2.0 12-item Questionnaire",
+      "description" : "World Health Organization Disability Assessment Schedule 2.0 (12-item)",
       "exampleBoolean" : true
     }],
     "page" : {

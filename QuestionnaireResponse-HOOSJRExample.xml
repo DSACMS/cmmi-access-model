@@ -23,7 +23,7 @@
     <text value="Going up or down stairs"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -37,7 +37,7 @@
     <text value="Walking on an uneven surface"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -51,7 +51,7 @@
     <text value="Rising from sitting"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -65,7 +65,7 @@
     <text value="Bending to the floor/picking up an object"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -79,7 +79,7 @@
     <text value="Lying in bed"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -93,7 +93,7 @@
     <text value="Sitting"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -105,14 +105,7 @@
   <item>
     <linkId value="total-interval-score"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="55.985"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="82323-7"/>
-        <display value="Total interval score [HOOSJR]"/>
-      </valueCoding>
+      <valueDecimal value="55.985"/>
     </answer>
   </item>
 </QuestionnaireResponse>

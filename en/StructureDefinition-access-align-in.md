@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Alignment Request Parameters 
 
@@ -22,7 +22,7 @@ The `conditions` parameter **SHALL** reference track-specific condition profiles
 * **MSK Track**: Use [ACCESSMSKCondition](StructureDefinition-access-msk-condition.md)
 * **BH Track**: Use [ACCESSBHCondition](StructureDefinition-access-bh-condition.md)
 
-For detailed alignment workflows and examples, see the Alignment API section in the Operations Manual.
+For detailed alignment workflows and examples, see the Alignment API section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 
 **Usages:**
 
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
   "resourceType" : "StructureDefinition",
   "id" : "access-align-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSAlignmentRequestParameters",
   "title" : "ACCESS Alignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -145,7 +145,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.8"
       }],
       "mustSupport" : true
     },
@@ -250,7 +250,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
       }
     },
     {
@@ -288,7 +288,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8"]
       }],
       "mustSupport" : true
     },

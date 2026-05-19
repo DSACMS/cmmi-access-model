@@ -1,4 +1,4 @@
-# ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.6
+# ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.8
 
 ## ValueSet: ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses 
 
@@ -28,12 +28,12 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
   "resourceType" : "ValueSet",
   "id" : "ACCESSMSKDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSMSKDiagnosisVS",
   "title" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

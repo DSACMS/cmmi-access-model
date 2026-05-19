@@ -1,9 +1,49 @@
-# Alignment Request - CMS ACCESS Model API v0.9.6
+# Alignment Request - CMS ACCESS Model API v0.9.8
 
 ## OperationDefinition: Alignment Request 
 
  
 The **$align** operation determines if the patient can be aligned to a participant so that the participant can start providing care to the patient under the ACCESS Model. If the patient can be aligned, the patient will be aligned with the participant for a specific ACCESS track. 
+
+### Handy References
+
+#### Operation Profiles
+
+These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.
+
+| | |
+| :--- | :--- |
+| [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) | Input parameters for the $align operation |
+| [ACCESS Alignment Response Parameters](StructureDefinition-access-align-out.md) | Output parameters for the $align operation |
+
+#### Value Sets
+
+These define sets of codes used by systems conforming to the ACCESS Alignment API.
+
+| | |
+| :--- | :--- |
+| [ACCESS Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
+| [ACCESS Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
+
+#### Code Systems
+
+These define new code systems used by systems conforming to the ACCESS Alignment API.
+
+| | |
+| :--- | :--- |
+| [ACCESS Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
+| [ACCESS Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
+
+#### Examples
+
+These are example instances demonstrating the use of the Alignment API.
+
+| | |
+| :--- | :--- |
+| [Alignment Request Example](Parameters-AlignmentRequestExample.md) | Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint |
+| [Alignment Request with Switch Consent Example](Parameters-AlignmentRequestWithSwitchConsentExample.md) | Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period |
+| [Alignment Response - Aligned](Parameters-AlignmentResponseAlignedExample.md) | Example successful response indicating patient has been aligned to the ACCESS participant |
+| [Alignment Response - Switch Approved](Parameters-AlignmentResponseSwitchApprovedExample.md) | Example successful response indicating patient provider switch has been approved and patient is re-aligned |
 
 
 
@@ -14,12 +54,12 @@ The **$align** operation determines if the patient can be aligned to a participa
   "resourceType" : "OperationDefinition",
   "id" : "Align",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Align",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "Align",
   "title" : "Alignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -45,7 +85,7 @@ The **$align** operation determines if the patient can be aligned to a participa
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.6",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.8",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -67,7 +107,7 @@ The **$align** operation determines if the patient can be aligned to a participa
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Patient information.  It **SHOULD** contain the Medicare Beneficiary Identifier (MBI).",
+    "documentation" : "Patient information.  If the payer is Medicare, it **SHALL** contain the Medicare Beneficiary Identifier (MBI).",
     "type" : "Patient"
   },
   {
@@ -79,7 +119,7 @@ The **$align** operation determines if the patient can be aligned to a participa
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
     }
   },
   {

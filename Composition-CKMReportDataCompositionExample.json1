@@ -50,6 +50,12 @@
       },
       "entry" : [{
         "reference" : "Observation/BloodPressureExample"
+      },
+      {
+        "reference" : "Observation/BloodPressureExample2"
+      },
+      {
+        "reference" : "Observation/BloodPressureExample3"
       }]
     },
     {

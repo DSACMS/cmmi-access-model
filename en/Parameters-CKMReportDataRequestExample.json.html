@@ -6,10 +6,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>CKM Report Data Request Example - JSON Representation - CMS ACCESS Model API v0.9.6</title>
+    <title>CKM Report Data Request Example - JSON Representation - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,11 +46,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.69"}
-    h3,h4,h5,h6{--heading-prefix:"3.69"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.72"}
+    h3,h4,h5,h6{--heading-prefix:"3.72"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -59,11 +62,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -145,7 +148,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -198,7 +201,7 @@
 
 
 
-  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code class="language-json" style="white-space: pre; text-wrap: nowrap;">{
+  <pre class="json" data-fhir="generated" style="white-space: pre; text-wrap: nowrap; width: auto;"><code style="white-space: pre; text-wrap: nowrap;">{
   "<a href="http://hl7.org/fhir/R4/parameters.html#Parameters">resourceType</a>" : "Parameters",
   "<a href="http://hl7.org/fhir/R4/resource.html#Parameters.id">id</a>" : "CKMReportDataRequestExample",
   "<a href="http://hl7.org/fhir/R4/resource.html#Parameters.meta">meta</a>" : {
@@ -340,6 +343,12 @@
                       "<a href="http://hl7.org/fhir/R4/composition.html#Composition.section.entry">entry</a>" : [
                         {
                           <a href="Observation-BloodPressureExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/BloodPressureExample"
+                        },
+                        {
+                          <a href="Observation-BloodPressureExample2.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/BloodPressureExample2"
+                        },
+                        {
+                          <a href="Observation-BloodPressureExample3.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Observation/BloodPressureExample3"
                         }
                       ]
                     },
@@ -628,6 +637,164 @@
                   },
                   "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 88,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm[Hg]",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/BloodPressureExample2",
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+              "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "BloodPressureExample2",
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+                  <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a>" : "en",
+              "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;en\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;en\&quot;&gt;Blood Pressure: 132/84 mm[Hg] measured on 2026-01-22&lt;/div&gt;"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vital Signs"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "85354-9",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Blood pressure panel with all children optional"
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Blood Pressure"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+                <a href="Patient-PatientExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/PatientExample"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2026-01-22T10:30:00Z",
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component">component</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                      {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8480-6",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Systolic blood pressure"
+                      }
+                    ]
+                  },
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 132,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm[Hg]",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+                  }
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                      {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8462-4",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Diastolic blood pressure"
+                      }
+                    ]
+                  },
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 84,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm[Hg]",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+                  }
+                }
+              ]
+            }
+          },
+          {
+            "<a href="http://hl7.org/fhir/R4/bundle.html#Bundle.entry.fullUrl">fullUrl</a>" : "http://example.org/Observation/BloodPressureExample3",
+            "<a href="http://hl7.org/fhir/R4/observation.html#Observation">resource</a>" : {
+              "<a href="http://hl7.org/fhir/R4/observation.html">resourceType</a>" : "Observation",
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.id">id</a>" : "BloodPressureExample3",
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.meta">meta</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Meta#Meta.profile">profile</a>" : [
+                  <a href="http://hl7.org/fhir/us/core/STU6.1/StructureDefinition-us-core-blood-pressure.html" style="color: Maroon">&#x1F517;</a> "http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"
+                ]
+              },
+              "<a href="http://hl7.org/fhir/R4/resource.html#Observation.language">language</a>" : "en",
+              "<a href="http://hl7.org/fhir/R4/domainresource.html#Observation.text">text</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.status">status</a>" : "generated",
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xml:lang=\&quot;en\&quot; xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot; lang=\&quot;en\&quot;&gt;Blood Pressure: 140/90 mm[Hg] measured on 2026-02-05&lt;/div&gt;"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.status">status</a>" : "final",
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.category">category</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                    {
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://terminology.hl7.org/CodeSystem/observation-category",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "vital-signs",
+                      "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Vital Signs"
+                    }
+                  ]
+                }
+              ],
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.code">code</a>" : {
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                  {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "85354-9",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Blood pressure panel with all children optional"
+                  }
+                ],
+                "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.text">text</a>" : "Blood Pressure"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.subject">subject</a>" : {
+                <a href="Patient-PatientExample.html" style="color: Maroon">&#x1F517;</a> "<a href="http://hl7.org/fhir/R4/references.html#Reference#Reference.reference">reference</a>" : "Patient/PatientExample"
+              },
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.effective_x_">effectiveDateTime</a>" : "2026-02-05T10:30:00Z",
+              "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component">component</a>" : [
+                {
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                      {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8480-6",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Systolic blood pressure"
+                      }
+                    ]
+                  },
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 140,
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm[Hg]",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
+                  }
+                },
+                {
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.code">code</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept#CodeableConcept.coding">coding</a>" : [
+                      {
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.system">system</a>" : "http://loinc.org",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.code">code</a>" : "8462-4",
+                        "<a href="http://hl7.org/fhir/R4/datatypes.html#Coding#Coding.display">display</a>" : "Diastolic blood pressure"
+                      }
+                    ]
+                  },
+                  "<a href="http://hl7.org/fhir/R4/observation.html#Observation.component.value_x_">valueQuantity</a>" : {
+                    "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.value">value</a>" : 90,
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.unit">unit</a>" : "mm[Hg]",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.system">system</a>" : "http://unitsofmeasure.org",
                     "<a href="http://hl7.org/fhir/R4/datatypes.html#Quantity#Quantity.code">code</a>" : "mm[Hg]"
@@ -1007,10 +1174,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

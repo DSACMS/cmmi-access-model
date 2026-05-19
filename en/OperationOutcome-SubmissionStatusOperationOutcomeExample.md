@@ -1,4 +1,4 @@
-# Submission Status OperationOutcome Example - CMS ACCESS Model API v0.9.6
+# Submission Status OperationOutcome Example - CMS ACCESS Model API v0.9.8
 
 ## Example OperationOutcome: Submission Status OperationOutcome Example
 

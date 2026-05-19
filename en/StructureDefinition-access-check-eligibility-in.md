@@ -1,4 +1,4 @@
-# ACCESS Check Eligibility Request Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Check Eligibility Request Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Check Eligibility Request Parameters 
 
@@ -11,7 +11,7 @@ The `conditions` parameter is optional (0..*) and can be used to provide qualify
 * Helps the server assess eligibility based on specific diagnoses
 * Not required for basic eligibility checks based on claims data
 
-For detailed eligibility workflows and examples, see the Eligibility API section in the Operations Manual.
+For detailed eligibility workflows and examples, see the Eligibility API section in the [**Operations Manual**](https://github.com/DSACMS/cmmi-access-model/blob/main/ACCESS%20API%20Operations%20Manual.pdf).
 
 **Usages:**
 
@@ -36,11 +36,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
   "resourceType" : "StructureDefinition",
   "id" : "access-check-eligibility-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSCheckEligibilityRequestParameters",
   "title" : "ACCESS Check Eligibility Request Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -134,7 +134,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.6"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.8"
       }],
       "mustSupport" : true
     },
@@ -239,7 +239,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
       }
     },
     {
@@ -277,7 +277,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8"]
       }],
       "mustSupport" : true
     }]

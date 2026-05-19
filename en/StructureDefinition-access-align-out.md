@@ -1,4 +1,4 @@
-# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Alignment Response Parameters 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-out.
   "resourceType" : "StructureDefinition",
   "id" : "access-align-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSAlignmentResponseParameters",
   "title" : "ACCESS Alignment Response Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-out.
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.8"
       }
     }]
   }

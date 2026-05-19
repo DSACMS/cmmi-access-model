@@ -72,7 +72,7 @@
         </coding>
       </code>
       <entry>
-        <reference value="QuestionnaireResponse/BHWHODASExample"/>
+        <reference value="QuestionnaireResponse/WHODASExample"/>
       </entry>
     </section>
     <section>

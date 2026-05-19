@@ -22,83 +22,126 @@
     <linkId value="odi-1"/>
     <text value="Pain intensity"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="The pain is moderate at the moment."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-2"/>
     <text value="Personal care (washing, dressing, etc.)"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <display value="I can look after myself normally but it is very painful."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-3"/>
     <text value="Lifting"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Pain prevents me lifting heavy weights off the floor, but I can manage if they are conveniently placed e.g. on a table."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-4"/>
     <text value="Walking"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <display value="Pain prevents me from walking more than one mile."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-5"/>
     <text value="Sitting"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Pain prevents me from sitting for more than one hour."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-6"/>
     <text value="Standing"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Pain prevents me from standing for more than 1 hour."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-7"/>
     <text value="Sleeping"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <display value="My sleep is occasionally interrupted by pain."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-8"/>
     <text value="Sex life (if applicable)"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="My sex life is nearly normal but is very painful."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-9"/>
     <text value="Social life"/>
     <answer>
-      <valueDecimal value="3"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Pain has restricted my social life and I do not go out as often."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="odi-10"/>
     <text value="Traveling"/>
     <answer>
-      <valueDecimal value="2"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Pain is bad but I am able to manage trips over two hours."/>
+      </valueCoding>
     </answer>
   </item>
   <item>
     <linkId value="score"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="36"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="97909-6"/>
-        <display value="Oswestry disability index score ODI"/>
-      </valueCoding>
+      <valueDecimal value="36"/>
     </answer>
   </item>
 </QuestionnaireResponse>

@@ -6,12 +6,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSReportDataResultCS</b></p><a name=\"ACCESSReportDataResultCS\"> </a><a name=\"hcACCESSReportDataResultCS\"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">success<a name=\"ACCESSReportDataResultCS-success\"> </a></td><td>Success</td><td>The data reporting submission was successful.</td></tr><tr><td style=\"white-space:nowrap\">validation-error<a name=\"ACCESSReportDataResultCS-validation-error\"> </a></td><td>Validation error</td><td>Data submission failed validation (see the 'issues' parameter for specific errors and details).</td></tr><tr><td style=\"white-space:nowrap\">duplicate<a name=\"ACCESSReportDataResultCS-duplicate\"> </a></td><td>Duplicate submission</td><td>Data submission is a duplicate of a previously submitted report for this reporting period.</td></tr><tr><td style=\"white-space:nowrap\">patient-not-aligned<a name=\"ACCESSReportDataResultCS-patient-not-aligned\"> </a></td><td>Patient not aligned</td><td>Patient is not currently aligned to this participant in the specified track. Data reporting is only accepted for aligned patients.</td></tr><tr><td style=\"white-space:nowrap\">reporting-period-closed<a name=\"ACCESSReportDataResultCS-reporting-period-closed\"> </a></td><td>Reporting period closed</td><td>The reporting period for this data has closed and no further submissions are accepted.</td></tr><tr><td style=\"white-space:nowrap\">incomplete-data<a name=\"ACCESSReportDataResultCS-incomplete-data\"> </a></td><td>Incomplete data</td><td>Data submission is missing required observations or measurements for the specified track (see the 'issues' parameter for specific issues and details).</td></tr><tr><td style=\"white-space:nowrap\">incorrect-track<a name=\"ACCESSReportDataResultCS-incorrect-track\"> </a></td><td>Incorrect track</td><td>The submitted data does not match the track the patient is aligned to.</td></tr></table></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSReportDataResultCS",
   "title" : "ACCESS Report Data Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -6,10 +6,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Event Types - JSON Representation - CMS ACCESS Model API v0.9.6</title>
+    <title>ACCESS Event Types - JSON Representation - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -45,7 +46,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.15"}
@@ -59,11 +62,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -145,7 +148,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -199,7 +202,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -225,12 +228,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: CodeSystem ACCESSEventTypeCS&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;ACCESSEventTypeCS\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcACCESSEventTypeCS\&quot;&gt; &lt;/a&gt;&lt;p&gt;This case-sensitive code system &lt;code&gt;https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS&lt;/code&gt; defines the following codes:&lt;/p&gt;&lt;table class=\&quot;codes\&quot;&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;&lt;b&gt;Code&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Display&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Definition&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;participant-lock-ending&lt;a name=\&quot;ACCESSEventTypeCS-participant-lock-ending\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Participant Lock-In Period Ending&lt;/td&gt;&lt;td&gt;The 90-day participant lock-in period is ending soon, allowing the patient to switch to a different participant if desired.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;control-group-ending&lt;a name=\&quot;ACCESSEventTypeCS-control-group-ending\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Control Group Period Ending&lt;/td&gt;&lt;td&gt;The 12-month control group assignment period is ending soon, allowing the patient to be reconsidered for alignment in the ACCESS Model.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;alignment-renewal&lt;a name=\&quot;ACCESSEventTypeCS-alignment-renewal\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Alignment Renewal Due&lt;/td&gt;&lt;td&gt;The initial alignment period is ending and renewal action is required to continue services under the ACCESS Model.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;baseline-reporting-window&lt;a name=\&quot;ACCESSEventTypeCS-baseline-reporting-window\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Baseline Reporting Due&lt;/td&gt;&lt;td&gt;The baseline data report is due soon. If baseline reporting is not received within 60 days of alignment, the patient will be unaligned.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;quarterly-reporting-window&lt;a name=\&quot;ACCESSEventTypeCS-quarterly-reporting-window\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Quarterly Reporting Due&lt;/td&gt;&lt;td&gt;The quarterly data report is due soon. Quarterly reporting must be submitted 70 to 110 days after the prior data submission.&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;eoy-reporting-window&lt;a name=\&quot;ACCESSEventTypeCS-eoy-reporting-window\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;End-of-Year Reporting Due&lt;/td&gt;&lt;td&gt;The end-of-year data report is due soon. End-of-year reporting must be submitted no later than 425 days from the date of alignment (365 days plus an additional 60 days).&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td style=\&quot;white-space:nowrap\&quot;&gt;unalignment&lt;a name=\&quot;ACCESSEventTypeCS-unalignment\&quot;&gt; &lt;/a&gt;&lt;/td&gt;&lt;td&gt;Unalignment Notice&lt;/td&gt;&lt;td&gt;The patient has been unaligned from the ACCESS Model due to a change in eligibility status.&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.url">url</a>" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.9.6",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.version">version</a>" : "0.9.8",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.name">name</a>" : "ACCESSEventTypeCS",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.title">title</a>" : "ACCESS Event Types",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.status">status</a>" : "draft",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.experimental">experimental</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-04-24T13:45:33-04:00",
+  "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.date">date</a>" : "2026-05-18T15:59:44-04:00",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.publisher">publisher</a>" : "Global Alliant, Inc.",
   "<a href="http://hl7.org/fhir/R4/codesystem.html#CodeSystem.contact">contact</a>" : [
     {
@@ -331,10 +334,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

@@ -3,10 +3,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Report Data Request Example - CMS ACCESS Model API v0.9.6</title>
+    <title>Report Data Request Example - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,11 +43,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.99"}
-    h3,h4,h5,h6{--heading-prefix:"3.99"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.118"}
+    h3,h4,h5,h6{--heading-prefix:"3.118"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,11 +59,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -142,7 +145,7 @@
 
 <!-- layouts\layout-instance-base -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
   
@@ -198,7 +201,7 @@
 
 
 
-  <div data-fhir="generated"><p class="res-header-id"/><a name="ReportDataRequestExample"> </a><a name="hcReportDataRequestExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-report-data-in.html">ACCESS Report Data Parameters</a></p></div><h2>Parameters</h2><table class="grid" data-fhir="generated"><tr><td>participantID</td><td><code>https://dsacms.github.io/cmmi-access-model/participant-id</code>/ACCES12345</td></tr><tr><td>payerID</td><td>Payer ID/12345</td></tr><tr><td>track</td><td><span title="Codes:{https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS CKM}">Cardio-Kidney-Metabolic track</span></td></tr><tr><td>reportType</td><td><span title="Codes:{https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS baseline}">Baseline Data Report</span></td></tr><tr><td>dataBundle</td><td><p>Bundle/CKMReportDataBundleExample<a name="Bundle_ReportDataRequestExample/CKMReportDataBundleExample">  </a><a name="hcBundle_ReportDataRequestExample/CKMReportDataBundleExample">  </a></p><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="ReportDataRequestExample/CKMReportDataBundleExample"> </a><a name="hcReportDataRequestExample/CKMReportDataBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></p><p>Final Document at 2026-01-26 12:00:00+0000 by <a href="Practitioner-PractitionerExample.html">Practitioner Jane Smith </a> for <a href="Patient-PatientExample.html">John Doe  Male, DoB: 1950-01-01 ( Patient's Medicare number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>ACCESS CKM Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p><hr/><div><h2>Data reporting for CKM track</h2></div><p>Comprehensive CKM Track Data Reporting including vital signs (blood pressure, body weight, waist circumference), and laboratory results (HbA1c, eGFR, uACR, lipid panel).</p><div><h3>Blood Pressure</h3></div><div><h3>Weight</h3></div><div><h3>BMI</h3></div><div><h3>Waist Circumference</h3></div><div><h3>HbA1c</h3></div><div><h3>eGFR</h3></div><div><h3>uACR</h3></div><div><h3>Lipids</h3></div></div><hr/><h2>Additional Resources Included in Document</h2><hr/><p>Entry 2 - fullUrl = http://example.org/Patient/PatientExample</p><p>Resource Patient:</p><blockquote>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</blockquote><hr/><p>Entry 3 - fullUrl = http://example.org/Practitioner/PractitionerExample</p><p>Resource Practitioner:</p><blockquote>Practitioner Jane Smith, NPI: 1234567893</blockquote><hr/><p>Entry 4 - fullUrl = http://example.org/Organization/OrganizationExample</p><p>Resource Organization:</p><blockquote>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</blockquote><hr/><p>Entry 5 - fullUrl = http://example.org/Observation/BloodPressureExample</p><p>Resource Observation:</p><blockquote>Blood Pressure: 138/88 mm[Hg] measured on 2026-01-15</blockquote><hr/><p>Entry 6 - fullUrl = http://example.org/Observation/BodyWeightExample</p><p>Resource Observation:</p><blockquote>Body Weight: 85 kg measured on 2026-01-15</blockquote><hr/><p>Entry 7 - fullUrl = http://example.org/Observation/BMIExample</p><p>Resource Observation:</p><blockquote>BMI: 27.5 kg/m2 measured on 2026-01-15</blockquote><hr/><p>Entry 8 - fullUrl = http://example.org/Observation/WaistCircumferenceExample</p><p>Resource Observation:</p><blockquote>Waist Circumference: 95 cm measured on 2026-01-15</blockquote><hr/><p>Entry 9 - fullUrl = http://example.org/Observation/HbA1cExample</p><p>Resource Observation:</p><blockquote>Hemoglobin A1c: 6.5% measured on 2026-01-15</blockquote><hr/><p>Entry 10 - fullUrl = http://example.org/Observation/eGFRExample</p><p>Resource Observation:</p><blockquote>eGFR: 75 mL/min/1.73m2 measured on 2026-01-15</blockquote><hr/><p>Entry 11 - fullUrl = http://example.org/Observation/uACRExample</p><p>Resource Observation:</p><blockquote>Urine Albumin-Creatinine Ratio: 45 mg/g measured on 2026-01-15</blockquote><hr/><p>Entry 12 - fullUrl = http://example.org/Observation/LDLCholesterolExample</p><p>Resource Observation:</p><blockquote>LDL Cholesterol: 140 mg/dL measured on 2026-01-15</blockquote></td></tr></table></div>
+  <div data-fhir="generated"><p class="res-header-id"/><a name="ReportDataRequestExample"> </a><a name="hcReportDataRequestExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-report-data-in.html">ACCESS Report Data Parameters</a></p></div><h2>Parameters</h2><table class="grid" data-fhir="generated"><tr><td>participantID</td><td><code>https://dsacms.github.io/cmmi-access-model/participant-id</code>/ACCES12345</td></tr><tr><td>payerID</td><td>Payer ID/12345</td></tr><tr><td>track</td><td><span title="Codes:{https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS CKM}">Cardio-Kidney-Metabolic track</span></td></tr><tr><td>reportType</td><td><span title="Codes:{https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS baseline}">Baseline Data Report</span></td></tr><tr><td>dataBundle</td><td><p>Bundle/CKMReportDataBundleExample<a name="Bundle_ReportDataRequestExample/CKMReportDataBundleExample">  </a><a name="hcBundle_ReportDataRequestExample/CKMReportDataBundleExample">  </a></p><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="ReportDataRequestExample/CKMReportDataBundleExample"> </a><a name="hcReportDataRequestExample/CKMReportDataBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></p><p>Final Document at 2026-01-26 12:00:00+0000 by <a href="Practitioner-PractitionerExample.html">Practitioner Jane Smith </a> for <a href="Patient-PatientExample.html">John Doe  Male, DoB: 1950-01-01 ( Patient's Medicare number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>ACCESS CKM Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p><hr/><div><h2>Data reporting for CKM track</h2></div><p>Comprehensive CKM Track Data Reporting including vital signs (blood pressure, body weight, waist circumference), and laboratory results (HbA1c, eGFR, uACR, lipid panel).</p><div><h3>Blood Pressure</h3></div><div><h3>Weight</h3></div><div><h3>BMI</h3></div><div><h3>Waist Circumference</h3></div><div><h3>HbA1c</h3></div><div><h3>eGFR</h3></div><div><h3>uACR</h3></div><div><h3>Lipids</h3></div></div><hr/><h2>Additional Resources Included in Document</h2><hr/><p>Entry 2 - fullUrl = http://example.org/Patient/PatientExample</p><p>Resource Patient:</p><blockquote>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</blockquote><hr/><p>Entry 3 - fullUrl = http://example.org/Practitioner/PractitionerExample</p><p>Resource Practitioner:</p><blockquote>Practitioner Jane Smith, NPI: 1234567893</blockquote><hr/><p>Entry 4 - fullUrl = http://example.org/Organization/OrganizationExample</p><p>Resource Organization:</p><blockquote>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</blockquote><hr/><p>Entry 5 - fullUrl = http://example.org/Observation/BloodPressureExample</p><p>Resource Observation:</p><blockquote>Blood Pressure: 138/88 mm[Hg] measured on 2026-01-15</blockquote><hr/><p>Entry 6 - fullUrl = http://example.org/Observation/BloodPressureExample2</p><p>Resource Observation:</p><blockquote>Blood Pressure: 132/84 mm[Hg] measured on 2026-01-22</blockquote><hr/><p>Entry 7 - fullUrl = http://example.org/Observation/BloodPressureExample3</p><p>Resource Observation:</p><blockquote>Blood Pressure: 140/90 mm[Hg] measured on 2026-02-05</blockquote><hr/><p>Entry 8 - fullUrl = http://example.org/Observation/BodyWeightExample</p><p>Resource Observation:</p><blockquote>Body Weight: 85 kg measured on 2026-01-15</blockquote><hr/><p>Entry 9 - fullUrl = http://example.org/Observation/BMIExample</p><p>Resource Observation:</p><blockquote>BMI: 27.5 kg/m2 measured on 2026-01-15</blockquote><hr/><p>Entry 10 - fullUrl = http://example.org/Observation/WaistCircumferenceExample</p><p>Resource Observation:</p><blockquote>Waist Circumference: 95 cm measured on 2026-01-15</blockquote><hr/><p>Entry 11 - fullUrl = http://example.org/Observation/HbA1cExample</p><p>Resource Observation:</p><blockquote>Hemoglobin A1c: 6.5% measured on 2026-01-15</blockquote><hr/><p>Entry 12 - fullUrl = http://example.org/Observation/eGFRExample</p><p>Resource Observation:</p><blockquote>eGFR: 75 mL/min/1.73m2 measured on 2026-01-15</blockquote><hr/><p>Entry 13 - fullUrl = http://example.org/Observation/uACRExample</p><p>Resource Observation:</p><blockquote>Urine Albumin-Creatinine Ratio: 45 mg/g measured on 2026-01-15</blockquote><hr/><p>Entry 14 - fullUrl = http://example.org/Observation/LDLCholesterolExample</p><p>Resource Observation:</p><blockquote>LDL Cholesterol: 140 mg/dL measured on 2026-01-15</blockquote></td></tr></table></div>
 
   
 
@@ -230,10 +233,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

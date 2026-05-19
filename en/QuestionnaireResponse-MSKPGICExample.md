@@ -1,4 +1,4 @@
-# MSK PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# MSK PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: MSK PGIC QuestionnaireResponse Example
 
@@ -29,7 +29,13 @@ PGIC QuestionnaireResponse for John Doe. Response: Very much improved.
     "linkId" : "pgic-1",
     "text" : "Since beginning treatment, how would you describe your overall change in pain, function, and quality of life?",
     "answer" : [{
-      "valueDecimal" : 1
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "display" : "Very much improved"
+      }
     }]
   }]
 }

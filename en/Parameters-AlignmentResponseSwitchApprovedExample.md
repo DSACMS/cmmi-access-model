@@ -1,4 +1,4 @@
-# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.6
+# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: Alignment Response - Switch Approved Example
 

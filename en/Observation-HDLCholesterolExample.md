@@ -1,4 +1,4 @@
-# HDL Cholesterol Example - CMS ACCESS Model API v0.9.6
+# HDL Cholesterol Example - CMS ACCESS Model API v0.9.8
 
 ## Example Observation: HDL Cholesterol Example
 

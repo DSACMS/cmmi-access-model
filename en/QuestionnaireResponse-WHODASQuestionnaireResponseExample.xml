@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="WHODASQuestionnaireResponseExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>WHODAS 2.0 (12-item) QuestionnaireResponse for John Doe. Total score: 26.</p></div>
+  </text>
+  <questionnaire value="http://example.org/Questionnaire/WHODASQuestionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <authored value="2026-01-15T10:30:00Z"/>
+  <author>
+    <reference value="Patient/PatientExample"/>
+  </author>
+  <item>
+    <linkId value="whodas-s1"/>
+    <text value="Standing for long periods such as 30 minutes"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s2"/>
+    <text value="Taking care of household responsibilities"/>
+    <answer>
+      <valueString value="Moderate"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s3"/>
+    <text value="Learning a new task, for example learning how to get to a new place"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s4"/>
+    <text value="How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s5"/>
+    <text value="How much of a problem did you have with being emotionally affected by your health problems?"/>
+    <answer>
+      <valueString value="Moderate"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s6"/>
+    <text value="Concentrating on doing something for ten minutes?"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s7"/>
+    <text value="Walking a long distance such as a kilometer [or equivalent]?"/>
+    <answer>
+      <valueString value="Moderate"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s8"/>
+    <text value="Washing your whole body?"/>
+    <answer>
+      <valueString value="None"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s9"/>
+    <text value="Getting dressed?"/>
+    <answer>
+      <valueString value="None"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s10"/>
+    <text value="Dealing with people you do not know"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s11"/>
+    <text value="Maintaining a friendship"/>
+    <answer>
+      <valueString value="Mild"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-s12"/>
+    <text value="Your day-to-day work"/>
+    <answer>
+      <valueString value="Moderate"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-h1"/>
+    <text value="Overall, in the past 30 days, how many days were these difficulties present?"/>
+    <answer>
+      <valueDecimal value="3"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-h2"/>
+    <text value="In the past 30 days, for how many days were you totally unable to carry out your usual activities or work because of any health condition?"/>
+    <answer>
+      <valueDecimal value="3"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="whodas-h3"/>
+    <text value="In the past 30 days, not counting the days that you were totally unable, for how many days did you cut back or reduce your usual activities or work because of any health condition?"/>
+    <answer>
+      <valueDecimal value="3"/>
+    </answer>
+  </item>
+  <item>
+    <linkId value="total-score"/>
+    <answer>
+      <valueDecimal value="26"/>
+    </answer>
+  </item>
+</QuestionnaireResponse>

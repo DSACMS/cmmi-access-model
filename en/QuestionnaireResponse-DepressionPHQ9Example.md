@@ -1,4 +1,4 @@
-# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: PHQ-9 QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -91,7 +91,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 0
         }],
         "system" : "http://loinc.org",
@@ -106,7 +106,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -121,7 +121,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -136,7 +136,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 0
         }],
         "system" : "http://loinc.org",
@@ -151,7 +151,7 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 0
         }],
         "system" : "http://loinc.org",
@@ -162,31 +162,23 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
   },
   {
     "linkId" : "phq9-10",
-    "text" : "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+    "text" : "How difficult have these made it for you to do your work, take care of things at home, or get along with other people?",
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
-        "code" : "LA6569-3",
-        "display" : "Several days"
+        "code" : "LA6573-5",
+        "display" : "Somewhat difficult"
       }
     }]
   },
   {
     "linkId" : "total-score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 7
-        }],
-        "system" : "http://loinc.org",
-        "code" : "44261-6",
-        "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-      }
+      "valueDecimal" : 7
     }]
   }]
 }

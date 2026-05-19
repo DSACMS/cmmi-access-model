@@ -1,4 +1,4 @@
-# Submission Status Response Example - CMS ACCESS Model API v0.9.6
+# Submission Status Response Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: Submission Status Response Example
 

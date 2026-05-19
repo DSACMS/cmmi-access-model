@@ -60,7 +60,7 @@
         </coding>
       </code>
       <entry>
-        <reference value="QuestionnaireResponse/PROMISCATExample"/>
+        <reference value="QuestionnaireResponse/PROMISPhysicalFunctionCATExample"/>
       </entry>
     </section>
     <section>

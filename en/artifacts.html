@@ -2,10 +2,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Artifacts - CMS ACCESS Model API v0.9.6</title>
+    <title>Artifacts - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -41,7 +42,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3"}
@@ -55,11 +58,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -147,7 +150,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Artifacts</h2>
   
 
@@ -357,7 +360,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="profiles-1">Profiles</h4>
+<h4 id="operation-profiles">Operation Profiles</h4>
 
 <p>These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.</p>
 
@@ -434,78 +437,62 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="profiles-2">Profiles</h4>
+<h4 id="operation-profiles-1">Operation Profiles</h4>
 
-<p>These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.</p>
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-align-in.html">ACCESS Alignment Request Parameters</a></td>
-      <td>Input parameters for the $align operation</td>
+      <td><a href="StructureDefinition-access-check-eligibility-in.html">ACCESS Check Eligibility Request Parameters</a></td>
+      <td>Input parameters for the $check-eligibility operation</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-access-align-out.html">ACCESS Alignment Response Parameters</a></td>
-      <td>Output parameters for the $align operation</td>
+      <td><a href="StructureDefinition-access-check-eligibility-out.html">ACCESS Check Eligibility Response Parameters</a></td>
+      <td>Output parameters for the $check-eligibility operation</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="value-sets-2">Value Sets</h4>
 
-<p>These define sets of codes used by systems conforming to the ACCESS Alignment API.</p>
+<p>These define sets of codes used by systems conforming to the ACCESS Eligibility API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESS Alignment Result Value Set</a></td>
-      <td>Value set including all alignment result codes</td>
-    </tr>
-    <tr>
-      <td><a href="ValueSet-ACCESSEventTypeVS.html">ACCESS Event Type Value Set</a></td>
-      <td>Value set including all event notification type codes</td>
+      <td><a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESS Eligibility Result Value Set</a></td>
+      <td>Value set including all eligibility result codes</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="code-systems-2">Code Systems</h4>
 
-<p>These define new code systems used by systems conforming to the ACCESS Alignment API.</p>
+<p>These define new code systems used by systems conforming to the ACCESS Eligibility API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="CodeSystem-ACCESSAlignmentResultCS.html">ACCESS Alignment Result Code System</a></td>
-      <td>Codes indicating the result of an alignment request</td>
-    </tr>
-    <tr>
-      <td><a href="CodeSystem-ACCESSEventTypeCS.html">ACCESS Event Type Code System</a></td>
-      <td>Codes for types of notification events that trigger subscription notifications</td>
+      <td><a href="CodeSystem-ACCESSEligibilityResultCS.html">ACCESS Eligibility Result Code System</a></td>
+      <td>Codes indicating the result of an eligibility check</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="examples-1">Examples</h4>
 
-<p>These are example instances demonstrating the use of the Alignment API.</p>
+<p>These are example instances demonstrating the use of the Eligibility API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="Parameters-AlignmentRequestExample.html">Alignment Request Example</a></td>
-      <td>Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint</td>
+      <td><a href="Parameters-CheckEligibilityRequestExample.html">Check Eligibility Request Example</a></td>
+      <td>Example request for checking patient eligibility including participant ID, payer ID, patient details, and track</td>
     </tr>
     <tr>
-      <td><a href="Parameters-AlignmentRequestWithSwitchConsentExample.html">Alignment Request with Switch Consent Example</a></td>
-      <td>Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period</td>
-    </tr>
-    <tr>
-      <td><a href="Parameters-AlignmentResponseAlignedExample.html">Alignment Response - Aligned</a></td>
-      <td>Example successful response indicating patient has been aligned to the ACCESS participant</td>
-    </tr>
-    <tr>
-      <td><a href="Parameters-AlignmentResponseSwitchApprovedExample.html">Alignment Response - Switch Approved</a></td>
-      <td>Example successful response indicating patient provider switch has been approved and patient is re-aligned</td>
+      <td><a href="Parameters-CheckEligibilityResponseEligibleExample.html">Check Eligibility Response - Eligible</a></td>
+      <td>Example successful response indicating patient is eligible for the ACCESS Model</td>
     </tr>
   </tbody>
 </table>
@@ -527,7 +514,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="profiles-3">Profiles</h4>
+<h4 id="operation-profiles-2">Operation Profiles</h4>
 
 <p>These define constraints on FHIR resources for systems conforming to the ACCESS Unalignment API.</p>
 
@@ -628,7 +615,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </tbody>
 </table>
 
-<h4 id="profiles-4">Profiles</h4>
+<h4 id="operation-profiles-3">Operation Profiles</h4>
 
 <p>These define constraints on FHIR resources for systems conforming to the ACCESS Data Reporting API.</p>
 
@@ -737,19 +724,39 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 <table class="grid">
   <tbody>
     <tr>
+      <td><a href="Parameters-eCKMReportDataRequestExample.html">eCKM Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a eCKM track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-eCKMReportDataBundleExample.html">eCKM Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and clinical observations for the eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-eCKMReportDataCompositionExample.html">eCKM Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the eCKM track reporting</td>
+    </tr>
+    <tr>
       <td><a href="Parameters-CKMReportDataRequestExample.html">CKM Report Data Request Example</a></td>
       <td>Example request Parameters for submitting a CKM track data report</td>
     </tr>
     <tr>
       <td><a href="Bundle-CKMReportDataBundleExample.html">CKM Report Data Bundle Example</a></td>
-      <td>Example document bundle containing composition, patient, and clinical observations for the CKM/eCKM track</td>
+      <td>Example document bundle containing composition, patient, and clinical observations for the CKM track</td>
     </tr>
     <tr>
       <td><a href="Composition-CKMReportDataCompositionExample.html">CKM Report Data Composition Example</a></td>
-      <td>Example composition organizing clinical data for the CKM/eCKM track reporting</td>
+      <td>Example composition organizing clinical data for the CKM track reporting</td>
     </tr>
     <tr>
       <td><a href="Observation-BloodPressureExample.html">Blood Pressure Example</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample2.html">Blood Pressure Example 2</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample3.html">Blood Pressure Example 3</a></td>
       <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
     </tr>
     <tr>
@@ -816,47 +823,47 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Example composition organizing clinical data for the MSK track reporting</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-PROMISPhysicalFunctionExample.html">PROMIS Physical Function Short Form 6b QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-PROMISPhysicalFunctionExample.html">PROMIS Physical Function Short Form 6b Example</a></td>
       <td>Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-PROMISCATExample.html">PROMIS Physical Function CAT QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-PROMISCATExample.html">PROMIS Physical Function CAT Example</a></td>
       <td>Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-PROMISPainInterferenceSFExample.html">PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceSFExample.html">PROMIS Pain Interference Short Form 6a Example</a></td>
       <td>Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-PROMISPainInterferenceCATExample.html">PROMIS Pain Interference CAT QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceCATExample.html">PROMIS Pain Interference CAT Example</a></td>
       <td>Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-OswestryDisabilityIndexExample.html">Oswestry Disability Index QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-OswestryDisabilityIndexExample.html">Oswestry Disability Index Example</a></td>
       <td>Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-NeckDisabilityIndexExample.html">Neck Disability Index QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-NeckDisabilityIndexExample.html">Neck Disability Index Example</a></td>
       <td>Example Neck Disability Index (NDI) QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-QuickDASHExample.html">QuickDASH QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-QuickDASHExample.html">QuickDASH Example</a></td>
       <td>Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-MSKPGICExample.html">MSK PGIC QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-MSKPGICExample.html">Musculoskeletal PGIC Example</a></td>
       <td>Example Patient Global Impression of Change QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-KOOSJRExample.html">KOOS JR QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-KOOSJRExample.html">KOOS JR Example</a></td>
       <td>Example KOOS JR QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-HOOSJRExample.html">HOOS JR QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-HOOSJRExample.html">HOOS JR Example</a></td>
       <td>Example HOOS JR QuestionnaireResponse for the MSK track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-PROMISNRSExample.html">PROMIS Pain Intensity NRS QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-PROMISNRSExample.html">PROMIS Pain Intensity NRS Example</a></td>
       <td>Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track</td>
     </tr>
   </tbody>
@@ -879,20 +886,102 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
       <td>Example composition organizing clinical data for BH track reporting</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-DepressionPHQ9Example.html">PHQ-9 QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-DepressionPHQ9Example.html">Depression PHQ-9 Example</a></td>
       <td>Example PHQ-9 QuestionnaireResponse for the BH track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-AnxietyGAD7Example.html">GAD-7 QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-AnxietyGAD7Example.html">Anxiety GAD-7 Example</a></td>
       <td>Example GAD-7 QuestionnaireResponse for the BH track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-BHWHODASExample.html">WHODAS 2.0 QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-WHODASExample.html">WHODAS 2.0 Example</a></td>
       <td>Example WHODAS 2.0 QuestionnaireResponse for the BH track</td>
     </tr>
     <tr>
-      <td><a href="QuestionnaireResponse-BHPGICExample.html">BH PGIC QuestionnaireResponse Example</a></td>
+      <td><a href="QuestionnaireResponse-BHPGICExample.html">Behavioral Health PGIC Example</a></td>
       <td>Example Behavioral Health PGIC QuestionnaireResponse for the BH track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="example-questionnaires">Example Questionnaires</h4>
+
+<p>These questionnaire examples provide additional information to implementers and a better understanding of how the QuestionnaireResponse profiles interact with their associated questionnaires, particularly linkIds between the questionnaire items and the corresponding individual responses.</p>
+
+<p>The Data Reporting API leverages USCoreQuestionnaireResponse profile, which requires a canonical URL for the underlying questionnaire associated with the questionnaire response.  If the FHIR questionnaire is publicly available, it can be referenced through its canonical URL from the questionnaire response.</p>
+
+<p>Otherwise, the questionnaire should be included in the ACCESS Data Reporting Bundle and referenced from the matching questionnaire response.</p>
+
+<h5 id="musculoskeletal-msk-track-1">Musculoskeletal (MSK) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-PROMISPhysicalFunctionQuestionnaireExample.html">PROMIS Physical Function Short Form 6b Questionnaire Example</a></td>
+      <td>Example PROMIS Physical Function (PF) Short Form 6b Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPhysicalFunctionCATQuestionnaireExample.html">PROMIS Physical Function CAT Questionnaire Example</a></td>
+      <td>Example PROMIS Physical Function CAT Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPainInterferenceSFQuestionnaireExample.html">PROMIS Pain Interference Short Form 6a Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Interference (PI) Short Form 6a Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPainInterferenceCATQuestionnaireExample.html">PROMIS Pain Interference CAT Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Interference CAT Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-OswestryDisabilityIndexQuestionnaireExample.html">Oswestry Disability Index Questionnaire Example</a></td>
+      <td>Example Oswestry Disability Index (ODI) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-NeckDisabilityIndexQuestionnaireExample.html">Neck Disability Index Questionnaire Example</a></td>
+      <td>Example Neck Disability Index (NDI) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-QuickDASHQuestionnaireExample.html">QuickDASH Questionnaire Example</a></td>
+      <td>Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-MSKPGICQuestionnaireExample.html">MSK PGIC Questionnaire Example</a></td>
+      <td>Example Patient Global Impression of Change Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-KOOSJRQuestionnaireExample.html">KOOS JR Questionnaire Example</a></td>
+      <td>Example KOOS JR Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-HOOSJRQuestionnaireExample.html">HOOS JR Questionnaire Example</a></td>
+      <td>Example HOOS JR Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISNRSQuestionnaireExample.html">PROMIS Pain Intensity NRS Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Intensity NRS Questionnaire</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="behaviorial-health-bh-track-1">Behaviorial Health (BH) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-PHQ9QuestionnaireExample.html">PHQ-9 Questionnaire Example</a></td>
+      <td>Example PHQ-9 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-GAD7QuestionnaireExample.html">GAD-7 Questionnaire Example</a></td>
+      <td>Example GAD-7 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-WHODASQuestionnaireExample.html">WHODAS 2.0 Questionnaire Example</a></td>
+      <td>Example WHODAS 2.0 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-BHPGICQuestionnaireExample.html">BH PGIC Questionnaire Example</a></td>
+      <td>Example Behavioral Health PGIC Questionnaire</td>
     </tr>
   </tbody>
 </table>
@@ -923,10 +1012,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

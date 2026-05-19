@@ -9,14 +9,42 @@
     "oids" : ["2.16.840.1.113883.6.90"],
     "uses" : {
     },
-    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
-    "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
     "ValueSet-ACCESSCKMDiagnosisVS.html" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSeCKMDiagnosisVS.html" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
+    "ValueSet-ACCESSBHDiagnosisVS.html" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
     "ValueSet-ACCESSMSKDiagnosisVS.html" : "ACCESS Musculoskeletal (MSK) Track Qualifying Diagnoses"
   },
   {
+    "url" : "http://loinc.org",
+    "version" : "3.1.0",
+    "status" : "active",
+    "name" : "LOINC",
+    "title" : "Logical Observation Identifiers, Names and Codes (LOINC)",
+    "description" : "LOINC provides a set of universal names and ID codes for identifying laboratory and clinical test results.1,2 LOINC facilitates the exchange and pooling of results, such as blood hemoglobin, serum potassium, or vital signs, for clinical care, outcomes management, and research. LOINC's universal identifiers (names and codes) can be used in the context of order and observation exchanges between information systems that use syntax standards such as HL73, CEN TC251, ISO TC215, ASTM4, and DICOM. Specifically, the identifier can be used as the coded value for an observation in any other standard that uses the observation/observation value paradigm, whether messages, documents, application programming interface (API), etc. For example, LOINC codes are used widely in the OBX segment Observation Identifier field (OBX-3) of an ORU HL7 (HL7 version 2.x or ASTM 1238-9410) message that may be sent between a Clinical Laboratory Information Management Systems (LIMS) and Electronic Health Record Systems (EHR).5, 6 In this way, LOINC codes provide universal identifiers that allow the exchange of clinical data between heterogeneous computing environments.",
+    "oids" : ["2.16.840.1.113883.6.1"],
+    "uses" : {
+    },
+    "https://loinc.org/LLLL1017-4" : "LOINC Answer Codes for LL1017-4",
+    "https://loinc.org/LLLL3907-4" : "LOINC Answer Codes for LL3907-4",
+    "https://loinc.org/LLLL3898-5" : "LOINC Answer Codes for LL3898-5",
+    "https://loinc.org/LLLL4051-0" : "LOINC Answer Codes for LL4051-0",
+    "https://loinc.org/LLLL359-1" : "LOINC Answer Codes for LL359-1",
+    "https://loinc.org/LLLL1022-4" : "LOINC Answer Codes for LL1022-4",
+    "https://loinc.org/LLLL358-3" : "LOINC Answer Codes for LL358-3",
+    "https://loinc.org/LLLL3905-8" : "LOINC Answer Codes for LL3905-8",
+    "https://loinc.org/LLLL1013-3" : "LOINC Answer Codes for LL1013-3",
+    "https://loinc.org/LLLL1021-6" : "LOINC Answer Codes for LL1021-6",
+    "https://loinc.org/LLLL3899-3" : "LOINC Answer Codes for LL3899-3",
+    "https://loinc.org/LLLL3903-3" : "LOINC Answer Codes for LL3903-3",
+    "https://loinc.org/LLLL3906-6" : "LOINC Answer Codes for LL3906-6",
+    "https://loinc.org/LLLL3900-9" : "LOINC Answer Codes for LL3900-9",
+    "https://loinc.org/LLLL3902-5" : "LOINC Answer Codes for LL3902-5",
+    "https://loinc.org/LLLL3904-1" : "LOINC Answer Codes for LL3904-1",
+    "https://loinc.org/LLLL3901-7" : "LOINC Answer Codes for LL3901-7"
+  },
+  {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSAlignmentResultCS",
     "title" : "ACCESS Alignment Request Result Codes",
@@ -27,7 +55,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSEligibilityResultCS",
     "title" : "ACCESS Eligibility Result Codes",
@@ -38,7 +66,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSEventTypeCS",
     "title" : "ACCESS Event Types",
@@ -49,7 +77,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSReportDataResultCS",
     "title" : "ACCESS Report Data Result Codes",
@@ -60,7 +88,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSReportTypeCS",
     "title" : "ACCESS Report Type Codes",
@@ -71,7 +99,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSTrackCS",
     "title" : "ACCESS Model Tracks",
@@ -82,7 +110,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSUnalignmentReasonCS",
     "title" : "ACCESS Unalignment Reason Codes",
@@ -93,7 +121,7 @@
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS",
-    "version" : "0.9.6",
+    "version" : "0.9.8",
     "status" : "draft",
     "name" : "ACCESSUnalignmentResultCS",
     "title" : "ACCESS Unalignment Request Result Codes",
@@ -109,6 +137,7 @@
     "name" : "Ietf3066",
     "title" : "Tags for the Identification of Languages",
     "description" : "Older value from OID registry.  Superceded; see recommendations in BCP-47.",
+    "oids" : ["2.16.840.1.113883.6.121"],
     "uses" : {
     },
     "http://hl7.org/fhir/R4/valueset-languages.html" : "Common Languages"

@@ -1,4 +1,4 @@
-# PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -91,7 +91,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -106,7 +106,7 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -118,29 +118,13 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
   {
     "linkId" : "raw_score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 15
-        }],
-        "system" : "http://loinc.org",
-        "code" : "90974-7",
-        "display" : "PROMIS short form - pain interference 6a - version 1.0 raw score"
-      }
+      "valueDecimal" : 15
     }]
   },
   {
     "linkId" : "tscore",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 58.6
-        }],
-        "system" : "http://loinc.org",
-        "code" : "77865-4",
-        "display" : "PROMIS pain interference - version 1.0 Tscore"
-      }
+      "valueDecimal" : 58.6
     }]
   }]
 }

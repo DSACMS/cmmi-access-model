@@ -1,4 +1,4 @@
-# BH Report Data Request Example - CMS ACCESS Model API v0.9.6
+# BH Report Data Request Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: BH Report Data Request Example
 
@@ -145,7 +145,7 @@
                 }]
               },
               "entry" : [{
-                "reference" : "QuestionnaireResponse/BHWHODASExample"
+                "reference" : "QuestionnaireResponse/WHODASExample"
               }]
             },
             {
@@ -262,7 +262,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -277,7 +277,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -292,7 +292,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 2
                 }],
                 "system" : "http://loinc.org",
@@ -307,7 +307,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -322,7 +322,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 0
                 }],
                 "system" : "http://loinc.org",
@@ -337,7 +337,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -352,7 +352,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -367,7 +367,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 0
                 }],
                 "system" : "http://loinc.org",
@@ -382,7 +382,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 0
                 }],
                 "system" : "http://loinc.org",
@@ -393,31 +393,23 @@
           },
           {
             "linkId" : "phq9-10",
-            "text" : "How difficult have these problems made it for you to do your work, take care of things at home, or get along with other people?",
+            "text" : "How difficult have these made it for you to do your work, take care of things at home, or get along with other people?",
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
-                "code" : "LA6569-3",
-                "display" : "Several days"
+                "code" : "LA6573-5",
+                "display" : "Somewhat difficult"
               }
             }]
           },
           {
             "linkId" : "total-score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 7
-                }],
-                "system" : "http://loinc.org",
-                "code" : "44261-6",
-                "display" : "Patient Health Questionnaire 9 item (PHQ-9) total score [Reported]"
-              }
+              "valueDecimal" : 7
             }]
           }]
         }
@@ -445,11 +437,11 @@
           },
           "item" : [{
             "linkId" : "gad7-1",
-            "text" : "Feeling nervous, anxious or on edge",
+            "text" : "Feeling nervous, anxious, or on edge",
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -460,11 +452,11 @@
           },
           {
             "linkId" : "gad7-2",
-            "text" : "Over the past 2 weeks have you not been able to stop or control worrying",
+            "text" : "Not being able to stop or control worrying",
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -479,7 +471,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -494,7 +486,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -509,7 +501,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 0
                 }],
                 "system" : "http://loinc.org",
@@ -524,7 +516,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -539,7 +531,7 @@
             "answer" : [{
               "valueCoding" : {
                 "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
                   "valueDecimal" : 1
                 }],
                 "system" : "http://loinc.org",
@@ -551,24 +543,16 @@
           {
             "linkId" : "total-score",
             "answer" : [{
-              "valueCoding" : {
-                "extension" : [{
-                  "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-                  "valueDecimal" : 6
-                }],
-                "system" : "http://loinc.org",
-                "code" : "70274-6",
-                "display" : "Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"
-              }
+              "valueDecimal" : 6
             }]
           }]
         }
       },
       {
-        "fullUrl" : "http://example.org/QuestionnaireResponse/BHWHODASExample",
+        "fullUrl" : "http://example.org/QuestionnaireResponse/WHODASExample",
         "resource" : {
           "resourceType" : "QuestionnaireResponse",
-          "id" : "BHWHODASExample",
+          "id" : "WHODASExample",
           "meta" : {
             "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
           },
@@ -589,84 +573,156 @@
             "linkId" : "whodas-s1",
             "text" : "Standing for long periods such as 30 minutes",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s2",
             "text" : "Taking care of household responsibilities",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate"
+              }
             }]
           },
           {
             "linkId" : "whodas-s3",
             "text" : "Learning a new task, for example learning how to get to a new place",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s4",
             "text" : "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s5",
             "text" : "How much of a problem did you have with being emotionally affected by your health problems?",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate"
+              }
             }]
           },
           {
             "linkId" : "whodas-s6",
             "text" : "Concentrating on doing something for ten minutes?",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s7",
             "text" : "Walking a long distance such as a kilometer [or equivalent]?",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate"
+              }
             }]
           },
           {
             "linkId" : "whodas-s8",
             "text" : "Washing your whole body?",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "None"
+              }
             }]
           },
           {
             "linkId" : "whodas-s9",
             "text" : "Getting dressed?",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "None"
+              }
             }]
           },
           {
             "linkId" : "whodas-s10",
             "text" : "Dealing with people you do not know",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s11",
             "text" : "Maintaining a friendship",
             "answer" : [{
-              "valueDecimal" : 2
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 2
+                }],
+                "display" : "Mild"
+              }
             }]
           },
           {
             "linkId" : "whodas-s12",
             "text" : "Your day-to-day work",
             "answer" : [{
-              "valueDecimal" : 3
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 3
+                }],
+                "display" : "Moderate"
+              }
             }]
           },
           {
@@ -723,7 +779,13 @@
             "linkId" : "pgic-1",
             "text" : "Since beginning treatment, how would you describe your overall change in activity limitations, symptoms, emotions, and quality of life?",
             "answer" : [{
-              "valueDecimal" : 1
+              "valueCoding" : {
+                "extension" : [{
+                  "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+                  "valueDecimal" : 1
+                }],
+                "display" : "Very much improved"
+              }
             }]
           }]
         }

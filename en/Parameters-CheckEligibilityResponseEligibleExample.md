@@ -1,4 +1,4 @@
-# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.6
+# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: Check Eligibility Response - Eligible Example
 

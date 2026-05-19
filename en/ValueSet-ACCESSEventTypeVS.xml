@@ -4,15 +4,15 @@
   <id value="ACCESSEventTypeVS"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSEventTypeVS</b></p><a name="ACCESSEventTypeVS"> </a><a name="hcACCESSEventTypeVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSEventTypeCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS</code></a><span title="Version is explicitly stated to be 0.9.6"> version &#x1F4CD;0.9.6</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSEventTypeVS</b></p><a name="ACCESSEventTypeVS"> </a><a name="hcACCESSEventTypeVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSEventTypeCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS</code></a><span title="Version is explicitly stated to be 0.9.8"> version &#x1F4CD;0.9.8</span></li></ul></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEventTypeVS"/>
-  <version value="0.9.6"/>
+  <version value="0.9.8"/>
   <name value="ACCESSEventTypeVS"/>
   <title value="ACCESS Event Types Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-04-24T13:45:33-04:00"/>
+  <date value="2026-05-18T15:59:44-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -37,7 +37,7 @@
   <compose>
     <include>
       <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS"/>
-      <version value="0.9.6"/>
+      <version value="0.9.8"/>
     </include>
   </compose>
 </ValueSet>

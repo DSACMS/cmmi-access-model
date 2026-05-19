@@ -1,4 +1,4 @@
-# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.6
+# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.8
 
 ## Example Composition: MSK Data Reporting Composition Example
 
@@ -74,7 +74,7 @@ Author: Jane Smith
         }]
       },
       "entry" : [{
-        "reference" : "QuestionnaireResponse/PROMISCATExample"
+        "reference" : "QuestionnaireResponse/PROMISPhysicalFunctionCATExample"
       }]
     },
     {

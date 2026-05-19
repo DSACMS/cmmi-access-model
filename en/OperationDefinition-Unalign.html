@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Unalignment Request - CMS ACCESS Model API v0.9.6</title>
+    <title>Unalignment Request - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,7 +44,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.27"}
@@ -57,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -143,7 +146,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -194,7 +197,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.6<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign|0.9.6"/></span>
+      <span class="copy-text">0.9.8<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign|0.9.8"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -219,7 +222,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -247,6 +250,100 @@
 
 
 
+<div style="display:inline-block" markdown="1">
+
+<h3 id="handy-references">Handy References</h3>
+
+<h4 id="operation-profiles">Operation Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-unalign-in.html">ACCESS Unalignment Request Parameters</a></td>
+      <td>Input parameters for the $unalign operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-unalign-out.html">ACCESS Unalignment Response Parameters</a></td>
+      <td>Output parameters for the $unalign operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-clinical-exclusion-condition.html">ACCESS Clinical Exclusion Condition</a></td>
+      <td>ICD-10-CM diagnosis codes that disqualify a patient from the ACCESS Model</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSUnalignmentResultVS.html">ACCESS Unalignment Result Value Set</a></td>
+      <td>Value set including all unalignment result codes</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSUnalignmentReasonVS.html">ACCESS Unalignment Reason Value Set</a></td>
+      <td>Value set including all unalignment reason codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSUnalignmentResultCS.html">ACCESS Unalignment Result Code System</a></td>
+      <td>Codes indicating the result of an unalignment request</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSUnalignmentReasonCS.html">ACCESS Unalignment Reason Code System</a></td>
+      <td>Codes indicating the reason for an unalignment request</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Unalignment API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-UnalignmentRequestExample.html">Unalignment Request Example</a></td>
+      <td>Example request for unaligning a patient including participant ID, payer ID, patient details, track, and reason for unalignment (geographic relocation)</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-UnalignmentRequestESRDExample.html">Unalignment Request - ESRD Example</a></td>
+      <td>Example unalignment request for patient who developed end-stage renal disease (ESRD), demonstrating the no-longer-clinically-eligible reason code</td>
+    </tr>
+    <tr>
+      <td><a href="Patient-PatientESRDExample.html">Patient with ESRD - Unalignment Example</a></td>
+      <td>Example patient Jane Smith who has developed ESRD making her ineligible for the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="Condition-ESRDConditionExample.html">End Stage Renal Disease Condition Example</a></td>
+      <td>Example active ESRD diagnosis (ICD-10-CM N18.6) that disqualifies patient from ACCESS Model participation</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-UnalignmentResponseUnalignedExample.html">Unalignment Response - Unaligned</a></td>
+      <td>Example successful response indicating patient has been manually unaligned from the ACCESS Model</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
+
+
+
 <!--  <p>
   Formats: <a href="OperationDefinition-Unalign.xml.html">XML</a>, <a href="OperationDefinition-Unalign.json.html">JSON</a>, <a href="OperationDefinition-Unalign.ttl.html">Turtle</a>
   </p>-->
@@ -256,7 +353,7 @@
 
   <div data-fhir="generated"><p class="res-header-id"/><a name="Unalign"> </a><a name="hcUnalign"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p></div><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href="StructureDefinition-access-unalign-in.html">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class="grid" data-fhir="generated"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345).</p>
 </div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#Identifier">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>
-</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>
+</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></td><td/><td><div><p>Patient information.  If the payer is Medicare, it <strong>SHALL</strong> contain the Medicare Beneficiary Identifier (MBI).</p>
 </div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td><a href="ValueSet-ACCESSTrackVS.html">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>
 </div></td></tr><tr><td>IN</td><td>condition</td><td/><td>0..*</td><td><a href="http://hl7.org/fhir/R4/condition.html">Condition</a></td><td/><td><div><p>Patient's conditions.</p>
 </div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href="http://hl7.org/fhir/R4/datatypes.html#CodeableConcept">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>
@@ -292,10 +389,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

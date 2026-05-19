@@ -1,4 +1,4 @@
-# KOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# KOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: KOOS JR QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 1
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -91,7 +91,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -106,7 +106,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 2
         }],
         "system" : "http://loinc.org",
@@ -121,7 +121,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 3
         }],
         "system" : "http://loinc.org",
@@ -133,15 +133,7 @@ KOOS JR QuestionnaireResponse for John Doe. Total interval score: 50.012.
   {
     "linkId" : "total-interval-score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 50.012
-        }],
-        "system" : "http://loinc.org",
-        "code" : "82332-8",
-        "display" : "Total interval score [KOOSJR]"
-      }
+      "valueDecimal" : 50.012
     }]
   }]
 }

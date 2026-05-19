@@ -22,7 +22,12 @@
     <linkId value="pgic-1"/>
     <text value="Since beginning treatment, how would you describe your overall change in pain, function, and quality of life?"/>
     <answer>
-      <valueDecimal value="1"/>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <display value="Very much improved"/>
+      </valueCoding>
     </answer>
   </item>
 </QuestionnaireResponse>

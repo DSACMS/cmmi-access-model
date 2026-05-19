@@ -1,4 +1,4 @@
-# Alignment Response - Aligned Example - CMS ACCESS Model API v0.9.6
+# Alignment Response - Aligned Example - CMS ACCESS Model API v0.9.8
 
 ## Example Parameters: Alignment Response - Aligned Example
 

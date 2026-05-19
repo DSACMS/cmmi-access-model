@@ -1,4 +1,4 @@
-# Organization Example - CMS ACCESS Model API v0.9.6
+# Organization Example - CMS ACCESS Model API v0.9.8
 
 ## Example Organization: Organization Example
 

@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="eCKMReportDataRequestExample"/>
+  <meta>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in"/>
+  </meta>
+  <language value="en"/>
+  <parameter>
+    <name value="participantID"/>
+    <valueIdentifier>
+      <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
+      <value value="ACCES12345"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="payerID"/>
+    <valueIdentifier>
+      <type>
+        <coding>
+          <system value="http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType"/>
+          <code value="payerid"/>
+          <display value="Payer ID"/>
+        </coding>
+      </type>
+      <system value="urn:oid:2.16.840.1.113883.3.221.5"/>
+      <value value="12345"/>
+    </valueIdentifier>
+  </parameter>
+  <parameter>
+    <name value="track"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
+        <code value="eCKM"/>
+        <display value="Early Cardio-Kidney-Metabolic track"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="reportType"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS"/>
+        <code value="baseline"/>
+        <display value="Baseline Data Report"/>
+      </coding>
+    </valueCodeableConcept>
+  </parameter>
+  <parameter>
+    <name value="dataBundle"/>
+    <resource>
+      <Bundle>
+        <id value="eCKMReportDataBundleExample"/>
+        <meta>
+          <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle"/>
+        </meta>
+        <language value="en"/>
+        <identifier>
+          <system value="http://example.org/data-bundle-id"/>
+          <value value="bundle-eckm-001"/>
+        </identifier>
+        <type value="document"/>
+        <timestamp value="2026-01-26T12:00:00Z"/>
+        <entry>
+          <fullUrl value="http://example.org/Composition/eCKMReportDataCompositionExample"/>
+          <resource>
+            <Composition>
+              <id value="eCKMReportDataCompositionExample"/>
+              <meta>
+                <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><h3>ACCESS eCKM Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p></div>
+              </text>
+              <status value="final"/>
+              <type>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="74465-6"/>
+                  <display value="Questionnaire response Document"/>
+                </coding>
+              </type>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <date value="2026-01-26T12:00:00Z"/>
+              <author>
+                <reference value="Practitioner/PractitionerExample"/>
+              </author>
+              <title value="ACCESS eCKM Track Data Report"/>
+              <custodian>
+                <reference value="Organization/OrganizationExample"/>
+              </custodian>
+              <section>
+                <title value="Data reporting for eCKM track"/>
+                <code>
+                  <coding>
+                    <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
+                    <code value="eCKM"/>
+                  </coding>
+                </code>
+                <text>
+                  <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>Comprehensive eCKM Track Data Reporting including vital signs (blood pressure, body weight, waist circumference), and laboratory results (HbA1c, lipid panel).</p></div>
+                </text>
+                <section>
+                  <title value="Blood Pressure"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="85354-9"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/BloodPressureExample"/>
+                  </entry>
+                  <entry>
+                    <reference value="Observation/BloodPressureExample2"/>
+                  </entry>
+                  <entry>
+                    <reference value="Observation/BloodPressureExample3"/>
+                  </entry>
+                </section>
+                <section>
+                  <title value="Weight"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="29463-7"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/BodyWeightExample"/>
+                  </entry>
+                </section>
+                <section>
+                  <title value="BMI"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="39156-5"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/BMIExample"/>
+                  </entry>
+                </section>
+                <section>
+                  <title value="Waist Circumference"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="8280-0"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/WaistCircumferenceExample"/>
+                  </entry>
+                </section>
+                <section>
+                  <title value="HbA1c"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="4548-4"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/HbA1cExample"/>
+                  </entry>
+                </section>
+                <section>
+                  <title value="Lipids"/>
+                  <code>
+                    <coding>
+                      <system value="http://loinc.org"/>
+                      <code value="18262-6"/>
+                    </coding>
+                  </code>
+                  <entry>
+                    <reference value="Observation/LDLCholesterolExample"/>
+                  </entry>
+                </section>
+              </section>
+            </Composition>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Patient/PatientExample"/>
+          <resource>
+            <Patient>
+              <id value="PatientExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>
+              </text>
+              <identifier>
+                <type>
+                  <coding>
+                    <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+                    <code value="MC"/>
+                  </coding>
+                </type>
+                <system value="http://terminology.hl7.org/NamingSystem/cmsMBI"/>
+                <value value="1EG4TE5MK73"/>
+              </identifier>
+              <name>
+                <family value="Doe"/>
+                <given value="John"/>
+              </name>
+              <gender value="male"/>
+              <birthDate value="1950-01-01"/>
+            </Patient>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Practitioner/PractitionerExample"/>
+          <resource>
+            <Practitioner>
+              <id value="PractitionerExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Practitioner Jane Smith, NPI: 1234567893</div>
+              </text>
+              <identifier>
+                <system value="http://hl7.org/fhir/sid/us-npi"/>
+                <value value="1234567893"/>
+              </identifier>
+              <name>
+                <family value="Smith"/>
+                <given value="Jane"/>
+              </name>
+            </Practitioner>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Organization/OrganizationExample"/>
+          <resource>
+            <Organization>
+              <id value="OrganizationExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Example Healthcare Organization, ACCESS Participant ID: ACCES12345</div>
+              </text>
+              <identifier>
+                <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
+                <value value="ACCES12345"/>
+              </identifier>
+              <active value="true"/>
+              <name value="Example Healthcare Organization"/>
+            </Organization>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/BloodPressureExample"/>
+          <resource>
+            <Observation>
+              <id value="BloodPressureExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Blood Pressure: 138/88 mm[Hg] measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="85354-9"/>
+                  <display value="Blood pressure panel with all children optional"/>
+                </coding>
+                <text value="Blood Pressure"/>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8480-6"/>
+                    <display value="Systolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="138"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8462-4"/>
+                    <display value="Diastolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="88"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/BloodPressureExample2"/>
+          <resource>
+            <Observation>
+              <id value="BloodPressureExample2"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Blood Pressure: 132/84 mm[Hg] measured on 2026-01-22</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="85354-9"/>
+                  <display value="Blood pressure panel with all children optional"/>
+                </coding>
+                <text value="Blood Pressure"/>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-22T10:30:00Z"/>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8480-6"/>
+                    <display value="Systolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="132"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8462-4"/>
+                    <display value="Diastolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="84"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/BloodPressureExample3"/>
+          <resource>
+            <Observation>
+              <id value="BloodPressureExample3"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Blood Pressure: 140/90 mm[Hg] measured on 2026-02-05</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="85354-9"/>
+                  <display value="Blood pressure panel with all children optional"/>
+                </coding>
+                <text value="Blood Pressure"/>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-02-05T10:30:00Z"/>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8480-6"/>
+                    <display value="Systolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="140"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+              <component>
+                <code>
+                  <coding>
+                    <system value="http://loinc.org"/>
+                    <code value="8462-4"/>
+                    <display value="Diastolic blood pressure"/>
+                  </coding>
+                </code>
+                <valueQuantity>
+                  <value value="90"/>
+                  <unit value="mm[Hg]"/>
+                  <system value="http://unitsofmeasure.org"/>
+                  <code value="mm[Hg]"/>
+                </valueQuantity>
+              </component>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/BodyWeightExample"/>
+          <resource>
+            <Observation>
+              <id value="BodyWeightExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Body Weight: 85 kg measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="29463-7"/>
+                  <display value="Body weight"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <valueQuantity>
+                <value value="85"/>
+                <unit value="kg"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="kg"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/BMIExample"/>
+          <resource>
+            <Observation>
+              <id value="BMIExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">BMI: 27.5 kg/m2 measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="39156-5"/>
+                  <display value="Body mass index (BMI) [Ratio]"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <valueQuantity>
+                <value value="27.5"/>
+                <unit value="kg/m2"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="kg/m2"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/WaistCircumferenceExample"/>
+          <resource>
+            <Observation>
+              <id value="WaistCircumferenceExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-simple-observation|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Waist Circumference: 95 cm measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="vital-signs"/>
+                  <display value="Vital Signs"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="8280-0"/>
+                  <display value="Waist Circumference at umbilicus by Tape measure"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <valueQuantity>
+                <value value="95"/>
+                <unit value="cm"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="cm"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/HbA1cExample"/>
+          <resource>
+            <Observation>
+              <id value="HbA1cExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Hemoglobin A1c: 6.5% measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="laboratory"/>
+                  <display value="Laboratory"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="4548-4"/>
+                  <display value="Hemoglobin A1c/Hemoglobin.total in Blood"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <valueQuantity>
+                <value value="6.5"/>
+                <unit value="%"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="%"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+        <entry>
+          <fullUrl value="http://example.org/Observation/LDLCholesterolExample"/>
+          <resource>
+            <Observation>
+              <id value="LDLCholesterolExample"/>
+              <meta>
+                <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"/>
+              </meta>
+              <language value="en"/>
+              <text>
+                <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">LDL Cholesterol: 140 mg/dL measured on 2026-01-15</div>
+              </text>
+              <status value="final"/>
+              <category>
+                <coding>
+                  <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+                  <code value="laboratory"/>
+                  <display value="Laboratory"/>
+                </coding>
+              </category>
+              <code>
+                <coding>
+                  <system value="http://loinc.org"/>
+                  <code value="18262-6"/>
+                  <display value="Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"/>
+                </coding>
+              </code>
+              <subject>
+                <reference value="Patient/PatientExample"/>
+              </subject>
+              <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+              <valueQuantity>
+                <value value="140"/>
+                <unit value="mg/dL"/>
+                <system value="http://unitsofmeasure.org"/>
+                <code value="mg/dL"/>
+              </valueQuantity>
+            </Observation>
+          </resource>
+        </entry>
+      </Bundle>
+    </resource>
+  </parameter>
+</Parameters>

@@ -1,4 +1,4 @@
-# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Check Eligibility Response Parameters 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
   "resourceType" : "StructureDefinition",
   "id" : "access-check-eligibility-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSCheckEligibilityResponseParameters",
   "title" : "ACCESS Check Eligibility Response Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.8"
       }
     }]
   }

@@ -1,4 +1,4 @@
-# LDL-C DiagnosticReport Example - CMS ACCESS Model API v0.9.6
+# LDL-C DiagnosticReport Example - CMS ACCESS Model API v0.9.8
 
 ## Example DiagnosticReport: LDL-C DiagnosticReport Example
 

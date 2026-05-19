@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.6
+#  - CMS ACCESS Model API v0.9.8
 
 ## 
 
@@ -283,8 +283,8 @@ Content-Type: application/fhir+json
               "code" : {
                 "coding" : [{
                   "system" : "http://loinc.org",
-                  "code" : "57698-3",
-                  "display" : "Lipid panel with direct LDL - Serum or Plasma"
+                  "code" : "18262-6",
+                  "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
                 }]
               },
               "entry" : [{
@@ -843,8 +843,8 @@ Content-Type: application/fhir+json
           "code" : {
             "coding" : [{
               "system" : "http://loinc.org",
-              "code" : "57698-3",
-              "display" : "Lipid panel with direct LDL - Serum or Plasma"
+              "code" : "18262-6",
+              "display" : "Cholesterol in LDL [Mass/volume] in Serum or Plasma by Direct assay"
             }]
           },
           "subject" : {

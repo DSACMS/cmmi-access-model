@@ -1,4 +1,4 @@
-# ACCESS eCKM Track Condition Profile - CMS ACCESS Model API v0.9.6
+# ACCESS eCKM Track Condition Profile - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS eCKM Track Condition Profile 
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-eckm-condi
   "resourceType" : "StructureDefinition",
   "id" : "access-eckm-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSeCKMCondition",
   "title" : "ACCESS eCKM Track Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-eckm-condi
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.6",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-eckm-condi
       "definition" : "Diagnosis code for eCKM track conditions. Values SHALL be from ACCESSeCKMDiagnosisVS (hypertension, dyslipidemia, prediabetes, obesity).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS|0.9.6"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS|0.9.8"
       }
     }]
   }

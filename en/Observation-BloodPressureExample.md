@@ -1,4 +1,4 @@
-# Blood Pressure Example - CMS ACCESS Model API v0.9.6
+# Blood Pressure Example - CMS ACCESS Model API v0.9.8
 
 ## Example Observation: Blood Pressure Example
 

@@ -1,4 +1,4 @@
-# Oswestry Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# Oswestry Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: Oswestry Disability Index QuestionnaireResponse Example
 
@@ -29,84 +29,136 @@ Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.
     "linkId" : "odi-1",
     "text" : "Pain intensity",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "display" : "The pain is moderate at the moment."
+      }
     }]
   },
   {
     "linkId" : "odi-2",
     "text" : "Personal care (washing, dressing, etc.)",
     "answer" : [{
-      "valueDecimal" : 1
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "display" : "I can look after myself normally but it is very painful."
+      }
     }]
   },
   {
     "linkId" : "odi-3",
     "text" : "Lifting",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "display" : "Pain prevents me lifting heavy weights off the floor, but I can manage if they are conveniently placed e.g. on a table."
+      }
     }]
   },
   {
     "linkId" : "odi-4",
     "text" : "Walking",
     "answer" : [{
-      "valueDecimal" : 1
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "display" : "Pain prevents me from walking more than one mile."
+      }
     }]
   },
   {
     "linkId" : "odi-5",
     "text" : "Sitting",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "display" : "Pain prevents me from sitting for more than one hour."
+      }
     }]
   },
   {
     "linkId" : "odi-6",
     "text" : "Standing",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "display" : "Pain prevents me from standing for more than 1 hour."
+      }
     }]
   },
   {
     "linkId" : "odi-7",
     "text" : "Sleeping",
     "answer" : [{
-      "valueDecimal" : 1
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
+        "display" : "My sleep is occasionally interrupted by pain."
+      }
     }]
   },
   {
     "linkId" : "odi-8",
     "text" : "Sex life (if applicable)",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "display" : "My sex life is nearly normal but is very painful."
+      }
     }]
   },
   {
     "linkId" : "odi-9",
     "text" : "Social life",
     "answer" : [{
-      "valueDecimal" : 3
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
+        "display" : "Pain has restricted my social life and I do not go out as often."
+      }
     }]
   },
   {
     "linkId" : "odi-10",
     "text" : "Traveling",
     "answer" : [{
-      "valueDecimal" : 2
+      "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
+        "display" : "Pain is bad but I am able to manage trips over two hours."
+      }
     }]
   },
   {
     "linkId" : "score",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 36
-        }],
-        "system" : "http://loinc.org",
-        "code" : "97909-6",
-        "display" : "Oswestry disability index score ODI"
-      }
+      "valueDecimal" : 36
     }]
   }]
 }

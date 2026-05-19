@@ -20,10 +20,10 @@
   </author>
   <item>
     <linkId value="gad7-1"/>
-    <text value="Feeling nervous, anxious or on edge"/>
+    <text value="Feeling nervous, anxious, or on edge"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -34,10 +34,10 @@
   </item>
   <item>
     <linkId value="gad7-2"/>
-    <text value="Over the past 2 weeks have you not been able to stop or control worrying"/>
+    <text value="Not being able to stop or control worrying"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -51,7 +51,7 @@
     <text value="Worrying too much about different things"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -65,7 +65,7 @@
     <text value="Trouble relaxing"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -79,7 +79,7 @@
     <text value="Being so restless that it is hard to sit still"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="0"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -93,7 +93,7 @@
     <text value="Becoming easily annoyed or irritable"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -107,7 +107,7 @@
     <text value="Feeling afraid as if something awful might happen"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="1"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -119,14 +119,7 @@
   <item>
     <linkId value="total-score"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="6"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="70274-6"/>
-        <display value="Generalized anxiety disorder 7 item (GAD-7) total score [Reported.PHQ]"/>
-      </valueCoding>
+      <valueDecimal value="6"/>
     </answer>
   </item>
 </QuestionnaireResponse>

@@ -1,4 +1,4 @@
-# ACCESS Report Data Result Codes - CMS ACCESS Model API v0.9.6
+# ACCESS Report Data Result Codes - CMS ACCESS Model API v0.9.8
 
 ## CodeSystem: ACCESS Report Data Result Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSReportDataResultCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSReportDataResultCS",
   "title" : "ACCESS Report Data Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

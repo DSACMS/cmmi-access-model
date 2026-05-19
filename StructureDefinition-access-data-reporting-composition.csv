@@ -947,7 +947,7 @@ labelcaption","",0,1,"","","","string {[]} {[]}
 If the section has content (instead of sub-sections), the section.code does not change the meaning or interpretation of the resource that is the content of the section in the comments for the section.code.","Provides computable standardized labels to topics within the document.","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
   <coding>
     <system value=""http://loinc.org""/>
-    <code value=""57698-3""/>
+    <code value=""18262-6""/>
   </coding>
 </valueCodeableConcept>","","","",,"example","Classification of a section of a composition/document.","http://hl7.org/fhir/ValueSet/doc-section-codes|4.0.1","",,,,"Composition.section.code",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","./code",".code"

@@ -1,4 +1,4 @@
-# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.6
+# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.8
 
 ## Resource Profile: ACCESS Submission Status Response Parameters 
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-submission
   "resourceType" : "StructureDefinition",
   "id" : "access-submission-status-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSSubmissionStatusResponseParameters",
   "title" : "ACCESS Submission Status Response Parameters",
   "status" : "draft",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -23,7 +23,7 @@
     <text value="Does your health now limit you in doing two hours of physical labor?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -37,7 +37,7 @@
     <text value="Are you able to do chores such as vacuuming or yard work?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -51,7 +51,7 @@
     <text value="To what extent are you able to carry out your everyday physical activities such as walking, climbing stairs, carrying groceries, or moving a chair?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="3"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -65,7 +65,7 @@
     <text value="Does your health now limit you in walking more than a mile?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="2"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -77,14 +77,7 @@
   <item>
     <linkId value="tscore"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="38"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="91721-1"/>
-        <display value="PROMIS physical function - version 2.0 T-score"/>
-      </valueCoding>
+      <valueDecimal value="38"/>
     </answer>
   </item>
 </QuestionnaireResponse>

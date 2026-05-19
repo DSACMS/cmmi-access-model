@@ -3,10 +3,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>BH Report Data Bundle Example - CMS ACCESS Model API v0.9.6</title>
+    <title>BH Report Data Bundle Example - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,11 +43,13 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
-    <style type="text/css">h2{--heading-prefix:"3.58"}
-    h3,h4,h5,h6{--heading-prefix:"3.58"}</style>
+    <style type="text/css">h2{--heading-prefix:"3.59"}
+    h3,h4,h5,h6{--heading-prefix:"3.59"}</style>
     <div id="segment-header" class="segment">  <!-- segment-header -->
       <div class="container">  <!-- container -->
 
@@ -56,11 +59,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -142,7 +145,7 @@
 
 <!-- layouts\layout-instance-base -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
   
@@ -198,7 +201,7 @@
 
 
 
-  <div data-fhir="generated"><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="BHReportDataBundleExample"> </a><a name="hcBHReportDataBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></p><p>Final Document at 2026-01-26 12:00:00+0000 by <a href="Practitioner-PractitionerExample.html">Practitioner Jane Smith </a> for <a href="Patient-PatientExample.html">John Doe  Male, DoB: 1950-01-01 ( Patient's Medicare number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>ACCESS BH Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p><hr/><div><h2>Data reporting for BH track</h2></div><p>Behavioral Health Track Data Reporting including depression and anxiety assessments and patient-reported outcomes.</p><div><h3>Depression (PHQ-9)</h3></div><div><h3>Anxiety (GAD-7)</h3></div><div><h3>Overall Function (WHODAS 2.0)</h3></div><div><h3>Patient's Global Impression of Change</h3></div></div><hr/><h2>Additional Resources Included in Document</h2><a name="http-//example.org/Patient/PatientExample"> </a><a name="Patient_PatientExample"> </a><a name="hcPatient_PatientExample"> </a><hr/><p>Entry 2 - fullUrl = http://example.org/Patient/PatientExample</p><p>Resource Patient:</p><blockquote>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</blockquote><a name="http-//example.org/Practitioner/PractitionerExample"> </a><a name="Practitioner_PractitionerExample"> </a><a name="hcPractitioner_PractitionerExample"> </a><hr/><p>Entry 3 - fullUrl = http://example.org/Practitioner/PractitionerExample</p><p>Resource Practitioner:</p><blockquote>Practitioner Jane Smith, NPI: 1234567893</blockquote><a name="http-//example.org/Organization/OrganizationExample"> </a><a name="Organization_OrganizationExample"> </a><a name="hcOrganization_OrganizationExample"> </a><hr/><p>Entry 4 - fullUrl = http://example.org/Organization/OrganizationExample</p><p>Resource Organization:</p><blockquote>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</blockquote><a name="http-//example.org/QuestionnaireResponse/DepressionPHQ9Example"> </a><a name="QuestionnaireResponse_DepressionPHQ9Example"> </a><a name="hcQuestionnaireResponse_DepressionPHQ9Example"> </a><hr/><p>Entry 5 - fullUrl = http://example.org/QuestionnaireResponse/DepressionPHQ9Example</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/AnxietyGAD7Example"> </a><a name="QuestionnaireResponse_AnxietyGAD7Example"> </a><a name="hcQuestionnaireResponse_AnxietyGAD7Example"> </a><hr/><p>Entry 6 - fullUrl = http://example.org/QuestionnaireResponse/AnxietyGAD7Example</p><p>Resource QuestionnaireResponse:</p><blockquote><p>GAD-7 QuestionnaireResponse for John Doe. Total score: 6.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/BHWHODASExample"> </a><a name="QuestionnaireResponse_BHWHODASExample"> </a><a name="hcQuestionnaireResponse_BHWHODASExample"> </a><hr/><p>Entry 7 - fullUrl = http://example.org/QuestionnaireResponse/BHWHODASExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>WHODAS 2.0 (12-item) QuestionnaireResponse for John Doe. Total score: 26.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/BHPGICExample"> </a><a name="QuestionnaireResponse_BHPGICExample"> </a><a name="hcQuestionnaireResponse_BHPGICExample"> </a><hr/><p>Entry 8 - fullUrl = http://example.org/QuestionnaireResponse/BHPGICExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PGIC QuestionnaireResponse for John Doe. Response: Very much improved.</p></blockquote></div>
+  <div data-fhir="generated"><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Details</b></p><p class="res-header-id"/><a name="BHReportDataBundleExample"> </a><a name="hcBHReportDataBundleExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px">Language: en</p><p style="margin-bottom: 0px">Profile: <a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></p><p>Final Document at 2026-01-26 12:00:00+0000 by <a href="Practitioner-PractitionerExample.html">Practitioner Jane Smith </a> for <a href="Patient-PatientExample.html">John Doe  Male, DoB: 1950-01-01 ( Patient's Medicare number)</a> </p></div></div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Subject</b></p>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div><hr/><div style="border: 1px solid maroon; padding: 10px; background-color: #f2faf9; min-height: 160px;"><p><b>Document Content</b></p><h3>ACCESS BH Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p><hr/><div><h2>Data reporting for BH track</h2></div><p>Behavioral Health Track Data Reporting including depression and anxiety assessments and patient-reported outcomes.</p><div><h3>Depression (PHQ-9)</h3></div><div><h3>Anxiety (GAD-7)</h3></div><div><h3>Overall Function (WHODAS 2.0)</h3></div><div><h3>Patient's Global Impression of Change</h3></div></div><hr/><h2>Additional Resources Included in Document</h2><a name="http-//example.org/Patient/PatientExample"> </a><a name="Patient_PatientExample"> </a><a name="hcPatient_PatientExample"> </a><hr/><p>Entry 2 - fullUrl = http://example.org/Patient/PatientExample</p><p>Resource Patient:</p><blockquote>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</blockquote><a name="http-//example.org/Practitioner/PractitionerExample"> </a><a name="Practitioner_PractitionerExample"> </a><a name="hcPractitioner_PractitionerExample"> </a><hr/><p>Entry 3 - fullUrl = http://example.org/Practitioner/PractitionerExample</p><p>Resource Practitioner:</p><blockquote>Practitioner Jane Smith, NPI: 1234567893</blockquote><a name="http-//example.org/Organization/OrganizationExample"> </a><a name="Organization_OrganizationExample"> </a><a name="hcOrganization_OrganizationExample"> </a><hr/><p>Entry 4 - fullUrl = http://example.org/Organization/OrganizationExample</p><p>Resource Organization:</p><blockquote>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</blockquote><a name="http-//example.org/QuestionnaireResponse/DepressionPHQ9Example"> </a><a name="QuestionnaireResponse_DepressionPHQ9Example"> </a><a name="hcQuestionnaireResponse_DepressionPHQ9Example"> </a><hr/><p>Entry 5 - fullUrl = http://example.org/QuestionnaireResponse/DepressionPHQ9Example</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/AnxietyGAD7Example"> </a><a name="QuestionnaireResponse_AnxietyGAD7Example"> </a><a name="hcQuestionnaireResponse_AnxietyGAD7Example"> </a><hr/><p>Entry 6 - fullUrl = http://example.org/QuestionnaireResponse/AnxietyGAD7Example</p><p>Resource QuestionnaireResponse:</p><blockquote><p>GAD-7 QuestionnaireResponse for John Doe. Total score: 6.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/WHODASExample"> </a><a name="QuestionnaireResponse_WHODASExample"> </a><a name="hcQuestionnaireResponse_WHODASExample"> </a><hr/><p>Entry 7 - fullUrl = http://example.org/QuestionnaireResponse/WHODASExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>WHODAS 2.0 (12-item) QuestionnaireResponse for John Doe. Total score: 26.</p></blockquote><a name="http-//example.org/QuestionnaireResponse/BHPGICExample"> </a><a name="QuestionnaireResponse_BHPGICExample"> </a><a name="hcQuestionnaireResponse_BHPGICExample"> </a><hr/><p>Entry 8 - fullUrl = http://example.org/QuestionnaireResponse/BHPGICExample</p><p>Resource QuestionnaireResponse:</p><blockquote><p>PGIC QuestionnaireResponse for John Doe. Response: Very much improved.</p></blockquote></div>
 
   
 
@@ -230,10 +233,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

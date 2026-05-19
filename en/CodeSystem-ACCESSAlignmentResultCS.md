@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.6
+# ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.8
 
 ## CodeSystem: ACCESS Alignment Request Result Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSAlignmentResultCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "ACCESSAlignmentResultCS",
   "title" : "ACCESS Alignment Request Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -51,11 +51,16 @@ This Code system is referenced in the definition of the following value sets:
   "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 7,
+  "count" : 10,
   "concept" : [{
     "code" : "aligned",
     "display" : "Aligned",
     "definition" : "Patient is eligible and has been aligned so the participant can now begin providing services to the patient under the ACCESS Model."
+  },
+  {
+    "code" : "aligned-switch-approved",
+    "display" : "Aligned and switch approved",
+    "definition" : "The request to switch the patient's alignment from a different participant after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned."
   },
   {
     "code" : "not-aligned-control-group",
@@ -83,9 +88,19 @@ This Code system is referenced in the definition of the following value sets:
     "definition" : "The patient does not have a treating diagnosis that qualifies them for service in the track indicated and therefore cannot get services under the ACCESS Model."
   },
   {
-    "code" : "aligned-switch-approved",
-    "display" : "Aligned and switch approved",
-    "definition" : "The request to switch the patient's alignment from a different participant after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned."
+    "code" : "not-aligned-clinical-exclusion",
+    "display" : "Not aligned - clinical exclusion",
+    "definition" : "The patient has a clinical exclusion that prevents them from receiving services under the ACCESS Model."
+  },
+  {
+    "code" : "not-aligned-mismatch",
+    "display" : "Not aligned - mismatch",
+    "definition" : "The patient information provided does not match the patient information on record."
+  },
+  {
+    "code" : "not-aligned-no-switch-attestation",
+    "display" : "Not aligned - no switch attestation",
+    "definition" : "Participant switch request did not include switch consent attestation."
   }]
 }
 

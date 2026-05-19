@@ -3,15 +3,15 @@
   "id" : "Unalign",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Unalign</b></p><a name=\"Unalign\"> </a><a name=\"hcUnalign\"> </a><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-unalign-in.html\">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  It <strong>SHOULD</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>\n</div></td></tr><tr><td>IN</td><td>condition</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>\n</div></td></tr></table></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: OperationDefinition Unalign</b></p><a name=\"Unalign\"> </a><a name=\"hcUnalign\"> </a><p>URL: [base]/Patient/$unalign</p><p>Input parameters Profile:<a href=\"StructureDefinition-access-unalign-in.html\">ACCESS Unalignment Request Parameters</a></p><h3>Parameters</h3><table class=\"grid\"><tr><td><b>Use</b></td><td><b>Name</b></td><td><b>Scope</b></td><td><b>Cardinality</b></td><td><b>Type</b></td><td><b>Binding</b></td><td><b>Documentation</b></td></tr><tr><td>IN</td><td>participantID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345).</p>\n</div></td></tr><tr><td>IN</td><td>payerID</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#Identifier\">Identifier</a></td><td/><td><div><p>Payer ID for the patient.</p>\n</div></td></tr><tr><td>IN</td><td>patient</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/patient.html\">Patient</a></td><td/><td><div><p>Patient information.  If the payer is Medicare, it <strong>SHALL</strong> contain the Medicare Beneficiary Identifier (MBI).</p>\n</div></td></tr><tr><td>IN</td><td>track</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td><a href=\"ValueSet-ACCESSTrackVS.html\">ACCESS Model Tracks Value Set</a> (Required)</td><td><div><p>ACCESS track to unalign the patient from.</p>\n</div></td></tr><tr><td>IN</td><td>condition</td><td/><td>0..*</td><td><a href=\"http://hl7.org/fhir/R4/condition.html\">Condition</a></td><td/><td><div><p>Patient's conditions.</p>\n</div></td></tr><tr><td>IN</td><td>reason</td><td/><td>1..1</td><td><a href=\"http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td/><td><div><p>Reason for the manual unalignment.</p>\n</div></td></tr></table></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign",
-  "version" : "0.9.6",
+  "version" : "0.9.8",
   "name" : "Unalign",
   "title" : "Unalignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-04-24T13:45:33-04:00",
+  "date" : "2026-05-18T15:59:44-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -37,7 +37,7 @@
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.6",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -59,7 +59,7 @@
     "use" : "in",
     "min" : 1,
     "max" : "1",
-    "documentation" : "Patient information.  It **SHOULD** contain the Medicare Beneficiary Identifier (MBI).",
+    "documentation" : "Patient information.  If the payer is Medicare, it **SHALL** contain the Medicare Beneficiary Identifier (MBI).",
     "type" : "Patient"
   },
   {
@@ -71,7 +71,7 @@
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.6"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
     }
   },
   {

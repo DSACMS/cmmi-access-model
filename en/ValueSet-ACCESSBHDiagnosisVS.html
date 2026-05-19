@@ -3,10 +3,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.6</title>
+    <title>ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -42,7 +43,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.46"}
@@ -56,11 +59,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -142,7 +145,7 @@
 
 <!-- layouts\layout-valueset -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -190,7 +193,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.6<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.6"/></span>
+      <span class="copy-text">0.9.8<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.8"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -215,7 +218,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -262,7 +265,7 @@
 <!-- Content Logical Definition heading in the fragment -->
   <h3>Logical Definition (CLD)</h3>
 <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated"><p class="res-header-id"></p><a name="ACCESSBHDiagnosisVS"> </a><a name="hcACCESSBHDiagnosisVS"> </a>
-<ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.5.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td></tr><tr><td>F06.32</td><td>Mood disorder due to known physiological condition with major depressive-like episode</td></tr><tr><td>F32.0</td><td>Major depressive disorder, single episode, mild</td></tr><tr><td>F32.1</td><td>Major depressive disorder, single episode, moderate</td></tr><tr><td>F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td></tr><tr><td>F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td></tr><tr><td>F32.4</td><td>Major depressive disorder, single episode, in partial remission</td></tr><tr><td>F32.5</td><td>Major depressive disorder, single episode, in full remission</td></tr><tr><td>F32.81</td><td>Premenstrual dysphoric disorder</td></tr><tr><td>F32.89</td><td>Other specified depressive episodes</td></tr><tr><td>F32.9</td><td>Major depressive disorder, single episode, unspecified</td></tr><tr><td>F32.A</td><td>Depression, unspecified</td></tr><tr><td>F33.0</td><td>Major depressive disorder, recurrent, mild</td></tr><tr><td>F33.1</td><td>Major depressive disorder, recurrent, moderate</td></tr><tr><td>F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td></tr><tr><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td></tr><tr><td>F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td></tr><tr><td>F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td></tr><tr><td>F33.42</td><td>Major depressive disorder, recurrent, in full remission</td></tr><tr><td>F33.8</td><td>Other recurrent depressive disorders</td></tr><tr><td>F33.9</td><td>Major depressive disorder, recurrent, unspecified</td></tr><tr><td>F34.0</td><td>Cyclothymic disorder</td></tr><tr><td>F34.1</td><td>Dysthymic disorder</td></tr><tr><td>F43.20</td><td>Adjustment disorder, unspecified</td></tr><tr><td>F43.21</td><td>Adjustment disorder with depressed mood</td></tr><tr><td>F43.22</td><td>Adjustment disorder with anxiety</td></tr><tr><td>F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td>F40.00</td><td>Agoraphobia, unspecified</td></tr><tr><td>F40.01</td><td>Agoraphobia with panic disorder</td></tr><tr><td>F40.02</td><td>Agoraphobia without panic disorder</td></tr><tr><td>F40.10</td><td>Social phobia, unspecified</td></tr><tr><td>F40.11</td><td>Social phobia, generalized</td></tr><tr><td>F40.9</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td>F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td>F41.1</td><td>Generalized anxiety disorder</td></tr><tr><td>F41.3</td><td>Other mixed anxiety disorders</td></tr><tr><td>F41.8</td><td>Other specified anxiety disorders</td></tr><tr><td>F41.9</td><td>Anxiety disorder, unspecified</td></tr></table></li></ul></div>
+<ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none" data-fhir="generated"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td></tr><tr><td>F06.32</td><td>Mood disorder due to known physiological condition with major depressive-like episode</td></tr><tr><td>F32.0</td><td>Major depressive disorder, single episode, mild</td></tr><tr><td>F32.1</td><td>Major depressive disorder, single episode, moderate</td></tr><tr><td>F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td></tr><tr><td>F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td></tr><tr><td>F32.4</td><td>Major depressive disorder, single episode, in partial remission</td></tr><tr><td>F32.5</td><td>Major depressive disorder, single episode, in full remission</td></tr><tr><td>F32.81</td><td>Premenstrual dysphoric disorder</td></tr><tr><td>F32.89</td><td>Other specified depressive episodes</td></tr><tr><td>F32.9</td><td>Major depressive disorder, single episode, unspecified</td></tr><tr><td>F32.A</td><td>Depression, unspecified</td></tr><tr><td>F33.0</td><td>Major depressive disorder, recurrent, mild</td></tr><tr><td>F33.1</td><td>Major depressive disorder, recurrent, moderate</td></tr><tr><td>F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td></tr><tr><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td></tr><tr><td>F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td></tr><tr><td>F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td></tr><tr><td>F33.42</td><td>Major depressive disorder, recurrent, in full remission</td></tr><tr><td>F33.8</td><td>Other recurrent depressive disorders</td></tr><tr><td>F33.9</td><td>Major depressive disorder, recurrent, unspecified</td></tr><tr><td>F34.0</td><td>Cyclothymic disorder</td></tr><tr><td>F34.1</td><td>Dysthymic disorder</td></tr><tr><td>F43.20</td><td>Adjustment disorder, unspecified</td></tr><tr><td>F43.21</td><td>Adjustment disorder with depressed mood</td></tr><tr><td>F43.22</td><td>Adjustment disorder with anxiety</td></tr><tr><td>F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td>F40.00</td><td>Agoraphobia, unspecified</td></tr><tr><td>F40.01</td><td>Agoraphobia with panic disorder</td></tr><tr><td>F40.02</td><td>Agoraphobia without panic disorder</td></tr><tr><td>F40.10</td><td>Social phobia, unspecified</td></tr><tr><td>F40.11</td><td>Social phobia, generalized</td></tr><tr><td>F40.9</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td>F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td>F41.1</td><td>Generalized anxiety disorder</td></tr><tr><td>F41.3</td><td>Other mixed anxiety disorders</td></tr><tr><td>F41.8</td><td>Other specified anxiety disorders</td></tr><tr><td>F41.9</td><td>Anxiety disorder, unspecified</td></tr></table></li></ul></div>
 
   <p>&#160;</p>
   <a name="expansion"> </a>
@@ -307,10 +310,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

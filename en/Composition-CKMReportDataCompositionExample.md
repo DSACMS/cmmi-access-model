@@ -1,4 +1,4 @@
-# CKM Report Data Composition Example - CMS ACCESS Model API v0.9.6
+# CKM Report Data Composition Example - CMS ACCESS Model API v0.9.8
 
 ## Example Composition: CKM Report Data Composition Example
 
@@ -63,6 +63,12 @@ Author: Jane Smith
       },
       "entry" : [{
         "reference" : "Observation/BloodPressureExample"
+      },
+      {
+        "reference" : "Observation/BloodPressureExample2"
+      },
+      {
+        "reference" : "Observation/BloodPressureExample3"
       }]
     },
     {

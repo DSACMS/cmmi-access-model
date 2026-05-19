@@ -4,10 +4,11 @@
 <!DOCTYPE HTML>
 
 
+
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Submit Data Report - CMS ACCESS Model API v0.9.6</title>
+    <title>Submit Data Report - CMS ACCESS Model API v0.9.8</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -43,7 +44,9 @@
   </head>
   <body onload="document.body.style.opacity='1'">
 
-	  <script src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-fhirpath.js"></script>
+	  <script type="text/javascript" src="assets/js/prism-cql.js"></script>
     <script type="text/javascript" src="assets/js/mermaid.js"></script>
     <script type="text/javascript" src="assets/js/mermaid-init.js"></script>
     <style type="text/css">h2{--heading-prefix:"3.35"}
@@ -57,11 +60,11 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.6 - draft
+            <span style="display:inline-block;">0.9.8 - draft
 
 
 
-  <img alt="United States of America flag" src="../assets/images/usa.svg" height="16" title="United States of America"/>
+  <span title="">US</span>
 
 
             </span>
@@ -143,7 +146,7 @@
 
 <!-- layouts\layout-canonical -->
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.6 DRAFT (v0.9.6: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   
 
 
@@ -194,7 +197,7 @@
       <td colspan="4"><i>Official URL</i>: <span class="copy-text">https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData<button title="Click to copy URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData"/></span>
       </td>
       <td><i>Version</i>:
-      <span class="copy-text">0.9.6<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData|0.9.6"/></span>
+      <span class="copy-text">0.9.8<button title="Click to copy versioned URL" class="btn-copy" data-clipboard-text="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData|0.9.8"/></span>
       </td>
       <td style="text-align: right;border-left-style: hidden" title="Enable this to see changes since the last official release">
         <span id="toggle-change-display"><label style="margin:0;font-weight:normal" for="showChanges">Highlight text changes?</label>
@@ -219,7 +222,7 @@
           
 
             as of 
-2026-04-24
+2026-05-18
 
           
         
@@ -244,6 +247,387 @@
 
   <!-- insert intro if present -->
   
+
+
+
+<div style="display:inline-block" markdown="1">
+
+<h3 id="handy-references">Handy References</h3>
+
+<h4 id="operation-profiles">Operation Profiles</h4>
+
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="StructureDefinition-access-data-reporting-bundle.html">ACCESS Data Reporting Bundle</a></td>
+      <td>Contains the resources need to report patient data to the ACCESS Model</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-data-reporting-composition.html">ACCESS Data Reporting Composition</a></td>
+      <td>Defines constraints that represent common clinical concepts for ACCESS Model Data Reporting submissions. Includes optional additional-information section for supplementary resources</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-report-data-in.html">ACCESS Report Data Request Parameters</a></td>
+      <td>Input parameters for the $report-data operation</td>
+    </tr>
+    <tr>
+      <td><a href="StructureDefinition-access-report-data-out.html">ACCESS Report Data Response Parameters</a></td>
+      <td>Output parameters for the $report-data operation</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="value-sets">Value Sets</h4>
+
+<p>These define sets of codes used by systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="ValueSet-ACCESSReportTypeVS.html">ACCESS Report Type Value Set</a></td>
+      <td>Value set including all report type codes (e.g., baseline, end-of-quarter)</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSReportDataResultVS.html">ACCESS Report Data Result Value Set</a></td>
+      <td>Value set including all data reporting submission result codes</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="code-systems">Code Systems</h4>
+
+<p>These define new code systems used by systems conforming to the ACCESS Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportTypeCS.html">ACCESS Report Type Code System</a></td>
+      <td>Codes indicating the type of report (e.g., baseline, end-of-quarter)</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportDataResultCS.html">ACCESS Report Data Result Code System</a></td>
+      <td>Codes indicating the result of a data reporting submission</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSReportDataCompositionSectionCS.html">ACCESS Report Data Composition Section Code System</a></td>
+      <td>Additional codes for composition sections used in ACCESS Model data reporting when LOINC codes are not available</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="examples">Examples</h4>
+
+<p>These are example instances demonstrating the use of the Data Reporting API.</p>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-ReportDataRequestExample.html">Report Data Request Example</a></td>
+      <td>Example request for submitting data report including participant ID, track, and complete data bundle</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseSuccessExample.html">Report Data Response - Success</a></td>
+      <td>Example successful response indicating data submission was processed and recorded</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseDuplicateExample.html">Report Data Response - Duplicate</a></td>
+      <td>Example response indicating data submission is a duplicate</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponsePatientNotAlignedExample.html">Report Data Response - Patient Not Aligned</a></td>
+      <td>Example response indicating patient is not currently aligned</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseReportingPeriodClosedExample.html">Report Data Response - Reporting Period Closed</a></td>
+      <td>Example response indicating the reporting period has closed</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseIncompleteDataExample.html">Report Data Response - Incomplete Data</a></td>
+      <td>Example response indicating data submission is missing required elements</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-ReportDataResponseIncorrectTrackExample.html">Report Data Response - Incorrect Track</a></td>
+      <td>Example response indicating data doesn't match patient's aligned track</td>
+    </tr>
+    <tr>
+      <td><a href="OperationOutcome-SubmissionStatusOperationOutcomeExample.html">Submission Status OperationOutcome Example</a></td>
+      <td>Example OperationOutcome showing detailed information about an incomplete data submission with severity, code, details text, and FHIRPath expressions</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="early-cardio-kidney-metabolic-ckmeckm-tracks">(Early) Cardio-Kidney-Metabolic (CKM/eCKM) Tracks</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-eCKMReportDataRequestExample.html">eCKM Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a eCKM track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-eCKMReportDataBundleExample.html">eCKM Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and clinical observations for the eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-eCKMReportDataCompositionExample.html">eCKM Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the eCKM track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-CKMReportDataRequestExample.html">CKM Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a CKM track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-CKMReportDataBundleExample.html">CKM Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and clinical observations for the CKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-CKMReportDataCompositionExample.html">CKM Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the CKM track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample.html">Blood Pressure Example</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample2.html">Blood Pressure Example 2</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BloodPressureExample3.html">Blood Pressure Example 3</a></td>
+      <td>Example blood pressure observation with systolic and diastolic components for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BodyWeightExample.html">Body Weight Example</a></td>
+      <td>Example body weight vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-BMIExample.html">BMI Example</a></td>
+      <td>Example body mass index vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-WaistCircumferenceExample.html">Waist Circumference Example</a></td>
+      <td>Example waist circumference vital sign observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-HbA1cExample.html">HbA1c Example</a></td>
+      <td>Example hemoglobin A1c laboratory observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-eGFRExample.html">eGFR Example</a></td>
+      <td>Example estimated glomerular filtration rate laboratory observation for the CKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-uACRExample.html">uACR Example</a></td>
+      <td>Example urine albumin-creatinine ratio laboratory observation for the CKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-LDLCholesterolExample.html">LDL-C Cholesterol Example</a></td>
+      <td>Example LDL-C observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-HDLCholesterolExample.html">HDL Cholesterol Example</a></td>
+      <td>Example HDL observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-TotalCholesterolExample.html">Total Cholesterol Example</a></td>
+      <td>Example total cholesterol observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="Observation-TriglyceridesExample.html">Triglycerides Example</a></td>
+      <td>Example triglycerides observation for the CKM/eCKM track</td>
+    </tr>
+    <tr>
+      <td><a href="DiagnosticReport-LipidPanelDiagnosticReportExample.html">Lipid Panel DiagnosticReport Example</a></td>
+      <td>Example lipid panel diagnostic report including total cholesterol, LDL, HDL, and triglycerides for the CKM/eCKM track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="musculoskeletal-msk-track">Musculoskeletal (MSK) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-MSKReportDataRequestExample.html">MSK Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a MSK track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-MSKReportDataBundleExample.html">MSK Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and patient-reported outcomes for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-MSKReportDataCompositionExample.html">MSK Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for the MSK track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPhysicalFunctionExample.html">PROMIS Physical Function Short Form 6b Example</a></td>
+      <td>Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISCATExample.html">PROMIS Physical Function CAT Example</a></td>
+      <td>Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceSFExample.html">PROMIS Pain Interference Short Form 6a Example</a></td>
+      <td>Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISPainInterferenceCATExample.html">PROMIS Pain Interference CAT Example</a></td>
+      <td>Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-OswestryDisabilityIndexExample.html">Oswestry Disability Index Example</a></td>
+      <td>Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-NeckDisabilityIndexExample.html">Neck Disability Index Example</a></td>
+      <td>Example Neck Disability Index (NDI) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-QuickDASHExample.html">QuickDASH Example</a></td>
+      <td>Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-MSKPGICExample.html">Musculoskeletal PGIC Example</a></td>
+      <td>Example Patient Global Impression of Change QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-KOOSJRExample.html">KOOS JR Example</a></td>
+      <td>Example KOOS JR QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-HOOSJRExample.html">HOOS JR Example</a></td>
+      <td>Example HOOS JR QuestionnaireResponse for the MSK track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-PROMISNRSExample.html">PROMIS Pain Intensity NRS Example</a></td>
+      <td>Example PROMIS Pain Intensity NRS QuestionnaireResponse for the MSK track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="behaviorial-health-bh-track">Behaviorial Health (BH) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Parameters-BHReportDataRequestExample.html">BH Report Data Request Example</a></td>
+      <td>Example request Parameters for submitting a BH track data report</td>
+    </tr>
+    <tr>
+      <td><a href="Bundle-BHReportDataBundleExample.html">BH Report Data Bundle Example</a></td>
+      <td>Example document bundle containing composition, patient, and behavioral health assessments for BH track</td>
+    </tr>
+    <tr>
+      <td><a href="Composition-BHReportDataCompositionExample.html">BH Report Data Composition Example</a></td>
+      <td>Example composition organizing clinical data for BH track reporting</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-DepressionPHQ9Example.html">Depression PHQ-9 Example</a></td>
+      <td>Example PHQ-9 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-AnxietyGAD7Example.html">Anxiety GAD-7 Example</a></td>
+      <td>Example GAD-7 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-WHODASExample.html">WHODAS 2.0 Example</a></td>
+      <td>Example WHODAS 2.0 QuestionnaireResponse for the BH track</td>
+    </tr>
+    <tr>
+      <td><a href="QuestionnaireResponse-BHPGICExample.html">Behavioral Health PGIC Example</a></td>
+      <td>Example Behavioral Health PGIC QuestionnaireResponse for the BH track</td>
+    </tr>
+  </tbody>
+</table>
+
+<h4 id="example-questionnaires">Example Questionnaires</h4>
+
+<p>These questionnaire examples provide additional information to implementers and a better understanding of how the QuestionnaireResponse profiles interact with their associated questionnaires, particularly linkIds between the questionnaire items and the corresponding individual responses.</p>
+
+<p>The Data Reporting API leverages USCoreQuestionnaireResponse profile, which requires a canonical URL for the underlying questionnaire associated with the questionnaire response.  If the FHIR questionnaire is publicly available, it can be referenced through its canonical URL from the questionnaire response.</p>
+
+<p>Otherwise, the questionnaire should be included in the ACCESS Data Reporting Bundle and referenced from the matching questionnaire response.</p>
+
+<h5 id="musculoskeletal-msk-track-1">Musculoskeletal (MSK) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-PROMISPhysicalFunctionQuestionnaireExample.html">PROMIS Physical Function Short Form 6b Questionnaire Example</a></td>
+      <td>Example PROMIS Physical Function (PF) Short Form 6b Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPhysicalFunctionCATQuestionnaireExample.html">PROMIS Physical Function CAT Questionnaire Example</a></td>
+      <td>Example PROMIS Physical Function CAT Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPainInterferenceSFQuestionnaireExample.html">PROMIS Pain Interference Short Form 6a Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Interference (PI) Short Form 6a Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISPainInterferenceCATQuestionnaireExample.html">PROMIS Pain Interference CAT Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Interference CAT Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-OswestryDisabilityIndexQuestionnaireExample.html">Oswestry Disability Index Questionnaire Example</a></td>
+      <td>Example Oswestry Disability Index (ODI) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-NeckDisabilityIndexQuestionnaireExample.html">Neck Disability Index Questionnaire Example</a></td>
+      <td>Example Neck Disability Index (NDI) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-QuickDASHQuestionnaireExample.html">QuickDASH Questionnaire Example</a></td>
+      <td>Example Quick Disabilities of the Arm, Shoulder and Hand (QuickDASH) Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-MSKPGICQuestionnaireExample.html">MSK PGIC Questionnaire Example</a></td>
+      <td>Example Patient Global Impression of Change Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-KOOSJRQuestionnaireExample.html">KOOS JR Questionnaire Example</a></td>
+      <td>Example KOOS JR Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-HOOSJRQuestionnaireExample.html">HOOS JR Questionnaire Example</a></td>
+      <td>Example HOOS JR Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-PROMISNRSQuestionnaireExample.html">PROMIS Pain Intensity NRS Questionnaire Example</a></td>
+      <td>Example PROMIS Pain Intensity NRS Questionnaire</td>
+    </tr>
+  </tbody>
+</table>
+
+<h5 id="behaviorial-health-bh-track-1">Behaviorial Health (BH) Track</h5>
+
+<table class="grid">
+  <tbody>
+    <tr>
+      <td><a href="Questionnaire-PHQ9QuestionnaireExample.html">PHQ-9 Questionnaire Example</a></td>
+      <td>Example PHQ-9 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-GAD7QuestionnaireExample.html">GAD-7 Questionnaire Example</a></td>
+      <td>Example GAD-7 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-WHODASQuestionnaireExample.html">WHODAS 2.0 Questionnaire Example</a></td>
+      <td>Example WHODAS 2.0 Questionnaire</td>
+    </tr>
+    <tr>
+      <td><a href="Questionnaire-BHPGICQuestionnaireExample.html">BH PGIC Questionnaire Example</a></td>
+      <td>Example Behavioral Health PGIC Questionnaire</td>
+    </tr>
+  </tbody>
+</table>
+
+
+</div>
+
 
 
 
@@ -291,10 +675,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.6 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-04-24 13:45:00 -0400">
-    2026-04-24
+  <span title="2026-05-18 15:59:00 -0400">
+    2026-05-18
   </span>
 
           <br/>

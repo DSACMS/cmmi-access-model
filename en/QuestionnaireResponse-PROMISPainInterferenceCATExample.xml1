@@ -23,7 +23,7 @@
     <text value="In the past 7 days: How much did pain interfere with your day to day activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="4"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -37,7 +37,7 @@
     <text value="In the past 7 days: How much did pain interfere with your ability to participate in social activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="5"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -51,7 +51,7 @@
     <text value="In the past 7 days: How much did pain interfere with your enjoyment of social activities?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="4"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -65,7 +65,7 @@
     <text value="In the past 7 days: How much did pain interfere with work around the home?"/>
     <answer>
       <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
           <valueDecimal value="5"/>
         </extension>
         <system value="http://loinc.org"/>
@@ -77,14 +77,7 @@
   <item>
     <linkId value="tscore"/>
     <answer>
-      <valueCoding>
-        <extension url="http://hl7.org/fhir/StructureDefinition/itemWeight">
-          <valueDecimal value="70"/>
-        </extension>
-        <system value="http://loinc.org"/>
-        <code value="89924-5"/>
-        <display value="PROMIS pain interference - version 1.1 Tscore"/>
-      </valueCoding>
+      <valueDecimal value="70"/>
     </answer>
   </item>
 </QuestionnaireResponse>

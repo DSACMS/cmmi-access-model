@@ -1,4 +1,4 @@
-# PROMIS Pain Interference CAT QuestionnaireResponse Example - CMS ACCESS Model API v0.9.6
+# PROMIS Pain Interference CAT QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
 
 ## Example QuestionnaireResponse: PROMIS Pain Interference CAT QuestionnaireResponse Example
 
@@ -31,7 +31,7 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 4
         }],
         "system" : "http://loinc.org",
@@ -46,7 +46,7 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 5
         }],
         "system" : "http://loinc.org",
@@ -61,7 +61,7 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 4
         }],
         "system" : "http://loinc.org",
@@ -76,7 +76,7 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
     "answer" : [{
       "valueCoding" : {
         "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
           "valueDecimal" : 5
         }],
         "system" : "http://loinc.org",
@@ -88,15 +88,7 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
   {
     "linkId" : "tscore",
     "answer" : [{
-      "valueCoding" : {
-        "extension" : [{
-          "url" : "http://hl7.org/fhir/StructureDefinition/itemWeight",
-          "valueDecimal" : 70
-        }],
-        "system" : "http://loinc.org",
-        "code" : "89924-5",
-        "display" : "PROMIS pain interference - version 1.1 Tscore"
-      }
+      "valueDecimal" : 70
     }]
   }]
 }
