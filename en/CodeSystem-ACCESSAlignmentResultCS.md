@@ -27,7 +27,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "ACCESS Alignment Request Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-18T15:59:44-04:00",
+  "date" : "2026-05-20T09:30:43-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

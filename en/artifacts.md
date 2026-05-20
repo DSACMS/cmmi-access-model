@@ -141,37 +141,41 @@ These are the custom operations that can be supported by and/or invoked by syste
 
 #### Operation Profiles
 
-These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.
+These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md) | Input parameters for the $check-eligibility operation |
-| [ACCESS Check Eligibility Response Parameters](StructureDefinition-access-check-eligibility-out.md) | Output parameters for the $check-eligibility operation |
+| [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) | Input parameters for the $align operation |
+| [ACCESS Alignment Response Parameters](StructureDefinition-access-align-out.md) | Output parameters for the $align operation |
 
 #### Value Sets
 
-These define sets of codes used by systems conforming to the ACCESS Eligibility API.
+These define sets of codes used by systems conforming to the ACCESS Alignment API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Eligibility Result Value Set](ValueSet-ACCESSEligibilityResultVS.md) | Value set including all eligibility result codes |
+| [ACCESS Alignment Result Value Set](ValueSet-ACCESSAlignmentResultVS.md) | Value set including all alignment result codes |
+| [ACCESS Event Type Value Set](ValueSet-ACCESSEventTypeVS.md) | Value set including all event notification type codes |
 
 #### Code Systems
 
-These define new code systems used by systems conforming to the ACCESS Eligibility API.
+These define new code systems used by systems conforming to the ACCESS Alignment API.
 
 | | |
 | :--- | :--- |
-| [ACCESS Eligibility Result Code System](CodeSystem-ACCESSEligibilityResultCS.md) | Codes indicating the result of an eligibility check |
+| [ACCESS Alignment Result Code System](CodeSystem-ACCESSAlignmentResultCS.md) | Codes indicating the result of an alignment request |
+| [ACCESS Event Type Code System](CodeSystem-ACCESSEventTypeCS.md) | Codes for types of notification events that trigger subscription notifications |
 
 #### Examples
 
-These are example instances demonstrating the use of the Eligibility API.
+These are example instances demonstrating the use of the Alignment API.
 
 | | |
 | :--- | :--- |
-| [Check Eligibility Request Example](Parameters-CheckEligibilityRequestExample.md) | Example request for checking patient eligibility including participant ID, payer ID, patient details, and track |
-| [Check Eligibility Response - Eligible](Parameters-CheckEligibilityResponseEligibleExample.md) | Example successful response indicating patient is eligible for the ACCESS Model |
+| [Alignment Request Example](Parameters-AlignmentRequestExample.md) | Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint |
+| [Alignment Request with Switch Consent Example](Parameters-AlignmentRequestWithSwitchConsentExample.md) | Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period |
+| [Alignment Response - Aligned](Parameters-AlignmentResponseAlignedExample.md) | Example successful response indicating patient has been aligned to the ACCESS participant |
+| [Alignment Response - Switch Approved](Parameters-AlignmentResponseSwitchApprovedExample.md) | Example successful response indicating patient provider switch has been approved and patient is re-aligned |
 
 ### Unalignment API
 

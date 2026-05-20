@@ -11,18 +11,18 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
+    "StructureDefinition-access-align-out.html" : "ACCESS Alignment Response Parameters",
+    "StructureDefinition-access-data-reporting-bundle.html" : "ACCESS Data Reporting Bundle",
+    "StructureDefinition-access-submission-status-out.html" : "ACCESS Submission Status Response Parameters",
+    "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
     "StructureDefinition-access-data-reporting-composition.html" : "ACCESS Data Reporting Composition",
+    "StructureDefinition-access-report-data-out.html" : "ACCESS Report Data Response Parameters",
+    "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters",
     "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
     "StructureDefinition-access-unalign-out.html" : "ACCESS Unalignment Response Parameters",
     "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
-    "StructureDefinition-access-align-out.html" : "ACCESS Alignment Response Parameters",
     "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
-    "StructureDefinition-access-check-eligibility-out.html" : "ACCESS Check Eligibility Response Parameters",
-    "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters",
-    "StructureDefinition-access-data-reporting-bundle.html" : "ACCESS Data Reporting Bundle",
-    "StructureDefinition-access-condition.html" : "ACCESS Condition Profile",
-    "StructureDefinition-access-report-data-out.html" : "ACCESS Report Data Response Parameters",
-    "StructureDefinition-access-submission-status-out.html" : "ACCESS Submission Status Response Parameters"
+    "StructureDefinition-access-check-eligibility-out.html" : "ACCESS Check Eligibility Response Parameters"
   },
   {
     "url" : "http://loinc.org/vs/LL1013-3",
@@ -848,14 +848,14 @@
     "systems" : ["https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"],
     "uses" : {
     },
-    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
     "OperationDefinition-ReportData.html" : "Submit Data Report",
-    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
-    "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters",
-    "OperationDefinition-Unalign.html" : "Unalignment Request",
-    "OperationDefinition-Align.html" : "Alignment Request",
     "StructureDefinition-access-report-data-in.html" : "ACCESS Report Data Parameters",
-    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request"
+    "OperationDefinition-Unalign.html" : "Unalignment Request",
+    "StructureDefinition-access-unalign-in.html" : "ACCESS Unalignment Request Parameters",
+    "OperationDefinition-Align.html" : "Alignment Request",
+    "OperationDefinition-CheckEligibility.html" : "Check Eligibility Request",
+    "StructureDefinition-access-align-in.html" : "ACCESS Alignment Request Parameters",
+    "StructureDefinition-access-check-eligibility-in.html" : "ACCESS Check Eligibility Request Parameters"
   },
   {
     "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS",

@@ -439,60 +439,76 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <h4 id="operation-profiles-1">Operation Profiles</h4>
 
-<p>These define constraints on FHIR resources for systems conforming to the ACCESS Eligibility API.</p>
+<p>These define constraints on FHIR resources for systems conforming to the ACCESS Alignment API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="StructureDefinition-access-check-eligibility-in.html">ACCESS Check Eligibility Request Parameters</a></td>
-      <td>Input parameters for the $check-eligibility operation</td>
+      <td><a href="StructureDefinition-access-align-in.html">ACCESS Alignment Request Parameters</a></td>
+      <td>Input parameters for the $align operation</td>
     </tr>
     <tr>
-      <td><a href="StructureDefinition-access-check-eligibility-out.html">ACCESS Check Eligibility Response Parameters</a></td>
-      <td>Output parameters for the $check-eligibility operation</td>
+      <td><a href="StructureDefinition-access-align-out.html">ACCESS Alignment Response Parameters</a></td>
+      <td>Output parameters for the $align operation</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="value-sets-2">Value Sets</h4>
 
-<p>These define sets of codes used by systems conforming to the ACCESS Eligibility API.</p>
+<p>These define sets of codes used by systems conforming to the ACCESS Alignment API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="ValueSet-ACCESSEligibilityResultVS.html">ACCESS Eligibility Result Value Set</a></td>
-      <td>Value set including all eligibility result codes</td>
+      <td><a href="ValueSet-ACCESSAlignmentResultVS.html">ACCESS Alignment Result Value Set</a></td>
+      <td>Value set including all alignment result codes</td>
+    </tr>
+    <tr>
+      <td><a href="ValueSet-ACCESSEventTypeVS.html">ACCESS Event Type Value Set</a></td>
+      <td>Value set including all event notification type codes</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="code-systems-2">Code Systems</h4>
 
-<p>These define new code systems used by systems conforming to the ACCESS Eligibility API.</p>
+<p>These define new code systems used by systems conforming to the ACCESS Alignment API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="CodeSystem-ACCESSEligibilityResultCS.html">ACCESS Eligibility Result Code System</a></td>
-      <td>Codes indicating the result of an eligibility check</td>
+      <td><a href="CodeSystem-ACCESSAlignmentResultCS.html">ACCESS Alignment Result Code System</a></td>
+      <td>Codes indicating the result of an alignment request</td>
+    </tr>
+    <tr>
+      <td><a href="CodeSystem-ACCESSEventTypeCS.html">ACCESS Event Type Code System</a></td>
+      <td>Codes for types of notification events that trigger subscription notifications</td>
     </tr>
   </tbody>
 </table>
 
 <h4 id="examples-1">Examples</h4>
 
-<p>These are example instances demonstrating the use of the Eligibility API.</p>
+<p>These are example instances demonstrating the use of the Alignment API.</p>
 
 <table class="grid">
   <tbody>
     <tr>
-      <td><a href="Parameters-CheckEligibilityRequestExample.html">Check Eligibility Request Example</a></td>
-      <td>Example request for checking patient eligibility including participant ID, payer ID, patient details, and track</td>
+      <td><a href="Parameters-AlignmentRequestExample.html">Alignment Request Example</a></td>
+      <td>Example request for aligning a patient including participant ID, payer ID, patient details, track, conditions, and notification endpoint</td>
     </tr>
     <tr>
-      <td><a href="Parameters-CheckEligibilityResponseEligibleExample.html">Check Eligibility Response - Eligible</a></td>
-      <td>Example successful response indicating patient is eligible for the ACCESS Model</td>
+      <td><a href="Parameters-AlignmentRequestWithSwitchConsentExample.html">Alignment Request with Switch Consent Example</a></td>
+      <td>Example request for aligning a patient with provider switch consent attestation after 90-day lock-in period</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-AlignmentResponseAlignedExample.html">Alignment Response - Aligned</a></td>
+      <td>Example successful response indicating patient has been aligned to the ACCESS participant</td>
+    </tr>
+    <tr>
+      <td><a href="Parameters-AlignmentResponseSwitchApprovedExample.html">Alignment Response - Switch Approved</a></td>
+      <td>Example successful response indicating patient provider switch has been approved and patient is re-aligned</td>
     </tr>
   </tbody>
 </table>
@@ -1014,8 +1030,8 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
           Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-18 15:59:00 -0400">
-    2026-05-18
+  <span title="2026-05-20 09:30:00 -0400">
+    2026-05-20
   </span>
 
           <br/>

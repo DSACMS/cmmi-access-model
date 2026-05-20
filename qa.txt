@@ -3,7 +3,7 @@ CMSAccessAPI : Validation Results
 
 err = 0, warn = 0, info = 0
 IG Publisher Version: 2.2.4 Out of date - current version is 2.2.7
-Generated Mon May 18 16:02:06 EDT 2026. FHIR version 4.0.1 for cms.fhir.us.cmmi-access-model#0.9.8 (canonical = https://dsacms.github.io/cmmi-access-model)
+Generated Wed May 20 09:33:19 EDT 2026. FHIR version 4.0.1 for cms.fhir.us.cmmi-access-model#0.9.8 (canonical = https://dsacms.github.io/cmmi-access-model)
  Build Errors : 0 / 0 / 0
  /Users/davehill/src/publication/temp/ig-builds/cms.fhir.us.cmmi-access-model#0.9.8/fsh-generated/resources/Bundle-BHReportDataBundleExample : 0 / 1 / 30
  /Users/davehill/src/publication/temp/ig-builds/cms.fhir.us.cmmi-access-model#0.9.8/fsh-generated/resources/Bundle-CKMReportDataBundleExample : 0 / 14 / 60
