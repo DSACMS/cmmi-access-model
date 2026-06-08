@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.8
+#  - CMS ACCESS Model API v0.9.11
 
 ## 
 
@@ -129,8 +129,8 @@ Where `[base]` is the FHIR server base URL provided during participant registrat
 
 #### Content Types
 
-* **Request:** `application/fhir+json`
-* **Response:** `application/fhir+json`
+* **Request:** `application/json`
+* **Response:** `application/json`
 
 #### Patient Identification
 
@@ -348,7 +348,7 @@ POST https://[base]/access/Patient/$check-eligibility?entityId=ACCES12345
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -370,7 +370,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -392,7 +392,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -416,7 +416,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -441,7 +441,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -465,7 +465,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -497,7 +497,7 @@ GET https://[base]/access/Patient/$submission-status/invalid-sub-id
 
 ```
 HTTP/1.1 404 Not Found
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -522,7 +522,7 @@ Content-Type: application/fhir+json
 ```
 HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_token"
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -546,7 +546,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 403 Forbidden
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -573,7 +573,7 @@ Content-Type: application/fhir+json
 ```
 HTTP/1.1 503 Service Unavailable
 Retry-After: 60
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -597,7 +597,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 500 Internal Server Error
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -628,7 +628,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 

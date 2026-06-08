@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.8
+#  - CMS ACCESS Model API v0.9.11
 
 ## 
 
@@ -87,7 +87,7 @@ Include the access token in the Authorization header of all API requests:
 
 ```
 Authorization: Bearer {access_token}
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -96,7 +96,7 @@ Content-Type: application/fhir+json
 ```
 POST https://[base]/access/Patient/$check-eligibility?entityId=[participantID]
 Authorization: Bearer eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9...
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 {
   "resourceType": "Parameters",

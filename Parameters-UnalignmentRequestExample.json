@@ -4,7 +4,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {

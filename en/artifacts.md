@@ -1,4 +1,4 @@
-# Artifacts - CMS ACCESS Model API v0.9.8
+# Artifacts - CMS ACCESS Model API v0.9.11
 
 ## Artifacts
 
@@ -207,6 +207,9 @@ These define sets of codes used by systems conforming to the ACCESS Unalignment 
 | :--- | :--- |
 | [ACCESS Unalignment Result Value Set](ValueSet-ACCESSUnalignmentResultVS.md) | Value set including all unalignment result codes |
 | [ACCESS Unalignment Reason Value Set](ValueSet-ACCESSUnalignmentReasonVS.md) | Value set including all unalignment reason codes |
+| [ACCESS eCKM/CKM Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSCKMClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the eCKM and CKM tracks |
+| [ACCESS MSK Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSMSKClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the MSK track |
+| [ACCESS BH Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSBHClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the BH track |
 
 #### Code Systems
 
@@ -319,7 +322,7 @@ These are example instances demonstrating the use of the Data Reporting API.
 | [MSK Report Data Bundle Example](Bundle-MSKReportDataBundleExample.md) | Example document bundle containing composition, patient, and patient-reported outcomes for the MSK track |
 | [MSK Report Data Composition Example](Composition-MSKReportDataCompositionExample.md) | Example composition organizing clinical data for the MSK track reporting |
 | [PROMIS Physical Function Short Form 6b Example](QuestionnaireResponse-PROMISPhysicalFunctionExample.md) | Example PROMIS Physical Function (PF) Short Form 6b QuestionnaireResponse for the MSK track |
-| [PROMIS Physical Function CAT Example](QuestionnaireResponse-PROMISCATExample.md) | Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track |
+| [PROMIS Physical Function CAT Example](QuestionnaireResponse-PROMISPhysicalFunctionCATExample.md) | Example PROMIS Physical Function CAT QuestionnaireResponse for the MSK track |
 | [PROMIS Pain Interference Short Form 6a Example](QuestionnaireResponse-PROMISPainInterferenceSFExample.md) | Example PROMIS Pain Interference (PI) Short Form 6a QuestionnaireResponse for the MSK track |
 | [PROMIS Pain Interference CAT Example](QuestionnaireResponse-PROMISPainInterferenceCATExample.md) | Example PROMIS Pain Interference CAT QuestionnaireResponse for the MSK track |
 | [Oswestry Disability Index Example](QuestionnaireResponse-OswestryDisabilityIndexExample.md) | Example Oswestry Disability Index (ODI) QuestionnaireResponse for the MSK track |

@@ -1,4 +1,4 @@
-# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.8
+# Check Eligibility Response - Eligible Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Check Eligibility Response - Eligible Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {

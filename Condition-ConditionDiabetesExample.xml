@@ -5,7 +5,6 @@
   <meta>
     <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"/>
   </meta>
-  <language value="en"/>
   <text>
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Type 2 diabetes mellitus without complications</div>
   </text>

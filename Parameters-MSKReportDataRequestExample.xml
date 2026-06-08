@@ -5,7 +5,6 @@
   <meta>
     <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in"/>
   </meta>
-  <language value="en"/>
   <parameter>
     <name value="participantID"/>
     <valueIdentifier>
@@ -861,7 +860,7 @@
               <item>
                 <linkId value="score"/>
                 <answer>
-                  <valueDecimal value="36"/>
+                  <valueDecimal value="38"/>
                 </answer>
               </item>
             </QuestionnaireResponse>

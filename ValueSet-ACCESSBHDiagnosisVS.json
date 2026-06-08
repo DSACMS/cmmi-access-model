@@ -3,15 +3,15 @@
   "id" : "ACCESSBHDiagnosisVS",
   "text" : {
     "status" : "generated",
-    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSBHDiagnosisVS</b></p><a name=\"ACCESSBHDiagnosisVS\"> </a><a name=\"hcACCESSBHDiagnosisVS\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td></tr><tr><td>F06.32</td><td>Mood disorder due to known physiological condition with major depressive-like episode</td></tr><tr><td>F32.0</td><td>Major depressive disorder, single episode, mild</td></tr><tr><td>F32.1</td><td>Major depressive disorder, single episode, moderate</td></tr><tr><td>F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td></tr><tr><td>F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td></tr><tr><td>F32.4</td><td>Major depressive disorder, single episode, in partial remission</td></tr><tr><td>F32.5</td><td>Major depressive disorder, single episode, in full remission</td></tr><tr><td>F32.81</td><td>Premenstrual dysphoric disorder</td></tr><tr><td>F32.89</td><td>Other specified depressive episodes</td></tr><tr><td>F32.9</td><td>Major depressive disorder, single episode, unspecified</td></tr><tr><td>F32.A</td><td>Depression, unspecified</td></tr><tr><td>F33.0</td><td>Major depressive disorder, recurrent, mild</td></tr><tr><td>F33.1</td><td>Major depressive disorder, recurrent, moderate</td></tr><tr><td>F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td></tr><tr><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td></tr><tr><td>F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td></tr><tr><td>F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td></tr><tr><td>F33.42</td><td>Major depressive disorder, recurrent, in full remission</td></tr><tr><td>F33.8</td><td>Other recurrent depressive disorders</td></tr><tr><td>F33.9</td><td>Major depressive disorder, recurrent, unspecified</td></tr><tr><td>F34.0</td><td>Cyclothymic disorder</td></tr><tr><td>F34.1</td><td>Dysthymic disorder</td></tr><tr><td>F43.20</td><td>Adjustment disorder, unspecified</td></tr><tr><td>F43.21</td><td>Adjustment disorder with depressed mood</td></tr><tr><td>F43.22</td><td>Adjustment disorder with anxiety</td></tr><tr><td>F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td>F40.00</td><td>Agoraphobia, unspecified</td></tr><tr><td>F40.01</td><td>Agoraphobia with panic disorder</td></tr><tr><td>F40.02</td><td>Agoraphobia without panic disorder</td></tr><tr><td>F40.10</td><td>Social phobia, unspecified</td></tr><tr><td>F40.11</td><td>Social phobia, generalized</td></tr><tr><td>F40.9</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td>F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td>F41.1</td><td>Generalized anxiety disorder</td></tr><tr><td>F41.3</td><td>Other mixed anxiety disorders</td></tr><tr><td>F41.8</td><td>Other specified anxiety disorders</td></tr><tr><td>F41.9</td><td>Anxiety disorder, unspecified</td></tr></table></li></ul></div>"
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSBHDiagnosisVS</b></p><a name=\"ACCESSBHDiagnosisVS\"> </a><a name=\"hcACCESSBHDiagnosisVS\"> </a><ul><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>F06.30</td><td>Mood disorder due to known physiological condition, unspecified</td></tr><tr><td>F06.31</td><td>Mood disorder due to known physiological condition with depressive features</td></tr><tr><td>F06.4</td><td>Anxiety disorder due to known physiological condition</td></tr><tr><td>F32.0</td><td>Major depressive disorder, single episode, mild</td></tr><tr><td>F32.1</td><td>Major depressive disorder, single episode, moderate</td></tr><tr><td>F32.2</td><td>Major depressive disorder, single episode, severe without psychotic features</td></tr><tr><td>F32.3</td><td>Major depressive disorder, single episode, severe with psychotic features</td></tr><tr><td>F32.4</td><td>Major depressive disorder, single episode, in partial remission</td></tr><tr><td>F32.5</td><td>Major depressive disorder, single episode, in full remission</td></tr><tr><td>F32.81</td><td>Premenstrual dysphoric disorder</td></tr><tr><td>F32.89</td><td>Other specified depressive episodes</td></tr><tr><td>F32.9</td><td>Major depressive disorder, single episode, unspecified</td></tr><tr><td>F32.A</td><td>Depression, unspecified</td></tr><tr><td>F33.0</td><td>Major depressive disorder, recurrent, mild</td></tr><tr><td>F33.1</td><td>Major depressive disorder, recurrent, moderate</td></tr><tr><td>F33.2</td><td>Major depressive disorder, recurrent severe without psychotic features</td></tr><tr><td>F33.3</td><td>Major depressive disorder, recurrent, severe with psychotic symptoms</td></tr><tr><td>F33.40</td><td>Major depressive disorder, recurrent, in remission, unspecified</td></tr><tr><td>F33.41</td><td>Major depressive disorder, recurrent, in partial remission</td></tr><tr><td>F33.42</td><td>Major depressive disorder, recurrent, in full remission</td></tr><tr><td>F33.8</td><td>Other recurrent depressive disorders</td></tr><tr><td>F33.9</td><td>Major depressive disorder, recurrent, unspecified</td></tr><tr><td>F34.0</td><td>Cyclothymic disorder</td></tr><tr><td>F34.1</td><td>Dysthymic disorder</td></tr><tr><td>F34.81</td><td>Disruptive mood dysregulation disorder</td></tr><tr><td>F34.89</td><td>Other specified persistent mood disorders</td></tr><tr><td>F34.9</td><td>Persistent mood [affective] disorder, unspecified</td></tr><tr><td>F40.00</td><td>Agoraphobia, unspecified</td></tr><tr><td>F40.01</td><td>Agoraphobia with panic disorder</td></tr><tr><td>F40.02</td><td>Agoraphobia without panic disorder</td></tr><tr><td>F40.10</td><td>Social phobia, unspecified</td></tr><tr><td>F40.11</td><td>Social phobia, generalized</td></tr><tr><td>F40.210</td><td>Arachnophobia</td></tr><tr><td>F40.218</td><td>Other animal type phobia</td></tr><tr><td>F40.220</td><td>Fear of thunderstorms</td></tr><tr><td>F40.228</td><td>Other natural environment type phobia</td></tr><tr><td>F40.230</td><td>Fear of blood</td></tr><tr><td>F40.231</td><td>Fear of injections and transfusions</td></tr><tr><td>F40.232</td><td>Fear of other medical care</td></tr><tr><td>F40.233</td><td>Fear of injury</td></tr><tr><td>F40.240</td><td>Claustrophobia</td></tr><tr><td>F40.241</td><td>Acrophobia</td></tr><tr><td>F40.242</td><td>Fear of bridges</td></tr><tr><td>F40.243</td><td>Fear of flying</td></tr><tr><td>F40.248</td><td>Other situational type phobia</td></tr><tr><td>F40.290</td><td>Androphobia</td></tr><tr><td>F40.291</td><td>Gynephobia</td></tr><tr><td>F40.298</td><td>Other specified phobia</td></tr><tr><td>F40.8</td><td>Other phobic anxiety disorders</td></tr><tr><td>F40.9</td><td>Phobic anxiety disorder, unspecified</td></tr><tr><td>F41.0</td><td>Panic disorder [episodic paroxysmal anxiety]</td></tr><tr><td>F41.1</td><td>Generalized anxiety disorder</td></tr><tr><td>F41.3</td><td>Other mixed anxiety disorders</td></tr><tr><td>F41.8</td><td>Other specified anxiety disorders</td></tr><tr><td>F41.9</td><td>Anxiety disorder, unspecified</td></tr><tr><td>F43.0</td><td>Acute stress reaction</td></tr><tr><td>F43.10</td><td>Post-traumatic stress disorder, unspecified</td></tr><tr><td>F43.11</td><td>Post-traumatic stress disorder, acute</td></tr><tr><td>F43.12</td><td>Post-traumatic stress disorder, chronic</td></tr><tr><td>F43.20</td><td>Adjustment disorder, unspecified</td></tr><tr><td>F43.21</td><td>Adjustment disorder with depressed mood</td></tr><tr><td>F43.22</td><td>Adjustment disorder with anxiety</td></tr><tr><td>F43.23</td><td>Adjustment disorder with mixed anxiety and depressed mood</td></tr><tr><td>F43.24</td><td>Adjustment disorder with disturbance of conduct</td></tr><tr><td>F43.25</td><td>Adjustment disorder with mixed disturbance of emotions and conduct</td></tr><tr><td>F43.29</td><td>Adjustment disorder with other symptoms</td></tr><tr><td>F43.81</td><td>Prolonged grief disorder</td></tr><tr><td>F43.89</td><td>Other reactions to severe stress</td></tr><tr><td>F43.9</td><td>Reaction to severe stress, unspecified</td></tr></table></li></ul></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSBHDiagnosisVS",
   "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -37,12 +37,16 @@
     "include" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
       "concept" : [{
+        "code" : "F06.30",
+        "display" : "Mood disorder due to known physiological condition, unspecified"
+      },
+      {
         "code" : "F06.31",
         "display" : "Mood disorder due to known physiological condition with depressive features"
       },
       {
-        "code" : "F06.32",
-        "display" : "Mood disorder due to known physiological condition with major depressive-like episode"
+        "code" : "F06.4",
+        "display" : "Anxiety disorder due to known physiological condition"
       },
       {
         "code" : "F32.0",
@@ -129,20 +133,16 @@
         "display" : "Dysthymic disorder"
       },
       {
-        "code" : "F43.20",
-        "display" : "Adjustment disorder, unspecified"
+        "code" : "F34.81",
+        "display" : "Disruptive mood dysregulation disorder"
       },
       {
-        "code" : "F43.21",
-        "display" : "Adjustment disorder with depressed mood"
+        "code" : "F34.89",
+        "display" : "Other specified persistent mood disorders"
       },
       {
-        "code" : "F43.22",
-        "display" : "Adjustment disorder with anxiety"
-      },
-      {
-        "code" : "F43.23",
-        "display" : "Adjustment disorder with mixed anxiety and depressed mood"
+        "code" : "F34.9",
+        "display" : "Persistent mood [affective] disorder, unspecified"
       },
       {
         "code" : "F40.00",
@@ -163,6 +163,74 @@
       {
         "code" : "F40.11",
         "display" : "Social phobia, generalized"
+      },
+      {
+        "code" : "F40.210",
+        "display" : "Arachnophobia"
+      },
+      {
+        "code" : "F40.218",
+        "display" : "Other animal type phobia"
+      },
+      {
+        "code" : "F40.220",
+        "display" : "Fear of thunderstorms"
+      },
+      {
+        "code" : "F40.228",
+        "display" : "Other natural environment type phobia"
+      },
+      {
+        "code" : "F40.230",
+        "display" : "Fear of blood"
+      },
+      {
+        "code" : "F40.231",
+        "display" : "Fear of injections and transfusions"
+      },
+      {
+        "code" : "F40.232",
+        "display" : "Fear of other medical care"
+      },
+      {
+        "code" : "F40.233",
+        "display" : "Fear of injury"
+      },
+      {
+        "code" : "F40.240",
+        "display" : "Claustrophobia"
+      },
+      {
+        "code" : "F40.241",
+        "display" : "Acrophobia"
+      },
+      {
+        "code" : "F40.242",
+        "display" : "Fear of bridges"
+      },
+      {
+        "code" : "F40.243",
+        "display" : "Fear of flying"
+      },
+      {
+        "code" : "F40.248",
+        "display" : "Other situational type phobia"
+      },
+      {
+        "code" : "F40.290",
+        "display" : "Androphobia"
+      },
+      {
+        "code" : "F40.291",
+        "display" : "Gynephobia"
+      },
+      {
+        "code" : "F40.298",
+        "display" : "Other specified phobia"
+      },
+      {
+        "code" : "F40.8",
+        "display" : "Other phobic anxiety disorders"
       },
       {
         "code" : "F40.9",
@@ -187,6 +255,62 @@
       {
         "code" : "F41.9",
         "display" : "Anxiety disorder, unspecified"
+      },
+      {
+        "code" : "F43.0",
+        "display" : "Acute stress reaction"
+      },
+      {
+        "code" : "F43.10",
+        "display" : "Post-traumatic stress disorder, unspecified"
+      },
+      {
+        "code" : "F43.11",
+        "display" : "Post-traumatic stress disorder, acute"
+      },
+      {
+        "code" : "F43.12",
+        "display" : "Post-traumatic stress disorder, chronic"
+      },
+      {
+        "code" : "F43.20",
+        "display" : "Adjustment disorder, unspecified"
+      },
+      {
+        "code" : "F43.21",
+        "display" : "Adjustment disorder with depressed mood"
+      },
+      {
+        "code" : "F43.22",
+        "display" : "Adjustment disorder with anxiety"
+      },
+      {
+        "code" : "F43.23",
+        "display" : "Adjustment disorder with mixed anxiety and depressed mood"
+      },
+      {
+        "code" : "F43.24",
+        "display" : "Adjustment disorder with disturbance of conduct"
+      },
+      {
+        "code" : "F43.25",
+        "display" : "Adjustment disorder with mixed disturbance of emotions and conduct"
+      },
+      {
+        "code" : "F43.29",
+        "display" : "Adjustment disorder with other symptoms"
+      },
+      {
+        "code" : "F43.81",
+        "display" : "Prolonged grief disorder"
+      },
+      {
+        "code" : "F43.89",
+        "display" : "Other reactions to severe stress"
+      },
+      {
+        "code" : "F43.9",
+        "display" : "Reaction to severe stress, unspecified"
       }]
     }]
   }

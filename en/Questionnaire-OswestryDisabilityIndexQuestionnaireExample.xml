@@ -7,7 +7,7 @@
   </meta>
   <language value="en"/>
   <text>
-    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire OswestryDisabilityIndexQuestionnaireExample</b></p><a name="OswestryDisabilityIndexQuestionnaireExample"> </a><a name="hcOswestryDisabilityIndexQuestionnaireExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html">SDCBaseQuestionnaireversion: null3.0.0)</a></p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/Questionnaire/OswestryDisabilityIndexQuestionnaire#0.9.8</td></tr>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Questionnaire OswestryDisabilityIndexQuestionnaireExample</b></p><a name="OswestryDisabilityIndexQuestionnaireExample"> </a><a name="hcOswestryDisabilityIndexQuestionnaireExample"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/sdc/STU3/StructureDefinition-sdc-questionnaire.html">SDCBaseQuestionnaire</a> version: 3.0.0</p></div><b>Structure</b><table border="1" cellpadding="0" cellspacing="0" style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 2px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The linkID for the item">LinkID</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Text for the item">Text</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Minimum and Maximum # of times the item can appear in the instance">Cardinality</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="The type of the item">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Additional information about the item">Description &amp; Constraints</a><span style="float: right"><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_q_root.gif" alt="." style="background-color: white; background-color: inherit" title="QuestionnaireRoot" class="hierarchy"/> </td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Questionnaire</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">http://example.org/Questionnaire/OswestryDisabilityIndexQuestionnaire#0.9.11</td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.odi-1" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> odi-1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pain intensity</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.odi-1">6 options</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.odi-2" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: white; background-color: inherit" title="coding" class="hierarchy"/> odi-2</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Personal care (washing, dressing, etc.)</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.odi-2">6 options</a></td></tr>
 <tr style="border: 1px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" id="item.odi-3" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon-q-coding.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="coding" class="hierarchy"/> odi-3</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Lifting</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="https://hl7.org/fhir/R4/codesystem-item-type.html#item-type-choice">choice</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 1px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Options: <a href="#opt-item.odi-3">6 options</a></td></tr>
@@ -22,10 +22,10 @@
 <tr><td colspan="5" class="hierarchy"><br/><a href="https://hl7.org/fhir/R4/formats.html#table" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table><hr/><p><b>Options Sets</b></p><a name="opt-item.odi-1"> </a><p><b>Answer options for odi-1 </b></p><ul><li style="font-size: 11px">null#null (&quot;I have no pain at the moment.&quot;)</li><li style="font-size: 11px">null#null (&quot;The pain is very mild at the moment.&quot;)</li><li style="font-size: 11px">null#null (&quot;The pain is moderate at the moment.&quot;)</li><li style="font-size: 11px">null#null (&quot;The pain is fairly severe at the moment.&quot;)</li><li style="font-size: 11px">null#null (&quot;The pain is very severe at the moment.&quot;)</li><li style="font-size: 11px">null#null (&quot;The pain is the worst imaginable at the moment.&quot;)</li></ul><a name="opt-item.odi-2"> </a><p><b>Answer options for odi-2 </b></p><ul><li style="font-size: 11px">null#null (&quot;I can look after myself normally without causing extra pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can look after myself normally but it is very painful.&quot;)</li><li style="font-size: 11px">null#null (&quot;It is painful to look after myself and I am slow and careful.&quot;)</li><li style="font-size: 11px">null#null (&quot;I need some help but can manage most of my personal care.&quot;)</li><li style="font-size: 11px">null#null (&quot;I need help every day in most aspects of my personal care.&quot;)</li><li style="font-size: 11px">null#null (&quot;I do not get dressed, I wash with difficulty and stay in bed.&quot;)</li></ul><a name="opt-item.odi-3"> </a><p><b>Answer options for odi-3 </b></p><ul><li style="font-size: 11px">null#null (&quot;I can lift heavy weights without additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can lift heavy weights but it gives additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me lifting heavy weights off the floor, but I can manage if they are conveniently placed e.g. on a table.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from lifting heavy weights, but I can manage light to medium weights if they are conveniently positioned.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can lift very light weights.&quot;)</li><li style="font-size: 11px">null#null (&quot;I cannot lift or carry anything at all.&quot;)</li></ul><a name="opt-item.odi-4"> </a><p><b>Answer options for odi-4 </b></p><ul><li style="font-size: 11px">null#null (&quot;Pain does not prevent me walking any distance.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from walking more than one mile.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from walking more than a quarter of a mile.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from walking more than 100 yards.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can only walk using a stick or crutches.&quot;)</li><li style="font-size: 11px">null#null (&quot;I am in bed most of the time and have to crawl to the toilet.&quot;)</li></ul><a name="opt-item.odi-5"> </a><p><b>Answer options for odi-5 </b></p><ul><li style="font-size: 11px">null#null (&quot;I can sit in any chair as long as I like.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can only sit in my favorite chair as long as I like.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from sitting for more than one hour.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from sitting for more than half an hour.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from sitting for more than 10 minutes.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from sitting at all.&quot;)</li></ul><a name="opt-item.odi-6"> </a><p><b>Answer options for odi-6 </b></p><ul><li style="font-size: 11px">null#null (&quot;I can stand as long as I want without additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can stand as long as I want but it gives me additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from standing for more than 1 hour.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from standing for more than half an hour.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from standing for more than 10 minutes.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from standing at all.&quot;)</li></ul><a name="opt-item.odi-7"> </a><p><b>Answer options for odi-7 </b></p><ul><li style="font-size: 11px">null#null (&quot;My sleep is never interrupted by pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;My sleep is occasionally interrupted by pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Because of pain I have less than 6 hours sleep.&quot;)</li><li style="font-size: 11px">null#null (&quot;Because of pain I have less than 4 hours sleep.&quot;)</li><li style="font-size: 11px">null#null (&quot;Because of pain I have less than 2 hours sleep.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from sleeping at all.&quot;)</li></ul><a name="opt-item.odi-8"> </a><p><b>Answer options for odi-8 </b></p><ul><li style="font-size: 11px">null#null (&quot;My sex life is normal and causes no additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;My sex life is normal but causes some additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;My sex life is nearly normal but is very painful.&quot;)</li><li style="font-size: 11px">null#null (&quot;My sex life is severely restricted by pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;My sex life is non existent because of pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents me from having any sex life at all.&quot;)</li></ul><a name="opt-item.odi-9"> </a><p><b>Answer options for odi-9 </b></p><ul><li style="font-size: 11px">null#null (&quot;My social life is normal and causes me no additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;My social life is normal but increases the degree of pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain has no significant effect on social life apart from limiting my more energetic interests e.g. sports, etc.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain has restricted my social life and I do not go out as often.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain has restricted social life to my home.&quot;)</li><li style="font-size: 11px">null#null (&quot;I have no social life because of pain.&quot;)</li></ul><a name="opt-item.odi-10"> </a><p><b>Answer options for odi-10 </b></p><ul><li style="font-size: 11px">null#null (&quot;I can travel anywhere without pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;I can travel anywhere but it gives me additional pain.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain is bad but I am able to manage trips over two hours.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain restricts me to trips of less than one hour.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain restricts trips to short necessary journeys under 30 minutes.&quot;)</li><li style="font-size: 11px">null#null (&quot;Pain prevents traveling except to receive treatment.&quot;)</li></ul></div>
   </text>
   <url value="http://example.org/Questionnaire/OswestryDisabilityIndexQuestionnaire"/>
-  <version value="0.9.8"/>
+  <version value="0.9.11"/>
   <status value="active"/>
   <subjectType value="Patient"/>
-  <date value="2026-05-20T09:30:43-04:00"/>
+  <date value="2026-06-04T22:54:52-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -55,50 +55,50 @@
     <text value="Pain intensity"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I have no pain at the moment."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="The pain is very mild at the moment."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="The pain is moderate at the moment."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="The pain is fairly severe at the moment."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="The pain is very severe at the moment."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="The pain is the worst imaginable at the moment."/>
       </valueCoding>
     </answerOption>
@@ -108,50 +108,50 @@
     <text value="Personal care (washing, dressing, etc.)"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I can look after myself normally without causing extra pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="I can look after myself normally but it is very painful."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="It is painful to look after myself and I am slow and careful."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="I need some help but can manage most of my personal care."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="I need help every day in most aspects of my personal care."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="I do not get dressed, I wash with difficulty and stay in bed."/>
       </valueCoding>
     </answerOption>
@@ -161,50 +161,50 @@
     <text value="Lifting"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I can lift heavy weights without additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="I can lift heavy weights but it gives additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain prevents me lifting heavy weights off the floor, but I can manage if they are conveniently placed e.g. on a table."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain prevents me from lifting heavy weights, but I can manage light to medium weights if they are conveniently positioned."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="I can lift very light weights."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="I cannot lift or carry anything at all."/>
       </valueCoding>
     </answerOption>
@@ -214,50 +214,50 @@
     <text value="Walking"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="Pain does not prevent me walking any distance."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="Pain prevents me from walking more than one mile."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain prevents me from walking more than a quarter of a mile."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain prevents me from walking more than 100 yards."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="I can only walk using a stick or crutches."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="I am in bed most of the time and have to crawl to the toilet."/>
       </valueCoding>
     </answerOption>
@@ -267,50 +267,50 @@
     <text value="Sitting"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I can sit in any chair as long as I like."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="I can only sit in my favorite chair as long as I like."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain prevents me from sitting for more than one hour."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain prevents me from sitting for more than half an hour."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="Pain prevents me from sitting for more than 10 minutes."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="Pain prevents me from sitting at all."/>
       </valueCoding>
     </answerOption>
@@ -320,50 +320,50 @@
     <text value="Standing"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I can stand as long as I want without additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="I can stand as long as I want but it gives me additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain prevents me from standing for more than 1 hour."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain prevents me from standing for more than half an hour."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="Pain prevents me from standing for more than 10 minutes."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="Pain prevents me from standing at all."/>
       </valueCoding>
     </answerOption>
@@ -373,50 +373,50 @@
     <text value="Sleeping"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="My sleep is never interrupted by pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="My sleep is occasionally interrupted by pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Because of pain I have less than 6 hours sleep."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Because of pain I have less than 4 hours sleep."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="Because of pain I have less than 2 hours sleep."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="Pain prevents me from sleeping at all."/>
       </valueCoding>
     </answerOption>
@@ -426,50 +426,50 @@
     <text value="Sex life (if applicable)"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="My sex life is normal and causes no additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="My sex life is normal but causes some additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="My sex life is nearly normal but is very painful."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="My sex life is severely restricted by pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="My sex life is non existent because of pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="Pain prevents me from having any sex life at all."/>
       </valueCoding>
     </answerOption>
@@ -479,50 +479,50 @@
     <text value="Social life"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="My social life is normal and causes me no additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="My social life is normal but increases the degree of pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain has no significant effect on social life apart from limiting my more energetic interests e.g. sports, etc."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain has restricted my social life and I do not go out as often."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="Pain has restricted social life to my home."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="I have no social life because of pain."/>
       </valueCoding>
     </answerOption>
@@ -532,50 +532,50 @@
     <text value="Traveling"/>
     <type value="choice"/>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="0"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="0"/>
+        </extension>
         <display value="I can travel anywhere without pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="1"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
         <display value="I can travel anywhere but it gives me additional pain."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="2"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
         <display value="Pain is bad but I am able to manage trips over two hours."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="3"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
         <display value="Pain restricts me to trips of less than one hour."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="4"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
         <display value="Pain restricts trips to short necessary journeys under 30 minutes."/>
       </valueCoding>
     </answerOption>
     <answerOption>
-      <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
-        <valueDecimal value="5"/>
-      </extension>
       <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="5"/>
+        </extension>
         <display value="Pain prevents traveling except to receive treatment."/>
       </valueCoding>
     </answerOption>

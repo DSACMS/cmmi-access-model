@@ -1,4 +1,4 @@
-# BH PGIC Questionnaire - CMS ACCESS Model API v0.9.8
+# BH PGIC Questionnaire - CMS ACCESS Model API v0.9.11
 
 ## Questionnaire: 
 
@@ -24,10 +24,10 @@
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0"]
   },
   "url" : "http://example.org/Questionnaire/BHPGICQuestionnaire",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "status" : "active",
   "subjectType" : ["Patient"],
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -57,65 +57,65 @@
     "text" : "Since beginning treatment, how would you describe your overall change in activity limitations, symptoms, emotions, and quality of life?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "Very much improved"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Much improved"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Minimally improved"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "No change"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Minimally worse"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 6
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 6
+        }],
         "display" : "Much worse"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 7
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 7
+        }],
         "display" : "Very much worse"
       }
     }]

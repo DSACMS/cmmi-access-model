@@ -821,7 +821,7 @@
         <item>
           <linkId value="score"/>
           <answer>
-            <valueDecimal value="36"/>
+            <valueDecimal value="38"/>
           </answer>
         </item>
       </QuestionnaireResponse>

@@ -1,4 +1,4 @@
-# Patient Example - CMS ACCESS Model API v0.9.8
+# Patient Example - CMS ACCESS Model API v0.9.11
 
 ## Example Patient: Patient Example
 
@@ -15,7 +15,6 @@ Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"]
   },
-  "language" : "en",
   "identifier" : [{
     "type" : {
       "coding" : [{

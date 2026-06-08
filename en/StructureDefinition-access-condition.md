@@ -1,4 +1,4 @@
-# ACCESS Condition Profile - CMS ACCESS Model API v0.9.8
+# ACCESS Condition Profile - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Condition Profile ( Abstract ) 
 
@@ -17,7 +17,7 @@ For more information on value set binding strengths, see the [Conformance page](
 * Derived from this Profile: [ACCESS BH Condition Profile](StructureDefinition-access-bh-condition.md), [ACCESS CKM Track Condition Profile](StructureDefinition-access-ckm-condition.md), [ACCESS Clinical Exclusion Condition](StructureDefinition-access-clinical-exclusion-condition.md), [ACCESS eCKM Track Condition Profile](StructureDefinition-access-eckm-condition.md) and [ACCESS MSK Track Condition Profile](StructureDefinition-access-msk-condition.md)
 * Use this Profile: [ACCESS Alignment Request Parameters](StructureDefinition-access-align-in.md) and [ACCESS Check Eligibility Request Parameters](StructureDefinition-access-check-eligibility-in.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-condition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-condition.json)
 
 ### Formal Views of Profile Content
 
@@ -36,7 +36,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-condition.
   "resourceType" : "StructureDefinition",
   "id" : "access-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSCondition",
   "title" : "ACCESS Condition Profile",
   "status" : "active",

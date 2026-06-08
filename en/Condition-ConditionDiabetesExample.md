@@ -1,4 +1,4 @@
-# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.9.8
+# Condition Example - Type 2 Diabetes - CMS ACCESS Model API v0.9.11
 
 ## Example Condition: Condition Example - Type 2 Diabetes
 
@@ -15,7 +15,6 @@ Type 2 diabetes mellitus without complications
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"]
   },
-  "language" : "en",
   "clinicalStatus" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",

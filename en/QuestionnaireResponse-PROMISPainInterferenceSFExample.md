@@ -1,4 +1,4 @@
-# PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: PROMIS Pain Interference Short Form 6a QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ PROMIS Pain Interference (Short Form 6a) QuestionnaireResponse for John Doe. T-s
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/PROMISPainInterferenceSFQuestionnaire",
   "status" : "completed",
   "subject" : {

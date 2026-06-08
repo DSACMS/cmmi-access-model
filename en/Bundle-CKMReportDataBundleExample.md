@@ -1,4 +1,4 @@
-# CKM Report Data Bundle Example - CMS ACCESS Model API v0.9.8
+# CKM Report Data Bundle Example - CMS ACCESS Model API v0.9.11
 
 ## Example Bundle: CKM Report Data Bundle Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle"]
   },
-  "language" : "en",
   "identifier" : {
     "system" : "http://example.org/data-bundle-id",
     "value" : "bundle-ckm-001"

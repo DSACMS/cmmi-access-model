@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.8
+#  - CMS ACCESS Model API v0.9.11
 
 ## 
 
@@ -94,97 +94,156 @@ The `$align` operation initiates an asynchronous alignment request to align a pa
 
 ```
 POST https://[base]/access/Patient/$align?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "AlignmentRequestExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "1234567890A"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "1EG4TE5MK73"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Doe",
-            "given": ["John"]
+            "family" : "Doe",
+            "given" : [
+              "John"
+            ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1950-01-01"
+        "gender" : "male",
+        "birthDate" : "1950-01-01"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "condition",
-      "resource": {
-        "resourceType": "Condition",
-        "code": {
-          "coding": [
+      "name" : "condition",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "ConditionDiabetesExample",
+        "meta" : {
+          "profile" : [
+            🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Type 2 diabetes mellitus without complications</div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
             {
-              "system": "http://hl7.org/fhir/sid/icd-10-cm",
-              "code": "E11.9",
-              "display": "Type 2 diabetes mellitus without complications"
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
             }
           ]
         },
-        "subject": {
-          "reference": "Patient/example"
-        }
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "confirmed"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+              "code" : "E11.9",
+              "display" : "Type 2 diabetes mellitus without complications"
+            }
+          ]
+        },
+        "subject" : {
+          🔗 "reference" : "Patient/PatientExample"
+        },
+        "onsetDateTime" : "2020-01-15"
       }
     },
     {
-      "name": "isProviderReferral",
-      "valueBoolean": true,
+      "name" : "isProviderReferral",
+      "valueBoolean" : true
     }
   ]
 }
@@ -262,7 +321,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -299,7 +358,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -336,7 +395,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -373,7 +432,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -422,101 +481,160 @@ When a patient wishes to switch ACCESS participants after the 90-day lock-in per
 
 ```
 POST https://[base]/access/Patient/$align?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "AlignmentRequestWithSwitchConsentExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "1234567890A"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "1EG4TE5MK73"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Doe",
-            "given": ["John"]
+            "family" : "Doe",
+            "given" : [
+              "John"
+            ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1950-01-01"
+        "gender" : "male",
+        "birthDate" : "1950-01-01"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "condition",
-      "resource": {
-        "resourceType": "Condition",
-        "code": {
-          "coding": [
+      "name" : "condition",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "ConditionDiabetesExample",
+        "meta" : {
+          "profile" : [
+            🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Type 2 diabetes mellitus without complications</div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
             {
-              "system": "http://hl7.org/fhir/sid/icd-10-cm",
-              "code": "E11.9",
-              "display": "Type 2 diabetes mellitus without complications"
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
             }
           ]
         },
-        "subject": {
-          "reference": "Patient/example"
-        }
+        "verificationStatus" : {
+          "coding" : [
+            {
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "confirmed"
+            }
+          ]
+        },
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+              "code" : "E11.9",
+              "display" : "Type 2 diabetes mellitus without complications"
+            }
+          ]
+        },
+        "subject" : {
+          🔗 "reference" : "Patient/PatientExample"
+        },
+        "onsetDateTime" : "2020-01-15"
       }
     },
     {
-      "name": "isProviderReferral",
-      "valueBoolean": false,
+      "name" : "isProviderReferral",
+      "valueBoolean" : false
     },
     {
-      "name": "switchConsentAttestation",
-      "valueBoolean": true
+      "name" : "switchConsentAttestation",
+      "valueBoolean" : true
     }
   ]
 }
@@ -593,115 +711,156 @@ The following example demonstrates a complete alignment workflow:
 
 ```
 POST https://[base]/access/Patient/$align?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "AlignmentRequestExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "1234567890A"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "1EG4TE5MK73"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Doe",
-            "given": ["John"]
+            "family" : "Doe",
+            "given" : [
+              "John"
+            ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1950-01-01"
+        "gender" : "male",
+        "birthDate" : "1950-01-01"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "condition",
-      "resource": {
-        "resourceType": "Condition",
-        "code": {
-          "coding": [
+      "name" : "condition",
+      "resource" : {
+        "resourceType" : "Condition",
+        "id" : "ConditionDiabetesExample",
+        "meta" : {
+          "profile" : [
+            🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Type 2 diabetes mellitus without complications</div>"
+        },
+        "clinicalStatus" : {
+          "coding" : [
             {
-              "system": "http://hl7.org/fhir/sid/icd-10-cm",
-              "code": "E11.9",
-              "display": "Type 2 diabetes mellitus without complications"
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",
+              "code" : "active"
             }
           ]
         },
-        "subject": {
-          "reference": "Patient/example"
-        }
-      }
-    },
-    {
-      "name": "condition",
-      "resource": {
-        "resourceType": "Condition",
-        "code": {
-          "coding": [
+        "verificationStatus" : {
+          "coding" : [
             {
-              "system": "http://hl7.org/fhir/sid/icd-10-cm",
-              "code": "I70.0",
-              "display": "Atherosclerosis of aorta"
+              "system" : "http://terminology.hl7.org/CodeSystem/condition-ver-status",
+              "code" : "confirmed"
             }
           ]
         },
-        "subject": {
-          "reference": "Patient/example"
-        }
+        "category" : [
+          {
+            "coding" : [
+              {
+                "system" : "http://terminology.hl7.org/CodeSystem/condition-category",
+                "code" : "problem-list-item"
+              }
+            ]
+          }
+        ],
+        "code" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+              "code" : "E11.9",
+              "display" : "Type 2 diabetes mellitus without complications"
+            }
+          ]
+        },
+        "subject" : {
+          🔗 "reference" : "Patient/PatientExample"
+        },
+        "onsetDateTime" : "2020-01-15"
       }
     },
     {
-      "name": "isProviderReferral",
-      "valueBoolean": true,
+      "name" : "isProviderReferral",
+      "valueBoolean" : true
     }
   ]
 }
@@ -748,7 +907,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -797,7 +956,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -829,7 +988,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -856,7 +1015,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -893,7 +1052,7 @@ POST https://[base]/access/Patient/$align?entityId=ACCES12345
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 

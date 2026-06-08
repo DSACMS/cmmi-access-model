@@ -1,4 +1,4 @@
-# Neck Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# Neck Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: Neck Disability Index QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ Neck Disability Index QuestionnaireResponse for John Doe. Total score: 40.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/NeckDisabilityIndexQuestionnaire",
   "status" : "completed",
   "subject" : {

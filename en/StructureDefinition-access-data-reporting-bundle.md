@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.8
+# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Data Reporting Bundle 
 
@@ -26,7 +26,7 @@ For examples and submission workflows, see the Data Reporting API section in the
 * Use this Profile: [ACCESS Report Data Parameters](StructureDefinition-access-report-data-in.md)
 * Examples for this Profile: [Bundle/BHReportDataBundleExample](Bundle-BHReportDataBundleExample.md), [Bundle/CKMReportDataBundleExample](Bundle-CKMReportDataBundleExample.md), [Bundle/MSKReportDataBundleExample](Bundle-MSKReportDataBundleExample.md) and [Bundle/eCKMReportDataBundleExample](Bundle-eCKMReportDataBundleExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-data-reporting-bundle)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-data-reporting-bundle.json)
 
 ### Formal Views of Profile Content
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-bundle",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSDataReportingBundle",
   "title" : "ACCESS Data Reporting Bundle",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
         "severity" : "error",
         "human" : "All resources referenced from the data reporting Composition must be included in the enclosing data reporting Bundle.",
         "expression" : "entry.resource.ofType(Composition).descendants().ofType(Reference).all(resolve() in %resource.entry.resource)",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.8"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
       }]
     },
     {
@@ -166,7 +166,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
       "min" : 1,
       "type" : [{
         "code" : "Composition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"]
       }],
       "mustSupport" : true
     }]

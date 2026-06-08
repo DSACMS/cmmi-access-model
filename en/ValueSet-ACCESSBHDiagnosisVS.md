@@ -1,4 +1,4 @@
-# ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.8
+# ACCESS Behavioral Health (BH) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.11
 
 ## ValueSet: ACCESS Behavioral Health (BH) Track Qualifying Diagnoses 
 
@@ -28,12 +28,12 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
   "resourceType" : "ValueSet",
   "id" : "ACCESSBHDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSBHDiagnosisVS",
   "title" : "ACCESS Behavioral Health (BH) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -59,12 +59,16 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
     "include" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
       "concept" : [{
+        "code" : "F06.30",
+        "display" : "Mood disorder due to known physiological condition, unspecified"
+      },
+      {
         "code" : "F06.31",
         "display" : "Mood disorder due to known physiological condition with depressive features"
       },
       {
-        "code" : "F06.32",
-        "display" : "Mood disorder due to known physiological condition with major depressive-like episode"
+        "code" : "F06.4",
+        "display" : "Anxiety disorder due to known physiological condition"
       },
       {
         "code" : "F32.0",
@@ -151,20 +155,16 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
         "display" : "Dysthymic disorder"
       },
       {
-        "code" : "F43.20",
-        "display" : "Adjustment disorder, unspecified"
+        "code" : "F34.81",
+        "display" : "Disruptive mood dysregulation disorder"
       },
       {
-        "code" : "F43.21",
-        "display" : "Adjustment disorder with depressed mood"
+        "code" : "F34.89",
+        "display" : "Other specified persistent mood disorders"
       },
       {
-        "code" : "F43.22",
-        "display" : "Adjustment disorder with anxiety"
-      },
-      {
-        "code" : "F43.23",
-        "display" : "Adjustment disorder with mixed anxiety and depressed mood"
+        "code" : "F34.9",
+        "display" : "Persistent mood [affective] disorder, unspecified"
       },
       {
         "code" : "F40.00",
@@ -185,6 +185,74 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "F40.11",
         "display" : "Social phobia, generalized"
+      },
+      {
+        "code" : "F40.210",
+        "display" : "Arachnophobia"
+      },
+      {
+        "code" : "F40.218",
+        "display" : "Other animal type phobia"
+      },
+      {
+        "code" : "F40.220",
+        "display" : "Fear of thunderstorms"
+      },
+      {
+        "code" : "F40.228",
+        "display" : "Other natural environment type phobia"
+      },
+      {
+        "code" : "F40.230",
+        "display" : "Fear of blood"
+      },
+      {
+        "code" : "F40.231",
+        "display" : "Fear of injections and transfusions"
+      },
+      {
+        "code" : "F40.232",
+        "display" : "Fear of other medical care"
+      },
+      {
+        "code" : "F40.233",
+        "display" : "Fear of injury"
+      },
+      {
+        "code" : "F40.240",
+        "display" : "Claustrophobia"
+      },
+      {
+        "code" : "F40.241",
+        "display" : "Acrophobia"
+      },
+      {
+        "code" : "F40.242",
+        "display" : "Fear of bridges"
+      },
+      {
+        "code" : "F40.243",
+        "display" : "Fear of flying"
+      },
+      {
+        "code" : "F40.248",
+        "display" : "Other situational type phobia"
+      },
+      {
+        "code" : "F40.290",
+        "display" : "Androphobia"
+      },
+      {
+        "code" : "F40.291",
+        "display" : "Gynephobia"
+      },
+      {
+        "code" : "F40.298",
+        "display" : "Other specified phobia"
+      },
+      {
+        "code" : "F40.8",
+        "display" : "Other phobic anxiety disorders"
       },
       {
         "code" : "F40.9",
@@ -209,6 +277,62 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "F41.9",
         "display" : "Anxiety disorder, unspecified"
+      },
+      {
+        "code" : "F43.0",
+        "display" : "Acute stress reaction"
+      },
+      {
+        "code" : "F43.10",
+        "display" : "Post-traumatic stress disorder, unspecified"
+      },
+      {
+        "code" : "F43.11",
+        "display" : "Post-traumatic stress disorder, acute"
+      },
+      {
+        "code" : "F43.12",
+        "display" : "Post-traumatic stress disorder, chronic"
+      },
+      {
+        "code" : "F43.20",
+        "display" : "Adjustment disorder, unspecified"
+      },
+      {
+        "code" : "F43.21",
+        "display" : "Adjustment disorder with depressed mood"
+      },
+      {
+        "code" : "F43.22",
+        "display" : "Adjustment disorder with anxiety"
+      },
+      {
+        "code" : "F43.23",
+        "display" : "Adjustment disorder with mixed anxiety and depressed mood"
+      },
+      {
+        "code" : "F43.24",
+        "display" : "Adjustment disorder with disturbance of conduct"
+      },
+      {
+        "code" : "F43.25",
+        "display" : "Adjustment disorder with mixed disturbance of emotions and conduct"
+      },
+      {
+        "code" : "F43.29",
+        "display" : "Adjustment disorder with other symptoms"
+      },
+      {
+        "code" : "F43.81",
+        "display" : "Prolonged grief disorder"
+      },
+      {
+        "code" : "F43.89",
+        "display" : "Other reactions to severe stress"
+      },
+      {
+        "code" : "F43.9",
+        "display" : "Reaction to severe stress, unspecified"
       }]
     }]
   }

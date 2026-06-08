@@ -1,4 +1,4 @@
-# Patient with ESRD - Unalignment Example - CMS ACCESS Model API v0.9.8
+# Patient with ESRD - Unalignment Example - CMS ACCESS Model API v0.9.11
 
 ## Example Patient: Patient with ESRD - Unalignment Example
 
@@ -15,7 +15,6 @@ Patient Jane Smith, female, born 1955-06-15, Medicare ID: 9876543210B
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"]
   },
-  "language" : "en",
   "identifier" : [{
     "type" : {
       "coding" : [{

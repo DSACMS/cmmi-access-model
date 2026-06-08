@@ -1,4 +1,4 @@
-# Unalignment Response - Unaligned Example - CMS ACCESS Model API v0.9.8
+# Unalignment Response - Unaligned Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Unalignment Response - Unaligned Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {

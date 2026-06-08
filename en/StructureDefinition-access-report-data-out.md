@@ -1,4 +1,4 @@
-# ACCESS Report Data Response Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Report Data Response Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Report Data Response Parameters 
 
@@ -9,7 +9,7 @@ This is the profile for the `$report-data` operation output parameters, which pr
 
 * Examples for this Profile: [Parameters/ReportDataResponseDuplicateExample](Parameters-ReportDataResponseDuplicateExample.md), [Parameters/ReportDataResponseIncompleteDataExample](Parameters-ReportDataResponseIncompleteDataExample.md), [Parameters/ReportDataResponseIncorrectTrackExample](Parameters-ReportDataResponseIncorrectTrackExample.md), [Parameters/ReportDataResponsePatientNotAlignedExample](Parameters-ReportDataResponsePatientNotAlignedExample.md)... Show 2 more, [Parameters/ReportDataResponseReportingPeriodClosedExample](Parameters-ReportDataResponseReportingPeriodClosedExample.md) and [Parameters/ReportDataResponseSuccessExample](Parameters-ReportDataResponseSuccessExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-report-data-out)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-report-data-out.json)
 
 ### Formal Views of Profile Content
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
   "resourceType" : "StructureDefinition",
   "id" : "access-report-data-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSReportDataResponseParameters",
   "title" : "ACCESS Report Data Response Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-report-dat
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportDataResultVS|0.9.11"
       }
     }]
   }

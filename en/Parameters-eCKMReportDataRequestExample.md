@@ -1,4 +1,4 @@
-# eCKM Report Data Request Example - CMS ACCESS Model API v0.9.8
+# eCKM Report Data Request Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: eCKM Report Data Request Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {

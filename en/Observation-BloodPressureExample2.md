@@ -1,4 +1,4 @@
-# Blood Pressure Example 2 - CMS ACCESS Model API v0.9.8
+# Blood Pressure Example 2 - CMS ACCESS Model API v0.9.11
 
 ## Example Observation: Blood Pressure Example 2
 
@@ -15,7 +15,6 @@ Blood Pressure: 132/84 mm[Hg] measured on 2026-01-22
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

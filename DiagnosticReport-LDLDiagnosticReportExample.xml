@@ -5,7 +5,6 @@
   <meta>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0"/>
   </meta>
-  <language value="en"/>
   <text>
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><h3>Lipid Panel Report</h3><p>Patient: John Doe</p><p>Date: 2026-01-15</p><p>Results: Total Cholesterol 219 mg/dL, LDL 140 mg/dL, HDL 42 mg/dL, Triglycerides 185 mg/dL</p></div>
   </text>

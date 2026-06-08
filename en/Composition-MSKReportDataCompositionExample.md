@@ -1,4 +1,4 @@
-# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.8
+# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.11
 
 ## Example Composition: MSK Data Reporting Composition Example
 
@@ -21,7 +21,6 @@ Author: Jane Smith
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition"]
   },
-  "language" : "en",
   "status" : "final",
   "type" : {
     "coding" : [{

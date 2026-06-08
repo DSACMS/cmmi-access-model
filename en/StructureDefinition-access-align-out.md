@@ -1,4 +1,4 @@
-# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Alignment Response Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Alignment Response Parameters 
 
@@ -9,7 +9,7 @@ This is the profile for the `$align` operation output parameters, which provide 
 
 * Examples for this Profile: [Parameters/AlignmentResponseAlignedExample](Parameters-AlignmentResponseAlignedExample.md) and [Parameters/AlignmentResponseSwitchApprovedExample](Parameters-AlignmentResponseSwitchApprovedExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-align-out)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-align-out.json)
 
 ### Formal Views of Profile Content
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-out.
   "resourceType" : "StructureDefinition",
   "id" : "access-align-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSAlignmentResponseParameters",
   "title" : "ACCESS Alignment Response Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-out.
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSAlignmentResultVS|0.9.11"
       }
     }]
   }

@@ -1,4 +1,4 @@
-# Condition Example - Osteoarthritis - CMS ACCESS Model API v0.9.8
+# Condition Example - Osteoarthritis - CMS ACCESS Model API v0.9.11
 
 ## Example Condition: Condition Example - Osteoarthritis
 
@@ -15,7 +15,6 @@ Unspecified osteoarthritis, unspecified site
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition"]
   },
-  "language" : "en",
   "clinicalStatus" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",

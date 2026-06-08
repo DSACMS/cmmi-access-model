@@ -1,4 +1,4 @@
-# Submission Status OperationOutcome Example - CMS ACCESS Model API v0.9.8
+# Submission Status OperationOutcome Example - CMS ACCESS Model API v0.9.11
 
 ## Example OperationOutcome: Submission Status OperationOutcome Example
 
@@ -16,7 +16,6 @@ The data submission did not contain the following required information:
 {
   "resourceType" : "OperationOutcome",
   "id" : "SubmissionStatusOperationOutcomeExample",
-  "language" : "en",
   "issue" : [{
     "severity" : "warning",
     "code" : "required",

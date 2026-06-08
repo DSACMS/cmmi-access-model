@@ -5,7 +5,6 @@
   <meta>
     <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle"/>
   </meta>
-  <language value="en"/>
   <identifier>
     <system value="http://example.org/data-bundle-id"/>
     <value value="bundle-eckm-001"/>

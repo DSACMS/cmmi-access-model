@@ -1,4 +1,4 @@
-# Submission Status Response Example - CMS ACCESS Model API v0.9.8
+# Submission Status Response Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Submission Status Response Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {

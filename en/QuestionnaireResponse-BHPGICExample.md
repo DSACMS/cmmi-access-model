@@ -1,4 +1,4 @@
-# BH PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# BH PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: BH PGIC QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ PGIC QuestionnaireResponse for John Doe. Response: Very much improved.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/BHPGICQuestionnaire",
   "status" : "completed",
   "subject" : {

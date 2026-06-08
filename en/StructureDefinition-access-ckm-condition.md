@@ -1,4 +1,4 @@
-# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.8
+# ACCESS CKM Track Condition Profile - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS CKM Track Condition Profile 
 
@@ -11,7 +11,7 @@ All codes must still be valid ICD-10-CM codes as required by the base [ACCESS Co
 
 * Examples for this Profile: [Condition/ConditionDiabetesExample](Condition-ConditionDiabetesExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-ckm-condition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-ckm-condition.json)
 
 ### Formal Views of Profile Content
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
   "resourceType" : "StructureDefinition",
   "id" : "access-ckm-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSCKMCondition",
   "title" : "ACCESS CKM Track Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-ckm-condit
       "definition" : "Diagnosis code for CKM track conditions. Values SHALL be from ACCESSCKMDiagnosisVS (diabetes mellitus, ASCVD, CKD stage 3).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS|0.9.11"
       }
     }]
   }

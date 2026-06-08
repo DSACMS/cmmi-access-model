@@ -1,0 +1,42 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ACCESSClinicalExclusionDiagnosisVS",
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSClinicalExclusionDiagnosisVS</b></p><a name=\"ACCESSClinicalExclusionDiagnosisVS\"> </a><a name=\"hcACCESSClinicalExclusionDiagnosisVS\"> </a><ul><li>Include all codes defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span></li></ul></div>"
+  },
+  "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSClinicalExclusionDiagnosisVS",
+  "version" : "0.9.11",
+  "name" : "ACCESSClinicalExclusionDiagnosisVS",
+  "title" : "ACCESS Clinical Exclusion Diagnoses",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-04T22:54:52-04:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "This value set contains ICD-10-CM diagnosis codes that represent clinical exclusions that would prevent a patient from participating in the ACCESS Model.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm"
+    }]
+  }
+}

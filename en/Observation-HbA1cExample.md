@@ -1,4 +1,4 @@
-# HbA1c Example - CMS ACCESS Model API v0.9.8
+# HbA1c Example - CMS ACCESS Model API v0.9.11
 
 ## Example Observation: HbA1c Example
 
@@ -15,7 +15,6 @@ Hemoglobin A1c: 6.5% measured on 2026-01-15
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

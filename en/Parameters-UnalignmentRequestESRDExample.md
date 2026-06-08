@@ -1,4 +1,4 @@
-# Unalignment Request - ESRD Example - CMS ACCESS Model API v0.9.8
+# Unalignment Request - ESRD Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Unalignment Request - ESRD Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {

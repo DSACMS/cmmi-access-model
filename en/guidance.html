@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title> - CMS ACCESS Model API v0.9.8</title>
+    <title> - CMS ACCESS Model API v0.9.11</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.8 - draft
+            <span style="display:inline-block;">0.9.11 - draft
 
 
 
@@ -150,7 +150,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.11) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dsacms.github.io/cmmi-access-model/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2></h2>
   
 
@@ -311,8 +311,8 @@ Where <code class="language-plaintext highlighter-rouge">[entityId]</code> is th
 <h4 id="content-types">Content Types</h4>
 
 <ul>
-  <li><strong>Request:</strong> <code class="language-plaintext highlighter-rouge">application/fhir+json</code></li>
-  <li><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">application/fhir+json</code></li>
+  <li><strong>Request:</strong> <code class="language-plaintext highlighter-rouge">application/json</code></li>
+  <li><strong>Response:</strong> <code class="language-plaintext highlighter-rouge">application/json</code></li>
 </ul>
 
 <h4 id="patient-identification">Patient Identification</h4>
@@ -528,7 +528,7 @@ Where <code class="language-plaintext highlighter-rouge">[entityId]</code> is th
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>POST https://[base]/access/Patient/$check-eligibility?entityId=ACCES12345
 </code></pre></div></div>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -544,7 +544,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Invalid MBI Format:</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -560,7 +560,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Invalid Track Code:</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -578,7 +578,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Malformed Parameters Resource:</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -597,7 +597,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Invalid Participant ID (400):</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -615,7 +615,7 @@ Content-Type: application/fhir+json
 
 <p><strong>FHIR Validation Failure:</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -638,7 +638,7 @@ Content-Type: application/fhir+json
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>GET https://[base]/access/Patient/$submission-status/invalid-sub-id
 </code></pre></div></div>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 404 Not Found
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -657,7 +657,7 @@ Content-Type: application/fhir+json
 <p><strong>Missing or Invalid Token (401):</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 401 Unauthorized
 WWW-Authenticate: Bearer error="invalid_token"
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -675,7 +675,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Insufficient Scope (403):</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 403 Forbidden
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -696,7 +696,7 @@ Content-Type: application/fhir+json
 <p><strong>Service Temporarily Unavailable (503):</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 503 Service Unavailable
 Retry-After: 60
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -714,7 +714,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Internal Server Error (500):</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 500 Internal Server Error
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"OperationOutcome"</span><span class="p">,</span><span class="w">
@@ -736,7 +736,7 @@ Content-Type: application/fhir+json
 
 <p><strong>Response:</strong></p>
 <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 </code></pre></div></div>
 <div class="language-json highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">{</span><span class="w">
   </span><span class="nl">"resourceType"</span><span class="p">:</span><span class="w"> </span><span class="s2">"Parameters"</span><span class="p">,</span><span class="w">
@@ -870,10 +870,10 @@ Content-Type: application/fhir+json
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-20 09:30:00 -0400">
-    2026-05-20
+  <span title="2026-06-04 22:54:00 -0400">
+    2026-06-04
   </span>
 
           <br/>

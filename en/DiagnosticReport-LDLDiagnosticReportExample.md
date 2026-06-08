@@ -1,4 +1,4 @@
-# LDL-C DiagnosticReport Example - CMS ACCESS Model API v0.9.8
+# LDL-C DiagnosticReport Example - CMS ACCESS Model API v0.9.11
 
 ## Example DiagnosticReport: LDL-C DiagnosticReport Example
 
@@ -21,7 +21,6 @@ Results: Total Cholesterol 219 mg/dL, LDL 140 mg/dL, HDL 42 mg/dL, Triglycerides
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-diagnosticreport-lab|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

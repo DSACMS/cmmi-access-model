@@ -1,4 +1,4 @@
-# Report Data Response - Incomplete Data Example - CMS ACCESS Model API v0.9.8
+# Report Data Response - Incomplete Data Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Report Data Response - Incomplete Data Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {

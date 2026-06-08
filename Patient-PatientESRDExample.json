@@ -4,7 +4,6 @@
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"]
   },
-  "language" : "en",
   "text" : {
     "status" : "generated",
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient Jane Smith, female, born 1955-06-15, Medicare ID: 9876543210B</div>"

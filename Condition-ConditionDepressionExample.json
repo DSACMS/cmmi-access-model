@@ -4,7 +4,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition"]
   },
-  "language" : "en",
   "text" : {
     "status" : "generated",
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Major depressive disorder, single episode, unspecified</div>"

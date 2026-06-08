@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.8
+#  - CMS ACCESS Model API v0.9.11
 
 ## 
 
@@ -92,83 +92,105 @@ The `$unalign` operation initiates an asynchronous manual unalignment request.
 
 ```
 POST https://[base]/access/Patient/$unalign?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "UnalignmentRequestExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "1234567890A"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "1EG4TE5MK73"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Doe",
-            "given": ["John"]
+            "family" : "Doe",
+            "given" : [
+              "John"
+            ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1950-01-01"
+        "gender" : "male",
+        "birthDate" : "1950-01-01"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "reason",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "reason",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-            "code": "loss-of-contact",
-            "display": "Loss of contact"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
+            "code" : "geographic-relocated",
+            "display" : "Geographic relocated"
           }
         ]
       }
@@ -194,87 +216,108 @@ This example demonstrates unalignment when a patient has developed a new conditi
 
 ```
 POST https://[base]/access/Patient/$unalign?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "UnalignmentRequestESRDExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "id": "example",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientESRDExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient Jane Smith, female, born 1955-06-15, Medicare ID: 9876543210B</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "9876543210B"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "9876543210B"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Smith",
-            "given": ["Jane"]
+            "family" : "Smith",
+            "given" : [
+              "Jane"
+            ]
           }
         ],
-        "gender": "female",
-        "birthDate": "1955-06-15"
+        "gender" : "female",
+        "birthDate" : "1955-06-15"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "reason",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "reason",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-            "code": "no-longer-clinically-eligible",
-            "display": "No longer clinically eligible"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
+            "code" : "no-longer-clinically-eligible",
+            "display" : "No longer clinically eligible"
           }
         ],
-        "text": "Patient has developed end-stage renal disease (ESRD) requiring dialysis, which makes them ineligible for the ACCESS Model."
+        "text" : "Patient has developed end-stage renal disease (ESRD) requiring dialysis, which makes them ineligible for the ACCESS Model."
       }
     },
     {
@@ -287,9 +330,10 @@ Content-Type: application/fhir+json
             🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition"
           ]
         },
+        "language" : "en",
         "text" : {
           "status" : "generated",
-          "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\">End stage renal disease (ESRD)</div>"
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">End stage renal disease (ESRD)</div>"
         },
         "clinicalStatus" : {
           "coding" : [
@@ -415,7 +459,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -452,7 +496,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -489,7 +533,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -526,7 +570,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -585,86 +629,107 @@ The following example demonstrates a complete unalignment request workflow:
 
 ```
 POST https://[base]/access/Patient/$unalign?entityId=ACCES12345
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
 ```
 {
-  "resourceType": "Parameters",
-  "parameter": [
+  "resourceType" : "Parameters",
+  "id" : "UnalignmentRequestExample",
+  "meta" : {
+    "profile" : [
+      🔗 "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in"
+    ]
+  },
+  "language" : "en",
+  "parameter" : [
     {
-      "name": "participantID",
-      "valueIdentifier": {
-        "system": "https://dsacms.github.io/cmmi-access-model/participant-id",
-        "value": "ACCES12345"
+      "name" : "participantID",
+      "valueIdentifier" : {
+        "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+        "value" : "ACCES12345"
       }
     },
     {
-      "name": "payerID",
-      "valueIdentifier": {
-        "type": {
-          "coding": [{
-            "system": "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
-            "code": "payerid",
-            "display": "Payer ID"
-          }]
+      "name" : "payerID",
+      "valueIdentifier" : {
+        "type" : {
+          "coding" : [
+            {
+              "system" : "http://hl7.org/fhir/us/carin-bb/CodeSystem/C4BBIdentifierType",
+              "code" : "payerid",
+              "display" : "Payer ID"
+            }
+          ]
         },
-        "system": "urn:oid:2.16.840.1.113883.3.221.5",
-        "value": "12345"
+        "system" : "urn:oid:2.16.840.1.113883.3.221.5",
+        "value" : "12345"
       }
     },
     {
-      "name": "patient",
-      "resource": {
-        "resourceType": "Patient",
-        "identifier": [
+      "name" : "patient",
+      "resource" : {
+        "resourceType" : "Patient",
+        "id" : "PatientExample",
+        "meta" : {
+          "profile" : [
+            🔗 "http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"
+          ]
+        },
+        "language" : "en",
+        "text" : {
+          "status" : "generated",
+          "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>"
+        },
+        "identifier" : [
           {
-            "type": {
-              "coding": [
+            "type" : {
+              "coding" : [
                 {
-                  "system": "http://terminology.hl7.org/CodeSystem/v2-0203",
-                  "code": "MC"
+                  "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+                  "code" : "MC"
                 }
               ]
             },
-            "system": "http://terminology.hl7.org/NamingSystem/cmsMBI",
-            "value": "1234567890A"
+            "system" : "http://terminology.hl7.org/NamingSystem/cmsMBI",
+            "value" : "1EG4TE5MK73"
           }
         ],
-        "name": [
+        "name" : [
           {
-            "family": "Doe",
-            "given": ["John"]
+            "family" : "Doe",
+            "given" : [
+              "John"
+            ]
           }
         ],
-        "gender": "male",
-        "birthDate": "1950-01-01"
+        "gender" : "male",
+        "birthDate" : "1950-01-01"
       }
     },
     {
-      "name": "track",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "track",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-            "code": "CKM",
-            "display": "Cardio-Kidney-Metabolic track"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
+            "code" : "CKM",
+            "display" : "Cardio-kidney-metabolic track"
           }
         ]
       }
     },
     {
-      "name": "reason",
-      "valueCodeableConcept": {
-        "coding": [
+      "name" : "reason",
+      "valueCodeableConcept" : {
+        "coding" : [
           {
-            "system": "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-            "code": "geographic-relocated",
-            "display": "Geographic relocated"
+            "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
+            "code" : "geographic-relocated",
+            "display" : "Geographic relocated"
           }
-        ],
-        "text": "Patient has relocated outside of the geographic area in which the aligned participant is licensed to provide services."
+        ]
       }
     }
   ]
@@ -712,7 +777,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -761,7 +826,7 @@ GET https://[base]/access/Patient/$submission-status/sub-123456
 
 ```
 HTTP/1.1 200 OK
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -792,7 +857,7 @@ Content-Type: application/fhir+json
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 
@@ -825,7 +890,7 @@ POST https://[base]/access/Patient/$unalign?entityId=ACCES12345
 
 ```
 HTTP/1.1 400 Bad Request
-Content-Type: application/fhir+json
+Content-Type: application/json
 
 ```
 

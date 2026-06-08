@@ -1,4 +1,4 @@
-# Check Eligibility Request - CMS ACCESS Model API v0.9.8
+# Check Eligibility Request - CMS ACCESS Model API v0.9.11
 
 ## OperationDefinition: Check Eligibility Request 
 
@@ -50,12 +50,12 @@ These are example instances demonstrating the use of the Eligibility API.
   "resourceType" : "OperationDefinition",
   "id" : "CheckEligibility",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "CheckEligibility",
   "title" : "Check Eligibility Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -81,7 +81,7 @@ These are example instances demonstrating the use of the Eligibility API.
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.8",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.11",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -115,7 +115,7 @@ These are example instances demonstrating the use of the Eligibility API.
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
     }
   },
   {

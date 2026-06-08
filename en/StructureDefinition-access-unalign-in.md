@@ -1,4 +1,4 @@
-# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Unalignment Request Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Unalignment Request Parameters 
 
@@ -20,7 +20,7 @@ For detailed unalignment workflows and examples, see the Unalignment API section
 
 * Examples for this Profile: [Parameters/UnalignmentRequestESRDExample](Parameters-UnalignmentRequestESRDExample.md) and [Parameters/UnalignmentRequestExample](Parameters-UnalignmentRequestExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-unalign-in)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-unalign-in.json)
 
 ### Formal Views of Profile Content
 
@@ -39,11 +39,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
   "resourceType" : "StructureDefinition",
   "id" : "access-unalign-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSUnalignmentRequestParameters",
   "title" : "ACCESS Unalignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -89,8 +89,18 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
         "severity" : "error",
         "human" : "When the unalignment reason is 'no-longer-clinically-eligible', at least one condition parameter must be provided to document the disqualifying diagnosis",
         "expression" : "parameter.where(name = 'reason').value.ofType(CodeableConcept).coding.where(system = 'https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS' and code = 'no-longer-clinically-eligible').exists() implies parameter.where(name = 'condition').exists()",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11"
       }]
+    },
+    {
+      "id" : "Parameters.meta",
+      "path" : "Parameters.meta",
+      "min" : 1
+    },
+    {
+      "id" : "Parameters.meta.profile",
+      "path" : "Parameters.meta.profile",
+      "min" : 1
     },
     {
       "id" : "Parameters.language",
@@ -144,7 +154,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11"
       }],
       "mustSupport" : true
     },
@@ -249,7 +259,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
       }
     },
     {
@@ -287,7 +297,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.8"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.11"]
       }],
       "mustSupport" : true
     },
@@ -320,7 +330,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-in
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentReasonVS|0.9.11"
       }
     },
     {

@@ -1,10 +1,57 @@
-# Change Log - CMS ACCESS Model API v0.9.8
+# Change Log - CMS ACCESS Model API v0.9.11
 
 ## Change Log
 
 This page documents the changes between versions of the CMS ACCESS Model API Implementation Guide.
 
 -------
+
+### Version 0.9.11 - DRAFT
+
+**Release Date**: June 4, 2026
+
+#### Major Changes
+
+##### Added Clinical Exclusion value sets under the Unalignment API
+
+* **`ACCESSCKMClinicalExclusionDiagnosisVS`** - clinical exclusions for the eCKM/CKM tracks
+* **`ACCESSMSKClinicalExclusionDiagnosisVS`** - clinical exclusions for the MSK track
+* **`ACCESSBHClinicalExclusionDiagnosisVS`** - clinical exclusions for the BH track
+
+##### meta.profile data element now required for request parameters
+
+* Required meta.profile data element added to: 
+* `ACCESSCheckEligibilityRequestParameters`
+* `ACCESSAlignmentRequestParameters`
+* `ACCESSUnalignmentRequestParameters`
+* `ACCESSReportDataRequestParameters`
+ 
+
+##### Changed Content-Type headers for requests
+
+* Changed the `Content-Type` header in examples from `application/fhir+json` to `application/json`
+
+##### Updated Qualifying Diagnoses value sets for each track
+
+* **Updated** `ACCESSeCKMDiagnosisVS`, `ACCESSCKMDiagnosisVS`, `ACCESSMSKDiagnosisVS`, and `ACCESSBHDiagnosisVS`
+
+##### Removed validation-error result from ACCESSReportDataResultVS and ACCESSReportDataResultCS
+
+* No longer needed.
+
+##### Fixed bug in Data Reporting Capability Statement
+
+* **Lipid panel** LOINC code changed from `57698-3` to `18262-6` to more accurately reflect the focus of the cholesterol data
+
+##### Fixed bug in uncoded questionnaires
+
+* **Extensions for the `valueCoding`** were in the wrong place 
+* Extension now is within the `valueCoding` instead of being a peer of `valueCoding`
+ 
+
+#### Technical Updates
+
+* Version bump from 0.9.8 to 0.9.11
 
 ### Version 0.9.8 - DRAFT
 
@@ -14,10 +61,6 @@ This page documents the changes between versions of the CMS ACCESS Model API Imp
 
 ##### Addressed feedback from first external testing window
 
-* **Fixed questionnaire responses that are uncoded** so that they have both the text (display) and numerical values for scoring 
-* Now use valueCoding with decimal extension instead of valueString
-* More consistent with the coded questionnaire responses
- 
 * **Added example questionnaires** to provide further guidance on how to package questionnaire response data
 * **Added more documentation** for each of the ACCESS Model API operations to make them easier to implement
 * **Added new result codes** for the `$check-eligibility` operation 

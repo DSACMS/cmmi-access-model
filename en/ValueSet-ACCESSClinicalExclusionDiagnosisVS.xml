@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ACCESSClinicalExclusionDiagnosisVS"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSClinicalExclusionDiagnosisVS</b></p><a name="ACCESSClinicalExclusionDiagnosisVS"> </a><a name="hcACCESSClinicalExclusionDiagnosisVS"> </a><ul><li>Include all codes defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span></li></ul></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSClinicalExclusionDiagnosisVS"/>
+  <version value="0.9.11"/>
+  <name value="ACCESSClinicalExclusionDiagnosisVS"/>
+  <title value="ACCESS Clinical Exclusion Diagnoses"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-06-04T22:54:52-04:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set contains ICD-10-CM diagnosis codes that represent clinical exclusions that would prevent a patient from participating in the ACCESS Model."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+    </include>
+  </compose>
+</ValueSet>

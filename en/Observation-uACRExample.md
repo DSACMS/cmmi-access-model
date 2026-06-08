@@ -1,4 +1,4 @@
-# uACR Example - CMS ACCESS Model API v0.9.8
+# uACR Example - CMS ACCESS Model API v0.9.11
 
 ## Example Observation: uACR Example
 
@@ -15,7 +15,6 @@ Urine Albumin-Creatinine Ratio: 45 mg/g measured on 2026-01-15
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

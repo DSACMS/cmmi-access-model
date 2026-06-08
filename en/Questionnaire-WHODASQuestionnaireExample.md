@@ -1,4 +1,4 @@
-# WHODAS 2.0 12-item Questionnaire - CMS ACCESS Model API v0.9.8
+# WHODAS 2.0 12-item Questionnaire - CMS ACCESS Model API v0.9.11
 
 ## Questionnaire: 
 
@@ -24,10 +24,10 @@
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0"]
   },
   "url" : "http://example.org/Questionnaire/WHODASQuestionnaire",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "status" : "active",
   "subjectType" : ["Patient"],
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -52,47 +52,47 @@
     "text" : "Standing for long periods such as 30 minutes",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -102,47 +102,47 @@
     "text" : "Taking care of household responsibilities",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -152,47 +152,47 @@
     "text" : "Learning a new task, for example learning how to get to a new place",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -202,47 +202,47 @@
     "text" : "How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -252,47 +252,47 @@
     "text" : "How much of a problem did you have with being emotionally affected by your health problems?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -302,47 +302,47 @@
     "text" : "Concentrating on doing something for ten minutes?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -352,47 +352,47 @@
     "text" : "Walking a long distance such as a kilometer [or equivalent]?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -402,47 +402,47 @@
     "text" : "Washing your whole body?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -452,47 +452,47 @@
     "text" : "Getting dressed?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -502,47 +502,47 @@
     "text" : "Dealing with people you do not know",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -552,47 +552,47 @@
     "text" : "Maintaining a friendship",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]
@@ -602,47 +602,47 @@
     "text" : "Your day-to-day work",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme or cannot do"
       }
     }]

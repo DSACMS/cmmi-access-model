@@ -1,4 +1,4 @@
-# QuickDASH QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# QuickDASH QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: QuickDASH QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ QuickDASH QuestionnaireResponse for John Doe. Score: 50.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/QuickDASHQuestionnaire",
   "status" : "completed",
   "subject" : {

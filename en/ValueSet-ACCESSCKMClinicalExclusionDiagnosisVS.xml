@@ -1,0 +1,1319 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="ACCESSCKMClinicalExclusionDiagnosisVS"/>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSCKMClinicalExclusionDiagnosisVS</b></p><a name="ACCESSCKMClinicalExclusionDiagnosisVS"> </a><a name="hcACCESSCKMClinicalExclusionDiagnosisVS"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F01 (Vascular dementia)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F02 (Dementia in other diseases classified elsewhere)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.9 (Unspecified dementia, unspecified severity)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.B (Unspecified dementia, moderate)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.C (Unspecified dementia, severe)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F10 (Alcohol related disorders)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F13 (Sedative, hypnotic, or anxiolytic related disorders)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F18 (Inhalant related disorders)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F19 (Other psychoactive substance related disorders)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a G30 (Alzheimer's disease)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a G31 (Oth degenerative diseases of nervous system, NEC)</li><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>R45.850</td><td style="color: #cccccc">Homicidal ideations</td></tr><tr><td>R45.851</td><td style="color: #cccccc">Suicidal ideations</td></tr><tr><td>R45.85</td><td style="color: #cccccc">Homicidal and suicidal ideations</td></tr><tr><td>R45.88</td><td style="color: #cccccc">Nonsuicidal self-harm</td></tr><tr><td>T14.91XA</td><td style="color: #cccccc">Suicide attempt, initial encounter</td></tr><tr><td>T14.91XD</td><td style="color: #cccccc">Suicide attempt, subsequent encounter</td></tr><tr><td>T14.91XS</td><td style="color: #cccccc">Suicide attempt, sequela</td></tr><tr><td>A81.00</td><td style="color: #cccccc">Creutzfeldt-Jakob disease, unspecified</td></tr><tr><td>A81.01</td><td style="color: #cccccc">Variant Creutzfeldt-Jakob disease</td></tr><tr><td>A81.09</td><td style="color: #cccccc">Other Creutzfeldt-Jakob disease</td></tr><tr><td>Z51.0</td><td style="color: #cccccc">Encounter for antineoplastic radiation therapy</td></tr><tr><td>Z51.11</td><td style="color: #cccccc">Encounter for antineoplastic chemotherapy</td></tr><tr><td>Z51.12</td><td style="color: #cccccc">Encounter for antineoplastic immunotherapy</td></tr><tr><td>C91.00</td><td style="color: #cccccc">Acute lymphoblastic leukemia not having achieved remission</td></tr><tr><td>C91.02</td><td style="color: #cccccc">Acute lymphoblastic leukemia, in relapse</td></tr><tr><td>C92.00</td><td style="color: #cccccc">Acute myeloblastic leukemia, not having achieved remission</td></tr><tr><td>C92.02</td><td style="color: #cccccc">Acute myeloblastic leukemia, in relapse</td></tr><tr><td>C93.00</td><td style="color: #cccccc">Acute monoblastic/monocytic leukemia, not having achieved remission</td></tr><tr><td>C93.02</td><td style="color: #cccccc">Acute monoblastic/monocytic leukemia, in relapse</td></tr><tr><td>C93.90</td><td style="color: #cccccc">Monocytic leukemia, unspecified, not having achieved remission</td></tr><tr><td>C93.92</td><td style="color: #cccccc">Monocytic leukemia, unspecified in relapse</td></tr><tr><td>C93.Z0</td><td style="color: #cccccc">Other monocytic leukemia, not having achieved remission</td></tr><tr><td>C93.Z2</td><td style="color: #cccccc">Other monocytic leukemia, in relapse</td></tr><tr><td>C94.30</td><td style="color: #cccccc">Mast cell leukemia not having achieved remission</td></tr><tr><td>C94.32</td><td style="color: #cccccc">Mast cell leukemia, in relapse</td></tr><tr><td>G10</td><td style="color: #cccccc">Huntington's disease</td></tr><tr><td>G12.20</td><td style="color: #cccccc">Motor neuron disease, unspecified</td></tr><tr><td>G12.21</td><td style="color: #cccccc">Amyotrophic lateral sclerosis</td></tr><tr><td>G12.22</td><td style="color: #cccccc">Progressive bulbar palsy</td></tr><tr><td>G12.23</td><td style="color: #cccccc">Primary lateral sclerosis</td></tr><tr><td>G12.24</td><td style="color: #cccccc">Familial motor neuron disease</td></tr><tr><td>G12.25</td><td style="color: #cccccc">Progressive spinal muscle atrophy</td></tr><tr><td>G12.29</td><td style="color: #cccccc">Other motor neuron disease</td></tr><tr><td>G35</td><td style="color: #cccccc">Multiple sclerosis</td></tr><tr><td>J43.1</td><td style="color: #cccccc">Panlobular emphysema</td></tr><tr><td>J43.2</td><td style="color: #cccccc">Centrilobular emphysema</td></tr><tr><td>J68.4</td><td style="color: #cccccc">Chronic respiratory conditions due to chemicals, gases, fumes and vapors</td></tr><tr><td>J84.10</td><td style="color: #cccccc">Pulmonary fibrosis, unspecified</td></tr><tr><td>J84.112</td><td style="color: #cccccc">Idiopathic pulmonary fibrosis</td></tr><tr><td>J84.170</td><td style="color: #cccccc">Interstitial lung disease with progressive fibrotic phenotype in diseases classified elsewhere</td></tr><tr><td>J84.178</td><td style="color: #cccccc">Other interstitial pulmonary diseases with fibrosis in diseases classified elsewhere</td></tr><tr><td>I27.20</td><td style="color: #cccccc">Pulmonary hypertension, unspecified</td></tr><tr><td>I27.21</td><td style="color: #cccccc">Secondary pulmonary arterial hypertension</td></tr><tr><td>I27.29</td><td style="color: #cccccc">Other secondary pulmonary hypertension</td></tr><tr><td>I27.9</td><td style="color: #cccccc">Pulmonary heart disease, unspecified</td></tr><tr><td>Z99.81</td><td style="color: #cccccc">Dependence on supplemental oxygen</td></tr><tr><td>Z99.89</td><td style="color: #cccccc">Dependence on other enabling machines and devices</td></tr><tr><td>R09.02</td><td style="color: #cccccc">Hypoxemia</td></tr><tr><td>K74.02</td><td style="color: #cccccc">Hepatic fibrosis, advanced fibrosis</td></tr><tr><td>K74.1</td><td style="color: #cccccc">Hepatic sclerosis</td></tr><tr><td>K74.2</td><td style="color: #cccccc">Hepatic fibrosis with hepatic sclerosis</td></tr><tr><td>K74.4</td><td style="color: #cccccc">Secondary biliary cirrhosis</td></tr><tr><td>K74.5</td><td style="color: #cccccc">Biliary cirrhosis, unspecified</td></tr><tr><td>K74.60</td><td style="color: #cccccc">Unspecified cirrhosis of liver</td></tr><tr><td>K74.69</td><td style="color: #cccccc">Other cirrhosis of liver</td></tr><tr><td>N18.4</td><td style="color: #cccccc">Chronic kidney disease, stage 4 (severe)</td></tr><tr><td>N18.5</td><td style="color: #cccccc">Chronic kidney disease, stage 5</td></tr><tr><td>N18.6</td><td style="color: #cccccc">End stage renal disease</td></tr><tr><td>Z99.2</td><td style="color: #cccccc">Dependence on renal dialysis</td></tr><tr><td>K76.6</td><td style="color: #cccccc">Portal hypertension</td></tr><tr><td>K76.7</td><td style="color: #cccccc">Hepatorenal syndrome</td></tr><tr><td>K76.81</td><td style="color: #cccccc">Hepatopulmonary syndrome</td></tr><tr><td>K71.11</td><td style="color: #cccccc">Toxic liver disease with hepatic necrosis, with coma</td></tr><tr><td>I50.84</td><td style="color: #cccccc">End stage heart failure</td></tr><tr><td>I50.23</td><td style="color: #cccccc">Acute on chronic systolic (congestive) heart failure</td></tr><tr><td>I50.33</td><td style="color: #cccccc">Acute on chronic diastolic (congestive) heart failure</td></tr><tr><td>I50.43</td><td style="color: #cccccc">Acute on chronic combined systolic (congestive) and diastolic (congestive) heart failure</td></tr><tr><td>I50.31</td><td style="color: #cccccc">Acute diastolic (congestive) heart failure</td></tr><tr><td>I50.41</td><td style="color: #cccccc">Acute combined systolic (congestive) and diastolic (congestive) heart failure</td></tr><tr><td>I50.811</td><td style="color: #cccccc">Acute right heart failure</td></tr><tr><td>I50.813</td><td style="color: #cccccc">Acute on chronic right heart failure</td></tr><tr><td>I50.21</td><td style="color: #cccccc">Acute systolic (congestive) heart failure</td></tr><tr><td>I35.0</td><td style="color: #cccccc">Nonrheumatic aortic (valve) stenosis</td></tr><tr><td>I35.2</td><td style="color: #cccccc">Nonrheumatic aortic (valve) stenosis with insufficiency</td></tr><tr><td>I34.0</td><td style="color: #cccccc">Nonrheumatic mitral (valve) insufficiency</td></tr><tr><td>J95.00</td><td style="color: #cccccc">Unspecified tracheostomy complication</td></tr><tr><td>J95.01</td><td style="color: #cccccc">Hemorrhage from tracheostomy stoma</td></tr><tr><td>J95.02</td><td style="color: #cccccc">Infection of tracheostomy stoma</td></tr><tr><td>J95.03</td><td style="color: #cccccc">Malfunction of tracheostomy stoma</td></tr><tr><td>J95.04</td><td style="color: #cccccc">Tracheo-esophageal fistula following tracheostomy</td></tr><tr><td>J95.09</td><td style="color: #cccccc">Other tracheostomy complication</td></tr><tr><td>J95.850</td><td style="color: #cccccc">Mechanical complication of respirator</td></tr><tr><td>J95.859</td><td style="color: #cccccc">Other complication of respirator [ventilator]</td></tr><tr><td>J4A.0</td><td style="color: #cccccc">Restrictive allograft syndrome</td></tr><tr><td>J4A.8</td><td style="color: #cccccc">Other chronic lung allograft dysfunction</td></tr><tr><td>J4A.9</td><td style="color: #cccccc">Chronic lung allograft dysfunction, unspecified</td></tr><tr><td>M31.11</td><td style="color: #cccccc">Hematopoietic stem cell transplantation-associated thrombotic microangiopathy [HSCT-TMA]</td></tr><tr><td>T86.00</td><td style="color: #cccccc">Unspecified complication of bone marrow transplant</td></tr><tr><td>T86.01</td><td style="color: #cccccc">Bone marrow transplant rejection</td></tr><tr><td>T86.02</td><td style="color: #cccccc">Bone marrow transplant failure</td></tr><tr><td>T86.03</td><td style="color: #cccccc">Bone marrow transplant infection</td></tr><tr><td>T86.09</td><td style="color: #cccccc">Other complications of bone marrow transplant</td></tr><tr><td>T86.20</td><td style="color: #cccccc">Unspecified complication of heart transplant</td></tr><tr><td>T86.21</td><td style="color: #cccccc">Heart transplant rejection</td></tr><tr><td>T86.22</td><td style="color: #cccccc">Heart transplant failure</td></tr><tr><td>T86.23</td><td style="color: #cccccc">Heart transplant infection</td></tr><tr><td>T86.290</td><td style="color: #cccccc">Cardiac allograft vasculopathy</td></tr><tr><td>T86.298</td><td style="color: #cccccc">Other complications of heart transplant</td></tr><tr><td>T86.30</td><td style="color: #cccccc">Unspecified complication of heart-lung transplant</td></tr><tr><td>T86.31</td><td style="color: #cccccc">Heart-lung transplant rejection</td></tr><tr><td>T86.32</td><td style="color: #cccccc">Heart-lung transplant failure</td></tr><tr><td>T86.33</td><td style="color: #cccccc">Heart-lung transplant infection</td></tr><tr><td>T86.39</td><td style="color: #cccccc">Other complications of heart-lung transplant</td></tr><tr><td>T86.40</td><td style="color: #cccccc">Unspecified complication of liver transplant</td></tr><tr><td>T86.41</td><td style="color: #cccccc">Liver transplant rejection</td></tr><tr><td>T86.42</td><td style="color: #cccccc">Liver transplant failure</td></tr><tr><td>T86.43</td><td style="color: #cccccc">Liver transplant infection</td></tr><tr><td>T86.49</td><td style="color: #cccccc">Other complications of liver transplant</td></tr><tr><td>T86.5</td><td style="color: #cccccc">Complications of stem cell transplant</td></tr><tr><td>T86.810</td><td style="color: #cccccc">Lung transplant rejection</td></tr><tr><td>T86.811</td><td style="color: #cccccc">Lung transplant failure</td></tr><tr><td>T86.812</td><td style="color: #cccccc">Lung transplant infection</td></tr><tr><td>T86.818</td><td style="color: #cccccc">Other complications of lung transplant</td></tr><tr><td>T86.819</td><td style="color: #cccccc">Unspecified complication of lung transplant</td></tr><tr><td>T86.850</td><td style="color: #cccccc">Intestine transplant rejection</td></tr><tr><td>T86.851</td><td style="color: #cccccc">Intestine transplant failure</td></tr><tr><td>T86.852</td><td style="color: #cccccc">Intestine transplant infection</td></tr><tr><td>T86.858</td><td style="color: #cccccc">Other complications of intestine transplant</td></tr><tr><td>T86.859</td><td style="color: #cccccc">Unspecified complication of intestine transplant</td></tr><tr><td>Z48.21</td><td style="color: #cccccc">Encounter for aftercare following heart transplant</td></tr><tr><td>Z48.23</td><td style="color: #cccccc">Encounter for aftercare following liver transplant</td></tr><tr><td>Z48.24</td><td style="color: #cccccc">Encounter for aftercare following lung transplant</td></tr><tr><td>Z48.280</td><td style="color: #cccccc">Encounter for aftercare following heart-lung transplant</td></tr><tr><td>Z48.290</td><td style="color: #cccccc">Encounter for aftercare following bone marrow transplant</td></tr><tr><td>Z94.1</td><td style="color: #cccccc">Heart transplant status</td></tr><tr><td>Z94.2</td><td style="color: #cccccc">Lung transplant status</td></tr><tr><td>Z94.3</td><td style="color: #cccccc">Heart and lungs transplant status</td></tr><tr><td>Z94.4</td><td style="color: #cccccc">Liver transplant status</td></tr><tr><td>Z94.81</td><td style="color: #cccccc">Bone marrow transplant status</td></tr><tr><td>Z94.82</td><td style="color: #cccccc">Intestine transplant status</td></tr><tr><td>Z94.83</td><td style="color: #cccccc">Pancreas transplant status</td></tr><tr><td>Z94.84</td><td style="color: #cccccc">Stem cells transplant status</td></tr><tr><td>Z95.811</td><td style="color: #cccccc">Presence of heart assist device</td></tr><tr><td>Z95.812</td><td style="color: #cccccc">Presence of fully implantable artificial heart</td></tr><tr><td>E08.00</td><td style="color: #cccccc">Diabetes mellitus due to underlying condition with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)</td></tr><tr><td>E08.01</td><td style="color: #cccccc">Diabetes mellitus due to underlying condition with hyperosmolarity with coma</td></tr><tr><td>E08.11</td><td style="color: #cccccc">Diabetes mellitus due to underlying condition with ketoacidosis with coma</td></tr><tr><td>E08.641</td><td style="color: #cccccc">Diabetes mellitus due to underlying condition with hypoglycemia with coma</td></tr><tr><td>E10.10</td><td style="color: #cccccc">Type 1 diabetes mellitus with ketoacidosis without coma</td></tr><tr><td>E10.11</td><td style="color: #cccccc">Type 1 diabetes mellitus with ketoacidosis with coma</td></tr><tr><td>E10.641</td><td style="color: #cccccc">Type 1 diabetes mellitus with hypoglycemia with coma</td></tr><tr><td>E11.00</td><td style="color: #cccccc">Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)</td></tr><tr><td>E11.01</td><td style="color: #cccccc">Type 2 diabetes mellitus with hyperosmolarity with coma</td></tr><tr><td>E11.10</td><td style="color: #cccccc">Type 2 diabetes mellitus with ketoacidosis without coma</td></tr><tr><td>E11.11</td><td style="color: #cccccc">Type 2 diabetes mellitus with ketoacidosis with coma</td></tr><tr><td>E11.641</td><td style="color: #cccccc">Type 2 diabetes mellitus with hypoglycemia with coma</td></tr><tr><td>E13.00</td><td style="color: #cccccc">Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)</td></tr><tr><td>E13.01</td><td style="color: #cccccc">Other specified diabetes mellitus with hyperosmolarity with coma</td></tr><tr><td>E13.10</td><td style="color: #cccccc">Other specified diabetes mellitus with ketoacidosis without coma</td></tr><tr><td>E13.11</td><td style="color: #cccccc">Other specified diabetes mellitus with ketoacidosis with coma</td></tr><tr><td>E13.641</td><td style="color: #cccccc">Other specified diabetes mellitus with hypoglycemia with coma</td></tr><tr><td>G36.0</td><td style="color: #cccccc">Neuromyelitis optica [Devic]</td></tr><tr><td>G36.1</td><td style="color: #cccccc">Acute and subacute hemorrhagic leukoencephalitis [Hurst]</td></tr><tr><td>G36.8</td><td style="color: #cccccc">Other specified acute disseminated demyelination</td></tr><tr><td>G36.9</td><td style="color: #cccccc">Acute disseminated demyelination, unspecified</td></tr><tr><td>G37.0</td><td style="color: #cccccc">Diffuse sclerosis of central nervous system</td></tr><tr><td>G37.1</td><td style="color: #cccccc">Central demyelination of corpus callosum</td></tr><tr><td>G37.2</td><td style="color: #cccccc">Central pontine myelinolysis</td></tr><tr><td>G37.5</td><td style="color: #cccccc">Concentric sclerosis [Balo] of central nervous system</td></tr><tr><td>G37.8</td><td style="color: #cccccc">Other specified demyelinating diseases of central nervous system</td></tr><tr><td>G37.9</td><td style="color: #cccccc">Demyelinating disease of central nervous system, unspecified</td></tr><tr><td>I16.0</td><td style="color: #cccccc">Hypertensive urgency</td></tr><tr><td>I16.1</td><td style="color: #cccccc">Hypertensive emergency</td></tr><tr><td>I16.9</td><td style="color: #cccccc">Hypertensive crisis, unspecified</td></tr><tr><td>R62.7</td><td style="color: #cccccc">Adult failure to thrive</td></tr><tr><td>R64</td><td style="color: #cccccc">Cachexia</td></tr><tr><td>E43</td><td style="color: #cccccc">Unspecified severe protein-calorie malnutrition</td></tr></table></li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F20 (Schizophrenia)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F30 (Manic episode)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a F31 (Bipolar disorder)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O00 (Ectopic pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O01 (Hydatidiform mole)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O02 (Other abnormal products of conception)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O03 (Spontaneous abortion)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O04 (Complications following (induced) termination of pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O07 (Failed attempted termination of pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O08 (Complications following ectopic and molar pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O09 (Supervision of high risk pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O10 (Pre-existing hypertension compl preg/chldbrth)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O11 (Pre-existing hypertension with pre-eclampsia)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O12 (Gestational edema and proteinuria without hypertension)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O13 (Gestational hypertension without significant proteinuria)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O14 (Pre-eclampsia)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O15 (Eclampsia)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O16 (Unspecified maternal hypertension)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O20 (Hemorrhage in early pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O21 (Excessive vomiting in pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O22 (Venous complications and hemorrhoids in pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O23 (Infections of genitourinary tract in pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O24 (Diabetes in pregnancy, childbirth, and the puerperium)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O25 (Malnutrition in pregnancy, childbirth and the puerperium)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O26 (Maternal care for oth conditions predom related to pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O28 (Abnormal findings on antenatal screening of mother)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O29 (Complications of anesthesia during pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O30 (Multiple gestation)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O31 (Complications specific to multiple gestation)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O32 (Maternal care for malpresentation of fetus)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O33 (Maternal care for disproportion)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O34 (Maternal care for abnormality of pelvic organs)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O35 (Maternal care for known or suspected fetal abnlt and damage)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O36 (Maternal care for other fetal problems)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O40 (Polyhydramnios)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O41 (Other disorders of amniotic fluid and membranes)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O42 (Premature rupture of membranes)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O43 (Placental disorders)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O44 (Placenta previa)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O45 (Premature separation of placenta [abruptio placentae])</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O46 (Antepartum hemorrhage, not elsewhere classified)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O47 (False labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O48 (Late pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O60 (Preterm labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O61 (Failed induction of labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O62 (Abnormalities of forces of labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O63 (Long labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O64 (Obstructed labor due to malposition and malpresent of fetus)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O65 (Obstructed labor due to maternal pelvic abnormality)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O66 (Other obstructed labor)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O67 (Labor and delivery comp by intrapartum hemorrhage, NEC)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O68 (Labor and delivery comp by abnlt of fetal acid-base balance)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O69 (Labor and delivery complicated by umbilical cord comp)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O70 (Perineal laceration during delivery)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O71 (Other obstetric trauma)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O72 (Postpartum hemorrhage)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O73 (Retained placenta and membranes, without hemorrhage)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O74 (Complications of anesthesia during labor and delivery)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O75 (Oth complications of labor and delivery, NEC)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O76 (Abnlt in fetal heart rate and rhythm comp labor and delivery)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O77 (Other fetal stress complicating labor and delivery)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O80 (Encounter for full-term uncomplicated delivery)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O82 (Encounter for cesarean delivery without indication)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O85 (Puerperal sepsis)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O86 (Other puerperal infections)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O87 (Venous complications and hemorrhoids in the puerperium)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O88 (Obstetric embolism)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O89 (Complications of anesthesia during the puerperium)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O90 (Complications of the puerperium, not elsewhere classified)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O91 (Infect of breast assoc w pregnancy, the puerp and lactation)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O92 (Oth disord of brst/lactatn assoc w pregnancy and the puerp)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O94 (Sequelae of comp of pregnancy, chldbrth, and the puerperium)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O98 (Matern infec/parastc dis classd elsw but compl preg/chldbrth)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O99 (Oth maternal diseases classd elsw but compl preg/chldbrth)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a O9A (Maternl malig or injury compl preg/childbrth)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z33 (Pregnant state)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z34 (Encounter for supervision of normal pregnancy)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z36 (Encounter for antenatal screening of mother)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z39 (Encounter for maternal postpartum care and examination)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a C25 (Malignant neoplasm of pancreas)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a C71 (Malignant neoplasm of brain)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a C77 (Secondary and unspecified malignant neoplasm of lymph nodes)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a C78 (Secondary malignant neoplasm of resp and digestive organs)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a C79 (Secondary malignant neoplasm of other and unspecified sites)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a G20 (Parkinson's disease)</li><li>Include codes from<a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span> where concept  is-a K70 (Alcoholic liver disease)</li></ul></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMClinicalExclusionDiagnosisVS"/>
+  <version value="0.9.11"/>
+  <name value="ACCESSCKMClinicalExclusionDiagnosisVS"/>
+  <title value="ACCESS eCKM/CKM Track Clinical Exclusion Diagnoses"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-06-04T22:54:52-04:00"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="This value set contains ICD-10-CM diagnosis codes that represent clinical exclusions that would prevent a patient from participating in the ACCESS Model early Cardio-Kidney-Metabolic (eCKM) and Cardio-Kidney-Metabolic (CKM) tracks."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <copyright value="This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain."/>
+  <compose>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F01"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F02"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F03.9"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F03.B"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F03.C"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F10"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F13"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F18"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F19"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="G30"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="G31"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <concept>
+        <code value="R45.850"/>
+      </concept>
+      <concept>
+        <code value="R45.851"/>
+      </concept>
+      <concept>
+        <code value="R45.85"/>
+      </concept>
+      <concept>
+        <code value="R45.88"/>
+      </concept>
+      <concept>
+        <code value="T14.91XA"/>
+      </concept>
+      <concept>
+        <code value="T14.91XD"/>
+      </concept>
+      <concept>
+        <code value="T14.91XS"/>
+      </concept>
+      <concept>
+        <code value="A81.00"/>
+      </concept>
+      <concept>
+        <code value="A81.01"/>
+      </concept>
+      <concept>
+        <code value="A81.09"/>
+      </concept>
+      <concept>
+        <code value="Z51.0"/>
+      </concept>
+      <concept>
+        <code value="Z51.11"/>
+      </concept>
+      <concept>
+        <code value="Z51.12"/>
+      </concept>
+      <concept>
+        <code value="C91.00"/>
+      </concept>
+      <concept>
+        <code value="C91.02"/>
+      </concept>
+      <concept>
+        <code value="C92.00"/>
+      </concept>
+      <concept>
+        <code value="C92.02"/>
+      </concept>
+      <concept>
+        <code value="C93.00"/>
+      </concept>
+      <concept>
+        <code value="C93.02"/>
+      </concept>
+      <concept>
+        <code value="C93.90"/>
+      </concept>
+      <concept>
+        <code value="C93.92"/>
+      </concept>
+      <concept>
+        <code value="C93.Z0"/>
+      </concept>
+      <concept>
+        <code value="C93.Z2"/>
+      </concept>
+      <concept>
+        <code value="C94.30"/>
+      </concept>
+      <concept>
+        <code value="C94.32"/>
+      </concept>
+      <concept>
+        <code value="G10"/>
+      </concept>
+      <concept>
+        <code value="G12.20"/>
+      </concept>
+      <concept>
+        <code value="G12.21"/>
+      </concept>
+      <concept>
+        <code value="G12.22"/>
+      </concept>
+      <concept>
+        <code value="G12.23"/>
+      </concept>
+      <concept>
+        <code value="G12.24"/>
+      </concept>
+      <concept>
+        <code value="G12.25"/>
+      </concept>
+      <concept>
+        <code value="G12.29"/>
+      </concept>
+      <concept>
+        <code value="G35"/>
+      </concept>
+      <concept>
+        <code value="J43.1"/>
+      </concept>
+      <concept>
+        <code value="J43.2"/>
+      </concept>
+      <concept>
+        <code value="J68.4"/>
+      </concept>
+      <concept>
+        <code value="J84.10"/>
+      </concept>
+      <concept>
+        <code value="J84.112"/>
+      </concept>
+      <concept>
+        <code value="J84.170"/>
+      </concept>
+      <concept>
+        <code value="J84.178"/>
+      </concept>
+      <concept>
+        <code value="I27.20"/>
+      </concept>
+      <concept>
+        <code value="I27.21"/>
+      </concept>
+      <concept>
+        <code value="I27.29"/>
+      </concept>
+      <concept>
+        <code value="I27.9"/>
+      </concept>
+      <concept>
+        <code value="Z99.81"/>
+      </concept>
+      <concept>
+        <code value="Z99.89"/>
+      </concept>
+      <concept>
+        <code value="R09.02"/>
+      </concept>
+      <concept>
+        <code value="K74.02"/>
+      </concept>
+      <concept>
+        <code value="K74.1"/>
+      </concept>
+      <concept>
+        <code value="K74.2"/>
+      </concept>
+      <concept>
+        <code value="K74.4"/>
+      </concept>
+      <concept>
+        <code value="K74.5"/>
+      </concept>
+      <concept>
+        <code value="K74.60"/>
+      </concept>
+      <concept>
+        <code value="K74.69"/>
+      </concept>
+      <concept>
+        <code value="N18.4"/>
+      </concept>
+      <concept>
+        <code value="N18.5"/>
+      </concept>
+      <concept>
+        <code value="N18.6"/>
+      </concept>
+      <concept>
+        <code value="Z99.2"/>
+      </concept>
+      <concept>
+        <code value="K76.6"/>
+      </concept>
+      <concept>
+        <code value="K76.7"/>
+      </concept>
+      <concept>
+        <code value="K76.81"/>
+      </concept>
+      <concept>
+        <code value="K71.11"/>
+      </concept>
+      <concept>
+        <code value="I50.84"/>
+      </concept>
+      <concept>
+        <code value="I50.23"/>
+      </concept>
+      <concept>
+        <code value="I50.33"/>
+      </concept>
+      <concept>
+        <code value="I50.43"/>
+      </concept>
+      <concept>
+        <code value="I50.31"/>
+      </concept>
+      <concept>
+        <code value="I50.41"/>
+      </concept>
+      <concept>
+        <code value="I50.811"/>
+      </concept>
+      <concept>
+        <code value="I50.813"/>
+      </concept>
+      <concept>
+        <code value="I50.21"/>
+      </concept>
+      <concept>
+        <code value="I35.0"/>
+      </concept>
+      <concept>
+        <code value="I35.2"/>
+      </concept>
+      <concept>
+        <code value="I34.0"/>
+      </concept>
+      <concept>
+        <code value="J95.00"/>
+      </concept>
+      <concept>
+        <code value="J95.01"/>
+      </concept>
+      <concept>
+        <code value="J95.02"/>
+      </concept>
+      <concept>
+        <code value="J95.03"/>
+      </concept>
+      <concept>
+        <code value="J95.04"/>
+      </concept>
+      <concept>
+        <code value="J95.09"/>
+      </concept>
+      <concept>
+        <code value="J95.850"/>
+      </concept>
+      <concept>
+        <code value="J95.859"/>
+      </concept>
+      <concept>
+        <code value="J4A.0"/>
+      </concept>
+      <concept>
+        <code value="J4A.8"/>
+      </concept>
+      <concept>
+        <code value="J4A.9"/>
+      </concept>
+      <concept>
+        <code value="M31.11"/>
+      </concept>
+      <concept>
+        <code value="T86.00"/>
+      </concept>
+      <concept>
+        <code value="T86.01"/>
+      </concept>
+      <concept>
+        <code value="T86.02"/>
+      </concept>
+      <concept>
+        <code value="T86.03"/>
+      </concept>
+      <concept>
+        <code value="T86.09"/>
+      </concept>
+      <concept>
+        <code value="T86.20"/>
+      </concept>
+      <concept>
+        <code value="T86.21"/>
+      </concept>
+      <concept>
+        <code value="T86.22"/>
+      </concept>
+      <concept>
+        <code value="T86.23"/>
+      </concept>
+      <concept>
+        <code value="T86.290"/>
+      </concept>
+      <concept>
+        <code value="T86.298"/>
+      </concept>
+      <concept>
+        <code value="T86.30"/>
+      </concept>
+      <concept>
+        <code value="T86.31"/>
+      </concept>
+      <concept>
+        <code value="T86.32"/>
+      </concept>
+      <concept>
+        <code value="T86.33"/>
+      </concept>
+      <concept>
+        <code value="T86.39"/>
+      </concept>
+      <concept>
+        <code value="T86.40"/>
+      </concept>
+      <concept>
+        <code value="T86.41"/>
+      </concept>
+      <concept>
+        <code value="T86.42"/>
+      </concept>
+      <concept>
+        <code value="T86.43"/>
+      </concept>
+      <concept>
+        <code value="T86.49"/>
+      </concept>
+      <concept>
+        <code value="T86.5"/>
+      </concept>
+      <concept>
+        <code value="T86.810"/>
+      </concept>
+      <concept>
+        <code value="T86.811"/>
+      </concept>
+      <concept>
+        <code value="T86.812"/>
+      </concept>
+      <concept>
+        <code value="T86.818"/>
+      </concept>
+      <concept>
+        <code value="T86.819"/>
+      </concept>
+      <concept>
+        <code value="T86.850"/>
+      </concept>
+      <concept>
+        <code value="T86.851"/>
+      </concept>
+      <concept>
+        <code value="T86.852"/>
+      </concept>
+      <concept>
+        <code value="T86.858"/>
+      </concept>
+      <concept>
+        <code value="T86.859"/>
+      </concept>
+      <concept>
+        <code value="Z48.21"/>
+      </concept>
+      <concept>
+        <code value="Z48.23"/>
+      </concept>
+      <concept>
+        <code value="Z48.24"/>
+      </concept>
+      <concept>
+        <code value="Z48.280"/>
+      </concept>
+      <concept>
+        <code value="Z48.290"/>
+      </concept>
+      <concept>
+        <code value="Z94.1"/>
+      </concept>
+      <concept>
+        <code value="Z94.2"/>
+      </concept>
+      <concept>
+        <code value="Z94.3"/>
+      </concept>
+      <concept>
+        <code value="Z94.4"/>
+      </concept>
+      <concept>
+        <code value="Z94.81"/>
+      </concept>
+      <concept>
+        <code value="Z94.82"/>
+      </concept>
+      <concept>
+        <code value="Z94.83"/>
+      </concept>
+      <concept>
+        <code value="Z94.84"/>
+      </concept>
+      <concept>
+        <code value="Z95.811"/>
+      </concept>
+      <concept>
+        <code value="Z95.812"/>
+      </concept>
+      <concept>
+        <code value="E08.00"/>
+      </concept>
+      <concept>
+        <code value="E08.01"/>
+      </concept>
+      <concept>
+        <code value="E08.11"/>
+      </concept>
+      <concept>
+        <code value="E08.641"/>
+      </concept>
+      <concept>
+        <code value="E10.10"/>
+      </concept>
+      <concept>
+        <code value="E10.11"/>
+      </concept>
+      <concept>
+        <code value="E10.641"/>
+      </concept>
+      <concept>
+        <code value="E11.00"/>
+      </concept>
+      <concept>
+        <code value="E11.01"/>
+      </concept>
+      <concept>
+        <code value="E11.10"/>
+      </concept>
+      <concept>
+        <code value="E11.11"/>
+      </concept>
+      <concept>
+        <code value="E11.641"/>
+      </concept>
+      <concept>
+        <code value="E13.00"/>
+      </concept>
+      <concept>
+        <code value="E13.01"/>
+      </concept>
+      <concept>
+        <code value="E13.10"/>
+      </concept>
+      <concept>
+        <code value="E13.11"/>
+      </concept>
+      <concept>
+        <code value="E13.641"/>
+      </concept>
+      <concept>
+        <code value="G36.0"/>
+      </concept>
+      <concept>
+        <code value="G36.1"/>
+      </concept>
+      <concept>
+        <code value="G36.8"/>
+      </concept>
+      <concept>
+        <code value="G36.9"/>
+      </concept>
+      <concept>
+        <code value="G37.0"/>
+      </concept>
+      <concept>
+        <code value="G37.1"/>
+      </concept>
+      <concept>
+        <code value="G37.2"/>
+      </concept>
+      <concept>
+        <code value="G37.5"/>
+      </concept>
+      <concept>
+        <code value="G37.8"/>
+      </concept>
+      <concept>
+        <code value="G37.9"/>
+      </concept>
+      <concept>
+        <code value="I16.0"/>
+      </concept>
+      <concept>
+        <code value="I16.1"/>
+      </concept>
+      <concept>
+        <code value="I16.9"/>
+      </concept>
+      <concept>
+        <code value="R62.7"/>
+      </concept>
+      <concept>
+        <code value="R64"/>
+      </concept>
+      <concept>
+        <code value="E43"/>
+      </concept>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F20"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F30"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="F31"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O00"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O01"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O02"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O03"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O04"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O07"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O08"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O09"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O10"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O11"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O12"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O13"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O14"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O15"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O16"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O20"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O21"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O22"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O23"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O24"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O25"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O26"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O28"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O29"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O30"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O31"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O32"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O33"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O34"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O35"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O36"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O40"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O41"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O42"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O43"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O44"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O45"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O46"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O47"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O48"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O60"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O61"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O62"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O63"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O64"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O65"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O66"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O67"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O68"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O69"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O70"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O71"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O72"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O73"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O74"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O75"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O76"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O77"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O80"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O82"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O85"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O86"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O87"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O88"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O89"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O90"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O91"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O92"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O94"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O98"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O99"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="O9A"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="Z33"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="Z34"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="Z36"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="Z39"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="C25"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="C71"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="C77"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="C78"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="C79"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="G20"/>
+      </filter>
+    </include>
+    <include>
+      <system value="http://hl7.org/fhir/sid/icd-10-cm"/>
+      <filter>
+        <property value="concept"/>
+        <op value="is-a"/>
+        <value value="K70"/>
+      </filter>
+    </include>
+  </compose>
+</ValueSet>

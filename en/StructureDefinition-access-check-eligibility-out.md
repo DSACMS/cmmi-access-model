@@ -1,4 +1,4 @@
-# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Check Eligibility Response Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Check Eligibility Response Parameters 
 
@@ -9,7 +9,7 @@ This is the profile for the `$check-eligibility` operation output parameters, wh
 
 * Examples for this Profile: [Parameters/CheckEligibilityResponseEligibleExample](Parameters-CheckEligibilityResponseEligibleExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-check-eligibility-out)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-check-eligibility-out.json)
 
 ### Formal Views of Profile Content
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
   "resourceType" : "StructureDefinition",
   "id" : "access-check-eligibility-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSCheckEligibilityResponseParameters",
   "title" : "ACCESS Check Eligibility Response Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-check-elig
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS|0.9.11"
       }
     }]
   }

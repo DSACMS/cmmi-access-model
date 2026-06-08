@@ -4,7 +4,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle"]
   },
-  "language" : "en",
   "identifier" : {
     "system" : "http://example.org/data-bundle-id",
     "value" : "bundle-ckm-001"

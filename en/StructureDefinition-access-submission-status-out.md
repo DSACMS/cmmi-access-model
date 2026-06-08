@@ -1,4 +1,4 @@
-# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Submission Status Response Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Submission Status Response Parameters 
 
@@ -9,7 +9,7 @@ This is the profile for the $submission-status operation output parameters (gene
 
 * Examples for this Profile: [Parameters/SubmissionStatusResponseExample](Parameters-SubmissionStatusResponseExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-submission-status-out)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-submission-status-out.json)
 
 ### Formal Views of Profile Content
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-submission
   "resourceType" : "StructureDefinition",
   "id" : "access-submission-status-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSSubmissionStatusResponseParameters",
   "title" : "ACCESS Submission Status Response Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

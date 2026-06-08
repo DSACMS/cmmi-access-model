@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Change Log - CMS ACCESS Model API v0.9.8</title>
+    <title>Change Log - CMS ACCESS Model API v0.9.11</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.8 - draft
+            <span style="display:inline-block;">0.9.11 - draft
 
 
 
@@ -150,7 +150,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.8 DRAFT (v0.9.8: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">CMS ACCESS Model API - Local Development build (v0.9.11) built by the FHIR (HL7® FHIR® Standard) Build Tools. See the <a href='https://dsacms.github.io/cmmi-access-model/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Change Log</h2>
   
 
@@ -169,6 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#version-0911---draft" id="markdown-toc-version-0911---draft">Version 0.9.11 - DRAFT</a></li>
   <li><a href="#version-098---draft" id="markdown-toc-version-098---draft">Version 0.9.8 - DRAFT</a></li>
   <li><a href="#version-096---draft" id="markdown-toc-version-096---draft">Version 0.9.6 - DRAFT</a></li>
 </ul>
@@ -178,20 +179,73 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
+<h3 id="version-0911---draft">Version 0.9.11 - DRAFT</h3>
+
+<p><strong>Release Date</strong>: June 4, 2026</p>
+
+<h4 id="major-changes">Major Changes</h4>
+
+<h5 id="added-clinical-exclusion-value-sets-under-the-unalignment-api">Added Clinical Exclusion value sets under the Unalignment API</h5>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">ACCESSCKMClinicalExclusionDiagnosisVS</code></strong> - clinical exclusions for the eCKM/CKM tracks</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">ACCESSMSKClinicalExclusionDiagnosisVS</code></strong> - clinical exclusions for the MSK track</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">ACCESSBHClinicalExclusionDiagnosisVS</code></strong> - clinical exclusions for the BH track</li>
+</ul>
+
+<h5 id="metaprofile-data-element-now-required-for-request-parameters">meta.profile data element now required for request parameters</h5>
+<ul>
+  <li>Required meta.profile data element added to:
+    <ul>
+      <li><code class="language-plaintext highlighter-rouge">ACCESSCheckEligibilityRequestParameters</code></li>
+      <li><code class="language-plaintext highlighter-rouge">ACCESSAlignmentRequestParameters</code></li>
+      <li><code class="language-plaintext highlighter-rouge">ACCESSUnalignmentRequestParameters</code></li>
+      <li><code class="language-plaintext highlighter-rouge">ACCESSReportDataRequestParameters</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h5 id="changed-content-type-headers-for-requests">Changed Content-Type headers for requests</h5>
+<ul>
+  <li>Changed the <code class="language-plaintext highlighter-rouge">Content-Type</code> header in examples from <code class="language-plaintext highlighter-rouge">application/fhir+json</code> to <code class="language-plaintext highlighter-rouge">application/json</code></li>
+</ul>
+
+<h5 id="updated-qualifying-diagnoses-value-sets-for-each-track">Updated Qualifying Diagnoses value sets for each track</h5>
+<ul>
+  <li><strong>Updated</strong> <code class="language-plaintext highlighter-rouge">ACCESSeCKMDiagnosisVS</code>, <code class="language-plaintext highlighter-rouge">ACCESSCKMDiagnosisVS</code>, <code class="language-plaintext highlighter-rouge">ACCESSMSKDiagnosisVS</code>, and <code class="language-plaintext highlighter-rouge">ACCESSBHDiagnosisVS</code></li>
+</ul>
+
+<h5 id="removed-validation-error-result-from-accessreportdataresultvs-and-accessreportdataresultcs">Removed <code class="language-plaintext highlighter-rouge">validation-error</code> result from <code class="language-plaintext highlighter-rouge">ACCESSReportDataResultVS</code> and <code class="language-plaintext highlighter-rouge">ACCESSReportDataResultCS</code></h5>
+<ul>
+  <li>No longer needed.</li>
+</ul>
+
+<h5 id="fixed-bug-in-data-reporting-capability-statement">Fixed bug in Data Reporting Capability Statement</h5>
+<ul>
+  <li><strong>Lipid panel</strong> LOINC code changed from <code class="language-plaintext highlighter-rouge">57698-3</code> to <code class="language-plaintext highlighter-rouge">18262-6</code> to more accurately reflect the focus of the cholesterol data</li>
+</ul>
+
+<h5 id="fixed-bug-in-uncoded-questionnaires">Fixed bug in uncoded questionnaires</h5>
+<ul>
+  <li><strong>Extensions for the <code class="language-plaintext highlighter-rouge">valueCoding</code></strong> were in the wrong place
+    <ul>
+      <li>Extension now is within the <code class="language-plaintext highlighter-rouge">valueCoding</code> instead of being a peer of <code class="language-plaintext highlighter-rouge">valueCoding</code></li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="technical-updates">Technical Updates</h4>
+<ul>
+  <li>Version bump from 0.9.8 to 0.9.11</li>
+</ul>
+
 <h3 id="version-098---draft">Version 0.9.8 - DRAFT</h3>
 
 <p><strong>Release Date</strong>: May 18, 2026</p>
 
-<h4 id="major-changes">Major Changes</h4>
+<h4 id="major-changes-1">Major Changes</h4>
 
 <h5 id="addressed-feedback-from-first-external-testing-window">Addressed feedback from first external testing window</h5>
 <ul>
-  <li><strong>Fixed questionnaire responses that are uncoded</strong> so that they have both the text (display) and numerical values for scoring
-    <ul>
-      <li>Now use valueCoding with decimal extension instead of valueString</li>
-      <li>More consistent with the coded questionnaire responses</li>
-    </ul>
-  </li>
   <li>
     <p><strong>Added example questionnaires</strong> to provide further guidance on how to package questionnaire response data</p>
   </li>
@@ -240,7 +294,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">dataBundle</code> examples now include three individual blood pressure observations</li>
 </ul>
 
-<h4 id="technical-updates">Technical Updates</h4>
+<h4 id="technical-updates-1">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.6 to 0.9.8</li>
 </ul>
@@ -249,7 +303,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Release Date</strong>: April 24, 2026</p>
 
-<h4 id="major-changes-1">Major Changes</h4>
+<h4 id="major-changes-2">Major Changes</h4>
 
 <h5 id="accessdatareportingcomposition-tweaks">ACCESSDataReportingComposition tweaks</h5>
 
@@ -296,7 +350,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>References to 3-months</strong> changed to 90 days</li>
 </ul>
 
-<h4 id="technical-updates-1">Technical Updates</h4>
+<h4 id="technical-updates-2">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.1 to 0.9.6</li>
 </ul>
@@ -327,10 +381,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.8 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-05-20 09:30:00 -0400">
-    2026-05-20
+  <span title="2026-06-04 22:54:00 -0400">
+    2026-06-04
   </span>
 
           <br/>

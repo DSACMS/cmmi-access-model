@@ -1,4 +1,4 @@
-# QuickDASH Questionnaire - CMS ACCESS Model API v0.9.8
+# QuickDASH Questionnaire - CMS ACCESS Model API v0.9.11
 
 ## Questionnaire: 
 
@@ -24,10 +24,10 @@
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0"]
   },
   "url" : "http://example.org/Questionnaire/QuickDASHQuestionnaire",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "status" : "active",
   "subjectType" : ["Patient"],
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -57,47 +57,47 @@
     "text" : "Open a tight or new jar.",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -107,47 +107,47 @@
     "text" : "Do heavy household chores (e.g., wash walls, wash floors).",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -157,47 +157,47 @@
     "text" : "Carry a shopping bag or briefcase.",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -207,47 +207,47 @@
     "text" : "Wash your back.",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -257,47 +257,47 @@
     "text" : "Use a knife to cut food.",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -307,47 +307,47 @@
     "text" : "Recreational activities in which you take some force or impact through your arm, shoulder, or hand (e.g., golf, hammering, tennis, etc.).",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -357,47 +357,47 @@
     "text" : "During the past week, to what extent has your arm, shoulder, or hand problem interfered with your normal social activities with family, friends, neighbors, or groups?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "Not at all"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Slightly"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderately"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Quite a bit"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extremely"
       }
     }]
@@ -407,47 +407,47 @@
     "text" : "During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder, or hand problem?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "Not limted at all"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Slightly limited"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderately limited"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Very limited"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]
@@ -457,47 +457,47 @@
     "text" : "Arm, shoulder, or hand pain",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme"
       }
     }]
@@ -507,47 +507,47 @@
     "text" : "Tingling (pins and needles) in your arm, shoulder, or hand",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "None"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Extreme"
       }
     }]
@@ -557,47 +557,47 @@
     "text" : "During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder, or hand?",
     "type" : "choice",
     "answerOption" : [{
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 1
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 1
+        }],
         "display" : "No difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 2
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 2
+        }],
         "display" : "Mild difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 3
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 3
+        }],
         "display" : "Moderate difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 4
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 4
+        }],
         "display" : "Severe difficulty"
       }
     },
     {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
-        "valueDecimal" : 5
-      }],
       "valueCoding" : {
+        "extension" : [{
+          "url" : "http://hl7.org/fhir/StructureDefinition/ordinalValue",
+          "valueDecimal" : 5
+        }],
         "display" : "Unable"
       }
     }]

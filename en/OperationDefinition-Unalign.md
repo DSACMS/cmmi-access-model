@@ -1,4 +1,4 @@
-# Unalignment Request - CMS ACCESS Model API v0.9.8
+# Unalignment Request - CMS ACCESS Model API v0.9.11
 
 ## OperationDefinition: Unalignment Request 
 
@@ -25,6 +25,9 @@ These define sets of codes used by systems conforming to the ACCESS Unalignment 
 | :--- | :--- |
 | [ACCESS Unalignment Result Value Set](ValueSet-ACCESSUnalignmentResultVS.md) | Value set including all unalignment result codes |
 | [ACCESS Unalignment Reason Value Set](ValueSet-ACCESSUnalignmentReasonVS.md) | Value set including all unalignment reason codes |
+| [ACCESS eCKM/CKM Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSCKMClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the eCKM and CKM tracks |
+| [ACCESS MSK Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSMSKClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the MSK track |
+| [ACCESS BH Track Clinical Exclusion Diagnoses Value Set](ValueSet-ACCESSBHClinicalExclusionDiagnosisVS.md) | ICD-10-CM diagnosis codes representing clinical exclusions for the BH track |
 
 #### Code Systems
 
@@ -56,12 +59,12 @@ These are example instances demonstrating the use of the Unalignment API.
   "resourceType" : "OperationDefinition",
   "id" : "Unalign",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "Unalign",
   "title" : "Unalignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -87,7 +90,7 @@ These are example instances demonstrating the use of the Unalignment API.
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.8",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -121,7 +124,7 @@ These are example instances demonstrating the use of the Unalignment API.
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.8"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
     }
   },
   {

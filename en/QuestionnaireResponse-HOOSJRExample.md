@@ -1,4 +1,4 @@
-# HOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# HOOS JR QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: HOOS JR QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ HOOS JR QuestionnaireResponse for John Doe. Total interval score: 55.985.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/HOOSJRQuestionnaire",
   "status" : "completed",
   "subject" : {

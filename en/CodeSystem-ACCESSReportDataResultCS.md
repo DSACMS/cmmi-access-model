@@ -1,4 +1,4 @@
-# ACCESS Report Data Result Codes - CMS ACCESS Model API v0.9.8
+# ACCESS Report Data Result Codes - CMS ACCESS Model API v0.9.11
 
 ## CodeSystem: ACCESS Report Data Result Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSReportDataResultCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSReportDataResultCS",
   "title" : "ACCESS Report Data Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -51,16 +51,11 @@ This Code system is referenced in the definition of the following value sets:
   "copyright" : "Copyright (c) 2026 Centers for Medicare and Medicaid Services (CMS).",
   "caseSensitive" : true,
   "content" : "complete",
-  "count" : 7,
+  "count" : 6,
   "concept" : [{
     "code" : "success",
     "display" : "Success",
     "definition" : "The data reporting submission was successful."
-  },
-  {
-    "code" : "validation-error",
-    "display" : "Validation error",
-    "definition" : "Data submission failed validation (see the 'issues' parameter for specific errors and details)."
   },
   {
     "code" : "duplicate",

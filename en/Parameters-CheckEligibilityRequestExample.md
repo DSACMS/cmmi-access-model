@@ -1,4 +1,4 @@
-# Check Eligibility Request Example - CMS ACCESS Model API v0.9.8
+# Check Eligibility Request Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Check Eligibility Request Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {

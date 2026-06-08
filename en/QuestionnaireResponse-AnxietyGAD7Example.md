@@ -1,4 +1,4 @@
-# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: GAD-7 QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ GAD-7 QuestionnaireResponse for John Doe. Total score: 6.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/GAD7Questionnaire",
   "status" : "completed",
   "subject" : {

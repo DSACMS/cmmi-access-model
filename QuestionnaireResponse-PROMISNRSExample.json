@@ -4,7 +4,6 @@
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "text" : {
     "status" : "generated",
     "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\"><p>PROMIS Pain Intensity NRS QuestionnaireResponse for John Doe. Average pain (0-10): 6.</p></div>"

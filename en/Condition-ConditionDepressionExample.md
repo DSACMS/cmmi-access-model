@@ -1,4 +1,4 @@
-# Condition Example - Major Depressive Disorder - CMS ACCESS Model API v0.9.8
+# Condition Example - Major Depressive Disorder - CMS ACCESS Model API v0.9.11
 
 ## Example Condition: Condition Example - Major Depressive Disorder
 
@@ -15,7 +15,6 @@ Major depressive disorder, single episode, unspecified
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition"]
   },
-  "language" : "en",
   "clinicalStatus" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",

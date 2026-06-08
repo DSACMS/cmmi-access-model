@@ -1,4 +1,4 @@
-# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.8
+# Alignment Response - Switch Approved Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Alignment Response - Switch Approved Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "result",
     "valueCodeableConcept" : {

@@ -1,0 +1,863 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "ACCESSMSKClinicalExclusionDiagnosisVS",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ValueSet ACCESSMSKClinicalExclusionDiagnosisVS</b></p><a name=\"ACCESSMSKClinicalExclusionDiagnosisVS\"> </a><a name=\"hcACCESSMSKClinicalExclusionDiagnosisVS\"> </a><p>This value set includes codes based on the following rules:</p><ul><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F01 (Vascular dementia)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F02 (Dementia in other diseases classified elsewhere)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.9 (Unspecified dementia, unspecified severity)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.B (Unspecified dementia, moderate)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F03.C (Unspecified dementia, severe)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F10 (Alcohol related disorders)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F13 (Sedative, hypnotic, or anxiolytic related disorders)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F18 (Inhalant related disorders)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F19 (Other psychoactive substance related disorders)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a G30 (Alzheimer's disease)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a G31 (Oth degenerative diseases of nervous system, NEC)</li><li>Include these codes as defined in <a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span><table class=\"none\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>R45.850</td><td style=\"color: #cccccc\">Homicidal ideations</td></tr><tr><td>R45.851</td><td style=\"color: #cccccc\">Suicidal ideations</td></tr><tr><td>R45.85</td><td style=\"color: #cccccc\">Homicidal and suicidal ideations</td></tr><tr><td>R45.88</td><td style=\"color: #cccccc\">Nonsuicidal self-harm</td></tr><tr><td>T14.91XA</td><td style=\"color: #cccccc\">Suicide attempt, initial encounter</td></tr><tr><td>T14.91XD</td><td style=\"color: #cccccc\">Suicide attempt, subsequent encounter</td></tr><tr><td>T14.91XS</td><td style=\"color: #cccccc\">Suicide attempt, sequela</td></tr><tr><td>M30.0</td><td style=\"color: #cccccc\">Polyarteritis nodosa</td></tr><tr><td>M30.8</td><td style=\"color: #cccccc\">Other conditions related to polyarteritis nodosa</td></tr><tr><td>M35.3</td><td style=\"color: #cccccc\">Polymyalgia rheumatica</td></tr><tr><td>M33.20</td><td style=\"color: #cccccc\">Polymyositis, organ involvement unspecified</td></tr><tr><td>M33.21</td><td style=\"color: #cccccc\">Polymyositis with respiratory involvement</td></tr><tr><td>M33.22</td><td style=\"color: #cccccc\">Polymyositis with myopathy</td></tr><tr><td>M33.29</td><td style=\"color: #cccccc\">Polymyositis with other organ involvement</td></tr><tr><td>M32</td><td style=\"color: #cccccc\">Systemic lupus erythematosus (SLE)</td></tr><tr><td>M32.0</td><td style=\"color: #cccccc\">Drug-induced systemic lupus erythematosus</td></tr><tr><td>M32.1</td><td style=\"color: #cccccc\">Systemic lupus erythematosus with organ or system involvement</td></tr><tr><td>M32.8</td><td style=\"color: #cccccc\">Other forms of systemic lupus erythematosus</td></tr><tr><td>M32.9</td><td style=\"color: #cccccc\">Systemic lupus erythematosus, unspecified</td></tr><tr><td>M32.10</td><td style=\"color: #cccccc\">Systemic lupus erythematosus, organ or system involvement unspecified</td></tr><tr><td>M32.11</td><td style=\"color: #cccccc\">Endocarditis in systemic lupus erythematosus</td></tr><tr><td>M32.12</td><td style=\"color: #cccccc\">Pericarditis in systemic lupus erythematosus</td></tr><tr><td>M32.13</td><td style=\"color: #cccccc\">Lung involvement in systemic lupus erythematosus</td></tr><tr><td>M32.14</td><td style=\"color: #cccccc\">Glomerular disease in systemic lupus erythematosus</td></tr><tr><td>M32.15</td><td style=\"color: #cccccc\">Tubulo-interstitial nephropathy in systemic lupus erythematosus</td></tr><tr><td>M32.19</td><td style=\"color: #cccccc\">Other organ or system involvement in systemic lupus erythematosus</td></tr></table></li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F20 (Schizophrenia)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F30 (Manic episode)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a F31 (Bipolar disorder)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O00 (Ectopic pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O01 (Hydatidiform mole)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O02 (Other abnormal products of conception)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O03 (Spontaneous abortion)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O04 (Complications following (induced) termination of pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O07 (Failed attempted termination of pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O08 (Complications following ectopic and molar pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O09 (Supervision of high risk pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O10 (Pre-existing hypertension compl preg/chldbrth)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O11 (Pre-existing hypertension with pre-eclampsia)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O12 (Gestational edema and proteinuria without hypertension)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O13 (Gestational hypertension without significant proteinuria)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O14 (Pre-eclampsia)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O15 (Eclampsia)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O16 (Unspecified maternal hypertension)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O20 (Hemorrhage in early pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O21 (Excessive vomiting in pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O22 (Venous complications and hemorrhoids in pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O23 (Infections of genitourinary tract in pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O24 (Diabetes in pregnancy, childbirth, and the puerperium)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O25 (Malnutrition in pregnancy, childbirth and the puerperium)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O26 (Maternal care for oth conditions predom related to pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O28 (Abnormal findings on antenatal screening of mother)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O29 (Complications of anesthesia during pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O30 (Multiple gestation)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O31 (Complications specific to multiple gestation)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O32 (Maternal care for malpresentation of fetus)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O33 (Maternal care for disproportion)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O34 (Maternal care for abnormality of pelvic organs)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O35 (Maternal care for known or suspected fetal abnlt and damage)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O36 (Maternal care for other fetal problems)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O40 (Polyhydramnios)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O41 (Other disorders of amniotic fluid and membranes)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O42 (Premature rupture of membranes)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O43 (Placental disorders)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O44 (Placenta previa)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O45 (Premature separation of placenta [abruptio placentae])</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O46 (Antepartum hemorrhage, not elsewhere classified)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O47 (False labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O48 (Late pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O60 (Preterm labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O61 (Failed induction of labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O62 (Abnormalities of forces of labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O63 (Long labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O64 (Obstructed labor due to malposition and malpresent of fetus)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O65 (Obstructed labor due to maternal pelvic abnormality)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O66 (Other obstructed labor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O67 (Labor and delivery comp by intrapartum hemorrhage, NEC)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O68 (Labor and delivery comp by abnlt of fetal acid-base balance)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O69 (Labor and delivery complicated by umbilical cord comp)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O70 (Perineal laceration during delivery)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O71 (Other obstetric trauma)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O72 (Postpartum hemorrhage)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O73 (Retained placenta and membranes, without hemorrhage)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O74 (Complications of anesthesia during labor and delivery)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O75 (Oth complications of labor and delivery, NEC)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O76 (Abnlt in fetal heart rate and rhythm comp labor and delivery)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O77 (Other fetal stress complicating labor and delivery)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O80 (Encounter for full-term uncomplicated delivery)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O82 (Encounter for cesarean delivery without indication)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O85 (Puerperal sepsis)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O86 (Other puerperal infections)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O87 (Venous complications and hemorrhoids in the puerperium)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O88 (Obstetric embolism)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O89 (Complications of anesthesia during the puerperium)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O90 (Complications of the puerperium, not elsewhere classified)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O91 (Infect of breast assoc w pregnancy, the puerp and lactation)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O92 (Oth disord of brst/lactatn assoc w pregnancy and the puerp)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O94 (Sequelae of comp of pregnancy, chldbrth, and the puerperium)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O98 (Matern infec/parastc dis classd elsw but compl preg/chldbrth)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O99 (Oth maternal diseases classd elsw but compl preg/chldbrth)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a O9A (Maternl malig or injury compl preg/childbrth)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z33 (Pregnant state)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z34 (Encounter for supervision of normal pregnancy)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z36 (Encounter for antenatal screening of mother)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a Z39 (Encounter for maternal postpartum care and examination)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M05 (Rheumatoid arthritis with rheumatoid factor)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M06 (Other rheumatoid arthritis)</li><li>Include codes from<a href=\"http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html\"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title=\"Version is not explicitly stated. No matching Code System found\"> version Not Stated (use latest from terminology server)</span> where concept  is-a M80 (Osteoporosis with current pathological fracture)</li></ul></div>"
+  },
+  "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKClinicalExclusionDiagnosisVS",
+  "version" : "0.9.11",
+  "name" : "ACCESSMSKClinicalExclusionDiagnosisVS",
+  "title" : "ACCESS MSK Track Clinical Exclusion Diagnoses",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-06-04T22:54:52-04:00",
+  "publisher" : "Global Alliant, Inc.",
+  "contact" : [{
+    "name" : "Global Alliant, Inc.",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://globalalliantinc.com"
+    },
+    {
+      "system" : "email",
+      "value" : "david.h@globalalliantinc.org"
+    }]
+  }],
+  "description" : "This value set contains ICD-10-CM diagnosis codes that represent clinical exclusions that would prevent a patient from participating in the ACCESS Model Musculoskeletal (MSK) track.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "US",
+      "display" : "United States of America"
+    }]
+  }],
+  "copyright" : "This value set includes content from ICD-10-CM, which is copyright World Health Organization (WHO). ICD-10-CM codes are freely available in the public domain.",
+  "compose" : {
+    "include" : [{
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F01"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F02"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F03.9"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F03.B"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F03.C"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F10"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F13"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F18"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F19"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "G30"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "G31"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "concept" : [{
+        "code" : "R45.850"
+      },
+      {
+        "code" : "R45.851"
+      },
+      {
+        "code" : "R45.85"
+      },
+      {
+        "code" : "R45.88"
+      },
+      {
+        "code" : "T14.91XA"
+      },
+      {
+        "code" : "T14.91XD"
+      },
+      {
+        "code" : "T14.91XS"
+      },
+      {
+        "code" : "M30.0"
+      },
+      {
+        "code" : "M30.8"
+      },
+      {
+        "code" : "M35.3"
+      },
+      {
+        "code" : "M33.20"
+      },
+      {
+        "code" : "M33.21"
+      },
+      {
+        "code" : "M33.22"
+      },
+      {
+        "code" : "M33.29"
+      },
+      {
+        "code" : "M32"
+      },
+      {
+        "code" : "M32.0"
+      },
+      {
+        "code" : "M32.1"
+      },
+      {
+        "code" : "M32.8"
+      },
+      {
+        "code" : "M32.9"
+      },
+      {
+        "code" : "M32.10"
+      },
+      {
+        "code" : "M32.11"
+      },
+      {
+        "code" : "M32.12"
+      },
+      {
+        "code" : "M32.13"
+      },
+      {
+        "code" : "M32.14"
+      },
+      {
+        "code" : "M32.15"
+      },
+      {
+        "code" : "M32.19"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F20"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F30"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "F31"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O00"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O01"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O02"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O03"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O04"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O07"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O08"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O09"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O10"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O11"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O12"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O13"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O14"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O15"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O16"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O20"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O21"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O22"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O23"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O24"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O25"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O26"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O28"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O29"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O30"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O31"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O32"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O33"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O34"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O35"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O36"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O40"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O41"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O42"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O43"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O44"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O45"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O46"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O47"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O48"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O60"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O61"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O62"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O63"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O64"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O65"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O66"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O67"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O68"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O69"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O70"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O71"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O72"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O73"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O74"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O75"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O76"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O77"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O80"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O82"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O85"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O86"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O87"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O88"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O89"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O90"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O91"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O92"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O94"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O98"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O99"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "O9A"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "Z33"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "Z34"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "Z36"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "Z39"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M05"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M06"
+      }]
+    },
+    {
+      "system" : "http://hl7.org/fhir/sid/icd-10-cm",
+      "filter" : [{
+        "property" : "concept",
+        "op" : "is-a",
+        "value" : "M80"
+      }]
+    }]
+  }
+}

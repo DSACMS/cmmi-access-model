@@ -5,7 +5,6 @@
   <meta>
     <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
   </meta>
-  <language value="en"/>
   <text>
     <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.</p></div>
   </text>
@@ -141,7 +140,7 @@
   <item>
     <linkId value="score"/>
     <answer>
-      <valueDecimal value="36"/>
+      <valueDecimal value="38"/>
     </answer>
   </item>
 </QuestionnaireResponse>

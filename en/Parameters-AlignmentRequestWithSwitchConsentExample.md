@@ -1,4 +1,4 @@
-# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.8
+# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.11
 
 ## Example Parameters: Alignment Request with Switch Consent Example
 
@@ -13,7 +13,6 @@
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in"]
   },
-  "language" : "en",
   "parameter" : [{
     "name" : "participantID",
     "valueIdentifier" : {

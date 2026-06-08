@@ -1,4 +1,4 @@
-# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.8
+# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Clinical Exclusion Condition 
 
@@ -10,7 +10,7 @@ The ACCESS Clinical Exclusion Condition profile is used for representing disqual
 * Use this Profile: [ACCESS Unalignment Request Parameters](StructureDefinition-access-unalign-in.md)
 * Examples for this Profile: [Condition/ESRDConditionExample](Condition-ESRDConditionExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-clinical-exclusion-condition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-clinical-exclusion-condition.json)
 
 ### Formal Views of Profile Content
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-clinical-e
   "resourceType" : "StructureDefinition",
   "id" : "access-clinical-exclusion-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSClinicalExclusionCondition",
   "title" : "ACCESS Clinical Exclusion Condition",
   "status" : "active",
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-clinical-e
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

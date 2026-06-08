@@ -1,4 +1,4 @@
-# Organization Example - CMS ACCESS Model API v0.9.8
+# Organization Example - CMS ACCESS Model API v0.9.11
 
 ## Example Organization: Organization Example
 
@@ -15,7 +15,6 @@ Example Healthcare Organization, ACCESS Participant ID: ACCES12345
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"]
   },
-  "language" : "en",
   "identifier" : [{
     "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
     "value" : "ACCES12345"

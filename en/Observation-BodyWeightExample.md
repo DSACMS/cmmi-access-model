@@ -1,4 +1,4 @@
-# Body Weight Example - CMS ACCESS Model API v0.9.8
+# Body Weight Example - CMS ACCESS Model API v0.9.11
 
 ## Example Observation: Body Weight Example
 
@@ -15,7 +15,6 @@ Body Weight: 85 kg measured on 2026-01-15
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-body-weight|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

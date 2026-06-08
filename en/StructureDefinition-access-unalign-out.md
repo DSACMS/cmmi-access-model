@@ -1,4 +1,4 @@
-# ACCESS Unalignment Response Parameters - CMS ACCESS Model API v0.9.8
+# ACCESS Unalignment Response Parameters - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Unalignment Response Parameters 
 
@@ -9,7 +9,7 @@ This is the profile for the `$unalign` operation output parameters, which provid
 
 * Examples for this Profile: [Parameters/UnalignmentResponseUnalignedExample](Parameters-UnalignmentResponseUnalignedExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-unalign-out)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-unalign-out.json)
 
 ### Formal Views of Profile Content
 
@@ -28,11 +28,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-ou
   "resourceType" : "StructureDefinition",
   "id" : "access-unalign-out",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSUnalignmentResponseParameters",
   "title" : "ACCESS Unalignment Response Parameters",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -119,7 +119,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-unalign-ou
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSUnalignmentResultVS|0.9.11"
       }
     }]
   }

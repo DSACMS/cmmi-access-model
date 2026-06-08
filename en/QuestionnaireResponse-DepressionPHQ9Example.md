@@ -1,4 +1,4 @@
-# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: PHQ-9 QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/PHQ9Questionnaire",
   "status" : "completed",
   "subject" : {

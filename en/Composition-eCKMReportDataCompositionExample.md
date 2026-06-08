@@ -1,4 +1,4 @@
-# eCKM Report Data Composition Example - CMS ACCESS Model API v0.9.8
+# eCKM Report Data Composition Example - CMS ACCESS Model API v0.9.11
 
 ## Example Composition: eCKM Report Data Composition Example
 
@@ -21,7 +21,6 @@ Author: Jane Smith
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition"]
   },
-  "language" : "en",
   "status" : "final",
   "type" : {
     "coding" : [{

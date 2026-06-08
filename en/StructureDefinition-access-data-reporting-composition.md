@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.8
+# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS Data Reporting Composition 
 
@@ -44,7 +44,7 @@ The profile includes an optional **additional-information** section that allows 
 * Use this Profile: [ACCESS Data Reporting Bundle](StructureDefinition-access-data-reporting-bundle.md)
 * Examples for this Profile: [Composition/BHReportDataCompositionExample](Composition-BHReportDataCompositionExample.md), [Composition/CKMReportDataCompositionExample](Composition-CKMReportDataCompositionExample.md), [Composition/MSKReportDataCompositionExample](Composition-MSKReportDataCompositionExample.md) and [Composition/eCKMReportDataCompositionExample](Composition-eCKMReportDataCompositionExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-data-reporting-composition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-data-reporting-composition.json)
 
 ### Formal Views of Profile Content
 
@@ -63,11 +63,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-composition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSDataReportingComposition",
   "title" : "ACCESS Data Reporting Composition",
   "status" : "draft",
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
         "severity" : "error",
         "human" : "The data reporting composition can include at most one track-based section (eCKM, CKM, MSK, BH).",
         "expression" : "section.where(code.coding.where(system = 'https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS' and (code = 'eCKM' or code = 'CKM' or code = 'MSK' or code = 'BH')).exists()).count() <= 1",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.8"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
       }]
     },
     {

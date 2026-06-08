@@ -1,4 +1,4 @@
-# PROMIS Pain Interference CAT QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# PROMIS Pain Interference CAT QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: PROMIS Pain Interference CAT QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ PROMIS Pain Interference (CAT) QuestionnaireResponse for John Doe. T-score: 70.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/PROMISPainInterferenceCATQuestionnaire",
   "status" : "completed",
   "subject" : {

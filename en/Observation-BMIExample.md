@@ -1,4 +1,4 @@
-# BMI Example - CMS ACCESS Model API v0.9.8
+# BMI Example - CMS ACCESS Model API v0.9.11
 
 ## Example Observation: BMI Example
 
@@ -15,7 +15,6 @@ BMI: 27.5 kg/m2 measured on 2026-01-15
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-bmi|6.1.0"]
   },
-  "language" : "en",
   "status" : "final",
   "category" : [{
     "coding" : [{

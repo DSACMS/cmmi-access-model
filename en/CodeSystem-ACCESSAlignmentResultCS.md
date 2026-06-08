@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.8
+# ACCESS Alignment Request Result Codes - CMS ACCESS Model API v0.9.11
 
 ## CodeSystem: ACCESS Alignment Request Result Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSAlignmentResultCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSAlignmentResultCS",
   "title" : "ACCESS Alignment Request Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-05-20T09:30:43-04:00",
+  "date" : "2026-06-04T22:54:52-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -1,4 +1,4 @@
-# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.9.8
+# End Stage Renal Disease Condition Example - CMS ACCESS Model API v0.9.11
 
 ## Example Condition: End Stage Renal Disease Condition Example
 
@@ -15,7 +15,6 @@ End stage renal disease (ESRD)
   "meta" : {
     "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition"]
   },
-  "language" : "en",
   "clinicalStatus" : {
     "coding" : [{
       "system" : "http://terminology.hl7.org/CodeSystem/condition-clinical",

@@ -1,4 +1,4 @@
-# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.8
+# ACCESS BH Condition Profile - CMS ACCESS Model API v0.9.11
 
 ## Resource Profile: ACCESS BH Condition Profile 
 
@@ -11,7 +11,7 @@ All codes must still be valid ICD-10-CM codes as required by the base [ACCESS Co
 
 * Examples for this Profile: [Condition/ConditionDepressionExample](Condition-ConditionDepressionExample.md)
 
-You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/cms.fhir.us.cmmi-access-model|current/StructureDefinition/access-bh-condition)
+You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir.org/xig/resource/cms.fhir.us.cmmi-access-model|current/StructureDefinition/StructureDefinition-access-bh-condition.json)
 
 ### Formal Views of Profile Content
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
   "resourceType" : "StructureDefinition",
   "id" : "access-bh-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition",
-  "version" : "0.9.8",
+  "version" : "0.9.11",
   "name" : "ACCESSBHCondition",
   "title" : "ACCESS BH Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.8",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-bh-conditi
       "definition" : "Diagnosis code for BH track conditions. Values SHALL be from ACCESSBHDiagnosisVS (depression, anxiety disorders).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.8"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHDiagnosisVS|0.9.11"
       }
     }]
   }

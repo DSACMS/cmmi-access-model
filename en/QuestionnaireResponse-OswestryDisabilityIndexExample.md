@@ -1,4 +1,4 @@
-# Oswestry Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.8
+# Oswestry Disability Index QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
 
 ## Example QuestionnaireResponse: Oswestry Disability Index QuestionnaireResponse Example
 
@@ -15,7 +15,6 @@ Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.
   "meta" : {
     "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"]
   },
-  "language" : "en",
   "questionnaire" : "http://example.org/Questionnaire/OswestryDisabilityIndexQuestionnaire",
   "status" : "completed",
   "subject" : {
@@ -158,7 +157,7 @@ Oswestry Disability Index QuestionnaireResponse for John Doe. Score: 36.
   {
     "linkId" : "score",
     "answer" : [{
-      "valueDecimal" : 36
+      "valueDecimal" : 38
     }]
   }]
 }

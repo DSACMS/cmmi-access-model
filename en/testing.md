@@ -1,4 +1,4 @@
-#  - CMS ACCESS Model API v0.9.8
+#  - CMS ACCESS Model API v0.9.11
 
 ## 
 
@@ -83,7 +83,6 @@ Before deploying to production, implementers should complete the following valid
 | | | | |
 | :--- | :--- | :--- | :--- |
 | Successful CKM Submission | Complete CKM bundle | HTTP 200, result "success" | All observations recorded |
-| Validation Error | Bundle missing required sections | HTTP 200, result "validation-error" | Specific errors identified |
 | Patient Not Aligned | Data for unaligned patient | HTTP 200, result "patient-not-aligned" | Submission rejected |
 | Duplicate | Same data submitted twice | HTTP 200, result "duplicate" | Original submission referenced |
 | Incorrect Track | MSK data for CKM patient | HTTP 200, result "incorrect-track" | Track mismatch identified |
