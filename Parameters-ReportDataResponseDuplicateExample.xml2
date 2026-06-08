@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="ReportDataResponseDuplicateExample"/>
+  <meta>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"/>
+  </meta>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS"/>
+        <code value="duplicate"/>
+        <display value="Duplicate Submission"/>
+      </coding>
+      <text value="Data submission is a duplicate of a previously submitted report for this reporting period."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

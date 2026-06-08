@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ReportDataResponseIncorrectTrackExample",
+  "meta" : {
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"]
+  },
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
+        "code" : "incorrect-track",
+        "display" : "Incorrect Track"
+      }],
+      "text" : "The submitted data does not match the track the patient is aligned to."
+    }
+  }]
+}

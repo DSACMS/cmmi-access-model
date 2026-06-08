@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="QuickDASHExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>QuickDASH QuestionnaireResponse for John Doe. Score: 50.</p></div>
+  </text>
+  <questionnaire value="http://example.org/Questionnaire/QuickDASHQuestionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <authored value="2026-01-15T10:30:00Z"/>
+  <author>
+    <reference value="Patient/PatientExample"/>
+  </author>
+  <item>
+    <linkId value="qd-1"/>
+    <text value="Open a tight or new jar."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Moderate difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-2"/>
+    <text value="Do heavy household chores (e.g., wash walls, wash floors)."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
+        <display value="Severe difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-3"/>
+    <text value="Carry a shopping bag or briefcase."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Moderate difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-4"/>
+    <text value="Wash your back."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Mild difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-5"/>
+    <text value="Use a knife to cut food."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Mild difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-6"/>
+    <text value="Recreational activities in which you take some force or impact through your arm, shoulder, or hand (e.g., golf, hammering, tennis, etc.)."/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
+        <display value="Severe difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-7"/>
+    <text value="During the past week, to what extent has your arm, shoulder, or hand problem interfered with your normal social activities with family, friends, neighbors, or groups?"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Moderately"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-8"/>
+    <text value="During the past week, were you limited in your work or other regular daily activities as a result of your arm, shoulder, or hand problem?"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="4"/>
+        </extension>
+        <display value="Very limited"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-9"/>
+    <text value="Arm, shoulder, or hand pain"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-10"/>
+    <text value="Tingling (pins and needles) in your arm, shoulder, or hand"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <display value="Mild"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="qd-11"/>
+    <text value="During the past week, how much difficulty have you had sleeping because of the pain in your arm, shoulder, or hand?"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <display value="Moderate difficulty"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="score"/>
+    <answer>
+      <valueDecimal value="50"/>
+    </answer>
+  </item>
+</QuestionnaireResponse>

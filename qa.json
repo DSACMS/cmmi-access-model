@@ -6,8 +6,8 @@
   "status" : "draft",
   "package-id" : "cms.fhir.us.cmmi-access-model",
   "ig-ver" : "0.9.11",
-  "date" : "Thu, 04 Jun, 2026 22:54:52 -0400",
-  "dateISO8601" : "2026-06-04T22:54:52-04:00",
+  "date" : "Thu, 04 Jun, 2026 23:05:21 -0400",
+  "dateISO8601" : "2026-06-04T23:05:21-04:00",
   "errs" : 0,
   "warnings" : 0,
   "hints" : 0,
@@ -15,5 +15,5 @@
   "suppressed-warnings" : 97,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2214754096
+  "maxMemory" : 2129196576
 }

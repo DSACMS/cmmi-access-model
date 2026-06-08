@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Organization",
+  "id" : "OrganizationExample",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"]
+  },
+  "language" : "en",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"en\" xmlns=\"http://www.w3.org/1999/xhtml\" lang=\"en\">Example Healthcare Organization, ACCESS Participant ID: ACCES12345</div>"
+  },
+  "identifier" : [{
+    "system" : "https://dsacms.github.io/cmmi-access-model/participant-id",
+    "value" : "ACCES12345"
+  }],
+  "active" : true,
+  "name" : "Example Healthcare Organization"
+}

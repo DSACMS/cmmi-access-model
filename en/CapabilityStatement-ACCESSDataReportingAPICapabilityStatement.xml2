@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CapabilityStatement xmlns="http://hl7.org/fhir">
+  <id value="ACCESSDataReportingAPICapabilityStatement"/>
+  <language value="en"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CapabilityStatement ACCESSDataReportingAPICapabilityStatement</b></p><a name="ACCESSDataReportingAPICapabilityStatement"> </a><a name="hcACCESSDataReportingAPICapabilityStatement"> </a><h2 id="title">ACCESS Data Reporting API Capability Statement</h2><ul><li>Implementation Guide Version: 0.9.11 </li><li>FHIR Version: 4.0.1 </li><li>Supported Formats: <code>json</code>, <code>xml</code></li><li>Published on: 2026-01-23 </li><li>Published by: Global Alliant, Inc. </li></ul><blockquote class="impl-note"><p><strong>Note to Implementers: FHIR Capabilities</strong></p><p>Any FHIR capability may be 'allowed' by the system unless explicitly marked as 'SHALL NOT'. A few items are marked as MAY in the Implementation Guide to highlight their potential relevance to the use case.</p></blockquote><h3 id="shallIGs">SHALL Support the Following Implementation Guides</h3><ul><li><a href="index.html">https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.cmmi-access-model</a></li></ul><h2 id="rest">FHIR RESTful Capabilities</h2><div class="panel panel-default"><div class="panel-heading"><h3 id="mode1" class="panel-title">Mode: <code>server</code></h3></div><div class="panel-body"><div><p>Track-Specific Data Requirements:</p>
+<p><strong>CKM (Cardio-Kidney-Metabolic) Track:</strong></p>
+<ul>
+<li>Blood Pressure (BP using LOINC 85354-9)</li>
+<li>Lipid panel (LOINC 18262-6)</li>
+<li>Body weight (LOINC 29463-7)</li>
+<li>BMI (LOINC 39156-3)</li>
+<li>Waist circumference (LOINC 8280-0)</li>
+<li>HbA1c (LOINC 4548-4)</li>
+<li>eGFR (LOINC 98979-8)</li>
+<li>uACR (LOINC 14959-1)</li>
+</ul>
+<p><strong>eCKM (Early Cardio-Kidney-Metabolic) Track:</strong></p>
+<ul>
+<li>Blood Pressure (BP using LOINC 85354-9)</li>
+<li>Lipid panel (LOINC 18262-6)</li>
+<li>Body weight (LOINC 29463-7)</li>
+<li>BMI (LOINC 39156-3)</li>
+<li>Waist circumference (LOINC 8280-0)</li>
+<li>HbA1c (LOINC 4548-4)</li>
+</ul>
+<p><strong>MSK (Musculoskeletal) Track:</strong></p>
+<ul>
+<li>PROMIS Physical Function Short Form 6b (LOINC 76804-4) or PROMIS Physical Function v2.0 Computer Adaptive Test (LOINC 91722-9)</li>
+<li>PROMIS Pain Interference Short Form 6a (LOINC 90973-9) or PROMIS Pain Interference v1.1 Computer Adaptive Test (LOINC 89923-7)</li>
+<li>Oswestry Disability Index (LOINC 97908-8)</li>
+<li>Neck Disability Index (LOINC 82226-2)</li>
+<li>Quick Disabilities of the Arm, Shoulder and Hand/QuickDASH (ACCESSReportDataCompositionSection QuickDASH)</li>
+<li>Patient's Global Impression of Change (ACCESSReportDataCompositionSection PGIC)</li>
+<li>Knee Injury and Osteoarthritis Outcome Score for Joint Replacement/KOOS JR (LOINC 82324-5)</li>
+<li>Hip Dysfunction and Osteoarthritis Outcome Score for Joint Replacement/HOOS JR (LOINC 82316-1)</li>
+<li>PROMIS Pain Intensity Numeric Rating Scale v1.0 (LOINC 72514-3)</li>
+</ul>
+<p><strong>BH (Behavioral Health) Track:</strong></p>
+<ul>
+<li>Depression screening/PHQ-9 (LOINC 44261-6)</li>
+<li>Anxiety screening/GAD-7 (LOINC 69737-5)</li>
+<li>Functioning and disability/WHODAS 2.0 (ACCESSReportDataCompositionSection WHODAS)</li>
+<li>Patient's Global Impression of Change (ACCESSReportDataCompositionSection PGIC)</li>
+</ul>
+</div><div class="lead"><em>Security</em></div><div class="row"><div class="col-lg-6">Enable CORS: yes</div><div class="col-lg-6">Security services supported: </div></div><blockquote><div><p>Implementations SHALL use TLS 1.3 and implement OAuth 2.0 Client Credentials flow for authentication. All clinical data and MBI must be protected according to HIPAA requirements.</p>
+</div></blockquote></div></div><h3 id="resourcesCap1">Capabilities by Resource/Profile</h3><h4 id="resourcesSummary1">Summary</h4><p>The summary table lists the resources that are part of this configuration, and for each resource it lists:</p><ul><li>The relevant profiles (if any)</li><li>The interactions supported by each resource (<b><span class="bg-info">R</span></b>ead, <b><span class="bg-info">S</span></b>earch, <b><span class="bg-info">U</span></b>pdate, and <b><span class="bg-info">C</span></b>reate, are always shown, while <b><span class="bg-info">VR</span></b>ead, <b><span class="bg-info">P</span></b>atch, <b><span class="bg-info">D</span></b>elete, <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">I</span></b>nstance, or <b><span class="bg-info">H</span></b>istory on <b><span class="bg-info">T</span></b>ype are only present if at least one of the resources has support for them.</li><li><span>The required, recommended, and some optional search parameters (if any). </span></li><li>The linked resources enabled for <code>_include</code></li><li>The other resources enabled for <code>_revinclude</code></li><li>The operations on the resource (if any)</li></ul><div class="table-responsive"><table class="table table-condensed table-hover"><thead><tr><th><b>Resource Type</b></th><th><b>Profile</b></th><th class="text-center"><b title="GET a resource (read interaction)">R</b></th><th class="text-center"><b title="GET all set of resources of the type (search interaction)">S</b></th><th class="text-center"><b title="PUT a new resource version (update interaction)">U</b></th><th class="text-center"><b title="POST a new resource (create interaction)">C</b></th><th><b title="Required and recommended search parameters">Searches</b></th><th><code><b>_include</b></code></th><th><code><b>_revinclude</b></code></th><th><b>Operations</b></th></tr></thead><tbody><tr><td><a href="#Patient1-1">Patient</a></td><td> </td><td class="text-center"/><td class="text-center"/><td class="text-center"/><td class="text-center"/><td/><td/><td/><td><code>$report-data</code>, <code>$submission-status</code></td></tr></tbody></table></div><hr/><div class="panel panel-default"><div class="panel-heading"><h4 id="Patient1-1" class="panel-title"><span style="float: right;">Resource Conformance: unspecified </span>Patient</h4></div><div class="panel-body"><div class="container"><div class="row"><div class="col-lg-4"><span class="lead">Core FHIR Resource</span><br/><a href="http://hl7.org/fhir/R4/patient.html">Patient</a></div><div class="col-lg-4"><span class="lead">Reference Policy</span><br/></div><div class="col-lg-4"><span class="lead">Interaction summary</span><br/><ul/></div></div><p/><p/><div class="row"><div class="col-12"><span class="lead">Documentation</span><blockquote><div><p>Patient resource for ACCESS data reporting operations</p>
+</div></blockquote></div></div><div class="row"><div class="col-12"><span class="lead">Extended Operations</span><table class="table table-condensed table-hover"><thead><tr><th>Conformance</th><th>Operation</th><th>Documentation</th></tr></thead><tbody><tr><td><b>SHALL</b></td><td><a href="OperationDefinition-ReportData.html">$report-data</a></td><td><div><p>Report clinical data for an aligned patient. This operation requires the <code>entityId</code> query parameter (participant identifier) and a Parameters body including other required inputs. Requires document bundle conforming to ACCESSDataReportingBundle profile with Composition as first entry and all referenced resources included. Validates track-specific data requirements. Supports multiple submissions per reporting period. Returns submission status from ACCESSReportDataResultVS: success, duplicate, patient-not-aligned, reporting-period-closed, incomplete-data, or incorrect-track. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling.</p>
+</div></td></tr><tr><td><b>SHALL</b></td><td><a href="OperationDefinition-SubmissionStatus.html">$submission-status</a></td><td><div><p>Poll the status of a previously submitted data report. Returns HTTP 202 while processing or HTTP 200 with result when complete. May include OperationOutcome with validation errors if submission failed.</p>
+</div></td></tr></tbody></table></div></div></div></div></div></div>
+  </text>
+  <url value="https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSDataReportingAPICapabilityStatement"/>
+  <version value="0.9.11"/>
+  <name value="ACCESSDataReportingAPICapabilityStatement"/>
+  <title value="ACCESS Data Reporting API Capability Statement"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-01-23"/>
+  <publisher value="Global Alliant, Inc."/>
+  <contact>
+    <name value="Global Alliant, Inc."/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://globalalliantinc.com"/>
+    </telecom>
+    <telecom>
+      <system value="email"/>
+      <value value="david.h@globalalliantinc.org"/>
+    </telecom>
+  </contact>
+  <description value="Describes the expected capabilities of systems implementing the ACCESS Data Reporting API for submitting clinical data for aligned patients."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="US"/>
+      <display value="United States of America"/>
+    </coding>
+  </jurisdiction>
+  <kind value="requirements"/>
+  <fhirVersion value="4.0.1"/>
+  <format value="json"/>
+  <format value="xml"/>
+  <implementationGuide value="https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.cmmi-access-model"/>
+  <rest>
+    <mode value="server"/>
+    <documentation value="Track-Specific Data Requirements:&#xA;&#xA;**CKM (Cardio-Kidney-Metabolic) Track:**&#xA;- Blood Pressure (BP using LOINC 85354-9)&#xA;- Lipid panel (LOINC 18262-6)&#xA;- Body weight (LOINC 29463-7)&#xA;- BMI (LOINC 39156-3)&#xA;- Waist circumference (LOINC 8280-0)&#xA;- HbA1c (LOINC 4548-4)&#xA;- eGFR (LOINC 98979-8)&#xA;- uACR (LOINC 14959-1)&#xA;&#xA;**eCKM (Early Cardio-Kidney-Metabolic) Track:**&#xA;- Blood Pressure (BP using LOINC 85354-9)&#xA;- Lipid panel (LOINC 18262-6)&#xA;- Body weight (LOINC 29463-7)&#xA;- BMI (LOINC 39156-3)&#xA;- Waist circumference (LOINC 8280-0)&#xA;- HbA1c (LOINC 4548-4)&#xA;&#xA;**MSK (Musculoskeletal) Track:**&#xA;- PROMIS Physical Function Short Form 6b (LOINC 76804-4) or PROMIS Physical Function v2.0 Computer Adaptive Test (LOINC 91722-9)&#xA;- PROMIS Pain Interference Short Form 6a (LOINC 90973-9) or PROMIS Pain Interference v1.1 Computer Adaptive Test (LOINC 89923-7)&#xA;- Oswestry Disability Index (LOINC 97908-8)&#xA;- Neck Disability Index (LOINC 82226-2)&#xA;- Quick Disabilities of the Arm, Shoulder and Hand/QuickDASH (ACCESSReportDataCompositionSection QuickDASH)&#xA;- Patient's Global Impression of Change (ACCESSReportDataCompositionSection PGIC)&#xA;- Knee Injury and Osteoarthritis Outcome Score for Joint Replacement/KOOS JR (LOINC 82324-5)&#xA;- Hip Dysfunction and Osteoarthritis Outcome Score for Joint Replacement/HOOS JR (LOINC 82316-1)&#xA;- PROMIS Pain Intensity Numeric Rating Scale v1.0 (LOINC 72514-3)&#xA;&#xA;**BH (Behavioral Health) Track:**&#xA;- Depression screening/PHQ-9 (LOINC 44261-6)&#xA;- Anxiety screening/GAD-7 (LOINC 69737-5)&#xA;- Functioning and disability/WHODAS 2.0 (ACCESSReportDataCompositionSection WHODAS)&#xA;- Patient's Global Impression of Change (ACCESSReportDataCompositionSection PGIC)"/>
+    <security>
+      <cors value="true"/>
+      <description value="Implementations SHALL use TLS 1.3 and implement OAuth 2.0 Client Credentials flow for authentication. All clinical data and MBI must be protected according to HIPAA requirements."/>
+    </security>
+    <resource>
+      <type value="Patient"/>
+      <documentation value="Patient resource for ACCESS data reporting operations"/>
+      <operation>
+        <name value="report-data"/>
+        <definition value="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData|0.9.11"/>
+        <documentation value="Report clinical data for an aligned patient. This operation requires the `entityId` query parameter (participant identifier) and a Parameters body including other required inputs. Requires document bundle conforming to ACCESSDataReportingBundle profile with Composition as first entry and all referenced resources included. Validates track-specific data requirements. Supports multiple submissions per reporting period. Returns submission status from ACCESSReportDataResultVS: success, duplicate, patient-not-aligned, reporting-period-closed, incomplete-data, or incorrect-track. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."/>
+      </operation>
+      <operation>
+        <name value="submission-status"/>
+        <definition value="https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.11"/>
+        <documentation value="Poll the status of a previously submitted data report. Returns HTTP 202 while processing or HTTP 200 with result when complete. May include OperationOutcome with validation errors if submission failed."/>
+      </operation>
+    </resource>
+  </rest>
+</CapabilityStatement>

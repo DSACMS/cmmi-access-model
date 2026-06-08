@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="BloodPressureExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-blood-pressure|6.1.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">Blood Pressure: 138/88 mm[Hg] measured on 2026-01-15</div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="vital-signs"/>
+      <display value="Vital Signs"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="85354-9"/>
+      <display value="Blood pressure panel with all children optional"/>
+    </coding>
+    <text value="Blood Pressure"/>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8480-6"/>
+        <display value="Systolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="138"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+  <component>
+    <code>
+      <coding>
+        <system value="http://loinc.org"/>
+        <code value="8462-4"/>
+        <display value="Diastolic blood pressure"/>
+      </coding>
+    </code>
+    <valueQuantity>
+      <value value="88"/>
+      <unit value="mm[Hg]"/>
+      <system value="http://unitsofmeasure.org"/>
+      <code value="mm[Hg]"/>
+    </valueQuantity>
+  </component>
+</Observation>

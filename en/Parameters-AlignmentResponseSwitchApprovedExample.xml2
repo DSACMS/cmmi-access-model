@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Parameters xmlns="http://hl7.org/fhir">
+  <id value="AlignmentResponseSwitchApprovedExample"/>
+  <meta>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out"/>
+  </meta>
+  <language value="en"/>
+  <parameter>
+    <name value="result"/>
+    <valueCodeableConcept>
+      <coding>
+        <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSAlignmentResultCS"/>
+        <code value="aligned-switch-approved"/>
+        <display value="Aligned and switch approved"/>
+      </coding>
+      <text value="The request to switch the patient's alignment from a different provider after the 90-day lock in period is accepted and the patient is considered switched and now re-aligned."/>
+    </valueCodeableConcept>
+  </parameter>
+</Parameters>

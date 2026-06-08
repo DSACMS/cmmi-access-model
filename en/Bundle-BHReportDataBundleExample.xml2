@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="BHReportDataBundleExample"/>
+  <meta>
+    <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle"/>
+  </meta>
+  <language value="en"/>
+  <identifier>
+    <system value="http://example.org/data-bundle-id"/>
+    <value value="bundle-bh-001"/>
+  </identifier>
+  <type value="document"/>
+  <timestamp value="2026-01-26T12:00:00Z"/>
+  <entry>
+    <fullUrl value="http://example.org/Composition/BHReportDataCompositionExample"/>
+    <resource>
+      <Composition>
+        <id value="BHReportDataCompositionExample"/>
+        <meta>
+          <profile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="Composition_BHReportDataCompositionExample"> </a><h3>ACCESS BH Track Data Report</h3><p>Patient: John Doe (MBI: 1EG4TE5MK73)</p><p>Report Date: 2026-01-26</p><p>Author: Jane Smith</p></div>
+        </text>
+        <status value="final"/>
+        <type>
+          <coding>
+            <system value="http://loinc.org"/>
+            <code value="74465-6"/>
+            <display value="Questionnaire response Document"/>
+          </coding>
+        </type>
+        <subject>
+          <reference value="Patient/PatientExample"/>
+        </subject>
+        <date value="2026-01-26T12:00:00Z"/>
+        <author>
+          <reference value="Practitioner/PractitionerExample"/>
+        </author>
+        <title value="ACCESS BH Track Data Report"/>
+        <custodian>
+          <reference value="Organization/OrganizationExample"/>
+        </custodian>
+        <section>
+          <title value="Data reporting for BH track"/>
+          <code>
+            <coding>
+              <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS"/>
+              <code value="BH"/>
+            </coding>
+          </code>
+          <text>
+            <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>Behavioral Health Track Data Reporting including depression and anxiety assessments and patient-reported outcomes.</p></div>
+          </text>
+          <section>
+            <title value="Depression (PHQ-9)"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="44249-1"/>
+              </coding>
+            </code>
+            <entry>
+              <reference value="QuestionnaireResponse/DepressionPHQ9Example"/>
+            </entry>
+          </section>
+          <section>
+            <title value="Anxiety (GAD-7)"/>
+            <code>
+              <coding>
+                <system value="http://loinc.org"/>
+                <code value="69737-5"/>
+              </coding>
+            </code>
+            <entry>
+              <reference value="QuestionnaireResponse/AnxietyGAD7Example"/>
+            </entry>
+          </section>
+          <section>
+            <title value="Overall Function (WHODAS 2.0)"/>
+            <code>
+              <coding>
+                <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS"/>
+                <code value="WHODAS"/>
+              </coding>
+            </code>
+            <entry>
+              <reference value="QuestionnaireResponse/WHODASExample"/>
+            </entry>
+          </section>
+          <section>
+            <title value="Patient's Global Impression of Change"/>
+            <code>
+              <coding>
+                <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS"/>
+                <code value="PGIC"/>
+              </coding>
+            </code>
+            <entry>
+              <reference value="QuestionnaireResponse/BHPGICExample"/>
+            </entry>
+          </section>
+        </section>
+      </Composition>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Patient/PatientExample"/>
+    <resource>
+      <Patient>
+        <id value="PatientExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-patient|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="Patient_PatientExample"> </a>Patient John Doe, male, born 1950-01-01, Medicare ID: 1EG4TE5MK73</div>
+        </text>
+        <identifier>
+          <type>
+            <coding>
+              <system value="http://terminology.hl7.org/CodeSystem/v2-0203"/>
+              <code value="MC"/>
+            </coding>
+          </type>
+          <system value="http://terminology.hl7.org/NamingSystem/cmsMBI"/>
+          <value value="1EG4TE5MK73"/>
+        </identifier>
+        <name>
+          <family value="Doe"/>
+          <given value="John"/>
+        </name>
+        <gender value="male"/>
+        <birthDate value="1950-01-01"/>
+      </Patient>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Practitioner/PractitionerExample"/>
+    <resource>
+      <Practitioner>
+        <id value="PractitionerExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-practitioner|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="Practitioner_PractitionerExample"> </a>Practitioner Jane Smith, NPI: 1234567893</div>
+        </text>
+        <identifier>
+          <system value="http://hl7.org/fhir/sid/us-npi"/>
+          <value value="1234567893"/>
+        </identifier>
+        <name>
+          <family value="Smith"/>
+          <given value="Jane"/>
+        </name>
+      </Practitioner>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/Organization/OrganizationExample"/>
+    <resource>
+      <Organization>
+        <id value="OrganizationExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-organization|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="Organization_OrganizationExample"> </a>Example Healthcare Organization, ACCESS Participant ID: ACCES12345</div>
+        </text>
+        <identifier>
+          <system value="https://dsacms.github.io/cmmi-access-model/participant-id"/>
+          <value value="ACCES12345"/>
+        </identifier>
+        <active value="true"/>
+        <name value="Example Healthcare Organization"/>
+      </Organization>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/QuestionnaireResponse/DepressionPHQ9Example"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="DepressionPHQ9Example"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="QuestionnaireResponse_DepressionPHQ9Example"> </a><p>PHQ-9 QuestionnaireResponse for John Doe. Total score: 7.</p></div>
+        </text>
+        <questionnaire value="http://example.org/Questionnaire/PHQ9Questionnaire"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/PatientExample"/>
+        </subject>
+        <authored value="2026-01-15T10:30:00Z"/>
+        <author>
+          <reference value="Patient/PatientExample"/>
+        </author>
+        <item>
+          <linkId value="phq9-1"/>
+          <text value="Little interest or pleasure in doing things"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-2"/>
+          <text value="Feeling down, depressed, or hopeless"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-3"/>
+          <text value="Trouble falling or staying asleep, or sleeping too much"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6570-1"/>
+              <display value="More than half the days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-4"/>
+          <text value="Feeling tired or having little energy"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-5"/>
+          <text value="Poor appetite or overeating"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="0"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-6"/>
+          <text value="Feeling bad about yourself — or that you are a failure or have let yourself or your family down"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-7"/>
+          <text value="Trouble concentrating on things, such as reading the newspaper or watching television"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-8"/>
+          <text value="Moving or speaking so slowly that other people could have noticed? Or the opposite — being so fidgety or restless that you have been moving around a lot more than usual"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="0"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-9"/>
+          <text value="Thoughts that you would be better off dead, or of hurting yourself in some way"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="0"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="phq9-10"/>
+          <text value="How difficult have these made it for you to do your work, take care of things at home, or get along with other people?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6573-5"/>
+              <display value="Somewhat difficult"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="total-score"/>
+          <answer>
+            <valueDecimal value="7"/>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/QuestionnaireResponse/AnxietyGAD7Example"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="AnxietyGAD7Example"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="QuestionnaireResponse_AnxietyGAD7Example"> </a><p>GAD-7 QuestionnaireResponse for John Doe. Total score: 6.</p></div>
+        </text>
+        <questionnaire value="http://example.org/Questionnaire/GAD7Questionnaire"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/PatientExample"/>
+        </subject>
+        <authored value="2026-01-15T10:30:00Z"/>
+        <author>
+          <reference value="Patient/PatientExample"/>
+        </author>
+        <item>
+          <linkId value="gad7-1"/>
+          <text value="Feeling nervous, anxious, or on edge"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-2"/>
+          <text value="Not being able to stop or control worrying"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-3"/>
+          <text value="Worrying too much about different things"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-4"/>
+          <text value="Trouble relaxing"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-5"/>
+          <text value="Being so restless that it is hard to sit still"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="0"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6568-5"/>
+              <display value="Not at all"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-6"/>
+          <text value="Becoming easily annoyed or irritable"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="gad7-7"/>
+          <text value="Feeling afraid as if something awful might happen"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <system value="http://loinc.org"/>
+              <code value="LA6569-3"/>
+              <display value="Several days"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="total-score"/>
+          <answer>
+            <valueDecimal value="6"/>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/QuestionnaireResponse/WHODASExample"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="WHODASExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="QuestionnaireResponse_WHODASExample"> </a><p>WHODAS 2.0 (12-item) QuestionnaireResponse for John Doe. Total score: 26.</p></div>
+        </text>
+        <questionnaire value="http://example.org/Questionnaire/WHODASQuestionnaire"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/PatientExample"/>
+        </subject>
+        <authored value="2026-01-15T10:30:00Z"/>
+        <author>
+          <reference value="Patient/PatientExample"/>
+        </author>
+        <item>
+          <linkId value="whodas-s1"/>
+          <text value="Standing for long periods such as 30 minutes"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s2"/>
+          <text value="Taking care of household responsibilities"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <display value="Moderate"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s3"/>
+          <text value="Learning a new task, for example learning how to get to a new place"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s4"/>
+          <text value="How much of a problem did you have joining in community activities (for example, festivities, religious or other activities) in the same way as anyone else can?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s5"/>
+          <text value="How much of a problem did you have with being emotionally affected by your health problems?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <display value="Moderate"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s6"/>
+          <text value="Concentrating on doing something for ten minutes?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s7"/>
+          <text value="Walking a long distance such as a kilometer [or equivalent]?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <display value="Moderate"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s8"/>
+          <text value="Washing your whole body?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <display value="None"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s9"/>
+          <text value="Getting dressed?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <display value="None"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s10"/>
+          <text value="Dealing with people you do not know"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s11"/>
+          <text value="Maintaining a friendship"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="2"/>
+              </extension>
+              <display value="Mild"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-s12"/>
+          <text value="Your day-to-day work"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="3"/>
+              </extension>
+              <display value="Moderate"/>
+            </valueCoding>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-h1"/>
+          <text value="Overall, in the past 30 days, how many days were these difficulties present?"/>
+          <answer>
+            <valueDecimal value="3"/>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-h2"/>
+          <text value="In the past 30 days, for how many days were you totally unable to carry out your usual activities or work because of any health condition?"/>
+          <answer>
+            <valueDecimal value="3"/>
+          </answer>
+        </item>
+        <item>
+          <linkId value="whodas-h3"/>
+          <text value="In the past 30 days, not counting the days that you were totally unable, for how many days did you cut back or reduce your usual activities or work because of any health condition?"/>
+          <answer>
+            <valueDecimal value="3"/>
+          </answer>
+        </item>
+        <item>
+          <linkId value="total-score"/>
+          <answer>
+            <valueDecimal value="26"/>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://example.org/QuestionnaireResponse/BHPGICExample"/>
+    <resource>
+      <QuestionnaireResponse>
+        <id value="BHPGICExample"/>
+        <meta>
+          <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+        </meta>
+        <language value="en"/>
+        <text>
+          <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><a name="QuestionnaireResponse_BHPGICExample"> </a><p>PGIC QuestionnaireResponse for John Doe. Response: Very much improved.</p></div>
+        </text>
+        <questionnaire value="http://example.org/Questionnaire/BHPGICQuestionnaire"/>
+        <status value="completed"/>
+        <subject>
+          <reference value="Patient/PatientExample"/>
+        </subject>
+        <authored value="2026-01-15T10:30:00Z"/>
+        <author>
+          <reference value="Patient/PatientExample"/>
+        </author>
+        <item>
+          <linkId value="pgic-1"/>
+          <text value="Since beginning treatment, how would you describe your overall change in activity limitations, symptoms, emotions, and quality of life?"/>
+          <answer>
+            <valueCoding>
+              <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+                <valueDecimal value="1"/>
+              </extension>
+              <display value="Very much improved"/>
+            </valueCoding>
+          </answer>
+        </item>
+      </QuestionnaireResponse>
+    </resource>
+  </entry>
+</Bundle>

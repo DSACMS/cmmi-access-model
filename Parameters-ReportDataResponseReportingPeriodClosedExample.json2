@@ -1,0 +1,18 @@
+{
+  "resourceType" : "Parameters",
+  "id" : "ReportDataResponseReportingPeriodClosedExample",
+  "meta" : {
+    "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out"]
+  },
+  "parameter" : [{
+    "name" : "result",
+    "valueCodeableConcept" : {
+      "coding" : [{
+        "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataResultCS",
+        "code" : "reporting-period-closed",
+        "display" : "Reporting Period Closed"
+      }],
+      "text" : "The reporting period for this data has closed and no further submissions are accepted."
+    }
+  }]
+}

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<QuestionnaireResponse xmlns="http://hl7.org/fhir">
+  <id value="HOOSJRExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-questionnaireresponse|6.1.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en"><p>HOOS JR QuestionnaireResponse for John Doe. Total interval score: 55.985.</p></div>
+  </text>
+  <questionnaire value="http://example.org/Questionnaire/HOOSJRQuestionnaire"/>
+  <status value="completed"/>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <authored value="2026-01-15T10:30:00Z"/>
+  <author>
+    <reference value="Patient/PatientExample"/>
+  </author>
+  <item>
+    <linkId value="hoosjr-1"/>
+    <text value="Going up or down stairs"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hoosjr-2"/>
+    <text value="Walking on an uneven surface"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hoosjr-3"/>
+    <text value="Rising from sitting"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="2"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6751-7"/>
+        <display value="Moderate"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hoosjr-4"/>
+    <text value="Bending to the floor/picking up an object"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="3"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6750-9"/>
+        <display value="Severe"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hoosjr-5"/>
+    <text value="Lying in bed"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6752-5"/>
+        <display value="Mild"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="hoosjr-6"/>
+    <text value="Sitting"/>
+    <answer>
+      <valueCoding>
+        <extension url="http://hl7.org/fhir/StructureDefinition/ordinalValue">
+          <valueDecimal value="1"/>
+        </extension>
+        <system value="http://loinc.org"/>
+        <code value="LA6752-5"/>
+        <display value="Mild"/>
+      </valueCoding>
+    </answer>
+  </item>
+  <item>
+    <linkId value="total-interval-score"/>
+    <answer>
+      <valueDecimal value="55.985"/>
+    </answer>
+  </item>
+</QuestionnaireResponse>

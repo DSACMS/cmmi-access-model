@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Observation xmlns="http://hl7.org/fhir">
+  <id value="eGFRExample"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/us/core/StructureDefinition/us-core-observation-clinical-result|6.1.0"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">eGFR: 75 mL/min/1.73m2 measured on 2026-01-15</div>
+  </text>
+  <status value="final"/>
+  <category>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/observation-category"/>
+      <code value="laboratory"/>
+      <display value="Laboratory"/>
+    </coding>
+  </category>
+  <code>
+    <coding>
+      <system value="http://loinc.org"/>
+      <code value="98979-8"/>
+      <display value="Glomerular filtration rate [Volume Rate/Area] in Serum, Plasma or Blood by Creatinine-based formula (CKD-EPI 2021)/1.73 sq M"/>
+    </coding>
+  </code>
+  <subject>
+    <reference value="Patient/PatientExample"/>
+  </subject>
+  <effectiveDateTime value="2026-01-15T10:30:00Z"/>
+  <valueQuantity>
+    <value value="75"/>
+    <unit value="mL/min/1.73_m2"/>
+    <system value="http://unitsofmeasure.org"/>
+    <code value="mL/min/{1.73_m2}"/>
+  </valueQuantity>
+</Observation>
