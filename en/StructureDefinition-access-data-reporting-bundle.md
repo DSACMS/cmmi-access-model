@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.11
+# ACCESS Data Reporting Bundle - CMS ACCESS Model API v0.9.12
 
 ## Resource Profile: ACCESS Data Reporting Bundle 
 
@@ -45,11 +45,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-bundle",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSDataReportingBundle",
   "title" : "ACCESS Data Reporting Bundle",
   "status" : "draft",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -105,7 +105,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
         "severity" : "error",
         "human" : "All resources referenced from the data reporting Composition must be included in the enclosing data reporting Bundle.",
         "expression" : "entry.resource.ofType(Composition).descendants().ofType(Reference).all(resolve() in %resource.entry.resource)",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"
       }]
     },
     {
@@ -166,7 +166,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
       "min" : 1,
       "type" : [{
         "code" : "Composition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"]
       }],
       "mustSupport" : true
     }]

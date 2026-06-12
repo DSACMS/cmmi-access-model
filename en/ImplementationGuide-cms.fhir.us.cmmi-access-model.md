@@ -10,11 +10,11 @@
   "id" : "cms.fhir.us.cmmi-access-model",
   "language" : "en",
   "url" : "https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.cmmi-access-model",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "CMSAccessAPI",
   "title" : "CMS ACCESS Model API",
   "status" : "draft",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -1384,7 +1384,7 @@
       },
       "name" : "Alignment Request Example",
       "description" : "Example of parameters for aligning a patient to the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1396,7 +1396,7 @@
       },
       "name" : "Alignment Request with Switch Consent Example",
       "description" : "Example of parameters for aligning a patient with switch consent attestation",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1408,7 +1408,7 @@
       },
       "name" : "Alignment Response - Aligned Example",
       "description" : "Example response indicating successful patient alignment",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.12"
     },
     {
       "extension" : [{
@@ -1420,7 +1420,7 @@
       },
       "name" : "Alignment Response - Switch Approved Example",
       "description" : "Example response indicating successful provider switch",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.12"
     },
     {
       "extension" : [{
@@ -1456,7 +1456,7 @@
       },
       "name" : "BH Report Data Bundle Example",
       "description" : "Example of a complete report data bundle for the BH track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"
     },
     {
       "extension" : [{
@@ -1468,7 +1468,7 @@
       },
       "name" : "BH Report Data Composition Example",
       "description" : "Example composition for reporting data for the BH track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"
     },
     {
       "extension" : [{
@@ -1480,7 +1480,7 @@
       },
       "name" : "BH Report Data Request Example",
       "description" : "Example of parameters for submitting a BH track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1577,7 +1577,7 @@
       },
       "name" : "Check Eligibility Request Example",
       "description" : "Example of parameters for checking patient eligibility for the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1589,7 +1589,7 @@
       },
       "name" : "Check Eligibility Response - Eligible Example",
       "description" : "Example response indicating patient is eligible for the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.12"
     },
     {
       "extension" : [{
@@ -1601,7 +1601,7 @@
       },
       "name" : "CKM Report Data Bundle Example",
       "description" : "Example of a complete report data bundle for the CKM/eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"
     },
     {
       "extension" : [{
@@ -1613,7 +1613,7 @@
       },
       "name" : "CKM Report Data Composition Example",
       "description" : "Example composition for reporting data for the CKM/eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"
     },
     {
       "extension" : [{
@@ -1625,7 +1625,7 @@
       },
       "name" : "CKM Report Data Request Example",
       "description" : "Example of parameters for submitting a CKM track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1637,7 +1637,7 @@
       },
       "name" : "Condition Example - Essential Hypertension",
       "description" : "Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.12"
     },
     {
       "extension" : [{
@@ -1649,7 +1649,7 @@
       },
       "name" : "Condition Example - Major Depressive Disorder",
       "description" : "Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.12"
     },
     {
       "extension" : [{
@@ -1661,7 +1661,7 @@
       },
       "name" : "Condition Example - Osteoarthritis",
       "description" : "Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.12"
     },
     {
       "extension" : [{
@@ -1673,7 +1673,7 @@
       },
       "name" : "Condition Example - Type 2 Diabetes",
       "description" : "Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.12"
     },
     {
       "extension" : [{
@@ -1685,7 +1685,7 @@
       },
       "name" : "eCKM Report Data Bundle Example",
       "description" : "Example of a complete report data bundle for the eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"
     },
     {
       "extension" : [{
@@ -1697,7 +1697,7 @@
       },
       "name" : "eCKM Report Data Composition Example",
       "description" : "Example composition for reporting data for the eCKM track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"
     },
     {
       "extension" : [{
@@ -1709,7 +1709,7 @@
       },
       "name" : "eCKM Report Data Request Example",
       "description" : "Example of parameters for submitting an eCKM track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"
     },
     {
       "extension" : [{
@@ -1733,7 +1733,7 @@
       },
       "name" : "End Stage Renal Disease Condition Example",
       "description" : "Active ESRD diagnosis that disqualifies patient from ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.11",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.12",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -1878,7 +1878,7 @@
       },
       "name" : "MSK Data Reporting Bundle Example",
       "description" : "Example of a complete report data bundle for the MSK track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"
     },
     {
       "extension" : [{
@@ -1890,7 +1890,7 @@
       },
       "name" : "MSK Data Reporting Composition Example",
       "description" : "Example composition for reporting data for the MSK track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"
     },
     {
       "extension" : [{
@@ -1926,7 +1926,7 @@
       },
       "name" : "MSK Report Data Request Example",
       "description" : "Example of parameters for submitting a MSK track data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"
     },
     {
       "extension" : [{
@@ -2203,7 +2203,7 @@
       },
       "name" : "Report Data Request Example",
       "description" : "Example of parameters for submitting data report",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"
     },
     {
       "extension" : [{
@@ -2215,7 +2215,7 @@
       },
       "name" : "Report Data Response - Duplicate Example",
       "description" : "Example response indicating data submission is a duplicate",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2227,7 +2227,7 @@
       },
       "name" : "Report Data Response - Incomplete Data Example",
       "description" : "Example response indicating data submission is missing required elements",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2239,7 +2239,7 @@
       },
       "name" : "Report Data Response - Incorrect Track Example",
       "description" : "Example response indicating data doesn't match patient's aligned track",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2251,7 +2251,7 @@
       },
       "name" : "Report Data Response - Patient Not Aligned Example",
       "description" : "Example response indicating patient is not aligned",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2263,7 +2263,7 @@
       },
       "name" : "Report Data Response - Reporting Period Closed Example",
       "description" : "Example response indicating the reporting period has closed",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2275,7 +2275,7 @@
       },
       "name" : "Report Data Response - Success Example",
       "description" : "Example response indicating successful report data submission",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2312,7 +2312,7 @@
       },
       "name" : "Submission Status Response Example",
       "description" : "Example response for submission status check",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.11"
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.12"
     },
     {
       "extension" : [{
@@ -2386,7 +2386,7 @@
       },
       "name" : "Unalignment Request - ESRD Example",
       "description" : "Example of unalignment request for patient who developed ESRD (no longer clinically eligible)",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.12",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -2399,7 +2399,7 @@
       },
       "name" : "Unalignment Request Example",
       "description" : "Example of parameters for unaligning a patient from the ACCESS Model",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.12",
       "groupingId" : "UnalignmentAPI"
     },
     {
@@ -2412,7 +2412,7 @@
       },
       "name" : "Unalignment Response - Unaligned Example",
       "description" : "Example response indicating successful patient unalignment",
-      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.11",
+      "exampleCanonical" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.12",
       "groupingId" : "UnalignmentAPI"
     },
     {

@@ -1,4 +1,4 @@
-# Total Cholesterol Example - CMS ACCESS Model API v0.9.11
+# Total Cholesterol Example - CMS ACCESS Model API v0.9.12
 
 ## Example Observation: Total Cholesterol Example
 

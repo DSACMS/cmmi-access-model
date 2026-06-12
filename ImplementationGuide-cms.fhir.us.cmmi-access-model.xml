@@ -8,11 +8,11 @@
 </div></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/ImplementationGuide/cms.fhir.us.cmmi-access-model"/>
-  <version value="0.9.11"/>
+  <version value="0.9.12"/>
   <name value="CMSAccessAPI"/>
   <title value="CMS ACCESS Model API"/>
   <status value="draft"/>
-  <date value="2026-06-04T23:05:21-04:00"/>
+  <date value="2026-06-10T23:08:55-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -1136,7 +1136,7 @@
       </reference>
       <name value="Alignment Request Example"/>
       <description value="Example of parameters for aligning a patient to the ACCESS Model"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1147,7 +1147,7 @@
       </reference>
       <name value="Alignment Request with Switch Consent Example"/>
       <description value="Example of parameters for aligning a patient with switch consent attestation"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1158,7 +1158,7 @@
       </reference>
       <name value="Alignment Response - Aligned Example"/>
       <description value="Example response indicating successful patient alignment"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1169,7 +1169,7 @@
       </reference>
       <name value="Alignment Response - Switch Approved Example"/>
       <description value="Example response indicating successful provider switch"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1202,7 +1202,7 @@
       </reference>
       <name value="BH Report Data Bundle Example"/>
       <description value="Example of a complete report data bundle for the BH track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1213,7 +1213,7 @@
       </reference>
       <name value="BH Report Data Composition Example"/>
       <description value="Example composition for reporting data for the BH track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1224,7 +1224,7 @@
       </reference>
       <name value="BH Report Data Request Example"/>
       <description value="Example of parameters for submitting a BH track data report"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1313,7 +1313,7 @@
       </reference>
       <name value="Check Eligibility Request Example"/>
       <description value="Example of parameters for checking patient eligibility for the ACCESS Model"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1324,7 +1324,7 @@
       </reference>
       <name value="Check Eligibility Response - Eligible Example"/>
       <description value="Example response indicating patient is eligible for the ACCESS Model"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1335,7 +1335,7 @@
       </reference>
       <name value="CKM Report Data Bundle Example"/>
       <description value="Example of a complete report data bundle for the CKM/eCKM track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1346,7 +1346,7 @@
       </reference>
       <name value="CKM Report Data Composition Example"/>
       <description value="Example composition for reporting data for the CKM/eCKM track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1357,7 +1357,7 @@
       </reference>
       <name value="CKM Report Data Request Example"/>
       <description value="Example of parameters for submitting a CKM track data report"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1368,7 +1368,7 @@
       </reference>
       <name value="Condition Example - Essential Hypertension"/>
       <description value="Example condition for Essential Hypertension using ACCESS eCKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-eckm-condition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1379,7 +1379,7 @@
       </reference>
       <name value="Condition Example - Major Depressive Disorder"/>
       <description value="Example condition for Major Depressive Disorder using ACCESS BH Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-bh-condition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1390,7 +1390,7 @@
       </reference>
       <name value="Condition Example - Osteoarthritis"/>
       <description value="Example condition for Osteoarthritis using ACCESS MSK Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1401,7 +1401,7 @@
       </reference>
       <name value="Condition Example - Type 2 Diabetes"/>
       <description value="Example condition for Type 2 Diabetes Mellitus using ACCESS CKM Track Condition profile with required ICD-10 coding"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-ckm-condition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1412,7 +1412,7 @@
       </reference>
       <name value="eCKM Report Data Bundle Example"/>
       <description value="Example of a complete report data bundle for the eCKM track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1423,7 +1423,7 @@
       </reference>
       <name value="eCKM Report Data Composition Example"/>
       <description value="Example composition for reporting data for the eCKM track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1434,7 +1434,7 @@
       </reference>
       <name value="eCKM Report Data Request Example"/>
       <description value="Example of parameters for submitting an eCKM track data report"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1456,7 +1456,7 @@
       </reference>
       <name value="End Stage Renal Disease Condition Example"/>
       <description value="Active ESRD diagnosis that disqualifies patient from ACCESS Model"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition|0.9.12"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -1589,7 +1589,7 @@
       </reference>
       <name value="MSK Data Reporting Bundle Example"/>
       <description value="Example of a complete report data bundle for the MSK track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-bundle|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1600,7 +1600,7 @@
       </reference>
       <name value="MSK Data Reporting Composition Example"/>
       <description value="Example composition for reporting data for the MSK track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1633,7 +1633,7 @@
       </reference>
       <name value="MSK Report Data Request Example"/>
       <description value="Example of parameters for submitting a MSK track data report"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1887,7 +1887,7 @@
       </reference>
       <name value="Report Data Request Example"/>
       <description value="Example of parameters for submitting data report"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1898,7 +1898,7 @@
       </reference>
       <name value="Report Data Response - Duplicate Example"/>
       <description value="Example response indicating data submission is a duplicate"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1909,7 +1909,7 @@
       </reference>
       <name value="Report Data Response - Incomplete Data Example"/>
       <description value="Example response indicating data submission is missing required elements"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1920,7 +1920,7 @@
       </reference>
       <name value="Report Data Response - Incorrect Track Example"/>
       <description value="Example response indicating data doesn't match patient's aligned track"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1931,7 +1931,7 @@
       </reference>
       <name value="Report Data Response - Patient Not Aligned Example"/>
       <description value="Example response indicating patient is not aligned"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1942,7 +1942,7 @@
       </reference>
       <name value="Report Data Response - Reporting Period Closed Example"/>
       <description value="Example response indicating the reporting period has closed"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1953,7 +1953,7 @@
       </reference>
       <name value="Report Data Response - Success Example"/>
       <description value="Example response indicating successful report data submission"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -1987,7 +1987,7 @@
       </reference>
       <name value="Submission Status Response Example"/>
       <description value="Example response for submission status check"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-submission-status-out|0.9.12"/>
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
@@ -2055,7 +2055,7 @@
       </reference>
       <name value="Unalignment Request - ESRD Example"/>
       <description value="Example of unalignment request for patient who developed ESRD (no longer clinically eligible)"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.12"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -2067,7 +2067,7 @@
       </reference>
       <name value="Unalignment Request Example"/>
       <description value="Example of parameters for unaligning a patient from the ACCESS Model"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.12"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>
@@ -2079,7 +2079,7 @@
       </reference>
       <name value="Unalignment Response - Unaligned Example"/>
       <description value="Example response indicating successful patient unalignment"/>
-      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.11"/>
+      <exampleCanonical value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-out|0.9.12"/>
       <groupingId value="UnalignmentAPI"/>
     </resource>
     <resource>

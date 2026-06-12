@@ -1,4 +1,4 @@
-# Unalignment Request - CMS ACCESS Model API v0.9.11
+# Unalignment Request - CMS ACCESS Model API v0.9.12
 
 ## OperationDefinition: Unalignment Request 
 
@@ -59,12 +59,12 @@ These are example instances demonstrating the use of the Unalignment API.
   "resourceType" : "OperationDefinition",
   "id" : "Unalign",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "Unalign",
   "title" : "Unalignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -90,7 +90,7 @@ These are example instances demonstrating the use of the Unalignment API.
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.11",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-unalign-in|0.9.12",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -124,7 +124,7 @@ These are example instances demonstrating the use of the Unalignment API.
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.12"
     }
   },
   {

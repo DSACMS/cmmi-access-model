@@ -1,4 +1,4 @@
-# ACCESS Event Types Value Set - CMS ACCESS Model API v0.9.11
+# ACCESS Event Types Value Set - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS Event Types Value Set 
 
@@ -28,12 +28,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ACCESSEventTypeVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEventTypeVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSEventTypeVS",
   "title" : "ACCESS Event Types Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -58,7 +58,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "compose" : {
     "include" : [{
       "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEventTypeCS",
-      "version" : "0.9.11"
+      "version" : "0.9.12"
     }]
   }
 }

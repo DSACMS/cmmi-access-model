@@ -1,4 +1,4 @@
-# Lipid Panel DiagnosticReport Example - CMS ACCESS Model API v0.9.11
+# Lipid Panel DiagnosticReport Example - CMS ACCESS Model API v0.9.12
 
 ## Example DiagnosticReport: Lipid Panel DiagnosticReport Example
 

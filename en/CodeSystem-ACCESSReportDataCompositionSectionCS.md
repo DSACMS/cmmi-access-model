@@ -1,4 +1,4 @@
-# ACCESS Report Data Composition Section Codes - CMS ACCESS Model API v0.9.11
+# ACCESS Report Data Composition Section Codes - CMS ACCESS Model API v0.9.12
 
 ## CodeSystem: ACCESS Report Data Composition Section Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSReportDataCompositionSectionCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportDataCompositionSectionCS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSReportDataCompositionSectionCS",
   "title" : "ACCESS Report Data Composition Section Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -1,4 +1,4 @@
-# BH PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
+# BH PGIC QuestionnaireResponse Example - CMS ACCESS Model API v0.9.12
 
 ## Example QuestionnaireResponse: BH PGIC QuestionnaireResponse Example
 

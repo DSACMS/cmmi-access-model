@@ -4,15 +4,15 @@
   <id value="ACCESSReportTypeVS"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSReportTypeVS</b></p><a name="ACCESSReportTypeVS"> </a><a name="hcACCESSReportTypeVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSReportTypeCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS</code></a><span title="Version is explicitly stated to be 0.9.11"> version &#x1F4CD;0.9.11</span></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSReportTypeVS</b></p><a name="ACCESSReportTypeVS"> </a><a name="hcACCESSReportTypeVS"> </a><ul><li>Include all codes defined in <a href="CodeSystem-ACCESSReportTypeCS.html"><code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS</code></a><span title="Version is explicitly stated to be 0.9.12"> version &#x1F4CD;0.9.12</span></li></ul></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS"/>
-  <version value="0.9.11"/>
+  <version value="0.9.12"/>
   <name value="ACCESSReportTypeVS"/>
   <title value="ACCESS Report Type Value Set"/>
   <status value="draft"/>
   <experimental value="false"/>
-  <date value="2026-06-04T23:05:21-04:00"/>
+  <date value="2026-06-10T23:08:55-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -37,7 +37,7 @@
   <compose>
     <include>
       <system value="https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSReportTypeCS"/>
-      <version value="0.9.11"/>
+      <version value="0.9.12"/>
     </include>
   </compose>
 </ValueSet>

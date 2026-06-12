@@ -10,12 +10,12 @@
 </div></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus"/>
-  <version value="0.9.11"/>
+  <version value="0.9.12"/>
   <name value="SubmissionStatus"/>
   <title value="Submission Status"/>
   <status value="active"/>
   <kind value="operation"/>
-  <date value="2026-06-04T23:05:21-04:00"/>
+  <date value="2026-06-10T23:08:55-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>

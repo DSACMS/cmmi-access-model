@@ -1,4 +1,4 @@
-# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.11
+# Alignment Request with Switch Consent Example - CMS ACCESS Model API v0.9.12
 
 ## Example Parameters: Alignment Request with Switch Consent Example
 

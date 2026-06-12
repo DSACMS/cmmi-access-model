@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/CodeSystem-ACCESSReportDataResultCS.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/CodeSystem-ACCESSReportDataResultCS.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

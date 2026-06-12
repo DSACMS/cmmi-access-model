@@ -1,4 +1,4 @@
-# ACCESS BH Track Clinical Exclusion Diagnoses - CMS ACCESS Model API v0.9.11
+# ACCESS BH Track Clinical Exclusion Diagnoses - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS BH Track Clinical Exclusion Diagnoses 
 
@@ -3576,12 +3576,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ACCESSBHClinicalExclusionDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSBHClinicalExclusionDiagnosisVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSBHClinicalExclusionDiagnosisVS",
   "title" : "ACCESS BH Track Clinical Exclusion Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

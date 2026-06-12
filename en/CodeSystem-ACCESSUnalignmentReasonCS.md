@@ -1,4 +1,4 @@
-# ACCESS Unalignment Reason Codes - CMS ACCESS Model API v0.9.11
+# ACCESS Unalignment Reason Codes - CMS ACCESS Model API v0.9.12
 
 ## CodeSystem: ACCESS Unalignment Reason Codes 
 
@@ -22,12 +22,12 @@ This Code system is referenced in the definition of the following value sets:
   "resourceType" : "CodeSystem",
   "id" : "ACCESSUnalignmentReasonCS",
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentReasonCS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSUnalignmentReasonCS",
   "title" : "ACCESS Unalignment Reason Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Parameters-AlignmentRequestExample.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Parameters-AlignmentRequestExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

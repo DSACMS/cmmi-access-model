@@ -1,6 +1,6 @@
 {
   "package": "cms.fhir.us.cmmi-access-model",
-  "version": "0.9.11",
+  "version": "0.9.12",
   "fhirVersion": "4.0.1",
   "jurisdiction": "US",
   "extensions": [],

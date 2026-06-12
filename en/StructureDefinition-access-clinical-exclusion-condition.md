@@ -1,4 +1,4 @@
-# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.11
+# ACCESS Clinical Exclusion Condition - CMS ACCESS Model API v0.9.12
 
 ## Resource Profile: ACCESS Clinical Exclusion Condition 
 
@@ -29,7 +29,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-clinical-e
   "resourceType" : "StructureDefinition",
   "id" : "access-clinical-exclusion-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-clinical-exclusion-condition",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSClinicalExclusionCondition",
   "title" : "ACCESS Clinical Exclusion Condition",
   "status" : "active",
@@ -88,7 +88,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-clinical-e
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.12",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{

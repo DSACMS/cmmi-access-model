@@ -1,4 +1,4 @@
-# Body Weight Example - CMS ACCESS Model API v0.9.11
+# Body Weight Example - CMS ACCESS Model API v0.9.12
 
 ## Example Observation: Body Weight Example
 

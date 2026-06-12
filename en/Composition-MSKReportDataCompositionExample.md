@@ -1,4 +1,4 @@
-# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.11
+# MSK Data Reporting Composition Example - CMS ACCESS Model API v0.9.12
 
 ## Example Composition: MSK Data Reporting Composition Example
 

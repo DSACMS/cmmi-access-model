@@ -11,12 +11,12 @@
 </div></td></tr></table></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/OperationDefinition/ReportData"/>
-  <version value="0.9.11"/>
+  <version value="0.9.12"/>
   <name value="ReportData"/>
   <title value="Submit Data Report"/>
   <status value="active"/>
   <kind value="operation"/>
-  <date value="2026-06-04T23:05:21-04:00"/>
+  <date value="2026-06-10T23:08:55-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -42,7 +42,7 @@
   <system value="false"/>
   <type value="true"/>
   <instance value="false"/>
-  <inputProfile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.11"/>
+  <inputProfile value="https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-report-data-in|0.9.12"/>
   <parameter>
     <name value="participantID"/>
     <use value="in"/>
@@ -68,7 +68,7 @@
     <type value="CodeableConcept"/>
     <binding>
       <strength value="required"/>
-      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"/>
+      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.12"/>
     </binding>
   </parameter>
   <parameter>
@@ -80,7 +80,7 @@
     <type value="CodeableConcept"/>
     <binding>
       <strength value="required"/>
-      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.11"/>
+      <valueSet value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSReportTypeVS|0.9.12"/>
     </binding>
   </parameter>
   <parameter>

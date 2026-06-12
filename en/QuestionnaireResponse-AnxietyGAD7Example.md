@@ -1,4 +1,4 @@
-# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
+# GAD-7 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.12
 
 ## Example QuestionnaireResponse: GAD-7 QuestionnaireResponse Example
 

@@ -1,4 +1,4 @@
-# ACCESS MSK Track Condition Profile - CMS ACCESS Model API v0.9.11
+# ACCESS MSK Track Condition Profile - CMS ACCESS Model API v0.9.12
 
 ## Resource Profile: ACCESS MSK Track Condition Profile 
 
@@ -30,7 +30,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-msk-condit
   "resourceType" : "StructureDefinition",
   "id" : "access-msk-condition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-msk-condition",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSMSKCondition",
   "title" : "ACCESS MSK Track Condition Profile",
   "status" : "active",
@@ -89,7 +89,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-msk-condit
   "kind" : "resource",
   "abstract" : false,
   "type" : "Condition",
-  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11",
+  "baseDefinition" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.12",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -115,7 +115,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-msk-condit
       "definition" : "Diagnosis code for MSK track conditions. Values SHALL be from ACCESSMSKDiagnosisVS (osteoarthritis, arthropathies, spine disorders, etc.).",
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS|0.9.11"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKDiagnosisVS|0.9.12"
       }
     }]
   }

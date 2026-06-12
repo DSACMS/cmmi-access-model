@@ -4,15 +4,15 @@
   <id value="ACCESSeCKMDiagnosisVS"/>
   <language value="en"/>
   <text>
-    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSeCKMDiagnosisVS</b></p><a name="ACCESSeCKMDiagnosisVS"> </a><a name="hcACCESSeCKMDiagnosisVS"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>E66.01</td><td>Morbid (severe) obesity due to excess calories</td></tr><tr><td>E66.09</td><td>Other obesity due to excess calories</td></tr><tr><td>E66.1</td><td>Drug-induced obesity</td></tr><tr><td>E66.2</td><td>Morbid (severe) obesity with alveolar hypoventilation</td></tr><tr><td>E66.3</td><td>Overweight</td></tr><tr><td>E66.811</td><td>Obesity, class 1</td></tr><tr><td>E66.812</td><td>Obesity, class 2</td></tr><tr><td>E66.813</td><td>Obesity, class 3</td></tr><tr><td>E66.89</td><td>Other obesity not elsewhere classified</td></tr><tr><td>E66.9</td><td>Obesity, unspecified</td></tr><tr><td>E78.00</td><td>Pure hypercholesterolemia, unspecified</td></tr><tr><td>E78.010</td><td>Homozygous familial hypercholesterolemia [HoFH]</td></tr><tr><td>E78.011</td><td>Heterozygous familial hypercholesterolemia [HeFH]</td></tr><tr><td>E78.019</td><td>Familial hypercholesterolemia, unspecified</td></tr><tr><td>E78.1</td><td>Pure hyperglyceridemia</td></tr><tr><td>E78.2</td><td>Mixed hyperlipidemia</td></tr><tr><td>E78.3</td><td>Hyperchylomicronemia</td></tr><tr><td>E78.41</td><td>Elevated Lipoprotein(a)</td></tr><tr><td>E78.49</td><td>Other hyperlipidemia</td></tr><tr><td>E78.5</td><td>Hyperlipidemia, unspecified</td></tr><tr><td>E78.6</td><td>Lipoprotein deficiency</td></tr><tr><td>E78.70</td><td>Disorder of bile acid and cholesterol metabolism, unspecified</td></tr><tr><td>E78.71</td><td>Barth syndrome</td></tr><tr><td>E78.72</td><td>Smith-Lemli-Opitz syndrome</td></tr><tr><td>E78.79</td><td>Other disorders of bile acid and cholesterol metabolism</td></tr><tr><td>E78.81</td><td>Lipoid dermatoarthritis</td></tr><tr><td>E78.89</td><td>Other lipoprotein metabolism disorders</td></tr><tr><td>E78.9</td><td>Disorder of lipoprotein metabolism, unspecified</td></tr><tr><td>I10</td><td>Essential (primary) hypertension</td></tr><tr><td>I11.0</td><td>Hypertensive heart disease with heart failure</td></tr><tr><td>I11.9</td><td>Hypertensive heart disease without heart failure</td></tr><tr><td>I12.0</td><td>Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease</td></tr><tr><td>I12.9</td><td>Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.0</td><td>Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.10</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.11</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td>I13.2</td><td>Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease</td></tr><tr><td>I15.0</td><td>Renovascular hypertension</td></tr><tr><td>I15.1</td><td>Hypertension secondary to other renal disorders</td></tr><tr><td>I15.2</td><td>Hypertension secondary to endocrine disorders</td></tr><tr><td>I15.8</td><td>Other secondary hypertension</td></tr><tr><td>I15.9</td><td>Secondary hypertension, unspecified</td></tr><tr><td>I1A.0</td><td>Resistant hypertension</td></tr><tr><td>I67.0</td><td>Dissection of cerebral arteries, nonruptured</td></tr><tr><td>I67.1</td><td>Cerebral aneurysm, nonruptured</td></tr><tr><td>I67.2</td><td>Cerebral atherosclerosis</td></tr><tr><td>I67.3</td><td>Progressive vascular leukoencephalopathy</td></tr><tr><td>I67.4</td><td>Hypertensive encephalopathy</td></tr><tr><td>I67.5</td><td>Moyamoya disease</td></tr><tr><td>I67.6</td><td>Nonpyogenic thrombosis of intracranial venous system</td></tr><tr><td>I67.7</td><td>Cerebral arteritis, not elsewhere classified</td></tr><tr><td>I67.81</td><td>Acute cerebrovascular insufficiency</td></tr><tr><td>I67.82</td><td>Cerebral ischemia</td></tr><tr><td>I67.83</td><td>Posterior reversible encephalopathy syndrome</td></tr><tr><td>I67.841</td><td>Reversible cerebrovascular vasoconstriction syndrome</td></tr><tr><td>I67.848</td><td>Other cerebrovascular vasospasm and vasoconstriction</td></tr><tr><td>I67.850</td><td>Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy</td></tr><tr><td>I67.858</td><td>Other hereditary cerebrovascular disease</td></tr><tr><td>I67.89</td><td>Other cerebrovascular disease</td></tr><tr><td>I67.9</td><td>Cerebrovascular disease, unspecified</td></tr><tr><td>R73.01</td><td>Impaired fasting glucose</td></tr><tr><td>R73.02</td><td>Impaired glucose tolerance (oral)</td></tr><tr><td>R73.03</td><td>Prediabetes</td></tr><tr><td>R73.09</td><td>Other abnormal glucose</td></tr><tr><td>R73.9</td><td>Hyperglycemia, unspecified</td></tr></table></li></ul></div>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet ACCESSeCKMDiagnosisVS</b></p><a name="ACCESSeCKMDiagnosisVS"> </a><a name="hcACCESSeCKMDiagnosisVS"> </a><ul><li>Include these codes as defined in <a href="http://terminology.hl7.org/6.2.0/CodeSystem-icd10CM.html"><code>http://hl7.org/fhir/sid/icd-10-cm</code></a><span title="Version is not explicitly stated. No matching Code System found"> version Not Stated (use latest from terminology server)</span><table class="none"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td>E66.01</td><td>Morbid (severe) obesity due to excess calories</td></tr><tr><td>E66.09</td><td>Other obesity due to excess calories</td></tr><tr><td>E66.1</td><td>Drug-induced obesity</td></tr><tr><td>E66.2</td><td>Morbid (severe) obesity with alveolar hypoventilation</td></tr><tr><td>E66.3</td><td>Overweight</td></tr><tr><td>E66.811</td><td>Obesity, class 1</td></tr><tr><td>E66.812</td><td>Obesity, class 2</td></tr><tr><td>E66.813</td><td>Obesity, class 3</td></tr><tr><td>E66.89</td><td>Other obesity not elsewhere classified</td></tr><tr><td>E66.9</td><td>Obesity, unspecified</td></tr><tr><td>E78.00</td><td>Pure hypercholesterolemia, unspecified</td></tr><tr><td>E78.010</td><td>Homozygous familial hypercholesterolemia [HoFH]</td></tr><tr><td>E78.011</td><td>Heterozygous familial hypercholesterolemia [HeFH]</td></tr><tr><td>E78.019</td><td>Familial hypercholesterolemia, unspecified</td></tr><tr><td>E78.1</td><td>Pure hyperglyceridemia</td></tr><tr><td>E78.2</td><td>Mixed hyperlipidemia</td></tr><tr><td>E78.3</td><td>Hyperchylomicronemia</td></tr><tr><td>E78.41</td><td>Elevated Lipoprotein(a)</td></tr><tr><td>E78.49</td><td>Other hyperlipidemia</td></tr><tr><td>E78.5</td><td>Hyperlipidemia, unspecified</td></tr><tr><td>E78.6</td><td>Lipoprotein deficiency</td></tr><tr><td>E78.70</td><td>Disorder of bile acid and cholesterol metabolism, unspecified</td></tr><tr><td>E78.71</td><td>Barth syndrome</td></tr><tr><td>E78.72</td><td>Smith-Lemli-Opitz syndrome</td></tr><tr><td>E78.79</td><td>Other disorders of bile acid and cholesterol metabolism</td></tr><tr><td>E78.81</td><td>Lipoid dermatoarthritis</td></tr><tr><td>E78.89</td><td>Other lipoprotein metabolism disorders</td></tr><tr><td>E78.9</td><td>Disorder of lipoprotein metabolism, unspecified</td></tr><tr><td>I10</td><td>Essential (primary) hypertension</td></tr><tr><td>I11.0</td><td>Hypertensive heart disease with heart failure</td></tr><tr><td>I11.9</td><td>Hypertensive heart disease without heart failure</td></tr><tr><td>I12.9</td><td>Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.0</td><td>Hypertensive heart and chronic kidney disease with heart failure and stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I13.10</td><td>Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease</td></tr><tr><td>I15.0</td><td>Renovascular hypertension</td></tr><tr><td>I15.1</td><td>Hypertension secondary to other renal disorders</td></tr><tr><td>I15.2</td><td>Hypertension secondary to endocrine disorders</td></tr><tr><td>I15.8</td><td>Other secondary hypertension</td></tr><tr><td>I15.9</td><td>Secondary hypertension, unspecified</td></tr><tr><td>I1A.0</td><td>Resistant hypertension</td></tr><tr><td>R73.01</td><td>Impaired fasting glucose</td></tr><tr><td>R73.02</td><td>Impaired glucose tolerance (oral)</td></tr><tr><td>R73.03</td><td>Prediabetes</td></tr><tr><td>R73.09</td><td>Other abnormal glucose</td></tr><tr><td>R73.9</td><td>Hyperglycemia, unspecified</td></tr></table></li></ul></div>
   </text>
   <url value="https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS"/>
-  <version value="0.9.11"/>
+  <version value="0.9.12"/>
   <name value="ACCESSeCKMDiagnosisVS"/>
   <title value="ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2026-06-04T23:05:21-04:00"/>
+  <date value="2026-06-10T23:08:55-04:00"/>
   <publisher value="Global Alliant, Inc."/>
   <contact>
     <name value="Global Alliant, Inc."/>
@@ -162,10 +162,6 @@
         <display value="Hypertensive heart disease without heart failure"/>
       </concept>
       <concept>
-        <code value="I12.0"/>
-        <display value="Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"/>
-      </concept>
-      <concept>
         <code value="I12.9"/>
         <display value="Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"/>
       </concept>
@@ -176,14 +172,6 @@
       <concept>
         <code value="I13.10"/>
         <display value="Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"/>
-      </concept>
-      <concept>
-        <code value="I13.11"/>
-        <display value="Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"/>
-      </concept>
-      <concept>
-        <code value="I13.2"/>
-        <display value="Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"/>
       </concept>
       <concept>
         <code value="I15.0"/>
@@ -208,74 +196,6 @@
       <concept>
         <code value="I1A.0"/>
         <display value="Resistant hypertension"/>
-      </concept>
-      <concept>
-        <code value="I67.0"/>
-        <display value="Dissection of cerebral arteries, nonruptured"/>
-      </concept>
-      <concept>
-        <code value="I67.1"/>
-        <display value="Cerebral aneurysm, nonruptured"/>
-      </concept>
-      <concept>
-        <code value="I67.2"/>
-        <display value="Cerebral atherosclerosis"/>
-      </concept>
-      <concept>
-        <code value="I67.3"/>
-        <display value="Progressive vascular leukoencephalopathy"/>
-      </concept>
-      <concept>
-        <code value="I67.4"/>
-        <display value="Hypertensive encephalopathy"/>
-      </concept>
-      <concept>
-        <code value="I67.5"/>
-        <display value="Moyamoya disease"/>
-      </concept>
-      <concept>
-        <code value="I67.6"/>
-        <display value="Nonpyogenic thrombosis of intracranial venous system"/>
-      </concept>
-      <concept>
-        <code value="I67.7"/>
-        <display value="Cerebral arteritis, not elsewhere classified"/>
-      </concept>
-      <concept>
-        <code value="I67.81"/>
-        <display value="Acute cerebrovascular insufficiency"/>
-      </concept>
-      <concept>
-        <code value="I67.82"/>
-        <display value="Cerebral ischemia"/>
-      </concept>
-      <concept>
-        <code value="I67.83"/>
-        <display value="Posterior reversible encephalopathy syndrome"/>
-      </concept>
-      <concept>
-        <code value="I67.841"/>
-        <display value="Reversible cerebrovascular vasoconstriction syndrome"/>
-      </concept>
-      <concept>
-        <code value="I67.848"/>
-        <display value="Other cerebrovascular vasospasm and vasoconstriction"/>
-      </concept>
-      <concept>
-        <code value="I67.850"/>
-        <display value="Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy"/>
-      </concept>
-      <concept>
-        <code value="I67.858"/>
-        <display value="Other hereditary cerebrovascular disease"/>
-      </concept>
-      <concept>
-        <code value="I67.89"/>
-        <display value="Other cerebrovascular disease"/>
-      </concept>
-      <concept>
-        <code value="I67.9"/>
-        <display value="Cerebrovascular disease, unspecified"/>
       </concept>
       <concept>
         <code value="R73.01"/>

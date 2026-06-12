@@ -1,4 +1,4 @@
-# ACCESS Model Tracks Value Set - CMS ACCESS Model API v0.9.11
+# ACCESS Model Tracks Value Set - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS Model Tracks Value Set 
 
@@ -31,12 +31,12 @@ This value set includes all codes from the ACCESS Model Tracks code system.
   "resourceType" : "ValueSet",
   "id" : "ACCESSTrackVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSTrackVS",
   "title" : "ACCESS Model Tracks Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -61,7 +61,7 @@ This value set includes all codes from the ACCESS Model Tracks code system.
   "compose" : {
     "include" : [{
       "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS",
-      "version" : "0.9.11"
+      "version" : "0.9.12"
     }]
   }
 }

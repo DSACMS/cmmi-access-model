@@ -7,19 +7,19 @@ function Redirect($url)
 
 $accept = $_SERVER['HTTP_ACCEPT'];
 if (strpos($accept, 'application/json+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.json2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.json2');
 elseif (strpos($accept, 'application/fhir+json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.json1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.json1');
 elseif (strpos($accept, 'json') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.json');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.json');
 elseif (strpos($accept, 'application/xml+fhir') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.xml2');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.xml2');
 elseif (strpos($accept, 'application/fhir+xml') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.xml1');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.xml1');
 elseif (strpos($accept, 'html') !== false)
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.html');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.html');
 else 
-  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.11/Composition-MSKReportDataCompositionExample.xml');
+  Redirect('https://dsacms.github.io/cmmi-access-model/0.9.12/Composition-MSKReportDataCompositionExample.xml');
 ?>
     
 You should not be seeing this page. If you do, PHP has failed badly.

@@ -1,4 +1,4 @@
-# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.11
+# ACCESS Alignment Request Parameters - CMS ACCESS Model API v0.9.12
 
 ## Resource Profile: ACCESS Alignment Request Parameters 
 
@@ -47,11 +47,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
   "resourceType" : "StructureDefinition",
   "id" : "access-align-in",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSAlignmentRequestParameters",
   "title" : "ACCESS Alignment Request Parameters",
   "status" : "draft",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -155,7 +155,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
         "severity" : "error",
         "human" : "ACCESS Participant ID must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345)",
         "expression" : "value.matches('^ACCES\\\\d{5}$')",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12"
       }],
       "mustSupport" : true
     },
@@ -260,7 +260,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
-        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
+        "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.12"
       }
     },
     {
@@ -298,7 +298,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-align-in.c
       "min" : 1,
       "type" : [{
         "code" : "Condition",
-        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.11"]
+        "profile" : ["https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-condition|0.9.12"]
       }],
       "mustSupport" : true
     },

@@ -6,7 +6,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Change Log - CMS ACCESS Model API v0.9.11</title>
+    <title>Change Log - CMS ACCESS Model API v0.9.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -58,7 +58,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.11 - draft
+            <span style="display:inline-block;">0.9.12 - draft
 
 
 
@@ -150,7 +150,7 @@ h5:before{color:silver;counter-increment:detail;content:var(--heading-prefix) ".
 h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefix) "." counter(sub-section) "." counter(composite) "." counter(detail) "." counter(more-detail)" ";}
 </style>
 <div class="col-12">
-  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.11 DRAFT (v0.9.11: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+  <!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.12 DRAFT (v0.9.12: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
   <h2>Change Log</h2>
   
 
@@ -169,6 +169,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
     <p><!-- white space is critical inside of capture --></p>
 <div class="markdown-toc">
 <ul id="markdown-toc">
+  <li><a href="#version-0912---draft" id="markdown-toc-version-0912---draft">Version 0.9.12 - DRAFT</a></li>
   <li><a href="#version-0911---draft" id="markdown-toc-version-0911---draft">Version 0.9.11 - DRAFT</a></li>
   <li><a href="#version-098---draft" id="markdown-toc-version-098---draft">Version 0.9.8 - DRAFT</a></li>
   <li><a href="#version-096---draft" id="markdown-toc-version-096---draft">Version 0.9.6 - DRAFT</a></li>
@@ -179,11 +180,36 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <hr />
 
+<h3 id="version-0912---draft">Version 0.9.12 - DRAFT</h3>
+
+<p><strong>Release Date</strong>: June 11, 2026</p>
+
+<h4 id="major-changes">Major Changes</h4>
+
+<h5 id="removed-codes-from-accesseckmdiagnosisvs-and-accessckmdiagnosisvs">Removed codes from ACCESSeCKMDiagnosisVS and ACCESSCKMDiagnosisVS</h5>
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">ACCESSeCKMDiagnosisVS</code></strong> - removed the following codes:
+    <ul>
+      <li>I12.0, I13.11, I13.2, I67.0, I67.1, I67.2, I67.3, I67.4, I67.5, I67.6, I67.7, I67.81, I67.82, I67.83, I67.841, I67.848, I67.850, I67.858, I67.89, I67.9</li>
+    </ul>
+  </li>
+  <li><strong><code class="language-plaintext highlighter-rouge">ACCESSCKMDiagnosisVS</code></strong> - removed the following codes:
+    <ul>
+      <li>E08.00, E08.01, E08.10, E08.11, E08.641, E11.00, E11.01, E11.10, E11.11, E11.641, E13.00, E13.01, E13.10, E13.11, E13.641</li>
+    </ul>
+  </li>
+</ul>
+
+<h4 id="technical-updates">Technical Updates</h4>
+<ul>
+  <li>Version bump from 0.9.11 to 0.9.12</li>
+</ul>
+
 <h3 id="version-0911---draft">Version 0.9.11 - DRAFT</h3>
 
 <p><strong>Release Date</strong>: June 4, 2026</p>
 
-<h4 id="major-changes">Major Changes</h4>
+<h4 id="major-changes-1">Major Changes</h4>
 
 <h5 id="added-clinical-exclusion-value-sets-under-the-unalignment-api">Added Clinical Exclusion value sets under the Unalignment API</h5>
 <ul>
@@ -233,7 +259,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   </li>
 </ul>
 
-<h4 id="technical-updates">Technical Updates</h4>
+<h4 id="technical-updates-1">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.8 to 0.9.11</li>
 </ul>
@@ -242,7 +268,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Release Date</strong>: May 18, 2026</p>
 
-<h4 id="major-changes-1">Major Changes</h4>
+<h4 id="major-changes-2">Major Changes</h4>
 
 <h5 id="addressed-feedback-from-first-external-testing-window">Addressed feedback from first external testing window</h5>
 <ul>
@@ -294,7 +320,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><code class="language-plaintext highlighter-rouge">dataBundle</code> examples now include three individual blood pressure observations</li>
 </ul>
 
-<h4 id="technical-updates-1">Technical Updates</h4>
+<h4 id="technical-updates-2">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.6 to 0.9.8</li>
 </ul>
@@ -303,7 +329,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p><strong>Release Date</strong>: April 24, 2026</p>
 
-<h4 id="major-changes-2">Major Changes</h4>
+<h4 id="major-changes-3">Major Changes</h4>
 
 <h5 id="accessdatareportingcomposition-tweaks">ACCESSDataReportingComposition tweaks</h5>
 
@@ -350,7 +376,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
   <li><strong>References to 3-months</strong> changed to 90 days</li>
 </ul>
 
-<h4 id="technical-updates-2">Technical Updates</h4>
+<h4 id="technical-updates-3">Technical Updates</h4>
 <ul>
   <li>Version bump from 0.9.1 to 0.9.6</li>
 </ul>
@@ -381,10 +407,10 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-04 23:05:00 -0400">
-    2026-06-04
+  <span title="2026-06-10 23:08:00 -0400">
+    2026-06-10
   </span>
 
           <br/>

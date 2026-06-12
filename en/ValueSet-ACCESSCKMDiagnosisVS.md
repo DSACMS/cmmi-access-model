@@ -1,4 +1,4 @@
-# ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.11
+# ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses 
 
@@ -28,12 +28,12 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
   "resourceType" : "ValueSet",
   "id" : "ACCESSCKMDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSCKMDiagnosisVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSCKMDiagnosisVS",
   "title" : "ACCESS Cardio-Kidney-Metabolic (CKM) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -59,22 +59,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
     "include" : [{
       "system" : "http://hl7.org/fhir/sid/icd-10-cm",
       "concept" : [{
-        "code" : "E08.00",
-        "display" : "Diabetes mellitus due to underlying condition with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)"
-      },
-      {
-        "code" : "E08.01",
-        "display" : "Diabetes mellitus due to underlying condition with hyperosmolarity with coma"
-      },
-      {
-        "code" : "E08.10",
-        "display" : "Diabetes mellitus due to underlying condition with ketoacidosis without coma"
-      },
-      {
-        "code" : "E08.11",
-        "display" : "Diabetes mellitus due to underlying condition with ketoacidosis with coma"
-      },
-      {
         "code" : "E08.21",
         "display" : "Diabetes mellitus due to underlying condition with diabetic nephropathy"
       },
@@ -377,10 +361,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "E08.638",
         "display" : "Diabetes mellitus due to underlying condition with other oral complications"
-      },
-      {
-        "code" : "E08.641",
-        "display" : "Diabetes mellitus due to underlying condition with hypoglycemia with coma"
       },
       {
         "code" : "E08.649",
@@ -747,22 +727,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
         "display" : "Drug or chemical induced diabetes mellitus without complications"
       },
       {
-        "code" : "E11.00",
-        "display" : "Type 2 diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)"
-      },
-      {
-        "code" : "E11.01",
-        "display" : "Type 2 diabetes mellitus with hyperosmolarity with coma"
-      },
-      {
-        "code" : "E11.10",
-        "display" : "Type 2 diabetes mellitus with ketoacidosis without coma"
-      },
-      {
-        "code" : "E11.11",
-        "display" : "Type 2 diabetes mellitus with ketoacidosis with coma"
-      },
-      {
         "code" : "E11.21",
         "display" : "Type 2 diabetes mellitus with diabetic nephropathy"
       },
@@ -1067,10 +1031,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
         "display" : "Type 2 diabetes mellitus with other oral complications"
       },
       {
-        "code" : "E11.641",
-        "display" : "Type 2 diabetes mellitus with hypoglycemia with coma"
-      },
-      {
         "code" : "E11.649",
         "display" : "Type 2 diabetes mellitus with hypoglycemia without coma"
       },
@@ -1093,22 +1053,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "E11.A",
         "display" : "Type 2 diabetes mellitus without complications in remission"
-      },
-      {
-        "code" : "E13.00",
-        "display" : "Other specified diabetes mellitus with hyperosmolarity without nonketotic hyperglycemic-hyperosmolar coma (NKHHC)"
-      },
-      {
-        "code" : "E13.01",
-        "display" : "Other specified diabetes mellitus with hyperosmolarity with coma"
-      },
-      {
-        "code" : "E13.10",
-        "display" : "Other specified diabetes mellitus with ketoacidosis without coma"
-      },
-      {
-        "code" : "E13.11",
-        "display" : "Other specified diabetes mellitus with ketoacidosis with coma"
       },
       {
         "code" : "E13.21",
@@ -1413,10 +1357,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "E13.638",
         "display" : "Other specified diabetes mellitus with other oral complications"
-      },
-      {
-        "code" : "E13.641",
-        "display" : "Other specified diabetes mellitus with hypoglycemia with coma"
       },
       {
         "code" : "E13.649",

@@ -1,4 +1,4 @@
-# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.11
+# ACCESS Data Reporting Composition - CMS ACCESS Model API v0.9.12
 
 ## Resource Profile: ACCESS Data Reporting Composition 
 
@@ -63,11 +63,11 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
   "resourceType" : "StructureDefinition",
   "id" : "access-data-reporting-composition",
   "url" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSDataReportingComposition",
   "title" : "ACCESS Data Reporting Composition",
   "status" : "draft",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -128,7 +128,7 @@ Other representations of profile: [CSV](../StructureDefinition-access-data-repor
         "severity" : "error",
         "human" : "The data reporting composition can include at most one track-based section (eCKM, CKM, MSK, BH).",
         "expression" : "section.where(code.coding.where(system = 'https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSTrackCS' and (code = 'eCKM' or code = 'CKM' or code = 'MSK' or code = 'BH')).exists()).count() <= 1",
-        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.11"
+        "source" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-data-reporting-composition|0.9.12"
       }]
     },
     {

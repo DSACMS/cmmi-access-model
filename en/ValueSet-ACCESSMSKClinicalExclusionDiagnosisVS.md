@@ -1,4 +1,4 @@
-# ACCESS MSK Track Clinical Exclusion Diagnoses - CMS ACCESS Model API v0.9.11
+# ACCESS MSK Track Clinical Exclusion Diagnoses - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS MSK Track Clinical Exclusion Diagnoses 
 
@@ -4410,12 +4410,12 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "resourceType" : "ValueSet",
   "id" : "ACCESSMSKClinicalExclusionDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSMSKClinicalExclusionDiagnosisVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSMSKClinicalExclusionDiagnosisVS",
   "title" : "ACCESS MSK Track Clinical Exclusion Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

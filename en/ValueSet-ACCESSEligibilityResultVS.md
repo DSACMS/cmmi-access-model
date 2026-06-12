@@ -1,4 +1,4 @@
-# ACCESS Eligibility Result Value Set - CMS ACCESS Model API v0.9.11
+# ACCESS Eligibility Result Value Set - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS Eligibility Result Value Set 
 
@@ -28,12 +28,12 @@ This value set includes all codes from the ACCESS Eligibility Result code system
   "resourceType" : "ValueSet",
   "id" : "ACCESSEligibilityResultVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSEligibilityResultVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSEligibilityResultVS",
   "title" : "ACCESS Eligibility Result Value Set",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -58,7 +58,7 @@ This value set includes all codes from the ACCESS Eligibility Result code system
   "compose" : {
     "include" : [{
       "system" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSEligibilityResultCS",
-      "version" : "0.9.11"
+      "version" : "0.9.12"
     }]
   }
 }

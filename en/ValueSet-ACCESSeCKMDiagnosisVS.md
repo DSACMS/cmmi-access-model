@@ -1,4 +1,4 @@
-# ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.11
+# ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses - CMS ACCESS Model API v0.9.12
 
 ## ValueSet: ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses 
 
@@ -28,12 +28,12 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
   "resourceType" : "ValueSet",
   "id" : "ACCESSeCKMDiagnosisVS",
   "url" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSeCKMDiagnosisVS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSeCKMDiagnosisVS",
   "title" : "ACCESS Early Cardio-Kidney-Metabolic (eCKM) Track Qualifying Diagnoses",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -183,10 +183,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
         "display" : "Hypertensive heart disease without heart failure"
       },
       {
-        "code" : "I12.0",
-        "display" : "Hypertensive chronic kidney disease with stage 5 chronic kidney disease or end stage renal disease"
-      },
-      {
         "code" : "I12.9",
         "display" : "Hypertensive chronic kidney disease with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
       },
@@ -197,14 +193,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "I13.10",
         "display" : "Hypertensive heart and chronic kidney disease without heart failure, with stage 1 through stage 4 chronic kidney disease, or unspecified chronic kidney disease"
-      },
-      {
-        "code" : "I13.11",
-        "display" : "Hypertensive heart and chronic kidney disease without heart failure, with stage 5 chronic kidney disease, or end stage renal disease"
-      },
-      {
-        "code" : "I13.2",
-        "display" : "Hypertensive heart and chronic kidney disease with heart failure and with stage 5 chronic kidney disease, or end stage renal disease"
       },
       {
         "code" : "I15.0",
@@ -229,74 +217,6 @@ This value set contains ICD-10-CM diagnosis codes that qualify a patient for the
       {
         "code" : "I1A.0",
         "display" : "Resistant hypertension"
-      },
-      {
-        "code" : "I67.0",
-        "display" : "Dissection of cerebral arteries, nonruptured"
-      },
-      {
-        "code" : "I67.1",
-        "display" : "Cerebral aneurysm, nonruptured"
-      },
-      {
-        "code" : "I67.2",
-        "display" : "Cerebral atherosclerosis"
-      },
-      {
-        "code" : "I67.3",
-        "display" : "Progressive vascular leukoencephalopathy"
-      },
-      {
-        "code" : "I67.4",
-        "display" : "Hypertensive encephalopathy"
-      },
-      {
-        "code" : "I67.5",
-        "display" : "Moyamoya disease"
-      },
-      {
-        "code" : "I67.6",
-        "display" : "Nonpyogenic thrombosis of intracranial venous system"
-      },
-      {
-        "code" : "I67.7",
-        "display" : "Cerebral arteritis, not elsewhere classified"
-      },
-      {
-        "code" : "I67.81",
-        "display" : "Acute cerebrovascular insufficiency"
-      },
-      {
-        "code" : "I67.82",
-        "display" : "Cerebral ischemia"
-      },
-      {
-        "code" : "I67.83",
-        "display" : "Posterior reversible encephalopathy syndrome"
-      },
-      {
-        "code" : "I67.841",
-        "display" : "Reversible cerebrovascular vasoconstriction syndrome"
-      },
-      {
-        "code" : "I67.848",
-        "display" : "Other cerebrovascular vasospasm and vasoconstriction"
-      },
-      {
-        "code" : "I67.850",
-        "display" : "Cerebral autosomal dominant arteriopathy with subcortical infarcts and leukoencephalopathy"
-      },
-      {
-        "code" : "I67.858",
-        "display" : "Other hereditary cerebrovascular disease"
-      },
-      {
-        "code" : "I67.89",
-        "display" : "Other cerebrovascular disease"
-      },
-      {
-        "code" : "I67.9",
-        "display" : "Cerebrovascular disease, unspecified"
       },
       {
         "code" : "R73.01",

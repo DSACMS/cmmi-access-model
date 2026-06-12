@@ -1,4 +1,4 @@
-# ACCESS Unalignment API Capability Statement - CMS ACCESS Model API v0.9.11
+# ACCESS Unalignment API Capability Statement - CMS ACCESS Model API v0.9.12
 
 ## CapabilityStatement: ACCESS Unalignment API Capability Statement 
 
@@ -16,7 +16,7 @@ Describes the expected capabilities of systems implementing the ACCESS Unalignme
   "resourceType" : "CapabilityStatement",
   "id" : "ACCESSUnalignmentAPICapabilityStatement",
   "url" : "https://dsacms.github.io/cmmi-access-model/CapabilityStatement/ACCESSUnalignmentAPICapabilityStatement",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSUnalignmentAPICapabilityStatement",
   "title" : "ACCESS Unalignment API Capability Statement",
   "status" : "active",
@@ -58,12 +58,12 @@ Describes the expected capabilities of systems implementing the ACCESS Unalignme
       "documentation" : "Patient resource for ACCESS unalignment operations",
       "operation" : [{
         "name" : "unalign",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign|0.9.11",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Unalign|0.9.12",
         "documentation" : "Remove a patient's alignment from an ACCESS participant. This operation requires the `entityId` query parameter (participant identifier) and a Parameters body including other required inputs. Requires mandatory reason parameter from ACCESSUnalignmentReasonVS (geographic-relocated or loss-of-contact). Automatically cancels active subscriptions and sends unalignment notifications upon successful unalignment. Returns unalignment status from ACCESSUnalignmentResultVS: unaligned or unalignment-pending. Implements asynchronous processing with HTTP 202 Accepted response containing Content-Location header for status polling."
       },
       {
         "name" : "submission-status",
-        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.11",
+        "definition" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/SubmissionStatus|0.9.12",
         "documentation" : "Poll the status of a previously submitted unalignment request. Returns HTTP 202 while processing or HTTP 200 with result when complete."
       }]
     }]

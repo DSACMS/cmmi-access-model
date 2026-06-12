@@ -1,4 +1,4 @@
-# Report Data Response - Reporting Period Closed Example - CMS ACCESS Model API v0.9.11
+# Report Data Response - Reporting Period Closed Example - CMS ACCESS Model API v0.9.12
 
 ## Example Parameters: Report Data Response - Reporting Period Closed Example
 

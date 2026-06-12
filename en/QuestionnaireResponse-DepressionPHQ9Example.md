@@ -1,4 +1,4 @@
-# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.11
+# PHQ-9 QuestionnaireResponse Example - CMS ACCESS Model API v0.9.12
 
 ## Example QuestionnaireResponse: PHQ-9 QuestionnaireResponse Example
 

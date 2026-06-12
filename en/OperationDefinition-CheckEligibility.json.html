@@ -10,7 +10,7 @@
 <html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en" dir="ltr">
   <head>
     <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
-    <title>Check Eligibility Request - JSON Representation - CMS ACCESS Model API v0.9.11</title>
+    <title>Check Eligibility Request - JSON Representation - CMS ACCESS Model API v0.9.12</title>
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="author" content="http://hl7.org/fhir"/>
@@ -62,7 +62,7 @@
         <div id="ig-status" data-fhir="generated">
           <p><span style="font-size:12pt;font-weight:bold">CMS ACCESS Model API</span>
             <br/>
-            <span style="display:inline-block;">0.9.11 - draft
+            <span style="display:inline-block;">0.9.12 - draft
 
 
 
@@ -148,7 +148,7 @@
 
 <!-- layouts\layout-instance-format -->
 <div style="counter-reset: section 8" class="col-12">
-<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.11 DRAFT (v0.9.11: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
+<!--ReleaseHeader--><p id="publish-box">This page is part of the ACCESS Model IG v0.9.12 DRAFT (v0.9.12: Releases Draft) based on <a data-no-external="true" href="http://hl7.org/fhir/R4">FHIR (HL7® FHIR® Standard) R4</a>. No current official version has been published yet.  For a full list of available versions, see the <a data-no-external="true" href="https://dsacms.github.io/cmmi-access-model/history.html">Directory of published versions</a></p><!--EndReleaseHeader-->
 
 
 
@@ -202,7 +202,7 @@
           
 
             as of 
-2026-06-04
+2026-06-10
 
           
         
@@ -228,12 +228,12 @@
     "<a href="http://hl7.org/fhir/R4/datatypes.html#Narrative#Narrative.div">div</a>" : "&lt;div xmlns=\&quot;http://www.w3.org/1999/xhtml\&quot;&gt;&lt;p class=\&quot;res-header-id\&quot;&gt;&lt;b&gt;Generated Narrative: OperationDefinition CheckEligibility&lt;/b&gt;&lt;/p&gt;&lt;a name=\&quot;CheckEligibility\&quot;&gt; &lt;/a&gt;&lt;a name=\&quot;hcCheckEligibility\&quot;&gt; &lt;/a&gt;&lt;p&gt;URL: [base]/Patient/$check-eligibility&lt;/p&gt;&lt;p&gt;Input parameters Profile:&lt;a href=\&quot;StructureDefinition-access-check-eligibility-in.html\&quot;&gt;ACCESS Check Eligibility Request Parameters&lt;/a&gt;&lt;/p&gt;&lt;h3&gt;Parameters&lt;/h3&gt;&lt;table class=\&quot;grid\&quot;&gt;&lt;tr&gt;&lt;td&gt;&lt;b&gt;Use&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Name&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Scope&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Cardinality&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Type&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Binding&lt;/b&gt;&lt;/td&gt;&lt;td&gt;&lt;b&gt;Documentation&lt;/b&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;participantID&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;ACCESS participant identifier. Must follow the pattern ACCES##### where ##### represents exactly 5 digits (e.g., ACCES00001, ACCES12345).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;payerID&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#Identifier\&quot;&gt;Identifier&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Payer ID for the patient.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;patient&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/patient.html\&quot;&gt;Patient&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Patient information.  If the payer is Medicare, it &lt;strong&gt;SHALL&lt;/strong&gt; contain the Medicare Beneficiary Identifier (MBI).&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;track&lt;/td&gt;&lt;td/&gt;&lt;td&gt;1..1&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/datatypes.html#CodeableConcept\&quot;&gt;CodeableConcept&lt;/a&gt;&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;ValueSet-ACCESSTrackVS.html\&quot;&gt;ACCESS Model Tracks Value Set&lt;/a&gt; (Required)&lt;/td&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;ACCESS track for which eligibility is being checked.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td&gt;IN&lt;/td&gt;&lt;td&gt;condition&lt;/td&gt;&lt;td/&gt;&lt;td&gt;0..*&lt;/td&gt;&lt;td&gt;&lt;a href=\&quot;http://hl7.org/fhir/R4/condition.html\&quot;&gt;Condition&lt;/a&gt;&lt;/td&gt;&lt;td/&gt;&lt;td&gt;&lt;div&gt;&lt;p&gt;Patient's conditions.&lt;/p&gt;\n&lt;/div&gt;&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;&lt;/div&gt;"
   },
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.url">url</a>" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/CheckEligibility",
-  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a>" : "0.9.11",
+  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.version">version</a>" : "0.9.12",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.name">name</a>" : "CheckEligibility",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.title">title</a>" : "Check Eligibility Request",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.status">status</a>" : "active",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.kind">kind</a>" : "operation",
-  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a>" : "2026-06-04T23:05:21-04:00",
+  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.date">date</a>" : "2026-06-10T23:08:55-04:00",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.publisher">publisher</a>" : "Global Alliant, Inc.",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.contact">contact</a>" : [
     {
@@ -269,7 +269,7 @@
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.system">system</a>" : false,
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.type">type</a>" : true,
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.instance">instance</a>" : false,
-  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.inputProfile">inputProfile</a>" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.11",
+  "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.inputProfile">inputProfile</a>" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-check-eligibility-in|0.9.12",
   "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter">parameter</a>" : [
     {
       "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.name">name</a>" : "participantID",
@@ -304,7 +304,7 @@
       "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.type">type</a>" : "CodeableConcept",
       "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding">binding</a>" : {
         "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding.strength">strength</a>" : "required",
-        "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding.valueSet">valueSet</a>" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
+        "<a href="http://hl7.org/fhir/R4/operationdefinition.html#OperationDefinition.parameter.binding.valueSet">valueSet</a>" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.12"
       }
     },
     {
@@ -347,10 +347,10 @@
 
 
           IG © 2025+ <a style="color:var(--footer-hyperlink-text-color)" href="https://globalalliantinc.com">Global Alliant, Inc.</a>.  
-          Package cms.fhir.us.cmmi-access-model#0.9.11 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
+          Package cms.fhir.us.cmmi-access-model#0.9.12 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
           Generated 
-  <span title="2026-06-04 23:05:00 -0400">
-    2026-06-04
+  <span title="2026-06-10 23:08:00 -0400">
+    2026-06-10
   </span>
 
           <br/>

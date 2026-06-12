@@ -1,10 +1,29 @@
-# Change Log - CMS ACCESS Model API v0.9.11
+# Change Log - CMS ACCESS Model API v0.9.12
 
 ## Change Log
 
 This page documents the changes between versions of the CMS ACCESS Model API Implementation Guide.
 
 -------
+
+### Version 0.9.12 - DRAFT
+
+**Release Date**: June 11, 2026
+
+#### Major Changes
+
+##### Removed codes from ACCESSeCKMDiagnosisVS and ACCESSCKMDiagnosisVS
+
+* **`ACCESSeCKMDiagnosisVS`** - removed the following codes: 
+* I12.0, I13.11, I13.2, I67.0, I67.1, I67.2, I67.3, I67.4, I67.5, I67.6, I67.7, I67.81, I67.82, I67.83, I67.841, I67.848, I67.850, I67.858, I67.89, I67.9
+ 
+* **`ACCESSCKMDiagnosisVS`** - removed the following codes: 
+* E08.00, E08.01, E08.10, E08.11, E08.641, E11.00, E11.01, E11.10, E11.11, E11.641, E13.00, E13.01, E13.10, E13.11, E13.641
+ 
+
+#### Technical Updates
+
+* Version bump from 0.9.11 to 0.9.12
 
 ### Version 0.9.11 - DRAFT
 

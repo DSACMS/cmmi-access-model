@@ -1,4 +1,4 @@
-# PROMIS Pain Interference Short Form 6a Questionnaire - CMS ACCESS Model API v0.9.11
+# PROMIS Pain Interference Short Form 6a Questionnaire - CMS ACCESS Model API v0.9.12
 
 ## Questionnaire: 
 
@@ -24,10 +24,10 @@
     "profile" : ["http://hl7.org/fhir/uv/sdc/StructureDefinition/sdc-questionnaire|3.0.0"]
   },
   "url" : "http://example.org/Questionnaire/PROMISPainInterferenceSFQuestionnaire",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "status" : "active",
   "subjectType" : ["Patient"],
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",

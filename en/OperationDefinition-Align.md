@@ -1,4 +1,4 @@
-# Alignment Request - CMS ACCESS Model API v0.9.11
+# Alignment Request - CMS ACCESS Model API v0.9.12
 
 ## OperationDefinition: Alignment Request 
 
@@ -54,12 +54,12 @@ These are example instances demonstrating the use of the Alignment API.
   "resourceType" : "OperationDefinition",
   "id" : "Align",
   "url" : "https://dsacms.github.io/cmmi-access-model/OperationDefinition/Align",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "Align",
   "title" : "Alignment Request",
   "status" : "active",
   "kind" : "operation",
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
@@ -85,7 +85,7 @@ These are example instances demonstrating the use of the Alignment API.
   "system" : false,
   "type" : true,
   "instance" : false,
-  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.11",
+  "inputProfile" : "https://dsacms.github.io/cmmi-access-model/StructureDefinition/access-align-in|0.9.12",
   "parameter" : [{
     "name" : "participantID",
     "use" : "in",
@@ -119,7 +119,7 @@ These are example instances demonstrating the use of the Alignment API.
     "type" : "CodeableConcept",
     "binding" : {
       "strength" : "required",
-      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.11"
+      "valueSet" : "https://dsacms.github.io/cmmi-access-model/ValueSet/ACCESSTrackVS|0.9.12"
     }
   },
   {

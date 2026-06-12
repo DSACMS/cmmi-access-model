@@ -1,4 +1,4 @@
-# Condition Example - Essential Hypertension - CMS ACCESS Model API v0.9.11
+# Condition Example - Essential Hypertension - CMS ACCESS Model API v0.9.12
 
 ## Example Condition: Condition Example - Essential Hypertension
 

@@ -7,12 +7,12 @@
     "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem ACCESSUnalignmentResultCS</b></p><a name=\"ACCESSUnalignmentResultCS\"> </a><a name=\"hcACCESSUnalignmentResultCS\"> </a><p>This case-sensitive code system <code>https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td></tr><tr><td style=\"white-space:nowrap\">unaligned<a name=\"ACCESSUnalignmentResultCS-unaligned\"> </a></td><td>Unaligned</td><td>The request to unalign the patient has been accepted and the patient has been successfully unaligned.</td></tr><tr><td style=\"white-space:nowrap\">unalignment-pending<a name=\"ACCESSUnalignmentResultCS-unalignment-pending\"> </a></td><td>Unalignment pending further review</td><td>Additional review is needed and you will receive further information once the manual review of the unalignment request is complete.</td></tr><tr><td style=\"white-space:nowrap\">patient-not-aligned<a name=\"ACCESSUnalignmentResultCS-patient-not-aligned\"> </a></td><td>Patient not aligned</td><td>Patient is not currently aligned to this participant in the specified track and therefore cannot be unaligned.</td></tr><tr><td style=\"white-space:nowrap\">cannot-unalign-during-lock-in<a name=\"ACCESSUnalignmentResultCS-cannot-unalign-during-lock-in\"> </a></td><td>Cannot unalign during lock-in</td><td>Patient is within the 90-day lock-in period and cannot be unaligned.</td></tr></table></div>"
   },
   "url" : "https://dsacms.github.io/cmmi-access-model/CodeSystem/ACCESSUnalignmentResultCS",
-  "version" : "0.9.11",
+  "version" : "0.9.12",
   "name" : "ACCESSUnalignmentResultCS",
   "title" : "ACCESS Unalignment Request Result Codes",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-06-04T23:05:21-04:00",
+  "date" : "2026-06-10T23:08:55-04:00",
   "publisher" : "Global Alliant, Inc.",
   "contact" : [{
     "name" : "Global Alliant, Inc.",
