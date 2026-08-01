@@ -1,7 +1,8 @@
 {
   "name": "cmmi-access-model",
   "version": "'0.9.0'",
-  "description": "This comprehensive guide covers all APIs for the CMS ACCESS (Advancing Chronic Care with Effective, Scalable Solutions) Model.",
+  "description": "ACCESS Model FHIR Implementation Guide (IG) references an Operations Manual that provides more information about the ACCESS Model APIs. A link to the Operations Manual will be made available soon.",
+  "longDescription": "",
   "status": "Development",
   "permissions": {
     "licenses": [
@@ -19,13 +20,20 @@
   "repositoryURL": "https://github.com/DSACMS/cmmi-access-model",
   "repositoryVisibility": "public",
   "homepageURL": "https://dsacms.github.io/cmmi-access-model/",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 25696,
+  "laborHours": 45015,
   "reuseFrequency": {
-    "forks": 0
+    "forks": 2,
+    "clones": 0
   },
+  "platforms": [],
+  "categories": [],
   "languages": [
     "HTML",
+    "PHP",
     "CSS",
     "JavaScript"
   ],
@@ -34,10 +42,13 @@
     "0"
   ],
   "SBOM": "https://github.com/DSACMS/cmmi-access-model/network/dependencies",
+  "relatedCode": [],
+  "reusedCode": [],
+  "partners": [],
   "date": {
     "created": "2026-03-05T20:07:34Z",
-    "lastModified": "2026-03-09T15:29:13Z",
-    "metadataLastUpdated": "2026-03-10T18:26:46.678Z"
+    "lastModified": "2026-07-21T20:41:15Z",
+    "metadataLastUpdated": "2026-08-01T02:13:22.115Z"
   },
   "tags": [
     "cmmi",
@@ -50,5 +61,13 @@
     "name": "CMS Open Source Program Office"
   },
   "feedbackMechanism": "https://github.com/DSACMS/cmmi-access-model/issues",
-  "AIUseCaseID": "0"
+  "AIUseCaseID": "0",
+  "localisation": false,
+  "userInput": false,
+  "group": "",
+  "projects": [],
+  "systems": [],
+  "subsetInHealthcare": [],
+  "userType": [],
+  "maturityModelTier": 0
 }
