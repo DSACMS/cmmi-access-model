@@ -2,6 +2,7 @@
   "name": "cmmi-access-model",
   "version": "'0.9.0'",
   "description": "This comprehensive guide covers all APIs for the CMS ACCESS (Advancing Chronic Care with Effective, Scalable Solutions) Model.",
+  "longDescription": "",
   "status": "Development",
   "permissions": {
     "licenses": [
@@ -13,17 +14,26 @@
     "usageType": [
       "openSource",
       "governmentWideReuse"
-    ]
+    ],
+    "exemptionText": ""
   },
   "organization": "Centers for Medicare & Medicaid Services",
   "repositoryURL": "https://github.com/DSACMS/cmmi-access-model",
+  "repositoryHost": "github.com/DSACMS",
   "repositoryVisibility": "public",
   "homepageURL": "https://dsacms.github.io/cmmi-access-model/",
+  "downloadURL": "",
+  "disclaimerURL": "",
+  "disclaimerText": "",
   "vcs": "git",
-  "laborHours": 25696,
+  "laborHours": 45015,
   "reuseFrequency": {
-    "forks": 0
+    "forks": 2,
+    "clones": 0
   },
+  "platforms": [],
+  "categories": [],
+  "softwareType": "",
   "languages": [
     "HTML",
     "CSS",
@@ -34,10 +44,13 @@
     "0"
   ],
   "SBOM": "https://github.com/DSACMS/cmmi-access-model/network/dependencies",
+  "relatedCode": [],
+  "reusedCode": [],
+  "partners": [],
   "date": {
     "created": "2026-03-05T20:07:34Z",
-    "lastModified": "2026-03-09T15:29:13Z",
-    "metadataLastUpdated": "2026-03-10T18:26:46.678Z"
+    "lastModified": "2026-10-29T15:46:05Z",
+    "metadataLastUpdated": "2026-11-01T03:50:20.778Z"
   },
   "tags": [
     "cmmi",
@@ -50,5 +63,15 @@
     "name": "CMS Open Source Program Office"
   },
   "feedbackMechanism": "https://github.com/DSACMS/cmmi-access-model/issues",
-  "AIUseCaseID": "0"
+  "AIUseCaseID": "0",
+  "localisation": false,
+  "repositoryType": "",
+  "userInput": false,
+  "fismaLevel": "",
+  "group": "",
+  "projects": [],
+  "systems": [],
+  "subsetInHealthcare": [],
+  "userType": [],
+  "maturityModelTier": 3
 }
